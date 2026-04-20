@@ -6,29 +6,78 @@
     <meta name="robots" content="noindex, nofollow" />
     <title>KTB Media CMS</title>
     <style>
-      html,body{margin:0;padding:0;background:#0f0f12;color:#fff;font-family:Inter,Arial,sans-serif}
-      .loading{display:flex;min-height:100vh;align-items:center;justify-content:center;flex-direction:column;gap:12px}
-      .loading a{color:#f0b23d}
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: #0f0f12;
+        color: #fff;
+        font-family: Inter, Arial, sans-serif;
+      }
+      .loading {
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        padding: 24px;
+      }
+      .btn {
+        appearance: none;
+        border: 0;
+        border-radius: 12px;
+        padding: 14px 22px;
+        background: #f0b23d;
+        color: #111;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .muted {
+        opacity: .72;
+        font-size: 14px;
+        max-width: 760px;
+      }
     </style>
   </head>
   <body>
-    <div class="loading" id="loading">
+    <div class="loading">
       <strong>KTB Media CMS</strong>
-      <div>Ładowanie panelu…</div>
-      <div style="opacity:.7;font-size:14px">Jeśli logowanie nie otworzy się automatycznie, wróć po włączeniu Netlify Identity i Git Gateway.</div>
+      <div>Panel gotowy. Kliknij poniżej, aby się zalogować.</div>
+      <button class="btn" id="loginBtn">Zaloguj do CMS</button>
+      <div class="muted">
+        Jeśli po kliknięciu nic się nie otworzy, sprawdź czy w Netlify są włączone
+        Identity oraz Git Gateway i czy użytkownik został zaproszony.
+      </div>
     </div>
+
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
+      const loginBtn = document.getElementById('loginBtn');
+
+      function openLogin() {
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.open('login');
+        } else {
+          alert('Netlify Identity nie załadowało się poprawnie.');
+        }
+      }
+
+      loginBtn.addEventListener('click', openLogin);
+
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on('init', function(user) {
-          if (!user) {
-            window.netlifyIdentity.on('login', function() {
-              document.location.href = '/admin/';
-            });
+          if (user) {
+            window.location.href = '/admin/';
           }
+        });
+
+        window.netlifyIdentity.on('login', function() {
+          window.location.href = '/admin/';
         });
       }
     </script>
-    <script src="https://unpkg.com/decap-cms@^3.5.0/dist/decap-cms.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/decap-cms@3.5.1/dist/decap-cms.js"></script>
   </body>
 </html>
