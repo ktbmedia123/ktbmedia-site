@@ -1,8 +1,0 @@
-User-agent: *
-Disallow: /admin/
-Disallow: /admin.html
-Allow: /
-Disallow: /admin.html
-Disallow: /api/
-
-Sitemap: https://ktbmedia.eu/sitemap.xml
