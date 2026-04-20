@@ -1,7 +1,16 @@
 [build]
   publish = "."
 
-# SPA fallback - wszystkie ścieżki serwują index.html, router po stronie klienta
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/:splat"
+  status = 200
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
@@ -14,7 +23,6 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
-# HTML + JS + CSS nie cachować agresywnie (żeby deploy się od razu zobaczył)
 [[headers]]
   for = "/*.html"
   [headers.values]
@@ -40,12 +48,10 @@
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
-# Obrazy w /assets mogą być cachowane bo mają wersjonowane nazwy
 [[headers]]
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
-
 
 [[headers]]
   for = "/sitemap.xml"
@@ -56,7 +62,6 @@
   for = "/robots.txt"
   [headers.values]
     Content-Type = "text/plain; charset=UTF-8"
-
 
 [[headers]]
   for = "/admin/*"
