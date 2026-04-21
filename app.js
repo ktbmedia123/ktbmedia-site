@@ -1280,6 +1280,8 @@ function ContactForm({
     services: initChecks
   });
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState('');
   useEffect(() => {
     const fresh = {};
     (c.form.serviceGroups || []).forEach(g => g.items.forEach(it => {
@@ -1291,10 +1293,48 @@ function ContactForm({
       services: fresh
     }));
   }, [lang]);
-  const onSubmit = e => {
+  const onSubmit = async e => {
     e.preventDefault();
-    setSent(true);
-    setTimeout(() => setSent(false), 5000);
+    setSending(true);
+    setError('');
+    const selectedServices = Object.entries(form.services).filter(([, v]) => !!v).map(([k]) => k);
+    const payload = new URLSearchParams();
+    payload.append('form-name', 'quote-request');
+    payload.append('name', form.name);
+    payload.append('company', form.company || '');
+    payload.append('email', form.email);
+    payload.append('budget', form.budget || '');
+    payload.append('services', selectedServices.join(', '));
+    payload.append('message', form.message || '');
+    payload.append('lang', lang);
+    try {
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: payload.toString()
+      });
+      if (!res.ok) throw new Error('send_failed');
+      setSent(true);
+      setTimeout(() => setSent(false), 6000);
+      const fresh = {};
+      (c.form.serviceGroups || []).forEach(g => g.items.forEach(it => {
+        fresh[it] = false;
+      }));
+      setForm({
+        name: '',
+        email: '',
+        company: '',
+        budget: c.form.budgetOpts[0],
+        message: '',
+        services: fresh
+      });
+    } catch (err) {
+      setError(lang === 'pl' ? 'Nie udało się wysłać formularza. Napisz bezpośrednio na media@ktbmedia.eu.' : 'The form could not be sent. Please email media@ktbmedia.eu directly.');
+    } finally {
+      setSending(false);
+    }
   };
   const toggleService = name => setForm(f => ({
     ...f,
