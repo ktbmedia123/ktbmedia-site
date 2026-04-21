@@ -2,16 +2,191 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "assets/uploads"
-public_folder: "/assets/uploads"
+local_backend: false
+media_folder: assets/uploads
+public_folder: /assets/uploads
+site_url: https://ktbmedia.eu
+show_preview_links: false
+logo_url: /assets/logo.png
 
-site_url: "https://ktbmedia.eu"
-display_url: "https://ktbmedia.eu"
+slug:
+  encoding: ascii
+  clean_accents: true
 
 collections:
-  - name: "site"
-    label: "Strona"
+  - name: site
+    label: Strona główna
+    delete: false
+    editor:
+      preview: false
     files:
-      - file: "content/site.json"
-        label: "Treści strony"
-        name: "site"
+      - label: Treści strony głównej
+        name: homepage
+        file: content/site.json
+        format: json
+        fields:
+          - label: Polski
+            name: pl
+            widget: object
+            fields:
+              - label: Nawigacja
+                name: nav
+                widget: list
+                summary: '{{fields.value}}'
+                field:
+                  label: Pozycja menu
+                  name: value
+                  widget: string
+              - label: Główny CTA w menu
+                name: cta
+                widget: string
+              - label: Hero
+                name: hero
+                widget: object
+                fields:
+                  - {label: Nadtytuł, name: eyebrow, widget: string}
+                  - {label: Tytuł 1, name: title1, widget: string}
+                  - {label: Tytuł 2, name: title2, widget: string}
+                  - {label: Wyróżnienie kursywą, name: titleIt, widget: string}
+                  - {label: Tytuł 3, name: title3, widget: string}
+                  - {label: Lead, name: lede, widget: text}
+                  - {label: CTA 1, name: cta1, widget: string}
+                  - {label: CTA 2, name: cta2, widget: string}
+                  - label: Statystyki
+                    name: metrics
+                    widget: list
+                    summary: '{{fields.k}}: {{fields.v}}'
+                    fields:
+                      - {label: Etykieta, name: k, widget: string}
+                      - {label: Wartość, name: v, widget: string}
+                      - {label: Duży format, name: big, widget: boolean, required: false, default: false}
+              - label: Pasek przewijany
+                name: marquee
+                widget: list
+                summary: '{{fields.value}}'
+                field:
+                  label: Hasło
+                  name: value
+                  widget: string
+              - label: Usługi
+                name: services
+                widget: object
+                fields:
+                  - {label: Etykieta sekcji, name: label, widget: string}
+                  - {label: Tytuł 1, name: title1, widget: string}
+                  - {label: Wyróżnienie kursywą, name: titleIt, widget: string}
+                  - label: Pozycje usług
+                    name: items
+                    widget: list
+                    summary: '{{fields.n}} {{fields.t}} {{fields.tIt}}'
+                    fields:
+                      - {label: Numer, name: n, widget: string}
+                      - {label: Tytuł 1, name: t, widget: string}
+                      - {label: Tytuł 2, name: tIt, widget: string, required: false}
+                      - {label: Opis, name: d, widget: text}
+              - label: O nas
+                name: about
+                widget: object
+                fields:
+                  - {label: Etykieta sekcji, name: label, widget: string}
+                  - {label: Tytuł 1, name: title1, widget: string}
+                  - {label: Wyróżnienie kursywą, name: titleIt, widget: string}
+                  - {label: Tytuł 2, name: title2, widget: string}
+                  - {label: Lead, name: lede, widget: text}
+                  - {label: Wyróżnione słowo, name: ledeAccent, widget: string}
+                  - label: Argumenty
+                    name: features
+                    widget: list
+                    summary: '{{fields.k}} {{fields.t}}'
+                    fields:
+                      - {label: Litera, name: k, widget: string}
+                      - {label: Tytuł, name: t, widget: string}
+                      - {label: Opis, name: d, widget: text}
+                  - {label: Cytat, name: quote, widget: text}
+                  - {label: Wyróżnienie w cytacie, name: quoteAccent, widget: string}
+                  - {label: Podpis cytatu, name: cap, widget: string}
+              - label: Proces współpracy
+                name: process
+                widget: object
+                fields:
+                  - {label: Etykieta sekcji, name: label, widget: string}
+                  - {label: Tytuł 1, name: title1, widget: string}
+                  - {label: Wyróżnienie kursywą, name: titleIt, widget: string}
+                  - {label: Tytuł 2, name: title2, widget: string}
+                  - label: Kroki
+                    name: steps
+                    widget: list
+                    summary: '{{fields.n}} {{fields.t}}'
+                    fields:
+                      - {label: Numer, name: n, widget: string}
+                      - {label: Nazwa kroku, name: t, widget: string}
+                      - {label: Opis, name: d, widget: text}
+              - label: Kontakt
+                name: contact
+                widget: object
+                fields:
+                  - {label: Etykieta sekcji, name: label, widget: string}
+                  - {label: Tytuł 1, name: title1, widget: string}
+                  - {label: Wyróżnienie kursywą, name: titleIt, widget: string}
+                  - {label: Tytuł 2, name: title2, widget: string}
+                  - {label: Tekst przed mailem, name: bigPrefix, widget: string}
+                  - {label: Główny email, name: bigEmail, widget: string}
+                  - {label: Tekst po mailu, name: bigSuffix, widget: string}
+                  - label: Dane kontaktowe
+                    name: details
+                    widget: list
+                    summary: '{{fields.k}}'
+                    fields:
+                      - {label: Etykieta, name: k, widget: string}
+                      - {label: Wartość, name: v, widget: string}
+                      - {label: Link, name: href, widget: string, required: false}
+                  - label: Formularz
+                    name: form
+                    widget: object
+                    fields:
+                      - {label: Nagłówek, name: heading, widget: string}
+                      - {label: Podnagłówek, name: subheading, widget: string}
+                      - {label: Intro, name: intro, widget: text}
+                      - {label: Etykieta usług, name: servicesLabel, widget: string}
+                      - label: Grupy usług w formularzu
+                        name: serviceGroups
+                        widget: list
+                        summary: '{{fields.label}}'
+                        fields:
+                          - {label: Nazwa grupy, name: label, widget: string}
+                          - label: Pozycje
+                            name: items
+                            widget: list
+                            summary: '{{fields.value}}'
+                            field:
+                              label: Usługa
+                              name: value
+                              widget: string
+                      - {label: Pole imię i nazwisko, name: name, widget: string}
+                      - {label: Pole email, name: email, widget: string}
+                      - {label: Pole firma, name: company, widget: string}
+                      - {label: Pole budżet, name: budget, widget: string}
+                      - label: Opcje budżetu
+                        name: budgetOpts
+                        widget: list
+                        summary: '{{fields.value}}'
+                        field:
+                          label: Opcja
+                          name: value
+                          widget: string
+                      - {label: Pole wiadomość, name: message, widget: string}
+                      - {label: Przycisk wyślij, name: submit, widget: string}
+                      - {label: Komunikat sukcesu, name: success, widget: string}
+              - label: Stopka
+                name: footer
+                widget: object
+                fields:
+                  - {label: Wielki napis, name: wall, widget: string}
+                  - {label: Copyright, name: copy, widget: string}
+                  - label: Linki w stopce
+                    name: links
+                    widget: list
+                    summary: '{{fields.label}}'
+                    fields:
+                      - {label: Tekst linku, name: label, widget: string}
+                      - {label: Adres, name: href, widget: string}

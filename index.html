@@ -215,5 +215,15 @@
   <script src="/cms-hydrator.js?v=20260421-seo"></script>
   <script src="/app.js?v=20260421-seo"></script>
 
+
+<script>
+  (function () {
+    const hash = window.location.hash || '';
+    if (/invite_token=|confirmation_token=|recovery_token=|access_token=/.test(hash)) {
+      window.location.replace('/admin/index.html' + hash);
+    }
+  })();
+</script>
+
 </body>
 </html>
