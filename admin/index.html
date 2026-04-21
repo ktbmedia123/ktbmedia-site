@@ -1,135 +1,30 @@
 <!doctype html>
 <html lang="pl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex, nofollow" />
-    <title>KTB Media CMS</title>
-    <style>
-      html, body {
-        margin: 0;
-        padding: 0;
-        background: #0f0f12;
-        color: #fff;
-        font-family: Inter, Arial, sans-serif;
-      }
-      .wrap {
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 24px;
-      }
-      .card {
-        width: 100%;
-        max-width: 720px;
-        background: #171821;
-        border: 1px solid rgba(255,255,255,.08);
-        border-radius: 18px;
-        padding: 28px;
-        box-shadow: 0 20px 60px rgba(0,0,0,.35);
-      }
-      h1 { margin: 0 0 12px; font-size: 32px; }
-      p { margin: 0 0 12px; line-height: 1.6; color: rgba(255,255,255,.78); }
-      .row { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
-      .btn {
-        appearance: none; border: 0; border-radius: 12px; padding: 14px 18px;
-        background: #f0b23d; color: #111; font-weight: 700; cursor: pointer;
-      }
-      .btn.secondary { background: #252736; color: #fff; }
-      .small { font-size: 14px; opacity: .72; margin-top: 14px; }
-      code { background:#252736; padding:2px 6px; border-radius:8px; }
-      .ok { color:#8fe38f; }
-      .err { color:#ff9e9e; white-space: pre-wrap; }
-      #status { margin-top: 10px; }
-    </style>
-  </head>
-  <body>
-    <div class="wrap">
-      <div class="card">
-        <h1>KTB Media CMS</h1>
-        <p>Ten panel działa przez <strong>Netlify Identity + Git Gateway</strong>. Po kliknięciu zalogowania powinno otworzyć się okno logowania albo formularz ustawienia hasła z linku zaproszenia.</p>
-        <div class="row">
-          <button class="btn" id="loginBtn" type="button">Zaloguj do CMS</button>
-          <button class="btn secondary" id="refreshBtn" type="button">Odśwież status</button>
-        </div>
-        <div id="status" class="small">Sprawdzam Identity…</div>
-        <p class="small">Jeśli otworzyłeś link z maila i widzisz token w adresie, ten ekran powinien obsłużyć go automatycznie. Gdyby nie poszło, wejdź bezpośrednio na <code>/admin/index.html</code>.</p>
-      </div>
-    </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>KTB Media CMS</title>
+  <link rel="icon" type="image/png" href="/assets/logo.png" />
+</head>
+<body>
+  <!-- Identity widget — wymagany dla git-gateway -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script>
-      const statusEl = document.getElementById('status');
-      const loginBtn = document.getElementById('loginBtn');
-      const refreshBtn = document.getElementById('refreshBtn');
+  <!-- Decap CMS -->
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 
-      function setStatus(msg, cls) {
-        statusEl.className = 'small ' + (cls || '');
-        statusEl.textContent = msg;
-      }
-
-      function hashHasToken() {
-        const hash = window.location.hash || '';
-        return /invite_token=|confirmation_token=|recovery_token=|access_token=/.test(hash);
-      }
-
-      function openIdentity(mode) {
-        if (!window.netlifyIdentity) {
-          setStatus('Netlify Identity nie załadowało się poprawnie.', 'err');
-          return;
-        }
-        try {
-          window.netlifyIdentity.open(mode || 'login');
-        } catch (e) {
-          setStatus('Nie udało się otworzyć okna logowania: ' + e.message, 'err');
-        }
-      }
-
-      loginBtn.addEventListener('click', function () {
-        if (hashHasToken()) {
-          openIdentity();
-        } else {
-          openIdentity('login');
+  <script>
+    // Przekieruj użytkownika z tokenem zaproszenia / recovery na /admin/ żeby Identity + Decap mogły obsłużyć hash
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function (user) {
+        if (!user) {
+          window.netlifyIdentity.on("login", function () {
+            document.location.href = "/admin/";
+          });
         }
       });
-
-      refreshBtn.addEventListener('click', function () {
-        location.reload();
-      });
-
-      if (window.netlifyIdentity) {
-        setStatus('Identity wykryte. Inicjalizacja…', 'ok');
-        window.netlifyIdentity.on('init', function(user) {
-          if (user) {
-            setStatus('Jesteś zalogowany. Otwieram panel…', 'ok');
-            setTimeout(function () {
-              window.location.replace('/admin/');
-            }, 250);
-            return;
-          }
-          if (hashHasToken()) {
-            setStatus('Wykryto token z maila. Otwieram okno aktywacji/logowania…', 'ok');
-            setTimeout(function () { openIdentity(); }, 250);
-          } else {
-            setStatus('Identity działa. Kliknij „Zaloguj do CMS”.', 'ok');
-          }
-        });
-
-        window.netlifyIdentity.on('login', function() {
-          setStatus('Logowanie zakończone. Otwieram panel…', 'ok');
-          window.location.replace('/admin/');
-        });
-
-        window.netlifyIdentity.on('error', function(err) {
-          setStatus('Błąd Identity: ' + (err && err.message ? err.message : String(err)), 'err');
-        });
-
-        window.netlifyIdentity.init();
-      } else {
-        setStatus('Nie udało się załadować biblioteki Netlify Identity.', 'err');
-      }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/decap-cms@3.6.2/dist/decap-cms.js"></script>
-  </body>
+    }
+  </script>
+</body>
 </html>

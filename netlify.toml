@@ -57,3 +57,30 @@
   for = "/robots.txt"
   [headers.values]
     Content-Type = "text/plain; charset=UTF-8"
+
+# SPA fallback - wszystko co nie jest plikiem trafia na index.html (React router je obsłuży)
+# Statyczne HTML per-route mają priorytet, to jest tylko fallback
+[[redirects]]
+  from = "/realizacje/*"
+  to = "/index.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/blog/*"
+  to = "/index.html"
+  status = 200
+  force = false
+
+# /content/* musi być czytelne publicznie (hydrator fetchuje site.json)
+[[headers]]
+  for = "/content/*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    Access-Control-Allow-Origin = "*"
+
+# Admin ma crawlować-blok (już noindex w meta, ale dla pewności)
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"

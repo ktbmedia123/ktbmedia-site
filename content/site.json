@@ -552,19 +552,24 @@
           "lede": "Generowanie content calendara nie jest strategią. Publikowanie „bo trzeba” kosztuje tak samo, jak publikowanie po coś — ale przynosi zero. Oto jak odróżnić ruch od postępu.",
           "body": [
             {
-              "h": "Ruch ≠ postęp"
+              "h": "Ruch ≠ postęp",
+              "type": "heading"
             },
             {
-              "p": "Większość działów marketingu, które widzieliśmy, ma jeden wspólny mianownik: dużo ruchu, mało postępu. Kampania za kampanią, reel za reelem, newsletter w każdy wtorek. A za tym wszystkim — ani jednej odpowiedzi na proste pytanie: **po co?**"
+              "p": "Większość działów marketingu, które widzieliśmy, ma jeden wspólny mianownik: dużo ruchu, mało postępu. Kampania za kampanią, reel za reelem, newsletter w każdy wtorek. A za tym wszystkim — ani jednej odpowiedzi na proste pytanie: **po co?**",
+              "type": "paragraph"
             },
             {
-              "p": "Ten mechanizm jest genialny w swojej samowystarczalności. Social media generuje treści, które nakręcają kolejne treści. Kampanie generują dane, które uzasadniają następne kampanie. Cały system obraca się wokół własnej osi, a jedynym produktem tej orbity są kolejne TODO."
+              "p": "Ten mechanizm jest genialny w swojej samowystarczalności. Social media generuje treści, które nakręcają kolejne treści. Kampanie generują dane, które uzasadniają następne kampanie. Cały system obraca się wokół własnej osi, a jedynym produktem tej orbity są kolejne TODO.",
+              "type": "paragraph"
             },
             {
-              "h": "Co to jest „marketing dla samego marketingu\""
+              "h": "Co to jest „marketing dla samego marketingu\"",
+              "type": "heading"
             },
             {
-              "p": "To sytuacja, w której **sam fakt robienia** został pomylony z celem. Symptomy są proste do rozpoznania:"
+              "p": "To sytuacja, w której **sam fakt robienia** został pomylony z celem. Symptomy są proste do rozpoznania:",
+              "type": "paragraph"
             },
             {
               "list": [
@@ -573,43 +578,55 @@
                 "Każda kampania opisywana jako sukces — „bo zasięgi rosły”.",
                 "Raporty, które nikogo nie interesują — robione tylko dlatego, że „klient lubi raport”.",
                 "Nowe inicjatywy dokładane bez usuwania starych — bo nikt nie ma odwagi powiedzieć, co przestaje działać."
-              ]
+              ],
+              "type": "list"
             },
             {
-              "h": "Test dwóch pytań"
+              "h": "Test dwóch pytań",
+              "type": "heading"
             },
             {
-              "p": "Za każdym razem, gdy Twój zespół (lub Ty) zabiera się do planowania nowej akcji, zadaj dwa pytania:"
+              "p": "Za każdym razem, gdy Twój zespół (lub Ty) zabiera się do planowania nowej akcji, zadaj dwa pytania:",
+              "type": "paragraph"
             },
             {
               "list": [
                 "**Który konkretny cel biznesowy to wspiera?** Nie „budowanie marki”, nie „engagement”. Konkret: więcej zapytań ofertowych w segmencie X, niższy CAC w kanale Y, wyższa wartość koszyka.",
                 "**Jak rozpoznam, że to zadziałało albo nie?** Jeśli odpowiedź to „po prostu zobaczymy”, to znaczy, że zgadujesz."
-              ]
+              ],
+              "type": "list"
             },
             {
-              "p": "Jeśli na którekolwiek z tych pytań nie masz odpowiedzi — wstrzymaj się. Nie dlatego, że akcja jest zła. Dlatego, że robisz ją z przyzwyczajenia, nie z decyzji."
+              "p": "Jeśli na którekolwiek z tych pytań nie masz odpowiedzi — wstrzymaj się. Nie dlatego, że akcja jest zła. Dlatego, że robisz ją z przyzwyczajenia, nie z decyzji.",
+              "type": "paragraph"
             },
             {
-              "h": "Zamień kampanie na hipotezy"
+              "h": "Zamień kampanie na hipotezy",
+              "type": "heading"
             },
             {
-              "p": "Zamiast planować „kampanię wizerunkową\", planuj testy hipotez. Każde działanie marketingowe to w zasadzie zakład z rzeczywistością: _wierzę, że jeśli pokażę X grupie Y, stanie się Z_. Jeśli umiesz to zdanie napisać — masz kampanię. Jeśli nie umiesz — masz tylko wydatek."
+              "p": "Zamiast planować „kampanię wizerunkową\", planuj testy hipotez. Każde działanie marketingowe to w zasadzie zakład z rzeczywistością: _wierzę, że jeśli pokażę X grupie Y, stanie się Z_. Jeśli umiesz to zdanie napisać — masz kampanię. Jeśli nie umiesz — masz tylko wydatek.",
+              "type": "paragraph"
             },
             {
-              "p": "Hipoteza ma trzy zalety: (1) zmusza do konkretu, (2) domyślnie zakłada, że możesz się mylić, (3) wymusza pomiar. Brzmi jak coś dla korporacji z 500-osobowym działem analityki? Nie. Można to robić w arkuszu kalkulacyjnym. Ważny jest sposób myślenia, nie narzędzie."
+              "p": "Hipoteza ma trzy zalety: (1) zmusza do konkretu, (2) domyślnie zakłada, że możesz się mylić, (3) wymusza pomiar. Brzmi jak coś dla korporacji z 500-osobowym działem analityki? Nie. Można to robić w arkuszu kalkulacyjnym. Ważny jest sposób myślenia, nie narzędzie.",
+              "type": "paragraph"
             },
             {
-              "h": "Mniej, celniej, głośniej"
+              "h": "Mniej, celniej, głośniej",
+              "type": "heading"
             },
             {
-              "p": "Prawdziwy wzrost u większości firm, z którymi pracowaliśmy, nie przyszedł z dołożenia kolejnego kanału. Przyszedł z **odcięcia trzech rzeczy**, które nie działały, i zainwestowania tych budżetów w jedno działanie, które zaczynało działać. Dyscyplina jest niewidzialna, bo polega na tym, czego nie robisz."
+              "p": "Prawdziwy wzrost u większości firm, z którymi pracowaliśmy, nie przyszedł z dołożenia kolejnego kanału. Przyszedł z **odcięcia trzech rzeczy**, które nie działały, i zainwestowania tych budżetów w jedno działanie, które zaczynało działać. Dyscyplina jest niewidzialna, bo polega na tym, czego nie robisz.",
+              "type": "paragraph"
             },
             {
-              "p": "Jeśli czujesz, że Twój marketing zamienił się w fabrykę treści na autopilocie — zatrzymaj się na tydzień. Wyłącz wszystko, co nie ma jasnego uzasadnienia biznesowego. Zobacz, co naprawdę się wali, a co po prostu przestało wymagać siły."
+              "p": "Jeśli czujesz, że Twój marketing zamienił się w fabrykę treści na autopilocie — zatrzymaj się na tydzień. Wyłącz wszystko, co nie ma jasnego uzasadnienia biznesowego. Zobacz, co naprawdę się wali, a co po prostu przestało wymagać siły.",
+              "type": "paragraph"
             },
             {
-              "p": "Wracasz za tydzień i pracujesz już tylko na tym, co zostało."
+              "p": "Wracasz za tydzień i pracujesz już tylko na tym, co zostało.",
+              "type": "paragraph"
             }
           ]
         },
@@ -623,47 +640,60 @@
           "lede": "ATT już jest old news. Od ostatnich 18 miesięcy krajobraz Meta Ads przeszedł przez trzy fundamentalne zmiany. Streszczenie dla marketerów, którzy nie uczą się platformy od zera co kwartał.",
           "body": [
             {
-              "h": "Advantage+ to teraz domyślne ustawienie"
+              "h": "Advantage+ to teraz domyślne ustawienie",
+              "type": "heading"
             },
             {
-              "p": "Kampanie Advantage+ Shopping i Advantage+ Lead Generation weszły z ustawienia eksperymentalnego do ustawienia domyślnego. Platforma sama dobiera kreacje, placementy i audiencje — a manualne setupy w większości kont dają gorszy CPA."
+              "p": "Kampanie Advantage+ Shopping i Advantage+ Lead Generation weszły z ustawienia eksperymentalnego do ustawienia domyślnego. Platforma sama dobiera kreacje, placementy i audiencje — a manualne setupy w większości kont dają gorszy CPA.",
+              "type": "paragraph"
             },
             {
-              "p": "Konsekwencja: ręczne wąskie targetowanie (lookalike 1%, dokładnie zdefiniowane interesy) coraz częściej przegrywa z podejściem „pokaż Meta cel i zasób kreatywny, resztę policzy”."
+              "p": "Konsekwencja: ręczne wąskie targetowanie (lookalike 1%, dokładnie zdefiniowane interesy) coraz częściej przegrywa z podejściem „pokaż Meta cel i zasób kreatywny, resztę policzy”.",
+              "type": "paragraph"
             },
             {
-              "h": "Kreacja to nowy targeting"
+              "h": "Kreacja to nowy targeting",
+              "type": "heading"
             },
             {
-              "p": "W świecie, w którym Meta sama dobiera audiencje, **jedyna rzecz, którą możesz realnie wpłynąć, to kreacja**. Konta, które miesięcznie podają platformie 30-50 świeżych wariantów (różne hook'i, różne formaty, różne typy produktów), skalują się. Konta z 3 kreacjami na miesiąc — nie."
+              "p": "W świecie, w którym Meta sama dobiera audiencje, **jedyna rzecz, którą możesz realnie wpłynąć, to kreacja**. Konta, które miesięcznie podają platformie 30-50 świeżych wariantów (różne hook'i, różne formaty, różne typy produktów), skalują się. Konta z 3 kreacjami na miesiąc — nie.",
+              "type": "paragraph"
             },
             {
-              "p": "To duża zmiana w alokacji zasobów agencji. Przed 2024: 70% czasu na targeting, 30% na kreację. Dzisiaj: odwrotnie."
+              "p": "To duża zmiana w alokacji zasobów agencji. Przed 2024: 70% czasu na targeting, 30% na kreację. Dzisiaj: odwrotnie.",
+              "type": "paragraph"
             },
             {
-              "h": "CAPI i klient offline"
+              "h": "CAPI i klient offline",
+              "type": "heading"
             },
             {
-              "p": "Po iOS 14.5+ i spadku jakości pixel-signału, **Conversions API (CAPI)** z serwera stała się minimum. Konta, które ją mają, widzą 20-40% więcej konwersji niż konta tylko z pixelem. I to nie „bonus” — to zamykanie luki powstałej po ATT."
+              "p": "Po iOS 14.5+ i spadku jakości pixel-signału, **Conversions API (CAPI)** z serwera stała się minimum. Konta, które ją mają, widzą 20-40% więcej konwersji niż konta tylko z pixelem. I to nie „bonus” — to zamykanie luki powstałej po ATT.",
+              "type": "paragraph"
             },
             {
-              "p": "Dorzucamy do tego Offline Events (z CRM-u do Meta), Customer Value Optimization (optymalizacja pod LTV zamiast CPA) — i zaczynasz widzieć rynek tak, jak widzisz go Ty, a nie tak, jak widzi go przeglądarka."
+              "p": "Dorzucamy do tego Offline Events (z CRM-u do Meta), Customer Value Optimization (optymalizacja pod LTV zamiast CPA) — i zaczynasz widzieć rynek tak, jak widzisz go Ty, a nie tak, jak widzi go przeglądarka.",
+              "type": "paragraph"
             },
             {
-              "h": "Co dalej"
+              "h": "Co dalej",
+              "type": "heading"
             },
             {
-              "p": "Trzy rzeczy, które działają w 2026 roku na Meta Ads, a nie działały jeszcze 18 miesięcy temu:"
+              "p": "Trzy rzeczy, które działają w 2026 roku na Meta Ads, a nie działały jeszcze 18 miesięcy temu:",
+              "type": "paragraph"
             },
             {
               "list": [
                 "**Broad audience + Advantage+** — targetowanie zostaw platformie, skup się na kreacji.",
                 "**Kreacja w cyklu tygodniowym** — nie kwartalnym. 30+ wariantów miesięcznie na aktywnych kontach.",
                 "**CAPI + Offline Events + CVO** — trójpak, który odbudowuje jakość signal po ATT."
-              ]
+              ],
+              "type": "list"
             },
             {
-              "p": "Jeśli robisz Meta Ads po staremu i widzisz, że CPA rośnie, a skalowanie się zacięło — prawdopodobnie nie robisz nic źle. Po prostu platforma poszła dalej, a Twój setup został w 2023."
+              "p": "Jeśli robisz Meta Ads po staremu i widzisz, że CPA rośnie, a skalowanie się zacięło — prawdopodobnie nie robisz nic źle. Po prostu platforma poszła dalej, a Twój setup został w 2023.",
+              "type": "paragraph"
             }
           ]
         },
@@ -677,35 +707,44 @@
           "lede": "Rebrand to nie nowe logo. Rebrand to reorganizacja całej komunikacji firmy — a większość firm robi go w najgorszym momencie, z najgorszych powodów. Krótki przewodnik jak tego nie spier... popsuć.",
           "body": [
             {
-              "h": "Kiedy rebrand ma sens"
+              "h": "Kiedy rebrand ma sens",
+              "type": "heading"
             },
             {
-              "p": "Dobra decyzja o rebrandzie ma zawsze jeden z trzech konkretnych powodów — i żadnym z nich nie jest „znudził mi się logotyp\":"
+              "p": "Dobra decyzja o rebrandzie ma zawsze jeden z trzech konkretnych powodów — i żadnym z nich nie jest „znudził mi się logotyp\":",
+              "type": "paragraph"
             },
             {
               "list": [
                 "**Produkt ewoluował.** Założenia biznesowe z dnia startu przestały być aktualne. Jeśli dzisiaj zakładałbyś tę firmę, zrobiłbyś inną markę — to moment.",
                 "**Publiczność się zmieniła.** Dotarłeś do innej grupy, niż ta, pod którą projektowana była marka. Komunikujesz się do sceny B, a identyfikacja wisi w scenie A.",
                 "**Reputacja wymaga resetu.** PR-owy kryzys, zmiana właściciela, fuzja, problemy prawne. Rebrand to wtedy nie kosmetyka, to wyjście z czarnego worka."
-              ]
+              ],
+              "type": "list"
             },
             {
-              "p": "Jeśli żaden z tych trzech — odłóż to. Nowe logo nie naprawi mailingu, który nikt nie otwiera."
+              "p": "Jeśli żaden z tych trzech — odłóż to. Nowe logo nie naprawi mailingu, który nikt nie otwiera.",
+              "type": "paragraph"
             },
             {
-              "h": "Trzy pułapki, w które wpadają wszyscy"
+              "h": "Trzy pułapki, w które wpadają wszyscy",
+              "type": "heading"
             },
             {
-              "p": "**Pułapka 1: rebrand jako ucieczka przed robotą.** Firma ma problem z sprzedażą, z kulturą, z produktem. Zamiast tego rysuje nowe logo. Efekt: za pół roku te same problemy, plus wydane 80 tys. na identyfikację, która nie działa, bo nie miała do czego działać."
+              "p": "**Pułapka 1: rebrand jako ucieczka przed robotą.** Firma ma problem z sprzedażą, z kulturą, z produktem. Zamiast tego rysuje nowe logo. Efekt: za pół roku te same problemy, plus wydane 80 tys. na identyfikację, która nie działa, bo nie miała do czego działać.",
+              "type": "paragraph"
             },
             {
-              "p": "**Pułapka 2: rebrand bez planu wdrożenia.** Nowy system wizualny ląduje w pdf-ie. Pdf idzie do szuflady. Strona internetowa nie ma budżetu. Szyld na biurze został stary. Social media mają nowe colors, ale stare komunikaty. Efekt: firma teraz wygląda chaotycznie zamiast świeżo."
+              "p": "**Pułapka 2: rebrand bez planu wdrożenia.** Nowy system wizualny ląduje w pdf-ie. Pdf idzie do szuflady. Strona internetowa nie ma budżetu. Szyld na biurze został stary. Social media mają nowe colors, ale stare komunikaty. Efekt: firma teraz wygląda chaotycznie zamiast świeżo.",
+              "type": "paragraph"
             },
             {
-              "p": "**Pułapka 3: rebrand po cichu.** Zmiana nikomu nie zakomunikowana, jak gdyby nic się nie stało. Klienci i partnerzy są zdezorientowani, ludzie pytają „zmieniliście się?\". Rebrand, który musi być wytłumaczony w nieskończoność — to rebrand, którego nie dało się uzasadnić."
+              "p": "**Pułapka 3: rebrand po cichu.** Zmiana nikomu nie zakomunikowana, jak gdyby nic się nie stało. Klienci i partnerzy są zdezorientowani, ludzie pytają „zmieniliście się?\". Rebrand, który musi być wytłumaczony w nieskończoność — to rebrand, którego nie dało się uzasadnić.",
+              "type": "paragraph"
             },
             {
-              "h": "Jak robić to dobrze"
+              "h": "Jak robić to dobrze",
+              "type": "heading"
             },
             {
               "list": [
@@ -713,13 +752,16 @@
                 "**Zadbaj o plan wdrożenia przed projektem.** Kto, kiedy, gdzie. Materiały, budżet, harmonogram.",
                 "**Zrób storytelling.** Klienci, pracownicy, partnerzy — każda grupa powinna usłyszeć od Ciebie, dlaczego i co się zmienia.",
                 "**Zaakceptuj, że wszystkim się nie spodoba.** Jeśli chcesz 100% akceptacji — znaczy nie zmieniłeś nic istotnego."
-              ]
+              ],
+              "type": "list"
             },
             {
-              "h": "Checklist pre-rebrand"
+              "h": "Checklist pre-rebrand",
+              "type": "heading"
             },
             {
-              "p": "Zanim wydasz pierwsze 10 tys., odpowiedz sobie: (1) czy problem, który rozwiązuję rebrandem, naprawdę jest problemem wizualnym? (2) czy mam budżet nie tylko na projekt, ale na wdrożenie wszędzie? (3) czy mogę uzasadnić zmianę w jednym zdaniu, pracownikom i klientom? Jeśli na trzy pytania odpowiedź brzmi „tak\", wchodź. Jeśli choć jedno „nie\" — wstrzymaj się."
+              "p": "Zanim wydasz pierwsze 10 tys., odpowiedz sobie: (1) czy problem, który rozwiązuję rebrandem, naprawdę jest problemem wizualnym? (2) czy mam budżet nie tylko na projekt, ale na wdrożenie wszędzie? (3) czy mogę uzasadnić zmianę w jednym zdaniu, pracownikom i klientom? Jeśli na trzy pytania odpowiedź brzmi „tak\", wchodź. Jeśli choć jedno „nie\" — wstrzymaj się.",
+              "type": "paragraph"
             }
           ]
         },
@@ -733,46 +775,60 @@
           "lede": "Metafora funkcjonowania ludzkiego mózgu i zarządzania zadaniami. Na początku dnia plansza jest pusta — łatwo coś ułożyć. Problem zaczyna się, gdy klocki zaczynają spadać szybciej, niż potrafisz je układać.",
           "body": [
             {
-              "h": "Czysta plansza"
+              "h": "Czysta plansza",
+              "type": "heading"
             },
             {
-              "p": "Na początku dnia, gdy nasza „plansza gry\" (czyli umysł i harmonogram) jest czysta i nieobciążona, łatwiej jest podejmować nowe zadania i wyzwania. Nie ma dużej presji czasowej, myślenie jest klarowne i skoncentrowane."
+              "p": "Na początku dnia, gdy nasza „plansza gry\" (czyli umysł i harmonogram) jest czysta i nieobciążona, łatwiej jest podejmować nowe zadania i wyzwania. Nie ma dużej presji czasowej, myślenie jest klarowne i skoncentrowane.",
+              "type": "paragraph"
             },
             {
-              "p": "Tak jak w Tetrisie, gdzie łatwiej układa się klocki na pustej planszy, tak samo w życiu codziennym łatwiej jest rozpoczynać i kończyć zadania, kiedy nasz umysł jest „świeży\" i niezakłócony. Dlatego większość produktywnych ludzi rezerwuje poranek na najtrudniejsze zadania — to czas, gdy plansza jest najbardziej pusta."
+              "p": "Tak jak w Tetrisie, gdzie łatwiej układa się klocki na pustej planszy, tak samo w życiu codziennym łatwiej jest rozpoczynać i kończyć zadania, kiedy nasz umysł jest „świeży\" i niezakłócony. Dlatego większość produktywnych ludzi rezerwuje poranek na najtrudniejsze zadania — to czas, gdy plansza jest najbardziej pusta.",
+              "type": "paragraph"
             },
             {
-              "h": "Napór klocków"
+              "h": "Napór klocków",
+              "type": "heading"
             },
             {
-              "p": "W miarę upływu dnia i napływu nowych zadań, nasza zdolność do efektywnego zarządzania czasem i priorytetami jest wystawiona na próbę. Tak jak w Tetrisie, gdzie pojawiają się nowe klocki z coraz większą szybkością, w życiu codziennym napotykamy na coraz więcej wyzwań i niespodziewanych zadań."
+              "p": "W miarę upływu dnia i napływu nowych zadań, nasza zdolność do efektywnego zarządzania czasem i priorytetami jest wystawiona na próbę. Tak jak w Tetrisie, gdzie pojawiają się nowe klocki z coraz większą szybkością, w życiu codziennym napotykamy na coraz więcej wyzwań i niespodziewanych zadań.",
+              "type": "paragraph"
             },
             {
-              "p": "Jeśli nie radzimy sobie z nimi na bieżąco, „plansza\" zapełnia się, co utrudnia dodawanie nowych elementów bez tworzenia chaosu. To moment, w którym „robiłem dużo, a zrobiłem nic\" staje się codziennością."
+              "p": "Jeśli nie radzimy sobie z nimi na bieżąco, „plansza\" zapełnia się, co utrudnia dodawanie nowych elementów bez tworzenia chaosu. To moment, w którym „robiłem dużo, a zrobiłem nic\" staje się codziennością.",
+              "type": "paragraph"
             },
             {
-              "h": "Przewidywanie > reagowanie"
+              "h": "Przewidywanie > reagowanie",
+              "type": "heading"
             },
             {
-              "p": "Kluczem do sukcesu w „codziennym Tetrisie\" jest nie tylko efektywne zarządzanie bieżącymi zadaniami, ale również umiejętność **przewidywania i planowania**. Odkładanie zadań na później, podobnie jak unikanie podejmowania decyzji w Tetrisie, zwykle prowadzi do „przegranej rundy\" — sytuacji, w której przestajemy mieć kontrolę nad naszymi obowiązkami i czasem."
+              "p": "Kluczem do sukcesu w „codziennym Tetrisie\" jest nie tylko efektywne zarządzanie bieżącymi zadaniami, ale również umiejętność **przewidywania i planowania**. Odkładanie zadań na później, podobnie jak unikanie podejmowania decyzji w Tetrisie, zwykle prowadzi do „przegranej rundy\" — sytuacji, w której przestajemy mieć kontrolę nad naszymi obowiązkami i czasem.",
+              "type": "paragraph"
             },
             {
-              "p": "Dobrzy gracze w Tetrisa nie reagują na klocek, który jest — już planują miejsce dla klocka, który przyjdzie za chwilę. Ludzie, którzy dobrze zarządzają dniem, też nie reagują wyłącznie na to, co ląduje w skrzynce. Mają miejsce zarezerwowane dla tego, co wiadomo, że przyjdzie."
+              "p": "Dobrzy gracze w Tetrisa nie reagują na klocek, który jest — już planują miejsce dla klocka, który przyjdzie za chwilę. Ludzie, którzy dobrze zarządzają dniem, też nie reagują wyłącznie na to, co ląduje w skrzynce. Mają miejsce zarezerwowane dla tego, co wiadomo, że przyjdzie.",
+              "type": "paragraph"
             },
             {
-              "h": "Przerwa = czyszczenie linii"
+              "h": "Przerwa = czyszczenie linii",
+              "type": "heading"
             },
             {
-              "p": "Zarządzanie naszym „codziennym Tetrisem\" wymaga też umiejętności rozpoznawania momentów, gdy warto zrobić krótką przerwę, aby oczyścić umysł i spojrzeć na zadania z nowej perspektywy. Krótki moment odpoczynku to nie strata czasu — to „czyszczenie linii\". Nagle plansza się zmniejsza, widać więcej miejsca, decyzje stają się łatwiejsze."
+              "p": "Zarządzanie naszym „codziennym Tetrisem\" wymaga też umiejętności rozpoznawania momentów, gdy warto zrobić krótką przerwę, aby oczyścić umysł i spojrzeć na zadania z nowej perspektywy. Krótki moment odpoczynku to nie strata czasu — to „czyszczenie linii\". Nagle plansza się zmniejsza, widać więcej miejsca, decyzje stają się łatwiejsze.",
+              "type": "paragraph"
             },
             {
-              "p": "Problem: większość ludzi traktuje przerwy jak zawodnik, który boi się odejść od Tetrisa, bo „klocki dalej spadają\". Paradoks polega na tym, że im dłużej grasz bez przerwy, tym więcej błędów robisz, tym wyższa plansza, tym trudniej ją obniżyć."
+              "p": "Problem: większość ludzi traktuje przerwy jak zawodnik, który boi się odejść od Tetrisa, bo „klocki dalej spadają\". Paradoks polega na tym, że im dłużej grasz bez przerwy, tym więcej błędów robisz, tym wyższa plansza, tym trudniej ją obniżyć.",
+              "type": "paragraph"
             },
             {
-              "h": "Podsumowanie"
+              "h": "Podsumowanie",
+              "type": "heading"
             },
             {
-              "p": "Metafora „codziennego Tetrisa\" podkreśla znaczenie efektywnego zarządzania czasem, priorytetami i zdolności adaptacyjnych. Kluczem jest nie tylko radzenie sobie z bieżącymi zadaniami, ale elastyczność umysłu, pozwalająca dostosować się do zmieniających się warunków."
+              "p": "Metafora „codziennego Tetrisa\" podkreśla znaczenie efektywnego zarządzania czasem, priorytetami i zdolności adaptacyjnych. Kluczem jest nie tylko radzenie sobie z bieżącymi zadaniami, ale elastyczność umysłu, pozwalająca dostosować się do zmieniających się warunków.",
+              "type": "paragraph"
             },
             {
               "list": [
@@ -780,7 +836,8 @@
                 "Nie reaguj wyłącznie na to, co przyszło teraz — planuj miejsce na to, co przyjdzie.",
                 "Rób przerwy zanim tego potrzebujesz, nie gdy już musisz.",
                 "Naucz się rozpoznawać, kiedy Twoja plansza jest za wysoka — i co wtedy odłożyć."
-              ]
+              ],
+              "type": "list"
             }
           ]
         }
@@ -1451,19 +1508,24 @@
           "lede": "Generating a content calendar isn't strategy. Publishing \"because we have to\" costs the same as publishing on purpose — and delivers zero. How to tell motion from progress.",
           "body": [
             {
-              "h": "Motion ≠ progress"
+              "h": "Motion ≠ progress",
+              "type": "heading"
             },
             {
-              "p": "Most marketing teams we've seen share one denominator: lots of motion, little progress. Campaign after campaign, reel after reel, a newsletter every Tuesday. Behind it all — no answer to a simple question: **why?**"
+              "p": "Most marketing teams we've seen share one denominator: lots of motion, little progress. Campaign after campaign, reel after reel, a newsletter every Tuesday. Behind it all — no answer to a simple question: **why?**",
+              "type": "paragraph"
             },
             {
-              "p": "The mechanism is beautifully self-sustaining. Social generates content that fuels more content. Campaigns generate data that justifies more campaigns. The whole system orbits itself, and the only product is more TODOs."
+              "p": "The mechanism is beautifully self-sustaining. Social generates content that fuels more content. Campaigns generate data that justifies more campaigns. The whole system orbits itself, and the only product is more TODOs.",
+              "type": "paragraph"
             },
             {
-              "h": "What marketing-for-its-own-sake looks like"
+              "h": "What marketing-for-its-own-sake looks like",
+              "type": "heading"
             },
             {
-              "p": "It's when **doing** gets confused with the goal. Symptoms:"
+              "p": "It's when **doing** gets confused with the goal. Symptoms:",
+              "type": "paragraph"
             },
             {
               "list": [
@@ -1472,34 +1534,43 @@
                 "Every campaign described as a success, \"because reach grew\".",
                 "Reports nobody reads — made only because \"the client likes reports\".",
                 "New initiatives stacked without removing the old ones — because no-one dares say what stopped working."
-              ]
+              ],
+              "type": "list"
             },
             {
-              "h": "Two-question test"
+              "h": "Two-question test",
+              "type": "heading"
             },
             {
-              "p": "Every time your team (or you) starts planning a new thing, ask:"
+              "p": "Every time your team (or you) starts planning a new thing, ask:",
+              "type": "paragraph"
             },
             {
               "list": [
                 "**Which concrete business goal does this support?** Not \"brand building\", not \"engagement\". Concrete: more inquiries in segment X, lower CAC in channel Y, higher cart value.",
                 "**How will I know if it worked?** If the answer is \"we'll see\", you're guessing."
-              ]
+              ],
+              "type": "list"
             },
             {
-              "p": "If you can't answer either — pause. Not because it's bad. Because you're doing it out of habit, not decision."
+              "p": "If you can't answer either — pause. Not because it's bad. Because you're doing it out of habit, not decision.",
+              "type": "paragraph"
             },
             {
-              "h": "Turn campaigns into hypotheses"
+              "h": "Turn campaigns into hypotheses",
+              "type": "heading"
             },
             {
-              "p": "Instead of a \"brand campaign\", plan hypothesis tests. Every marketing action is essentially a bet on reality: _I believe that if I show X to group Y, Z will happen_. If you can write that sentence — you have a campaign. If you can't — you have an expense."
+              "p": "Instead of a \"brand campaign\", plan hypothesis tests. Every marketing action is essentially a bet on reality: _I believe that if I show X to group Y, Z will happen_. If you can write that sentence — you have a campaign. If you can't — you have an expense.",
+              "type": "paragraph"
             },
             {
-              "h": "Less, sharper, louder"
+              "h": "Less, sharper, louder",
+              "type": "heading"
             },
             {
-              "p": "Real growth at most companies we've worked with didn't come from adding another channel. It came from **cutting three things** that didn't work and reinvesting those budgets into one thing that started to. Discipline is invisible — it's about what you don't do."
+              "p": "Real growth at most companies we've worked with didn't come from adding another channel. It came from **cutting three things** that didn't work and reinvesting those budgets into one thing that started to. Discipline is invisible — it's about what you don't do.",
+              "type": "paragraph"
             }
           ]
         },
@@ -1513,44 +1584,56 @@
           "lede": "ATT is old news. Over the last 18 months the Meta Ads landscape went through three fundamental shifts. A quick recap for marketers who don't re-learn the platform every quarter.",
           "body": [
             {
-              "h": "Advantage+ is the default now"
+              "h": "Advantage+ is the default now",
+              "type": "heading"
             },
             {
-              "p": "Advantage+ Shopping and Lead Generation moved from experimental to default. The platform picks creative, placements and audiences itself — and manual setups mostly yield worse CPA."
+              "p": "Advantage+ Shopping and Lead Generation moved from experimental to default. The platform picks creative, placements and audiences itself — and manual setups mostly yield worse CPA.",
+              "type": "paragraph"
             },
             {
-              "p": "Consequence: narrow manual targeting (1% lookalike, precise interests) increasingly loses to \"show Meta a goal and a creative pile, let it do the math\"."
+              "p": "Consequence: narrow manual targeting (1% lookalike, precise interests) increasingly loses to \"show Meta a goal and a creative pile, let it do the math\".",
+              "type": "paragraph"
             },
             {
-              "h": "Creative is the new targeting"
+              "h": "Creative is the new targeting",
+              "type": "heading"
             },
             {
-              "p": "In a world where Meta picks audiences, **the only lever left is creative**. Accounts feeding the platform 30–50 fresh variants per month (hooks, formats, product angles) scale. Accounts running 3 creatives per month don't."
+              "p": "In a world where Meta picks audiences, **the only lever left is creative**. Accounts feeding the platform 30–50 fresh variants per month (hooks, formats, product angles) scale. Accounts running 3 creatives per month don't.",
+              "type": "paragraph"
             },
             {
-              "p": "Big shift in agency resource allocation. Pre-2024: 70% of the time on targeting, 30% on creative. Today: flipped."
+              "p": "Big shift in agency resource allocation. Pre-2024: 70% of the time on targeting, 30% on creative. Today: flipped.",
+              "type": "paragraph"
             },
             {
-              "h": "CAPI and the offline customer"
+              "h": "CAPI and the offline customer",
+              "type": "heading"
             },
             {
-              "p": "After iOS 14.5+ and the pixel-signal decay, **Conversions API (CAPI)** from the server is a minimum. Accounts that have it see 20–40% more conversions than pixel-only setups. That's not a bonus — that's closing the post-ATT gap."
+              "p": "After iOS 14.5+ and the pixel-signal decay, **Conversions API (CAPI)** from the server is a minimum. Accounts that have it see 20–40% more conversions than pixel-only setups. That's not a bonus — that's closing the post-ATT gap.",
+              "type": "paragraph"
             },
             {
-              "p": "Layer in Offline Events (CRM → Meta), Customer Value Optimization (optimize for LTV, not CPA) — and you start to see the market the way you see it, not the way the browser sees it."
+              "p": "Layer in Offline Events (CRM → Meta), Customer Value Optimization (optimize for LTV, not CPA) — and you start to see the market the way you see it, not the way the browser sees it.",
+              "type": "paragraph"
             },
             {
-              "h": "What's working in 2026"
+              "h": "What's working in 2026",
+              "type": "heading"
             },
             {
               "list": [
                 "**Broad audience + Advantage+** — let the platform target, focus on creative.",
                 "**Creative on a weekly cadence** — not quarterly. 30+ variants per month on active accounts.",
                 "**CAPI + Offline Events + CVO** — the trio that rebuilds post-ATT signal quality."
-              ]
+              ],
+              "type": "list"
             },
             {
-              "p": "If you're running Meta Ads the old way and CPA is climbing, scaling is stuck — you're probably not doing anything wrong. The platform moved on, your setup stayed in 2023."
+              "p": "If you're running Meta Ads the old way and CPA is climbing, scaling is stuck — you're probably not doing anything wrong. The platform moved on, your setup stayed in 2023.",
+              "type": "paragraph"
             }
           ]
         },
@@ -1564,35 +1647,44 @@
           "lede": "A rebrand isn't a new logo. It's reorganizing the company's entire communication — and most companies do it at the worst moment, for the worst reasons. A short guide on how not to screw it up.",
           "body": [
             {
-              "h": "When rebrand makes sense"
+              "h": "When rebrand makes sense",
+              "type": "heading"
             },
             {
-              "p": "A good rebrand decision has one of three concrete reasons — and \"I'm bored of the logo\" is none of them:"
+              "p": "A good rebrand decision has one of three concrete reasons — and \"I'm bored of the logo\" is none of them:",
+              "type": "paragraph"
             },
             {
               "list": [
                 "**Product evolved.** Your day-one assumptions no longer hold. If you started this company today you'd build a different brand — that's the signal.",
                 "**Audience shifted.** You're reaching a different group than the one the brand was designed for. Communicating to Stage B while the identity hangs in Stage A.",
                 "**Reputation needs a reset.** PR crisis, ownership change, merger, legal trouble. Rebrand is then not cosmetic — it's getting out of the dark bag."
-              ]
+              ],
+              "type": "list"
             },
             {
-              "p": "None of these three? Put it down. A new logo won't fix the mailing list nobody opens."
+              "p": "None of these three? Put it down. A new logo won't fix the mailing list nobody opens.",
+              "type": "paragraph"
             },
             {
-              "h": "Three traps everyone falls into"
+              "h": "Three traps everyone falls into",
+              "type": "heading"
             },
             {
-              "p": "**Trap 1: rebrand as escape from actual work.** Company has sales, culture, product problems. Instead it draws a new logo. Result: six months later, same problems + 80k spent on identity that doesn't work, because it had nothing to work for."
+              "p": "**Trap 1: rebrand as escape from actual work.** Company has sales, culture, product problems. Instead it draws a new logo. Result: six months later, same problems + 80k spent on identity that doesn't work, because it had nothing to work for.",
+              "type": "paragraph"
             },
             {
-              "p": "**Trap 2: rebrand without a rollout plan.** New system lands in a pdf. Pdf sits in a drawer. No website budget. Old signage. Social has new colors but old messages. Company now looks chaotic instead of fresh."
+              "p": "**Trap 2: rebrand without a rollout plan.** New system lands in a pdf. Pdf sits in a drawer. No website budget. Old signage. Social has new colors but old messages. Company now looks chaotic instead of fresh.",
+              "type": "paragraph"
             },
             {
-              "p": "**Trap 3: silent rebrand.** No communication to anyone. Customers and partners confused, people asking \"did you change?\" A rebrand that needs endless explanation is a rebrand that couldn't be justified."
+              "p": "**Trap 3: silent rebrand.** No communication to anyone. Customers and partners confused, people asking \"did you change?\" A rebrand that needs endless explanation is a rebrand that couldn't be justified.",
+              "type": "paragraph"
             },
             {
-              "h": "How to do it right"
+              "h": "How to do it right",
+              "type": "heading"
             },
             {
               "list": [
@@ -1600,7 +1692,8 @@
                 "**Plan the rollout before the design.** Who, when, where. Assets, budget, timeline.",
                 "**Do the storytelling.** Customers, staff, partners — each group should hear from you why and what changes.",
                 "**Accept not everyone will like it.** If you want 100% approval, you changed nothing meaningful."
-              ]
+              ],
+              "type": "list"
             }
           ]
         },
@@ -1614,37 +1707,48 @@
           "lede": "A metaphor for the human brain and task management. Early in the day the board is empty — easy to place a block. The problem starts when blocks drop faster than you can fit them in.",
           "body": [
             {
-              "h": "Empty board"
+              "h": "Empty board",
+              "type": "heading"
             },
             {
-              "p": "At the start of the day, when our \"game board\" (mind + schedule) is empty and unburdened, it's easier to take on new tasks and challenges. No time pressure, thinking is clear and focused."
+              "p": "At the start of the day, when our \"game board\" (mind + schedule) is empty and unburdened, it's easier to take on new tasks and challenges. No time pressure, thinking is clear and focused.",
+              "type": "paragraph"
             },
             {
-              "p": "Like in Tetris, where it's easier to stack pieces on an empty board, in daily life it's easier to start and finish tasks when our mind is \"fresh\" and undisturbed. That's why most productive people reserve the morning for their hardest work — that's when the board is most empty."
+              "p": "Like in Tetris, where it's easier to stack pieces on an empty board, in daily life it's easier to start and finish tasks when our mind is \"fresh\" and undisturbed. That's why most productive people reserve the morning for their hardest work — that's when the board is most empty.",
+              "type": "paragraph"
             },
             {
-              "h": "The flood of blocks"
+              "h": "The flood of blocks",
+              "type": "heading"
             },
             {
-              "p": "As the day progresses and new tasks flow in, our ability to manage time and priorities gets tested. Like in Tetris where new pieces come faster and faster, in daily life we face more and more challenges and unexpected tasks."
+              "p": "As the day progresses and new tasks flow in, our ability to manage time and priorities gets tested. Like in Tetris where new pieces come faster and faster, in daily life we face more and more challenges and unexpected tasks.",
+              "type": "paragraph"
             },
             {
-              "p": "If we don't handle them in real time, the \"board\" fills up, and adding new pieces without chaos gets harder. That's when \"I did a lot and got nothing done\" becomes the daily mode."
+              "p": "If we don't handle them in real time, the \"board\" fills up, and adding new pieces without chaos gets harder. That's when \"I did a lot and got nothing done\" becomes the daily mode.",
+              "type": "paragraph"
             },
             {
-              "h": "Anticipation > reaction"
+              "h": "Anticipation > reaction",
+              "type": "heading"
             },
             {
-              "p": "The key to \"daily Tetris\" isn't just managing current tasks — it's **anticipation and planning**. Postponing, like avoiding decisions in Tetris, usually ends in a lost round: you stop controlling your obligations and your time."
+              "p": "The key to \"daily Tetris\" isn't just managing current tasks — it's **anticipation and planning**. Postponing, like avoiding decisions in Tetris, usually ends in a lost round: you stop controlling your obligations and your time.",
+              "type": "paragraph"
             },
             {
-              "p": "Good Tetris players don't react to the piece that's falling — they're already planning a spot for the one that comes next. People who manage their day well don't react only to what's in the inbox. They've got space reserved for what's known to be coming."
+              "p": "Good Tetris players don't react to the piece that's falling — they're already planning a spot for the one that comes next. People who manage their day well don't react only to what's in the inbox. They've got space reserved for what's known to be coming.",
+              "type": "paragraph"
             },
             {
-              "h": "A break = clearing a line"
+              "h": "A break = clearing a line",
+              "type": "heading"
             },
             {
-              "p": "Managing your \"daily Tetris\" also requires knowing when to take a short break, to clear the mind and see tasks from a new angle. A short rest isn't a waste — it's \"clearing a line\". Suddenly the board shrinks, there's more room, decisions get easier."
+              "p": "Managing your \"daily Tetris\" also requires knowing when to take a short break, to clear the mind and see tasks from a new angle. A short rest isn't a waste — it's \"clearing a line\". Suddenly the board shrinks, there's more room, decisions get easier.",
+              "type": "paragraph"
             }
           ]
         }

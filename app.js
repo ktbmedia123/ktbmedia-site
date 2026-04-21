@@ -244,7 +244,7 @@ function SmartLink({
 const NAV_TARGETS = ["#services", "/realizacje", "#process", "/o-nas", "/blog", "/kontakt"];
 function useSEO(lang, path) {
   useEffect(() => {
-    const base = lang === 'pl' ? 'KTB Media — Agencja marketingowa 360 Gdańsk' : 'KTB Media — Full-service marketing agency Gdańsk';
+    const base = lang === 'pl' ? 'KTB Media — Agencja marketingowa Gdańsk, Pruszcz Gdański, Tczew | Marketing dla motoryzacji' : 'KTB Media — Marketing agency Gdańsk | Automotive marketing specialists';
     let meta;
     if (path.startsWith('/realizacje/')) {
       const slug = path.slice('/realizacje/'.length).replace(/\/$/, '');
@@ -262,23 +262,23 @@ function useSEO(lang, path) {
       };
     } else if (path === '/realizacje') {
       meta = {
-        title: (lang === 'pl' ? 'Realizacje' : 'Selected work') + ' · KTB Media',
-        desc: lang === 'pl' ? 'Case studies KTB Media.' : 'KTB Media case studies.'
+        title: (lang === 'pl' ? 'Realizacje — case studies marketingu motoryzacji i marek lokalnych' : 'Selected work — automotive and local brand case studies') + ' · KTB Media',
+        desc: lang === 'pl' ? 'Wybrane realizacje KTB Media — warsztaty samochodowe, serwisy, marki automotive, firmy z Gdańska i Trójmiasta.' : 'KTB Media case studies — automotive workshops, service stations, brands from Gdańsk and Tri-City.'
       };
     } else if (path === '/blog') {
       meta = {
-        title: (lang === 'pl' ? 'Blog' : 'Journal') + ' · KTB Media',
-        desc: lang === 'pl' ? 'Artykuły KTB Media o marketingu.' : 'KTB Media marketing journal.'
+        title: (lang === 'pl' ? 'Blog — marketing dla motoryzacji, SEO lokalne Gdańsk' : 'Journal — automotive marketing, local SEO Gdańsk') + ' · KTB Media',
+        desc: lang === 'pl' ? 'Artykuły KTB Media o marketingu dla warsztatów, SEO lokalnym Gdańsk/Pruszcz Gdański/Tczew i strategii marki.' : 'KTB Media marketing journal — automotive, local SEO, brand strategy.'
       };
     } else if (path === '/o-nas') {
       meta = {
-        title: (lang === 'pl' ? 'O nas' : 'About') + ' · KTB Media',
-        desc: lang === 'pl' ? 'Poznaj KTB Media i założycieli agencji.' : 'Meet KTB Media and the founders.'
+        title: (lang === 'pl' ? 'O nas — agencja marketingowa Pruszcz Gdański / Gdańsk' : 'About — marketing agency Pruszcz Gdański / Gdańsk') + ' · KTB Media',
+        desc: lang === 'pl' ? 'Poznaj założycieli KTB Media — agencji marketingowej z Pruszcza Gdańskiego obsługującej Gdańsk, Tczew i całe Trójmiasto.' : 'Meet the KTB Media founders — marketing agency from Pruszcz Gdański serving Gdańsk, Tczew and Tri-City.'
       };
     } else if (path === '/kontakt') {
       meta = {
-        title: (lang === 'pl' ? 'Kontakt — darmowa wycena' : 'Contact — free quote') + ' · KTB Media',
-        desc: lang === 'pl' ? 'Napisz do KTB Media. Darmowa wycena marketingu w 24h.' : 'Contact KTB Media. Free marketing quote within 24h.'
+        title: (lang === 'pl' ? 'Kontakt — darmowa wycena marketingu Gdańsk' : 'Contact — free marketing quote Gdańsk') + ' · KTB Media',
+        desc: lang === 'pl' ? 'Napisz do KTB Media — agencji marketingowej z Pruszcza Gdańskiego obsługującej Gdańsk, Tczew, Trójmiasto. Darmowa wycena w 24h.' : 'Contact KTB Media — marketing agency near Gdańsk. Free quote within 24h.'
       };
     } else if (path === '/polityka-prywatnosci' || path === '/privacy-policy') {
       meta = {
@@ -288,7 +288,7 @@ function useSEO(lang, path) {
     } else {
       meta = {
         title: base,
-        desc: lang === 'pl' ? 'Agencja marketingowa 360 z Pruszcza Gdańskiego. Strategia, branding, performance, SEO, web. Est. 2022.' : 'Full-service marketing agency near Gdańsk, Poland. Est. 2022.'
+        desc: lang === 'pl' ? 'Agencja marketingowa Gdańsk, Pruszcz Gdański, Tczew. Specjalizacja: marketing dla motoryzacji i warsztatów samochodowych. Google Ads, Meta Ads, SEO lokalne, strony WWW. Od 2022.' : 'Marketing agency in Pruszcz Gdański (near Gdańsk). Automotive & workshop specialists. Google Ads, Meta Ads, local SEO, web dev. Est. 2022.'
       };
     }
     document.title = meta.title;
