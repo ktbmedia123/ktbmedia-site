@@ -1293,45 +1293,43 @@ function ContactForm({
       services: fresh
     }));
   }, [lang]);
+  const encode = data => Object.keys(data).map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])).join('&');
   const onSubmit = async e => {
     e.preventDefault();
     setSending(true);
     setError('');
-    const selectedServices = Object.entries(form.services).filter(([, v]) => !!v).map(([k]) => k);
-    const payload = new URLSearchParams();
-    payload.append('form-name', 'quote-request');
-    payload.append('name', form.name);
-    payload.append('company', form.company || '');
-    payload.append('email', form.email);
-    payload.append('budget', form.budget || '');
-    payload.append('services', selectedServices.join(', '));
-    payload.append('message', form.message || '');
-    payload.append('lang', lang);
+    const selectedServices = Object.keys(form.services).filter(name => form.services[name]).join(', ');
+    const payload = {
+      'form-name': 'quote-request',
+      name: form.name,
+      company: form.company,
+      email: form.email,
+      budget: form.budget,
+      message: form.message,
+      services: selectedServices,
+      page: window.location.pathname,
+      lang
+    };
     try {
       const res = await fetch('/', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        body: payload.toString()
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode(payload)
       });
-      if (!res.ok) throw new Error('send_failed');
+      if (!res.ok) throw new Error('HTTP ' + res.status);
       setSent(true);
-      setTimeout(() => setSent(false), 6000);
-      const fresh = {};
-      (c.form.serviceGroups || []).forEach(g => g.items.forEach(it => {
-        fresh[it] = false;
-      }));
       setForm({
         name: '',
         email: '',
         company: '',
         budget: c.form.budgetOpts[0],
         message: '',
-        services: fresh
+        services: Object.fromEntries(Object.keys(form.services).map(k => [k, false]))
       });
+      setTimeout(() => setSent(false), 5000);
     } catch (err) {
-      setError(lang === 'pl' ? 'Nie udało się wysłać formularza. Napisz bezpośrednio na media@ktbmedia.eu.' : 'The form could not be sent. Please email media@ktbmedia.eu directly.');
+      console.error(err);
+      setError(lang === 'pl' ? 'Nie udało się wysłać formularza. Napisz na media@ktbmedia.eu.' : 'Form submission failed. Please email media@ktbmedia.eu.');
     } finally {
       setSending(false);
     }
@@ -1345,8 +1343,19 @@ function ContactForm({
   }));
   return /*#__PURE__*/React.createElement("form", {
     className: "contact-form contact-form-quote light reveal",
+    name: "quote-request",
+    method: "POST",
+    "data-netlify": "true",
+    "data-netlify-honeypot": "bot-field",
     onSubmit: onSubmit
-  }, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("input", {
+    type: "hidden",
+    name: "form-name",
+    value: "quote-request"
+  }), /*#__PURE__*/React.createElement("input", {
+    type: "hidden",
+    name: "bot-field"
+  }), /*#__PURE__*/React.createElement("div", {
     className: "quote-heading"
   }, /*#__PURE__*/React.createElement("div", {
     className: "quote-eyebrow mono"
@@ -1371,6 +1380,8 @@ function ContactForm({
   }, /*#__PURE__*/React.createElement("input", {
     type: "checkbox",
     checked: !!form.services[it],
+    name: "services",
+    value: it,
     onChange: () => toggleService(it)
   }), /*#__PURE__*/React.createElement("span", {
     className: "check-box"
@@ -1381,6 +1392,7 @@ function ContactForm({
   }, /*#__PURE__*/React.createElement("div", {
     className: "field"
   }, /*#__PURE__*/React.createElement("label", null, c.form.name), /*#__PURE__*/React.createElement("input", {
+    name: "name",
     value: form.name,
     onChange: e => setForm({
       ...form,
@@ -1390,6 +1402,7 @@ function ContactForm({
   })), /*#__PURE__*/React.createElement("div", {
     className: "field"
   }, /*#__PURE__*/React.createElement("label", null, c.form.company), /*#__PURE__*/React.createElement("input", {
+    name: "company",
     value: form.company,
     onChange: e => setForm({
       ...form,
@@ -1401,6 +1414,7 @@ function ContactForm({
     className: "field"
   }, /*#__PURE__*/React.createElement("label", null, c.form.email), /*#__PURE__*/React.createElement("input", {
     type: "email",
+    name: "email",
     value: form.email,
     onChange: e => setForm({
       ...form,
@@ -1410,6 +1424,7 @@ function ContactForm({
   })), /*#__PURE__*/React.createElement("div", {
     className: "field"
   }, /*#__PURE__*/React.createElement("label", null, c.form.budget), /*#__PURE__*/React.createElement("select", {
+    name: "budget",
     value: form.budget,
     onChange: e => setForm({
       ...form,
@@ -1421,6 +1436,7 @@ function ContactForm({
   }, o))))), /*#__PURE__*/React.createElement("div", {
     className: "field"
   }, /*#__PURE__*/React.createElement("label", null, c.form.message), /*#__PURE__*/React.createElement("textarea", {
+    name: "message",
     value: form.message,
     onChange: e => setForm({
       ...form,
@@ -1429,10 +1445,16 @@ function ContactForm({
     rows: "3"
   })), /*#__PURE__*/React.createElement("button", {
     type: "submit",
-    className: "submit"
-  }, c.form.submit), /*#__PURE__*/React.createElement("div", {
+    className: "submit",
+    disabled: sending
+  }, sending ? (lang === 'pl' ? 'Wysyłanie…' : 'Sending…') : c.form.submit), /*#__PURE__*/React.createElement("div", {
     className: "success"
-  }, sent ? c.form.success : ''));
+  }, sent ? c.form.success : ''), /*#__PURE__*/React.createElement("div", {
+    className: "success",
+    style: {
+      color: '#ffb4b4'
+    }
+  }, error || ''));
 }
 function ContactPage({
   lang
