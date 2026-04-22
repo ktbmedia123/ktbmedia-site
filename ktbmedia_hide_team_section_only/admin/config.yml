@@ -1,0 +1,760 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: false
+media_folder: assets/uploads
+public_folder: /assets/uploads
+site_url: https://ktbmedia.eu
+display_url: https://ktbmedia.eu
+show_preview_links: false
+logo_url: /assets/logo.png
+
+slug:
+  encoding: ascii
+  clean_accents: true
+
+# =============================================================================
+# Pola są definiowane raz dla PL i lustrzanie dla EN. Struktura odpowiada
+# site.json który jest mergowany z content.js po stronie klienta.
+# Struktura bloku to anchory YAML - _pl_fields jest definiowane przy pl i
+# referowane przy en jako <<: *pl_fields ? NIE, Decap nie ewaluuje YAML anchorów
+# w niektórych wersjach. Duplikujemy ręcznie żeby mieć gwarancję.
+# =============================================================================
+
+collections:
+  - name: site
+    label: Strona
+    label_singular: Treści strony
+    delete: false
+    editor:
+      preview: false
+    files:
+      - label: Wszystkie treści strony
+        name: homepage
+        file: content/site.json
+        format: json
+        fields:
+
+          # ================== POLSKI ==================
+          - label: "🇵🇱 Polski"
+            name: pl
+            widget: object
+            collapsed: true
+            fields:
+              - label: Nawigacja
+                name: nav
+                widget: list
+                summary: '{{fields.value}}'
+                field: { label: Pozycja, name: value, widget: string }
+
+              - { label: Główny CTA w menu, name: cta, widget: string }
+
+              # HERO
+              - label: Hero (sekcja startowa)
+                name: hero
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Nadtytuł, name: eyebrow, widget: string }
+                  - { label: Tytuł 1, name: title1, widget: string }
+                  - { label: Tytuł 2, name: title2, widget: string }
+                  - { label: Wyróżnienie kursywą, name: titleIt, widget: string }
+                  - { label: Tytuł 3, name: title3, widget: string }
+                  - { label: Lead (wstęp), name: lede, widget: text }
+                  - { label: CTA 1, name: cta1, widget: string }
+                  - { label: CTA 2, name: cta2, widget: string }
+                  - label: Statystyki
+                    name: metrics
+                    widget: list
+                    summary: '{{fields.k}}: {{fields.v}}'
+                    fields:
+                      - { label: Etykieta, name: k, widget: string }
+                      - { label: Wartość, name: v, widget: string }
+                      - { label: Duży format, name: big, widget: boolean, required: false, default: false }
+
+              # MARQUEE
+              - label: Pasek przewijany (marquee)
+                name: marquee
+                widget: list
+                summary: '{{fields.value}}'
+                field: { label: Hasło, name: value, widget: string }
+
+              # SERVICES
+              - label: Usługi
+                name: services
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Etykieta sekcji, name: label, widget: string }
+                  - { label: Tytuł 1, name: title1, widget: string }
+                  - { label: Wyróżnienie kursywą, name: titleIt, widget: string }
+                  - label: Pozycje usług
+                    name: items
+                    widget: list
+                    summary: '{{fields.n}} {{fields.t}} {{fields.tIt}}'
+                    fields:
+                      - { label: Numer, name: n, widget: string }
+                      - { label: Tytuł 1, name: t, widget: string }
+                      - { label: Tytuł 2, name: tIt, widget: string, required: false }
+                      - { label: Opis, name: d, widget: text }
+
+              # ABOUT
+              - label: O nas
+                name: about
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Etykieta sekcji, name: label, widget: string }
+                  - { label: Tytuł 1, name: title1, widget: string }
+                  - { label: Wyróżnienie kursywą, name: titleIt, widget: string }
+                  - { label: Tytuł 2, name: title2, widget: string }
+                  - { label: Lead, name: lede, widget: text }
+                  - { label: Wyróżnione słowo, name: ledeAccent, widget: string }
+                  - label: Argumenty
+                    name: features
+                    widget: list
+                    summary: '{{fields.k}} {{fields.t}}'
+                    fields:
+                      - { label: Litera, name: k, widget: string }
+                      - { label: Tytuł, name: t, widget: string }
+                      - { label: Opis, name: d, widget: text }
+                  - { label: Cytat, name: quote, widget: text }
+                  - { label: Wyróżnienie w cytacie, name: quoteAccent, widget: string }
+                  - { label: Podpis cytatu, name: cap, widget: string }
+
+              # SHOWCASE
+              - label: Prezentacja (3 bloki)
+                name: showcase
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Etykieta sekcji, name: label, widget: string }
+                  - label: Bloki
+                    name: blocks
+                    widget: list
+                    summary: '{{fields.eyebrow}} — {{fields.title1}}'
+                    fields:
+                      - { label: Nadtytuł, name: eyebrow, widget: string }
+                      - { label: Tytuł 1, name: title1, widget: string }
+                      - { label: Wyróżnienie (akcent), name: titleAccent, widget: string }
+                      - { label: Tytuł 2, name: title2, widget: string }
+                      - { label: Treść, name: body, widget: text }
+                      - { label: Obraz, name: image, widget: image, required: false }
+                      - { label: Alt obrazu, name: imageAlt, widget: string, required: false }
+                      - { label: Placeholder (fallback label), name: placeholderLabel, widget: string, required: false }
+
+              # PROCESS
+              - label: Proces współpracy
+                name: process
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Etykieta sekcji, name: label, widget: string }
+                  - { label: Tytuł 1, name: title1, widget: string }
+                  - { label: Wyróżnienie kursywą, name: titleIt, widget: string }
+                  - { label: Tytuł 2, name: title2, widget: string }
+                  - label: Kroki
+                    name: steps
+                    widget: list
+                    summary: '{{fields.n}} {{fields.t}}'
+                    fields:
+                      - { label: Numer, name: n, widget: string }
+                      - { label: Nazwa kroku, name: t, widget: string }
+                      - { label: Opis, name: d, widget: text }
+
+              # PORTFOLIO
+              - label: Portfolio — realizacje
+                name: portfolio
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Etykieta sekcji, name: label, widget: string }
+                  - { label: Tytuł 1, name: title1, widget: string }
+                  - { label: Wyróżnienie kursywą, name: titleIt, widget: string }
+                  - { label: Lead, name: lede, widget: text }
+                  - label: Klienci / case studies
+                    name: items
+                    widget: list
+                    summary: '{{fields.num}} · {{fields.title1}} {{fields.titleIt}}'
+                    fields:
+                      - { label: Numer (np. "01"), name: num, widget: string }
+                      - { label: Slug (URL), name: slug, widget: string, hint: 'Użyje się w /realizacje/SLUG' }
+                      - { label: Tytuł 1 (bold), name: title1, widget: string }
+                      - { label: Tytuł 2 (italic), name: titleIt, widget: string }
+                      - { label: Tag (Performance · Brand · itd.), name: tag, widget: string }
+                      - { label: Rok, name: year, widget: string }
+                      - { label: Placeholder (wewnętrzna nazwa grafiki), name: ph, widget: string, required: false }
+                      - { label: Brief (skrót), name: brief, widget: text }
+                      - { label: Wyzwanie, name: challenge, widget: text }
+                      - { label: Rozwiązanie / podejście, name: solution, widget: text }
+                      - label: Wyniki (liczby)
+                        name: results
+                        widget: list
+                        summary: '{{fields.k}}: {{fields.v}}'
+                        fields:
+                          - { label: Opis, name: k, widget: string }
+                          - { label: Wartość, name: v, widget: string }
+                      - label: Paleta kolorów (4 HEX)
+                        name: palette
+                        widget: list
+                        field: { label: Kolor HEX, name: color, widget: string }
+                      - label: Obrazy (3 sztuki)
+                        name: images
+                        widget: list
+                        field: { label: Obraz, name: image, widget: image }
+                      - label: Notatki z procesu
+                        name: notes
+                        widget: list
+                        required: false
+                        field: { label: Notatka, name: note, widget: string }
+
+              # TESTIMONIALS
+              - label: Opinie klientów
+                name: testi
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Etykieta sekcji, name: label, widget: string }
+                  - { label: Tytuł 1, name: title1, widget: string }
+                  - { label: Wyróżnienie kursywą, name: titleIt, widget: string }
+                  - label: Opinie
+                    name: items
+                    widget: list
+                    summary: '{{fields.name}} · {{fields.co}}'
+                    fields:
+                      - { label: Treść opinii, name: q, widget: text }
+                      - { label: Imię i nazwisko, name: name, widget: string }
+                      - { label: Firma / rola, name: co, widget: string }
+
+              # TEAM
+              - label: Zespół / Założyciele
+                name: team
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Etykieta sekcji, name: label, widget: string }
+                  - { label: Tytuł 1, name: title1, widget: string }
+                  - { label: Wyróżnienie kursywą, name: titleIt, widget: string }
+                  - { label: Lead, name: lede, widget: text }
+                  - label: Osoby
+                    name: items
+                    widget: list
+                    summary: '{{fields.name}} — {{fields.role}}'
+                    fields:
+                      - { label: Inicjały, name: init, widget: string }
+                      - { label: Imię i nazwisko, name: name, widget: string }
+                      - { label: Rola (bold), name: role, widget: string }
+                      - { label: Rola (italic), name: roleIt, widget: string }
+                      - { label: Zdjęcie 1, name: photo1, widget: image, required: false }
+                      - { label: Zdjęcie 2 (cross-fade na hover), name: photo2, widget: image, required: false }
+                      - { label: Bio, name: bio, widget: text }
+
+              # PRICING
+              - label: Cennik
+                name: pricing
+                widget: object
+                collapsed: true
+                required: false
+                fields:
+                  - { label: Etykieta sekcji, name: label, widget: string }
+                  - { label: Tytuł 1, name: title1, widget: string }
+                  - { label: Wyróżnienie kursywą, name: titleIt, widget: string }
+                  - { label: Lead, name: lede, widget: text }
+                  - label: Plany / pakiety
+                    name: plans
+                    widget: list
+                    summary: '{{fields.t}} — {{fields.amt}}'
+                    fields:
+                      - { label: Badge (np. "Najczęściej wybierany"), name: k, widget: string, required: false }
+                      - { label: Tytuł planu, name: t, widget: string }
+                      - { label: Tytuł italic, name: tIt, widget: string, required: false }
+                      - { label: Kwota, name: amt, widget: string }
+                      - { label: Okres (/miesiąc, /projekt itp.), name: per, widget: string }
+                      - label: Punkty (obsługuje <b> dla pogrubień)
+                        name: items
+                        widget: list
+                        field: { label: Punkt, name: item, widget: string }
+                      - { label: CTA, name: cta, widget: string }
+                      - { label: Wyróżniony, name: featured, widget: boolean, default: false, required: false }
+
+              # BLOG
+              - label: Blog
+                name: blog
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Etykieta sekcji, name: label, widget: string }
+                  - { label: Tytuł 1, name: title1, widget: string }
+                  - { label: Wyróżnienie kursywą, name: titleIt, widget: string }
+                  - label: Artykuły
+                    name: items
+                    widget: list
+                    summary: '{{fields.title1}} {{fields.titleIt}}'
+                    fields:
+                      - { label: Slug (URL), name: slug, widget: string }
+                      - { label: Kategoria, name: cat, widget: string }
+                      - { label: Data (np. "Kwi 2026"), name: date, widget: string }
+                      - { label: Tytuł 1 (bold), name: title1, widget: string }
+                      - { label: Tytuł 2 (italic), name: titleIt, widget: string }
+                      - { label: Obraz nagłówkowy, name: image, widget: image }
+                      - { label: Lead (zajawka), name: lede, widget: text }
+                      - label: Treść (dodawaj bloki po kolei)
+                        name: body
+                        widget: list
+                        types:
+                          - label: Nagłówek H2
+                            name: heading
+                            widget: object
+                            summary: '## {{fields.h}}'
+                            fields:
+                              - { label: Tekst nagłówka, name: h, widget: string }
+                          - label: Paragraf
+                            name: paragraph
+                            widget: object
+                            summary: '{{fields.p}}'
+                            fields:
+                              - { label: Tekst (obsługuje **bold** i _italic_), name: p, widget: text }
+                          - label: Lista punktowana
+                            name: list
+                            widget: object
+                            summary: 'Lista ({{fields.list.length}} pozycji)'
+                            fields:
+                              - label: Punkty
+                                name: list
+                                widget: list
+                                field: { label: Punkt, name: item, widget: string }
+                          - label: Cytat / obraz (figure)
+                            name: figure
+                            widget: object
+                            summary: '🖼 {{fields.caption}}'
+                            fields:
+                              - { label: Obraz, name: image, widget: image }
+                              - { label: Podpis, name: caption, widget: string, required: false }
+
+              # CONTACT
+              - label: Kontakt (sekcja na stronie)
+                name: contact
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Etykieta sekcji, name: label, widget: string }
+                  - { label: Tytuł 1, name: title1, widget: string }
+                  - { label: Wyróżnienie kursywą, name: titleIt, widget: string }
+                  - { label: Tytuł 2, name: title2, widget: string }
+                  - { label: Tekst przed mailem, name: bigPrefix, widget: string }
+                  - { label: Główny email, name: bigEmail, widget: string }
+                  - { label: Tekst po mailu, name: bigSuffix, widget: string, required: false }
+                  - label: Dane kontaktowe
+                    name: details
+                    widget: list
+                    summary: '{{fields.k}}: {{fields.v}}'
+                    fields:
+                      - { label: Etykieta, name: k, widget: string }
+                      - { label: Wartość, name: v, widget: string }
+                      - { label: Link (href), name: href, widget: string, required: false }
+                  - label: Formularz kontaktowy
+                    name: form
+                    widget: object
+                    collapsed: true
+                    required: false
+                    fields:
+                      - { label: Nagłówek, name: heading, widget: string, required: false }
+                      - { label: Podnagłówek, name: subheading, widget: string, required: false }
+                      - { label: Intro, name: intro, widget: text, required: false }
+                      - { label: Etykieta usług, name: servicesLabel, widget: string, required: false }
+                      - label: Grupy usług
+                        name: serviceGroups
+                        widget: list
+                        required: false
+                        summary: '{{fields.label}}'
+                        fields:
+                          - { label: Nazwa grupy, name: label, widget: string }
+                          - label: Pozycje
+                            name: items
+                            widget: list
+                            field: { label: Usługa, name: value, widget: string }
+                      - { label: Pole imię i nazwisko, name: name, widget: string, required: false }
+                      - { label: Pole email, name: email, widget: string, required: false }
+                      - { label: Pole firma, name: company, widget: string, required: false }
+                      - { label: Pole budżet, name: budget, widget: string, required: false }
+                      - label: Opcje budżetu
+                        name: budgetOpts
+                        widget: list
+                        required: false
+                        field: { label: Opcja, name: value, widget: string }
+                      - { label: Pole wiadomość, name: message, widget: string, required: false }
+                      - { label: Przycisk wyślij, name: submit, widget: string, required: false }
+                      - { label: Komunikat sukcesu, name: success, widget: string, required: false }
+
+              # FOOTER
+              - label: Stopka
+                name: footer
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Wielki napis, name: wall, widget: string }
+                  - { label: Copyright, name: copy, widget: string }
+                  - label: Linki w stopce
+                    name: links
+                    widget: list
+                    required: false
+                    summary: '{{fields.label}}'
+                    fields:
+                      - { label: Tekst linku, name: label, widget: string }
+                      - { label: Adres, name: href, widget: string }
+
+          # ================== ENGLISH ==================
+          - label: "🇬🇧 English"
+            name: en
+            widget: object
+            collapsed: true
+            fields:
+              - label: Navigation
+                name: nav
+                widget: list
+                summary: '{{fields.value}}'
+                field: { label: Item, name: value, widget: string }
+
+              - { label: Main CTA in menu, name: cta, widget: string }
+
+              - label: Hero
+                name: hero
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Eyebrow, name: eyebrow, widget: string }
+                  - { label: Title 1, name: title1, widget: string }
+                  - { label: Title 2, name: title2, widget: string }
+                  - { label: Italic highlight, name: titleIt, widget: string }
+                  - { label: Title 3, name: title3, widget: string }
+                  - { label: Lede (intro), name: lede, widget: text }
+                  - { label: CTA 1, name: cta1, widget: string }
+                  - { label: CTA 2, name: cta2, widget: string }
+                  - label: Metrics
+                    name: metrics
+                    widget: list
+                    summary: '{{fields.k}}: {{fields.v}}'
+                    fields:
+                      - { label: Label, name: k, widget: string }
+                      - { label: Value, name: v, widget: string }
+                      - { label: Big format, name: big, widget: boolean, required: false, default: false }
+
+              - label: Marquee
+                name: marquee
+                widget: list
+                summary: '{{fields.value}}'
+                field: { label: Phrase, name: value, widget: string }
+
+              - label: Services
+                name: services
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Section label, name: label, widget: string }
+                  - { label: Title 1, name: title1, widget: string }
+                  - { label: Italic highlight, name: titleIt, widget: string }
+                  - label: Service items
+                    name: items
+                    widget: list
+                    summary: '{{fields.n}} {{fields.t}} {{fields.tIt}}'
+                    fields:
+                      - { label: Number, name: n, widget: string }
+                      - { label: Title 1, name: t, widget: string }
+                      - { label: Title 2, name: tIt, widget: string, required: false }
+                      - { label: Description, name: d, widget: text }
+
+              - label: About
+                name: about
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Section label, name: label, widget: string }
+                  - { label: Title 1, name: title1, widget: string }
+                  - { label: Italic highlight, name: titleIt, widget: string }
+                  - { label: Title 2, name: title2, widget: string }
+                  - { label: Lede, name: lede, widget: text }
+                  - { label: Lede accent word, name: ledeAccent, widget: string }
+                  - label: Features
+                    name: features
+                    widget: list
+                    summary: '{{fields.k}} {{fields.t}}'
+                    fields:
+                      - { label: Letter, name: k, widget: string }
+                      - { label: Title, name: t, widget: string }
+                      - { label: Description, name: d, widget: text }
+                  - { label: Quote, name: quote, widget: text }
+                  - { label: Quote accent, name: quoteAccent, widget: string }
+                  - { label: Quote caption, name: cap, widget: string }
+
+              - label: Showcase (3 blocks)
+                name: showcase
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Section label, name: label, widget: string }
+                  - label: Blocks
+                    name: blocks
+                    widget: list
+                    summary: '{{fields.eyebrow}} — {{fields.title1}}'
+                    fields:
+                      - { label: Eyebrow, name: eyebrow, widget: string }
+                      - { label: Title 1, name: title1, widget: string }
+                      - { label: Accent, name: titleAccent, widget: string }
+                      - { label: Title 2, name: title2, widget: string }
+                      - { label: Body, name: body, widget: text }
+                      - { label: Image, name: image, widget: image, required: false }
+                      - { label: Image alt, name: imageAlt, widget: string, required: false }
+                      - { label: Placeholder label, name: placeholderLabel, widget: string, required: false }
+
+              - label: Process
+                name: process
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Section label, name: label, widget: string }
+                  - { label: Title 1, name: title1, widget: string }
+                  - { label: Italic highlight, name: titleIt, widget: string }
+                  - { label: Title 2, name: title2, widget: string }
+                  - label: Steps
+                    name: steps
+                    widget: list
+                    summary: '{{fields.n}} {{fields.t}}'
+                    fields:
+                      - { label: Number, name: n, widget: string }
+                      - { label: Step name, name: t, widget: string }
+                      - { label: Description, name: d, widget: text }
+
+              - label: Portfolio
+                name: portfolio
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Section label, name: label, widget: string }
+                  - { label: Title 1, name: title1, widget: string }
+                  - { label: Italic highlight, name: titleIt, widget: string }
+                  - { label: Lede, name: lede, widget: text }
+                  - label: Clients / case studies
+                    name: items
+                    widget: list
+                    summary: '{{fields.num}} · {{fields.title1}} {{fields.titleIt}}'
+                    fields:
+                      - { label: Number, name: num, widget: string }
+                      - { label: Slug (URL), name: slug, widget: string }
+                      - { label: Title 1 (bold), name: title1, widget: string }
+                      - { label: Title 2 (italic), name: titleIt, widget: string }
+                      - { label: Tag, name: tag, widget: string }
+                      - { label: Year, name: year, widget: string }
+                      - { label: Placeholder name, name: ph, widget: string, required: false }
+                      - { label: Brief, name: brief, widget: text }
+                      - { label: Challenge, name: challenge, widget: text }
+                      - { label: Solution, name: solution, widget: text }
+                      - label: Results
+                        name: results
+                        widget: list
+                        summary: '{{fields.k}}: {{fields.v}}'
+                        fields:
+                          - { label: Label, name: k, widget: string }
+                          - { label: Value, name: v, widget: string }
+                      - label: Color palette (4 HEX)
+                        name: palette
+                        widget: list
+                        field: { label: HEX color, name: color, widget: string }
+                      - label: Images (3 items)
+                        name: images
+                        widget: list
+                        field: { label: Image, name: image, widget: image }
+                      - label: Process notes
+                        name: notes
+                        widget: list
+                        required: false
+                        field: { label: Note, name: note, widget: string }
+
+              - label: Testimonials
+                name: testi
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Section label, name: label, widget: string }
+                  - { label: Title 1, name: title1, widget: string }
+                  - { label: Italic highlight, name: titleIt, widget: string }
+                  - label: Testimonials
+                    name: items
+                    widget: list
+                    summary: '{{fields.name}} · {{fields.co}}'
+                    fields:
+                      - { label: Quote, name: q, widget: text }
+                      - { label: Name, name: name, widget: string }
+                      - { label: Company / role, name: co, widget: string }
+
+              - label: Team / Founders
+                name: team
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Section label, name: label, widget: string }
+                  - { label: Title 1, name: title1, widget: string }
+                  - { label: Italic highlight, name: titleIt, widget: string }
+                  - { label: Lede, name: lede, widget: text }
+                  - label: People
+                    name: items
+                    widget: list
+                    summary: '{{fields.name}} — {{fields.role}}'
+                    fields:
+                      - { label: Initials, name: init, widget: string }
+                      - { label: Full name, name: name, widget: string }
+                      - { label: Role (bold), name: role, widget: string }
+                      - { label: Role (italic), name: roleIt, widget: string }
+                      - { label: Photo 1, name: photo1, widget: image, required: false }
+                      - { label: Photo 2 (cross-fade), name: photo2, widget: image, required: false }
+                      - { label: Bio, name: bio, widget: text }
+
+              - label: Pricing
+                name: pricing
+                widget: object
+                collapsed: true
+                required: false
+                fields:
+                  - { label: Section label, name: label, widget: string }
+                  - { label: Title 1, name: title1, widget: string }
+                  - { label: Italic highlight, name: titleIt, widget: string }
+                  - { label: Lede, name: lede, widget: text }
+                  - label: Plans / packages
+                    name: plans
+                    widget: list
+                    summary: '{{fields.t}} — {{fields.amt}}'
+                    fields:
+                      - { label: Badge, name: k, widget: string, required: false }
+                      - { label: Plan title, name: t, widget: string }
+                      - { label: Title italic, name: tIt, widget: string, required: false }
+                      - { label: Amount, name: amt, widget: string }
+                      - { label: Period (/month etc.), name: per, widget: string }
+                      - label: Items (supports <b>)
+                        name: items
+                        widget: list
+                        field: { label: Item, name: item, widget: string }
+                      - { label: CTA, name: cta, widget: string }
+                      - { label: Featured, name: featured, widget: boolean, default: false, required: false }
+
+              - label: Blog
+                name: blog
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Section label, name: label, widget: string }
+                  - { label: Title 1, name: title1, widget: string }
+                  - { label: Italic highlight, name: titleIt, widget: string }
+                  - label: Articles
+                    name: items
+                    widget: list
+                    summary: '{{fields.title1}} {{fields.titleIt}}'
+                    fields:
+                      - { label: Slug (URL), name: slug, widget: string }
+                      - { label: Category, name: cat, widget: string }
+                      - { label: Date, name: date, widget: string }
+                      - { label: Title 1 (bold), name: title1, widget: string }
+                      - { label: Title 2 (italic), name: titleIt, widget: string }
+                      - { label: Header image, name: image, widget: image }
+                      - { label: Lede, name: lede, widget: text }
+                      - label: Body (add blocks)
+                        name: body
+                        widget: list
+                        types:
+                          - label: Heading H2
+                            name: heading
+                            widget: object
+                            summary: '## {{fields.h}}'
+                            fields:
+                              - { label: Heading text, name: h, widget: string }
+                          - label: Paragraph
+                            name: paragraph
+                            widget: object
+                            summary: '{{fields.p}}'
+                            fields:
+                              - { label: Text, name: p, widget: text }
+                          - label: Bullet list
+                            name: list
+                            widget: object
+                            summary: 'List'
+                            fields:
+                              - label: Items
+                                name: list
+                                widget: list
+                                field: { label: Item, name: item, widget: string }
+                          - label: Figure (image + caption)
+                            name: figure
+                            widget: object
+                            summary: '🖼 {{fields.caption}}'
+                            fields:
+                              - { label: Image, name: image, widget: image }
+                              - { label: Caption, name: caption, widget: string, required: false }
+
+              - label: Contact (on-page section)
+                name: contact
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Section label, name: label, widget: string }
+                  - { label: Title 1, name: title1, widget: string }
+                  - { label: Italic highlight, name: titleIt, widget: string }
+                  - { label: Title 2, name: title2, widget: string }
+                  - { label: Text before email, name: bigPrefix, widget: string }
+                  - { label: Main email, name: bigEmail, widget: string }
+                  - { label: Text after email, name: bigSuffix, widget: string, required: false }
+                  - label: Contact details
+                    name: details
+                    widget: list
+                    summary: '{{fields.k}}: {{fields.v}}'
+                    fields:
+                      - { label: Label, name: k, widget: string }
+                      - { label: Value, name: v, widget: string }
+                      - { label: Href, name: href, widget: string, required: false }
+                  - label: Contact form
+                    name: form
+                    widget: object
+                    collapsed: true
+                    required: false
+                    fields:
+                      - { label: Heading, name: heading, widget: string, required: false }
+                      - { label: Subheading, name: subheading, widget: string, required: false }
+                      - { label: Intro, name: intro, widget: text, required: false }
+                      - { label: Services label, name: servicesLabel, widget: string, required: false }
+                      - label: Service groups
+                        name: serviceGroups
+                        widget: list
+                        required: false
+                        summary: '{{fields.label}}'
+                        fields:
+                          - { label: Group name, name: label, widget: string }
+                          - label: Items
+                            name: items
+                            widget: list
+                            field: { label: Service, name: value, widget: string }
+                      - { label: Name field, name: name, widget: string, required: false }
+                      - { label: Email field, name: email, widget: string, required: false }
+                      - { label: Company field, name: company, widget: string, required: false }
+                      - { label: Budget field, name: budget, widget: string, required: false }
+                      - label: Budget options
+                        name: budgetOpts
+                        widget: list
+                        required: false
+                        field: { label: Option, name: value, widget: string }
+                      - { label: Message field, name: message, widget: string, required: false }
+                      - { label: Submit button, name: submit, widget: string, required: false }
+                      - { label: Success message, name: success, widget: string, required: false }
+
+              - label: Footer
+                name: footer
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Large wall text, name: wall, widget: string }
+                  - { label: Copyright, name: copy, widget: string }
+                  - label: Footer links
+                    name: links
+                    widget: list
+                    required: false
+                    summary: '{{fields.label}}'
+                    fields:
+                      - { label: Link text, name: label, widget: string }
+                      - { label: URL, name: href, widget: string }
