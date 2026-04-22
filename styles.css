@@ -3893,3 +3893,7 @@ body.cursor-over-input .ktb-cursor::after {
 .seo-static a { color: inherit; text-decoration: underline; }
 .seo-static details { margin: 0 0 12px; }
 .seo-static summary { cursor: pointer; font-weight: 700; }
+
+
+/* TEMP: hide founders/team section on homepage only */
+.founders-section { display: none !important; }

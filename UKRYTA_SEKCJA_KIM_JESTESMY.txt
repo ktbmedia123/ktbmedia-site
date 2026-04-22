@@ -1,0 +1,3 @@
+Tymczasowo ukryta została tylko sekcja „Kim jesteśmy” ze zdjęciami Mateusza Gajewskiego i Radosława Sobczyka na stronie głównej.
+Pozostała sekcja „O nas” i podstrona /o-nas/ zostały bez zmian.
+Aby przywrócić sekcję, usuń z styles.css regułę: .founders-section { display: none !important; }

@@ -1005,28 +1005,7 @@ function AboutPage({
     className: "accent"
   }, a.quoteAccent))), "\""), /*#__PURE__*/React.createElement("div", {
     className: "cap"
-  }, a.cap))))), /*#__PURE__*/React.createElement("section", {
-    className: "section founders-section"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "section-head reveal"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "sec-label"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "dot"
-  }), " ", t.label), /*#__PURE__*/React.createElement("h2", {
-    className: "display section-title"
-  }, t.title1, " ", /*#__PURE__*/React.createElement("span", {
-    className: "it"
-  }, t.titleIt))), /*#__PURE__*/React.createElement("p", {
-    className: "serif-italic section-lede reveal"
-  }, t.lede), /*#__PURE__*/React.createElement("div", {
-    className: "founders-grid"
-  }, t.items.map((m, i) => /*#__PURE__*/React.createElement(FounderCard, {
-    m: m,
-    key: i
-  }))))));
+  }, a.cap)))))));
 }
 function Blog({
   lang,
