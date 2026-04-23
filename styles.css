@@ -1508,7 +1508,13 @@ body.hero-v3 .hero-statue.samurai-hero { display: block; }
 .reveal.in { opacity: 1; transform: translateY(0); }
 
 /* Scramble / split text effect */
-.split-line { display: block; overflow: hidden; }
+.split-line {
+  display: block;
+  overflow: hidden;
+  line-height: 1.08;
+  padding: 0.08em 0 0.18em;
+  margin: -0.08em 0 -0.18em;
+}
 .split-inner {
   display: inline-block;
   transform: translateY(100%);
@@ -1874,7 +1880,7 @@ body.menu-open { overflow: hidden; }
 
 @media (max-width: 600px) {
   /* Hero title jeszcze mniejszy na telefonach */
-  .hero-title { font-size: clamp(38px, 11vw, 58px) !important; line-height: 0.95; }
+  .hero-title { font-size: clamp(38px, 11vw, 58px) !important; line-height: 1.04; }
   
   /* Service row: bez cyfry, tylko tytuł + opis */
   .service-row { padding: 22px 0; }
@@ -1931,7 +1937,7 @@ body.menu-open { overflow: hidden; }
 }
 
 @media (max-width: 420px) {
-  .hero-title { font-size: clamp(34px, 10.5vw, 48px) !important; }
+  .hero-title { font-size: clamp(34px, 10.5vw, 48px) !important; line-height: 1.06; }
   .section-title { font-size: clamp(32px, 9vw, 52px) !important; }
   .nav-logo img { height: 24px; }
   .hero-eyebrow .line { max-width: 60px; }
@@ -3893,7 +3899,3 @@ body.cursor-over-input .ktb-cursor::after {
 .seo-static a { color: inherit; text-decoration: underline; }
 .seo-static details { margin: 0 0 12px; }
 .seo-static summary { cursor: pointer; font-weight: 700; }
-
-
-/* TEMP: hide founders/team section on homepage only */
-.founders-section { display: none !important; }

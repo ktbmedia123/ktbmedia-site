@@ -39,7 +39,9 @@
           "v": "2 założycieli",
           "big": false
         }
-      ]
+      ],
+      "image": "/assets/statue-greek.webp",
+      "imageAlt": ""
     },
     "marquee": [
       "Strategia",
@@ -126,7 +128,9 @@
       ],
       "quote": "Czas niszczy marki szybciej niż rynek. My budujemy takie, które się starzeją pięknie.",
       "quoteAccent": "pięknie",
-      "cap": "KTB Media — Manifest 01"
+      "cap": "KTB Media — Manifest 01",
+      "image": "/assets/statue-samurai.webp",
+      "imageAlt": ""
     },
     "showcase": {
       "label": "— Jak pracujemy",
@@ -938,7 +942,9 @@
         "message": "Wiadomość (opcjonalnie)",
         "submit": "Wyślij zgłoszenie",
         "success": "Dzięki. Odezwiemy się w ciągu 24h."
-      }
+      },
+      "image": "/assets/contact-phone.jpg",
+      "imageAlt": ""
     },
     "footer": {
       "wall": "KTB·MEDIA",
@@ -953,6 +959,20 @@
           "href": "#"
         }
       ]
+    },
+    "sections": {
+      "hero": true,
+      "marquee": true,
+      "services": true,
+      "about": true,
+      "showcase": true,
+      "process": true,
+      "testimonials": true,
+      "portfolio": true,
+      "blog": true,
+      "contact": true,
+      "founders": false,
+      "miniCta": true
     }
   },
   "en": {
@@ -995,7 +1015,9 @@
           "v": "2 founders",
           "big": false
         }
-      ]
+      ],
+      "image": "/assets/statue-greek.webp",
+      "imageAlt": ""
     },
     "marquee": [
       "Strategy",
@@ -1082,7 +1104,9 @@
       ],
       "quote": "Time destroys brands faster than the market does. We build the kind that age beautifully.",
       "quoteAccent": "beautifully",
-      "cap": "KTB Media — Manifesto 01"
+      "cap": "KTB Media — Manifesto 01",
+      "image": "/assets/statue-samurai.webp",
+      "imageAlt": ""
     },
     "showcase": {
       "label": "— How we work",
@@ -1849,7 +1873,9 @@
         "message": "Message (optional)",
         "submit": "Send request",
         "success": "Thanks. We'll get back within 24h."
-      }
+      },
+      "image": "/assets/contact-phone.jpg",
+      "imageAlt": ""
     },
     "footer": {
       "wall": "KTB·MEDIA",
@@ -1864,6 +1890,20 @@
           "href": "#"
         }
       ]
+    },
+    "sections": {
+      "hero": true,
+      "marquee": true,
+      "services": true,
+      "about": true,
+      "showcase": true,
+      "process": true,
+      "testimonials": true,
+      "portfolio": true,
+      "blog": true,
+      "contact": true,
+      "founders": false,
+      "miniCta": true
     }
   }
 }

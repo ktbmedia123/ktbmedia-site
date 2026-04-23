@@ -84,6 +84,10 @@ function IconLinkedIn({
     d: "M6 9h2.5v11H6zM7.25 4.5A1.5 1.5 0 1 1 7.25 7.5 1.5 1.5 0 0 1 7.25 4.5zM11 9h2.4v1.5h.04c.33-.6 1.15-1.25 2.36-1.25 2.53 0 3 1.66 3 3.83V20H16.2v-5.3c0-1.27-.03-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V20H10V9z"
   }));
 }
+function sectionEnabled(lang, key) {
+  const sections = COPY[lang] && COPY[lang].sections;
+  return !sections || sections[key] !== false;
+}
 function useReveal(deps = []) {
   useEffect(() => {
     const io = new IntersectionObserver(entries => {
@@ -444,14 +448,15 @@ function Nav({
 function Hero({
   lang
 }) {
+  if (!sectionEnabled(lang, 'hero')) return null;
   const h = COPY[lang].hero;
   return /*#__PURE__*/React.createElement("section", {
     className: "hero"
   }, /*#__PURE__*/React.createElement("div", {
     className: "hero-statue"
   }, /*#__PURE__*/React.createElement("img", {
-    src: "/assets/statue-greek.webp",
-    alt: ""
+    src: h.image || "/assets/statue-greek.webp",
+    alt: h.imageAlt || ""
   })), /*#__PURE__*/React.createElement("div", {
     className: "container hero-inner"
   }, /*#__PURE__*/React.createElement("div", {
@@ -508,6 +513,7 @@ function Hero({
 function Marquee({
   lang
 }) {
+  if (!sectionEnabled(lang, 'marquee')) return null;
   const items = COPY[lang].marquee;
   const row = [];
   items.forEach((it, i) => {
@@ -531,6 +537,7 @@ function Marquee({
 function Services({
   lang
 }) {
+  if (!sectionEnabled(lang, 'services')) return null;
   const s = COPY[lang].services;
   return /*#__PURE__*/React.createElement("section", {
     id: "services",
@@ -569,6 +576,7 @@ function Services({
 function About({
   lang
 }) {
+  if (!sectionEnabled(lang, 'about')) return null;
   const a = COPY[lang].about;
   return /*#__PURE__*/React.createElement("section", {
     id: "about",
@@ -607,10 +615,10 @@ function About({
   }, f.t), /*#__PURE__*/React.createElement("div", {
     className: "d"
   }, f.d)))))), /*#__PURE__*/React.createElement("div", {
-    className: "about-samurai reveal"
+  className: "about-samurai reveal"
   }, /*#__PURE__*/React.createElement("img", {
-    src: "/assets/statue-samurai.webp",
-    alt: ""
+    src: a.image || "/assets/statue-samurai.webp",
+    alt: a.imageAlt || ""
   }), /*#__PURE__*/React.createElement("div", {
     className: "quote"
   }, "\"", a.quote.split(a.quoteAccent).map((part, i, arr) => /*#__PURE__*/React.createElement(React.Fragment, {
@@ -624,6 +632,7 @@ function About({
 function Showcase({
   lang
 }) {
+  if (!sectionEnabled(lang, 'showcase')) return null;
   const s = COPY[lang].showcase;
   if (!s) return null;
   const h = React.createElement;
@@ -662,6 +671,7 @@ function Showcase({
 function Process({
   lang
 }) {
+  if (!sectionEnabled(lang, 'process')) return null;
   const p = COPY[lang].process;
   return /*#__PURE__*/React.createElement("section", {
     id: "process",
@@ -698,6 +708,7 @@ function Portfolio({
   lang,
   hideHead
 }) {
+  if (!sectionEnabled(lang, 'portfolio')) return null;
   const p = COPY[lang].portfolio;
   return /*#__PURE__*/React.createElement("section", {
     id: "work",
@@ -905,6 +916,7 @@ function CasePage({
 function Testimonials({
   lang
 }) {
+  if (!sectionEnabled(lang, 'testimonials')) return null;
   const t = COPY[lang].testi;
   return /*#__PURE__*/React.createElement("section", {
     className: "section testi"
@@ -975,7 +987,7 @@ function AboutPage({
     title: a.title1,
     titleIt: a.titleIt + (a.title2 ? ' ' + a.title2 : ''),
     lede: a.lede
-  }), /*#__PURE__*/React.createElement("section", {
+  }), sectionEnabled(lang, 'about') && /*#__PURE__*/React.createElement("section", {
     className: "about-page-main section"
   }, /*#__PURE__*/React.createElement("div", {
     className: "container"
@@ -993,10 +1005,10 @@ function AboutPage({
   }, f.t), /*#__PURE__*/React.createElement("div", {
     className: "d"
   }, f.d)))))), /*#__PURE__*/React.createElement("div", {
-    className: "about-samurai reveal"
+  className: "about-samurai reveal"
   }, /*#__PURE__*/React.createElement("img", {
-    src: "/assets/statue-samurai.webp",
-    alt: ""
+    src: a.image || "/assets/statue-samurai.webp",
+    alt: a.imageAlt || ""
   }), /*#__PURE__*/React.createElement("div", {
     className: "quote"
   }, "\"", a.quote.split(a.quoteAccent).map((part, i, arr) => /*#__PURE__*/React.createElement(React.Fragment, {
@@ -1005,12 +1017,34 @@ function AboutPage({
     className: "accent"
   }, a.quoteAccent))), "\""), /*#__PURE__*/React.createElement("div", {
     className: "cap"
-  }, a.cap)))))));
+  }, a.cap))))), sectionEnabled(lang, 'founders') && /*#__PURE__*/React.createElement("section", {
+    className: "section founders-section"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "section-head reveal"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "sec-label"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "dot"
+  }), " ", t.label), /*#__PURE__*/React.createElement("h2", {
+    className: "display section-title"
+  }, t.title1, " ", /*#__PURE__*/React.createElement("span", {
+    className: "it"
+  }, t.titleIt))), /*#__PURE__*/React.createElement("p", {
+    className: "serif-italic section-lede reveal"
+  }, t.lede), /*#__PURE__*/React.createElement("div", {
+    className: "founders-grid"
+  }, t.items.map((m, i) => /*#__PURE__*/React.createElement(FounderCard, {
+    m: m,
+    key: i
+  }))))));
 }
 function Blog({
   lang,
   hideHead
 }) {
+  if (!sectionEnabled(lang, 'blog')) return null;
   const b = COPY[lang].blog;
   return /*#__PURE__*/React.createElement("section", {
     id: "journal",
@@ -1448,7 +1482,7 @@ function ContactPage({
     title: c.title1,
     titleIt: c.titleIt + (c.title2 ? ' ' + c.title2 : ''),
     lede: null
-  }), /*#__PURE__*/React.createElement("section", {
+  }), sectionEnabled(lang, 'contact') && /*#__PURE__*/React.createElement("section", {
     className: "section contact-page-main"
   }, /*#__PURE__*/React.createElement("div", {
     className: "container"
@@ -1470,8 +1504,8 @@ function ContactPage({
   }, c.bigSuffix)), /*#__PURE__*/React.createElement("div", {
     className: "contact-email-visual"
   }, /*#__PURE__*/React.createElement("img", {
-    src: "/assets/contact-phone.jpg",
-    alt: "",
+    src: c.image || "/assets/contact-phone.jpg",
+    alt: c.imageAlt || "",
     "aria-hidden": "true",
     onError: e => {
       e.target.style.display = 'none';
@@ -1527,6 +1561,8 @@ function ContactPage({
 function MiniCtaBar({
   lang
 }) {
+  if (!sectionEnabled(lang, 'miniCta')) return null;
+  const c = COPY[lang].contact || {};
   const t = lang === 'pl' ? {
     eyebrow: 'Zrób z nami marketing',
     title: 'Darmowa wycena w 24h.',
@@ -1554,7 +1590,7 @@ function MiniCtaBar({
   }))), /*#__PURE__*/React.createElement("div", {
     className: "mini-cta-image"
   }, /*#__PURE__*/React.createElement("img", {
-    src: "/assets/contact-phone.jpg",
+    src: c.image || "/assets/contact-phone.jpg",
     alt: "",
     "aria-hidden": "true"
   }))));

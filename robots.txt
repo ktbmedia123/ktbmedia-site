@@ -1,6 +1,7 @@
 User-agent: *
-Allow: /
 Disallow: /admin/
+Disallow: /admin.html
+Allow: /
 Disallow: /admin.html
 Disallow: /api/
 

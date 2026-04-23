@@ -50,6 +50,25 @@ collections:
 
               - { label: Główny CTA w menu, name: cta, widget: string }
 
+              # WIDOCZNOŚĆ SEKCJI
+              - label: Widoczność sekcji
+                name: sections
+                widget: object
+                collapsed: false
+                fields:
+                  - { label: Hero, name: hero, widget: boolean, default: true, required: false }
+                  - { label: Pasek przewijany, name: marquee, widget: boolean, default: true, required: false }
+                  - { label: Usługi, name: services, widget: boolean, default: true, required: false }
+                  - { label: O nas / wyróżniki, name: about, widget: boolean, default: true, required: false }
+                  - { label: Prezentacja zdjęciowa, name: showcase, widget: boolean, default: true, required: false }
+                  - { label: Proces współpracy, name: process, widget: boolean, default: true, required: false }
+                  - { label: Opinie klientów, name: testimonials, widget: boolean, default: true, required: false }
+                  - { label: Portfolio / realizacje, name: portfolio, widget: boolean, default: true, required: false }
+                  - { label: Blog, name: blog, widget: boolean, default: true, required: false }
+                  - { label: Kontakt, name: contact, widget: boolean, default: true, required: false }
+                  - { label: Założyciele na stronie O nas, name: founders, widget: boolean, default: false, required: false }
+                  - { label: Pasek CTA nad stopką, name: miniCta, widget: boolean, default: true, required: false }
+
               # HERO
               - label: Hero (sekcja startowa)
                 name: hero
@@ -64,6 +83,8 @@ collections:
                   - { label: Lead (wstęp), name: lede, widget: text }
                   - { label: CTA 1, name: cta1, widget: string }
                   - { label: CTA 2, name: cta2, widget: string }
+                  - { label: Obraz w hero, name: image, widget: image, required: false }
+                  - { label: Alt obrazu w hero, name: imageAlt, widget: string, required: false }
                   - label: Statystyki
                     name: metrics
                     widget: list
@@ -111,6 +132,8 @@ collections:
                   - { label: Tytuł 2, name: title2, widget: string }
                   - { label: Lead, name: lede, widget: text }
                   - { label: Wyróżnione słowo, name: ledeAccent, widget: string }
+                  - { label: Obraz w sekcji O nas, name: image, widget: image, required: false }
+                  - { label: Alt obrazu O nas, name: imageAlt, widget: string, required: false }
                   - label: Argumenty
                     name: features
                     widget: list
@@ -345,6 +368,8 @@ collections:
                   - { label: Tekst przed mailem, name: bigPrefix, widget: string }
                   - { label: Główny email, name: bigEmail, widget: string }
                   - { label: Tekst po mailu, name: bigSuffix, widget: string, required: false }
+                  - { label: Zdjęcie w kontakcie / CTA, name: image, widget: image, required: false }
+                  - { label: Alt zdjęcia kontaktowego, name: imageAlt, widget: string, required: false }
                   - label: Dane kontaktowe
                     name: details
                     widget: list
@@ -418,6 +443,24 @@ collections:
 
               - { label: Main CTA in menu, name: cta, widget: string }
 
+              - label: Section visibility
+                name: sections
+                widget: object
+                collapsed: false
+                fields:
+                  - { label: Hero, name: hero, widget: boolean, default: true, required: false }
+                  - { label: Marquee, name: marquee, widget: boolean, default: true, required: false }
+                  - { label: Services, name: services, widget: boolean, default: true, required: false }
+                  - { label: About / proof points, name: about, widget: boolean, default: true, required: false }
+                  - { label: Showcase images, name: showcase, widget: boolean, default: true, required: false }
+                  - { label: Process, name: process, widget: boolean, default: true, required: false }
+                  - { label: Testimonials, name: testimonials, widget: boolean, default: true, required: false }
+                  - { label: Portfolio / work, name: portfolio, widget: boolean, default: true, required: false }
+                  - { label: Blog, name: blog, widget: boolean, default: true, required: false }
+                  - { label: Contact, name: contact, widget: boolean, default: true, required: false }
+                  - { label: Founders on About page, name: founders, widget: boolean, default: false, required: false }
+                  - { label: CTA bar above footer, name: miniCta, widget: boolean, default: true, required: false }
+
               - label: Hero
                 name: hero
                 widget: object
@@ -431,6 +474,8 @@ collections:
                   - { label: Lede (intro), name: lede, widget: text }
                   - { label: CTA 1, name: cta1, widget: string }
                   - { label: CTA 2, name: cta2, widget: string }
+                  - { label: Hero image, name: image, widget: image, required: false }
+                  - { label: Hero image alt, name: imageAlt, widget: string, required: false }
                   - label: Metrics
                     name: metrics
                     widget: list
@@ -475,6 +520,8 @@ collections:
                   - { label: Title 2, name: title2, widget: string }
                   - { label: Lede, name: lede, widget: text }
                   - { label: Lede accent word, name: ledeAccent, widget: string }
+                  - { label: About image, name: image, widget: image, required: false }
+                  - { label: About image alt, name: imageAlt, widget: string, required: false }
                   - label: Features
                     name: features
                     widget: list
@@ -701,6 +748,8 @@ collections:
                   - { label: Text before email, name: bigPrefix, widget: string }
                   - { label: Main email, name: bigEmail, widget: string }
                   - { label: Text after email, name: bigSuffix, widget: string, required: false }
+                  - { label: Contact / CTA image, name: image, widget: image, required: false }
+                  - { label: Contact image alt, name: imageAlt, widget: string, required: false }
                   - label: Contact details
                     name: details
                     widget: list

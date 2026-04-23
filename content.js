@@ -3,6 +3,20 @@ const COPY = {
   pl: {
     nav: ["Usługi", "Realizacje", "Proces", "O nas", "Blog", "Kontakt"],
     cta: "Zacznij projekt",
+    sections: {
+      hero: true,
+      marquee: true,
+      services: true,
+      about: true,
+      showcase: true,
+      process: true,
+      testimonials: true,
+      portfolio: true,
+      blog: true,
+      contact: true,
+      founders: false,
+      miniCta: true
+    },
     hero: {
       eyebrow: "Agencja 360 · Gdańsk · Od 2022",
       title1: "Marka,",
@@ -12,6 +26,8 @@ const COPY = {
       lede: "Zewnętrzny dział marketingu dla firm, które mają dość korporacyjnego bełkotu. Budujemy, prowadzimy, skalujemy — jak partner, nie podwykonawca.",
       cta1: "Porozmawiajmy",
       cta2: "Zobacz realizacje",
+      image: "/assets/statue-greek.webp",
+      imageAlt: "",
       metrics: [
         { k: "Założone", v: "2022", big: true },
         { k: "Zrealizowane projekty", v: "120+", big: true },
@@ -40,6 +56,8 @@ const COPY = {
       title2: "zgiń.",
       lede: "Dziesiątki agencji robią to samo. My robimy to inaczej — z zaangażowaniem, bez bełkotu, z wynikiem, który widać w rachunkach.",
       ledeAccent: "wynikiem",
+      image: "/assets/statue-samurai.webp",
+      imageAlt: "",
       features: [
         { k: "A", t: "Agencja 360", d: "Jeden partner dla wszystkich kanałów. Bez szukania pięciu podwykonawców." },
         { k: "B", t: "Twój czas", d: "Zdejmujemy marketing z Twoich barków. Zajmuj się biznesem, my ogarniamy resztę." },
@@ -396,6 +414,8 @@ const COPY = {
       bigPrefix: "Napisz na",
       bigEmail: "media@ktbmedia.eu",
       bigSuffix: "albo wypełnij formularz.",
+      image: "/assets/contact-phone.jpg",
+      imageAlt: "",
       details: [
         { k: "Adres", v: "Grunwaldzka 107<br/>83-000 Pruszcz Gdański" },
         { k: "Email", v: "media@ktbmedia.eu", href: "mailto:media@ktbmedia.eu" },
@@ -449,6 +469,20 @@ const COPY = {
   en: {
     nav: ["Services", "Work", "Process", "About", "Journal", "Contact"],
     cta: "Start a project",
+    sections: {
+      hero: true,
+      marquee: true,
+      services: true,
+      about: true,
+      showcase: true,
+      process: true,
+      testimonials: true,
+      portfolio: true,
+      blog: true,
+      contact: true,
+      founders: false,
+      miniCta: true
+    },
     hero: {
       eyebrow: "360 Agency · Gdańsk · Est. 2022",
       title1: "A brand",
@@ -458,6 +492,8 @@ const COPY = {
       lede: "The outside marketing department for companies tired of corporate jargon. We build, run, scale — like a partner, not a vendor.",
       cta1: "Let's talk",
       cta2: "See our work",
+      image: "/assets/statue-greek.webp",
+      imageAlt: "",
       metrics: [
         { k: "Founded", v: "2022", big: true },
         { k: "Projects shipped", v: "120+", big: true },
@@ -486,6 +522,8 @@ const COPY = {
       title2: "die.",
       lede: "Dozens of agencies do the same thing. We do it differently — with commitment, no jargon, and results you see on the P&L.",
       ledeAccent: "results",
+      image: "/assets/statue-samurai.webp",
+      imageAlt: "",
       features: [
         { k: "A", t: "360 agency", d: "One partner across all channels. No hunting five vendors." },
         { k: "B", t: "Your time", d: "We lift marketing off your plate. Run the business, we'll run the rest." },
@@ -827,6 +865,8 @@ const COPY = {
       bigPrefix: "Write to",
       bigEmail: "media@ktbmedia.eu",
       bigSuffix: "or fill out the form.",
+      image: "/assets/contact-phone.jpg",
+      imageAlt: "",
       details: [
         { k: "Studio", v: "Grunwaldzka 107<br/>83-000 Pruszcz Gdański, PL" },
         { k: "Email", v: "media@ktbmedia.eu", href: "mailto:media@ktbmedia.eu" },
