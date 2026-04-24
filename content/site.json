@@ -116,6 +116,194 @@
       "titleIt": "redakcji.",
       "items": [
         {
+          "slug": "codzienny-tetris",
+          "cat": "Produktywność",
+          "date": "Sty 2026",
+          "title1": "Codzienny Tetris:",
+          "titleIt": "jak zarządzać swoim mózgiem.",
+          "image": "/assets/blog-tetris.jpg",
+          "lede": "Metafora funkcjonowania ludzkiego mózgu i zarządzania zadaniami. Na początku dnia plansza jest pusta — łatwo coś ułożyć. Problem zaczyna się, gdy klocki zaczynają spadać szybciej, niż potrafisz je układać.",
+          "body": [
+            {
+              "h": "Czysta plansza"
+            },
+            {
+              "p": "Na początku dnia, gdy nasza „plansza gry\" (czyli umysł i harmonogram) jest czysta i nieobciążona, łatwiej jest podejmować nowe zadania i wyzwania. Nie ma dużej presji czasowej, myślenie jest klarowne i skoncentrowane."
+            },
+            {
+              "p": "Tak jak w Tetrisie, gdzie łatwiej układa się klocki na pustej planszy, tak samo w życiu codziennym łatwiej jest rozpoczynać i kończyć zadania, kiedy nasz umysł jest „świeży\" i niezakłócony. Dlatego większość produktywnych ludzi rezerwuje poranek na najtrudniejsze zadania — to czas, gdy plansza jest najbardziej pusta."
+            },
+            {
+              "h": "Napór klocków"
+            },
+            {
+              "p": "W miarę upływu dnia i napływu nowych zadań, nasza zdolność do efektywnego zarządzania czasem i priorytetami jest wystawiona na próbę. Tak jak w Tetrisie, gdzie pojawiają się nowe klocki z coraz większą szybkością, w życiu codziennym napotykamy na coraz więcej wyzwań i niespodziewanych zadań."
+            },
+            {
+              "p": "Jeśli nie radzimy sobie z nimi na bieżąco, „plansza\" zapełnia się, co utrudnia dodawanie nowych elementów bez tworzenia chaosu. To moment, w którym „robiłem dużo, a zrobiłem nic\" staje się codziennością."
+            },
+            {
+              "h": "Przewidywanie > reagowanie"
+            },
+            {
+              "p": "Kluczem do sukcesu w „codziennym Tetrisie\" jest nie tylko efektywne zarządzanie bieżącymi zadaniami, ale również umiejętność **przewidywania i planowania**. Odkładanie zadań na później, podobnie jak unikanie podejmowania decyzji w Tetrisie, zwykle prowadzi do „przegranej rundy\" — sytuacji, w której przestajemy mieć kontrolę nad naszymi obowiązkami i czasem."
+            },
+            {
+              "p": "Dobrzy gracze w Tetrisa nie reagują na klocek, który jest — już planują miejsce dla klocka, który przyjdzie za chwilę. Ludzie, którzy dobrze zarządzają dniem, też nie reagują wyłącznie na to, co ląduje w skrzynce. Mają miejsce zarezerwowane dla tego, co wiadomo, że przyjdzie."
+            },
+            {
+              "h": "Przerwa = czyszczenie linii"
+            },
+            {
+              "p": "Zarządzanie naszym „codziennym Tetrisem\" wymaga też umiejętności rozpoznawania momentów, gdy warto zrobić krótką przerwę, aby oczyścić umysł i spojrzeć na zadania z nowej perspektywy. Krótki moment odpoczynku to nie strata czasu — to „czyszczenie linii\". Nagle plansza się zmniejsza, widać więcej miejsca, decyzje stają się łatwiejsze."
+            },
+            {
+              "p": "Problem: większość ludzi traktuje przerwy jak zawodnik, który boi się odejść od Tetrisa, bo „klocki dalej spadają\". Paradoks polega na tym, że im dłużej grasz bez przerwy, tym więcej błędów robisz, tym wyższa plansza, tym trudniej ją obniżyć."
+            },
+            {
+              "h": "Podsumowanie"
+            },
+            {
+              "p": "Metafora „codziennego Tetrisa\" podkreśla znaczenie efektywnego zarządzania czasem, priorytetami i zdolności adaptacyjnych. Kluczem jest nie tylko radzenie sobie z bieżącymi zadaniami, ale elastyczność umysłu, pozwalająca dostosować się do zmieniających się warunków."
+            },
+            {
+              "list": [
+                "Chroń pierwsze 2-3 godziny dnia na zadania trudne.",
+                "Nie reaguj wyłącznie na to, co przyszło teraz — planuj miejsce na to, co przyjdzie.",
+                "Rób przerwy zanim tego potrzebujesz, nie gdy już musisz.",
+                "Naucz się rozpoznawać, kiedy Twoja plansza jest za wysoka — i co wtedy odłożyć."
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "marketing-dla-samego-marketingu",
+          "cat": "Strategia",
+          "date": "Kwi 2026",
+          "title1": "Jak przestać robić marketing",
+          "titleIt": "dla samego marketingu.",
+          "image": "/assets/blog-marketing.jpg",
+          "lede": "Generowanie content calendara nie jest strategią. Publikowanie „bo trzeba” kosztuje tak samo, jak publikowanie po coś — ale przynosi zero. Oto jak odróżnić ruch od postępu.",
+          "body": [
+            {
+              "h": "Ruch ≠ postęp"
+            },
+            {
+              "p": "Większość działów marketingu, które widzieliśmy, ma jeden wspólny mianownik: dużo ruchu, mało postępu. Kampania za kampanią, reel za reelem, newsletter w każdy wtorek. A za tym wszystkim — ani jednej odpowiedzi na proste pytanie: **po co?**"
+            },
+            {
+              "p": "Ten mechanizm jest genialny w swojej samowystarczalności. Social media generuje treści, które nakręcają kolejne treści. Kampanie generują dane, które uzasadniają następne kampanie. Cały system obraca się wokół własnej osi, a jedynym produktem tej orbity są kolejne TODO."
+            },
+            {
+              "h": "Co to jest „marketing dla samego marketingu\""
+            },
+            {
+              "p": "To sytuacja, w której **sam fakt robienia** został pomylony z celem. Symptomy są proste do rozpoznania:"
+            },
+            {
+              "list": [
+                "Content kalendarz pełny — ale nie wiadomo jaki problem klienta każdy post rozwiązuje.",
+                "KPI mierzone w lajkach, zasięgach, „impressionach” — nigdy w tym, co bezpośrednio wpływa na rachunki.",
+                "Każda kampania opisywana jako sukces — „bo zasięgi rosły”.",
+                "Raporty, które nikogo nie interesują — robione tylko dlatego, że „klient lubi raport”.",
+                "Nowe inicjatywy dokładane bez usuwania starych — bo nikt nie ma odwagi powiedzieć, co przestaje działać."
+              ]
+            },
+            {
+              "h": "Test dwóch pytań"
+            },
+            {
+              "p": "Za każdym razem, gdy Twój zespół (lub Ty) zabiera się do planowania nowej akcji, zadaj dwa pytania:"
+            },
+            {
+              "list": [
+                "**Który konkretny cel biznesowy to wspiera?** Nie „budowanie marki”, nie „engagement”. Konkret: więcej zapytań ofertowych w segmencie X, niższy CAC w kanale Y, wyższa wartość koszyka.",
+                "**Jak rozpoznam, że to zadziałało albo nie?** Jeśli odpowiedź to „po prostu zobaczymy”, to znaczy, że zgadujesz."
+              ]
+            },
+            {
+              "p": "Jeśli na którekolwiek z tych pytań nie masz odpowiedzi — wstrzymaj się. Nie dlatego, że akcja jest zła. Dlatego, że robisz ją z przyzwyczajenia, nie z decyzji."
+            },
+            {
+              "h": "Zamień kampanie na hipotezy"
+            },
+            {
+              "p": "Zamiast planować „kampanię wizerunkową\", planuj testy hipotez. Każde działanie marketingowe to w zasadzie zakład z rzeczywistością: _wierzę, że jeśli pokażę X grupie Y, stanie się Z_. Jeśli umiesz to zdanie napisać — masz kampanię. Jeśli nie umiesz — masz tylko wydatek."
+            },
+            {
+              "p": "Hipoteza ma trzy zalety: (1) zmusza do konkretu, (2) domyślnie zakłada, że możesz się mylić, (3) wymusza pomiar. Brzmi jak coś dla korporacji z 500-osobowym działem analityki? Nie. Można to robić w arkuszu kalkulacyjnym. Ważny jest sposób myślenia, nie narzędzie."
+            },
+            {
+              "h": "Mniej, celniej, głośniej"
+            },
+            {
+              "p": "Prawdziwy wzrost u większości firm, z którymi pracowaliśmy, nie przyszedł z dołożenia kolejnego kanału. Przyszedł z **odcięcia trzech rzeczy**, które nie działały, i zainwestowania tych budżetów w jedno działanie, które zaczynało działać. Dyscyplina jest niewidzialna, bo polega na tym, czego nie robisz."
+            },
+            {
+              "p": "Jeśli czujesz, że Twój marketing zamienił się w fabrykę treści na autopilocie — zatrzymaj się na tydzień. Wyłącz wszystko, co nie ma jasnego uzasadnienia biznesowego. Zobacz, co naprawdę się wali, a co po prostu przestało wymagać siły."
+            },
+            {
+              "p": "Wracasz za tydzień i pracujesz już tylko na tym, co zostało."
+            }
+          ]
+        },
+        {
+          "slug": "rebrand-bez-kryzysu",
+          "cat": "Branding",
+          "date": "Lut 2026",
+          "title1": "Rebrand bez kryzysu —",
+          "titleIt": "krótki przewodnik.",
+          "image": "/assets/blog-rebrand.jpg",
+          "lede": "Rebrand to nie nowe logo. Rebrand to reorganizacja całej komunikacji firmy — a większość firm robi go w najgorszym momencie, z najgorszych powodów. Krótki przewodnik jak tego nie spier... popsuć.",
+          "body": [
+            {
+              "h": "Kiedy rebrand ma sens"
+            },
+            {
+              "p": "Dobra decyzja o rebrandzie ma zawsze jeden z trzech konkretnych powodów — i żadnym z nich nie jest „znudził mi się logotyp\":"
+            },
+            {
+              "list": [
+                "**Produkt ewoluował.** Założenia biznesowe z dnia startu przestały być aktualne. Jeśli dzisiaj zakładałbyś tę firmę, zrobiłbyś inną markę — to moment.",
+                "**Publiczność się zmieniła.** Dotarłeś do innej grupy, niż ta, pod którą projektowana była marka. Komunikujesz się do sceny B, a identyfikacja wisi w scenie A.",
+                "**Reputacja wymaga resetu.** PR-owy kryzys, zmiana właściciela, fuzja, problemy prawne. Rebrand to wtedy nie kosmetyka, to wyjście z czarnego worka."
+              ]
+            },
+            {
+              "p": "Jeśli żaden z tych trzech — odłóż to. Nowe logo nie naprawi mailingu, który nikt nie otwiera."
+            },
+            {
+              "h": "Trzy pułapki, w które wpadają wszyscy"
+            },
+            {
+              "p": "**Pułapka 1: rebrand jako ucieczka przed robotą.** Firma ma problem z sprzedażą, z kulturą, z produktem. Zamiast tego rysuje nowe logo. Efekt: za pół roku te same problemy, plus wydane 80 tys. na identyfikację, która nie działa, bo nie miała do czego działać."
+            },
+            {
+              "p": "**Pułapka 2: rebrand bez planu wdrożenia.** Nowy system wizualny ląduje w pdf-ie. Pdf idzie do szuflady. Strona internetowa nie ma budżetu. Szyld na biurze został stary. Social media mają nowe colors, ale stare komunikaty. Efekt: firma teraz wygląda chaotycznie zamiast świeżo."
+            },
+            {
+              "p": "**Pułapka 3: rebrand po cichu.** Zmiana nikomu nie zakomunikowana, jak gdyby nic się nie stało. Klienci i partnerzy są zdezorientowani, ludzie pytają „zmieniliście się?\". Rebrand, który musi być wytłumaczony w nieskończoność — to rebrand, którego nie dało się uzasadnić."
+            },
+            {
+              "h": "Jak robić to dobrze"
+            },
+            {
+              "list": [
+                "**Zacznij od pytania biznesowego.** Jaki problem rozwiązujesz? Odpowiedź nie może być estetyczna.",
+                "**Zadbaj o plan wdrożenia przed projektem.** Kto, kiedy, gdzie. Materiały, budżet, harmonogram.",
+                "**Zrób storytelling.** Klienci, pracownicy, partnerzy — każda grupa powinna usłyszeć od Ciebie, dlaczego i co się zmienia.",
+                "**Zaakceptuj, że wszystkim się nie spodoba.** Jeśli chcesz 100% akceptacji — znaczy nie zmieniłeś nic istotnego."
+              ]
+            },
+            {
+              "h": "Checklist pre-rebrand"
+            },
+            {
+              "p": "Zanim wydasz pierwsze 10 tys., odpowiedz sobie: (1) czy problem, który rozwiązuję rebrandem, naprawdę jest problemem wizualnym? (2) czy mam budżet nie tylko na projekt, ale na wdrożenie wszędzie? (3) czy mogę uzasadnić zmianę w jednym zdaniu, pracownikom i klientom? Jeśli na trzy pytania odpowiedź brzmi „tak\", wchodź. Jeśli choć jedno „nie\" — wstrzymaj się."
+            }
+          ]
+        },
+        {
           "body": [
             {
               "type": "heading",
@@ -127,7 +315,7 @@
             },
             {
               "type": "paragraph",
-              "p": "W 2026 sensowny start dla lokalnego warsztatu to zwykle od 2500 do 5000 zł budżetu mediowego miesięcznie. Do tego dochodzi obsługa, konfiguracja konwersji i praca nad stroną. Przy mniejszym budżecie da się testować, ale trzeba zawęzić zakres: jedna lokalizacja, kilka usług, godziny pracy i bardzo konkretne słowa kluczowe. Przy większym budżecie można osobno prowadzić kampanie na pilne naprawy, sezon, flotę i usługi premium."
+              "p": "W 2026 sensowny start dla lokalnego warsztatu to zwykle od 600 do 1200 zł budżetu mediowego miesięcznie. Do tego dochodzi obsługa, konfiguracja konwersji i praca nad stroną. Przy mniejszym budżecie da się testować, ale trzeba zawęzić zakres: jedna lokalizacja, kilka usług, godziny pracy i bardzo konkretne słowa kluczowe. Przy większym budżecie można osobno prowadzić kampanie na pilne naprawy, sezon, flotę i usługi premium."
             },
             {
               "type": "heading",
@@ -233,7 +421,7 @@
           "isoDate": "2026-04-15",
           "cat": "Google Ads",
           "title1": "Ile kosztuje Google Ads",
-          "lede": "Google Ads dla warsztatu może kosztować 1200 zł miesięcznie albo 12000 zł miesięcznie. Różnica nie leży w panelu reklamowym, tylko w tym, czy kampania ma mierzyć telefony, konkretne usługi i realny kalendarz pracy.",
+          "lede": "Google Ads dla warsztatu może kosztować 600 zł miesięcznie albo 3000 zł miesięcznie. Różnica nie leży w panelu reklamowym, tylko w tym, czy kampania ma mierzyć telefony, konkretne usługi i realny kalendarz pracy.",
           "image": "/assets/blog-google-ads-warsztat-2026.jpg",
           "description": "Realne koszty Google Ads dla warsztatu samochodowego w 2026: budżet mediowy, obsługa, koszt leada, pomiar telefonów i plan startu."
         },
@@ -1870,77 +2058,6 @@
           "description": "Pozycjonowanie firmy motoryzacyjnej w Trójmieście: lokalne SEO, Google Maps, podstrony usługowe, treści, opinie i konkurencja w Gdańsku, Gdyni i Sopocie."
         },
         {
-          "slug": "marketing-dla-samego-marketingu",
-          "cat": "Strategia",
-          "date": "Kwi 2026",
-          "title1": "Jak przestać robić marketing",
-          "titleIt": "dla samego marketingu.",
-          "image": "/assets/blog-marketing.jpg",
-          "lede": "Generowanie content calendara nie jest strategią. Publikowanie „bo trzeba” kosztuje tak samo, jak publikowanie po coś — ale przynosi zero. Oto jak odróżnić ruch od postępu.",
-          "body": [
-            {
-              "h": "Ruch ≠ postęp"
-            },
-            {
-              "p": "Większość działów marketingu, które widzieliśmy, ma jeden wspólny mianownik: dużo ruchu, mało postępu. Kampania za kampanią, reel za reelem, newsletter w każdy wtorek. A za tym wszystkim — ani jednej odpowiedzi na proste pytanie: **po co?**"
-            },
-            {
-              "p": "Ten mechanizm jest genialny w swojej samowystarczalności. Social media generuje treści, które nakręcają kolejne treści. Kampanie generują dane, które uzasadniają następne kampanie. Cały system obraca się wokół własnej osi, a jedynym produktem tej orbity są kolejne TODO."
-            },
-            {
-              "h": "Co to jest „marketing dla samego marketingu\""
-            },
-            {
-              "p": "To sytuacja, w której **sam fakt robienia** został pomylony z celem. Symptomy są proste do rozpoznania:"
-            },
-            {
-              "list": [
-                "Content kalendarz pełny — ale nie wiadomo jaki problem klienta każdy post rozwiązuje.",
-                "KPI mierzone w lajkach, zasięgach, „impressionach” — nigdy w tym, co bezpośrednio wpływa na rachunki.",
-                "Każda kampania opisywana jako sukces — „bo zasięgi rosły”.",
-                "Raporty, które nikogo nie interesują — robione tylko dlatego, że „klient lubi raport”.",
-                "Nowe inicjatywy dokładane bez usuwania starych — bo nikt nie ma odwagi powiedzieć, co przestaje działać."
-              ]
-            },
-            {
-              "h": "Test dwóch pytań"
-            },
-            {
-              "p": "Za każdym razem, gdy Twój zespół (lub Ty) zabiera się do planowania nowej akcji, zadaj dwa pytania:"
-            },
-            {
-              "list": [
-                "**Który konkretny cel biznesowy to wspiera?** Nie „budowanie marki”, nie „engagement”. Konkret: więcej zapytań ofertowych w segmencie X, niższy CAC w kanale Y, wyższa wartość koszyka.",
-                "**Jak rozpoznam, że to zadziałało albo nie?** Jeśli odpowiedź to „po prostu zobaczymy”, to znaczy, że zgadujesz."
-              ]
-            },
-            {
-              "p": "Jeśli na którekolwiek z tych pytań nie masz odpowiedzi — wstrzymaj się. Nie dlatego, że akcja jest zła. Dlatego, że robisz ją z przyzwyczajenia, nie z decyzji."
-            },
-            {
-              "h": "Zamień kampanie na hipotezy"
-            },
-            {
-              "p": "Zamiast planować „kampanię wizerunkową\", planuj testy hipotez. Każde działanie marketingowe to w zasadzie zakład z rzeczywistością: _wierzę, że jeśli pokażę X grupie Y, stanie się Z_. Jeśli umiesz to zdanie napisać — masz kampanię. Jeśli nie umiesz — masz tylko wydatek."
-            },
-            {
-              "p": "Hipoteza ma trzy zalety: (1) zmusza do konkretu, (2) domyślnie zakłada, że możesz się mylić, (3) wymusza pomiar. Brzmi jak coś dla korporacji z 500-osobowym działem analityki? Nie. Można to robić w arkuszu kalkulacyjnym. Ważny jest sposób myślenia, nie narzędzie."
-            },
-            {
-              "h": "Mniej, celniej, głośniej"
-            },
-            {
-              "p": "Prawdziwy wzrost u większości firm, z którymi pracowaliśmy, nie przyszedł z dołożenia kolejnego kanału. Przyszedł z **odcięcia trzech rzeczy**, które nie działały, i zainwestowania tych budżetów w jedno działanie, które zaczynało działać. Dyscyplina jest niewidzialna, bo polega na tym, czego nie robisz."
-            },
-            {
-              "p": "Jeśli czujesz, że Twój marketing zamienił się w fabrykę treści na autopilocie — zatrzymaj się na tydzień. Wyłącz wszystko, co nie ma jasnego uzasadnienia biznesowego. Zobacz, co naprawdę się wali, a co po prostu przestało wymagać siły."
-            },
-            {
-              "p": "Wracasz za tydzień i pracujesz już tylko na tym, co zostało."
-            }
-          ]
-        },
-        {
           "slug": "meta-ads-2026",
           "cat": "Performance",
           "date": "Mar 2026",
@@ -1991,123 +2108,6 @@
             },
             {
               "p": "Jeśli robisz Meta Ads po staremu i widzisz, że CPA rośnie, a skalowanie się zacięło — prawdopodobnie nie robisz nic źle. Po prostu platforma poszła dalej, a Twój setup został w 2023."
-            }
-          ]
-        },
-        {
-          "slug": "rebrand-bez-kryzysu",
-          "cat": "Branding",
-          "date": "Lut 2026",
-          "title1": "Rebrand bez kryzysu —",
-          "titleIt": "krótki przewodnik.",
-          "image": "/assets/blog-rebrand.jpg",
-          "lede": "Rebrand to nie nowe logo. Rebrand to reorganizacja całej komunikacji firmy — a większość firm robi go w najgorszym momencie, z najgorszych powodów. Krótki przewodnik jak tego nie spier... popsuć.",
-          "body": [
-            {
-              "h": "Kiedy rebrand ma sens"
-            },
-            {
-              "p": "Dobra decyzja o rebrandzie ma zawsze jeden z trzech konkretnych powodów — i żadnym z nich nie jest „znudził mi się logotyp\":"
-            },
-            {
-              "list": [
-                "**Produkt ewoluował.** Założenia biznesowe z dnia startu przestały być aktualne. Jeśli dzisiaj zakładałbyś tę firmę, zrobiłbyś inną markę — to moment.",
-                "**Publiczność się zmieniła.** Dotarłeś do innej grupy, niż ta, pod którą projektowana była marka. Komunikujesz się do sceny B, a identyfikacja wisi w scenie A.",
-                "**Reputacja wymaga resetu.** PR-owy kryzys, zmiana właściciela, fuzja, problemy prawne. Rebrand to wtedy nie kosmetyka, to wyjście z czarnego worka."
-              ]
-            },
-            {
-              "p": "Jeśli żaden z tych trzech — odłóż to. Nowe logo nie naprawi mailingu, który nikt nie otwiera."
-            },
-            {
-              "h": "Trzy pułapki, w które wpadają wszyscy"
-            },
-            {
-              "p": "**Pułapka 1: rebrand jako ucieczka przed robotą.** Firma ma problem z sprzedażą, z kulturą, z produktem. Zamiast tego rysuje nowe logo. Efekt: za pół roku te same problemy, plus wydane 80 tys. na identyfikację, która nie działa, bo nie miała do czego działać."
-            },
-            {
-              "p": "**Pułapka 2: rebrand bez planu wdrożenia.** Nowy system wizualny ląduje w pdf-ie. Pdf idzie do szuflady. Strona internetowa nie ma budżetu. Szyld na biurze został stary. Social media mają nowe colors, ale stare komunikaty. Efekt: firma teraz wygląda chaotycznie zamiast świeżo."
-            },
-            {
-              "p": "**Pułapka 3: rebrand po cichu.** Zmiana nikomu nie zakomunikowana, jak gdyby nic się nie stało. Klienci i partnerzy są zdezorientowani, ludzie pytają „zmieniliście się?\". Rebrand, który musi być wytłumaczony w nieskończoność — to rebrand, którego nie dało się uzasadnić."
-            },
-            {
-              "h": "Jak robić to dobrze"
-            },
-            {
-              "list": [
-                "**Zacznij od pytania biznesowego.** Jaki problem rozwiązujesz? Odpowiedź nie może być estetyczna.",
-                "**Zadbaj o plan wdrożenia przed projektem.** Kto, kiedy, gdzie. Materiały, budżet, harmonogram.",
-                "**Zrób storytelling.** Klienci, pracownicy, partnerzy — każda grupa powinna usłyszeć od Ciebie, dlaczego i co się zmienia.",
-                "**Zaakceptuj, że wszystkim się nie spodoba.** Jeśli chcesz 100% akceptacji — znaczy nie zmieniłeś nic istotnego."
-              ]
-            },
-            {
-              "h": "Checklist pre-rebrand"
-            },
-            {
-              "p": "Zanim wydasz pierwsze 10 tys., odpowiedz sobie: (1) czy problem, który rozwiązuję rebrandem, naprawdę jest problemem wizualnym? (2) czy mam budżet nie tylko na projekt, ale na wdrożenie wszędzie? (3) czy mogę uzasadnić zmianę w jednym zdaniu, pracownikom i klientom? Jeśli na trzy pytania odpowiedź brzmi „tak\", wchodź. Jeśli choć jedno „nie\" — wstrzymaj się."
-            }
-          ]
-        },
-        {
-          "slug": "codzienny-tetris",
-          "cat": "Produktywność",
-          "date": "Sty 2026",
-          "title1": "Codzienny Tetris:",
-          "titleIt": "jak zarządzać swoim mózgiem.",
-          "image": "/assets/blog-tetris.jpg",
-          "lede": "Metafora funkcjonowania ludzkiego mózgu i zarządzania zadaniami. Na początku dnia plansza jest pusta — łatwo coś ułożyć. Problem zaczyna się, gdy klocki zaczynają spadać szybciej, niż potrafisz je układać.",
-          "body": [
-            {
-              "h": "Czysta plansza"
-            },
-            {
-              "p": "Na początku dnia, gdy nasza „plansza gry\" (czyli umysł i harmonogram) jest czysta i nieobciążona, łatwiej jest podejmować nowe zadania i wyzwania. Nie ma dużej presji czasowej, myślenie jest klarowne i skoncentrowane."
-            },
-            {
-              "p": "Tak jak w Tetrisie, gdzie łatwiej układa się klocki na pustej planszy, tak samo w życiu codziennym łatwiej jest rozpoczynać i kończyć zadania, kiedy nasz umysł jest „świeży\" i niezakłócony. Dlatego większość produktywnych ludzi rezerwuje poranek na najtrudniejsze zadania — to czas, gdy plansza jest najbardziej pusta."
-            },
-            {
-              "h": "Napór klocków"
-            },
-            {
-              "p": "W miarę upływu dnia i napływu nowych zadań, nasza zdolność do efektywnego zarządzania czasem i priorytetami jest wystawiona na próbę. Tak jak w Tetrisie, gdzie pojawiają się nowe klocki z coraz większą szybkością, w życiu codziennym napotykamy na coraz więcej wyzwań i niespodziewanych zadań."
-            },
-            {
-              "p": "Jeśli nie radzimy sobie z nimi na bieżąco, „plansza\" zapełnia się, co utrudnia dodawanie nowych elementów bez tworzenia chaosu. To moment, w którym „robiłem dużo, a zrobiłem nic\" staje się codziennością."
-            },
-            {
-              "h": "Przewidywanie > reagowanie"
-            },
-            {
-              "p": "Kluczem do sukcesu w „codziennym Tetrisie\" jest nie tylko efektywne zarządzanie bieżącymi zadaniami, ale również umiejętność **przewidywania i planowania**. Odkładanie zadań na później, podobnie jak unikanie podejmowania decyzji w Tetrisie, zwykle prowadzi do „przegranej rundy\" — sytuacji, w której przestajemy mieć kontrolę nad naszymi obowiązkami i czasem."
-            },
-            {
-              "p": "Dobrzy gracze w Tetrisa nie reagują na klocek, który jest — już planują miejsce dla klocka, który przyjdzie za chwilę. Ludzie, którzy dobrze zarządzają dniem, też nie reagują wyłącznie na to, co ląduje w skrzynce. Mają miejsce zarezerwowane dla tego, co wiadomo, że przyjdzie."
-            },
-            {
-              "h": "Przerwa = czyszczenie linii"
-            },
-            {
-              "p": "Zarządzanie naszym „codziennym Tetrisem\" wymaga też umiejętności rozpoznawania momentów, gdy warto zrobić krótką przerwę, aby oczyścić umysł i spojrzeć na zadania z nowej perspektywy. Krótki moment odpoczynku to nie strata czasu — to „czyszczenie linii\". Nagle plansza się zmniejsza, widać więcej miejsca, decyzje stają się łatwiejsze."
-            },
-            {
-              "p": "Problem: większość ludzi traktuje przerwy jak zawodnik, który boi się odejść od Tetrisa, bo „klocki dalej spadają\". Paradoks polega na tym, że im dłużej grasz bez przerwy, tym więcej błędów robisz, tym wyższa plansza, tym trudniej ją obniżyć."
-            },
-            {
-              "h": "Podsumowanie"
-            },
-            {
-              "p": "Metafora „codziennego Tetrisa\" podkreśla znaczenie efektywnego zarządzania czasem, priorytetami i zdolności adaptacyjnych. Kluczem jest nie tylko radzenie sobie z bieżącymi zadaniami, ale elastyczność umysłu, pozwalająca dostosować się do zmieniających się warunków."
-            },
-            {
-              "list": [
-                "Chroń pierwsze 2-3 godziny dnia na zadania trudne.",
-                "Nie reaguj wyłącznie na to, co przyszło teraz — planuj miejsce na to, co przyjdzie.",
-                "Rób przerwy zanim tego potrzebujesz, nie gdy już musisz.",
-                "Naucz się rozpoznawać, kiedy Twoja plansza jest za wysoka — i co wtedy odłożyć."
-              ]
             }
           ]
         }
@@ -3622,6 +3622,162 @@
       "titleIt": "journal.",
       "items": [
         {
+          "slug": "daily-tetris",
+          "cat": "Productivity",
+          "date": "Jan 2026",
+          "title1": "Daily Tetris:",
+          "titleIt": "managing your brain.",
+          "image": "/assets/blog-tetris.jpg",
+          "lede": "A metaphor for the human brain and task management. Early in the day the board is empty — easy to place a block. The problem starts when blocks drop faster than you can fit them in.",
+          "body": [
+            {
+              "h": "Empty board"
+            },
+            {
+              "p": "At the start of the day, when our \"game board\" (mind + schedule) is empty and unburdened, it's easier to take on new tasks and challenges. No time pressure, thinking is clear and focused."
+            },
+            {
+              "p": "Like in Tetris, where it's easier to stack pieces on an empty board, in daily life it's easier to start and finish tasks when our mind is \"fresh\" and undisturbed. That's why most productive people reserve the morning for their hardest work — that's when the board is most empty."
+            },
+            {
+              "h": "The flood of blocks"
+            },
+            {
+              "p": "As the day progresses and new tasks flow in, our ability to manage time and priorities gets tested. Like in Tetris where new pieces come faster and faster, in daily life we face more and more challenges and unexpected tasks."
+            },
+            {
+              "p": "If we don't handle them in real time, the \"board\" fills up, and adding new pieces without chaos gets harder. That's when \"I did a lot and got nothing done\" becomes the daily mode."
+            },
+            {
+              "h": "Anticipation > reaction"
+            },
+            {
+              "p": "The key to \"daily Tetris\" isn't just managing current tasks — it's **anticipation and planning**. Postponing, like avoiding decisions in Tetris, usually ends in a lost round: you stop controlling your obligations and your time."
+            },
+            {
+              "p": "Good Tetris players don't react to the piece that's falling — they're already planning a spot for the one that comes next. People who manage their day well don't react only to what's in the inbox. They've got space reserved for what's known to be coming."
+            },
+            {
+              "h": "A break = clearing a line"
+            },
+            {
+              "p": "Managing your \"daily Tetris\" also requires knowing when to take a short break, to clear the mind and see tasks from a new angle. A short rest isn't a waste — it's \"clearing a line\". Suddenly the board shrinks, there's more room, decisions get easier."
+            }
+          ]
+        },
+        {
+          "slug": "marketing-for-its-own-sake",
+          "cat": "Strategy",
+          "date": "Apr 2026",
+          "title1": "How to stop doing marketing",
+          "titleIt": "for its own sake.",
+          "image": "/assets/blog-marketing.jpg",
+          "lede": "Generating a content calendar isn't strategy. Publishing \"because we have to\" costs the same as publishing on purpose — and delivers zero. How to tell motion from progress.",
+          "body": [
+            {
+              "h": "Motion ≠ progress"
+            },
+            {
+              "p": "Most marketing teams we've seen share one denominator: lots of motion, little progress. Campaign after campaign, reel after reel, a newsletter every Tuesday. Behind it all — no answer to a simple question: **why?**"
+            },
+            {
+              "p": "The mechanism is beautifully self-sustaining. Social generates content that fuels more content. Campaigns generate data that justifies more campaigns. The whole system orbits itself, and the only product is more TODOs."
+            },
+            {
+              "h": "What marketing-for-its-own-sake looks like"
+            },
+            {
+              "p": "It's when **doing** gets confused with the goal. Symptoms:"
+            },
+            {
+              "list": [
+                "Calendar full — but no idea which customer problem each post solves.",
+                "KPIs measured in likes, reach, impressions — never in what hits the P&L.",
+                "Every campaign described as a success, \"because reach grew\".",
+                "Reports nobody reads — made only because \"the client likes reports\".",
+                "New initiatives stacked without removing the old ones — because no-one dares say what stopped working."
+              ]
+            },
+            {
+              "h": "Two-question test"
+            },
+            {
+              "p": "Every time your team (or you) starts planning a new thing, ask:"
+            },
+            {
+              "list": [
+                "**Which concrete business goal does this support?** Not \"brand building\", not \"engagement\". Concrete: more inquiries in segment X, lower CAC in channel Y, higher cart value.",
+                "**How will I know if it worked?** If the answer is \"we'll see\", you're guessing."
+              ]
+            },
+            {
+              "p": "If you can't answer either — pause. Not because it's bad. Because you're doing it out of habit, not decision."
+            },
+            {
+              "h": "Turn campaigns into hypotheses"
+            },
+            {
+              "p": "Instead of a \"brand campaign\", plan hypothesis tests. Every marketing action is essentially a bet on reality: _I believe that if I show X to group Y, Z will happen_. If you can write that sentence — you have a campaign. If you can't — you have an expense."
+            },
+            {
+              "h": "Less, sharper, louder"
+            },
+            {
+              "p": "Real growth at most companies we've worked with didn't come from adding another channel. It came from **cutting three things** that didn't work and reinvesting those budgets into one thing that started to. Discipline is invisible — it's about what you don't do."
+            }
+          ]
+        },
+        {
+          "slug": "rebrand-without-crisis",
+          "cat": "Branding",
+          "date": "Feb 2026",
+          "title1": "Rebrand without crisis —",
+          "titleIt": "a short guide.",
+          "image": "/assets/blog-rebrand.jpg",
+          "lede": "A rebrand isn't a new logo. It's reorganizing the company's entire communication — and most companies do it at the worst moment, for the worst reasons. A short guide on how not to screw it up.",
+          "body": [
+            {
+              "h": "When rebrand makes sense"
+            },
+            {
+              "p": "A good rebrand decision has one of three concrete reasons — and \"I'm bored of the logo\" is none of them:"
+            },
+            {
+              "list": [
+                "**Product evolved.** Your day-one assumptions no longer hold. If you started this company today you'd build a different brand — that's the signal.",
+                "**Audience shifted.** You're reaching a different group than the one the brand was designed for. Communicating to Stage B while the identity hangs in Stage A.",
+                "**Reputation needs a reset.** PR crisis, ownership change, merger, legal trouble. Rebrand is then not cosmetic — it's getting out of the dark bag."
+              ]
+            },
+            {
+              "p": "None of these three? Put it down. A new logo won't fix the mailing list nobody opens."
+            },
+            {
+              "h": "Three traps everyone falls into"
+            },
+            {
+              "p": "**Trap 1: rebrand as escape from actual work.** Company has sales, culture, product problems. Instead it draws a new logo. Result: six months later, same problems + 80k spent on identity that doesn't work, because it had nothing to work for."
+            },
+            {
+              "p": "**Trap 2: rebrand without a rollout plan.** New system lands in a pdf. Pdf sits in a drawer. No website budget. Old signage. Social has new colors but old messages. Company now looks chaotic instead of fresh."
+            },
+            {
+              "p": "**Trap 3: silent rebrand.** No communication to anyone. Customers and partners confused, people asking \"did you change?\" A rebrand that needs endless explanation is a rebrand that couldn't be justified."
+            },
+            {
+              "h": "How to do it right"
+            },
+            {
+              "list": [
+                "**Start with the business question.** What problem are you solving? Answer can't be aesthetic.",
+                "**Plan the rollout before the design.** Who, when, where. Assets, budget, timeline.",
+                "**Do the storytelling.** Customers, staff, partners — each group should hear from you why and what changes.",
+                "**Accept not everyone will like it.** If you want 100% approval, you changed nothing meaningful."
+              ]
+            }
+          ]
+        },
+        {
           "slug": "ile-kosztuje-google-ads-dla-warsztatu-samochodowego-2026",
           "cat": "Google Ads",
           "date": "Kwi 2026",
@@ -3802,68 +3958,6 @@
           ]
         },
         {
-          "slug": "marketing-for-its-own-sake",
-          "cat": "Strategy",
-          "date": "Apr 2026",
-          "title1": "How to stop doing marketing",
-          "titleIt": "for its own sake.",
-          "image": "/assets/blog-marketing.jpg",
-          "lede": "Generating a content calendar isn't strategy. Publishing \"because we have to\" costs the same as publishing on purpose — and delivers zero. How to tell motion from progress.",
-          "body": [
-            {
-              "h": "Motion ≠ progress"
-            },
-            {
-              "p": "Most marketing teams we've seen share one denominator: lots of motion, little progress. Campaign after campaign, reel after reel, a newsletter every Tuesday. Behind it all — no answer to a simple question: **why?**"
-            },
-            {
-              "p": "The mechanism is beautifully self-sustaining. Social generates content that fuels more content. Campaigns generate data that justifies more campaigns. The whole system orbits itself, and the only product is more TODOs."
-            },
-            {
-              "h": "What marketing-for-its-own-sake looks like"
-            },
-            {
-              "p": "It's when **doing** gets confused with the goal. Symptoms:"
-            },
-            {
-              "list": [
-                "Calendar full — but no idea which customer problem each post solves.",
-                "KPIs measured in likes, reach, impressions — never in what hits the P&L.",
-                "Every campaign described as a success, \"because reach grew\".",
-                "Reports nobody reads — made only because \"the client likes reports\".",
-                "New initiatives stacked without removing the old ones — because no-one dares say what stopped working."
-              ]
-            },
-            {
-              "h": "Two-question test"
-            },
-            {
-              "p": "Every time your team (or you) starts planning a new thing, ask:"
-            },
-            {
-              "list": [
-                "**Which concrete business goal does this support?** Not \"brand building\", not \"engagement\". Concrete: more inquiries in segment X, lower CAC in channel Y, higher cart value.",
-                "**How will I know if it worked?** If the answer is \"we'll see\", you're guessing."
-              ]
-            },
-            {
-              "p": "If you can't answer either — pause. Not because it's bad. Because you're doing it out of habit, not decision."
-            },
-            {
-              "h": "Turn campaigns into hypotheses"
-            },
-            {
-              "p": "Instead of a \"brand campaign\", plan hypothesis tests. Every marketing action is essentially a bet on reality: _I believe that if I show X to group Y, Z will happen_. If you can write that sentence — you have a campaign. If you can't — you have an expense."
-            },
-            {
-              "h": "Less, sharper, louder"
-            },
-            {
-              "p": "Real growth at most companies we've worked with didn't come from adding another channel. It came from **cutting three things** that didn't work and reinvesting those budgets into one thing that started to. Discipline is invisible — it's about what you don't do."
-            }
-          ]
-        },
-        {
           "slug": "meta-ads-2026",
           "cat": "Performance",
           "date": "Mar 2026",
@@ -3911,100 +4005,6 @@
             },
             {
               "p": "If you're running Meta Ads the old way and CPA is climbing, scaling is stuck — you're probably not doing anything wrong. The platform moved on, your setup stayed in 2023."
-            }
-          ]
-        },
-        {
-          "slug": "rebrand-without-crisis",
-          "cat": "Branding",
-          "date": "Feb 2026",
-          "title1": "Rebrand without crisis —",
-          "titleIt": "a short guide.",
-          "image": "/assets/blog-rebrand.jpg",
-          "lede": "A rebrand isn't a new logo. It's reorganizing the company's entire communication — and most companies do it at the worst moment, for the worst reasons. A short guide on how not to screw it up.",
-          "body": [
-            {
-              "h": "When rebrand makes sense"
-            },
-            {
-              "p": "A good rebrand decision has one of three concrete reasons — and \"I'm bored of the logo\" is none of them:"
-            },
-            {
-              "list": [
-                "**Product evolved.** Your day-one assumptions no longer hold. If you started this company today you'd build a different brand — that's the signal.",
-                "**Audience shifted.** You're reaching a different group than the one the brand was designed for. Communicating to Stage B while the identity hangs in Stage A.",
-                "**Reputation needs a reset.** PR crisis, ownership change, merger, legal trouble. Rebrand is then not cosmetic — it's getting out of the dark bag."
-              ]
-            },
-            {
-              "p": "None of these three? Put it down. A new logo won't fix the mailing list nobody opens."
-            },
-            {
-              "h": "Three traps everyone falls into"
-            },
-            {
-              "p": "**Trap 1: rebrand as escape from actual work.** Company has sales, culture, product problems. Instead it draws a new logo. Result: six months later, same problems + 80k spent on identity that doesn't work, because it had nothing to work for."
-            },
-            {
-              "p": "**Trap 2: rebrand without a rollout plan.** New system lands in a pdf. Pdf sits in a drawer. No website budget. Old signage. Social has new colors but old messages. Company now looks chaotic instead of fresh."
-            },
-            {
-              "p": "**Trap 3: silent rebrand.** No communication to anyone. Customers and partners confused, people asking \"did you change?\" A rebrand that needs endless explanation is a rebrand that couldn't be justified."
-            },
-            {
-              "h": "How to do it right"
-            },
-            {
-              "list": [
-                "**Start with the business question.** What problem are you solving? Answer can't be aesthetic.",
-                "**Plan the rollout before the design.** Who, when, where. Assets, budget, timeline.",
-                "**Do the storytelling.** Customers, staff, partners — each group should hear from you why and what changes.",
-                "**Accept not everyone will like it.** If you want 100% approval, you changed nothing meaningful."
-              ]
-            }
-          ]
-        },
-        {
-          "slug": "daily-tetris",
-          "cat": "Productivity",
-          "date": "Jan 2026",
-          "title1": "Daily Tetris:",
-          "titleIt": "managing your brain.",
-          "image": "/assets/blog-tetris.jpg",
-          "lede": "A metaphor for the human brain and task management. Early in the day the board is empty — easy to place a block. The problem starts when blocks drop faster than you can fit them in.",
-          "body": [
-            {
-              "h": "Empty board"
-            },
-            {
-              "p": "At the start of the day, when our \"game board\" (mind + schedule) is empty and unburdened, it's easier to take on new tasks and challenges. No time pressure, thinking is clear and focused."
-            },
-            {
-              "p": "Like in Tetris, where it's easier to stack pieces on an empty board, in daily life it's easier to start and finish tasks when our mind is \"fresh\" and undisturbed. That's why most productive people reserve the morning for their hardest work — that's when the board is most empty."
-            },
-            {
-              "h": "The flood of blocks"
-            },
-            {
-              "p": "As the day progresses and new tasks flow in, our ability to manage time and priorities gets tested. Like in Tetris where new pieces come faster and faster, in daily life we face more and more challenges and unexpected tasks."
-            },
-            {
-              "p": "If we don't handle them in real time, the \"board\" fills up, and adding new pieces without chaos gets harder. That's when \"I did a lot and got nothing done\" becomes the daily mode."
-            },
-            {
-              "h": "Anticipation > reaction"
-            },
-            {
-              "p": "The key to \"daily Tetris\" isn't just managing current tasks — it's **anticipation and planning**. Postponing, like avoiding decisions in Tetris, usually ends in a lost round: you stop controlling your obligations and your time."
-            },
-            {
-              "p": "Good Tetris players don't react to the piece that's falling — they're already planning a spot for the one that comes next. People who manage their day well don't react only to what's in the inbox. They've got space reserved for what's known to be coming."
-            },
-            {
-              "h": "A break = clearing a line"
-            },
-            {
-              "p": "Managing your \"daily Tetris\" also requires knowing when to take a short break, to clear the mind and see tasks from a new angle. A short rest isn't a waste — it's \"clearing a line\". Suddenly the board shrinks, there's more room, decisions get easier."
             }
           ]
         }
