@@ -1227,7 +1227,7 @@ function Portfolio({
     className: "serif-italic section-lede reveal"
   }, p.lede)), /*#__PURE__*/React.createElement("div", {
     className: "sketchbook-grid"
-  }, p.items.map((it, i) => /*#__PURE__*/React.createElement(TiltLink, {
+  }, p.items.map((it, i) => /*#__PURE__*/React.createElement(SmartLink, {
     to: `/realizacje/${it.slug}`,
     className: "sketch-card reveal",
     key: i

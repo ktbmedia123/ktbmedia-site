@@ -53,8 +53,8 @@ const COPY = {
           "big": true
         },
         {
-          "k": "Zespół",
-          "v": "2 założycieli",
+          "k": "Specjalizacje",
+          "v": "2 branże wiodące",
           "big": false
         }
       ]
@@ -3580,8 +3580,8 @@ const COPY = {
           "big": true
         },
         {
-          "k": "Team",
-          "v": "2 founders",
+          "k": "Specialties",
+          "v": "2 core sectors",
           "big": false
         }
       ]

@@ -404,6 +404,9 @@ body.dark .hero-statue img { mix-blend-mode: screen; }
 .hero-meta .item .k { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--stone); margin-bottom: 8px; }
 .hero-meta .item .v { font-family: var(--font-sans); font-weight: 600; font-size: 15px; line-height: 1.4; color: var(--ink); }
 .hero-meta .item .big { font-family: var(--font-display); font-size: 34px; letter-spacing: -0.03em; line-height: 1; color: var(--ink); }
+@media (min-width: 901px) {
+  .hero-meta { display: none; }
+}
 
 .hero-sub-row {
   display: block;
@@ -483,6 +486,7 @@ body.dark .hero-statue img { mix-blend-mode: screen; }
   .hero-grid { grid-template-columns: 1.6fr 1fr; }
 }
 @media (max-width: 900px) {
+  .hero-meta { display: flex; }
   .hero-grid { grid-template-columns: 1fr; }
   .hero-left { max-width: 100%; }
   .hero-statue { width: 70%; opacity: 0.35; right: -10%; }
@@ -2065,11 +2069,11 @@ body.menu-open { overflow: hidden; }
 }
 .sketch-card:hover .sketch-cta { color: var(--accent); gap: 14px; }
 .sketch-reveal {
+  display: none;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
@@ -4280,7 +4284,7 @@ body.cursor-over-input .ktb-cursor::after {
 }
 .case-client-quote {
   margin: 48px 0;
-  padding: clamp(32px, 5vw, 64px);
+  padding: clamp(28px, 3.5vw, 46px);
   background: var(--ink);
   color: var(--bg);
 }
@@ -4288,11 +4292,11 @@ body.cursor-over-input .ktb-cursor::after {
   color: var(--accent);
 }
 .case-client-quote-text {
-  margin: 20px 0 28px;
+  margin: 18px 0 24px;
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: clamp(30px, 4vw, 58px);
-  line-height: 1.08;
+  font-size: clamp(24px, 2.6vw, 38px);
+  line-height: 1.16;
 }
 .case-client-quote-author {
   display: grid;
@@ -4308,6 +4312,13 @@ body.cursor-over-input .ktb-cursor::after {
   to { stroke-dashoffset: 0; }
 }
 @media (max-width: 760px) {
+  .case-client-quote {
+    padding: clamp(32px, 5vw, 64px);
+  }
+  .case-client-quote-text {
+    font-size: clamp(30px, 9vw, 48px);
+    line-height: 1.08;
+  }
   .case-scope-row {
     grid-template-columns: 1fr;
     padding: 22px;
