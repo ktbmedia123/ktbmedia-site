@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#EFE9DC" />
+  <title>404 — strona w warsztacie · KTB Media</title>
+  <meta name="description" content="Ta strona KTB Media nie istnieje. Wróć do realizacji, bloga albo formularza kontaktowego." />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=20260424-0240" />
+</head>
+<body>
+  <main class="not-found-page">
+    <div class="container not-found-inner">
+      <div class="not-found-copy">
+        <div class="sec-label"><span class="dot"></span> Błąd trasy</div>
+        <h1 class="display not-found-title">404</h1>
+        <p class="not-found-subtitle"><span class="it">Ta strona pojechała do warsztatu. Sprawdzamy co się stało.</span></p>
+        <p class="not-found-lede">Adres nie prowadzi do żadnej podstrony KTB Media, ale nadal możesz wrócić na trasę: realizacje, blog albo szybki kontakt.</p>
+        <nav class="not-found-links" aria-label="Proponowane strony">
+          <a class="btn" href="/realizacje">Zobacz realizacje</a>
+          <a class="btn-ghost" href="/blog">Przejrzyj blog</a>
+          <a class="btn-ghost" href="/kontakt">Skontaktuj się z nami</a>
+        </nav>
+        <div class="not-found-counter mono" id="notFoundCounter">Obsłużyliśmy już 1 nieistniejących stron.</div>
+      </div>
+      <div class="not-found-visual" aria-hidden="true">
+        <svg class="not-found-car" viewBox="0 0 680 280">
+          <defs>
+            <linearGradient id="nf-ramp-static" x1="0" x2="1">
+              <stop offset="0" stop-color="#d8c9b2" />
+              <stop offset="1" stop-color="#c6881e" />
+            </linearGradient>
+          </defs>
+          <path class="not-found-ramp" d="M58 226 C156 214 220 206 310 210 C408 214 512 198 622 164" fill="none" stroke="url(#nf-ramp-static)" stroke-width="10" stroke-linecap="round" />
+          <g class="not-found-garage">
+            <path d="M452 76h128l48 52v98H452z" fill="none" stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
+            <path d="M482 226v-66h68v66M452 128h176M482 104h72" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+          </g>
+          <g class="not-found-car-body">
+            <path d="M122 169h52l34-42h126l44 42h58c16 0 30 14 30 30v19H92v-17c0-18 12-32 30-32z" fill="#efe9dc" stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
+            <path d="M218 133h46v36h-76zM278 133h48l44 36h-92z" fill="#1a1a1a" opacity=".12" stroke="currentColor" stroke-width="6" stroke-linejoin="round" />
+            <path d="M416 183h28M116 184h34M348 116l22-24M383 119l30-15" fill="none" stroke="#c6881e" stroke-width="7" stroke-linecap="round" />
+            <g class="not-found-wheel">
+              <circle cx="170" cy="220" r="33" fill="#1a1a1a" />
+              <circle cx="170" cy="220" r="13" fill="#c6881e" />
+              <path d="M170 187v66M137 220h66M147 197l46 46M193 197l-46 46" stroke="#efe9dc" stroke-width="4" stroke-linecap="round" />
+            </g>
+            <g class="not-found-wheel">
+              <circle cx="392" cy="220" r="33" fill="#1a1a1a" />
+              <circle cx="392" cy="220" r="13" fill="#c6881e" />
+              <path d="M392 187v66M359 220h66M369 197l46 46M415 197l-46 46" stroke="#efe9dc" stroke-width="4" stroke-linecap="round" />
+            </g>
+          </g>
+          <path class="not-found-loose-wheel" d="M572 216a27 27 0 1 0 54 0a27 27 0 1 0-54 0" fill="#1a1a1a" stroke="#c6881e" stroke-width="7" />
+          <path d="M66 250h560" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".18" />
+        </svg>
+      </div>
+    </div>
+  </main>
+  <script>
+    try {
+      var next = Number(localStorage.getItem('ktb404count') || '0') + 1;
+      localStorage.setItem('ktb404count', String(next));
+      document.getElementById('notFoundCounter').textContent = 'Obsłużyliśmy już ' + next + ' nieistniejących stron.';
+    } catch (e) {}
+  </script>
+</body>
+</html>

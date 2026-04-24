@@ -88,6 +88,11 @@ function sectionEnabled(lang, key) {
   const sections = COPY[lang] && COPY[lang].sections;
   return !sections || sections[key] !== false;
 }
+function getLandingConfig(lang, path) {
+  const slug = path.replace(/^\//, '');
+  const fromCms = COPY[lang] && COPY[lang].landings && COPY[lang].landings[slug];
+  return fromCms || window.LANDINGS && window.LANDINGS[slug] || null;
+}
 function useReveal(deps = []) {
   useEffect(() => {
     const io = new IntersectionObserver(entries => {
@@ -264,6 +269,12 @@ function useSEO(lang, path) {
         title: `${item.title1} ${item.titleIt} · KTB Media`,
         desc: item.lede || ''
       };
+    } else if (getLandingConfig(lang, path)) {
+      const item = getLandingConfig(lang, path);
+      meta = {
+        title: item.title,
+        desc: item.description
+      };
     } else if (path === '/realizacje') {
       meta = {
         title: (lang === 'pl' ? 'Realizacje — case studies marketingu motoryzacji i marek lokalnych' : 'Selected work — automotive and local brand case studies') + ' · KTB Media',
@@ -288,6 +299,11 @@ function useSEO(lang, path) {
       meta = {
         title: (lang === 'pl' ? 'Polityka prywatności' : 'Privacy policy') + ' · KTB Media',
         desc: lang === 'pl' ? 'Polityka prywatności KTB Media.' : 'KTB Media privacy policy.'
+      };
+    } else if (path !== '/') {
+      meta = {
+        title: (lang === 'pl' ? '404 — strona w warsztacie' : '404 — page in the workshop') + ' · KTB Media',
+        desc: lang === 'pl' ? 'Ta strona KTB Media nie istnieje. Wróć do realizacji, bloga albo formularza kontaktowego.' : 'This KTB Media page does not exist. Go back to work, journal or contact.'
       };
     } else {
       meta = {
@@ -629,6 +645,62 @@ function About({
     className: "cap"
   }, a.cap)))));
 }
+function AudienceBlocks({
+  lang,
+  extended = false
+}) {
+  if (!sectionEnabled(lang, 'audience')) return null;
+  const a = COPY[lang].audience;
+  if (!a) return null;
+  const forItems = extended && a.forItemsExt ? a.forItemsExt : (a.forItems || []).map(k => ({
+    k
+  }));
+  const notForItems = extended && a.notForItemsExt ? a.notForItemsExt : (a.notForItems || []).map(k => ({
+    k
+  }));
+  const renderList = (items, mode) => /*#__PURE__*/React.createElement("ul", {
+    className: "audience-list"
+  }, items.map((item, i) => /*#__PURE__*/React.createElement("li", {
+    key: i,
+    className: extended ? 'is-extended' : ''
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "audience-mark",
+    "aria-hidden": "true"
+  }, mode === 'for' ? "\u2713" : "\u2717"), /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("strong", null, item.k), extended && item.d && /*#__PURE__*/React.createElement("em", null, item.d)))));
+  return /*#__PURE__*/React.createElement("section", {
+    className: `section audience-section ${extended ? 'audience-section-extended' : ''}`
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "section-head reveal"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "sec-label"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "dot"
+  }), " ", a.label), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", {
+    className: "display section-title"
+  }, a.title1, " ", /*#__PURE__*/React.createElement("span", {
+    className: "it"
+  }, a.titleIt)), extended && a.intro && /*#__PURE__*/React.createElement("p", {
+    className: "audience-intro"
+  }, a.intro))), /*#__PURE__*/React.createElement("div", {
+    className: "audience-grid reveal"
+  }, /*#__PURE__*/React.createElement("article", {
+    className: "audience-panel audience-panel-for"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "audience-panel-head"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "audience-icon",
+    "aria-hidden": "true"
+  }, "\u2713"), /*#__PURE__*/React.createElement("h3", null, a.forLabel)), renderList(forItems, 'for')), /*#__PURE__*/React.createElement("article", {
+    className: "audience-panel audience-panel-not"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "audience-panel-head"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "audience-icon",
+    "aria-hidden": "true"
+  }, "\u2717"), /*#__PURE__*/React.createElement("h3", null, a.notForLabel)), renderList(notForItems, 'not')))));
+}
 function Showcase({
   lang
 }) {
@@ -761,6 +833,251 @@ function Portfolio({
     size: 12
   })))))));
 }
+function CaseChart({
+  data,
+  lang
+}) {
+  const [hover, setHover] = useState(null);
+  if (!data || !Array.isArray(data.before) || !Array.isArray(data.after)) return null;
+  const before = data.before.map((v, i) => ({
+    v,
+    series: lang === 'pl' ? 'Przed' : 'Before',
+    i
+  }));
+  const after = data.after.map((v, i) => ({
+    v,
+    series: lang === 'pl' ? 'Po' : 'After',
+    i
+  }));
+  const values = before.concat(after).map(p => p.v);
+  const max = Math.max(...values);
+  const min = Math.min(0, ...values);
+  const width = 720;
+  const height = 320;
+  const pad = {
+    l: 58,
+    r: 28,
+    t: 32,
+    b: 46
+  };
+  const x = (i, len) => pad.l + i * ((width - pad.l - pad.r) / Math.max(1, len - 1));
+  const y = v => height - pad.b - (v - min) * ((height - pad.t - pad.b) / Math.max(1, max - min));
+  const pathFor = pts => pts.map((p, i) => `${i ? 'L' : 'M'}${x(p.i, pts.length).toFixed(1)} ${y(p.v).toFixed(1)}`).join(' ');
+  const firstBefore = before[0] ? before[0].v : 0;
+  const bestAfter = Math.max(...after.map(p => p.v));
+  const growth = firstBefore ? Math.round((bestAfter - firstBefore) / firstBefore * 100) : 0;
+  const ticks = [0, .25, .5, .75, 1].map(t => Math.round(min + (max - min) * t));
+  return /*#__PURE__*/React.createElement("div", {
+    className: "case-chart-wrap"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "case-chart-head"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "case-chart-label mono"
+  }, data.label), /*#__PURE__*/React.createElement("div", {
+    className: "case-chart-legend mono"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "before"
+  }, lang === 'pl' ? 'Przed' : 'Before'), /*#__PURE__*/React.createElement("span", {
+    className: "after"
+  }, lang === 'pl' ? 'Po' : 'After'))), /*#__PURE__*/React.createElement("svg", {
+    className: "case-chart-svg",
+    viewBox: `0 0 ${width} ${height}`,
+    role: "img",
+    "aria-label": `${data.label}: ${lang === 'pl' ? 'porównanie przed i po' : 'before and after comparison'}`
+  }, ticks.map((tick, i) => /*#__PURE__*/React.createElement("g", {
+    key: i
+  }, /*#__PURE__*/React.createElement("line", {
+    x1: pad.l,
+    x2: width - pad.r,
+    y1: y(tick),
+    y2: y(tick),
+    className: "case-chart-grid"
+  }), /*#__PURE__*/React.createElement("text", {
+    x: 10,
+    y: y(tick) + 4,
+    className: "case-chart-axis"
+  }, tick))), /*#__PURE__*/React.createElement("path", {
+    d: pathFor(before),
+    className: "case-chart-line case-chart-line-before"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: pathFor(after),
+    className: "case-chart-line case-chart-line-after"
+  }), before.concat(after).map((p, idx) => /*#__PURE__*/React.createElement("circle", {
+    key: idx,
+    cx: x(p.i, p.series === (lang === 'pl' ? 'Przed' : 'Before') ? before.length : after.length),
+    cy: y(p.v),
+    r: hover === idx ? 7 : 4,
+    className: p.series === (lang === 'pl' ? 'Przed' : 'Before') ? 'case-chart-dot before' : 'case-chart-dot after',
+    onMouseEnter: () => setHover(idx),
+    onMouseLeave: () => setHover(null)
+  })), hover != null && (() => {
+    const all = before.concat(after);
+    const p = all[hover];
+    const len = p.series === (lang === 'pl' ? 'Przed' : 'Before') ? before.length : after.length;
+    const hx = x(p.i, len);
+    const hy = y(p.v);
+    return /*#__PURE__*/React.createElement("g", {
+      className: "case-chart-tip"
+    }, /*#__PURE__*/React.createElement("rect", {
+      x: Math.min(width - 170, Math.max(70, hx - 70)),
+      y: Math.max(12, hy - 54),
+      width: "150",
+      height: "38",
+      rx: "4"
+    }), /*#__PURE__*/React.createElement("text", {
+      x: Math.min(width - 158, Math.max(82, hx - 58)),
+      y: Math.max(36, hy - 31)
+    }, `${p.series}: ${p.v} ${data.unit || ''}`));
+  })()), /*#__PURE__*/React.createElement("div", {
+    className: "case-chart-mobile"
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("span", {
+    className: "mono"
+  }, lang === 'pl' ? 'Przed' : 'Before'), /*#__PURE__*/React.createElement("strong", null, firstBefore, " ", data.unit || '')), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("span", {
+    className: "mono"
+  }, lang === 'pl' ? 'Najlepszy wynik po' : 'Best after'), /*#__PURE__*/React.createElement("strong", null, bestAfter, " ", data.unit || '')), /*#__PURE__*/React.createElement("div", {
+    className: "case-chart-growth"
+  }, "+", growth, "%")));
+}
+function LandingPage({ lang, config }) {
+  const portfolio = COPY[lang].portfolio || {};
+  const cases = (config.cases || []).map(slug => (portfolio.items || []).find(item => item.slug === slug)).filter(Boolean);
+  const faqs = (config.faq || []).map(item => Array.isArray(item) ? {
+    q: item[0],
+    a: item[1]
+  } : item).filter(item => item && item.q && item.a);
+  return /*#__PURE__*/React.createElement("article", {
+    className: "landing-page"
+  }, /*#__PURE__*/React.createElement("header", {
+    className: "landing-hero"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container landing-hero-inner"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "sec-label reveal"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "dot"
+  }), " SEO landing"), /*#__PURE__*/React.createElement("h1", {
+    className: "display landing-title reveal"
+  }, config.hero.h1), /*#__PURE__*/React.createElement("p", {
+    className: "landing-lede reveal"
+  }, config.hero.lead), /*#__PURE__*/React.createElement("div", {
+    className: "landing-cta-row reveal"
+  }, /*#__PURE__*/React.createElement(SmartLink, {
+    to: "/kontakt",
+    className: "btn"
+  }, lang === 'pl' ? 'Darmowa wycena' : 'Free quote', " ", /*#__PURE__*/React.createElement(ArrowIcon, {
+    size: 12
+  })), /*#__PURE__*/React.createElement(SmartLink, {
+    to: "/realizacje",
+    className: "btn-ghost"
+  }, lang === 'pl' ? 'Zobacz realizacje' : 'See work', " ", /*#__PURE__*/React.createElement(ArrowIcon, {
+    size: 12
+  }))))), (config.context || []).length > 0 && /*#__PURE__*/React.createElement("section", {
+    className: "section landing-context"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container landing-context-inner reveal"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "sec-label"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "dot"
+  }), " ", lang === 'pl' ? 'Podejście' : 'Approach'), (config.context || []).map((p, i) => /*#__PURE__*/React.createElement("p", {
+    key: i
+  }, p)))), /*#__PURE__*/React.createElement("section", {
+    className: "section landing-why"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "section-head reveal"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "sec-label"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "dot"
+  }), " ", lang === 'pl' ? 'Dlaczego my' : 'Why us'), /*#__PURE__*/React.createElement("h2", {
+    className: "display section-title"
+  }, lang === 'pl' ? 'Marketing, który ma ' : 'Marketing with ', /*#__PURE__*/React.createElement("span", {
+    className: "it"
+  }, lang === 'pl' ? 'sens.' : 'substance.'))), /*#__PURE__*/React.createElement("div", {
+    className: "landing-feature-grid"
+  }, (config.why || []).map((item, i) => /*#__PURE__*/React.createElement("div", {
+    className: "landing-feature reveal",
+    key: i
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "mono"
+  }, String(i + 1).padStart(2, '0')), /*#__PURE__*/React.createElement("p", null, item)))))), /*#__PURE__*/React.createElement("section", {
+    className: "section landing-services"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "section-head reveal"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "sec-label"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "dot"
+  }), " ", lang === 'pl' ? 'Zakres' : 'Scope'), /*#__PURE__*/React.createElement("h2", {
+    className: "display section-title"
+  }, lang === 'pl' ? 'Co robimy dla ' : 'What we do for ', /*#__PURE__*/React.createElement("span", {
+    className: "it"
+  }, config.area))), /*#__PURE__*/React.createElement("ul", {
+    className: "landing-service-list reveal"
+  }, (config.services || []).map((item, i) => /*#__PURE__*/React.createElement("li", {
+    key: i
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "mono"
+  }, String(i + 1).padStart(2, '0')), item))))), cases.length > 0 && /*#__PURE__*/React.createElement("section", {
+    className: "section landing-cases"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "section-head reveal"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "sec-label"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "dot"
+  }), " Case study"), /*#__PURE__*/React.createElement("h2", {
+    className: "display section-title"
+  }, lang === 'pl' ? 'Podobne ' : 'Related ', /*#__PURE__*/React.createElement("span", {
+    className: "it"
+  }, lang === 'pl' ? 'realizacje.' : 'work.'))), /*#__PURE__*/React.createElement("div", {
+    className: "landing-case-grid"
+  }, cases.map(item => /*#__PURE__*/React.createElement(SmartLink, {
+    to: `/realizacje/${item.slug}`,
+    className: "landing-case reveal",
+    key: item.slug
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "mono"
+  }, item.tag), /*#__PURE__*/React.createElement("strong", null, item.title1, " ", item.titleIt), /*#__PURE__*/React.createElement("p", null, item.brief)))))), /*#__PURE__*/React.createElement("section", {
+    className: "section landing-faq"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "section-head reveal"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "sec-label"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "dot"
+  }), " FAQ"), /*#__PURE__*/React.createElement("h2", {
+    className: "display section-title"
+  }, lang === 'pl' ? 'Pytania przed ' : 'Questions before ', /*#__PURE__*/React.createElement("span", {
+    className: "it"
+  }, lang === 'pl' ? 'startem.' : 'starting.'))), /*#__PURE__*/React.createElement("div", {
+    className: "landing-faq-list"
+  }, faqs.map((item, i) => /*#__PURE__*/React.createElement("details", {
+    className: "landing-faq-item reveal",
+    key: i
+  }, /*#__PURE__*/React.createElement("summary", null, item.q), /*#__PURE__*/React.createElement("p", null, item.a)))))), /*#__PURE__*/React.createElement("section", {
+    className: "landing-final-cta"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container landing-final-inner"
+  }, /*#__PURE__*/React.createElement("h2", {
+    className: "display"
+  }, lang === 'pl' ? 'Sprawdźmy, co ' : 'Let us check what ', /*#__PURE__*/React.createElement("span", {
+    className: "it"
+  }, lang === 'pl' ? 'ma sens.' : 'makes sense.')), /*#__PURE__*/React.createElement(SmartLink, {
+    to: "/kontakt",
+    className: "btn"
+  }, lang === 'pl' ? 'Darmowa wycena' : 'Free quote', " ", /*#__PURE__*/React.createElement(ArrowIcon, {
+    size: 12
+  })))));
+}
 function CasePage({
   lang,
   slug
@@ -796,6 +1113,10 @@ function CasePage({
     challenge: 'Wyzwanie',
     solution: 'Podejście',
     results: 'Rezultaty',
+    scope: 'Zakres projektu',
+    duration: 'Czas trwania',
+    timeline: 'Przebieg projektu',
+    quote: 'Cytat klienta',
     notes: 'Notatki z procesu',
     palette: 'Paleta',
     nextCase: 'Następny projekt'
@@ -804,6 +1125,10 @@ function CasePage({
     challenge: 'Challenge',
     solution: 'Approach',
     results: 'Results',
+    scope: 'Project scope',
+    duration: 'Duration',
+    timeline: 'Project timeline',
+    quote: 'Client quote',
     notes: 'Process notes',
     palette: 'Palette',
     nextCase: 'Next project'
@@ -865,7 +1190,19 @@ function CasePage({
     }
   }), /*#__PURE__*/React.createElement("span", {
     className: "case-image-num"
-  }, String(j + 1).padStart(2, '0'), " / ", String(images.length).padStart(2, '0'))))), /*#__PURE__*/React.createElement("div", {
+  }, String(j + 1).padStart(2, '0'), " / ", String(images.length).padStart(2, '0'))))), (item.duration || item.scope) && /*#__PURE__*/React.createElement("section", {
+    className: "case-scope-row reveal"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "case-scope-duration"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "case-block-label mono"
+  }, t.duration), /*#__PURE__*/React.createElement("strong", null, item.duration)), /*#__PURE__*/React.createElement("div", {
+    className: "case-scope-tags",
+    "aria-label": t.scope
+  }, (item.scope || []).map((tag, j) => /*#__PURE__*/React.createElement("span", {
+    className: "case-scope-tag mono",
+    key: j
+  }, tag)))), /*#__PURE__*/React.createElement("div", {
     className: "case-grid"
   }, /*#__PURE__*/React.createElement("section", {
     className: "case-block reveal"
@@ -879,7 +1216,20 @@ function CasePage({
     className: "case-block-label mono"
   }, t.solution), /*#__PURE__*/React.createElement("p", {
     className: "case-block-body"
-  }, item.solution))), /*#__PURE__*/React.createElement("section", {
+  }, item.solution))), item.timeline && item.timeline.length > 0 && /*#__PURE__*/React.createElement("section", {
+    className: "case-timeline-section reveal"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "case-block-label mono"
+  }, t.timeline), /*#__PURE__*/React.createElement("ol", {
+    className: "case-timeline"
+  }, item.timeline.map((phase, j) => /*#__PURE__*/React.createElement("li", {
+    className: "case-timeline-item",
+    key: j
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "case-timeline-num mono"
+  }, String(j + 1).padStart(2, '0')), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", null, phase.phase), /*#__PURE__*/React.createElement("div", {
+    className: "case-timeline-duration mono"
+  }, phase.duration), /*#__PURE__*/React.createElement("p", null, phase.description)))))), /*#__PURE__*/React.createElement("section", {
     className: "case-results reveal"
   }, /*#__PURE__*/React.createElement("div", {
     className: "case-block-label mono"
@@ -892,7 +1242,18 @@ function CasePage({
     className: "case-result-v"
   }, r.v), /*#__PURE__*/React.createElement("div", {
     className: "case-result-k mono"
-  }, r.k))))), item.notes && item.notes.length > 0 && /*#__PURE__*/React.createElement("section", {
+  }, r.k))))), /*#__PURE__*/React.createElement(CaseChart, {
+    data: item.chartData,
+    lang: lang
+  })), item.clientQuote && /*#__PURE__*/React.createElement("section", {
+    className: "case-client-quote reveal"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "case-block-label mono"
+  }, t.quote), /*#__PURE__*/React.createElement("blockquote", {
+    className: "case-client-quote-text"
+  }, "\u201E", item.clientQuote.text, "\u201D"), /*#__PURE__*/React.createElement("div", {
+    className: "case-client-quote-author"
+  }, /*#__PURE__*/React.createElement("strong", null, item.clientQuote.author), /*#__PURE__*/React.createElement("span", null, item.clientQuote.role, " \xB7 ", item.clientQuote.company))), item.notes && item.notes.length > 0 && /*#__PURE__*/React.createElement("section", {
     className: "case-notes reveal"
   }, /*#__PURE__*/React.createElement("div", {
     className: "case-block-label mono"
@@ -911,7 +1272,7 @@ function CasePage({
     className: "it"
   }, next.titleIt), " ", /*#__PURE__*/React.createElement(ArrowIcon, {
     size: 28
-  })))));
+  }))));
 }
 function Testimonials({
   lang
@@ -1017,7 +1378,10 @@ function AboutPage({
     className: "accent"
   }, a.quoteAccent))), "\""), /*#__PURE__*/React.createElement("div", {
     className: "cap"
-  }, a.cap))))), sectionEnabled(lang, 'founders') && /*#__PURE__*/React.createElement("section", {
+  }, a.cap))))), /*#__PURE__*/React.createElement(AudienceBlocks, {
+    lang: lang,
+    extended: true
+  }), sectionEnabled(lang, 'founders') && /*#__PURE__*/React.createElement("section", {
     className: "section founders-section"
   }, /*#__PURE__*/React.createElement("div", {
     className: "container"
@@ -1165,7 +1529,12 @@ function BlogArticle({
       dangerouslySetInnerHTML: {
         __html: li.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
       }
-    }))));
+    }))));else if (block.image) out.push(/*#__PURE__*/React.createElement("figure", {
+      key: `figure-${j}`
+    }, /*#__PURE__*/React.createElement("img", {
+      src: block.image,
+      alt: block.caption || item.title1
+    }), block.caption && /*#__PURE__*/React.createElement("figcaption", null, block.caption)));
     if (item.image && j === midIdx) {
       out.push(/*#__PURE__*/React.createElement("figure", {
         key: `fig-${j}`
@@ -1595,6 +1964,160 @@ function MiniCtaBar({
     "aria-hidden": "true"
   }))));
 }
+function NotFoundCar() {
+  return /*#__PURE__*/React.createElement("svg", {
+    className: "not-found-car",
+    viewBox: "0 0 680 280",
+    role: "img",
+    "aria-label": "Samochód wjeżdżający do warsztatu"
+  }, /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("linearGradient", {
+    id: "nf-ramp",
+    x1: "0",
+    x2: "1"
+  }, /*#__PURE__*/React.createElement("stop", {
+    offset: "0",
+    stopColor: "#d8c9b2"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: "1",
+    stopColor: "#c6881e"
+  }))), /*#__PURE__*/React.createElement("path", {
+    className: "not-found-ramp",
+    d: "M58 226 C156 214 220 206 310 210 C408 214 512 198 622 164",
+    fill: "none",
+    stroke: "url(#nf-ramp)",
+    strokeWidth: "10",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React.createElement("g", {
+    className: "not-found-garage"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M452 76h128l48 52v98H452z",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "8",
+    strokeLinejoin: "round"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M482 226v-66h68v66M452 128h176M482 104h72",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "6",
+    strokeLinecap: "round"
+  })), /*#__PURE__*/React.createElement("g", {
+    className: "not-found-car-body"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M122 169h52l34-42h126l44 42h58c16 0 30 14 30 30v19H92v-17c0-18 12-32 30-32z",
+    fill: "#efe9dc",
+    stroke: "currentColor",
+    strokeWidth: "8",
+    strokeLinejoin: "round"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M218 133h46v36h-76zM278 133h48l44 36h-92z",
+    fill: "#1a1a1a",
+    opacity: ".12",
+    stroke: "currentColor",
+    strokeWidth: "6",
+    strokeLinejoin: "round"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M416 183h28M116 184h34M348 116l22-24M383 119l30-15",
+    fill: "none",
+    stroke: "#c6881e",
+    strokeWidth: "7",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React.createElement("g", {
+    className: "not-found-wheel not-found-wheel-left"
+  }, /*#__PURE__*/React.createElement("circle", {
+    cx: "170",
+    cy: "220",
+    r: "33",
+    fill: "#1a1a1a"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: "170",
+    cy: "220",
+    r: "13",
+    fill: "#c6881e"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M170 187v66M137 220h66M147 197l46 46M193 197l-46 46",
+    stroke: "#efe9dc",
+    strokeWidth: "4",
+    strokeLinecap: "round"
+  })), /*#__PURE__*/React.createElement("g", {
+    className: "not-found-wheel not-found-wheel-right"
+  }, /*#__PURE__*/React.createElement("circle", {
+    cx: "392",
+    cy: "220",
+    r: "33",
+    fill: "#1a1a1a"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: "392",
+    cy: "220",
+    r: "13",
+    fill: "#c6881e"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M392 187v66M359 220h66M369 197l46 46M415 197l-46 46",
+    stroke: "#efe9dc",
+    strokeWidth: "4",
+    strokeLinecap: "round"
+  }))), /*#__PURE__*/React.createElement("path", {
+    className: "not-found-loose-wheel",
+    d: "M572 216a27 27 0 1 0 54 0a27 27 0 1 0-54 0",
+    fill: "#1a1a1a",
+    stroke: "#c6881e",
+    strokeWidth: "7"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M66 250h560",
+    stroke: "currentColor",
+    strokeWidth: "4",
+    strokeLinecap: "round",
+    opacity: ".18"
+  }));
+}
+function NotFoundPage({
+  lang
+}) {
+  const t = COPY[lang].notFound;
+  const [count, setCount] = useState(1);
+  useEffect(() => {
+    try {
+      const next = Number(localStorage.getItem('ktb404count') || '0') + 1;
+      localStorage.setItem('ktb404count', String(next));
+      setCount(next);
+    } catch (e) {
+      setCount(1);
+    }
+  }, []);
+  return /*#__PURE__*/React.createElement("article", {
+    className: "not-found-page"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container not-found-inner"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "not-found-copy"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "sec-label reveal"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "dot"
+  }), " ", lang === 'pl' ? 'Błąd trasy' : 'Route error'), /*#__PURE__*/React.createElement("h1", {
+    className: "display not-found-title reveal"
+  }, t.title), /*#__PURE__*/React.createElement("p", {
+    className: "not-found-subtitle reveal"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "it"
+  }, t.subtitle)), /*#__PURE__*/React.createElement("p", {
+    className: "not-found-lede reveal"
+  }, t.lede), /*#__PURE__*/React.createElement("nav", {
+    className: "not-found-links reveal",
+    "aria-label": lang === 'pl' ? 'Proponowane strony' : 'Suggested pages'
+  }, (t.suggestions || []).map((item, i) => /*#__PURE__*/React.createElement(SmartLink, {
+    to: item.href,
+    className: i === 0 ? 'btn' : 'btn-ghost',
+    key: item.href
+  }, item.label, " ", /*#__PURE__*/React.createElement(ArrowIcon, {
+    size: 12
+  })))), /*#__PURE__*/React.createElement("div", {
+    className: "not-found-counter mono reveal"
+  }, t.counterLabel.replace('{count}', count))), /*#__PURE__*/React.createElement("div", {
+    className: "not-found-visual reveal",
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement(NotFoundCar, null))));
+}
 function Footer({
   lang
 }) {
@@ -1690,6 +2213,11 @@ function App() {
       lang: lang,
       slug: slug
     });
+  } else if (getLandingConfig(lang, path)) {
+    content = /*#__PURE__*/React.createElement(LandingPage, {
+      lang: lang,
+      config: getLandingConfig(lang, path)
+    });
   } else if (path === '/blog') {
     content = /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(PageHeader, {
       label: t.blog.label,
@@ -1711,13 +2239,15 @@ function App() {
     content = /*#__PURE__*/React.createElement(PrivacyPolicy, {
       lang: lang
     });
-  } else {
+  } else if (path === '/') {
     // HOME — NO About, NO Team, NO Contact section (moved to separate pages)
     content = /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(Hero, {
       lang: lang
     }), /*#__PURE__*/React.createElement(Marquee, {
       lang: lang
     }), /*#__PURE__*/React.createElement(Services, {
+      lang: lang
+    }), /*#__PURE__*/React.createElement(AudienceBlocks, {
       lang: lang
     }), /*#__PURE__*/React.createElement(Showcase, {
       lang: lang
@@ -1726,6 +2256,10 @@ function App() {
     }), /*#__PURE__*/React.createElement(Testimonials, {
       lang: lang
     }));
+  } else {
+    content = /*#__PURE__*/React.createElement(NotFoundPage, {
+      lang: lang
+    });
   }
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
     className: "ktb-cursor"
