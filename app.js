@@ -217,6 +217,7 @@ function SmartLink({
   children,
   className,
   onNav,
+  innerRef,
   ...rest
 }) {
   const onClick = e => {
@@ -243,6 +244,7 @@ function SmartLink({
     }
   };
   return /*#__PURE__*/React.createElement("a", _extends({
+    ref: innerRef,
     href: to,
     className: className,
     onClick: onClick
@@ -342,6 +344,417 @@ function useSEO(lang, path) {
     can.setAttribute('href', window.location.href.split('?')[0].split('#')[0]);
     document.documentElement.setAttribute('lang', lang);
   }, [lang, path]);
+}
+function prefersReducedMotion() {
+  return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+}
+function parseCountValue(value) {
+  const raw = String(value ?? '').trim();
+  if (!raw) return null;
+  if (/^od\s+\d/i.test(raw)) return null;
+  if (/^(19|20)\d{2}$/.test(raw)) return null;
+  let match = raw.match(/^([+-]?)(\d+(?:[.,]\d+)?)(\s?)([KkMm])?([+%×x])?$/);
+  if (match) {
+    const sign = match[1] || '';
+    const num = parseFloat(match[2].replace(',', '.'));
+    const space = match[3] || '';
+    const scale = match[4] ? match[4].toUpperCase() : '';
+    const suffixSymbol = match[5] || '';
+    const multiplier = scale === 'M' ? 1000000 : scale === 'K' ? 1000 : 1;
+    const target = num * multiplier;
+    return {
+      target,
+      start: suffixSymbol === '×' || suffixSymbol === 'x' ? 1 : 0,
+      prefix: sign,
+      suffix: `${space}${scale}${suffixSymbol}`.replace('x', '×'),
+      compact: !!scale,
+      decimals: match[2].includes('.') || match[2].includes(',') ? 1 : 0,
+      separator: false
+    };
+  }
+  match = raw.match(/^([×x])(\d+(?:[.,]\d+)?)$/);
+  if (match) {
+    return {
+      target: parseFloat(match[2].replace(',', '.')),
+      start: 1,
+      prefix: '',
+      suffix: '×',
+      compact: false,
+      decimals: match[2].includes('.') || match[2].includes(',') ? 1 : 0,
+      separator: false
+    };
+  }
+  if (/^\d{1,3}(?:[ \u00a0]\d{3})+$/.test(raw)) {
+    return {
+      target: Number(raw.replace(/[ \u00a0]/g, '')),
+      start: 0,
+      prefix: '',
+      suffix: '',
+      compact: false,
+      decimals: 0,
+      separator: true
+    };
+  }
+  return null;
+}
+function formatCountValue(value, parsed, done) {
+  if (!parsed) return String(value ?? '');
+  if (parsed.compact) {
+    const divisor = parsed.suffix.includes('M') ? 1000000 : 1000;
+    const unit = parsed.suffix.includes('M') ? 'M' : 'K';
+    const symbol = parsed.suffix.replace(/[KkMm]/, '');
+    const scaled = value / divisor;
+    const decimals = scaled < 10 && parsed.target % divisor !== 0 ? 1 : 0;
+    return `${parsed.prefix}${scaled.toFixed(decimals).replace('.', ',')}${unit}${done ? symbol : symbol.replace('+', '')}`;
+  }
+  const fixed = value.toFixed(parsed.decimals);
+  const normalized = parsed.decimals ? fixed.replace('.', ',') : String(Math.round(value));
+  const body = parsed.separator ? normalized.replace(/\B(?=(\d{3})+(?!\d))/g, ' ') : normalized;
+  return `${parsed.prefix}${body}${parsed.suffix}`;
+}
+function useCountUp(targetValue, options = {}) {
+  const {
+    duration = 1800,
+    startOnView = true,
+    animateFrom
+  } = options;
+  const ref = useRef(null);
+  const parsed = parseCountValue(targetValue);
+  const [display, setDisplay] = useState(() => parsed ? formatCountValue(animateFrom ?? parsed.start, {
+    ...parsed,
+    start: animateFrom ?? parsed.start
+  }, false) : String(targetValue ?? ''));
+  const hasRun = useRef(false);
+  const lastValue = useRef(targetValue);
+  useEffect(() => {
+    if (lastValue.current !== targetValue) {
+      lastValue.current = targetValue;
+      hasRun.current = false;
+    }
+    const nextParsed = parseCountValue(targetValue);
+    if (!nextParsed) {
+      setDisplay(String(targetValue ?? ''));
+      return;
+    }
+    const from = animateFrom ?? nextParsed.start;
+    const to = nextParsed.target;
+    const final = () => setDisplay(formatCountValue(to, nextParsed, true));
+    if (prefersReducedMotion()) {
+      final();
+      return;
+    }
+    let raf = 0;
+    let observer = null;
+    let start = 0;
+    const run = () => {
+      if (hasRun.current) return;
+      hasRun.current = true;
+      const tick = now => {
+        if (!start) start = now;
+        const t = Math.min(1, (now - start) / duration);
+        const eased = 1 - Math.pow(1 - t, 3);
+        setDisplay(formatCountValue(from + (to - from) * eased, nextParsed, t === 1));
+        if (t < 1) raf = requestAnimationFrame(tick);
+      };
+      raf = requestAnimationFrame(tick);
+    };
+    if (!startOnView) {
+      run();
+    } else if (ref.current) {
+      observer = new IntersectionObserver(entries => {
+        if (entries.some(entry => entry.isIntersecting)) {
+          if (observer) observer.disconnect();
+          run();
+        }
+      }, {
+        threshold: 0.3
+      });
+      observer.observe(ref.current);
+    }
+    return () => {
+      cancelAnimationFrame(raf);
+      if (observer) observer.disconnect();
+    };
+  }, [targetValue, duration, startOnView, animateFrom]);
+  return {
+    ref,
+    display,
+    isStatic: !parsed
+  };
+}
+function AnimatedValue({
+  value,
+  className,
+  duration,
+  startOnView,
+  animateFrom
+}) {
+  const count = useCountUp(value, {
+    duration,
+    startOnView,
+    animateFrom
+  });
+  return /*#__PURE__*/React.createElement("span", {
+    ref: count.ref,
+    className: className
+  }, count.display);
+}
+function useStickyQuote(path) {
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    if (path === '/kontakt' || path === '/contact' || path === '/polityka-prywatnosci' || path === '/privacy-policy') {
+      setVisible(false);
+      return;
+    }
+    if (sessionStorage.getItem('ktbStickyQuoteClosed') === '1') {
+      setVisible(false);
+      return;
+    }
+    let ticking = false;
+    const update = () => {
+      ticking = false;
+      const max = Math.max(1, document.body.scrollHeight - window.innerHeight);
+      const y = window.scrollY || window.pageYOffset || 0;
+      setVisible(y > max * 0.3 && y < max * 0.9);
+    };
+    const onScroll = () => {
+      if (!ticking) {
+        ticking = true;
+        setTimeout(update, 100);
+      }
+    };
+    update();
+    window.addEventListener('scroll', onScroll, {
+      passive: true
+    });
+    window.addEventListener('resize', onScroll, {
+      passive: true
+    });
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
+  }, [path]);
+  const close = () => {
+    sessionStorage.setItem('ktbStickyQuoteClosed', '1');
+    setVisible(false);
+  };
+  return {
+    visible,
+    close
+  };
+}
+function StickyQuoteChip({
+  lang,
+  path
+}) {
+  const {
+    visible,
+    close
+  } = useStickyQuote(path);
+  if (path === '/kontakt' || path === '/contact' || path === '/polityka-prywatnosci' || path === '/privacy-policy') return null;
+  const label = lang === 'pl' ? 'Darmowa wycena' : 'Free quote';
+  const short = lang === 'pl' ? 'Wycena' : 'Quote';
+  const go = e => {
+    e.preventDefault();
+    navigate('/kontakt');
+    setTimeout(() => {
+      const form = document.querySelector('.contact-form');
+      if (form) form.scrollIntoView({
+        behavior: prefersReducedMotion() ? 'auto' : 'smooth',
+        block: 'start'
+      });
+    }, 80);
+  };
+  return /*#__PURE__*/React.createElement("div", {
+    className: `sticky-quote ${visible ? 'is-visible' : ''}`,
+    "aria-hidden": visible ? "false" : "true"
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "/kontakt",
+    onClick: go,
+    className: "sticky-quote-link"
+  }, /*#__PURE__*/React.createElement(ArrowIcon, {
+    size: 15
+  }), /*#__PURE__*/React.createElement("span", {
+    className: "sticky-quote-full"
+  }, label), /*#__PURE__*/React.createElement("span", {
+    className: "sticky-quote-short"
+  }, short)), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    className: "sticky-quote-close",
+    onClick: close,
+    "aria-label": lang === 'pl' ? 'Ukryj darmową wycenę' : 'Hide free quote'
+  }, "\xD7"));
+}
+function useScrollProgress() {
+  const [progress, setProgress] = useState(0);
+  useEffect(() => {
+    let raf = 0;
+    const update = () => {
+      raf = 0;
+      const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+      const y = window.scrollY || window.pageYOffset || 0;
+      setProgress(Math.max(0, Math.min(1, y / max)));
+    };
+    const request = () => {
+      if (!raf) raf = requestAnimationFrame(update);
+    };
+    update();
+    window.addEventListener('scroll', request, {
+      passive: true
+    });
+    window.addEventListener('resize', request, {
+      passive: true
+    });
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener('scroll', request);
+      window.removeEventListener('resize', request);
+    };
+  }, []);
+  return progress;
+}
+function ScrollProgressBar() {
+  const progress = useScrollProgress();
+  return /*#__PURE__*/React.createElement("div", {
+    className: `scroll-progress ${progress > 0.02 ? 'is-visible' : ''}`,
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "scroll-progress-bar",
+    style: {
+      width: `${progress * 100}%`
+    }
+  }));
+}
+function useTilt(ref, options = {}) {
+  const {
+    max = 6
+  } = options;
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    if (prefersReducedMotion()) return;
+    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+    let raf = 0;
+    let next = null;
+    const apply = () => {
+      raf = 0;
+      if (!next) return;
+      const rect = el.getBoundingClientRect();
+      const x = (next.clientX - rect.left) / rect.width - 0.5;
+      const y = (next.clientY - rect.top) / rect.height - 0.5;
+      el.style.setProperty('--tilt-y', `${x * max}deg`);
+      el.style.setProperty('--tilt-x', `${y * -max}deg`);
+    };
+    const onMove = e => {
+      next = e;
+      if (!raf) raf = requestAnimationFrame(apply);
+    };
+    const onLeave = () => {
+      cancelAnimationFrame(raf);
+      raf = 0;
+      next = null;
+      el.style.setProperty('--tilt-x', '0deg');
+      el.style.setProperty('--tilt-y', '0deg');
+    };
+    el.addEventListener('mousemove', onMove, {
+      passive: true
+    });
+    el.addEventListener('mouseleave', onLeave, {
+      passive: true
+    });
+    return () => {
+      cancelAnimationFrame(raf);
+      el.removeEventListener('mousemove', onMove);
+      el.removeEventListener('mouseleave', onLeave);
+    };
+  }, [ref, max]);
+}
+function TiltLink({
+  to,
+  className,
+  children,
+  max = 6
+}) {
+  const ref = useRef(null);
+  useTilt(ref, {
+    max
+  });
+  return /*#__PURE__*/React.createElement(SmartLink, {
+    to: to,
+    className: `${className || ''} tilt-card`,
+    innerRef: ref
+  }, children);
+}
+function TiltBox({
+  className,
+  children,
+  max = 6
+}) {
+  const ref = useRef(null);
+  useTilt(ref, {
+    max
+  });
+  return /*#__PURE__*/React.createElement("div", {
+    ref: ref,
+    className: `${className || ''} tilt-card`
+  }, children);
+}
+function useVisitedPages(path) {
+  const [count, setCount] = useState(1);
+  useEffect(() => {
+    const key = 'ktbVisitedPaths';
+    let paths = [];
+    try {
+      paths = JSON.parse(sessionStorage.getItem(key) || '[]');
+      if (!Array.isArray(paths)) paths = [];
+    } catch (e) {
+      paths = [];
+    }
+    const clean = path || '/';
+    if (!paths.includes(clean)) {
+      paths.push(clean);
+      sessionStorage.setItem(key, JSON.stringify(paths));
+    }
+    setCount(Math.max(1, paths.length));
+  }, [path]);
+  return count;
+}
+function useImageLoadingDefaults(deps = []) {
+  useEffect(() => {
+    document.querySelectorAll('img').forEach(img => {
+      const isHero = !!img.closest('.hero');
+      if (!img.hasAttribute('decoding')) img.setAttribute('decoding', 'async');
+      if (!img.hasAttribute('loading')) img.setAttribute('loading', isHero ? 'eager' : 'lazy');
+      if (isHero && !img.hasAttribute('fetchpriority')) img.setAttribute('fetchpriority', 'high');
+    });
+  }, deps);
+}
+function CompassIcon({
+  size = 14
+}) {
+  return /*#__PURE__*/React.createElement("svg", {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "1.7",
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement("circle", {
+    cx: "12",
+    cy: "12",
+    r: "8"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M14.8 8.4l-1.7 5-4.9 2.2 1.7-5 4.9-2.2z"
+  }));
+}
+function visitedPagesLabel(lang, count) {
+  if (lang !== 'pl') return `${count} pages visited this session`;
+  const mod10 = count % 10;
+  const mod100 = count % 100;
+  const noun = count === 1 ? 'stronę' : mod10 >= 2 && mod10 <= 4 && !(mod100 >= 12 && mod100 <= 14) ? 'strony' : 'stron';
+  return `Odwiedziłeś ${count} ${noun} w tej sesji`;
 }
 function PageHeader({
   label,
@@ -521,6 +934,19 @@ function Hero({
     className: "btn-ghost hero-secondary"
   }, h.cta2, " ", /*#__PURE__*/React.createElement(ArrowIcon, {
     size: 12
+  })))), h.metrics && h.metrics.length > 0 && /*#__PURE__*/React.createElement("div", {
+    className: "hero-meta reveal"
+  }, h.metrics.map((m, i) => /*#__PURE__*/React.createElement("div", {
+    className: "item",
+    key: i
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "k"
+  }, m.k), /*#__PURE__*/React.createElement(AnimatedValue, {
+    value: m.v,
+    className: m.big ? 'big' : 'v',
+    duration: m.big ? 2400 : 1800,
+    startOnView: false,
+    animateFrom: m.animateFrom
   })))), /*#__PURE__*/React.createElement("div", {
     className: "hero-right",
     "aria-hidden": "true"
@@ -801,7 +1227,7 @@ function Portfolio({
     className: "serif-italic section-lede reveal"
   }, p.lede)), /*#__PURE__*/React.createElement("div", {
     className: "sketchbook-grid"
-  }, p.items.map((it, i) => /*#__PURE__*/React.createElement(SmartLink, {
+  }, p.items.map((it, i) => /*#__PURE__*/React.createElement(TiltLink, {
     to: `/realizacje/${it.slug}`,
     className: "sketch-card reveal",
     key: i
@@ -831,7 +1257,15 @@ function Portfolio({
     className: "sketch-cta mono"
   }, lang === 'pl' ? 'Zobacz case study' : 'View case study', " ", /*#__PURE__*/React.createElement(ArrowIcon, {
     size: 12
-  })))))));
+  })), /*#__PURE__*/React.createElement("span", {
+    className: "sketch-reveal",
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement("span", null, lang === 'pl' ? 'Zobacz case study' : 'View case study'), /*#__PURE__*/React.createElement(ArrowIcon, {
+    size: 14
+  })), /*#__PURE__*/React.createElement("span", {
+    className: "sketch-mobile-cue",
+    "aria-hidden": "true"
+  }, "\u2197"))))));
 }
 function CaseChart({
   data,
@@ -1238,9 +1672,11 @@ function CasePage({
   }, (item.results || []).map((r, j) => /*#__PURE__*/React.createElement("div", {
     className: "case-result",
     key: j
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "case-result-v"
-  }, r.v), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement(AnimatedValue, {
+    value: r.v,
+    className: "case-result-v",
+    duration: 1800
+  }), /*#__PURE__*/React.createElement("div", {
     className: "case-result-k mono"
   }, r.k))))), /*#__PURE__*/React.createElement(CaseChart, {
     data: item.chartData,
@@ -1295,7 +1731,7 @@ function Testimonials({
     className: "it"
   }, t.titleIt))), /*#__PURE__*/React.createElement("div", {
     className: "testi-grid reveal"
-  }, t.items.map((it, i) => /*#__PURE__*/React.createElement("div", {
+  }, t.items.map((it, i) => /*#__PURE__*/React.createElement(TiltBox, {
     className: "testi-card",
     key: i
   }, /*#__PURE__*/React.createElement("p", {
@@ -1312,7 +1748,7 @@ function FounderCard({
   m
 }) {
   const hasPhotos = m.photo1 && m.photo2;
-  return /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/React.createElement(TiltBox, {
     className: `founder-card reveal ${hasPhotos ? 'has-photos' : ''}`
   }, /*#__PURE__*/React.createElement("div", {
     className: "founder-avatar"
@@ -1485,7 +1921,10 @@ function BlogArticle({
   const idx = b.items.findIndex(x => x.slug === slug);
   const next = b.items[(idx + 1) % b.items.length];
   const midIdx = Math.floor((item.body || []).length * 0.6);
-  return /*#__PURE__*/React.createElement("article", {
+  const hasInlineFigure = (item.body || []).some(block => block.image);
+  const inlineImage = item.inlineImage || "/assets/showcase-1.jpg";
+  const inlineImageAlt = item.inlineImageAlt || (lang === 'pl' ? 'Kulisy pracy nad marketingiem KTB Media' : 'Behind the scenes of KTB Media marketing work');
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ScrollProgressBar, null), /*#__PURE__*/React.createElement("article", {
     className: "blog-article"
   }, /*#__PURE__*/React.createElement("div", {
     className: "blog-article-container"
@@ -1535,13 +1974,13 @@ function BlogArticle({
       src: block.image,
       alt: block.caption || item.title1
     }), block.caption && /*#__PURE__*/React.createElement("figcaption", null, block.caption)));
-    if (item.image && j === midIdx) {
+    if (!hasInlineFigure && inlineImage && j === midIdx) {
       out.push(/*#__PURE__*/React.createElement("figure", {
         key: `fig-${j}`
       }, /*#__PURE__*/React.createElement("img", {
-        src: item.image,
-        alt: item.title1
-      }), /*#__PURE__*/React.createElement("figcaption", null, item.title1, " \u2014 ", item.cat || '')));
+        src: inlineImage,
+        alt: inlineImageAlt
+      }), /*#__PURE__*/React.createElement("figcaption", null, inlineImageAlt, " \u2014 ", item.cat || '')));
     }
     return out;
   })), /*#__PURE__*/React.createElement(SmartLink, {
@@ -1555,7 +1994,7 @@ function BlogArticle({
     className: "it"
   }, next.titleIt), " ", /*#__PURE__*/React.createElement(ArrowIcon, {
     size: 28
-  })))));
+  }))))));
 }
 function PrivacyPolicy({
   lang
@@ -2119,7 +2558,8 @@ function NotFoundPage({
   }, /*#__PURE__*/React.createElement(NotFoundCar, null))));
 }
 function Footer({
-  lang
+  lang,
+  visitedCount = 1
 }) {
   const f = COPY[lang].footer;
   return /*#__PURE__*/React.createElement("footer", {
@@ -2180,14 +2620,29 @@ function Footer({
     "aria-label": "LinkedIn"
   }, /*#__PURE__*/React.createElement(IconLinkedIn, {
     size: 14
-  }))), /*#__PURE__*/React.createElement("div", null, "Pruszcz Gda\u0144ski \xB7 PL")));
+  }))), /*#__PURE__*/React.createElement("div", {
+    className: "footer-trail mono",
+    "aria-label": visitedPagesLabel(lang, visitedCount)
+  }, /*#__PURE__*/React.createElement(CompassIcon, {
+    size: 14
+  }), lang === 'pl' ? /*#__PURE__*/React.createElement(React.Fragment, null, "Odwiedzi\u0142e\u015B ", /*#__PURE__*/React.createElement(AnimatedValue, {
+    value: String(visitedCount),
+    duration: 700,
+    startOnView: false
+  }), " ", visitedPagesLabel(lang, visitedCount).split(`Odwiedzi\u0142e\u015B ${visitedCount} `)[1]) : /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(AnimatedValue, {
+    value: String(visitedCount),
+    duration: 700,
+    startOnView: false
+  }), " pages visited this session")), /*#__PURE__*/React.createElement("div", null, "Pruszcz Gda\u0144ski \xB7 PL")));
 }
 function App() {
   const [lang, setLang] = useState('pl');
   const path = usePath();
+  const visitedCount = useVisitedPages(path);
   useReveal([lang, path]);
   useCursor();
   useSEO(lang, path);
+  useImageLoadingDefaults([lang, path]);
   const t = COPY[lang];
   const showMiniCta = path !== '/kontakt';
   let content;
@@ -2247,8 +2702,6 @@ function App() {
       lang: lang
     }), /*#__PURE__*/React.createElement(Services, {
       lang: lang
-    }), /*#__PURE__*/React.createElement(AudienceBlocks, {
-      lang: lang
     }), /*#__PURE__*/React.createElement(Showcase, {
       lang: lang
     }), /*#__PURE__*/React.createElement(Process, {
@@ -2268,8 +2721,12 @@ function App() {
     setLang: setLang
   }), content, showMiniCta && /*#__PURE__*/React.createElement(MiniCtaBar, {
     lang: lang
+  }), /*#__PURE__*/React.createElement(StickyQuoteChip, {
+    lang: lang,
+    path: path
   }), /*#__PURE__*/React.createElement(Footer, {
-    lang: lang
+    lang: lang,
+    visitedCount: visitedCount
   }));
 }
 ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.createElement(App, null));

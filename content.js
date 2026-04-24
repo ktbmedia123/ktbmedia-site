@@ -156,13 +156,13 @@ const COPY = {
       "forLabel": "Dla kogo pracujemy",
       "notForLabel": "Z kim nie współpracujemy",
       "forItems": [
-        "Warsztaty samochodowe, serwisy, dealerzy i producenci części z Trójmiasta i całej Polski",
-        "Firmy B2B w sektorze marine, inżynieryjnym i przemysłowym",
+        "Specjalizujemy się w branży automotive: producenci aut, części zamiennych, serwisy samochodowe, dealerzy i marki okołomotoryzacyjne",
+        "Branża morska: firmy marine, portowe, techniczne, produkcyjne i usługowe",
+        "Firmy B2B w sektorze inżynieryjnym i przemysłowym, gdzie trzeba tłumaczyć złożony produkt prostym językiem",
         "Marki e-commerce z produktami technicznymi, które wymagają edukacji klienta",
         "Lokalne firmy usługowe z Gdańska, Pruszcza Gdańskiego i Tczewa szukające wzrostu w Google Maps",
-        "Firmy gotowe inwestować w marketing min. 3000 zł/mies przez co najmniej 6 miesięcy",
-        "Właściciele, którzy chcą partnera, nie wykonawcę z listy zadań",
-        "Marki z ambicją rebrandu z szacunkiem dla dotychczasowej historii"
+        "Firmy spoza tych branż, jeśli mają konkretny cel, sensowny produkt i gotowość do pracy strategicznej",
+        "Właściciele, którzy chcą partnera, nie wykonawcę z listy zadań"
       ],
       "notForItems": [
         "Klienci szukający tanich pakietów po 500 zł/mies — to nie ma prawa działać",
@@ -175,12 +175,16 @@ const COPY = {
       ],
       "forItemsExt": [
         {
-          "k": "Warsztaty, serwisy i automotive",
-          "d": "Tu mamy najwięcej praktyki: od lokalnych zapytań z Google Maps po materiały wideo z hali i kampanie sezonowe."
+          "k": "Automotive jako specjalizacja",
+          "d": "Najmocniej czujemy branżę automotive: producentów aut, części zamiennych, dealerów, serwisy i marki okołomotoryzacyjne. Rozumiemy sezonowość, techniczny język i decyzje klientów."
+        },
+        {
+          "k": "Branża morska i marine",
+          "d": "Pracujemy też z firmami związanymi z morzem: marine, portami, produkcją, usługami technicznymi i B2B. Tu liczy się wiarygodność, konkret i umiejętność tłumaczenia specjalizacji."
         },
         {
           "k": "B2B techniczne",
-          "d": "Lubimy produkty, które trzeba wyjaśnić. Strategia, content i sprzedaż działają wtedy lepiej niż ładny baner bez kontekstu."
+          "d": "Lubimy produkty i usługi, które trzeba wyjaśnić. Strategia, content i sprzedaż działają wtedy lepiej niż ładny baner bez kontekstu."
         },
         {
           "k": "E-commerce techniczny",
@@ -191,16 +195,12 @@ const COPY = {
           "d": "Dla Gdańska, Pruszcza i Tczewa kluczowe są wizytówki, opinie, lokalne SEO i kampanie na realny obszar dojazdu."
         },
         {
-          "k": "Budżet z horyzontem",
-          "d": "Marketing potrzebuje danych i iteracji. Poniżej kilku miesięcy zwykle nie ma czasu na uczciwą optymalizację."
+          "k": "Nie zamykamy się w jednej niszy",
+          "d": "Automotive i marine to nasz mocny teren, ale nie odrzucamy dobrych projektów z innych branż. Ważne są cel, produkt, budżet i gotowość do partnerskiej pracy."
         },
         {
           "k": "Partnerstwo z właścicielem",
           "d": "Najlepsze decyzje zapadają szybko, gdy mamy kontakt z osobą, która rozumie marżę, sezonowość i operacje."
-        },
-        {
-          "k": "Rebrand bez odcinania historii",
-          "d": "Nie kasujemy dorobku firmy. Szukamy tego, co trzeba zachować, i tego, co blokuje dalszy wzrost."
         }
       ],
       "notForItemsExt": [
@@ -924,6 +924,148 @@ const COPY = {
       "titleIt": "redakcji.",
       "items": [
         {
+          "slug": "codzienny-tetris",
+          "cat": "Produktywność",
+          "date": "Sty 2026",
+          "title1": "Codzienny Tetris:",
+          "titleIt": "jak zarządzać swoim mózgiem.",
+          "image": "/assets/blog-tetris.jpg",
+          "lede": "Metafora funkcjonowania ludzkiego mózgu i zarządzania zadaniami. Na początku dnia plansza jest pusta — łatwo coś ułożyć. Problem zaczyna się, gdy klocki zaczynają spadać szybciej, niż potrafisz je układać.",
+          "body": [
+            {
+              "h": "Czysta plansza"
+            },
+            {
+              "p": "Na początku dnia, gdy nasza „plansza gry\" (czyli umysł i harmonogram) jest czysta i nieobciążona, łatwiej jest podejmować nowe zadania i wyzwania. Nie ma dużej presji czasowej, myślenie jest klarowne i skoncentrowane."
+            },
+            {
+              "p": "Tak jak w Tetrisie, gdzie łatwiej układa się klocki na pustej planszy, tak samo w życiu codziennym łatwiej jest rozpoczynać i kończyć zadania, kiedy nasz umysł jest „świeży\" i niezakłócony. Dlatego większość produktywnych ludzi rezerwuje poranek na najtrudniejsze zadania — to czas, gdy plansza jest najbardziej pusta."
+            },
+            {
+              "h": "Napór klocków"
+            },
+            {
+              "p": "W miarę upływu dnia i napływu nowych zadań, nasza zdolność do efektywnego zarządzania czasem i priorytetami jest wystawiona na próbę. Tak jak w Tetrisie, gdzie pojawiają się nowe klocki z coraz większą szybkością, w życiu codziennym napotykamy na coraz więcej wyzwań i niespodziewanych zadań."
+            },
+            {
+              "p": "Jeśli nie radzimy sobie z nimi na bieżąco, „plansza\" zapełnia się, co utrudnia dodawanie nowych elementów bez tworzenia chaosu. To moment, w którym „robiłem dużo, a zrobiłem nic\" staje się codziennością."
+            },
+            {
+              "h": "Przewidywanie > reagowanie"
+            },
+            {
+              "p": "Kluczem do sukcesu w „codziennym Tetrisie\" jest nie tylko efektywne zarządzanie bieżącymi zadaniami, ale również umiejętność **przewidywania i planowania**. Odkładanie zadań na później, podobnie jak unikanie podejmowania decyzji w Tetrisie, zwykle prowadzi do „przegranej rundy\" — sytuacji, w której przestajemy mieć kontrolę nad naszymi obowiązkami i czasem."
+            },
+            {
+              "p": "Dobrzy gracze w Tetrisa nie reagują na klocek, który jest — już planują miejsce dla klocka, który przyjdzie za chwilę. Ludzie, którzy dobrze zarządzają dniem, też nie reagują wyłącznie na to, co ląduje w skrzynce. Mają miejsce zarezerwowane dla tego, co wiadomo, że przyjdzie."
+            },
+            {
+              "type": "figure",
+              "image": "/assets/showcase-1.jpg",
+              "caption": "Kontekst pracy strategicznej KTB Media"
+            },
+            {
+              "h": "Przerwa = czyszczenie linii"
+            },
+            {
+              "p": "Zarządzanie naszym „codziennym Tetrisem\" wymaga też umiejętności rozpoznawania momentów, gdy warto zrobić krótką przerwę, aby oczyścić umysł i spojrzeć na zadania z nowej perspektywy. Krótki moment odpoczynku to nie strata czasu — to „czyszczenie linii\". Nagle plansza się zmniejsza, widać więcej miejsca, decyzje stają się łatwiejsze."
+            },
+            {
+              "p": "Problem: większość ludzi traktuje przerwy jak zawodnik, który boi się odejść od Tetrisa, bo „klocki dalej spadają\". Paradoks polega na tym, że im dłużej grasz bez przerwy, tym więcej błędów robisz, tym wyższa plansza, tym trudniej ją obniżyć."
+            },
+            {
+              "h": "Podsumowanie"
+            },
+            {
+              "p": "Metafora „codziennego Tetrisa\" podkreśla znaczenie efektywnego zarządzania czasem, priorytetami i zdolności adaptacyjnych. Kluczem jest nie tylko radzenie sobie z bieżącymi zadaniami, ale elastyczność umysłu, pozwalająca dostosować się do zmieniających się warunków."
+            },
+            {
+              "list": [
+                "Chroń pierwsze 2-3 godziny dnia na zadania trudne.",
+                "Nie reaguj wyłącznie na to, co przyszło teraz — planuj miejsce na to, co przyjdzie.",
+                "Rób przerwy zanim tego potrzebujesz, nie gdy już musisz.",
+                "Naucz się rozpoznawać, kiedy Twoja plansza jest za wysoka — i co wtedy odłożyć."
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "marketing-dla-samego-marketingu",
+          "cat": "Strategia",
+          "date": "Kwi 2026",
+          "title1": "Jak przestać robić marketing",
+          "titleIt": "dla samego marketingu.",
+          "image": "/assets/blog-marketing.jpg",
+          "lede": "Generowanie content calendara nie jest strategią. Publikowanie „bo trzeba” kosztuje tak samo, jak publikowanie po coś — ale przynosi zero. Oto jak odróżnić ruch od postępu.",
+          "body": [
+            {
+              "h": "Ruch ≠ postęp"
+            },
+            {
+              "p": "Większość działów marketingu, które widzieliśmy, ma jeden wspólny mianownik: dużo ruchu, mało postępu. Kampania za kampanią, reel za reelem, newsletter w każdy wtorek. A za tym wszystkim — ani jednej odpowiedzi na proste pytanie: **po co?**"
+            },
+            {
+              "p": "Ten mechanizm jest genialny w swojej samowystarczalności. Social media generuje treści, które nakręcają kolejne treści. Kampanie generują dane, które uzasadniają następne kampanie. Cały system obraca się wokół własnej osi, a jedynym produktem tej orbity są kolejne TODO."
+            },
+            {
+              "h": "Co to jest „marketing dla samego marketingu\""
+            },
+            {
+              "p": "To sytuacja, w której **sam fakt robienia** został pomylony z celem. Symptomy są proste do rozpoznania:"
+            },
+            {
+              "list": [
+                "Content kalendarz pełny — ale nie wiadomo jaki problem klienta każdy post rozwiązuje.",
+                "KPI mierzone w lajkach, zasięgach, „impressionach” — nigdy w tym, co bezpośrednio wpływa na rachunki.",
+                "Każda kampania opisywana jako sukces — „bo zasięgi rosły”.",
+                "Raporty, które nikogo nie interesują — robione tylko dlatego, że „klient lubi raport”.",
+                "Nowe inicjatywy dokładane bez usuwania starych — bo nikt nie ma odwagi powiedzieć, co przestaje działać."
+              ]
+            },
+            {
+              "h": "Test dwóch pytań"
+            },
+            {
+              "p": "Za każdym razem, gdy Twój zespół (lub Ty) zabiera się do planowania nowej akcji, zadaj dwa pytania:"
+            },
+            {
+              "list": [
+                "**Który konkretny cel biznesowy to wspiera?** Nie „budowanie marki”, nie „engagement”. Konkret: więcej zapytań ofertowych w segmencie X, niższy CAC w kanale Y, wyższa wartość koszyka.",
+                "**Jak rozpoznam, że to zadziałało albo nie?** Jeśli odpowiedź to „po prostu zobaczymy”, to znaczy, że zgadujesz."
+              ]
+            },
+            {
+              "p": "Jeśli na którekolwiek z tych pytań nie masz odpowiedzi — wstrzymaj się. Nie dlatego, że akcja jest zła. Dlatego, że robisz ją z przyzwyczajenia, nie z decyzji."
+            },
+            {
+              "type": "figure",
+              "image": "/assets/showcase-2.jpg",
+              "caption": "Kontekst pracy strategicznej KTB Media"
+            },
+            {
+              "h": "Zamień kampanie na hipotezy"
+            },
+            {
+              "p": "Zamiast planować „kampanię wizerunkową\", planuj testy hipotez. Każde działanie marketingowe to w zasadzie zakład z rzeczywistością: _wierzę, że jeśli pokażę X grupie Y, stanie się Z_. Jeśli umiesz to zdanie napisać — masz kampanię. Jeśli nie umiesz — masz tylko wydatek."
+            },
+            {
+              "p": "Hipoteza ma trzy zalety: (1) zmusza do konkretu, (2) domyślnie zakłada, że możesz się mylić, (3) wymusza pomiar. Brzmi jak coś dla korporacji z 500-osobowym działem analityki? Nie. Można to robić w arkuszu kalkulacyjnym. Ważny jest sposób myślenia, nie narzędzie."
+            },
+            {
+              "h": "Mniej, celniej, głośniej"
+            },
+            {
+              "p": "Prawdziwy wzrost u większości firm, z którymi pracowaliśmy, nie przyszedł z dołożenia kolejnego kanału. Przyszedł z **odcięcia trzech rzeczy**, które nie działały, i zainwestowania tych budżetów w jedno działanie, które zaczynało działać. Dyscyplina jest niewidzialna, bo polega na tym, czego nie robisz."
+            },
+            {
+              "p": "Jeśli czujesz, że Twój marketing zamienił się w fabrykę treści na autopilocie — zatrzymaj się na tydzień. Wyłącz wszystko, co nie ma jasnego uzasadnienia biznesowego. Zobacz, co naprawdę się wali, a co po prostu przestało wymagać siły."
+            },
+            {
+              "p": "Wracasz za tydzień i pracujesz już tylko na tym, co zostało."
+            }
+          ]
+        },
+        {
           "slug": "ile-kosztuje-google-ads-dla-warsztatu-samochodowego-2026",
           "cat": "Google Ads",
           "date": "Kwi 2026",
@@ -973,8 +1115,8 @@ const COPY = {
             },
             {
               "type": "figure",
-              "image": "/assets/blog-google-ads-warsztat-2026.jpg",
-              "caption": "Budżet Google Ads ma sens dopiero wtedy, gdy mierzymy telefony i typ usługi, a nie same kliknięcia."
+              "image": "/assets/showcase-3.jpg",
+              "caption": "Kontekst pracy strategicznej KTB Media"
             },
             {
               "type": "heading",
@@ -1096,8 +1238,8 @@ const COPY = {
             },
             {
               "type": "figure",
-              "image": "/assets/blog-gbp-checklista-warsztat.jpg",
-              "caption": "Wizytówka Google jest często pierwszą stroną ofertową warsztatu, zanim klient zobaczy właściwą witrynę."
+              "image": "/assets/case-autocentrum-elektronowa-1.jpg",
+              "caption": "Kontekst pracy strategicznej KTB Media"
             },
             {
               "type": "heading",
@@ -1242,8 +1384,8 @@ const COPY = {
             },
             {
               "type": "figure",
-              "image": "/assets/blog-meta-vs-google-serwis.jpg",
-              "caption": "Google i Meta nie są zamiennikami. Jeden kanał pracuje na intencji, drugi na uwadze i przypomnieniu."
+              "image": "/assets/case-rmdc-1.jpg",
+              "caption": "Kontekst pracy strategicznej KTB Media"
             },
             {
               "type": "heading",
@@ -1383,8 +1525,8 @@ const COPY = {
             },
             {
               "type": "figure",
-              "image": "/assets/blog-seo-lokalne-warsztat.jpg",
-              "caption": "Lokalne SEO warsztatu to praca nad usługami, opiniami i sygnałami z najbliższego obszaru działania."
+              "image": "/assets/case-pmo-lubricants-1.jpg",
+              "caption": "Kontekst pracy strategicznej KTB Media"
             },
             {
               "type": "heading",
@@ -1528,8 +1670,8 @@ const COPY = {
             },
             {
               "type": "figure",
-              "image": "/assets/blog-wideo-klient-mechanik.jpg",
-              "caption": "Wideo z warsztatu działa najlepiej, gdy pokazuje realną pracę, ludzi i problem klienta."
+              "image": "/assets/case-tomex-brakes-1.jpg",
+              "caption": "Kontekst pracy strategicznej KTB Media"
             },
             {
               "type": "heading",
@@ -1678,8 +1820,8 @@ const COPY = {
             },
             {
               "type": "figure",
-              "image": "/assets/blog-rebrand-warsztat.jpg",
-              "caption": "Rebrand warsztatu powinien wzmacniać zaufanie, a nie kasować historię firmy."
+              "image": "/assets/case-pulsegt-1.jpg",
+              "caption": "Kontekst pracy strategicznej KTB Media"
             },
             {
               "type": "heading",
@@ -1828,8 +1970,8 @@ const COPY = {
             },
             {
               "type": "figure",
-              "image": "/assets/blog-instagram-warsztat.jpg",
-              "caption": "Instagram warsztatu powinien pokazywać kompetencję, ludzi i proces, a nie tylko przypadkowe zdjęcia aut."
+              "image": "/assets/showcase-1.jpg",
+              "caption": "Kontekst pracy strategicznej KTB Media"
             },
             {
               "type": "heading",
@@ -1978,8 +2120,8 @@ const COPY = {
             },
             {
               "type": "figure",
-              "image": "/assets/blog-strona-serwis-2026.jpg",
-              "caption": "Strona serwisu musi działać jak doradca: wyjaśniać, filtrować zapytania i prowadzić do kontaktu."
+              "image": "/assets/showcase-2.jpg",
+              "caption": "Kontekst pracy strategicznej KTB Media"
             },
             {
               "type": "heading",
@@ -2131,8 +2273,8 @@ const COPY = {
             },
             {
               "type": "figure",
-              "image": "/assets/blog-recenzje-google-automotive.jpg",
-              "caption": "Regularne opinie są jednym z najmocniejszych sygnałów zaufania w lokalnym automotive."
+              "image": "/assets/showcase-3.jpg",
+              "caption": "Kontekst pracy strategicznej KTB Media"
             },
             {
               "type": "heading",
@@ -2280,8 +2422,8 @@ const COPY = {
             },
             {
               "type": "figure",
-              "image": "/assets/blog-marketing-dealer-nowe-uzywane.jpg",
-              "caption": "Dealer potrzebuje osobnych ścieżek dla nowych i używanych aut, bo klient kupuje z innych powodów."
+              "image": "/assets/case-autocentrum-elektronowa-1.jpg",
+              "caption": "Kontekst pracy strategicznej KTB Media"
             },
             {
               "type": "heading",
@@ -2430,8 +2572,8 @@ const COPY = {
             },
             {
               "type": "figure",
-              "image": "/assets/blog-meta-ads-warsztat-case.jpg",
-              "caption": "W kampanii Meta Ads dla warsztatu najważniejsze były kreacje z realnego zaplecza i szybki kontakt z leadem."
+              "image": "/assets/case-rmdc-1.jpg",
+              "caption": "Kontekst pracy strategicznej KTB Media"
             },
             {
               "type": "heading",
@@ -2581,8 +2723,8 @@ const COPY = {
             },
             {
               "type": "figure",
-              "image": "/assets/blog-pozycjonowanie-automotive-trojmiasto.jpg",
-              "caption": "W Trójmieście lokalne SEO musi łączyć usługi, dojazd, opinie i realne przykłady z rynku."
+              "image": "/assets/case-pmo-lubricants-1.jpg",
+              "caption": "Kontekst pracy strategicznej KTB Media"
             },
             {
               "type": "heading",
@@ -2678,77 +2820,6 @@ const COPY = {
           ]
         },
         {
-          "slug": "marketing-dla-samego-marketingu",
-          "cat": "Strategia",
-          "date": "Kwi 2026",
-          "title1": "Jak przestać robić marketing",
-          "titleIt": "dla samego marketingu.",
-          "image": "/assets/blog-marketing.jpg",
-          "lede": "Generowanie content calendara nie jest strategią. Publikowanie „bo trzeba” kosztuje tak samo, jak publikowanie po coś — ale przynosi zero. Oto jak odróżnić ruch od postępu.",
-          "body": [
-            {
-              "h": "Ruch ≠ postęp"
-            },
-            {
-              "p": "Większość działów marketingu, które widzieliśmy, ma jeden wspólny mianownik: dużo ruchu, mało postępu. Kampania za kampanią, reel za reelem, newsletter w każdy wtorek. A za tym wszystkim — ani jednej odpowiedzi na proste pytanie: **po co?**"
-            },
-            {
-              "p": "Ten mechanizm jest genialny w swojej samowystarczalności. Social media generuje treści, które nakręcają kolejne treści. Kampanie generują dane, które uzasadniają następne kampanie. Cały system obraca się wokół własnej osi, a jedynym produktem tej orbity są kolejne TODO."
-            },
-            {
-              "h": "Co to jest „marketing dla samego marketingu\""
-            },
-            {
-              "p": "To sytuacja, w której **sam fakt robienia** został pomylony z celem. Symptomy są proste do rozpoznania:"
-            },
-            {
-              "list": [
-                "Content kalendarz pełny — ale nie wiadomo jaki problem klienta każdy post rozwiązuje.",
-                "KPI mierzone w lajkach, zasięgach, „impressionach” — nigdy w tym, co bezpośrednio wpływa na rachunki.",
-                "Każda kampania opisywana jako sukces — „bo zasięgi rosły”.",
-                "Raporty, które nikogo nie interesują — robione tylko dlatego, że „klient lubi raport”.",
-                "Nowe inicjatywy dokładane bez usuwania starych — bo nikt nie ma odwagi powiedzieć, co przestaje działać."
-              ]
-            },
-            {
-              "h": "Test dwóch pytań"
-            },
-            {
-              "p": "Za każdym razem, gdy Twój zespół (lub Ty) zabiera się do planowania nowej akcji, zadaj dwa pytania:"
-            },
-            {
-              "list": [
-                "**Który konkretny cel biznesowy to wspiera?** Nie „budowanie marki”, nie „engagement”. Konkret: więcej zapytań ofertowych w segmencie X, niższy CAC w kanale Y, wyższa wartość koszyka.",
-                "**Jak rozpoznam, że to zadziałało albo nie?** Jeśli odpowiedź to „po prostu zobaczymy”, to znaczy, że zgadujesz."
-              ]
-            },
-            {
-              "p": "Jeśli na którekolwiek z tych pytań nie masz odpowiedzi — wstrzymaj się. Nie dlatego, że akcja jest zła. Dlatego, że robisz ją z przyzwyczajenia, nie z decyzji."
-            },
-            {
-              "h": "Zamień kampanie na hipotezy"
-            },
-            {
-              "p": "Zamiast planować „kampanię wizerunkową\", planuj testy hipotez. Każde działanie marketingowe to w zasadzie zakład z rzeczywistością: _wierzę, że jeśli pokażę X grupie Y, stanie się Z_. Jeśli umiesz to zdanie napisać — masz kampanię. Jeśli nie umiesz — masz tylko wydatek."
-            },
-            {
-              "p": "Hipoteza ma trzy zalety: (1) zmusza do konkretu, (2) domyślnie zakłada, że możesz się mylić, (3) wymusza pomiar. Brzmi jak coś dla korporacji z 500-osobowym działem analityki? Nie. Można to robić w arkuszu kalkulacyjnym. Ważny jest sposób myślenia, nie narzędzie."
-            },
-            {
-              "h": "Mniej, celniej, głośniej"
-            },
-            {
-              "p": "Prawdziwy wzrost u większości firm, z którymi pracowaliśmy, nie przyszedł z dołożenia kolejnego kanału. Przyszedł z **odcięcia trzech rzeczy**, które nie działały, i zainwestowania tych budżetów w jedno działanie, które zaczynało działać. Dyscyplina jest niewidzialna, bo polega na tym, czego nie robisz."
-            },
-            {
-              "p": "Jeśli czujesz, że Twój marketing zamienił się w fabrykę treści na autopilocie — zatrzymaj się na tydzień. Wyłącz wszystko, co nie ma jasnego uzasadnienia biznesowego. Zobacz, co naprawdę się wali, a co po prostu przestało wymagać siły."
-            },
-            {
-              "p": "Wracasz za tydzień i pracujesz już tylko na tym, co zostało."
-            }
-          ]
-        },
-        {
           "slug": "meta-ads-2026",
           "cat": "Performance",
           "date": "Mar 2026",
@@ -2777,6 +2848,11 @@ const COPY = {
             },
             {
               "h": "CAPI i klient offline"
+            },
+            {
+              "type": "figure",
+              "image": "/assets/case-tomex-brakes-1.jpg",
+              "caption": "Kontekst pracy strategicznej KTB Media"
             },
             {
               "p": "Po iOS 14.5+ i spadku jakości pixel-signału, **Conversions API (CAPI)** z serwera stała się minimum. Konta, które ją mają, widzą 20-40% więcej konwersji niż konta tylko z pixelem. I to nie „bonus” — to zamykanie luki powstałej po ATT."
@@ -2837,6 +2913,11 @@ const COPY = {
               "p": "**Pułapka 2: rebrand bez planu wdrożenia.** Nowy system wizualny ląduje w pdf-ie. Pdf idzie do szuflady. Strona internetowa nie ma budżetu. Szyld na biurze został stary. Social media mają nowe colors, ale stare komunikaty. Efekt: firma teraz wygląda chaotycznie zamiast świeżo."
             },
             {
+              "type": "figure",
+              "image": "/assets/case-pulsegt-1.jpg",
+              "caption": "Kontekst pracy strategicznej KTB Media"
+            },
+            {
               "p": "**Pułapka 3: rebrand po cichu.** Zmiana nikomu nie zakomunikowana, jak gdyby nic się nie stało. Klienci i partnerzy są zdezorientowani, ludzie pytają „zmieniliście się?\". Rebrand, który musi być wytłumaczony w nieskończoność — to rebrand, którego nie dało się uzasadnić."
             },
             {
@@ -2855,67 +2936,6 @@ const COPY = {
             },
             {
               "p": "Zanim wydasz pierwsze 10 tys., odpowiedz sobie: (1) czy problem, który rozwiązuję rebrandem, naprawdę jest problemem wizualnym? (2) czy mam budżet nie tylko na projekt, ale na wdrożenie wszędzie? (3) czy mogę uzasadnić zmianę w jednym zdaniu, pracownikom i klientom? Jeśli na trzy pytania odpowiedź brzmi „tak\", wchodź. Jeśli choć jedno „nie\" — wstrzymaj się."
-            }
-          ]
-        },
-        {
-          "slug": "codzienny-tetris",
-          "cat": "Produktywność",
-          "date": "Sty 2026",
-          "title1": "Codzienny Tetris:",
-          "titleIt": "jak zarządzać swoim mózgiem.",
-          "image": "/assets/blog-tetris.jpg",
-          "lede": "Metafora funkcjonowania ludzkiego mózgu i zarządzania zadaniami. Na początku dnia plansza jest pusta — łatwo coś ułożyć. Problem zaczyna się, gdy klocki zaczynają spadać szybciej, niż potrafisz je układać.",
-          "body": [
-            {
-              "h": "Czysta plansza"
-            },
-            {
-              "p": "Na początku dnia, gdy nasza „plansza gry\" (czyli umysł i harmonogram) jest czysta i nieobciążona, łatwiej jest podejmować nowe zadania i wyzwania. Nie ma dużej presji czasowej, myślenie jest klarowne i skoncentrowane."
-            },
-            {
-              "p": "Tak jak w Tetrisie, gdzie łatwiej układa się klocki na pustej planszy, tak samo w życiu codziennym łatwiej jest rozpoczynać i kończyć zadania, kiedy nasz umysł jest „świeży\" i niezakłócony. Dlatego większość produktywnych ludzi rezerwuje poranek na najtrudniejsze zadania — to czas, gdy plansza jest najbardziej pusta."
-            },
-            {
-              "h": "Napór klocków"
-            },
-            {
-              "p": "W miarę upływu dnia i napływu nowych zadań, nasza zdolność do efektywnego zarządzania czasem i priorytetami jest wystawiona na próbę. Tak jak w Tetrisie, gdzie pojawiają się nowe klocki z coraz większą szybkością, w życiu codziennym napotykamy na coraz więcej wyzwań i niespodziewanych zadań."
-            },
-            {
-              "p": "Jeśli nie radzimy sobie z nimi na bieżąco, „plansza\" zapełnia się, co utrudnia dodawanie nowych elementów bez tworzenia chaosu. To moment, w którym „robiłem dużo, a zrobiłem nic\" staje się codziennością."
-            },
-            {
-              "h": "Przewidywanie > reagowanie"
-            },
-            {
-              "p": "Kluczem do sukcesu w „codziennym Tetrisie\" jest nie tylko efektywne zarządzanie bieżącymi zadaniami, ale również umiejętność **przewidywania i planowania**. Odkładanie zadań na później, podobnie jak unikanie podejmowania decyzji w Tetrisie, zwykle prowadzi do „przegranej rundy\" — sytuacji, w której przestajemy mieć kontrolę nad naszymi obowiązkami i czasem."
-            },
-            {
-              "p": "Dobrzy gracze w Tetrisa nie reagują na klocek, który jest — już planują miejsce dla klocka, który przyjdzie za chwilę. Ludzie, którzy dobrze zarządzają dniem, też nie reagują wyłącznie na to, co ląduje w skrzynce. Mają miejsce zarezerwowane dla tego, co wiadomo, że przyjdzie."
-            },
-            {
-              "h": "Przerwa = czyszczenie linii"
-            },
-            {
-              "p": "Zarządzanie naszym „codziennym Tetrisem\" wymaga też umiejętności rozpoznawania momentów, gdy warto zrobić krótką przerwę, aby oczyścić umysł i spojrzeć na zadania z nowej perspektywy. Krótki moment odpoczynku to nie strata czasu — to „czyszczenie linii\". Nagle plansza się zmniejsza, widać więcej miejsca, decyzje stają się łatwiejsze."
-            },
-            {
-              "p": "Problem: większość ludzi traktuje przerwy jak zawodnik, który boi się odejść od Tetrisa, bo „klocki dalej spadają\". Paradoks polega na tym, że im dłużej grasz bez przerwy, tym więcej błędów robisz, tym wyższa plansza, tym trudniej ją obniżyć."
-            },
-            {
-              "h": "Podsumowanie"
-            },
-            {
-              "p": "Metafora „codziennego Tetrisa\" podkreśla znaczenie efektywnego zarządzania czasem, priorytetami i zdolności adaptacyjnych. Kluczem jest nie tylko radzenie sobie z bieżącymi zadaniami, ale elastyczność umysłu, pozwalająca dostosować się do zmieniających się warunków."
-            },
-            {
-              "list": [
-                "Chroń pierwsze 2-3 godziny dnia na zadania trudne.",
-                "Nie reaguj wyłącznie na to, co przyszło teraz — planuj miejsce na to, co przyjdzie.",
-                "Rób przerwy zanim tego potrzebujesz, nie gdy już musisz.",
-                "Naucz się rozpoznawać, kiedy Twoja plansza jest za wysoka — i co wtedy odłożyć."
-              ]
             }
           ]
         }
@@ -3663,13 +3683,13 @@ const COPY = {
       "forLabel": "Who we work with",
       "notForLabel": "Who we do not work with",
       "forItems": [
-        "Automotive workshops, service centers, dealers and parts producers from Tri-City and Poland",
-        "B2B companies in marine, engineering and industrial sectors",
+        "We specialise in automotive: car manufacturers, aftermarket parts, service centres, dealers and adjacent brands",
+        "Marine sector: marine, port, technical, production and service companies",
+        "Technical B2B companies that need complex products explained clearly",
         "E-commerce brands with technical products that require customer education",
-        "Local service companies from Gdańsk, Pruszcz Gdański and Tczew looking for Google Maps growth",
-        "Companies ready to invest at least 3000 PLN/month for at least 6 months",
-        "Owners who want a partner, not a task-list contractor",
-        "Brands planning a rebrand with respect for their existing history"
+        "Local service companies looking for growth in Google Maps",
+        "Companies outside these sectors when the goal, product and strategic readiness make sense",
+        "Owners who want a partner, not a task-list vendor"
       ],
       "notForItems": [
         "Clients looking for cheap 500 PLN/month packages — that cannot work",
@@ -3682,32 +3702,32 @@ const COPY = {
       ],
       "forItemsExt": [
         {
-          "k": "Automotive and service",
-          "d": "This is where our practice is deepest: local search, video, seasonal offers and lead generation."
+          "k": "Automotive as a speciality",
+          "d": "Our strongest ground is automotive: car manufacturers, aftermarket parts, dealers, service centres and adjacent brands. We understand seasonality, technical language and customer decisions."
+        },
+        {
+          "k": "Marine sector",
+          "d": "We also work with marine, port, production, technical and B2B companies. Credibility, specificity and clear explanation matter here."
         },
         {
           "k": "Technical B2B",
-          "d": "We like offers that need explanation. Strategy and content beat empty visuals here."
+          "d": "We like products and services that need explanation. Strategy, content and sales work better here than pretty banners without context."
         },
         {
           "k": "Technical e-commerce",
-          "d": "When the product needs education, the message must handle doubts before media spend scales."
+          "d": "When products require education, traffic alone is not enough. The way you explain value and objections matters."
         },
         {
           "k": "Local companies",
-          "d": "For Gdańsk, Pruszcz and Tczew, maps visibility, reviews and realistic service areas matter most."
+          "d": "For local markets, Google profiles, reviews, local SEO and campaigns built around a real service radius are key."
         },
         {
-          "k": "Budget with runway",
-          "d": "Marketing needs data and iteration. A few months give the work a fair chance."
+          "k": "Not limited to one niche",
+          "d": "Automotive and marine are our strong territory, but good projects from other sectors are welcome when goal, product, budget and partnership are clear."
         },
         {
-          "k": "Owner partnership",
-          "d": "Decisions improve when we talk to someone who understands margin, seasonality and operations."
-        },
-        {
-          "k": "Respectful rebrands",
-          "d": "We keep what works and change what limits growth."
+          "k": "Owner-level partnership",
+          "d": "The best decisions happen fast when we work with someone who understands margin, seasonality and operations."
         }
       ],
       "notForItemsExt": [
@@ -4431,6 +4451,122 @@ const COPY = {
       "titleIt": "journal.",
       "items": [
         {
+          "slug": "daily-tetris",
+          "cat": "Productivity",
+          "date": "Jan 2026",
+          "title1": "Daily Tetris:",
+          "titleIt": "managing your brain.",
+          "image": "/assets/blog-tetris.jpg",
+          "lede": "A metaphor for the human brain and task management. Early in the day the board is empty — easy to place a block. The problem starts when blocks drop faster than you can fit them in.",
+          "body": [
+            {
+              "h": "Empty board"
+            },
+            {
+              "p": "At the start of the day, when our \"game board\" (mind + schedule) is empty and unburdened, it's easier to take on new tasks and challenges. No time pressure, thinking is clear and focused."
+            },
+            {
+              "p": "Like in Tetris, where it's easier to stack pieces on an empty board, in daily life it's easier to start and finish tasks when our mind is \"fresh\" and undisturbed. That's why most productive people reserve the morning for their hardest work — that's when the board is most empty."
+            },
+            {
+              "h": "The flood of blocks"
+            },
+            {
+              "p": "As the day progresses and new tasks flow in, our ability to manage time and priorities gets tested. Like in Tetris where new pieces come faster and faster, in daily life we face more and more challenges and unexpected tasks."
+            },
+            {
+              "p": "If we don't handle them in real time, the \"board\" fills up, and adding new pieces without chaos gets harder. That's when \"I did a lot and got nothing done\" becomes the daily mode."
+            },
+            {
+              "type": "figure",
+              "image": "/assets/showcase-1.jpg",
+              "caption": "Strategic work context at KTB Media"
+            },
+            {
+              "h": "Anticipation > reaction"
+            },
+            {
+              "p": "The key to \"daily Tetris\" isn't just managing current tasks — it's **anticipation and planning**. Postponing, like avoiding decisions in Tetris, usually ends in a lost round: you stop controlling your obligations and your time."
+            },
+            {
+              "p": "Good Tetris players don't react to the piece that's falling — they're already planning a spot for the one that comes next. People who manage their day well don't react only to what's in the inbox. They've got space reserved for what's known to be coming."
+            },
+            {
+              "h": "A break = clearing a line"
+            },
+            {
+              "p": "Managing your \"daily Tetris\" also requires knowing when to take a short break, to clear the mind and see tasks from a new angle. A short rest isn't a waste — it's \"clearing a line\". Suddenly the board shrinks, there's more room, decisions get easier."
+            }
+          ]
+        },
+        {
+          "slug": "marketing-for-its-own-sake",
+          "cat": "Strategy",
+          "date": "Apr 2026",
+          "title1": "How to stop doing marketing",
+          "titleIt": "for its own sake.",
+          "image": "/assets/blog-marketing.jpg",
+          "lede": "Generating a content calendar isn't strategy. Publishing \"because we have to\" costs the same as publishing on purpose — and delivers zero. How to tell motion from progress.",
+          "body": [
+            {
+              "h": "Motion ≠ progress"
+            },
+            {
+              "p": "Most marketing teams we've seen share one denominator: lots of motion, little progress. Campaign after campaign, reel after reel, a newsletter every Tuesday. Behind it all — no answer to a simple question: **why?**"
+            },
+            {
+              "p": "The mechanism is beautifully self-sustaining. Social generates content that fuels more content. Campaigns generate data that justifies more campaigns. The whole system orbits itself, and the only product is more TODOs."
+            },
+            {
+              "h": "What marketing-for-its-own-sake looks like"
+            },
+            {
+              "p": "It's when **doing** gets confused with the goal. Symptoms:"
+            },
+            {
+              "list": [
+                "Calendar full — but no idea which customer problem each post solves.",
+                "KPIs measured in likes, reach, impressions — never in what hits the P&L.",
+                "Every campaign described as a success, \"because reach grew\".",
+                "Reports nobody reads — made only because \"the client likes reports\".",
+                "New initiatives stacked without removing the old ones — because no-one dares say what stopped working."
+              ]
+            },
+            {
+              "h": "Two-question test"
+            },
+            {
+              "p": "Every time your team (or you) starts planning a new thing, ask:"
+            },
+            {
+              "type": "figure",
+              "image": "/assets/showcase-2.jpg",
+              "caption": "Strategic work context at KTB Media"
+            },
+            {
+              "list": [
+                "**Which concrete business goal does this support?** Not \"brand building\", not \"engagement\". Concrete: more inquiries in segment X, lower CAC in channel Y, higher cart value.",
+                "**How will I know if it worked?** If the answer is \"we'll see\", you're guessing."
+              ]
+            },
+            {
+              "p": "If you can't answer either — pause. Not because it's bad. Because you're doing it out of habit, not decision."
+            },
+            {
+              "h": "Turn campaigns into hypotheses"
+            },
+            {
+              "p": "Instead of a \"brand campaign\", plan hypothesis tests. Every marketing action is essentially a bet on reality: _I believe that if I show X to group Y, Z will happen_. If you can write that sentence — you have a campaign. If you can't — you have an expense."
+            },
+            {
+              "h": "Less, sharper, louder"
+            },
+            {
+              "p": "Real growth at most companies we've worked with didn't come from adding another channel. It came from **cutting three things** that didn't work and reinvesting those budgets into one thing that started to. Discipline is invisible — it's about what you don't do."
+            }
+          ]
+        },
+        {
           "slug": "ile-kosztuje-google-ads-dla-warsztatu-samochodowego-2026",
           "cat": "Google Ads",
           "date": "Kwi 2026",
@@ -4611,68 +4747,6 @@ const COPY = {
           ]
         },
         {
-          "slug": "marketing-for-its-own-sake",
-          "cat": "Strategy",
-          "date": "Apr 2026",
-          "title1": "How to stop doing marketing",
-          "titleIt": "for its own sake.",
-          "image": "/assets/blog-marketing.jpg",
-          "lede": "Generating a content calendar isn't strategy. Publishing \"because we have to\" costs the same as publishing on purpose — and delivers zero. How to tell motion from progress.",
-          "body": [
-            {
-              "h": "Motion ≠ progress"
-            },
-            {
-              "p": "Most marketing teams we've seen share one denominator: lots of motion, little progress. Campaign after campaign, reel after reel, a newsletter every Tuesday. Behind it all — no answer to a simple question: **why?**"
-            },
-            {
-              "p": "The mechanism is beautifully self-sustaining. Social generates content that fuels more content. Campaigns generate data that justifies more campaigns. The whole system orbits itself, and the only product is more TODOs."
-            },
-            {
-              "h": "What marketing-for-its-own-sake looks like"
-            },
-            {
-              "p": "It's when **doing** gets confused with the goal. Symptoms:"
-            },
-            {
-              "list": [
-                "Calendar full — but no idea which customer problem each post solves.",
-                "KPIs measured in likes, reach, impressions — never in what hits the P&L.",
-                "Every campaign described as a success, \"because reach grew\".",
-                "Reports nobody reads — made only because \"the client likes reports\".",
-                "New initiatives stacked without removing the old ones — because no-one dares say what stopped working."
-              ]
-            },
-            {
-              "h": "Two-question test"
-            },
-            {
-              "p": "Every time your team (or you) starts planning a new thing, ask:"
-            },
-            {
-              "list": [
-                "**Which concrete business goal does this support?** Not \"brand building\", not \"engagement\". Concrete: more inquiries in segment X, lower CAC in channel Y, higher cart value.",
-                "**How will I know if it worked?** If the answer is \"we'll see\", you're guessing."
-              ]
-            },
-            {
-              "p": "If you can't answer either — pause. Not because it's bad. Because you're doing it out of habit, not decision."
-            },
-            {
-              "h": "Turn campaigns into hypotheses"
-            },
-            {
-              "p": "Instead of a \"brand campaign\", plan hypothesis tests. Every marketing action is essentially a bet on reality: _I believe that if I show X to group Y, Z will happen_. If you can write that sentence — you have a campaign. If you can't — you have an expense."
-            },
-            {
-              "h": "Less, sharper, louder"
-            },
-            {
-              "p": "Real growth at most companies we've worked with didn't come from adding another channel. It came from **cutting three things** that didn't work and reinvesting those budgets into one thing that started to. Discipline is invisible — it's about what you don't do."
-            }
-          ]
-        },
-        {
           "slug": "meta-ads-2026",
           "cat": "Performance",
           "date": "Mar 2026",
@@ -4701,6 +4775,11 @@ const COPY = {
             },
             {
               "h": "CAPI and the offline customer"
+            },
+            {
+              "type": "figure",
+              "image": "/assets/case-tomex-brakes-1.jpg",
+              "caption": "Strategic work context at KTB Media"
             },
             {
               "p": "After iOS 14.5+ and the pixel-signal decay, **Conversions API (CAPI)** from the server is a minimum. Accounts that have it see 20–40% more conversions than pixel-only setups. That's not a bonus — that's closing the post-ATT gap."
@@ -4755,6 +4834,11 @@ const COPY = {
               "p": "**Trap 1: rebrand as escape from actual work.** Company has sales, culture, product problems. Instead it draws a new logo. Result: six months later, same problems + 80k spent on identity that doesn't work, because it had nothing to work for."
             },
             {
+              "type": "figure",
+              "image": "/assets/case-pulsegt-1.jpg",
+              "caption": "Strategic work context at KTB Media"
+            },
+            {
               "p": "**Trap 2: rebrand without a rollout plan.** New system lands in a pdf. Pdf sits in a drawer. No website budget. Old signage. Social has new colors but old messages. Company now looks chaotic instead of fresh."
             },
             {
@@ -4770,50 +4854,6 @@ const COPY = {
                 "**Do the storytelling.** Customers, staff, partners — each group should hear from you why and what changes.",
                 "**Accept not everyone will like it.** If you want 100% approval, you changed nothing meaningful."
               ]
-            }
-          ]
-        },
-        {
-          "slug": "daily-tetris",
-          "cat": "Productivity",
-          "date": "Jan 2026",
-          "title1": "Daily Tetris:",
-          "titleIt": "managing your brain.",
-          "image": "/assets/blog-tetris.jpg",
-          "lede": "A metaphor for the human brain and task management. Early in the day the board is empty — easy to place a block. The problem starts when blocks drop faster than you can fit them in.",
-          "body": [
-            {
-              "h": "Empty board"
-            },
-            {
-              "p": "At the start of the day, when our \"game board\" (mind + schedule) is empty and unburdened, it's easier to take on new tasks and challenges. No time pressure, thinking is clear and focused."
-            },
-            {
-              "p": "Like in Tetris, where it's easier to stack pieces on an empty board, in daily life it's easier to start and finish tasks when our mind is \"fresh\" and undisturbed. That's why most productive people reserve the morning for their hardest work — that's when the board is most empty."
-            },
-            {
-              "h": "The flood of blocks"
-            },
-            {
-              "p": "As the day progresses and new tasks flow in, our ability to manage time and priorities gets tested. Like in Tetris where new pieces come faster and faster, in daily life we face more and more challenges and unexpected tasks."
-            },
-            {
-              "p": "If we don't handle them in real time, the \"board\" fills up, and adding new pieces without chaos gets harder. That's when \"I did a lot and got nothing done\" becomes the daily mode."
-            },
-            {
-              "h": "Anticipation > reaction"
-            },
-            {
-              "p": "The key to \"daily Tetris\" isn't just managing current tasks — it's **anticipation and planning**. Postponing, like avoiding decisions in Tetris, usually ends in a lost round: you stop controlling your obligations and your time."
-            },
-            {
-              "p": "Good Tetris players don't react to the piece that's falling — they're already planning a spot for the one that comes next. People who manage their day well don't react only to what's in the inbox. They've got space reserved for what's known to be coming."
-            },
-            {
-              "h": "A break = clearing a line"
-            },
-            {
-              "p": "Managing your \"daily Tetris\" also requires knowing when to take a short break, to clear the mind and see tasks from a new angle. A short rest isn't a waste — it's \"clearing a line\". Suddenly the board shrinks, there's more room, decisions get easier."
             }
           ]
         }
