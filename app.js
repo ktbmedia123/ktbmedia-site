@@ -89,7 +89,7 @@ function sectionEnabled(lang, key) {
   return !sections || sections[key] !== false;
 }
 function getLandingConfig(lang, path) {
-  const slug = path.replace(/^\//, '');
+  const slug = normalizePath(path).replace(/^\//, '');
   const fromCms = COPY[lang] && COPY[lang].landings && COPY[lang].landings[slug];
   return fromCms || window.LANDINGS && window.LANDINGS[slug] || null;
 }
@@ -187,10 +187,23 @@ function useCursor() {
     };
   }, []);
 }
+function normalizePath(path) {
+  const clean = String(path || '/').split('?')[0].split('#')[0].replace(/\/{2,}/g, '/') || '/';
+  if (clean === '/') return '/';
+  return clean.replace(/\/+$/, '') || '/';
+}
+function prettyPath(path) {
+  const clean = normalizePath(path);
+  if (clean === '/' || /\.[a-z0-9]+$/i.test(clean)) return clean;
+  return `${clean}/`;
+}
+function canonicalUrlForPath(path) {
+  return `${window.location.origin}${prettyPath(path)}`;
+}
 function usePath() {
-  const [path, setPath] = useState(window.location.pathname);
+  const [path, setPath] = useState(normalizePath(window.location.pathname));
   useEffect(() => {
-    const onPop = () => setPath(window.location.pathname);
+    const onPop = () => setPath(normalizePath(window.location.pathname));
     window.addEventListener('popstate', onPop);
     window.addEventListener('ktb-navigate', onPop);
     return () => {
@@ -201,14 +214,15 @@ function usePath() {
   return path;
 }
 function navigate(path) {
-  if (window.location.pathname === path) {
+  const targetPath = prettyPath(path);
+  if (normalizePath(window.location.pathname) === normalizePath(path)) {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
     return;
   }
-  window.history.pushState({}, '', path);
+  window.history.pushState({}, '', targetPath);
   window.scrollTo(0, 0);
   window.dispatchEvent(new Event('ktb-navigate'));
 }
@@ -220,6 +234,7 @@ function SmartLink({
   innerRef,
   ...rest
 }) {
+  const href = to.startsWith('/') && !to.includes('#') ? prettyPath(to) : to;
   const onClick = e => {
     if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
     if (to.startsWith('/') && !to.startsWith('/#')) {
@@ -245,7 +260,7 @@ function SmartLink({
   };
   return /*#__PURE__*/React.createElement("a", _extends({
     ref: innerRef,
-    href: to,
+    href: href,
     className: className,
     onClick: onClick
   }, rest), children);
@@ -333,7 +348,8 @@ function useSEO(lang, path) {
     setOG('title', meta.title);
     setOG('description', meta.desc);
     setOG('type', 'website');
-    setOG('url', window.location.href);
+    const canonicalUrl = canonicalUrlForPath(path);
+    setOG('url', canonicalUrl);
     setOG('locale', lang === 'pl' ? 'pl_PL' : 'en_US');
     let can = document.querySelector('link[rel="canonical"]');
     if (!can) {
@@ -341,7 +357,7 @@ function useSEO(lang, path) {
       can.setAttribute('rel', 'canonical');
       document.head.appendChild(can);
     }
-    can.setAttribute('href', window.location.href.split('?')[0].split('#')[0]);
+    can.setAttribute('href', canonicalUrl);
     document.documentElement.setAttribute('lang', lang);
   }, [lang, path]);
 }
@@ -570,7 +586,7 @@ function StickyQuoteChip({
     className: `sticky-quote ${visible ? 'is-visible' : ''}`,
     "aria-hidden": visible ? "false" : "true"
   }, /*#__PURE__*/React.createElement("a", {
-    href: "/kontakt",
+    href: "/kontakt/",
     onClick: go,
     className: "sticky-quote-link"
   }, /*#__PURE__*/React.createElement(ArrowIcon, {

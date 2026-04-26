@@ -2,6 +2,9 @@
 
 ## Co zostało dodane
 
+- Poprawka indeksowania: ujednolicone canonical/OG/hreflang i sitemap na adresy ze slashem, np. `/o-nas/`.
+- Poprawka routingu React: wejście bezpośrednio na `/o-nas/`, `/blog/`, `/realizacje/` i podstrony nie wpada już po załadowaniu JS w 404.
+- `_redirects` z jednorazowymi 301 z wersji bez slasha na wersję kanoniczną ze slashem.
 - `404.html` oraz komponent `NotFoundPage` w `app.js` - custom 404 z animowanym SVG auta i licznikiem wejść.
 - `AudienceBlocks` w `app.js`, nowe treści w `content.js` i `content/site.json`, pola CMS w `admin/config.yml` - sekcje "Dla kogo pracujemy" i "Z kim nie współpracujemy" na home oraz `/o-nas`.
 - Rozszerzone case studies w `content.js` i `content/site.json` - `duration`, `scope`, `clientQuote`, `timeline`, `chartData`.
@@ -47,6 +50,7 @@
 - W panelu Decap CMS otwórz `Strona -> Wszystkie treści strony` i zapisz testową zmianę w landing page, żeby potwierdzić zapis do `content/site.json`.
 - Placeholdery blogowe są poprawnymi plikami JPG 1600x900, ale można je później zastąpić realnymi zdjęciami z produkcji.
 - Po deployu wyślij zaktualizowany `sitemap.xml` do Google Search Console.
+- W GSC sprawdzaj i zgłaszaj do indeksowania wersje ze slashem, np. `https://ktbmedia.eu/o-nas/`.
 - Przetestuj formularz kontaktowy po deployu, mimo że nie był modyfikowany.
 
 ## Checklist testów
