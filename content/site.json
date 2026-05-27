@@ -2378,7 +2378,7 @@
           ],
           "ph": "ph-stripe-1",
           "images": [
-            "/assets/case-autocentrum-elektronowa-1.jpg",
+            "/assets/uploads/bosch-autocentrum.jpg",
             "/assets/case-autocentrum-elektronowa-2.jpg",
             "/assets/case-autocentrum-elektronowa-3.jpg"
           ],
@@ -2478,9 +2478,9 @@
           ],
           "ph": "ph-stripe-2",
           "images": [
-            "/assets/case-rmdc-1.jpg",
-            "/assets/case-rmdc-2.jpg",
-            "/assets/case-rmdc-3.jpg"
+            "/assets/uploads/rmdc.jpg",
+            "/assets/uploads/rmdc3.jpg",
+            "/assets/uploads/rmdc2.jpg"
           ],
           "title1": "Remontowa",
           "solution": "Przebudowaliśmy identyfikację wizualną pod B2B premium. Prowadzenie social mediów FB/IG/LinkedIn w języku polskim i angielskim. Stworzyliśmy serię \"W głębi projektu\" pokazującą pracownie i sylwetki pracowników. Opracowaliśmy animowane portfolio projektów jednostek pływających. Wspieraliśmy aktywną rekrutację nowych pracowników i tworzyliśmy relacje foto-wideo z targów i eventów.",
@@ -2582,9 +2582,9 @@
           ],
           "ph": "ph-stripe-3",
           "images": [
-            "/assets/case-pmo-lubricants-1.jpg",
-            "/assets/case-pmo-lubricants-2.jpg",
-            "/assets/case-pmo-lubricants-3.jpg"
+            "/assets/uploads/pmo.jpg",
+            "/assets/uploads/pmo3.jpg",
+            "/assets/uploads/pmo-2.jpg"
           ],
           "title1": "PMO",
           "solution": "Pełen pakiet: konsulting w zakresie finansów i sprzedaży, merchandise i reklamy pneumatyczne, zarządzanie social media i kampaniami Google Ads oraz Meta Ads, współpraca z influencerami, udział w eventach motoryzacyjnych z relacjami foto-wideo, usługi graficzne i webmasterskie, aktywne poszukiwanie klientów B2B. Dedykowane promocje dla dystrybutorów i program benefitów.",
@@ -2682,7 +2682,7 @@
           ],
           "ph": "ph-stripe-1",
           "images": [
-            "/assets/case-tomex-brakes-1.jpg",
+            "/assets/uploads/tomex-brakes.png",
             "/assets/case-tomex-brakes-2.jpg",
             "/assets/case-tomex-brakes-3.jpg"
           ],
@@ -2782,7 +2782,7 @@
           ],
           "ph": "ph-stripe-2",
           "images": [
-            "/assets/case-pulsegt-1.jpg",
+            "/assets/uploads/pulsegtt.jpg",
             "/assets/case-pulsegt-2.jpg",
             "/assets/case-pulsegt-3.jpg"
           ],
