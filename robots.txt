@@ -4,4 +4,26 @@ Disallow: /admin/
 Disallow: /admin.html
 Disallow: /api/
 
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Host: https://ktbmedia.eu
 Sitemap: https://ktbmedia.eu/sitemap.xml

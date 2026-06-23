@@ -206,8 +206,8 @@ collections:
                   - { label: O nas / wyróżniki, name: about, widget: boolean, default: true, required: false }
                   - { label: Prezentacja zdjęciowa, name: showcase, widget: boolean, default: true, required: false }
                   - { label: Proces współpracy, name: process, widget: boolean, default: true, required: false }
-                  - { label: Opinie klientów, name: testimonials, widget: boolean, default: true, required: false }
                   - { label: Dla kogo pracujemy, name: audience, widget: boolean, default: true, required: false }
+                  - { label: Zaufali nam / logotypy, name: trusted, widget: boolean, default: true, required: false }
                   - { label: Portfolio / realizacje, name: portfolio, widget: boolean, default: true, required: false }
                   - { label: Blog, name: blog, widget: boolean, default: true, required: false }
                   - { label: Kontakt, name: contact, widget: boolean, default: true, required: false }
@@ -412,23 +412,25 @@ collections:
                         required: false
                         field: { label: Notatka, name: note, widget: string }
 
-              # TESTIMONIALS
-              - label: Opinie klientów
-                name: testi
+              # ZAUFALI NAM
+              - label: Zaufali nam — logotypy
+                name: trusted
                 widget: object
                 collapsed: true
                 fields:
                   - { label: Etykieta sekcji, name: label, widget: string }
                   - { label: Tytuł 1, name: title1, widget: string }
                   - { label: Wyróżnienie kursywą, name: titleIt, widget: string }
-                  - label: Opinie
+                  - { label: Lead, name: lede, widget: text }
+                  - label: Marki
                     name: items
                     widget: list
-                    summary: '{{fields.name}} · {{fields.co}}'
+                    summary: '{{fields.name}}'
                     fields:
-                      - { label: Treść opinii, name: q, widget: text }
-                      - { label: Imię i nazwisko, name: name, widget: string }
-                      - { label: Firma / rola, name: co, widget: string }
+                      - { label: Nazwa, name: name, widget: string }
+                      - { label: URL, name: url, widget: string, required: false }
+                      - { label: Domena, name: domain, widget: string, required: false }
+                      - { label: Logo URL, name: logo, widget: string, required: false }
 
               # TEAM
               - label: Zespół / Założyciele
@@ -634,8 +636,8 @@ collections:
                   - { label: About / proof points, name: about, widget: boolean, default: true, required: false }
                   - { label: Showcase images, name: showcase, widget: boolean, default: true, required: false }
                   - { label: Process, name: process, widget: boolean, default: true, required: false }
-                  - { label: Testimonials, name: testimonials, widget: boolean, default: true, required: false }
                   - { label: Audience blocks, name: audience, widget: boolean, default: true, required: false }
+                  - { label: Trusted logos, name: trusted, widget: boolean, default: true, required: false }
                   - { label: Portfolio / work, name: portfolio, widget: boolean, default: true, required: false }
                   - { label: Blog, name: blog, widget: boolean, default: true, required: false }
                   - { label: Contact, name: contact, widget: boolean, default: true, required: false }
@@ -832,22 +834,24 @@ collections:
                         required: false
                         field: { label: Note, name: note, widget: string }
 
-              - label: Testimonials
-                name: testi
+              - label: Trusted logos
+                name: trusted
                 widget: object
                 collapsed: true
                 fields:
                   - { label: Section label, name: label, widget: string }
                   - { label: Title 1, name: title1, widget: string }
                   - { label: Italic highlight, name: titleIt, widget: string }
-                  - label: Testimonials
+                  - { label: Lede, name: lede, widget: text }
+                  - label: Brands
                     name: items
                     widget: list
-                    summary: '{{fields.name}} · {{fields.co}}'
+                    summary: '{{fields.name}}'
                     fields:
-                      - { label: Quote, name: q, widget: text }
                       - { label: Name, name: name, widget: string }
-                      - { label: Company / role, name: co, widget: string }
+                      - { label: URL, name: url, widget: string, required: false }
+                      - { label: Domain, name: domain, widget: string, required: false }
+                      - { label: Logo URL, name: logo, widget: string, required: false }
 
               - label: Team / Founders
                 name: team

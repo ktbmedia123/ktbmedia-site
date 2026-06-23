@@ -67,6 +67,18 @@
     Content-Type = "text/plain; charset=UTF-8"
     Cache-Control = "public, max-age=0, must-revalidate"
 
+[[headers]]
+  for = "/llms.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=UTF-8"
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/content/geo-entity.json"
+  [headers.values]
+    Content-Type = "application/ld+json; charset=UTF-8"
+    Cache-Control = "public, max-age=0, must-revalidate"
+
 [[redirects]]
   from = "/*"
   to = "/404.html"

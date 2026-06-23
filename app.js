@@ -134,7 +134,7 @@ function useCursor() {
 
     let lastDark = false;
     let lastDarkCheck = 0;
-    const DARK_SEL = '.about, .showcase-section, .footer, .marquee, .case-results, .nav.scrolled, .mini-cta-pre-footer, .about-page-main, .blog-dark, .process-steps, .testi-grid, .pricing-grid, .price-card.featured, .case-page-dark';
+    const DARK_SEL = '.about, .showcase-section, .footer, .marquee, .case-results, .nav.scrolled, .mini-cta-pre-footer, .about-page-main, .blog-dark, .process-steps, .pricing-grid, .price-card.featured, .case-page-dark';
 
     const onMove = e => {
       const x = e.clientX;
@@ -155,7 +155,7 @@ function useCursor() {
 
     window.addEventListener('mousemove', onMove, { passive: true });
 
-    const hoverables = 'a, button, .service-row, .port-item, .blog-card, .team-card, .founder-card, .step, .testi-card, .price-card, .feature, .sketch-card, .showcase-block, .contact-email-cta, .sketch-paper, .case-image-card, input, textarea, select, label.checkbox-tile, .mini-cta-pre-footer';
+    const hoverables = 'a, button, .service-row, .port-item, .blog-card, .team-card, .founder-card, .step, .price-card, .feature, .sketch-card, .showcase-block, .contact-email-cta, .sketch-paper, .case-image-card, input, textarea, select, label.checkbox-tile, .mini-cta-pre-footer';
     const inputSel = '.contact-form input, .contact-form textarea, .contact-form select';
     const onOver = e => {
       if (e.target.closest && e.target.closest(hoverables)) ring.classList.add('hover');
@@ -1218,12 +1218,70 @@ function Process({
     className: "d"
   }, st.d)))))));
 }
+function TrustedLogos({
+  lang
+}) {
+  if (!sectionEnabled(lang, 'trusted')) return null;
+  const t = COPY[lang].trusted;
+  if (!t || !Array.isArray(t.items) || t.items.length === 0) return null;
+  return /*#__PURE__*/React.createElement("section", {
+    className: "section trusted-section",
+    "aria-labelledby": "trusted-title"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "section-head reveal"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "sec-label"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "dot"
+  }), " ", t.label), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", {
+    id: "trusted-title",
+    className: "display section-title"
+  }, t.title1, " ", /*#__PURE__*/React.createElement("span", {
+    className: "it"
+  }, t.titleIt)), t.lede && /*#__PURE__*/React.createElement("p", {
+    className: "section-lede trusted-lede"
+  }, t.lede))), /*#__PURE__*/React.createElement("div", {
+    className: "trusted-grid reveal"
+  }, t.items.map((client, i) => /*#__PURE__*/React.createElement("a", {
+    href: client.url || '#',
+    className: "trusted-logo-card",
+    key: `${client.name}-${i}`,
+    target: "_blank",
+    rel: "noopener noreferrer",
+    "aria-label": client.name
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "trusted-logo-img-wrap"
+  }, client.logo && /*#__PURE__*/React.createElement("img", {
+    src: client.logo,
+    alt: `${client.name} logo`,
+    loading: "lazy",
+    decoding: "async",
+    onError: e => {
+      e.currentTarget.style.display = 'none';
+      const fallback = e.currentTarget.parentNode && e.currentTarget.parentNode.querySelector('.trusted-logo-fallback');
+      if (fallback) fallback.style.display = 'grid';
+    }
+  }), /*#__PURE__*/React.createElement("span", {
+    className: "trusted-logo-fallback",
+    "aria-hidden": "true"
+  }, client.name.split(/\s+/).slice(0, 2).map(part => part[0]).join('').slice(0, 3).toUpperCase())), /*#__PURE__*/React.createElement("span", {
+    className: "trusted-logo-name"
+  }, client.name))))));
+}
 function Portfolio({
   lang,
   hideHead
 }) {
   if (!sectionEnabled(lang, 'portfolio')) return null;
   const p = COPY[lang].portfolio;
+  const caseCta = lang === 'pl' ? 'Zobacz case study' : 'View case study';
+  const shorten = text => {
+    const clean = String(text || '').replace(/\s+/g, ' ').trim();
+    if (clean.length <= 165) return clean;
+    return `${clean.slice(0, 162).replace(/\s+\S*$/, '')}...`;
+  };
   return /*#__PURE__*/React.createElement("section", {
     id: "work",
     className: "section portfolio"
@@ -1243,45 +1301,94 @@ function Portfolio({
     className: "serif-italic section-lede reveal"
   }, p.lede)), /*#__PURE__*/React.createElement("div", {
     className: "sketchbook-grid"
-  }, p.items.map((it, i) => /*#__PURE__*/React.createElement(SmartLink, {
-    to: `/realizacje/${it.slug}`,
-    className: "sketch-card reveal",
-    key: i
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "sketch-card-top"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "sketch-num mono"
-  }, it.num), /*#__PURE__*/React.createElement("div", {
-    className: "sketch-year mono"
-  }, it.year)), /*#__PURE__*/React.createElement("div", {
-    className: "sketch-palette",
-    "aria-hidden": "true"
-  }, (it.palette || []).map((c, j) => /*#__PURE__*/React.createElement("span", {
-    key: j,
-    style: {
-      background: c
-    }
-  }))), /*#__PURE__*/React.createElement("div", {
-    className: "sketch-title"
-  }, it.title1, " ", /*#__PURE__*/React.createElement("span", {
-    className: "it"
-  }, it.titleIt)), /*#__PURE__*/React.createElement("div", {
-    className: "sketch-tag mono"
-  }, it.tag), /*#__PURE__*/React.createElement("div", {
-    className: "sketch-brief"
-  }, it.brief), /*#__PURE__*/React.createElement("div", {
-    className: "sketch-cta mono"
-  }, lang === 'pl' ? 'Zobacz case study' : 'View case study', " ", /*#__PURE__*/React.createElement(ArrowIcon, {
-    size: 12
-  })), /*#__PURE__*/React.createElement("span", {
-    className: "sketch-reveal",
-    "aria-hidden": "true"
-  }, /*#__PURE__*/React.createElement("span", null, lang === 'pl' ? 'Zobacz case study' : 'View case study'), /*#__PURE__*/React.createElement(ArrowIcon, {
-    size: 14
-  })), /*#__PURE__*/React.createElement("span", {
-    className: "sketch-mobile-cue",
-    "aria-hidden": "true"
-  }, "\u2197"))))));
+  }, p.items.map((it, i) => {
+    const images = it.images || [];
+    const primaryImage = images[0];
+    const scope = (it.scope || []).slice(0, 3);
+    const results = (it.results || []).filter(r => r && r.v && r.k).slice(0, 2);
+    const accent = (it.palette || [])[0] || '#E8A838';
+    const challenge = shorten(it.challenge);
+    const solution = shorten(it.solution);
+    return /*#__PURE__*/React.createElement(SmartLink, {
+      to: `/realizacje/${it.slug}`,
+      className: "sketch-card portfolio-case-card reveal",
+      key: i
+    }, /*#__PURE__*/React.createElement("div", {
+      className: "sketch-media",
+      style: {
+        '--case-accent': accent
+      }
+    }, primaryImage ? /*#__PURE__*/React.createElement("img", {
+      src: primaryImage,
+      alt: `${it.title1} ${it.titleIt} - realizacja KTB Media`,
+      loading: "lazy",
+      decoding: "async"
+    }) : /*#__PURE__*/React.createElement("div", {
+      className: `sketch-media-fallback ${it.ph || ''}`
+    }), /*#__PURE__*/React.createElement("span", {
+      className: "sketch-media-label mono"
+    }, it.num)), /*#__PURE__*/React.createElement("div", {
+      className: "sketch-card-top"
+    }, /*#__PURE__*/React.createElement("div", {
+      className: "sketch-num mono"
+    }, it.num), /*#__PURE__*/React.createElement("div", {
+      className: "sketch-year mono"
+    }, it.year)), /*#__PURE__*/React.createElement("div", {
+      className: "sketch-palette",
+      "aria-hidden": "true"
+    }, (it.palette || []).map((c, j) => /*#__PURE__*/React.createElement("span", {
+      key: j,
+      style: {
+        background: c
+      }
+    }))), /*#__PURE__*/React.createElement("div", {
+      className: "sketch-title"
+    }, it.title1, " ", /*#__PURE__*/React.createElement("span", {
+      className: "it"
+    }, it.titleIt)), /*#__PURE__*/React.createElement("div", {
+      className: "sketch-tag mono"
+    }, it.tag), /*#__PURE__*/React.createElement("div", {
+      className: "sketch-brief"
+    }, it.brief), /*#__PURE__*/React.createElement("div", {
+      className: "sketch-insights"
+    }, challenge && /*#__PURE__*/React.createElement("div", {
+      className: "sketch-insight"
+    }, /*#__PURE__*/React.createElement("span", {
+      className: "mono"
+    }, lang === 'pl' ? 'Problem' : 'Problem'), /*#__PURE__*/React.createElement("p", null, challenge)), solution && /*#__PURE__*/React.createElement("div", {
+      className: "sketch-insight"
+    }, /*#__PURE__*/React.createElement("span", {
+      className: "mono"
+    }, lang === 'pl' ? 'Podejście' : 'Approach'), /*#__PURE__*/React.createElement("p", null, solution))), scope.length > 0 && /*#__PURE__*/React.createElement("div", {
+      className: "sketch-scope",
+      "aria-label": lang === 'pl' ? 'Zakres projektu' : 'Project scope'
+    }, scope.map((tag, j) => /*#__PURE__*/React.createElement("span", {
+      key: j
+    }, tag))), /*#__PURE__*/React.createElement("div", {
+      className: "sketch-proof"
+    }, it.duration && /*#__PURE__*/React.createElement("div", {
+      className: "sketch-proof-item"
+    }, /*#__PURE__*/React.createElement("span", {
+      className: "mono"
+    }, lang === 'pl' ? 'Czas' : 'Time'), /*#__PURE__*/React.createElement("strong", null, it.duration)), results.map((r, j) => /*#__PURE__*/React.createElement("div", {
+      className: "sketch-proof-item",
+      key: j
+    }, /*#__PURE__*/React.createElement("span", {
+      className: "mono"
+    }, r.k), /*#__PURE__*/React.createElement("strong", null, r.v)))), /*#__PURE__*/React.createElement("div", {
+      className: "sketch-cta mono"
+    }, caseCta, " ", /*#__PURE__*/React.createElement(ArrowIcon, {
+      size: 12
+    })), /*#__PURE__*/React.createElement("span", {
+      className: "sketch-reveal",
+      "aria-hidden": "true"
+    }, /*#__PURE__*/React.createElement("span", null, caseCta), /*#__PURE__*/React.createElement(ArrowIcon, {
+      size: 14
+    })), /*#__PURE__*/React.createElement("span", {
+      className: "sketch-mobile-cue",
+      "aria-hidden": "true"
+    }, "\u2197"));
+  }))));
 }
 function CaseChart({
   data,
@@ -1566,7 +1673,6 @@ function CasePage({
     scope: 'Zakres projektu',
     duration: 'Czas trwania',
     timeline: 'Przebieg projektu',
-    quote: 'Cytat klienta',
     notes: 'Notatki z procesu',
     palette: 'Paleta',
     nextCase: 'Następny projekt'
@@ -1578,7 +1684,6 @@ function CasePage({
     scope: 'Project scope',
     duration: 'Duration',
     timeline: 'Project timeline',
-    quote: 'Client quote',
     notes: 'Process notes',
     palette: 'Palette',
     nextCase: 'Next project'
@@ -1697,15 +1802,7 @@ function CasePage({
   }, r.k))))), /*#__PURE__*/React.createElement(CaseChart, {
     data: item.chartData,
     lang: lang
-  })), item.clientQuote && /*#__PURE__*/React.createElement("section", {
-    className: "case-client-quote reveal"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "case-block-label mono"
-  }, t.quote), /*#__PURE__*/React.createElement("blockquote", {
-    className: "case-client-quote-text"
-  }, "\u201E", item.clientQuote.text, "\u201D"), /*#__PURE__*/React.createElement("div", {
-    className: "case-client-quote-author"
-  }, /*#__PURE__*/React.createElement("strong", null, item.clientQuote.author), /*#__PURE__*/React.createElement("span", null, item.clientQuote.role, " \xB7 ", item.clientQuote.company))), item.notes && item.notes.length > 0 && /*#__PURE__*/React.createElement("section", {
+  })), item.notes && item.notes.length > 0 && /*#__PURE__*/React.createElement("section", {
     className: "case-notes reveal"
   }, /*#__PURE__*/React.createElement("div", {
     className: "case-block-label mono"
@@ -1725,40 +1822,6 @@ function CasePage({
   }, next.titleIt), " ", /*#__PURE__*/React.createElement(ArrowIcon, {
     size: 28
   }))));
-}
-function Testimonials({
-  lang
-}) {
-  if (!sectionEnabled(lang, 'testimonials')) return null;
-  const t = COPY[lang].testi;
-  return /*#__PURE__*/React.createElement("section", {
-    className: "section testi"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "section-head reveal"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "sec-label"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "dot"
-  }), " ", t.label), /*#__PURE__*/React.createElement("h2", {
-    className: "display section-title"
-  }, t.title1, " ", /*#__PURE__*/React.createElement("span", {
-    className: "it"
-  }, t.titleIt))), /*#__PURE__*/React.createElement("div", {
-    className: "testi-grid reveal"
-  }, t.items.map((it, i) => /*#__PURE__*/React.createElement(TiltBox, {
-    className: "testi-card",
-    key: i
-  }, /*#__PURE__*/React.createElement("p", {
-    className: "q"
-  }, it.q), /*#__PURE__*/React.createElement("div", {
-    className: "who"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "name"
-  }, it.name), /*#__PURE__*/React.createElement("div", {
-    className: "co"
-  }, it.co)))))));
 }
 function FounderCard({
   m
@@ -2720,9 +2783,9 @@ function App() {
       lang: lang
     }), /*#__PURE__*/React.createElement(Showcase, {
       lang: lang
-    }), /*#__PURE__*/React.createElement(Process, {
+    }), /*#__PURE__*/React.createElement(TrustedLogos, {
       lang: lang
-    }), /*#__PURE__*/React.createElement(Testimonials, {
+    }), /*#__PURE__*/React.createElement(Process, {
       lang: lang
     }));
   } else {
