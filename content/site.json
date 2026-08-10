@@ -1062,11 +1062,7 @@
             "#1a1a1a",
             "#f4f4f4"
           ],
-          "images": [
-            "/assets/case-bigmot-1.svg",
-            "/assets/case-bigmot-2.svg",
-            "/assets/case-bigmot-3.svg"
-          ],
+          "images": [],
           "notes": [
             "Komunikacja dla kierowców i warsztatów w jednym ekosystemie",
             "Nacisk na dostępność, doradztwo i katalog produktów",
@@ -1164,11 +1160,7 @@
             "#F4F4F4",
             "#757575"
           ],
-          "images": [
-            "/assets/case-extreme-tyres-1.svg",
-            "/assets/case-extreme-tyres-2.svg",
-            "/assets/case-extreme-tyres-3.svg"
-          ],
+          "images": [],
           "notes": [
             "Komunikacja według zastosowań motorsportowych",
             "Nacisk na produkt, kategorię i intencję zakupu",
@@ -1266,11 +1258,7 @@
             "#1a1a1a",
             "#efe9dc"
           ],
-          "images": [
-            "/assets/case-ddp-supply-1.svg",
-            "/assets/case-ddp-supply-2.svg",
-            "/assets/case-ddp-supply-3.svg"
-          ],
+          "images": [],
           "notes": [
             "Komunikacja LinkedIn dla decydentów B2B w marine",
             "Wsparcie materiałów i narracji pod targi branżowe",
@@ -5819,11 +5807,7 @@
             "#1a1a1a",
             "#f4f4f4"
           ],
-          "images": [
-            "/assets/case-bigmot-1.svg",
-            "/assets/case-bigmot-2.svg",
-            "/assets/case-bigmot-3.svg"
-          ],
+          "images": [],
           "notes": [
             "Communication for drivers and workshops",
             "Focus on availability, advice and catalogue strength",
@@ -5921,11 +5905,7 @@
             "#F4F4F4",
             "#757575"
           ],
-          "images": [
-            "/assets/case-extreme-tyres-1.svg",
-            "/assets/case-extreme-tyres-2.svg",
-            "/assets/case-extreme-tyres-3.svg"
-          ],
+          "images": [],
           "notes": [
             "Communication by motorsport use case",
             "Focus on product, category and buying intent",
@@ -6023,11 +6003,7 @@
             "#1a1a1a",
             "#efe9dc"
           ],
-          "images": [
-            "/assets/case-ddp-supply-1.svg",
-            "/assets/case-ddp-supply-2.svg",
-            "/assets/case-ddp-supply-3.svg"
-          ],
+          "images": [],
           "notes": [
             "LinkedIn communication for marine B2B decision makers",
             "Trade-fair narrative and sales materials",

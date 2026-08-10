@@ -237,6 +237,8 @@ function SmartLink({
   const href = to.startsWith('/') && !to.includes('#') ? prettyPath(to) : to;
   const onClick = e => {
     if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+    const isExternal = /^(?:https?:)?\/\//i.test(to) || /^(?:mailto|tel):/i.test(to);
+    if (isExternal) return;
     if (to.startsWith('/') && !to.startsWith('/#')) {
       e.preventDefault();
       navigate(to);
@@ -294,7 +296,8 @@ const DIGITAL_CASES = [{
   en: { title: 'MojeAkcje.pl', subtitle: 'Portfolio and research in one place.', type: 'Application / Fintech', brief: 'A web application combining portfolios, market data, research and analytics for Polish and US markets.', scope: ['Product design', 'UX/UI', 'Frontend', 'Data integrations', 'Analytics', 'Mobile'], problem: 'Investors had to switch between brokers, spreadsheets and data services to understand their portfolio.', solution: 'We connected accounts, broker imports, portfolio performance, research and screening in one clear product.', features: ['Investor dashboard', 'Multiple portfolios', 'Broker imports', 'Company research', 'Stock screener', 'Mobile views'] }
 }, {
   slug: 'mojteam', group: 'apps', year: '2026',
-  images: ['/assets/digital-mt-pulpit.webp', '/assets/digital-mt-flota.webp', '/assets/digital-mt-urlopy.webp', '/assets/digital-mt-wiedza.webp'],
+  device: 'phone',
+  images: ['/assets/digital-mt-pulpit-v2.png', '/assets/digital-mt-urlopy-v2.png', '/assets/digital-mt-wyzwania-v2.png', '/assets/digital-mt-flota-v2.png'],
   pl: { title: 'MójTeam', subtitle: 'Pracownik ma wszystko pod ręką.', type: 'Aplikacja / HR', brief: 'Pulpit pracownika łączący premie, urlopy, flotę, sprzęt, szkolenia i bazę wiedzy w jednej responsywnej aplikacji.', scope: ['Analiza procesów', 'UX/UI', 'Frontend', 'Backend', 'HR', 'Mobile'], problem: 'Sprawy pracownicze były rozproszone między arkuszami, wiadomościami i papierowymi wnioskami, przez co obsługa prostych spraw zajmowała zbyt dużo czasu.', solution: 'Powstał jeden samoobsługowy pulpit pracownika z jasnym statusem wniosków, premii, sprzętu, floty i obowiązkowych materiałów.', features: ['Pulpit pracownika', 'Premie na żywo', 'Wnioski urlopowe', 'Flota i sprzęt', 'Baza wiedzy', 'Szkolenia i wyzwania'] },
   en: { title: 'MyTeam', subtitle: 'Everything an employee needs.', type: 'Application / HR', brief: 'An employee hub for bonuses, leave, fleet, equipment, training and knowledge.', scope: ['Process analysis', 'UX/UI', 'Frontend', 'Backend', 'HR', 'Mobile'], problem: 'Employee processes were scattered across spreadsheets, messages and paper forms.', solution: 'We created one self-service employee hub with clear status for every request and resource.', features: ['Employee dashboard', 'Live bonuses', 'Leave requests', 'Fleet and equipment', 'Knowledge base', 'Training'] }
 }, {
@@ -309,7 +312,9 @@ const DIGITAL_CASES = [{
   en: { title: 'KTBmatic', subtitle: 'Local marketing without chaos.', type: 'Application / Marketing', brief: 'A proprietary tool for Google listings, customer reviews and local visibility across multiple locations.', scope: ['Product strategy', 'UX/UI', 'Frontend', 'Automation', 'Google Business Profile', 'Reporting'], problem: 'Managing listings, posts, reviews and audits manually did not scale.', solution: 'We built one panel for publishing, reviews, local audits and multi-location reporting.', features: ['Publishing plan', 'Review management', 'Listing audit', 'Visibility reporting', 'Multiple locations', 'Automation'] }
 }, {
   slug: 'grupa-janisz-www', group: 'web', year: '2026',
-  images: ['/assets/digital-janisz-scroll.webp', '/assets/digital-janisz-bosch.webp', '/assets/digital-janisz-dongfeng.webp', '/assets/digital-janisz-cennik.webp'],
+  coverImage: '/assets/digital-janisz-scroll.webp',
+  scrollShowcase: true,
+  images: ['/assets/digital-janisz-home-long.jpg', '/assets/digital-janisz-dongfeng-long.jpg', '/assets/digital-janisz-bosch-long.jpg', '/assets/digital-janisz-contact-long.jpg'],
   pl: { title: 'Grupa Janisz', subtitle: 'Jedna marka. Wiele ścieżek klienta.', type: 'Strona WWW / Automotive', brief: 'Cyfrowa platforma dla grupy serwisowo-sprzedażowej z Trójmiasta: mocna identyfikacja, wygodne konwersje i uporządkowane marki.', scope: ['Strategia treści', 'UX/UI', 'Frontend', 'CMS', 'SEO lokalne', 'Analityka'], problem: 'Wiele usług, lokalizacji i marek utrudniało użytkownikowi wybór właściwego serwisu i kontaktu.', solution: 'Zbudowaliśmy wspólny serwis, który porządkuje ofertę i prowadzi do zapytania, rezerwacji albo właściwej wizytówki Google.', features: ['Architektura wielu marek', 'Dedykowane podstrony usług', 'Cenniki i formularze', 'Widget kontaktowy', 'CMS', 'Mobile first i SEO'] },
   en: { title: 'Grupa Janisz', subtitle: 'One brand. Many customer paths.', type: 'Website / Automotive', brief: 'A digital platform for a Tri-City service and sales group, organising brands and conversion paths.', scope: ['Content strategy', 'UX/UI', 'Frontend', 'CMS', 'Local SEO', 'Analytics'], problem: 'Multiple services, locations and brands made it hard to choose the right path.', solution: 'We built one service that directs users to the right enquiry, booking or Google listing.', features: ['Multi-brand architecture', 'Service pages', 'Pricing and forms', 'Contact widget', 'CMS', 'Mobile-first SEO'] }
 }, {
@@ -1573,7 +1578,7 @@ function PortfolioCatalog({
       ...item,
       href: `/realizacje/digital/${item.slug}`,
       description: item.brief,
-      image: item.images[0],
+      image: item.coverImage || item.images[0],
       index
     }))
   }, {
@@ -1586,7 +1591,7 @@ function PortfolioCatalog({
       href: item.externalUrl || `/realizacje/digital/${item.slug}`,
       external: Boolean(item.externalUrl),
       description: item.brief,
-      image: item.images[0],
+      image: item.coverImage || item.images[0],
       index
     }))
   }];
@@ -2120,6 +2125,30 @@ function CasePage({
     size: 28
   }))));
 }
+function getProjectDevice(item, image) {
+  if (item.device) return item.device;
+  if (/digital-(?:mt-|serwisplus-m2|gt-artykul)/.test(image)) return 'phone';
+  return 'laptop';
+}
+function ProjectScreen({
+  item,
+  image,
+  alt,
+  eager
+}) {
+  const device = getProjectDevice(item, image);
+  const scrolling = Boolean(item.scrollShowcase && device === 'laptop');
+  return /*#__PURE__*/React.createElement("div", {
+    className: `project-device project-device-${device} ${scrolling ? 'is-scrolling' : ''}`
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "project-device-screen"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: image,
+    alt: alt,
+    loading: eager ? "eager" : "lazy",
+    decoding: "async"
+  })));
+}
 function DigitalCasePage({
   lang,
   slug
@@ -2129,8 +2158,10 @@ function DigitalCasePage({
   if (!item) return /*#__PURE__*/React.createElement(NotFoundPage, {
     lang: lang
   });
-  const index = items.findIndex(entry => entry.slug === slug);
-  const next = items[(index + 1) % items.length];
+  const routableItems = items.filter(entry => !entry.externalUrl);
+  const index = routableItems.findIndex(entry => entry.slug === slug);
+  const next = routableItems[(index + 1) % routableItems.length];
+  const heroDevice = getProjectDevice(item, item.images[0]);
   const labels = lang === 'pl' ? {
     back: 'Wszystkie realizacje',
     scope: 'Zakres projektu',
@@ -2170,12 +2201,12 @@ function DigitalCasePage({
   }, item.subtitle), /*#__PURE__*/React.createElement("p", {
     className: "digital-case-intro"
   }, item.brief)), /*#__PURE__*/React.createElement("figure", {
-    className: "digital-case-hero reveal"
-  }, /*#__PURE__*/React.createElement("img", {
-    src: item.images[0],
+    className: `digital-case-hero digital-case-hero-${heroDevice} reveal`
+  }, /*#__PURE__*/React.createElement(ProjectScreen, {
+    item: item,
+    image: item.images[0],
     alt: `${item.title} - główny widok ${item.type}`,
-    loading: "eager",
-    decoding: "async"
+    eager: true
   })), /*#__PURE__*/React.createElement("section", {
     className: "digital-case-scope reveal",
     "aria-label": labels.scope
@@ -2212,18 +2243,20 @@ function DigitalCasePage({
   }, lang === 'pl' ? 'Pełne ekrany, ' : 'Full screens, ', /*#__PURE__*/React.createElement("span", {
     className: "it"
   }, lang === 'pl' ? 'bez przypadkowych wycinków.' : 'without accidental crops.'))), /*#__PURE__*/React.createElement("div", {
-    className: "digital-gallery-grid"
-  }, item.images.slice(1).map((image, imageIndex) => /*#__PURE__*/React.createElement("figure", {
-    className: "reveal",
-    key: image
-  }, /*#__PURE__*/React.createElement("img", {
-    src: image,
-    alt: `${item.title} - widok projektu ${imageIndex + 2}`,
-    loading: "lazy",
-    decoding: "async"
-  }), /*#__PURE__*/React.createElement("figcaption", {
-    className: "mono"
-  }, String(imageIndex + 2).padStart(2, '0'), " / ", String(item.images.length).padStart(2, '0'))))), /*#__PURE__*/React.createElement(SmartLink, {
+    className: `digital-gallery-grid digital-gallery-grid-${heroDevice}`
+  }, item.images.slice(1).map((image, imageIndex) => {
+    const device = getProjectDevice(item, image);
+    return /*#__PURE__*/React.createElement("figure", {
+      className: `project-shot project-shot-${device} reveal`,
+      key: image
+    }, /*#__PURE__*/React.createElement(ProjectScreen, {
+      item: item,
+      image: image,
+      alt: `${item.title} - widok projektu ${imageIndex + 2}`
+    }), /*#__PURE__*/React.createElement("figcaption", {
+      className: "mono"
+    }, String(imageIndex + 2).padStart(2, '0'), " / ", String(item.images.length).padStart(2, '0')));
+  })), /*#__PURE__*/React.createElement(SmartLink, {
     to: `/realizacje/digital/${next.slug}`,
     className: "case-next reveal"
   }, /*#__PURE__*/React.createElement("div", {

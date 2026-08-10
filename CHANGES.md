@@ -23,6 +23,11 @@
 - `/realizacje/` przebudowane na minimalistyczny katalog z trzema zakładkami: „Obsługa marketingowa 360”, „Aplikacje” i „Strony WWW”.
 - Karty realizacji mają mniejsze, niekadrowane podglądy bez agresywnego powiększania.
 - Do zakładki „Strony WWW” dodano: Sergiej Auto, Serwis Dworaczek, Dejcomp, Auto Centrum Łódź i Nagare Studio wraz z lokalnymi screenshotami i linkami do wdrożeń.
+- Zakładki katalogu realizacji mają większą typografię, pola kliknięcia i mocne zaznaczenie aktywnej kategorii.
+- MójTeam prezentuje ostre ekrany mobilne w responsywnych mockupach telefonu, a strony WWW w mockupach laptopa.
+- Grupa Janisz otrzymała animowany pokaz czterech długich widoków strony: home, Dongfeng, Bosch Car Service i kontakt.
+- Naprawione linki zewnętrznych realizacji WWW: nie są już przechwytywane przez routing Reacta.
+- Usunięte robocze plansze SVG z realizacji BIG MOT, Extreme Tyres i DDP Supply; w galerii i metadanych pozostają wyłącznie realne covery.
 - `landing-configs.js` oraz 6 statycznych landing pages SEO:
   - `agencja-marketingowa-gdansk/index.html`
   - `agencja-marketingowa-pruszcz-gdanski/index.html`

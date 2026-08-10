@@ -2693,9 +2693,11 @@ body.menu-open { overflow: hidden; }
 }
 
 .work-tabs {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.45fr .8fr .8fr;
   width: 100%;
   overflow-x: auto;
+  border-top: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
   border-bottom: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
   scrollbar-width: none;
 }
@@ -2708,17 +2710,18 @@ body.menu-open { overflow: hidden; }
   position: relative;
   flex: 0 0 auto;
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
   gap: 9px;
-  min-height: 58px;
-  padding: 0 clamp(16px, 2.3vw, 30px);
-  color: color-mix(in srgb, var(--ink) 46%, transparent);
+  min-height: 82px;
+  justify-content: center;
+  padding: 0 clamp(20px, 2.8vw, 38px);
+  color: color-mix(in srgb, var(--ink) 68%, transparent);
   background: transparent;
   border: 0;
   border-right: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
   font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: .12em;
+  font-size: 14px;
+  letter-spacing: .08em;
   text-transform: uppercase;
   white-space: nowrap;
   cursor: pointer;
@@ -2740,11 +2743,12 @@ body.menu-open { overflow: hidden; }
 
 .work-tab:hover {
   color: var(--ink);
-  background: color-mix(in srgb, var(--ink) 3%, transparent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
 }
 
 .work-tab.is-active {
-  color: var(--ink);
+  color: var(--bg);
+  background: var(--ink);
 }
 
 .work-tab.is-active::after {
@@ -2753,8 +2757,12 @@ body.menu-open { overflow: hidden; }
 
 .work-tab sup {
   color: var(--accent-deep);
-  font-size: 8px;
+  font-size: 11px;
   letter-spacing: 0;
+}
+
+.work-tab.is-active sup {
+  color: var(--accent);
 }
 
 .work-category-head {
@@ -2952,6 +2960,203 @@ body.menu-open { overflow: hidden; }
   }
 }
 
+/* Mockupy urządzeń dla aplikacji i stron WWW. */
+.digital-case-hero {
+  min-height: 0;
+  aspect-ratio: auto;
+  padding: clamp(34px, 6vw, 78px);
+  overflow: visible;
+  background: color-mix(in srgb, var(--ink) 4%, var(--bg));
+}
+
+.digital-case-hero-phone {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+
+.project-device {
+  position: relative;
+  margin: 0 auto;
+}
+
+.project-device-screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+.project-device-screen img,
+.digital-case-hero .project-device-screen img,
+.digital-gallery-grid .project-device-screen img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project-device-phone {
+  width: min(310px, 76vw);
+  aspect-ratio: 9 / 19.5;
+  padding: 9px;
+  background: #161616;
+  border: 1px solid #000;
+  border-radius: 46px;
+  box-shadow: 0 24px 48px color-mix(in srgb, var(--ink) 24%, transparent), inset 0 0 0 2px #3c3c3c;
+}
+
+.project-device-phone::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 17px;
+  left: 50%;
+  width: 84px;
+  height: 22px;
+  border-radius: 999px;
+  background: #080808;
+  transform: translateX(-50%);
+}
+
+.project-device-phone .project-device-screen {
+  border-radius: 37px;
+}
+
+.project-device-phone .project-device-screen img {
+  object-fit: cover;
+}
+
+.project-device-laptop {
+  width: min(100%, 1040px);
+  padding: 22px 22px 24px;
+  background: #1b1b1b;
+  border: 1px solid #050505;
+  border-radius: 18px 18px 7px 7px;
+  box-shadow: 0 28px 56px color-mix(in srgb, var(--ink) 22%, transparent), inset 0 1px 0 #555;
+}
+
+.project-device-laptop::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #676767;
+  transform: translateX(-50%);
+}
+
+.project-device-laptop::after {
+  content: "";
+  position: absolute;
+  right: -5%;
+  bottom: -17px;
+  left: -5%;
+  height: 18px;
+  background: linear-gradient(180deg, #d9d9d7, #8d8d8b);
+  border-radius: 2px 2px 12px 12px;
+  clip-path: polygon(3% 0, 97% 0, 100% 68%, 96% 100%, 4% 100%, 0 68%);
+}
+
+.project-device-laptop .project-device-screen {
+  aspect-ratio: 16 / 10;
+  border-radius: 4px;
+}
+
+.project-device-laptop.is-scrolling .project-device-screen img {
+  object-fit: cover;
+  object-position: center top;
+  animation: projectScreenScroll 18s ease-in-out infinite alternate;
+}
+
+@keyframes projectScreenScroll {
+  0%, 9% { object-position: center top; }
+  91%, 100% { object-position: center bottom; }
+}
+
+.digital-gallery-grid-phone {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.digital-gallery-grid .project-shot {
+  min-height: 0;
+  aspect-ratio: auto;
+  padding: clamp(28px, 4vw, 52px) clamp(18px, 3vw, 38px);
+  overflow: visible;
+}
+
+.digital-gallery-grid .project-shot-phone {
+  min-height: 670px;
+}
+
+.digital-gallery-grid .project-shot-laptop {
+  align-content: center;
+  min-height: 420px;
+}
+
+.digital-gallery-grid .project-shot .project-device-phone {
+  width: min(250px, 100%);
+}
+
+.digital-gallery-grid figcaption {
+  z-index: 4;
+}
+
+@media (max-width: 920px) {
+  .digital-gallery-grid-phone {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .digital-case-hero {
+    padding: 28px 10px 38px;
+  }
+  .project-device-phone {
+    width: min(278px, 82vw);
+    padding: 7px;
+    border-radius: 40px;
+  }
+  .project-device-phone::before {
+    top: 14px;
+    width: 72px;
+    height: 19px;
+  }
+  .project-device-phone .project-device-screen {
+    border-radius: 33px;
+  }
+  .project-device-laptop {
+    padding: 14px 14px 16px;
+    border-radius: 12px 12px 5px 5px;
+  }
+  .project-device-laptop::before {
+    top: 5px;
+  }
+  .project-device-laptop::after {
+    bottom: -11px;
+    height: 12px;
+  }
+  .digital-gallery-grid-phone {
+    grid-template-columns: 1fr;
+  }
+  .digital-gallery-grid .project-shot-phone {
+    min-height: 610px;
+  }
+  .digital-gallery-grid .project-shot-laptop {
+    min-height: 260px;
+    padding: 28px 10px 38px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-device-laptop.is-scrolling .project-device-screen img {
+    animation: none;
+    object-position: center top;
+  }
+}
+
 @media (max-width: 720px) {
   .work-catalog {
     padding-top: 82px;
@@ -2968,13 +3173,14 @@ body.menu-open { overflow: hidden; }
     font-size: 15px;
   }
   .work-tabs {
+    display: flex;
     margin-right: calc(var(--pad) * -1);
     width: calc(100% + var(--pad));
   }
   .work-tab {
-    min-height: 52px;
-    padding: 0 15px;
-    font-size: 9px;
+    min-height: 64px;
+    padding: 0 18px;
+    font-size: 11px;
   }
   .work-category-head {
     grid-template-columns: 1fr;
@@ -3195,6 +3401,7 @@ body.menu-open { overflow: hidden; }
 /* Pełne podstrony produktów i wdrożeń cyfrowych. */
 .digital-case-page {
   padding: 132px 0 90px;
+  overflow-x: clip;
 }
 .digital-case-header {
   max-width: 980px;
