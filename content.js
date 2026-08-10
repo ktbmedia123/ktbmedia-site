@@ -1,4 +1,3 @@
-/* KTB Media — content (bilingual) */
 const COPY = {
   "pl": {
     "nav": [
@@ -17,13 +16,13 @@ const COPY = {
       "about": true,
       "showcase": true,
       "process": true,
-      "testimonials": true,
       "audience": true,
       "portfolio": true,
       "blog": true,
       "contact": true,
       "founders": false,
-      "miniCta": true
+      "miniCta": true,
+      "trusted": true
     },
     "hero": {
       "eyebrow": "Agencja 360 · Gdańsk · Od 2022",
@@ -348,7 +347,7 @@ const COPY = {
             "Wywiad z właścicielem jako flagowe wideo",
             "Działy blacharsko-lakiernicze i mechaniczne w osobnych seriach"
           ],
-          "duration": "6 miesięcy + bieżąca optymalizacja",
+          "duration": "Ciągła współpraca",
           "scope": [
             "Rebrand",
             "Social media",
@@ -356,12 +355,6 @@ const COPY = {
             "Google Business Profile",
             "Produkcja wideo"
           ],
-          "clientQuote": {
-            "text": "Potrzebowaliśmy marketingu, który pokaże skalę serwisu i jakość pracy, a nie tylko wrzuci kilka postów. Po wdrożeniu zaczęliśmy dostawać bardziej konkretne zapytania, a klienci częściej mówili, że widzieli naszą halę i zespół jeszcze przed pierwszym telefonem.",
-            "author": "Piotr Malinowski",
-            "role": "Właściciel",
-            "company": "AutoCentrum Elektronowa 18"
-          },
           "timeline": [
             {
               "phase": "Audyt i pozycjonowanie",
@@ -406,7 +399,13 @@ const COPY = {
               287
             ],
             "unit": "kontaktów/mies"
-          }
+          },
+          "deliverables": [
+            "Facebook i Instagram",
+            "Kreacje Meta Ads",
+            "Sesje foto i wideo",
+            "Materiały do Google Business Profile"
+          ]
         },
         {
           "num": "02",
@@ -453,7 +452,7 @@ const COPY = {
             "Seria \"W głębi projektu\" – behind the scenes",
             "Animowane portfolio jednostek pływających"
           ],
-          "duration": "4 miesiące",
+          "duration": "Ciągła współpraca",
           "scope": [
             "Strategia marki",
             "Strona WWW",
@@ -461,12 +460,6 @@ const COPY = {
             "LinkedIn",
             "Performance"
           ],
-          "clientQuote": {
-            "text": "Największą wartością było uporządkowanie sposobu, w jaki mówimy o trudnych technicznie usługach. Zamiast ogólników dostaliśmy komunikację, którą rozumie klient biznesowy i którą da się wykorzystać w sprzedaży.",
-            "author": "Michał Dąbrowski",
-            "role": "Managing Partner",
-            "company": "RMDC"
-          },
           "timeline": [
             {
               "phase": "Warsztat oferty",
@@ -506,7 +499,13 @@ const COPY = {
               36
             ],
             "unit": "zapytań/mies"
-          }
+          },
+          "deliverables": [
+            "LinkedIn i Facebook",
+            "System identyfikacji wizualnej",
+            "Foto-wideo z targów i eventów",
+            "Employer branding"
+          ]
         },
         {
           "num": "03",
@@ -565,12 +564,6 @@ const COPY = {
             "Content produktowy",
             "Analityka"
           ],
-          "clientQuote": {
-            "text": "W kampaniach olejowych łatwo przepalić budżet na szerokie hasła. KTB pomogło nam rozdzielić sprzedaż, edukację i remarketing, dzięki czemu widzimy nie tylko większy ruch, ale też lepszą jakość koszyków.",
-            "author": "Karol Wiśniewski",
-            "role": "E-commerce Manager",
-            "company": "PMO Lubricants"
-          },
           "timeline": [
             {
               "phase": "Audyt kont reklamowych",
@@ -610,7 +603,13 @@ const COPY = {
               118000
             ],
             "unit": "PLN/mies"
-          }
+          },
+          "deliverables": [
+            "Facebook, Instagram i LinkedIn",
+            "Filmy, zdjęcia i ujęcia z drona",
+            "Materiały dla dystrybutorów",
+            "Merch, katalogi i aktywacje eventowe"
+          ]
         },
         {
           "num": "04",
@@ -665,12 +664,6 @@ const COPY = {
             "Content techniczny",
             "Social media"
           ],
-          "clientQuote": {
-            "text": "Najbardziej doceniam to, że komunikacja nie udaje lifestyle’u. Pokazaliśmy konkretny produkt, zastosowanie i różnicę jakościową, a zapytania zaczęły być bardziej techniczne i lepiej dopasowane.",
-            "author": "Tomasz Nowak",
-            "role": "Właściciel",
-            "company": "Tomex Brakes"
-          },
           "timeline": [
             {
               "phase": "Mapa kategorii",
@@ -710,7 +703,13 @@ const COPY = {
               96
             ],
             "unit": "zapytań/mies"
-          }
+          },
+          "deliverables": [
+            "Key visual i brandbook",
+            "LinkedIn i Facebook",
+            "Katalogi oraz materiały handlowe",
+            "Kreacje kampanijne i produktowe"
+          ]
         },
         {
           "num": "05",
@@ -757,7 +756,7 @@ const COPY = {
             "System benefitów powiązany ze sprzedażą",
             "Motorsport: Drift i 1/4 mili"
           ],
-          "duration": "3 miesiące",
+          "duration": "1 rok",
           "scope": [
             "Launch marki",
             "Landing page",
@@ -765,12 +764,6 @@ const COPY = {
             "Kreacje",
             "Analityka"
           ],
-          "clientQuote": {
-            "text": "Startowaliśmy z nową komunikacją i potrzebowaliśmy szybkiego sprawdzenia, które argumenty działają. Kampanie dały nam dane, ale też jasny kierunek do dalszego rozwoju produktu i strony.",
-            "author": "Adam Zieliński",
-            "role": "Founder",
-            "company": "PulseGT"
-          },
           "timeline": [
             {
               "phase": "Hipotezy sprzedażowe",
@@ -810,29 +803,541 @@ const COPY = {
               61
             ],
             "unit": "leadów/mies"
-          }
-        }
-      ]
-    },
-    "testi": {
-      "label": "# — Mówią o nas",
-      "title1": "Słowo",
-      "titleIt": "klienta.",
-      "items": [
-        {
-          "q": "Kampanie odmieniły sposób, w jaki pozyskujemy leady B2B. Zero bzdur — raporty co tydzień i ludzie, którzy odbierają telefon.",
-          "name": "Marek Kowalski",
-          "co": "TechSolutions · CEO"
+          },
+          "deliverables": [
+            "Social media i influencer marketing",
+            "Produkcja foto-wideo",
+            "Merch oraz materiały promocyjne",
+            "Landing page i kreacje e-commerce"
+          ]
         },
         {
-          "q": "Sklep + social + performance w jednej paczce. W pierwszym kwartale sprzedaż +150%. Zostajemy na dłużej.",
-          "name": "Anna Nowak",
-          "co": "Natural Beauty · Founder"
+          "num": "06",
+          "slug": "grupa-janisz",
+          "title1": "Grupa",
+          "titleIt": "Janisz",
+          "tag": "Automotive · Full service · Local SEO",
+          "year": "2026",
+          "ph": "ph-stripe-3",
+          "brief": "Rodzinna grupa automotive z Pruszcza Gdańskiego działająca od 1993 roku: Bosch Car Service, ASO Volkswagen i Skoda, autoryzowany dealer Dongfeng, blacharnia i lakiernia, SKP, geometria 3D oraz zabezpieczenia Krown.",
+          "challenge": "Grupa Janisz ma bardzo szeroką ofertę i kilka mocnych marek pod jednym adresem. Wyzwanie polegało na tym, żeby nie rozmyć komunikacji: klient szukający mechaniki, blacharza, ASO, kontroli SKP albo zabezpieczenia antykorozyjnego musi od razu rozumieć, gdzie trafił i jaki jest następny krok.",
+          "solution": "Prowadzimy komunikację full service: strategia, lokalne SEO, porządkowanie ścieżek kontaktu, kampanie Meta Ads i Google Ads, social media, treści usługowe, materiały foto-wideo i konsulting. Ułożyliśmy ofertę wokół realnych intencji kierowców z Pruszcza Gdańskiego, Gdańska i okolic, a nie wokół ogólnych haseł o kompleksowości.",
+          "results": [
+            {
+              "k": "Zakres usług",
+              "v": "Full service"
+            },
+            {
+              "k": "Historia marki",
+              "v": "od 1993"
+            },
+            {
+              "k": "Audyt TÜV",
+              "v": "100%"
+            },
+            {
+              "k": "Kanały",
+              "v": "Meta · Google · SEO · Social"
+            }
+          ],
+          "palette": [
+            "#0F5132",
+            "#D6B15E",
+            "#1a1a1a",
+            "#efe9dc"
+          ],
+          "images": [
+            "/assets/digital-janisz-scroll.webp",
+            "/assets/digital-janisz-bosch.webp",
+            "/assets/digital-janisz-dongfeng.webp",
+            "/assets/digital-janisz-cennik.webp"
+          ],
+          "notes": [
+            "Oferta rozpisana według intencji lokalnych kierowców",
+            "Komunikacja dla wielu marek bez utraty czytelności",
+            "Nacisk na zaufanie, standard serwisu i lokalną dostępność"
+          ],
+          "duration": "Ciągła współpraca",
+          "scope": [
+            "Strategia",
+            "Meta Ads",
+            "Google Ads",
+            "SEO lokalne",
+            "Social media",
+            "Foto-wideo",
+            "Consulting"
+          ],
+          "timeline": [
+            {
+              "phase": "Mapa oferty",
+              "duration": "2 tyg.",
+              "description": "Podzieliliśmy komunikację na serwis, ASO, SKP, blacharnię, geometrię, Krown i sprzedaż samochodów, żeby każda usługa miała jasny kontekst."
+            },
+            {
+              "phase": "SEO lokalne i GBP",
+              "duration": "ciągłe",
+              "description": "Porządkujemy treści i widoczność pod zapytania kierowców z Pruszcza Gdańskiego, Gdańska oraz najbliższych miejscowości."
+            },
+            {
+              "phase": "Kampanie reklamowe",
+              "duration": "co miesiąc",
+              "description": "Meta Ads i Google Ads kierują ruch do usług o największym potencjale kontaktu, z oddzielną komunikacją dla różnych intencji."
+            },
+            {
+              "phase": "Content i social media",
+              "duration": "ciągłe",
+              "description": "Pokazujemy zaplecze, zespół, usługi i standard pracy tak, aby klient widział konkret, nie samą grafikę reklamową."
+            },
+            {
+              "phase": "Consulting i raportowanie",
+              "duration": "co miesiąc",
+              "description": "Analizujemy zapytania, telefony, sezonowość i jakość leadów, a następnie korygujemy priorytety komunikacji."
+            }
+          ],
+          "chartData": {
+            "label": "Miesięczne zapytania z kanałów lokalnych",
+            "before": [
+              82,
+              88,
+              91,
+              86
+            ],
+            "after": [
+              118,
+              134,
+              151,
+              169,
+              187,
+              204
+            ],
+            "unit": "zapytań/mies"
+          },
+          "deliverables": [
+            "Facebook i LinkedIn",
+            "Foto-wideo, także z drona",
+            "Kreacje sprzedażowe i wizerunkowe",
+            "Materiały drukowane i POS"
+          ],
+          "coverImage": "/assets/digital-janisz-scroll.webp"
         },
         {
-          "q": "Oszczędność czasu i nieszablonowe podejście — dokładnie to, co obiecywali na pierwszym calu. Polecam zdecydowanie.",
-          "name": "Tomasz Wójcik",
-          "co": "Architekci Wnętrz · Partner"
+          "num": "07",
+          "slug": "gt-serwis-barniewice",
+          "title1": "GT Serwis",
+          "titleIt": "Barniewice",
+          "tag": "Warsztat · Ads · Social",
+          "year": "2026",
+          "ph": "ph-stripe-1",
+          "brief": "Warsztat samochodowy w Barniewicach obsługujący kierowców z Gdańska, Osowej, Oliwy i Trójmiasta. Oferta obejmuje diagnostykę komputerową, hamulce, serwis olejowy, elektromechanikę, klimatyzację i serwis opon.",
+          "challenge": "Lokalny warsztat konkuruje nie tylko ceną, ale też szybkością kontaktu, zaufaniem i widocznością w momencie, gdy kierowca ma konkretny problem. Trzeba było połączyć działania reklamowe z czytelną komunikacją usług i lokalizacją Barniewice/Gdańsk.",
+          "solution": "Pełna współpraca: Meta Ads, Google Ads, prowadzenie social mediów, consulting, SEO lokalne, treści usługowe i analiza zapytań. Kampanie kierujemy pod realne potrzeby: hamulce, klimatyzacja, diagnostyka, serwis olejowy i opony, a nie ogólne hasło „dobry mechanik”.",
+          "results": [
+            {
+              "k": "Zakres",
+              "v": "Pełna współpraca"
+            },
+            {
+              "k": "Kanały reklamowe",
+              "v": "Meta + Google"
+            },
+            {
+              "k": "Usługi promowane",
+              "v": "6+"
+            },
+            {
+              "k": "Obszar",
+              "v": "Barniewice · Gdańsk"
+            }
+          ],
+          "palette": [
+            "#E8A838",
+            "#23395B",
+            "#1a1a1a",
+            "#f4f4f4"
+          ],
+          "images": [
+            "/assets/digital-gt-home.webp",
+            "/assets/digital-gt-galeria.webp",
+            "/assets/digital-gt-cennik.webp",
+            "/assets/digital-gt-artykul.webp"
+          ],
+          "notes": [
+            "Osobna komunikacja dla najważniejszych usług warsztatu",
+            "Reklamy połączone z lokalną intencją wyszukiwania",
+            "Stały consulting zamiast przypadkowego publikowania postów"
+          ],
+          "duration": "Pełna współpraca",
+          "scope": [
+            "Meta Ads",
+            "Google Ads",
+            "Social media",
+            "SEO lokalne",
+            "Consulting",
+            "Content"
+          ],
+          "timeline": [
+            {
+              "phase": "Audyt lokalny",
+              "duration": "1 tydz.",
+              "description": "Sprawdziliśmy frazy, konkurencję, profil usług i punkty kontaktu, które decydują o telefonie do warsztatu."
+            },
+            {
+              "phase": "Priorytety usług",
+              "duration": "1 tydz.",
+              "description": "Ułożyliśmy komunikację wokół diagnostyki, hamulców, klimatyzacji, oleju, elektromechaniki i opon."
+            },
+            {
+              "phase": "Meta Ads i Google Ads",
+              "duration": "ciągłe",
+              "description": "Prowadzimy kampanie pod lokalne zapytania oraz przypominanie o usługach sezonowych."
+            },
+            {
+              "phase": "Social media",
+              "duration": "ciągłe",
+              "description": "Publikacje pokazują konkretne prace, zaplecze i przewagi, które budują zaufanie przed pierwszym telefonem."
+            },
+            {
+              "phase": "Raport i konsulting",
+              "duration": "co miesiąc",
+              "description": "Na bieżąco korygujemy budżet, tematy postów i kierunki kampanii zgodnie z sezonem oraz obłożeniem serwisu."
+            }
+          ],
+          "chartData": {
+            "label": "Kontakty z kampanii lokalnych",
+            "before": [
+              24,
+              27,
+              26,
+              29
+            ],
+            "after": [
+              41,
+              49,
+              58,
+              66,
+              73,
+              81
+            ],
+            "unit": "kontaktów/mies"
+          },
+          "deliverables": [
+            "Facebook i Instagram",
+            "Meta Ads oraz Google Ads",
+            "Zdjęcia i filmy z serwisu",
+            "Kreacje lokalne i materiały sprzedażowe"
+          ],
+          "coverImage": "/assets/digital-gt-home.webp"
+        },
+        {
+          "num": "08",
+          "slug": "bigmot",
+          "title1": "BIG",
+          "titleIt": "MOT",
+          "tag": "Parts · E-commerce · B2B",
+          "year": "2026",
+          "ph": "ph-stripe-2",
+          "brief": "Sklep i hurtownia części samochodowych z Pruszcza Gdańskiego działające od 1990 roku. BIG MOT pracuje w sieci ProfiAuto, obsługuje klientów detalicznych i B2B oraz komunikuje szeroki katalog części, akcesoriów i marek premium.",
+          "challenge": "BIG MOT ma mocne zaplecze: długoletnią historię, duży katalog produktów i specjalistów. W marketingu trzeba było przełożyć tę skalę na prosty przekaz dla kierowcy oraz warsztatu: dostępność, doradztwo, szybkość i wiarygodność.",
+          "solution": "Pełen zakres działań: strategia, social media, kampanie Meta Ads i Google Ads, content produktowy, consulting oraz porządkowanie komunikacji B2B/B2C. Łączymy sprzedaż części z edukacją klienta, promocją marek i lokalnym SEO dla Pruszcza Gdańskiego oraz Gdańska.",
+          "results": [
+            {
+              "k": "Historia firmy",
+              "v": "od 1990"
+            },
+            {
+              "k": "Katalog",
+              "v": "3M+ produktów"
+            },
+            {
+              "k": "Zespół",
+              "v": "26 specjalistów"
+            },
+            {
+              "k": "Model",
+              "v": "B2B + detal"
+            }
+          ],
+          "palette": [
+            "#F0B323",
+            "#0D47A1",
+            "#1a1a1a",
+            "#f4f4f4"
+          ],
+          "images": [
+            "/assets/case-bigmot-1.svg",
+            "/assets/case-bigmot-2.svg",
+            "/assets/case-bigmot-3.svg"
+          ],
+          "notes": [
+            "Komunikacja dla kierowców i warsztatów w jednym ekosystemie",
+            "Nacisk na dostępność, doradztwo i katalog produktów",
+            "Content produktowy zamiast ogólnych grafik promocyjnych"
+          ],
+          "duration": "Pełen zakres",
+          "scope": [
+            "Strategia",
+            "Meta Ads",
+            "Google Ads",
+            "Social media",
+            "Content produktowy",
+            "Consulting"
+          ],
+          "timeline": [
+            {
+              "phase": "Porządkowanie przewag",
+              "duration": "2 tyg.",
+              "description": "Wyciągnęliśmy z oferty najmocniejsze argumenty: doświadczenie, katalog, doradztwo i obsługę warsztatów."
+            },
+            {
+              "phase": "Segmentacja odbiorców",
+              "duration": "2 tyg.",
+              "description": "Oddzieliliśmy komunikaty dla klientów detalicznych, warsztatów, zakupów pilnych i planowanych."
+            },
+            {
+              "phase": "Kampanie i content",
+              "duration": "ciągłe",
+              "description": "Łączymy promocje, marki produktowe, sezonowość i edukację techniczną w kampaniach oraz social mediach."
+            },
+            {
+              "phase": "Optymalizacja",
+              "duration": "co miesiąc",
+              "description": "Sprawdzamy, które kategorie i komunikaty generują najlepsze zapytania oraz ruch o intencji zakupowej."
+            }
+          ],
+          "chartData": {
+            "label": "Zapytania produktowe miesięcznie",
+            "before": [
+              95,
+              101,
+              98,
+              106
+            ],
+            "after": [
+              128,
+              147,
+              163,
+              181,
+              196,
+              214
+            ],
+            "unit": "zapytań/mies"
+          },
+          "deliverables": [
+            "Facebook i content produktowy",
+            "Katalogi, ulotki i POS",
+            "Brandbook oraz materiały firmowe",
+            "Kampanie Meta i Google Ads"
+          ],
+          "coverImage": "/assets/case-bigmot-cover.jpg"
+        },
+        {
+          "num": "09",
+          "slug": "extreme-tyres",
+          "title1": "Extreme",
+          "titleIt": "Tyres",
+          "tag": "Motorsport · E-commerce · Global",
+          "year": "2026",
+          "ph": "ph-stripe-3",
+          "brief": "Marka opon performance dla motorsportu i szybkiej jazdy: drift, rally, rallycross oraz track day. Sprzedaż online, komunikacja produktowa i kontakt z klientami w Polsce oraz za granicą.",
+          "challenge": "Produkty motorsportowe wymagają bardzo konkretnej komunikacji: kierowca chce wiedzieć, do czego nadaje się dana opona, jak zachowa się na torze i dlaczego ma zaufać marce. Ogólna reklama e-commerce nie wystarcza.",
+          "solution": "Przygotowaliśmy pełny zakres działań: strategia, e-commerce, Meta Ads, Google Ads, social media, consulting i content produktowy. Komunikację opieramy na zastosowaniu opon: drift, rally, rallycross i track, a nie na uniwersalnych obietnicach „najlepszej przyczepności”.",
+          "results": [
+            {
+              "k": "Kategorie",
+              "v": "Drift · Rally · Track"
+            },
+            {
+              "k": "Model sprzedaży",
+              "v": "E-commerce"
+            },
+            {
+              "k": "Rynek",
+              "v": "PL + eksport"
+            },
+            {
+              "k": "Zakres",
+              "v": "Pełen zakres"
+            }
+          ],
+          "palette": [
+            "#D71920",
+            "#111111",
+            "#F4F4F4",
+            "#757575"
+          ],
+          "images": [
+            "/assets/case-extreme-tyres-1.svg",
+            "/assets/case-extreme-tyres-2.svg",
+            "/assets/case-extreme-tyres-3.svg"
+          ],
+          "notes": [
+            "Komunikacja według zastosowań motorsportowych",
+            "Nacisk na produkt, kategorię i intencję zakupu",
+            "Połączenie działań e-commerce, reklam i social mediów"
+          ],
+          "duration": "Pełen zakres",
+          "scope": [
+            "Strategia",
+            "E-commerce",
+            "Meta Ads",
+            "Google Ads",
+            "Social media",
+            "Consulting"
+          ],
+          "timeline": [
+            {
+              "phase": "Analiza kategorii",
+              "duration": "1 tydz.",
+              "description": "Rozpisaliśmy komunikację dla driftu, rally, rallycrossu i track dayów, bo każda grupa ma inne kryteria wyboru."
+            },
+            {
+              "phase": "Content produktowy",
+              "duration": "3 tyg.",
+              "description": "Ułożyliśmy język sprzedaży wokół zastosowania, parametrów i scenariuszy jazdy."
+            },
+            {
+              "phase": "Kampanie performance",
+              "duration": "ciągłe",
+              "description": "Meta Ads i Google Ads kierujemy na użytkowników o intencji zakupowej oraz osoby porównujące produkty."
+            },
+            {
+              "phase": "Social i consulting",
+              "duration": "ciągłe",
+              "description": "Budujemy regularną komunikację marki i korygujemy działania na podstawie sezonowości motorsportu."
+            }
+          ],
+          "chartData": {
+            "label": "Sesje produktowe miesięcznie",
+            "before": [
+              620,
+              680,
+              705,
+              660
+            ],
+            "after": [
+              840,
+              980,
+              1120,
+              1280,
+              1420,
+              1580
+            ],
+            "unit": "sesji/mies"
+          },
+          "deliverables": [
+            "Social media i kreacje performance",
+            "Foto-wideo z motorsportu",
+            "Materiały produktowe i e-commerce",
+            "Kampanie Meta oraz Google Ads"
+          ],
+          "coverImage": "/assets/case-extreme-tyres-cover.jpg"
+        },
+        {
+          "num": "10",
+          "slug": "ddp-supply",
+          "title1": "DDP",
+          "titleIt": "Supply",
+          "tag": "Marine · LinkedIn · Targi",
+          "year": "2026",
+          "ph": "ph-stripe-2",
+          "brief": "DDP Supply z Gdyni to turnkey solution provider dla branży yachting i marine. Firma działa w obszarach Service, Agency i Supply: procurement, materiały, wyposażenie, serwis, konsulting łańcucha dostaw i project management dla jednostek pływających.",
+          "challenge": "DDP działa w specjalistycznym segmencie B2B, gdzie decyzje zapadają przez relacje, zaufanie techniczne i obecność w odpowiednich miejscach branżowych. Komunikacja musiała pokazać doświadczenie marine bez upraszczania oferty do ogólnych haseł o dostawach i serwisie.",
+          "solution": "Wspieramy DDP w działaniach targowych, komunikacji LinkedIn, przygotowaniu materiałów sprzedażowych i porządkowaniu narracji B2B. Łączymy język techniczny z biznesowym: procurement 24/7, service, agency, supply, projekty dla jednostek morskich i jachtów oraz gotowość operacyjna zespołu.",
+          "results": [
+            {
+              "k": "Zakres",
+              "v": "LinkedIn + targi"
+            },
+            {
+              "k": "Branża",
+              "v": "Marine B2B"
+            },
+            {
+              "k": "Doświadczenie",
+              "v": "15+ lat"
+            },
+            {
+              "k": "Model pracy",
+              "v": "Service · Agency · Supply"
+            }
+          ],
+          "palette": [
+            "#0B3558",
+            "#4CB3D4",
+            "#1a1a1a",
+            "#efe9dc"
+          ],
+          "images": [
+            "/assets/case-ddp-supply-1.svg",
+            "/assets/case-ddp-supply-2.svg",
+            "/assets/case-ddp-supply-3.svg"
+          ],
+          "notes": [
+            "Komunikacja LinkedIn dla decydentów B2B w marine",
+            "Wsparcie materiałów i narracji pod targi branżowe",
+            "Porządkowanie oferty Service, Agency i Supply w jednym systemie komunikacji"
+          ],
+          "duration": "Ciągła współpraca",
+          "scope": [
+            "LinkedIn",
+            "Organizacja targów",
+            "Materiały B2B",
+            "Strategia komunikacji",
+            "Content ekspercki",
+            "Consulting"
+          ],
+          "timeline": [
+            {
+              "phase": "Audyt komunikacji B2B",
+              "duration": "1 tydz.",
+              "description": "Przełożyliśmy ofertę Service, Agency i Supply na jasne komunikaty dla armatorów, firm marine, partnerów technicznych i decydentów zakupowych."
+            },
+            {
+              "phase": "LinkedIn i content ekspercki",
+              "duration": "ciągłe",
+              "description": "Budujemy regularną komunikację pokazującą doświadczenie, projekty, kompetencje procurement i realną specjalizację zespołu."
+            },
+            {
+              "phase": "Materiały targowe",
+              "duration": "przed wydarzeniami",
+              "description": "Przygotowujemy narrację, key visuale, treści sprzedażowe i punkty rozmów, żeby obecność na targach nie kończyła się na samym stoisku."
+            },
+            {
+              "phase": "Wsparcie organizacyjne targów",
+              "duration": "cyklicznie",
+              "description": "Pomagamy spiąć komunikację przed, w trakcie i po wydarzeniu: zapowiedzi, obecność zespołu, relacje i follow-up do kontaktów."
+            },
+            {
+              "phase": "Consulting i optymalizacja",
+              "duration": "co miesiąc",
+              "description": "Analizujemy reakcje odbiorców, jakość kontaktów i tematy, które najlepiej wzmacniają wiarygodność DDP w branży marine."
+            }
+          ],
+          "chartData": {
+            "label": "Miesięczne interakcje B2B na LinkedIn",
+            "before": [
+              18,
+              21,
+              19,
+              24
+            ],
+            "after": [
+              36,
+              44,
+              52,
+              61,
+              70,
+              82
+            ],
+            "unit": "interakcji/mies"
+          },
+          "deliverables": [
+            "LinkedIn i komunikacja ekspercka",
+            "Organizacja obecności na targach",
+            "Katalogi i materiały B2B",
+            "Księga znaku oraz materiały firmowe"
+          ],
+          "coverImage": "/assets/case-ddp-supply-cover.png"
         }
       ]
     },
@@ -1064,6 +1569,741 @@ const COPY = {
               "p": "Wracasz za tydzień i pracujesz już tylko na tym, co zostało."
             }
           ]
+        },
+        {
+          "slug": "vibe-coding-co-to-jest-i-czy-warto",
+          "cat": "Technologia",
+          "date": "Sie 2026",
+          "isoDate": "2026-08-10",
+          "title1": "Vibe coding:",
+          "titleIt": "co to jest i gdzie kończy się magia.",
+          "image": "/assets/digital-ktbtask-dashboard.webp",
+          "inlineImage": "/assets/digital-ktbtask-tabela.webp",
+          "inlineImageAlt": "Gotowy interfejs aplikacji KTBtask zbudowanej wokół procesu zespołu",
+          "description": "Vibe coding bez marketingowej mgły: czym jest, kiedy przyspiesza tworzenie aplikacji i dlaczego produkcyjny system nadal wymaga architektury, testów i odpowiedzialności.",
+          "keywords": [
+            "vibe coding",
+            "co to jest vibe coding",
+            "tworzenie aplikacji AI",
+            "programowanie z AI",
+            "aplikacja dla firmy",
+            "AI w programowaniu"
+          ],
+          "lede": "Możesz opisać aplikację zwykłym językiem i po godzinie zobaczyć działający ekran. To rewolucja. Problem zaczyna się wtedy, gdy prototyp zostaje pomylony z gotowym produktem.",
+          "body": [
+            {
+              "h": "Vibe coding w jednym zdaniu"
+            },
+            {
+              "p": "Vibe coding to sposób budowania oprogramowania, w którym człowiek opisuje intencję, a model AI generuje lub modyfikuje kod. Zamiast ręcznie pisać każdy komponent, prosisz: „dodaj filtrowanie klientów, zapisuj widok i pokaż błąd, gdy API nie odpowiada”. Po chwili masz pierwszą wersję. Największą zmianą nie jest sam kod. Jest nią skrócenie drogi od pomysłu do czegoś, co można kliknąć."
+            },
+            {
+              "p": "To świetnie działa na początku projektu. Właściciel firmy może zobaczyć proces, zanim wyda duży budżet. Zespół może sprawdzić, czy dashboard faktycznie pomaga. Projektant może porównać dwa warianty bez tygodnia produkcji. AI obniża koszt pierwszego eksperymentu, ale nie usuwa kosztu odpowiedzialności za produkt."
+            },
+            {
+              "h": "Co AI robi dobrze"
+            },
+            {
+              "list": [
+                "Buduje powtarzalne widoki, formularze, tabele i proste panele.",
+                "Przyspiesza integrację dobrze opisanych API i tworzenie wariantów interfejsu.",
+                "Pomaga porządkować stary kod, pisać testy i dokumentować decyzje.",
+                "Pozwala szybko zbudować prototyp do rozmowy z użytkownikiem.",
+                "Daje małemu zespołowi tempo, które niedawno wymagało kilku specjalistów."
+              ]
+            },
+            {
+              "h": "Gdzie kończy się magia"
+            },
+            {
+              "p": "Model nie zna Twojej firmy, jeśli mu jej nie opiszesz. Nie wie, że handlowiec może edytować rabat, ale nie marżę. Nie rozumie, że dwa rekordy klienta to problem księgowy, a nie kosmetyczny. Potrafi wygenerować ekran logowania, ale nie ponosi odpowiedzialności za wyciek danych, błędne uprawnienia ani kopię zapasową."
+            },
+            {
+              "p": "Im bardziej aplikacja dotyka pieniędzy, danych klientów, harmonogramu pracy lub automatycznych decyzji, tym ważniejsze stają się architektura, testy, monitoring i kontrola dostępu. Kod może wyglądać przekonująco i nadal zawierać błąd widoczny dopiero przy setnym użytkowniku."
+            },
+            {
+              "h": "Prototyp, MVP i produkt to trzy różne rzeczy"
+            },
+            {
+              "p": "**Prototyp** odpowiada na pytanie „czy pomysł ma sens?”. **MVP** ma już realizować jeden proces od początku do końca. **Produkt produkcyjny** musi działać także wtedy, gdy ktoś wpisze złą wartość, zerwie połączenie, wróci po miesiącu albo ma inne uprawnienia niż autor projektu. Vibe coding może przyspieszyć każdy etap, ale nie zwalnia z rozróżniania tych poziomów."
+            },
+            {
+              "h": "Jak podchodzimy do tego w KTB Media"
+            },
+            {
+              "p": "Najpierw rozpisujemy proces i ryzyko. Potem budujemy mały pionowy fragment: jeden realny scenariusz od danych wejściowych do wyniku. Dopiero gdy użytkownik potwierdzi, że to oszczędza czas, dokładamy kolejne moduły. AI pracuje przy kodzie, analizie i testach, ale decyzje o strukturze, bezpieczeństwie i doświadczeniu użytkownika pozostają po naszej stronie."
+            },
+            {
+              "h": "Najczęstszy błąd: poprawianie promptu zamiast projektu"
+            },
+            {
+              "p": "Gdy aplikacja zaczyna się rozjeżdżać, łatwo dopisywać kolejne polecenia: „napraw”, „zrób responsywnie”, „nie zmieniaj reszty”. Po kilkunastu takich rundach model łata objawy, a kod traci wspólną logikę. Ten sam status ma trzy nazwy, dwa formularze walidują dane inaczej, a zmiana koloru psuje widok, którego nikt nie pamiętał. To nie jest wina promptu. Brakuje modelu danych, komponentów i reguł produktu."
+            },
+            {
+              "p": "Dlatego po szybkim prototypie potrzebny jest moment porządkowania. Ustalamy nazwy obiektów, role użytkowników, źródło prawdy dla danych i granice modułów. Dopiero później dokładamy tempo. Kilka godzin architektury może oszczędzić tygodnie walki z systemem, który działa tylko na ścieżce pokazanej w demo."
+            },
+            {
+              "h": "Co powinno znaleźć się w dobrym briefie do aplikacji"
+            },
+            {
+              "list": [
+                "Jedno zdanie opisujące problem, nie listę ekranów.",
+                "Role użytkowników i decyzje, które każda z nich może podejmować.",
+                "Jeden najważniejszy proces opisany od początku do końca.",
+                "Dane wejściowe, oczekiwany wynik i sytuacje wyjątkowe.",
+                "Systemy, z którymi rozwiązanie ma wymieniać dane.",
+                "Kryterium sukcesu po 30 i 90 dniach używania."
+              ]
+            },
+            {
+              "p": "Tak przygotowany brief pomaga zarówno zespołowi, jak i AI. Model dostaje mniej sprzecznych poleceń, projektant widzi hierarchię, a osoba odpowiedzialna za biznes może wcześniej zauważyć brakujący krok. Vibe coding działa najlepiej wtedy, gdy „vibe” dotyczy tempa eksperymentu, a nie braku decyzji."
+            },
+            {
+              "h": "Bezpieczeństwo i utrzymanie nie są dodatkiem premium"
+            },
+            {
+              "p": "Produkcja zaczyna się po publikacji. Trzeba wiedzieć, gdzie są logi, kto dostaje alert, jak odtworzyć dane, jak wycofać wadliwą wersję i co stanie się po zmianie zewnętrznego API. Nawet mała aplikacja potrzebuje kopii zapasowej, kontroli uprawnień i sposobu aktualizacji zależności. AI może przygotować te elementy, ale ktoś musi sprawdzić, czy odpowiadają realnemu ryzyku firmy."
+            },
+            {
+              "p": "Wniosek jest prosty: dzięki AI można dziś zbudować więcej za ten sam budżet. Nie oznacza to, że warto budować wszystko. Największą przewagą pozostaje umiejętność wyboru problemu, który naprawdę zasługuje na oprogramowanie."
+            },
+            {
+              "p": "Vibe coding nie jest ani zabawką, ani automatem do budowania firm. To bardzo mocna dźwignia. W dobrych rękach skraca miesiące do tygodni. Bez procesu potrafi jedynie szybciej wyprodukować chaos."
+            }
+          ],
+          "relatedCase": {
+            "href": "/realizacje/digital/ktbtask",
+            "label": "Zobacz KTBtask",
+            "description": "Pełny case aplikacji SaaS do zarządzania pracą agencji."
+          },
+          "seoTitle": "Vibe coding: co to jest i czy warto?"
+        },
+        {
+          "slug": "aplikacja-dla-firmy-ktorej-nie-wiedziales-ze-potrzebujesz",
+          "cat": "Aplikacje",
+          "date": "Sie 2026",
+          "isoDate": "2026-08-08",
+          "title1": "Aplikacja dla firmy,",
+          "titleIt": "której nie wiedziałeś, że potrzebujesz.",
+          "image": "/assets/digital-serwisplus-panel.webp",
+          "inlineImage": "/assets/digital-serwisplus-wycena.webp",
+          "inlineImageAlt": "Cyfrowa wycena i akceptacja naprawy w aplikacji Serwis+",
+          "description": "Kiedy własna aplikacja dla firmy ma sens? Sygnały, przykłady procesów, koszt błędów oraz sposób przejścia od arkusza i wiadomości do prostego systemu.",
+          "keywords": [
+            "aplikacja dla firmy",
+            "dedykowana aplikacja webowa",
+            "automatyzacja procesów w firmie",
+            "system dla firmy",
+            "oprogramowanie na zamówienie",
+            "aplikacja SaaS"
+          ],
+          "lede": "Najlepszy pomysł na aplikację rzadko zaczyna się od słów „zbudujmy aplikację”. Zwykle zaczyna się od zdania: „znowu muszę przepisać to z maila do arkusza”.",
+          "body": [
+            {
+              "h": "Aplikacja zaczyna się od tarcia"
+            },
+            {
+              "p": "Firmy przyzwyczajają się do obejść. Formularz przychodzi mailem, ktoś przepisuje dane do Excela, druga osoba wysyła status na komunikatorze, a na koniec właściciel pyta, ile spraw naprawdę zostało zamkniętych. Każdy pojedynczy krok trwa kilka minut. W skali miesiąca znika na tym kilka dni pracy i powstają błędy, których nikt nie przypisuje do procesu."
+            },
+            {
+              "p": "Własna aplikacja ma sens nie wtedy, gdy brzmi nowocześnie, lecz gdy spina powtarzalny proces, którego nie potrafi obsłużyć gotowe narzędzie. Nie musi być ogromna. Czasem największą wartość daje jeden panel: przyjmuje dane, pilnuje statusu, przypomina o decyzji i pokazuje wynik."
+            },
+            {
+              "h": "Siedem sygnałów, że warto policzyć taki projekt"
+            },
+            {
+              "list": [
+                "Te same dane są przepisywane między co najmniej dwoma narzędziami.",
+                "Klient regularnie dzwoni tylko po to, żeby zapytać o status.",
+                "Ważna wiedza siedzi w głowie jednej osoby.",
+                "Raport miesięczny powstaje ręcznie dłużej niż godzinę.",
+                "Zespół używa arkusza jak bazy danych, CRM i kalendarza jednocześnie.",
+                "Błędy wynikają z pominięcia kroku, a nie z braku kompetencji.",
+                "Gotowe oprogramowanie wymusza proces, który nie pasuje do firmy."
+              ]
+            },
+            {
+              "h": "Nie automatyzuj bałaganu"
+            },
+            {
+              "p": "Przed kodowaniem trzeba ustalić, co naprawdę ma się wydarzyć. Jeśli każda osoba inaczej definiuje „gotowe”, aplikacja tylko utrwali konflikt. Dlatego zaczynamy od mapy procesu: kto inicjuje sprawę, jakie dane są obowiązkowe, kto podejmuje decyzję, co blokuje przejście dalej i jaki jest koniec."
+            },
+            {
+              "p": "Dopiero potem wybieramy technologię. Czasem wystarcza automatyzacja istniejących narzędzi. Czasem warto zbudować lekki panel. Pełna aplikacja jest uzasadniona, gdy proces jest charakterystyczny, daje przewagę albo łączy wiele ról: klienta, pracownika, managera i administratora."
+            },
+            {
+              "h": "Przykład: warsztat samochodowy"
+            },
+            {
+              "p": "Klient zostawia samochód i czeka na telefon. Mechanik robi diagnozę, doradca tworzy wycenę, klient akceptuje część prac, a magazyn sprawdza części. Jeżeli każdy etap jest osobną rozmową, rośnie czas obsługi. W Serwis+ połączyliśmy zlecenie, wycenę, akceptację i status. Aplikacja nie naprawia auta. Usuwa przestoje między ludźmi."
+            },
+            {
+              "h": "Od czego zacząć bez wielkiego ryzyka"
+            },
+            {
+              "list": [
+                "Wybierz jeden proces, który powtarza się co najmniej kilkadziesiąt razy w miesiącu.",
+                "Policz czas ludzi, koszt błędów i utraconych kontaktów.",
+                "Zbuduj prototyp jednego scenariusza, nie listę trzydziestu modułów.",
+                "Przetestuj go z osobą, która naprawdę wykonuje tę pracę.",
+                "Ustal miernik: mniej czasu, mniej telefonów, szybsza decyzja lub mniej błędów."
+              ]
+            },
+            {
+              "h": "Gotowe narzędzie czy własny system"
+            },
+            {
+              "p": "Najpierw warto sprawdzić rynek. Jeżeli 80 procent procesu obsługuje popularny CRM, system rezerwacji lub narzędzie no-code, budowanie od zera może być niepotrzebne. Własne rozwiązanie wygrywa wtedy, gdy pozostałe 20 procent tworzy przewagę, generuje większość błędów albo wymaga ręcznego łączenia kilku systemów."
+            },
+            {
+              "p": "Często najlepszym wariantem jest hybryda. Dane klientów zostają w sprawdzonym CRM, płatności obsługuje certyfikowany operator, a dedykowany panel prowadzi unikalny proces firmy. Dzięki temu nie płacisz za odtwarzanie standardowych funkcji, ale nie musisz też dopasowywać operacji do ograniczeń jednego abonamentu."
+            },
+            {
+              "h": "Jak policzyć, czy projekt się zwróci"
+            },
+            {
+              "p": "Zacznij od czterech liczb: ile razy proces występuje w miesiącu, ile minut zajmuje, ile kosztuje godzina pracy osób zaangażowanych oraz ile błędów lub utraconych spraw powstaje po drodze. Do tego dodaj wartość szybszej decyzji klienta. Jeśli system skraca 600 operacji o pięć minut, odzyskuje 50 godzin miesięcznie. To już punkt odniesienia do rozmowy o budżecie."
+            },
+            {
+              "list": [
+                "Czas oszczędzony przez pracowników.",
+                "Mniej błędów i poprawek.",
+                "Krótszy czas odpowiedzi klientowi.",
+                "Więcej spraw obsłużonych bez zwiększania zespołu.",
+                "Lepsza jakość danych do decyzji.",
+                "Mniejsze ryzyko utraty wiedzy po odejściu pracownika."
+              ]
+            },
+            {
+              "h": "Zakres pierwszej wersji"
+            },
+            {
+              "p": "Pierwsza wersja nie powinna odtwarzać całej firmy. Wybieramy moment o największym tarciu i budujemy zamkniętą ścieżkę. Dla warsztatu może to być akceptacja wyceny. Dla handlowca: wygenerowanie oferty z aktualnego cennika. Dla managera: raport, który dziś powstaje z pięciu arkuszy. Po wdrożeniu mierzymy efekt i dopiero wtedy decydujemy o kolejnym module."
+            },
+            {
+              "h": "O czym firmy zapominają przed startem"
+            },
+            {
+              "p": "Aplikacja potrzebuje właściciela po stronie biznesu. Ktoś musi podejmować decyzje, zebrać użytkowników do testów i pilnować jakości danych. Bez tej osoby nawet dobry wykonawca będzie zgadywał. Trzeba też zaplanować import danych, szkolenie, uprawnienia, kopie zapasowe i okres przejściowy, w którym stary oraz nowy proces działają równolegle."
+            },
+            {
+              "p": "Najlepsze wdrożenie nie kończy się fanfarami. Po prostu pewnego dnia zespół zauważa, że nie musi już pytać, gdzie jest plik, kto odpisał klientowi i która wersja jest aktualna. To mniej widowiskowe niż premiera aplikacji, ale właśnie za ten spokój firma płaci."
+            },
+            {
+              "p": "Dobra aplikacja nie dodaje firmie kolejnego miejsca do klikania. Powinna sprawić, że trzy stare miejsca przestają być potrzebne. To właśnie jest moment, w którym technologia zaczyna zarabiać na siebie."
+            }
+          ],
+          "relatedCase": {
+            "href": "/realizacje/digital/serwisplus",
+            "label": "Zobacz Serwis+",
+            "description": "System łączący proces warsztatu z aplikacją klienta."
+          },
+          "seoTitle": "Aplikacja dla firmy, której potrzebujesz"
+        },
+        {
+          "slug": "czy-ai-nas-zastapi-w-marketingu-i-pracy",
+          "cat": "AI",
+          "date": "Sie 2026",
+          "isoDate": "2026-08-06",
+          "title1": "Czy AI nas zastąpi?",
+          "titleIt": "Nie. Ale zmieni, za co płaci klient.",
+          "image": "/assets/showcase-1.jpg",
+          "inlineImage": "/assets/digital-ktbmatic-audyt.webp",
+          "inlineImageAlt": "Audyt lokalnej widoczności wspierany automatyzacją w KTBmatic",
+          "description": "Czy AI zastąpi marketerów, projektantów i programistów? Konkretna analiza zadań, które automatyzuje, oraz kompetencji, których wartość rośnie.",
+          "keywords": [
+            "czy AI nas zastąpi",
+            "AI w marketingu",
+            "AI a praca",
+            "sztuczna inteligencja marketing",
+            "przyszłość pracy AI",
+            "automatyzacja marketingu"
+          ],
+          "lede": "AI nie musi zabrać całego zawodu, żeby zmienić rynek. Wystarczy, że obniży wartość części zadań i podniesie oczekiwania wobec reszty.",
+          "body": [
+            {
+              "h": "Zawód to nie jedno zadanie"
+            },
+            {
+              "p": "Pytanie „czy AI zastąpi marketera?” jest zbyt szerokie. Marketer analizuje, rozmawia z klientem, planuje budżet, pisze, poprawia stronę, przygotowuje kampanię i tłumaczy wynik. AI może bardzo dobrze wykonać część tych czynności. Nie przejmuje jednak automatycznie odpowiedzialności za całość."
+            },
+            {
+              "p": "Najpierw tanieją zadania łatwe do opisania i sprawdzenia: warianty tekstu, podsumowania, transkrypcje, proste grafiki, szkielety prezentacji, komponenty interfejsu. To nie znaczy, że stają się darmowe. Oznacza, że klient przestaje płacić za samo wykonanie i zaczyna płacić za trafność wyboru."
+            },
+            {
+              "h": "Co AI przejmie szybciej"
+            },
+            {
+              "list": [
+                "Pierwszy szkic treści i wiele wariantów nagłówka.",
+                "Porządkowanie danych, notatek i researchu.",
+                "Powtarzalną produkcję formatów na podstawie ustalonego systemu.",
+                "Prototypowanie prostych aplikacji i landing page’y.",
+                "Wstępną analizę kampanii oraz wykrywanie anomalii."
+              ]
+            },
+            {
+              "h": "Za co nadal odpowiada człowiek"
+            },
+            {
+              "p": "Ktoś musi zdecydować, czy oferta ma sens, czy liczba w raporcie jest sukcesem i czy materiał pasuje do marki. Ktoś musi zauważyć, że kampania daje tanie leady, ale handlowcy nie chcą z nimi rozmawiać. Ktoś musi powiedzieć klientowi, że problem nie leży w reklamie, tylko w odbieraniu telefonu."
+            },
+            {
+              "p": "Rosną więc kompetencje związane z kontekstem: diagnoza problemu, priorytety, rozmowa, odpowiedzialność, smak, znajomość branży i łączenie danych z operacjami. AI może zaproponować dziesięć dróg. Wartość ma osoba, która wybierze jedną i potrafi wyjaśnić koszt rezygnacji z pozostałych."
+            },
+            {
+              "h": "Najbardziej zagrożony jest środek"
+            },
+            {
+              "p": "Na rynku zostaną mocni specjaliści, którzy wykorzystują AI jako dźwignię, oraz tanie automatyczne usługi do prostych zadań. Najtrudniej będzie utrzymać ofertę „robimy trochę wszystkiego ręcznie” bez wiedzy branżowej, procesu i mierzalnego wyniku. Szybkość przestanie być przewagą sama w sobie, bo wszyscy dostaną podobne narzędzia."
+            },
+            {
+              "h": "Jak przygotować firmę"
+            },
+            {
+              "list": [
+                "Spisz zadania, które są powtarzalne, i oddziel je od decyzji wymagających kontekstu.",
+                "Ucz zespół weryfikacji odpowiedzi AI, nie tylko pisania promptów.",
+                "Buduj własne dane, case studies, język marki i procedury.",
+                "Mierz czas odzyskany dzięki automatyzacji i przeznacz go na jakość.",
+                "Nie publikuj szybciej tylko dlatego, że możesz. Publikuj lepiej."
+              ]
+            },
+            {
+              "h": "AI zmienia jednostkę rozliczenia pracy"
+            },
+            {
+              "p": "Gdy przygotowanie dziesięciu wariantów tekstu trwa kilka minut, liczba wariantów przestaje świadczyć o wartości. Podobnie z liczbą slajdów, grafik czy linii kodu. Klient coraz częściej będzie oczekiwał wyniku: lepszej decyzji, krótszego procesu, działającej kampanii, spójnego systemu. To dobra zmiana dla firm, które potrafią połączyć wykonanie z odpowiedzialnością."
+            },
+            {
+              "p": "Dla specjalisty oznacza to konieczność wejścia poziom wyżej. Copywriter powinien rozumieć ofertę i dane sprzedażowe. Projektant powinien znać zachowanie użytkownika i ograniczenia wdrożenia. Programista powinien rozumieć proces oraz ryzyko produktu. Narzędzie przyspiesza produkcję, więc różnica coraz częściej powstaje przed produkcją i po niej."
+            },
+            {
+              "h": "Przykład z marketingu lokalnego"
+            },
+            {
+              "p": "AI może napisać serię wpisów do wizytówki Google, przygotować odpowiedzi na opinie i zaproponować tematy artykułów. Nie wie jednak, że dana usługa ma niską marżę, że warsztat nie przyjmuje już aut określonej marki albo że zespół nie ma wolnych terminów. Bez tych informacji automatyzacja może działać sprawnie i jednocześnie promować coś, czego firma nie chce sprzedawać."
+            },
+            {
+              "h": "Nowe kompetencje, które warto rozwijać"
+            },
+            {
+              "list": [
+                "Formułowanie problemów i kryteriów dobrej odpowiedzi.",
+                "Weryfikacja danych, źródeł i logicznych błędów.",
+                "Projektowanie procesu, w którym człowiek zatwierdza decyzje wysokiego ryzyka.",
+                "Budowanie własnych bibliotek wiedzy, przykładów i standardów marki.",
+                "Łączenie technologii z ekonomią konkretnej firmy.",
+                "Rozmowa z klientem oraz nazywanie niewygodnych ograniczeń."
+              ]
+            },
+            {
+              "h": "Jak wdrażać AI bez chaosu"
+            },
+            {
+              "p": "Nie zaczynaj od kupowania narzędzi dla całej firmy. Wybierz jedno powtarzalne zadanie, ustal jakość wersji bazowej i sprawdź, czy AI rzeczywiście oszczędza czas bez zwiększania liczby poprawek. Zapisz prompt, źródła, zasady kontroli i osobę odpowiedzialną. Dopiero po kilku tygodniach rozszerzaj zastosowanie."
+            },
+            {
+              "p": "Warto też rozdzielić dane publiczne od poufnych. Nie każdy dokument powinien trafić do dowolnego modelu. Firma potrzebuje prostych zasad dotyczących danych klientów, umów, informacji finansowych i praw autorskich. Szybkość nie jest usprawiedliwieniem dla ryzyka, którego nikt świadomie nie zaakceptował."
+            },
+            {
+              "h": "Najlepszy scenariusz nie polega na redukcji ludzi"
+            },
+            {
+              "p": "Najciekawsze zastosowania pojawiają się wtedy, gdy odzyskany czas wraca do klienta i produktu: więcej rozmów, lepszy research, dokładniejsze testy, szybsza obsługa. Firma, która użyje AI tylko do zwiększenia liczby przeciętnych materiałów, prawdopodobnie nie zbuduje trwałej przewagi. Firma, która dzięki AI podejmuje lepsze decyzje, już tak."
+            },
+            {
+              "p": "AI nie zastąpi wszystkich ludzi. Ludzie i firmy używające AI rozsądnie zastąpią część tych, którzy sprzedają wyłącznie czas wykonania. To mniej efektowne zdanie niż wizja końca pracy, ale znacznie bardziej użyteczne przy planowaniu kolejnego roku."
+            }
+          ],
+          "relatedCase": {
+            "href": "/realizacje/digital/ktbmatic",
+            "label": "Zobacz KTBmatic",
+            "description": "Przykład automatyzacji lokalnego marketingu z kontrolą człowieka."
+          },
+          "seoTitle": "Czy AI nas zastąpi? AI w marketingu i pracy"
+        },
+        {
+          "slug": "ai-slop-co-to-jest-i-jak-go-unikac",
+          "cat": "AI",
+          "date": "Sie 2026",
+          "isoDate": "2026-08-04",
+          "title1": "AI slop:",
+          "titleIt": "dużo treści, prawie zero wartości.",
+          "image": "/assets/showcase-2.jpg",
+          "inlineImage": "/assets/blog-marketing.jpg",
+          "inlineImageAlt": "Selekcja i redakcja materiałów marketingowych zamiast masowej produkcji treści",
+          "description": "Co to jest AI slop, jak rozpoznać masowo generowane treści i dlaczego ich publikowanie szkodzi marce, SEO oraz zaufaniu klientów.",
+          "keywords": [
+            "AI slop co to jest",
+            "treści generowane przez AI",
+            "AI content SEO",
+            "spam AI",
+            "jakość treści",
+            "marketing z AI"
+          ],
+          "lede": "AI slop nie oznacza każdej treści stworzonej z pomocą AI. Oznacza treść, której nikt nie potrzebował, nikt porządnie nie sprawdził i którą opublikowano tylko dlatego, że było łatwo.",
+          "body": [
+            {
+              "h": "Co właściwie znaczy AI slop"
+            },
+            {
+              "p": "To masowo produkowane teksty, obrazy i filmy, które wyglądają poprawnie przez pierwsze trzy sekundy, ale nie dają odbiorcy nowej wiedzy, emocji ani decyzji. Mają gładkie zdania, znajomą strukturę i wszystkie modne słowa. Brakuje im doświadczenia, konkretu i powodu istnienia."
+            },
+            {
+              "p": "Problemem nie jest narzędzie. Dobry artykuł może powstać z pomocą AI, tak jak z pomocą edytora tekstu. Problem zaczyna się, gdy automatyzacja zastępuje research, opinię, weryfikację i redakcję. Wtedy firma publikuje więcej, ale jej komunikacja staje się mniej rozpoznawalna."
+            },
+            {
+              "h": "Sygnały ostrzegawcze"
+            },
+            {
+              "list": [
+                "Tekst mówi dużo, ale nie podaje ani jednego własnego przykładu.",
+                "Każdy akapit kończy się ogólnym wnioskiem, z którym nie da się nie zgodzić.",
+                "Grafika ma przypadkowe detale, błędy w napisach lub nie pasuje do produktu.",
+                "Ten sam materiał mógłby opublikować dowolny konkurent po zmianie logo.",
+                "Firma nie potrafi wskazać autora, źródeł ani procesu weryfikacji.",
+                "Treści powstają pod liczbę publikacji, nie pod pytania klientów."
+              ]
+            },
+            {
+              "h": "Co na to Google"
+            },
+            {
+              "p": "Google nie zakazuje treści tylko dlatego, że przy ich tworzeniu użyto AI. W aktualnych wytycznych nacisk kładzie na dokładność, jakość, oryginalność i wartość dla odbiorcy. Jednocześnie masowe generowanie stron bez wartości może zostać uznane za nadużycie skalowanej treści. Źródło: <a href=\"https://developers.google.com/search/docs/fundamentals/using-gen-ai-content\" target=\"_blank\" rel=\"noopener noreferrer\">Google Search Central</a>."
+            },
+            {
+              "p": "To ważne rozróżnienie. SEO nie polega na wyprodukowaniu stu wariantów tej samej odpowiedzi. Dobra strona pokazuje doświadczenie: własne zdjęcia, konkretny proces, liczby, ograniczenia, przykłady i uczciwe odpowiedzi na pytania, których konkurencja unika."
+            },
+            {
+              "h": "Jak używać AI bez produkowania slopu"
+            },
+            {
+              "list": [
+                "Zacznij od prawdziwego problemu klienta, nie od listy słów kluczowych.",
+                "Dodaj własne dane, przypadki, zdjęcia i decyzje z projektu.",
+                "Sprawdź każde twierdzenie, szczególnie liczbę, prawo, zdrowie i finanse.",
+                "Usuń akapity, które brzmią poprawnie, ale niczego nie zmieniają.",
+                "Daj materiał do przeczytania osobie, która zna temat i potrafi się nie zgodzić.",
+                "Publikuj rzadziej, jeśli nie masz nic nowego do powiedzenia."
+              ]
+            },
+            {
+              "h": "Test przed publikacją"
+            },
+            {
+              "p": "Zadaj trzy pytania. Czy odbiorca po tym materiale wie coś, czego nie wiedział? Czy widzi, że stoi za nim konkretna firma i doświadczenie? Czy potrafi wykonać następny krok? Jeśli trzy odpowiedzi brzmią „nie”, większa liczba słów i ładniejsza miniatura nie rozwiążą problemu."
+            },
+            {
+              "h": "Dlaczego marki wpadają w tę pułapkę"
+            },
+            {
+              "p": "Dashboard pokazuje liczbę publikacji, więc łatwo nią zarządzać. Trudniej zmierzyć oryginalność, zaufanie czy jakość argumentu. Kiedy AI usuwa koszt produkcji, organizacja naturalnie produkuje więcej. Bez redaktora i priorytetów ilość szybko wypełnia każdy kanał, a odbiorca uczy się przewijać materiały marki bez czytania."
+            },
+            {
+              "p": "AI slop często nie wygląda źle. Właśnie dlatego jest groźny. Jest wystarczająco poprawny, aby przejść wewnętrzną akceptację, ale zbyt ogólny, aby ktoś go zapamiętał. W kwartalnym raporcie wszystko się zgadza: posty są, blog rośnie, grafiki mają format. Nie rośnie jedynie powód, dla którego klient miałby wybrać tę firmę."
+            },
+            {
+              "h": "Proces redakcyjny odporny na slop"
+            },
+            {
+              "list": [
+                "Zbieraj pytania z rozmów sprzedażowych i obsługi klienta.",
+                "Do każdego tematu przypisz własny przykład, liczbę albo opinię eksperta.",
+                "Użyj AI do researchu i struktury, ale zaznacz twierdzenia wymagające weryfikacji.",
+                "Pierwszą wersję skracaj, zamiast automatycznie ją rozwijać.",
+                "Sprawdź ton marki i usuń zdania, których firma nigdy nie powiedziałaby na głos.",
+                "Po publikacji aktualizuj materiał na podstawie nowych pytań i wyników."
+              ]
+            },
+            {
+              "h": "Obrazy także potrzebują kontroli"
+            },
+            {
+              "p": "Wygenerowana ilustracja może być atrakcyjna, ale w portfolio, e-commerce i branży technicznej odbiorca często potrzebuje zobaczyć prawdziwy produkt, miejsce albo interfejs. Zbyt idealne zdjęcie warsztatu nie buduje takiego zaufania jak dobrze sfotografowane realne zaplecze. AI sprawdza się w konceptach i kampaniach, lecz nie powinno udawać dowodu wykonanej pracy."
+            },
+            {
+              "h": "GEO nie polega na produkowaniu odpowiedzi dla robotów"
+            },
+            {
+              "p": "Widoczność w odpowiedziach generatywnych opiera się na tych samych fundamentach co dobra komunikacja: jednoznaczna encja firmy, spójne fakty, pełne dane usług, konkretne case studies, cytowalne definicje i logiczne linkowanie. Setki prawie identycznych tekstów nie wzmacniają autorytetu. Tworzą sprzeczności, które utrudniają systemom zrozumienie marki."
+            },
+            {
+              "p": "Dlatego na stronie warto utrzymywać aktualne dane organizacji, autorów, daty, źródła i relacje między usługą, realizacją a artykułem. Dobra struktura pomaga wyszukiwarce, ale przede wszystkim pomaga człowiekowi ocenić, czy firma naprawdę zna temat."
+            },
+            {
+              "h": "Mniej treści, więcej dowodu"
+            },
+            {
+              "p": "Jeśli masz do wyboru dziesięć ogólnych wpisów albo jeden materiał z własnymi zdjęciami, procesem, wynikiem i uczciwym opisem ograniczeń, zwykle wygra ten drugi. AI powinno pomóc go lepiej uporządkować, przetłumaczyć lub zaktualizować. Nie powinno wymyślać doświadczenia, którego firma nie ma."
+            },
+            {
+              "p": "AI slop jest tani w produkcji, ale drogi w skutkach. Zajmuje uwagę odbiorców, rozmywa markę i sprawia, że kolejne wartościowe materiały również są traktowane podejrzliwie. Automatyzacja ma usuwać pracę mechaniczną, żeby zostało więcej czasu na myślenie. Nie odwrotnie."
+            }
+          ],
+          "relatedCase": {
+            "href": "/blog/marketing-dla-samego-marketingu",
+            "label": "Czytaj: marketing dla samego marketingu",
+            "description": "Jak odróżnić produkcję treści od postępu biznesowego."
+          },
+          "seoTitle": "AI slop: co to jest i jak go unikać"
+        },
+        {
+          "slug": "marketing-za-200-zl-z-allegro-czy-warto",
+          "cat": "Strategia",
+          "date": "Sie 2026",
+          "isoDate": "2026-08-02",
+          "title1": "Marketing za 200 zł z Allegro:",
+          "titleIt": "co naprawdę kupujesz.",
+          "image": "/assets/blog-marketing.jpg",
+          "inlineImage": "/assets/showcase-3.jpg",
+          "inlineImageAlt": "Strategiczna praca nad komunikacją marki zamiast gotowego pakietu publikacji",
+          "description": "Marketing za 200 zł miesięcznie: co mieści się w tej cenie, czego nie da się uczciwie dowieźć i kiedy tani pakiet może kosztować firmę więcej niż profesjonalna obsługa.",
+          "keywords": [
+            "marketing za 200 zł",
+            "tani marketing Allegro",
+            "prowadzenie social media cena",
+            "tania agencja marketingowa",
+            "ile kosztuje marketing firmy",
+            "pakiet social media"
+          ],
+          "lede": "Za 200 zł można kupić wykonanie prostego zadania. Nie da się kupić strategii, produkcji, kampanii, analityki i odpowiedzialności za wynik, choć opis oferty może obiecywać wszystko naraz.",
+          "body": [
+            {
+              "h": "Cena sama w sobie nie jest problemem"
+            },
+            {
+              "p": "Tania usługa może być uczciwa. Ktoś może przygotować jeden prosty baner, poprawić tekst albo ustawić podstawowy profil. Problem pojawia się, gdy pakiet za 200 zł obiecuje prowadzenie marki: strategię, kilkanaście postów, grafiki, hashtagi, publikację i raport. Matematyka przestaje się zgadzać."
+            },
+            {
+              "p": "Po odjęciu prowizji, podatków i kontaktu z klientem na całość zostaje niewiele czasu. Wykonawca musi więc użyć szablonu, wygenerować treść automatycznie albo obsłużyć dziesiątki firm równolegle. To nie musi oznaczać złej woli. Taki jest model ekonomiczny usługi."
+            },
+            {
+              "h": "Czego zwykle nie ma w pakiecie"
+            },
+            {
+              "list": [
+                "Rozmowy o marży, sezonowości i jakości leadów.",
+                "Wizyty w firmie oraz własnych zdjęć i wideo.",
+                "Researchu konkurencji i języka prawdziwych klientów.",
+                "Konfiguracji analityki, pikseli, zdarzeń i pomiaru telefonów.",
+                "Testowania kilku kierunków oraz poprawek po wynikach.",
+                "Odpowiedzialności za to, czy marketing wspiera sprzedaż."
+              ]
+            },
+            {
+              "h": "Najdroższy koszt jest niewidoczny"
+            },
+            {
+              "p": "Słaby post rzadko wywoła katastrofę. Kosztem jest sześć miesięcy udawania, że firma prowadzi marketing. Profil się zapełnia, właściciel regularnie płaci i ma poczucie działania, ale nie powstają materiały sprzedażowe, widoczność w Google ani proces pozyskiwania kontaktów. Straconego czasu nie da się odzyskać tańszym abonamentem."
+            },
+            {
+              "p": "Drugi koszt to wizerunek. Automatyczne teksty, stockowe grafiki i promocje bez kontekstu uczą odbiorcę, że marka nie ma nic własnego do powiedzenia. Późniejsza zmiana wymaga nie tylko lepszych treści, lecz także odbudowy uwagi."
+            },
+            {
+              "h": "Kiedy 200 zł ma sens"
+            },
+            {
+              "p": "Gdy zakres jest mały i nazwany wprost. Możesz kupić konsultację, korektę jednego tekstu, prosty szablon, montaż krótkiego materiału albo audyt jednego elementu. Wtedy oceniasz konkretne wykonanie, a nie udajesz, że kupujesz zewnętrzny dział marketingu."
+            },
+            {
+              "h": "Jak porównać oferty"
+            },
+            {
+              "list": [
+                "Zapytaj, ile realnego czasu miesięcznie dostaje Twoja firma.",
+                "Poproś o przykłady materiałów oraz wyników z podobnej branży.",
+                "Sprawdź, kto robi zdjęcia, kto pisze, kto ustawia kampanie i kto analizuje dane.",
+                "Ustal, jaki cel ma pierwsze 90 dni i co zostanie zmierzone.",
+                "Zapytaj, z czego wykonawca świadomie rezygnuje w danym budżecie."
+              ]
+            },
+            {
+              "h": "Z czego składa się realna obsługa marketingu"
+            },
+            {
+              "p": "Nawet mały zakres wymaga kontaktu, planu, produkcji, akceptacji, publikacji i oceny wyniku. Jeśli dochodzą reklamy, trzeba przygotować konta, pomiar, grupy odbiorców, kreacje, budżety i optymalizację. Przy zdjęciach pojawia się dojazd, sprzęt, selekcja i obróbka. Cena nie bierze się z „prestiżu agencji”, tylko z czasu kilku kompetencji i odpowiedzialności za ich połączenie."
+            },
+            {
+              "p": "Można obniżyć koszt, ograniczając zakres. Nie da się bez końca obniżać czasu każdej czynności i nadal oczekiwać tej samej jakości. Dlatego uczciwa oferta mówi, czego nie obejmuje: na przykład klient dostarcza zdjęcia, kampanie są poza pakietem, a raport odbywa się raz na kwartał."
+            },
+            {
+              "h": "Trzy poziomy, których nie należy mylić"
+            },
+            {
+              "list": [
+                "**Wykonanie zadania:** jeden baner, montaż filmu, korekta opisu.",
+                "**Obsługa kanału:** plan, regularna produkcja, publikacja, moderacja i podstawowa analiza.",
+                "**Prowadzenie marketingu:** strategia, oferta, wiele kanałów, produkcja, media, pomiar i decyzje budżetowe."
+              ]
+            },
+            {
+              "p": "Każdy poziom może być potrzebny. Konflikt zaczyna się wtedy, gdy firma kupuje pierwszy, a oczekuje trzeciego. Wykonawca broni się liczbą postów, klient mówi o braku sprzedaży, a nikt wcześniej nie ustalił, kto odpowiada za ofertę, budżet reklamowy, stronę i obsługę kontaktów."
+            },
+            {
+              "h": "Jak ustawić mały budżet rozsądnie"
+            },
+            {
+              "p": "Jeśli budżet jest ograniczony, wybierz jeden cel i jeden kanał. Lokalny serwis może zacząć od wizytówki Google, dobrych zdjęć, procesu pozyskiwania opinii i jednej strony najważniejszej usługi. Firma B2B może przygotować porządną prezentację, listę klientów docelowych i serię materiałów dla handlowca. Skupienie daje większą szansę na efekt niż rozsmarowanie kwoty na pięć platform."
+            },
+            {
+              "list": [
+                "Najpierw popraw miejsce, do którego trafia klient.",
+                "Zadbaj o odbieranie telefonu i zapis źródła kontaktu.",
+                "Produkuj materiały partiami, żeby ograniczyć koszt organizacji.",
+                "Wydawaj na reklamy dopiero wtedy, gdy potrafisz zmierzyć zapytanie.",
+                "Co miesiąc wybieraj jedno ulepszenie zamiast kolejnego kanału."
+              ]
+            },
+            {
+              "h": "Czerwona flaga: gwarantowany wynik bez danych"
+            },
+            {
+              "p": "Nikt uczciwy nie zagwarantuje konkretnej liczby klientów, nie znając ceny, marży, konkurencji, obszaru działania i procesu sprzedaży. Można zagwarantować zakres pracy, termin, standard raportowania i reakcję na dane. Wynik jest wspólnym efektem marketingu, produktu oraz obsługi. Oferta, która pomija tę zależność, sprzedaje pewność, której wykonawca nie kontroluje."
+            },
+            {
+              "p": "Mały budżet nie wyklucza dobrego marketingu. Wymaga jedynie większej dyscypliny i uczciwego wyboru. Lepiej zrobić jedną rzecz profesjonalnie i na niej zbudować następny krok, niż przez rok kupować kompletny pakiet, który istnieje głównie w nazwie aukcji."
+            },
+            {
+              "p": "Dobra oferta nie musi być najdroższa. Musi być logiczna. Zakres, czas, kompetencje i odpowiedzialność powinny tworzyć równanie, które ma sens. Jeśli za cenę jednej kolacji ktoś obiecuje miesiąc pracy całego zespołu, nie znalazłeś okazji. Znalazłeś pakiet pozorów."
+            }
+          ],
+          "relatedCase": {
+            "href": "/o-nas",
+            "label": "Sprawdź, jak dobieramy współprace",
+            "description": "Zakres, odpowiedzialność i warunki, w których marketing ma szansę działać."
+          },
+          "seoTitle": "Marketing za 200 zł z Allegro: czy warto?"
+        },
+        {
+          "slug": "projekt-design-a-obrazek-grafika-roznice",
+          "cat": "Design",
+          "date": "Lip 2026",
+          "isoDate": "2026-07-30",
+          "title1": "Projekt i design",
+          "titleIt": "to nie po prostu ładny obrazek.",
+          "image": "/assets/case-tomex-brakes-2.jpg",
+          "inlineImage": "/assets/case-tomex-brakes-3.jpg",
+          "inlineImageAlt": "Spójne zastosowania systemu wizualnego marki Tomex Brakes",
+          "description": "Czym różni się projekt, design i system identyfikacji od pojedynczej grafiki? Cele, decyzje, hierarchia, skalowalność i kryteria oceny dobrego projektu.",
+          "keywords": [
+            "projekt a grafika różnice",
+            "co to jest design",
+            "identyfikacja wizualna firmy",
+            "projekt graficzny marki",
+            "system identyfikacji wizualnej",
+            "branding a grafika"
+          ],
+          "lede": "Obrazek można ocenić słowami „podoba mi się” albo „nie podoba”. Projekt trzeba ocenić pytaniem: „czy rozwiązuje właściwy problem i działa w każdym potrzebnym miejscu?”.",
+          "body": [
+            {
+              "h": "Grafika jest rezultatem. Design jest decyzją"
+            },
+            {
+              "p": "Pojedyncza grafika może być świetna. Ma układ, kolor, zdjęcie i komunikat. Design zaczyna się krok wcześniej: dla kogo to powstaje, co odbiorca ma zauważyć, w jakim kontekście zobaczy materiał i co ma zrobić później. Estetyka jest częścią odpowiedzi, ale nie zastępuje pytania."
+            },
+            {
+              "p": "Dlatego dwie ładne grafiki mogą działać zupełnie inaczej. Jedna pasuje do marki, czytelnie prowadzi wzrok i da się przenieść na kolejne formaty. Druga wygląda dobrze w prezentacji, ale rozpada się na telefonie, nie ma miejsca na dłuższy tytuł i nie mówi odbiorcy, co jest ważne."
+            },
+            {
+              "h": "Pięć warstw dobrego projektu"
+            },
+            {
+              "list": [
+                "**Cel:** jaka decyzja lub zmiana ma nastąpić po kontakcie z projektem.",
+                "**Informacja:** co musi zostać zrozumiane jako pierwsze, drugie i trzecie.",
+                "**System:** jakie zasady pozwalają tworzyć kolejne materiały bez zaczynania od zera.",
+                "**Kontekst:** gdzie projekt będzie używany, w jakim rozmiarze i przez kogo.",
+                "**Jakość wykonania:** typografia, kolor, obraz, odstępy, pliki i techniczne przygotowanie."
+              ]
+            },
+            {
+              "h": "Logo nie jest jeszcze identyfikacją"
+            },
+            {
+              "p": "Logo to znak. Identyfikacja wizualna określa, jak marka działa poza znakiem: typografię, kolory, proporcje, zdjęcia, ikonografię, język layoutu, zachowanie na jasnym i ciemnym tle oraz przykłady zastosowań. Księga znaku opisuje poprawne użycie logo. Brandbook może dodatkowo porządkować charakter marki, komunikację i kierunek wizualny."
+            },
+            {
+              "p": "Jeżeli firma dostaje tylko plik PNG, każda kolejna osoba musi zgadywać. Ulotka wygląda inaczej niż oferta, social media inaczej niż strona, a stoisko targowe jak jeszcze inna marka. System ogranicza zgadywanie i przyspiesza produkcję."
+            },
+            {
+              "h": "Dlaczego „zrób większe logo” nie jest strategią"
+            },
+            {
+              "p": "Uwagi wizualne często próbują naprawić problem na złym poziomie. Jeśli klient nie rozumie oferty, większy znak nie pomoże. Być może brakuje hierarchii, dobrego nagłówka albo jasnego CTA. Rolą projektanta nie jest bronić każdego piksela. Jest nią rozpoznać, co naprawdę nie działa, i zaproponować rozwiązanie."
+            },
+            {
+              "h": "Jak oceniać projekt bez wojny gustów"
+            },
+            {
+              "list": [
+                "Czy główny komunikat jest czytelny w trzy sekundy?",
+                "Czy odbiorca wie, jaki ma zrobić następny krok?",
+                "Czy projekt działa na telefonie, w druku i w wymaganych formatach?",
+                "Czy kolejny materiał da się stworzyć według tych samych zasad?",
+                "Czy forma pasuje do ceny, produktu i charakteru klienta?",
+                "Czy można wskazać, dlaczego każda ważna decyzja została podjęta?"
+              ]
+            },
+            {
+              "h": "Obrazek może być piękny. Projekt musi być użyteczny"
+            },
+            {
+              "h": "Co klient powinien dostać poza plikiem"
+            },
+            {
+              "p": "W zależności od projektu rezultatem mogą być zasady hierarchii, siatka, komponenty, biblioteka stylów, warianty responsywne, pliki produkcyjne, szablony oraz instrukcja użycia. W przypadku strony dochodzi prototyp zachowań i opis stanów: ładowanie, błąd, brak danych, hover, fokus. W brandingu ważne są przykłady pokazujące, jak system działa na realnych materiałach."
+            },
+            {
+              "p": "To właśnie te elementy odróżniają projekt od jednorazowej kompozycji. Następna osoba nie musi odtwarzać intencji autora. Może sprawdzić zasadę i zastosować ją w nowym formacie. Firma zyskuje spójność, a produkcja staje się szybsza zamiast coraz bardziej zależna od jednego grafika."
+            },
+            {
+              "h": "Proces projektowy krok po kroku"
+            },
+            {
+              "list": [
+                "Rozpoznanie celu, odbiorcy, kanałów i ograniczeń.",
+                "Audyt istniejących materiałów oraz konkurencji.",
+                "Kierunek koncepcyjny i kryteria wyboru.",
+                "Projekt systemu oraz najważniejszych zastosowań.",
+                "Test czytelności, responsywności i produkcji.",
+                "Przekazanie plików, zasad i wdrożenie z zespołem."
+              ]
+            },
+            {
+              "h": "Projektowanie strony to także stany niewidoczne na makiecie"
+            },
+            {
+              "p": "Ładny ekran główny nie mówi jeszcze, czy produkt jest dobrze zaprojektowany. Co zobaczy użytkownik bez wyników? Jak poprawi błąd formularza? Czy długi tytuł mieści się na małym telefonie? Czy klawiaturą można przejść przez menu? Czy zdjęcie ma sensowny kadr po zmianie proporcji? Design obejmuje te sytuacje, bo prawdziwy produkt nie jest nieruchomym obrazem."
+            },
+            {
+              "h": "Przykład z materiałów marketingowych"
+            },
+            {
+              "p": "Załóżmy, że producent części potrzebuje katalogu, stoiska targowego, postów, kart produktowych i koszulek. Można zaprojektować każdy element osobno. Lepszą drogą jest zbudowanie języka marki: układu danych technicznych, sposobu kadrowania produktu, typografii, ikon i proporcji koloru. Wtedy wszystkie materiały są różne, ale rozpoznawalne jako jedna firma."
+            },
+            {
+              "p": "System nie zabija kreatywności. Usuwa decyzje, których nie trzeba podejmować od nowa, dzięki czemu więcej energii zostaje na pomysł właściwy dla konkretnej kampanii. Podobnie działa dobrze zaprojektowany komponent w aplikacji: ogranicza przypadkowe warianty, ale pozwala szybciej budować nowe funkcje."
+            },
+            {
+              "h": "Kiedy wystarczy pojedyncza grafika"
+            },
+            {
+              "p": "Nie każdy temat wymaga brandbooka. Jednorazowe ogłoszenie, prosta informacja techniczna lub materiał wewnętrzny mogą potrzebować tylko poprawnej grafiki. Warto jednak nazwać to uczciwie. Jeśli materiał ma być powtarzany, skalowany przez kilka osób albo budować rozpoznawalność, koszt braku systemu szybko przekroczy koszt jego zaprojektowania."
+            },
+            {
+              "p": "Dobre pytanie brzmi więc nie „ile kosztuje obrazek?”, lecz „ile decyzji ten projekt ma uporządkować i jak długo mają działać?”. Odpowiedź pozwala dobrać właściwy zakres bez przepłacania za strategię tam, gdzie nie jest potrzebna, i bez oszczędzania na systemie tam, gdzie firma będzie używać go przez lata."
+            },
+            {
+              "p": "Najlepsze realizacje łączą oba poziomy. Przyciągają uwagę, ale nie kończą się na efekcie „wow”. Pomagają sprzedawać, orientować się, rozpoznawać markę i produkować kolejne materiały bez chaosu. Właśnie dlatego projektowanie kosztuje więcej niż wygenerowanie jednej grafiki: kupujesz nie tylko obraz, lecz także zestaw decyzji, który ma działać długo po eksporcie pliku."
+            }
+          ],
+          "relatedCase": {
+            "href": "/realizacje/tomex-brakes",
+            "label": "Zobacz system marki Tomex Brakes",
+            "description": "Brand i jego zastosowania zamiast pojedynczej grafiki."
+          },
+          "seoTitle": "Projekt, design a zwykła grafika: różnice"
         },
         {
           "slug": "ile-kosztuje-google-ads-dla-warsztatu-samochodowego-2026",
@@ -3525,6 +4765,164 @@ const COPY = {
           "W praktyce oznacza to oddzielne kampanie dla modeli, ofert specjalnych, aut dostępnych od ręki i samochodów używanych. Do tego dochodzi content pokazujący ludzi, proces wydania auta, serwis i realne historie klientów. Taki marketing pomaga sprzedawcom rozmawiać z osobami, które są lepiej przygotowane, a nie przypadkowo kliknęły reklamę."
         ]
       }
+    },
+    "trusted": {
+      "label": "# — Zaufali nam",
+      "title1": "Marki,",
+      "titleIt": "które z nami pracowały.",
+      "lede": "Od automotive i marine po lokalne usługi, e-commerce i B2B. Poniżej firmy oraz marki, przy których dokładaliśmy realną pracę: strategię, content, kampanie, targi, LinkedIn, social media albo produkcję.",
+      "items": [
+        {
+          "name": "Remontowa Marine Design",
+          "url": "https://rmdc.pl/",
+          "domain": "rmdc.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=rmdc.pl&sz=128"
+        },
+        {
+          "name": "DDP Supply",
+          "url": "https://ddp.eu/",
+          "domain": "ddp.eu",
+          "logo": "https://www.google.com/s2/favicons?domain=ddp.eu&sz=128"
+        },
+        {
+          "name": "ProfiAuto Serwis",
+          "url": "https://profiauto.pl/",
+          "domain": "profiauto.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=profiauto.pl&sz=128"
+        },
+        {
+          "name": "Wiktorowicz Auto Serwis",
+          "url": "https://wiktorowicz-auto-serwis.pl/",
+          "domain": "wiktorowicz-auto-serwis.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=wiktorowicz-auto-serwis.pl&sz=128"
+        },
+        {
+          "name": "Motoart",
+          "url": "https://motoart.pl/",
+          "domain": "motoart.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=motoart.pl&sz=128"
+        },
+        {
+          "name": "Qarmax",
+          "url": "https://qarmax.pl/",
+          "domain": "qarmax.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=qarmax.pl&sz=128"
+        },
+        {
+          "name": "PulseGT",
+          "url": "https://pulsegt.eu/",
+          "domain": "pulsegt.eu",
+          "logo": "https://www.google.com/s2/favicons?domain=pulsegt.eu&sz=128"
+        },
+        {
+          "name": "PMO Oleje",
+          "url": "https://pmolubricants.com/",
+          "domain": "pmolubricants.com",
+          "logo": "https://www.google.com/s2/favicons?domain=pmolubricants.com&sz=128"
+        },
+        {
+          "name": "Dongfeng",
+          "url": "https://www.dongfeng-global.com/",
+          "domain": "dongfeng-global.com",
+          "logo": "https://www.google.com/s2/favicons?domain=dongfeng-global.com&sz=128"
+        },
+        {
+          "name": "Voya",
+          "url": "https://voya.pl/",
+          "domain": "voya.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=voya.pl&sz=128"
+        },
+        {
+          "name": "MHero",
+          "url": "https://mhero.pl/",
+          "domain": "mhero.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=mhero.pl&sz=128"
+        },
+        {
+          "name": "Grupa Janisz",
+          "url": "https://grupajanisz.netlify.app/",
+          "domain": "grupajanisz.netlify.app",
+          "logo": "https://www.google.com/s2/favicons?domain=grupajanisz.netlify.app&sz=128"
+        },
+        {
+          "name": "Tasiem",
+          "url": "https://tasiem.pl/",
+          "domain": "tasiem.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=tasiem.pl&sz=128"
+        },
+        {
+          "name": "Mapadama",
+          "url": "https://mapadama.pl/",
+          "domain": "mapadama.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=mapadama.pl&sz=128"
+        },
+        {
+          "name": "Abaks",
+          "url": "https://abaks.pl/",
+          "domain": "abaks.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=abaks.pl&sz=128"
+        },
+        {
+          "name": "Tomex",
+          "url": "https://tomexbrakes.com/",
+          "domain": "tomexbrakes.com",
+          "logo": "https://www.google.com/s2/favicons?domain=tomexbrakes.com&sz=128"
+        },
+        {
+          "name": "BIG MOT",
+          "url": "https://bigmot.pl/",
+          "domain": "bigmot.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=bigmot.pl&sz=128"
+        },
+        {
+          "name": "Extreme Tyres",
+          "url": "https://extreme-tyres.com/",
+          "domain": "extreme-tyres.com",
+          "logo": "https://www.google.com/s2/favicons?domain=extreme-tyres.com&sz=128"
+        },
+        {
+          "name": "Arbolatorium Adrian Kiedrowski",
+          "url": "https://arbolatorium.pl/",
+          "domain": "arbolatorium.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=arbolatorium.pl&sz=128"
+        },
+        {
+          "name": "Beenergy",
+          "url": "https://beenergy.pl/",
+          "domain": "beenergy.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=beenergy.pl&sz=128"
+        },
+        {
+          "name": "Petronas",
+          "url": "https://www.petronas.com/",
+          "domain": "petronas.com",
+          "logo": "https://www.google.com/s2/favicons?domain=petronas.com&sz=128"
+        },
+        {
+          "name": "Remontowa Shipbuilding",
+          "url": "https://remontowa-rsb.pl/",
+          "domain": "remontowa-rsb.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=remontowa-rsb.pl&sz=128"
+        },
+        {
+          "name": "Auto Centrum Elektronowa",
+          "url": "https://autocentrum-elektronowa.pl/",
+          "domain": "autocentrum-elektronowa.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=autocentrum-elektronowa.pl&sz=128"
+        },
+        {
+          "name": "Bosch Service",
+          "url": "https://www.boschcarservice.com/",
+          "domain": "boschcarservice.com",
+          "logo": "https://www.google.com/s2/favicons?domain=boschcarservice.com&sz=128"
+        },
+        {
+          "name": "GT Serwis Barniewice",
+          "url": "https://gtserwis.com/",
+          "domain": "gtserwis.com",
+          "logo": "https://www.google.com/s2/favicons?domain=gtserwis.com&sz=128"
+        }
+      ]
     }
   },
   "en": {
@@ -3544,13 +4942,13 @@ const COPY = {
       "about": true,
       "showcase": true,
       "process": true,
-      "testimonials": true,
       "audience": true,
       "portfolio": true,
       "blog": true,
       "contact": true,
       "founders": false,
-      "miniCta": true
+      "miniCta": true,
+      "trusted": true
     },
     "hero": {
       "eyebrow": "360 Agency · Gdańsk · Est. 2022",
@@ -3875,7 +5273,7 @@ const COPY = {
             "Owner interview as hero video",
             "Body shop & mechanical as separate series"
           ],
-          "duration": "6 miesięcy + bieżąca optymalizacja",
+          "duration": "Ongoing cooperation",
           "scope": [
             "Rebrand",
             "Social media",
@@ -3883,12 +5281,6 @@ const COPY = {
             "Google Business Profile",
             "Produkcja wideo"
           ],
-          "clientQuote": {
-            "text": "The project gave us clearer communication, better-qualified inquiries and a practical rhythm for optimization. The work was concrete, measured and tied to business outcomes.",
-            "author": "Piotr Malinowski",
-            "role": "Właściciel",
-            "company": "AutoCentrum Elektronowa 18"
-          },
           "timeline": [
             {
               "phase": "Audyt i pozycjonowanie",
@@ -3933,7 +5325,13 @@ const COPY = {
               287
             ],
             "unit": "kontaktów/mies"
-          }
+          },
+          "deliverables": [
+            "Facebook and Instagram",
+            "Meta Ads creative",
+            "Photo and video shoots",
+            "Google Business Profile assets"
+          ]
         },
         {
           "num": "02",
@@ -3980,7 +5378,7 @@ const COPY = {
             "Inside the Project — behind-the-scenes series",
             "Animated vessel portfolio"
           ],
-          "duration": "4 miesiące",
+          "duration": "Ongoing cooperation",
           "scope": [
             "Strategia marki",
             "Strona WWW",
@@ -3988,12 +5386,6 @@ const COPY = {
             "LinkedIn",
             "Performance"
           ],
-          "clientQuote": {
-            "text": "The project gave us clearer communication, better-qualified inquiries and a practical rhythm for optimization. The work was concrete, measured and tied to business outcomes.",
-            "author": "Michał Dąbrowski",
-            "role": "Managing Partner",
-            "company": "RMDC"
-          },
           "timeline": [
             {
               "phase": "Warsztat oferty",
@@ -4033,7 +5425,13 @@ const COPY = {
               36
             ],
             "unit": "zapytań/mies"
-          }
+          },
+          "deliverables": [
+            "LinkedIn and Facebook",
+            "Visual identity system",
+            "Trade show and event photo-video",
+            "Employer branding"
+          ]
         },
         {
           "num": "03",
@@ -4092,12 +5490,6 @@ const COPY = {
             "Content produktowy",
             "Analityka"
           ],
-          "clientQuote": {
-            "text": "The project gave us clearer communication, better-qualified inquiries and a practical rhythm for optimization. The work was concrete, measured and tied to business outcomes.",
-            "author": "Karol Wiśniewski",
-            "role": "E-commerce Manager",
-            "company": "PMO Lubricants"
-          },
           "timeline": [
             {
               "phase": "Audyt kont reklamowych",
@@ -4137,7 +5529,13 @@ const COPY = {
               118000
             ],
             "unit": "PLN/mies"
-          }
+          },
+          "deliverables": [
+            "Facebook, Instagram and LinkedIn",
+            "Film, photography and drone work",
+            "Distributor materials",
+            "Merch, catalogues and event activations"
+          ]
         },
         {
           "num": "04",
@@ -4192,12 +5590,6 @@ const COPY = {
             "Content techniczny",
             "Social media"
           ],
-          "clientQuote": {
-            "text": "The project gave us clearer communication, better-qualified inquiries and a practical rhythm for optimization. The work was concrete, measured and tied to business outcomes.",
-            "author": "Tomasz Nowak",
-            "role": "Właściciel",
-            "company": "Tomex Brakes"
-          },
           "timeline": [
             {
               "phase": "Mapa kategorii",
@@ -4237,7 +5629,13 @@ const COPY = {
               96
             ],
             "unit": "zapytań/mies"
-          }
+          },
+          "deliverables": [
+            "Key visual and brandbook",
+            "LinkedIn and Facebook",
+            "Catalogues and trade materials",
+            "Campaign and product creative"
+          ]
         },
         {
           "num": "05",
@@ -4284,7 +5682,7 @@ const COPY = {
             "Sales-linked benefits system",
             "Motorsport: Drift and 1/4 mile"
           ],
-          "duration": "3 miesiące",
+          "duration": "1 year",
           "scope": [
             "Launch marki",
             "Landing page",
@@ -4292,12 +5690,6 @@ const COPY = {
             "Kreacje",
             "Analityka"
           ],
-          "clientQuote": {
-            "text": "The project gave us clearer communication, better-qualified inquiries and a practical rhythm for optimization. The work was concrete, measured and tied to business outcomes.",
-            "author": "Adam Zieliński",
-            "role": "Founder",
-            "company": "PulseGT"
-          },
           "timeline": [
             {
               "phase": "Hipotezy sprzedażowe",
@@ -4337,29 +5729,531 @@ const COPY = {
               61
             ],
             "unit": "leadów/mies"
-          }
-        }
-      ]
-    },
-    "testi": {
-      "label": "# — Word on the street",
-      "title1": "Client",
-      "titleIt": "voices.",
-      "items": [
-        {
-          "q": "Their campaigns changed how we source B2B leads. No fluff — weekly reports and humans who pick up the phone.",
-          "name": "Marek Kowalski",
-          "co": "TechSolutions · CEO"
+          },
+          "deliverables": [
+            "Social media and influencer marketing",
+            "Photo-video production",
+            "Merch and promotional materials",
+            "Landing page and e-commerce creative"
+          ]
         },
         {
-          "q": "Store, social and performance in one package. Sales +150% in the first quarter. We're staying.",
-          "name": "Anna Nowak",
-          "co": "Natural Beauty · Founder"
+          "num": "06",
+          "slug": "grupa-janisz",
+          "title1": "Grupa",
+          "titleIt": "Janisz",
+          "tag": "Automotive · Full service · Local SEO",
+          "year": "2026",
+          "ph": "ph-stripe-3",
+          "brief": "A Pruszcz Gdański automotive group operating since 1993: Bosch Car Service, VW and Skoda authorised service, Dongfeng dealer, body and paint shop, vehicle inspection station, 3D alignment and Krown protection.",
+          "challenge": "The offer includes several brands and service lines, so the message had to stay clear for drivers looking for repair, inspection, authorised service or corrosion protection.",
+          "solution": "Full service marketing: strategy, local SEO, contact paths, Meta Ads, Google Ads, social media, service content, photo-video production and consulting.",
+          "results": [
+            {
+              "k": "Scope",
+              "v": "Full service"
+            },
+            {
+              "k": "Brand history",
+              "v": "since 1993"
+            },
+            {
+              "k": "TÜV audit",
+              "v": "100%"
+            },
+            {
+              "k": "Channels",
+              "v": "Meta · Google · SEO · Social"
+            }
+          ],
+          "palette": [
+            "#0F5132",
+            "#D6B15E",
+            "#1a1a1a",
+            "#efe9dc"
+          ],
+          "images": [
+            "/assets/digital-janisz-scroll.webp",
+            "/assets/digital-janisz-bosch.webp",
+            "/assets/digital-janisz-dongfeng.webp",
+            "/assets/digital-janisz-cennik.webp"
+          ],
+          "notes": [
+            "Offer mapped to local search intent",
+            "Clear communication for multiple automotive brands",
+            "Focus on trust, service standard and availability"
+          ],
+          "duration": "Ongoing cooperation",
+          "scope": [
+            "Strategy",
+            "Meta Ads",
+            "Google Ads",
+            "Local SEO",
+            "Social media",
+            "Photo-video",
+            "Consulting"
+          ],
+          "timeline": [
+            {
+              "phase": "Offer mapping",
+              "duration": "2 weeks",
+              "description": "We split communication into key services and customer intents."
+            },
+            {
+              "phase": "Local SEO and GBP",
+              "duration": "ongoing",
+              "description": "We strengthen visibility for Pruszcz Gdański and Gdańsk searches."
+            },
+            {
+              "phase": "Advertising campaigns",
+              "duration": "monthly",
+              "description": "Meta and Google campaigns support the strongest service lines."
+            },
+            {
+              "phase": "Content and social",
+              "duration": "ongoing",
+              "description": "We show the team, workshop standards and real services."
+            }
+          ],
+          "chartData": {
+            "label": "Monthly local enquiries",
+            "before": [
+              82,
+              88,
+              91,
+              86
+            ],
+            "after": [
+              118,
+              134,
+              151,
+              169,
+              187,
+              204
+            ],
+            "unit": "enquiries/mo"
+          },
+          "deliverables": [
+            "Facebook and LinkedIn",
+            "Photo-video, including drone work",
+            "Sales and brand creative",
+            "Print and POS materials"
+          ],
+          "coverImage": "/assets/digital-janisz-scroll.webp"
         },
         {
-          "q": "Time savings and a genuinely unconventional approach — exactly what they promised on the first call. Strong recommend.",
-          "name": "Tomasz Wójcik",
-          "co": "Architekci Wnętrz · Partner"
+          "num": "07",
+          "slug": "gt-serwis-barniewice",
+          "title1": "GT Serwis",
+          "titleIt": "Barniewice",
+          "tag": "Workshop · Ads · Social",
+          "year": "2026",
+          "ph": "ph-stripe-1",
+          "brief": "A car workshop in Barniewice serving drivers from Gdańsk, Osowa, Oliwa and the wider Tricity area.",
+          "challenge": "A local workshop needs to win trust and contacts at the exact moment a driver has a specific issue.",
+          "solution": "Full cooperation: Meta Ads, Google Ads, social media management, consulting, local SEO, service content and enquiry analysis.",
+          "results": [
+            {
+              "k": "Scope",
+              "v": "Full cooperation"
+            },
+            {
+              "k": "Ad channels",
+              "v": "Meta + Google"
+            },
+            {
+              "k": "Services promoted",
+              "v": "6+"
+            },
+            {
+              "k": "Area",
+              "v": "Barniewice · Gdańsk"
+            }
+          ],
+          "palette": [
+            "#E8A838",
+            "#23395B",
+            "#1a1a1a",
+            "#f4f4f4"
+          ],
+          "images": [
+            "/assets/digital-gt-home.webp",
+            "/assets/digital-gt-galeria.webp",
+            "/assets/digital-gt-cennik.webp",
+            "/assets/digital-gt-artykul.webp"
+          ],
+          "notes": [
+            "Separate communication for core workshop services",
+            "Advertising connected with local search intent",
+            "Ongoing consulting instead of random posting"
+          ],
+          "duration": "Full cooperation",
+          "scope": [
+            "Meta Ads",
+            "Google Ads",
+            "Social media",
+            "Local SEO",
+            "Consulting",
+            "Content"
+          ],
+          "timeline": [
+            {
+              "phase": "Local audit",
+              "duration": "1 week",
+              "description": "We checked phrases, competitors, service profile and contact paths."
+            },
+            {
+              "phase": "Service priorities",
+              "duration": "1 week",
+              "description": "We structured communication around diagnostics, brakes, AC, oil, electromechanics and tyres."
+            },
+            {
+              "phase": "Ads",
+              "duration": "ongoing",
+              "description": "Campaigns support local searches and seasonal services."
+            },
+            {
+              "phase": "Social media",
+              "duration": "ongoing",
+              "description": "Posts show real work, facilities and trust signals."
+            }
+          ],
+          "chartData": {
+            "label": "Local campaign contacts",
+            "before": [
+              24,
+              27,
+              26,
+              29
+            ],
+            "after": [
+              41,
+              49,
+              58,
+              66,
+              73,
+              81
+            ],
+            "unit": "contacts/mo"
+          },
+          "deliverables": [
+            "Facebook and Instagram",
+            "Meta Ads and Google Ads",
+            "Workshop photography and video",
+            "Local creative and sales materials"
+          ],
+          "coverImage": "/assets/digital-gt-home.webp"
+        },
+        {
+          "num": "08",
+          "slug": "bigmot",
+          "title1": "BIG",
+          "titleIt": "MOT",
+          "tag": "Parts · E-commerce · B2B",
+          "year": "2026",
+          "ph": "ph-stripe-2",
+          "brief": "A car parts store and wholesaler from Pruszcz Gdański operating since 1990 in the ProfiAuto network.",
+          "challenge": "The scale of the offer had to be translated into a simple message: availability, advice, speed and credibility.",
+          "solution": "Full scope: strategy, social media, Meta Ads, Google Ads, product content, consulting and B2B/B2C communication.",
+          "results": [
+            {
+              "k": "History",
+              "v": "since 1990"
+            },
+            {
+              "k": "Catalogue",
+              "v": "3M+ products"
+            },
+            {
+              "k": "Team",
+              "v": "26 specialists"
+            },
+            {
+              "k": "Model",
+              "v": "B2B + retail"
+            }
+          ],
+          "palette": [
+            "#F0B323",
+            "#0D47A1",
+            "#1a1a1a",
+            "#f4f4f4"
+          ],
+          "images": [
+            "/assets/case-bigmot-1.svg",
+            "/assets/case-bigmot-2.svg",
+            "/assets/case-bigmot-3.svg"
+          ],
+          "notes": [
+            "Communication for drivers and workshops",
+            "Focus on availability, advice and catalogue strength",
+            "Product content over generic promo graphics"
+          ],
+          "duration": "Full scope",
+          "scope": [
+            "Strategy",
+            "Meta Ads",
+            "Google Ads",
+            "Social media",
+            "Product content",
+            "Consulting"
+          ],
+          "timeline": [
+            {
+              "phase": "Advantages",
+              "duration": "2 weeks",
+              "description": "We extracted the strongest commercial arguments."
+            },
+            {
+              "phase": "Audience split",
+              "duration": "2 weeks",
+              "description": "We separated retail and workshop communication."
+            },
+            {
+              "phase": "Campaigns and content",
+              "duration": "ongoing",
+              "description": "We connect promotions, product brands, seasonality and education."
+            },
+            {
+              "phase": "Optimisation",
+              "duration": "monthly",
+              "description": "We monitor categories and messages generating purchase intent."
+            }
+          ],
+          "chartData": {
+            "label": "Monthly product enquiries",
+            "before": [
+              95,
+              101,
+              98,
+              106
+            ],
+            "after": [
+              128,
+              147,
+              163,
+              181,
+              196,
+              214
+            ],
+            "unit": "enquiries/mo"
+          },
+          "deliverables": [
+            "Facebook and product content",
+            "Catalogues, flyers and POS",
+            "Brandbook and company materials",
+            "Meta and Google Ads campaigns"
+          ],
+          "coverImage": "/assets/case-bigmot-cover.jpg"
+        },
+        {
+          "num": "09",
+          "slug": "extreme-tyres",
+          "title1": "Extreme",
+          "titleIt": "Tyres",
+          "tag": "Motorsport · E-commerce · Global",
+          "year": "2026",
+          "ph": "ph-stripe-3",
+          "brief": "A performance tyre brand for drift, rally, rallycross and track day use, selling online in Poland and abroad.",
+          "challenge": "Motorsport products require specific, use-case based communication. Generic e-commerce advertising is not enough.",
+          "solution": "Full scope: strategy, e-commerce, Meta Ads, Google Ads, social media, consulting and product content based on tyre application.",
+          "results": [
+            {
+              "k": "Categories",
+              "v": "Drift · Rally · Track"
+            },
+            {
+              "k": "Sales model",
+              "v": "E-commerce"
+            },
+            {
+              "k": "Market",
+              "v": "PL + export"
+            },
+            {
+              "k": "Scope",
+              "v": "Full scope"
+            }
+          ],
+          "palette": [
+            "#D71920",
+            "#111111",
+            "#F4F4F4",
+            "#757575"
+          ],
+          "images": [
+            "/assets/case-extreme-tyres-1.svg",
+            "/assets/case-extreme-tyres-2.svg",
+            "/assets/case-extreme-tyres-3.svg"
+          ],
+          "notes": [
+            "Communication by motorsport use case",
+            "Focus on product, category and buying intent",
+            "E-commerce, ads and social in one system"
+          ],
+          "duration": "Full scope",
+          "scope": [
+            "Strategy",
+            "E-commerce",
+            "Meta Ads",
+            "Google Ads",
+            "Social media",
+            "Consulting"
+          ],
+          "timeline": [
+            {
+              "phase": "Category analysis",
+              "duration": "1 week",
+              "description": "We mapped drift, rally, rallycross and track day audiences."
+            },
+            {
+              "phase": "Product content",
+              "duration": "3 weeks",
+              "description": "We structured sales language around use cases and parameters."
+            },
+            {
+              "phase": "Performance campaigns",
+              "duration": "ongoing",
+              "description": "Meta and Google campaigns target users with buying intent."
+            },
+            {
+              "phase": "Social and consulting",
+              "duration": "ongoing",
+              "description": "We adapt activity to motorsport seasonality."
+            }
+          ],
+          "chartData": {
+            "label": "Monthly product sessions",
+            "before": [
+              620,
+              680,
+              705,
+              660
+            ],
+            "after": [
+              840,
+              980,
+              1120,
+              1280,
+              1420,
+              1580
+            ],
+            "unit": "sessions/mo"
+          },
+          "deliverables": [
+            "Social media and performance creative",
+            "Motorsport photo-video",
+            "Product and e-commerce materials",
+            "Meta and Google Ads campaigns"
+          ],
+          "coverImage": "/assets/case-extreme-tyres-cover.jpg"
+        },
+        {
+          "num": "10",
+          "slug": "ddp-supply",
+          "title1": "DDP",
+          "titleIt": "Supply",
+          "tag": "Marine · LinkedIn · Trade fairs",
+          "year": "2026",
+          "ph": "ph-stripe-2",
+          "brief": "DDP Supply from Gdynia is a turnkey solution provider for yachting and marine, working across Service, Agency and Supply: procurement, materials, equipment, service, supply-chain consulting and project management.",
+          "challenge": "DDP operates in a specialist B2B segment where trust, technical credibility and trade-fair presence matter. Communication had to show marine expertise without flattening the offer into generic supply messaging.",
+          "solution": "We support DDP with trade-fair activity, LinkedIn communication, sales materials and B2B narrative. The work connects procurement, service, agency, supply and operational readiness into one clear communication system.",
+          "results": [
+            {
+              "k": "Scope",
+              "v": "LinkedIn + fairs"
+            },
+            {
+              "k": "Industry",
+              "v": "Marine B2B"
+            },
+            {
+              "k": "Experience",
+              "v": "15+ years"
+            },
+            {
+              "k": "Model",
+              "v": "Service · Agency · Supply"
+            }
+          ],
+          "palette": [
+            "#0B3558",
+            "#4CB3D4",
+            "#1a1a1a",
+            "#efe9dc"
+          ],
+          "images": [
+            "/assets/case-ddp-supply-1.svg",
+            "/assets/case-ddp-supply-2.svg",
+            "/assets/case-ddp-supply-3.svg"
+          ],
+          "notes": [
+            "LinkedIn communication for marine B2B decision makers",
+            "Trade-fair narrative and sales materials",
+            "Service, Agency and Supply offer structured into one message"
+          ],
+          "duration": "Ongoing cooperation",
+          "scope": [
+            "LinkedIn",
+            "Trade fairs",
+            "B2B materials",
+            "Communication strategy",
+            "Expert content",
+            "Consulting"
+          ],
+          "timeline": [
+            {
+              "phase": "B2B communication audit",
+              "duration": "1 week",
+              "description": "We translated Service, Agency and Supply into clear messages for owners, marine companies and procurement decision makers."
+            },
+            {
+              "phase": "LinkedIn and expert content",
+              "duration": "ongoing",
+              "description": "We build regular communication around experience, projects, procurement competence and team expertise."
+            },
+            {
+              "phase": "Trade-fair materials",
+              "duration": "before events",
+              "description": "We prepare narrative, visuals, sales copy and conversation points for industry events."
+            },
+            {
+              "phase": "Trade-fair support",
+              "duration": "cyclical",
+              "description": "We connect communication before, during and after events: announcements, coverage and follow-up."
+            },
+            {
+              "phase": "Consulting and optimisation",
+              "duration": "monthly",
+              "description": "We analyse audience response, contact quality and topics that strengthen DDP credibility."
+            }
+          ],
+          "chartData": {
+            "label": "Monthly B2B LinkedIn interactions",
+            "before": [
+              18,
+              21,
+              19,
+              24
+            ],
+            "after": [
+              36,
+              44,
+              52,
+              61,
+              70,
+              82
+            ],
+            "unit": "interactions/mo"
+          },
+          "deliverables": [
+            "LinkedIn and expert communication",
+            "Trade fair presence",
+            "B2B catalogues and materials",
+            "Brand guidelines and company materials"
+          ],
+          "coverImage": "/assets/case-ddp-supply-cover.png"
         }
       ]
     },
@@ -4565,6 +6459,186 @@ const COPY = {
               "p": "Real growth at most companies we've worked with didn't come from adding another channel. It came from **cutting three things** that didn't work and reinvesting those budgets into one thing that started to. Discipline is invisible — it's about what you don't do."
             }
           ]
+        },
+        {
+          "slug": "vibe-coding-co-to-jest-i-czy-warto",
+          "cat": "Technologia",
+          "date": "Sie 2026",
+          "isoDate": "2026-08-10",
+          "title1": "Vibe coding:",
+          "titleIt": "co to jest i gdzie kończy się magia.",
+          "image": "/assets/digital-ktbtask-dashboard.webp",
+          "description": "Vibe coding bez marketingowej mgły: czym jest, kiedy przyspiesza tworzenie aplikacji i dlaczego produkcyjny system nadal wymaga architektury, testów i odpowiedzialności.",
+          "keywords": [
+            "vibe coding",
+            "co to jest vibe coding",
+            "tworzenie aplikacji AI",
+            "programowanie z AI",
+            "aplikacja dla firmy",
+            "AI w programowaniu"
+          ],
+          "lede": "English version coming soon.",
+          "body": [
+            {
+              "p": "The full English version of this article is coming soon. Read the Polish edition or contact KTB Media to discuss the topic."
+            }
+          ],
+          "relatedCase": {
+            "href": "/realizacje/digital/ktbtask",
+            "label": "Zobacz KTBtask",
+            "description": "Pełny case aplikacji SaaS do zarządzania pracą agencji."
+          },
+          "seoTitle": "Vibe coding: co to jest i czy warto?"
+        },
+        {
+          "slug": "aplikacja-dla-firmy-ktorej-nie-wiedziales-ze-potrzebujesz",
+          "cat": "Aplikacje",
+          "date": "Sie 2026",
+          "isoDate": "2026-08-08",
+          "title1": "Aplikacja dla firmy,",
+          "titleIt": "której nie wiedziałeś, że potrzebujesz.",
+          "image": "/assets/digital-serwisplus-panel.webp",
+          "description": "Kiedy własna aplikacja dla firmy ma sens? Sygnały, przykłady procesów, koszt błędów oraz sposób przejścia od arkusza i wiadomości do prostego systemu.",
+          "keywords": [
+            "aplikacja dla firmy",
+            "dedykowana aplikacja webowa",
+            "automatyzacja procesów w firmie",
+            "system dla firmy",
+            "oprogramowanie na zamówienie",
+            "aplikacja SaaS"
+          ],
+          "lede": "English version coming soon.",
+          "body": [
+            {
+              "p": "The full English version of this article is coming soon. Read the Polish edition or contact KTB Media to discuss the topic."
+            }
+          ],
+          "relatedCase": {
+            "href": "/realizacje/digital/serwisplus",
+            "label": "Zobacz Serwis+",
+            "description": "System łączący proces warsztatu z aplikacją klienta."
+          },
+          "seoTitle": "Aplikacja dla firmy, której potrzebujesz"
+        },
+        {
+          "slug": "czy-ai-nas-zastapi-w-marketingu-i-pracy",
+          "cat": "AI",
+          "date": "Sie 2026",
+          "isoDate": "2026-08-06",
+          "title1": "Czy AI nas zastąpi?",
+          "titleIt": "Nie. Ale zmieni, za co płaci klient.",
+          "image": "/assets/showcase-1.jpg",
+          "description": "Czy AI zastąpi marketerów, projektantów i programistów? Konkretna analiza zadań, które automatyzuje, oraz kompetencji, których wartość rośnie.",
+          "keywords": [
+            "czy AI nas zastąpi",
+            "AI w marketingu",
+            "AI a praca",
+            "sztuczna inteligencja marketing",
+            "przyszłość pracy AI",
+            "automatyzacja marketingu"
+          ],
+          "lede": "English version coming soon.",
+          "body": [
+            {
+              "p": "The full English version of this article is coming soon. Read the Polish edition or contact KTB Media to discuss the topic."
+            }
+          ],
+          "relatedCase": {
+            "href": "/realizacje/digital/ktbmatic",
+            "label": "Zobacz KTBmatic",
+            "description": "Przykład automatyzacji lokalnego marketingu z kontrolą człowieka."
+          },
+          "seoTitle": "Czy AI nas zastąpi? AI w marketingu i pracy"
+        },
+        {
+          "slug": "ai-slop-co-to-jest-i-jak-go-unikac",
+          "cat": "AI",
+          "date": "Sie 2026",
+          "isoDate": "2026-08-04",
+          "title1": "AI slop:",
+          "titleIt": "dużo treści, prawie zero wartości.",
+          "image": "/assets/showcase-2.jpg",
+          "description": "Co to jest AI slop, jak rozpoznać masowo generowane treści i dlaczego ich publikowanie szkodzi marce, SEO oraz zaufaniu klientów.",
+          "keywords": [
+            "AI slop co to jest",
+            "treści generowane przez AI",
+            "AI content SEO",
+            "spam AI",
+            "jakość treści",
+            "marketing z AI"
+          ],
+          "lede": "English version coming soon.",
+          "body": [
+            {
+              "p": "The full English version of this article is coming soon. Read the Polish edition or contact KTB Media to discuss the topic."
+            }
+          ],
+          "relatedCase": {
+            "href": "/blog/marketing-dla-samego-marketingu",
+            "label": "Czytaj: marketing dla samego marketingu",
+            "description": "Jak odróżnić produkcję treści od postępu biznesowego."
+          },
+          "seoTitle": "AI slop: co to jest i jak go unikać"
+        },
+        {
+          "slug": "marketing-za-200-zl-z-allegro-czy-warto",
+          "cat": "Strategia",
+          "date": "Sie 2026",
+          "isoDate": "2026-08-02",
+          "title1": "Marketing za 200 zł z Allegro:",
+          "titleIt": "co naprawdę kupujesz.",
+          "image": "/assets/blog-marketing.jpg",
+          "description": "Marketing za 200 zł miesięcznie: co mieści się w tej cenie, czego nie da się uczciwie dowieźć i kiedy tani pakiet może kosztować firmę więcej niż profesjonalna obsługa.",
+          "keywords": [
+            "marketing za 200 zł",
+            "tani marketing Allegro",
+            "prowadzenie social media cena",
+            "tania agencja marketingowa",
+            "ile kosztuje marketing firmy",
+            "pakiet social media"
+          ],
+          "lede": "English version coming soon.",
+          "body": [
+            {
+              "p": "The full English version of this article is coming soon. Read the Polish edition or contact KTB Media to discuss the topic."
+            }
+          ],
+          "relatedCase": {
+            "href": "/o-nas",
+            "label": "Sprawdź, jak dobieramy współprace",
+            "description": "Zakres, odpowiedzialność i warunki, w których marketing ma szansę działać."
+          },
+          "seoTitle": "Marketing za 200 zł z Allegro: czy warto?"
+        },
+        {
+          "slug": "projekt-design-a-obrazek-grafika-roznice",
+          "cat": "Design",
+          "date": "Lip 2026",
+          "isoDate": "2026-07-30",
+          "title1": "Projekt i design",
+          "titleIt": "to nie po prostu ładny obrazek.",
+          "image": "/assets/case-tomex-brakes-2.jpg",
+          "description": "Czym różni się projekt, design i system identyfikacji od pojedynczej grafiki? Cele, decyzje, hierarchia, skalowalność i kryteria oceny dobrego projektu.",
+          "keywords": [
+            "projekt a grafika różnice",
+            "co to jest design",
+            "identyfikacja wizualna firmy",
+            "projekt graficzny marki",
+            "system identyfikacji wizualnej",
+            "branding a grafika"
+          ],
+          "lede": "English version coming soon.",
+          "body": [
+            {
+              "p": "The full English version of this article is coming soon. Read the Polish edition or contact KTB Media to discuss the topic."
+            }
+          ],
+          "relatedCase": {
+            "href": "/realizacje/tomex-brakes",
+            "label": "Zobacz system marki Tomex Brakes",
+            "description": "Brand i jego zastosowania zamiast pojedynczej grafiki."
+          },
+          "seoTitle": "Projekt, design a zwykła grafika: różnice"
         },
         {
           "slug": "ile-kosztuje-google-ads-dla-warsztatu-samochodowego-2026",
@@ -5443,8 +7517,165 @@ const COPY = {
           "W praktyce oznacza to oddzielne kampanie dla modeli, ofert specjalnych, aut dostępnych od ręki i samochodów używanych. Do tego dochodzi content pokazujący ludzi, proces wydania auta, serwis i realne historie klientów. Taki marketing pomaga sprzedawcom rozmawiać z osobami, które są lepiej przygotowane, a nie przypadkowo kliknęły reklamę."
         ]
       }
+    },
+    "trusted": {
+      "label": "# — Trusted by",
+      "title1": "Brands",
+      "titleIt": "we worked with.",
+      "lede": "Automotive, marine, local services, e-commerce and B2B brands supported through strategy, content, campaigns, trade fairs, LinkedIn, social media or production.",
+      "items": [
+        {
+          "name": "Remontowa Marine Design",
+          "url": "https://rmdc.pl/",
+          "domain": "rmdc.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=rmdc.pl&sz=128"
+        },
+        {
+          "name": "DDP Supply",
+          "url": "https://ddp.eu/",
+          "domain": "ddp.eu",
+          "logo": "https://www.google.com/s2/favicons?domain=ddp.eu&sz=128"
+        },
+        {
+          "name": "ProfiAuto Serwis",
+          "url": "https://profiauto.pl/",
+          "domain": "profiauto.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=profiauto.pl&sz=128"
+        },
+        {
+          "name": "Wiktorowicz Auto Serwis",
+          "url": "https://wiktorowicz-auto-serwis.pl/",
+          "domain": "wiktorowicz-auto-serwis.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=wiktorowicz-auto-serwis.pl&sz=128"
+        },
+        {
+          "name": "Motoart",
+          "url": "https://motoart.pl/",
+          "domain": "motoart.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=motoart.pl&sz=128"
+        },
+        {
+          "name": "Qarmax",
+          "url": "https://qarmax.pl/",
+          "domain": "qarmax.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=qarmax.pl&sz=128"
+        },
+        {
+          "name": "PulseGT",
+          "url": "https://pulsegt.eu/",
+          "domain": "pulsegt.eu",
+          "logo": "https://www.google.com/s2/favicons?domain=pulsegt.eu&sz=128"
+        },
+        {
+          "name": "PMO Oleje",
+          "url": "https://pmolubricants.com/",
+          "domain": "pmolubricants.com",
+          "logo": "https://www.google.com/s2/favicons?domain=pmolubricants.com&sz=128"
+        },
+        {
+          "name": "Dongfeng",
+          "url": "https://www.dongfeng-global.com/",
+          "domain": "dongfeng-global.com",
+          "logo": "https://www.google.com/s2/favicons?domain=dongfeng-global.com&sz=128"
+        },
+        {
+          "name": "Voya",
+          "url": "https://voya.pl/",
+          "domain": "voya.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=voya.pl&sz=128"
+        },
+        {
+          "name": "MHero",
+          "url": "https://mhero.pl/",
+          "domain": "mhero.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=mhero.pl&sz=128"
+        },
+        {
+          "name": "Grupa Janisz",
+          "url": "https://grupajanisz.netlify.app/",
+          "domain": "grupajanisz.netlify.app",
+          "logo": "https://www.google.com/s2/favicons?domain=grupajanisz.netlify.app&sz=128"
+        },
+        {
+          "name": "Tasiem",
+          "url": "https://tasiem.pl/",
+          "domain": "tasiem.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=tasiem.pl&sz=128"
+        },
+        {
+          "name": "Mapadama",
+          "url": "https://mapadama.pl/",
+          "domain": "mapadama.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=mapadama.pl&sz=128"
+        },
+        {
+          "name": "Abaks",
+          "url": "https://abaks.pl/",
+          "domain": "abaks.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=abaks.pl&sz=128"
+        },
+        {
+          "name": "Tomex",
+          "url": "https://tomexbrakes.com/",
+          "domain": "tomexbrakes.com",
+          "logo": "https://www.google.com/s2/favicons?domain=tomexbrakes.com&sz=128"
+        },
+        {
+          "name": "BIG MOT",
+          "url": "https://bigmot.pl/",
+          "domain": "bigmot.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=bigmot.pl&sz=128"
+        },
+        {
+          "name": "Extreme Tyres",
+          "url": "https://extreme-tyres.com/",
+          "domain": "extreme-tyres.com",
+          "logo": "https://www.google.com/s2/favicons?domain=extreme-tyres.com&sz=128"
+        },
+        {
+          "name": "Arbolatorium Adrian Kiedrowski",
+          "url": "https://arbolatorium.pl/",
+          "domain": "arbolatorium.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=arbolatorium.pl&sz=128"
+        },
+        {
+          "name": "Beenergy",
+          "url": "https://beenergy.pl/",
+          "domain": "beenergy.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=beenergy.pl&sz=128"
+        },
+        {
+          "name": "Petronas",
+          "url": "https://www.petronas.com/",
+          "domain": "petronas.com",
+          "logo": "https://www.google.com/s2/favicons?domain=petronas.com&sz=128"
+        },
+        {
+          "name": "Remontowa Shipbuilding",
+          "url": "https://remontowa-rsb.pl/",
+          "domain": "remontowa-rsb.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=remontowa-rsb.pl&sz=128"
+        },
+        {
+          "name": "Auto Centrum Elektronowa",
+          "url": "https://autocentrum-elektronowa.pl/",
+          "domain": "autocentrum-elektronowa.pl",
+          "logo": "https://www.google.com/s2/favicons?domain=autocentrum-elektronowa.pl&sz=128"
+        },
+        {
+          "name": "Bosch Service",
+          "url": "https://www.boschcarservice.com/",
+          "domain": "boschcarservice.com",
+          "logo": "https://www.google.com/s2/favicons?domain=boschcarservice.com&sz=128"
+        },
+        {
+          "name": "GT Serwis Barniewice",
+          "url": "https://gtserwis.com/",
+          "domain": "gtserwis.com",
+          "logo": "https://www.google.com/s2/favicons?domain=gtserwis.com&sz=128"
+        }
+      ]
     }
   }
 };
-
 window.COPY = COPY;

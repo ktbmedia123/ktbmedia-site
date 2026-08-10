@@ -391,6 +391,17 @@ collections:
                       - { label: Brief (skrót), name: brief, widget: text }
                       - { label: Wyzwanie, name: challenge, widget: text }
                       - { label: Rozwiązanie / podejście, name: solution, widget: text }
+                      - { label: Czas współpracy, name: duration, widget: string, required: false }
+                      - label: Zakres współpracy
+                        name: scope
+                        widget: list
+                        required: false
+                        field: { label: Usługa, name: service, widget: string }
+                      - label: Co powstało (materiały widoczne w case study)
+                        name: deliverables
+                        widget: list
+                        required: false
+                        field: { label: Materiał, name: deliverable, widget: string }
                       - label: Wyniki (liczby)
                         name: results
                         widget: list
@@ -813,6 +824,17 @@ collections:
                       - { label: Brief, name: brief, widget: text }
                       - { label: Challenge, name: challenge, widget: text }
                       - { label: Solution, name: solution, widget: text }
+                      - { label: Partnership duration, name: duration, widget: string, required: false }
+                      - label: Scope of work
+                        name: scope
+                        widget: list
+                        required: false
+                        field: { label: Service, name: service, widget: string }
+                      - label: What we made (shown in the case study)
+                        name: deliverables
+                        widget: list
+                        required: false
+                        field: { label: Deliverable, name: deliverable, widget: string }
                       - label: Results
                         name: results
                         widget: list

@@ -268,11 +268,107 @@ function SmartLink({
 
 // Nav: Usługi · Realizacje · Proces · O nas · Blog · Kontakt
 const NAV_TARGETS = ["#services", "/realizacje", "#process", "/o-nas", "/blog", "/kontakt"];
+const DIGITAL_CASES = [{
+  slug: 'ktbtask',
+  group: 'apps',
+  year: '2026',
+  images: ['/assets/digital-ktbtask-dashboard.webp', '/assets/digital-ktbtask-tabela.webp', '/assets/digital-ktbtask-kalendarz.webp', '/assets/digital-ktbtask-raporty.webp'],
+  pl: {
+    title: 'KTBtask',
+    subtitle: 'Twój system pracy. Twoje zasady.',
+    type: 'Aplikacja / SaaS',
+    brief: 'Personalizowana platforma do zarządzania zadaniami, klientami, publikacjami i rozliczeniem pracy, zaprojektowana pod realny workflow agencji.',
+    scope: ['Strategia produktu', 'UX/UI', 'Frontend', 'Backend', 'CRM', 'Raportowanie'],
+    problem: 'Zadania, terminy, dane klientów i rozliczenia żyły w kilku narzędziach. Zespół tracił kontekst, a przygotowanie raportów wymagało ręcznego łączenia danych.',
+    solution: 'Zbudowaliśmy jedno centrum operacyjne: od zadania i kalendarza publikacji, przez CRM, aż po raport czasu pracy i eksport danych.',
+    features: ['Dashboard i kolejki pracy', 'Tabela zadań z filtrami', 'Kalendarz publikacji', 'CRM klientów', 'Raporty CSV i PDF', 'Role, aktywność i powiadomienia']
+  },
+  en: {
+    title: 'KTBtask', subtitle: 'Your workflow. Your rules.', type: 'Application / SaaS', brief: 'A tailored platform for tasks, clients, publishing and work reporting, designed around a real agency workflow.',
+    scope: ['Product strategy', 'UX/UI', 'Frontend', 'Backend', 'CRM', 'Reporting'], problem: 'Tasks, deadlines, client data and settlements lived in separate tools, making context and reporting unnecessarily slow.', solution: 'We built one operational hub connecting tasks, publishing, CRM and work reports.', features: ['Work dashboard', 'Filtered task table', 'Publishing calendar', 'Client CRM', 'CSV and PDF reports', 'Roles and notifications']
+  }
+}, {
+  slug: 'mojeakcje', group: 'apps', year: '2026',
+  images: ['/assets/digital-mojeakcje-pulpit.webp', '/assets/digital-mojeakcje-portfel.webp', '/assets/digital-mojeakcje-research.webp', '/assets/digital-mojeakcje-screener.webp'],
+  pl: { title: 'MojeAkcje.pl', subtitle: 'Portfel i research w jednym miejscu.', type: 'Aplikacja / Fintech', brief: 'Aplikacja webowa łącząca portfel, dane rynkowe, research i analitykę dla GPW oraz rynku USA.', scope: ['Product design', 'UX/UI', 'Frontend', 'Integracje danych', 'Analityka', 'Mobile'], problem: 'Inwestor musiał przełączać się między rachunkami maklerskimi, arkuszami i serwisami z danymi, żeby zobaczyć pełny obraz portfela.', solution: 'Połączyliśmy wiele rachunków, importy brokerskie, wyniki portfela, research i screener spółek w jednym czytelnym środowisku.', features: ['Pulpit inwestora', 'Wiele portfeli i walut', 'Importy brokerskie', 'Research spółek', 'Screener', 'Widoki mobilne'] },
+  en: { title: 'MojeAkcje.pl', subtitle: 'Portfolio and research in one place.', type: 'Application / Fintech', brief: 'A web application combining portfolios, market data, research and analytics for Polish and US markets.', scope: ['Product design', 'UX/UI', 'Frontend', 'Data integrations', 'Analytics', 'Mobile'], problem: 'Investors had to switch between brokers, spreadsheets and data services to understand their portfolio.', solution: 'We connected accounts, broker imports, portfolio performance, research and screening in one clear product.', features: ['Investor dashboard', 'Multiple portfolios', 'Broker imports', 'Company research', 'Stock screener', 'Mobile views'] }
+}, {
+  slug: 'mojteam', group: 'apps', year: '2026',
+  images: ['/assets/digital-mt-pulpit.webp', '/assets/digital-mt-flota.webp', '/assets/digital-mt-urlopy.webp', '/assets/digital-mt-wiedza.webp'],
+  pl: { title: 'MójTeam', subtitle: 'Pracownik ma wszystko pod ręką.', type: 'Aplikacja / HR', brief: 'Pulpit pracownika łączący premie, urlopy, flotę, sprzęt, szkolenia i bazę wiedzy w jednej responsywnej aplikacji.', scope: ['Analiza procesów', 'UX/UI', 'Frontend', 'Backend', 'HR', 'Mobile'], problem: 'Sprawy pracownicze były rozproszone między arkuszami, wiadomościami i papierowymi wnioskami, przez co obsługa prostych spraw zajmowała zbyt dużo czasu.', solution: 'Powstał jeden samoobsługowy pulpit pracownika z jasnym statusem wniosków, premii, sprzętu, floty i obowiązkowych materiałów.', features: ['Pulpit pracownika', 'Premie na żywo', 'Wnioski urlopowe', 'Flota i sprzęt', 'Baza wiedzy', 'Szkolenia i wyzwania'] },
+  en: { title: 'MyTeam', subtitle: 'Everything an employee needs.', type: 'Application / HR', brief: 'An employee hub for bonuses, leave, fleet, equipment, training and knowledge.', scope: ['Process analysis', 'UX/UI', 'Frontend', 'Backend', 'HR', 'Mobile'], problem: 'Employee processes were scattered across spreadsheets, messages and paper forms.', solution: 'We created one self-service employee hub with clear status for every request and resource.', features: ['Employee dashboard', 'Live bonuses', 'Leave requests', 'Fleet and equipment', 'Knowledge base', 'Training'] }
+}, {
+  slug: 'serwisplus', group: 'apps', year: '2026',
+  images: ['/assets/digital-serwisplus-panel.webp', '/assets/digital-serwisplus-wycena.webp', '/assets/digital-serwisplus-zlecenia.webp', '/assets/digital-serwisplus-m2.webp'],
+  pl: { title: 'Serwis+', subtitle: 'Warsztat i klient w jednym procesie.', type: 'Aplikacja / Automotive', brief: 'System łączący panel operacyjny warsztatu z mobilną aplikacją klienta: wizyty, komunikacja i akceptacja wycen.', scope: ['Warsztaty procesowe', 'UX/UI', 'Frontend', 'Backend', 'Powiadomienia', 'Mobile'], problem: 'Telefoniczne ustalenia, papierowe zlecenia i brak bieżącego statusu naprawy generowały niepotrzebne telefony i opóźniały decyzje klienta.', solution: 'Połączyliśmy zlecenie warsztatu z prostą ścieżką klienta: powiadomienie, podgląd zakresu, akceptacja wyceny i historia napraw.', features: ['Panel warsztatu', 'Zlecenia serwisowe', 'Wycena i akceptacja', 'Status naprawy', 'Komunikacja z klientem', 'Aplikacja mobilna'] },
+  en: { title: 'Service+', subtitle: 'Workshop and customer in one process.', type: 'Application / Automotive', brief: 'A system connecting workshop operations with a mobile customer app for visits, communication and quote approval.', scope: ['Process workshops', 'UX/UI', 'Frontend', 'Backend', 'Notifications', 'Mobile'], problem: 'Phone calls, paper orders and no live repair status created friction and delayed decisions.', solution: 'We connected the workshop order with a simple customer approval and status path.', features: ['Workshop panel', 'Service orders', 'Quote approval', 'Repair status', 'Customer communication', 'Mobile app'] }
+}, {
+  slug: 'ktbmatic', group: 'apps', year: '2026',
+  images: ['/assets/digital-ktbmatic-plan.webp', '/assets/digital-ktbmatic-opinie.webp', '/assets/digital-ktbmatic-audyt.webp', '/assets/digital-ktbmatic-raport.webp'],
+  pl: { title: 'KTBmatic', subtitle: 'Lokalny marketing bez chaosu.', type: 'Aplikacja / Marketing', brief: 'Autorskie narzędzie porządkujące pracę z wizytówkami Google, opiniami klientów i lokalną widocznością wielu punktów.', scope: ['Strategia produktu', 'UX/UI', 'Frontend', 'Automatyzacje', 'Google Business Profile', 'Raportowanie'], problem: 'Obsługa wielu wizytówek, wpisów, opinii i audytów była ręczna, trudna do skalowania i pozbawiona jednego widoku postępu.', solution: 'Stworzyliśmy panel do planowania publikacji, obsługi opinii, audytów lokalnych i raportowania pracy dla wielu lokalizacji.', features: ['Plan publikacji', 'Obsługa opinii', 'Audyt wizytówki', 'Raport widoczności', 'Wiele lokalizacji', 'Automatyzacje'] },
+  en: { title: 'KTBmatic', subtitle: 'Local marketing without chaos.', type: 'Application / Marketing', brief: 'A proprietary tool for Google listings, customer reviews and local visibility across multiple locations.', scope: ['Product strategy', 'UX/UI', 'Frontend', 'Automation', 'Google Business Profile', 'Reporting'], problem: 'Managing listings, posts, reviews and audits manually did not scale.', solution: 'We built one panel for publishing, reviews, local audits and multi-location reporting.', features: ['Publishing plan', 'Review management', 'Listing audit', 'Visibility reporting', 'Multiple locations', 'Automation'] }
+}, {
+  slug: 'grupa-janisz-www', group: 'web', year: '2026',
+  images: ['/assets/digital-janisz-scroll.webp', '/assets/digital-janisz-bosch.webp', '/assets/digital-janisz-dongfeng.webp', '/assets/digital-janisz-cennik.webp'],
+  pl: { title: 'Grupa Janisz', subtitle: 'Jedna marka. Wiele ścieżek klienta.', type: 'Strona WWW / Automotive', brief: 'Cyfrowa platforma dla grupy serwisowo-sprzedażowej z Trójmiasta: mocna identyfikacja, wygodne konwersje i uporządkowane marki.', scope: ['Strategia treści', 'UX/UI', 'Frontend', 'CMS', 'SEO lokalne', 'Analityka'], problem: 'Wiele usług, lokalizacji i marek utrudniało użytkownikowi wybór właściwego serwisu i kontaktu.', solution: 'Zbudowaliśmy wspólny serwis, który porządkuje ofertę i prowadzi do zapytania, rezerwacji albo właściwej wizytówki Google.', features: ['Architektura wielu marek', 'Dedykowane podstrony usług', 'Cenniki i formularze', 'Widget kontaktowy', 'CMS', 'Mobile first i SEO'] },
+  en: { title: 'Grupa Janisz', subtitle: 'One brand. Many customer paths.', type: 'Website / Automotive', brief: 'A digital platform for a Tri-City service and sales group, organising brands and conversion paths.', scope: ['Content strategy', 'UX/UI', 'Frontend', 'CMS', 'Local SEO', 'Analytics'], problem: 'Multiple services, locations and brands made it hard to choose the right path.', solution: 'We built one service that directs users to the right enquiry, booking or Google listing.', features: ['Multi-brand architecture', 'Service pages', 'Pricing and forms', 'Contact widget', 'CMS', 'Mobile-first SEO'] }
+}, {
+  slug: 'gt-serwis-www', group: 'web', year: '2026',
+  images: ['/assets/digital-gt-home.webp', '/assets/digital-gt-cennik.webp', '/assets/digital-gt-galeria.webp', '/assets/digital-gt-artykul.webp'],
+  pl: { title: 'GT Serwis Barniewice', subtitle: 'Lokalny serwis, jasna droga do kontaktu.', type: 'Strona WWW / Automotive', brief: 'Responsywna strona warsztatu samochodowego: usługi, marki, cennik, galeria zaplecza, blog i formularz zgłoszeniowy.', scope: ['Strategia treści', 'UX/UI', 'Frontend', 'CMS', 'SEO lokalne', 'Analityka'], problem: 'Klient przed telefonem potrzebuje szybko sprawdzić zakres usług, cennik, lokalizację i wiarygodność zaplecza.', solution: 'Zaprojektowaliśmy szybką stronę prowadzącą z wyszukiwarki do konkretnej usługi i kontaktu, z pełnym widokiem warsztatu zamiast stockowych obietnic.', features: ['Strony usług i marek', 'Czytelny cennik', 'Galeria warsztatu', 'Blog ekspercki', 'Formularz kontaktowy', 'SEO lokalne'] },
+  en: { title: 'GT Serwis Barniewice', subtitle: 'A local workshop with a clear contact path.', type: 'Website / Automotive', brief: 'A responsive workshop website with services, brands, pricing, gallery, blog and enquiry form.', scope: ['Content strategy', 'UX/UI', 'Frontend', 'CMS', 'Local SEO', 'Analytics'], problem: 'Customers need services, pricing, location and proof before making a call.', solution: 'We designed a fast local-search path from a specific service to contact, using real workshop imagery.', features: ['Service and brand pages', 'Clear pricing', 'Workshop gallery', 'Expert blog', 'Contact form', 'Local SEO'] }
+}];
+function getDigitalCases(lang) {
+  return DIGITAL_CASES.map(item => ({
+    ...item,
+    ...(item[lang] || item.pl)
+  }));
+}
+function getDigitalCase(lang, slug) {
+  return getDigitalCases(lang).find(item => item.slug === slug);
+}
+const DIGITAL_SEO = {
+  ktbtask: {
+    title: 'KTBtask — dedykowana aplikacja SaaS dla agencji',
+    desc: 'KTBtask to dedykowana aplikacja SaaS do zarządzania zadaniami, klientami, publikacjami, czasem pracy i raportami. Zobacz projekt UX/UI i wdrożenie KTB Media.'
+  },
+  mojeakcje: {
+    title: 'MojeAkcje.pl — aplikacja fintech i analityka portfela',
+    desc: 'MojeAkcje.pl łączy portfel inwestycyjny, dane GPW i USA, importy brokerskie, research oraz screener. Zobacz projekt aplikacji webowej i mobilnego UX.'
+  },
+  mojteam: {
+    title: 'MójTeam — aplikacja HR i pulpit pracownika',
+    desc: 'MójTeam to aplikacja HR łącząca premie, urlopy, flotę, sprzęt, szkolenia i bazę wiedzy. Zobacz proces, UX/UI i responsywne wdrożenie systemu dla firmy.'
+  },
+  serwisplus: {
+    title: 'Serwis+ — aplikacja dla warsztatu i klienta',
+    desc: 'Serwis+ łączy panel warsztatu z aplikacją klienta: zlecenia, status naprawy, komunikację i akceptację wycen. Zobacz dedykowany system automotive KTB Media.'
+  },
+  ktbmatic: {
+    title: 'KTBmatic — narzędzie do Google Business Profile',
+    desc: 'KTBmatic porządkuje publikacje, opinie, audyty i raportowanie lokalnej widoczności wielu punktów. Zobacz autorskie narzędzie marketingowe KTB Media.'
+  },
+  'grupa-janisz-www': {
+    title: 'Grupa Janisz — strona WWW automotive z CMS',
+    desc: 'Strona WWW Grupy Janisz porządkuje wiele usług, lokalizacji i marek automotive. Zobacz strategię treści, UX/UI, CMS, formularze i lokalne SEO.'
+  },
+  'gt-serwis-www': {
+    title: 'GT Serwis — strona warsztatu i SEO lokalne',
+    desc: 'Responsywna strona WWW GT Serwis Barniewice: usługi, marki, cennik, galeria warsztatu, blog i formularz. Zobacz projekt UX/UI, CMS i lokalne SEO.'
+  }
+};
 function useSEO(lang, path) {
   useEffect(() => {
     const base = lang === 'pl' ? 'KTB Media — Agencja marketingowa Gdańsk, Pruszcz Gdański, Tczew | Marketing dla motoryzacji' : 'KTB Media — Marketing agency Gdańsk | Automotive marketing specialists';
     let meta;
-    if (path.startsWith('/realizacje/')) {
+    if (path.startsWith('/realizacje/digital/')) {
+      const slug = path.slice('/realizacje/digital/'.length).replace(/\/$/, '');
+      const item = getDigitalCase(lang, slug);
+      if (item) meta = {
+        title: `${DIGITAL_SEO[slug] ? DIGITAL_SEO[slug].title : item.title} · KTB Media`,
+        desc: DIGITAL_SEO[slug] ? DIGITAL_SEO[slug].desc : item.brief
+      };
+    } else if (path.startsWith('/realizacje/')) {
       const slug = path.slice('/realizacje/'.length).replace(/\/$/, '');
       const item = (COPY[lang].portfolio.items || []).find(x => x.slug === slug);
       if (item) meta = {
@@ -283,7 +379,7 @@ function useSEO(lang, path) {
       const slug = path.slice('/blog/'.length).replace(/\/$/, '');
       const item = (COPY[lang].blog.items || []).find(x => x.slug === slug);
       if (item) meta = {
-        title: `${item.title1} ${item.titleIt} · KTB Media`,
+        title: `${item.seoTitle || `${item.title1} ${item.titleIt}`} · KTB Media`,
         desc: item.lede || ''
       };
     } else if (getLandingConfig(lang, path)) {
@@ -294,8 +390,8 @@ function useSEO(lang, path) {
       };
     } else if (path === '/realizacje') {
       meta = {
-        title: (lang === 'pl' ? 'Realizacje — case studies marketingu motoryzacji i marek lokalnych' : 'Selected work — automotive and local brand case studies') + ' · KTB Media',
-        desc: lang === 'pl' ? 'Wybrane realizacje KTB Media — warsztaty samochodowe, serwisy, marki automotive, firmy z Gdańska i Trójmiasta.' : 'KTB Media case studies — automotive workshops, service stations, brands from Gdańsk and Tri-City.'
+        title: (lang === 'pl' ? 'Realizacje — marketing, strony WWW i aplikacje' : 'Selected work — marketing, websites and applications') + ' · KTB Media',
+        desc: lang === 'pl' ? 'Realizacje KTB Media: rozwój marek, kampanie, strony WWW, systemy i aplikacje dla automotive, marine oraz firm technicznych.' : 'KTB Media work: brand growth, campaigns, websites, systems and applications for automotive, marine and technical businesses.'
       };
     } else if (path === '/blog') {
       meta = {
@@ -1299,13 +1395,23 @@ function Portfolio({
     className: "it"
   }, p.titleIt))), /*#__PURE__*/React.createElement("p", {
     className: "serif-italic section-lede reveal"
-  }, p.lede)), /*#__PURE__*/React.createElement("div", {
+  }, p.lede)), hideHead && /*#__PURE__*/React.createElement("header", {
+    className: "portfolio-stream-head reveal"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "sec-label"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "dot"
+  }), " ", lang === 'pl' ? 'Case studies' : 'Case studies'), /*#__PURE__*/React.createElement("h2", {
+    className: "display"
+  }, lang === 'pl' ? 'Marketing i ' : 'Marketing and ', /*#__PURE__*/React.createElement("span", {
+    className: "it"
+  }, lang === 'pl' ? 'rozwój marek.' : 'brand growth.')), /*#__PURE__*/React.createElement("p", null, lang === 'pl' ? 'Strategia, kampanie, social media, branding i produkcja pokazane przez problem, zakres pracy i konkretny efekt.' : 'Strategy, campaigns, social media, branding and production shown through the problem, scope and outcome.')), /*#__PURE__*/React.createElement("div", {
     className: "sketchbook-grid"
   }, p.items.map((it, i) => {
     const images = it.images || [];
-    const primaryImage = images[0];
-    const scope = (it.scope || []).slice(0, 3);
-    const results = (it.results || []).filter(r => r && r.v && r.k).slice(0, 2);
+    const primaryImage = it.coverImage || images[1] || images[0];
+    const scope = (it.scope || []).slice(0, 4);
+    const results = (it.results || []).filter(r => r && r.v && r.k).slice(0, 1);
     const accent = (it.palette || [])[0] || '#E8A838';
     const challenge = shorten(it.challenge);
     const solution = shorten(it.solution);
@@ -1389,6 +1495,75 @@ function Portfolio({
       "aria-hidden": "true"
     }, "\u2197"));
   }))));
+}
+function DigitalPortfolioSections({
+  lang
+}) {
+  const items = getDigitalCases(lang);
+  const groups = [{
+    id: 'web',
+    num: '02',
+    title: lang === 'pl' ? 'Strony WWW i wdrożenia' : 'Websites and implementations',
+    lede: lang === 'pl' ? 'Serwisy, które porządkują złożoną ofertę, prowadzą użytkownika do działania i dają zespołowi wygodną edycję treści.' : 'Websites that organise complex offers, guide users to action and give teams comfortable content management.'
+  }, {
+    id: 'apps',
+    num: '03',
+    title: lang === 'pl' ? 'Aplikacje i narzędzia cyfrowe' : 'Applications and digital tools',
+    lede: lang === 'pl' ? 'Produkty szyte pod realny proces firmy: od warsztatów automotive i HR po analitykę inwestycyjną i lokalny marketing.' : 'Products designed around real business processes, from automotive and HR to investment analytics and local marketing.'
+  }];
+  return /*#__PURE__*/React.createElement(React.Fragment, null, groups.map(group => {
+    const groupItems = items.filter(item => item.group === group.id);
+    return /*#__PURE__*/React.createElement("section", {
+      className: `section digital-portfolio digital-portfolio-${group.id}`,
+      id: `realizacje-${group.id}`,
+      key: group.id
+    }, /*#__PURE__*/React.createElement("div", {
+      className: "container"
+    }, /*#__PURE__*/React.createElement("header", {
+      className: "digital-section-head reveal"
+    }, /*#__PURE__*/React.createElement("span", {
+      className: "digital-section-num mono"
+    }, group.num), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+      className: "sec-label"
+    }, /*#__PURE__*/React.createElement("span", {
+      className: "dot"
+    }), " ", lang === 'pl' ? 'Realizacje cyfrowe' : 'Digital work'), /*#__PURE__*/React.createElement("h2", {
+      className: "display"
+    }, group.title), /*#__PURE__*/React.createElement("p", null, group.lede))), /*#__PURE__*/React.createElement("div", {
+      className: "digital-case-grid"
+    }, groupItems.map((item, index) => /*#__PURE__*/React.createElement(SmartLink, {
+      to: `/realizacje/digital/${item.slug}`,
+      className: "digital-case-card reveal",
+      key: item.slug
+    }, /*#__PURE__*/React.createElement("figure", {
+      className: "digital-case-media"
+    }, /*#__PURE__*/React.createElement("img", {
+      src: item.images[0],
+      alt: `${item.title} - ${item.type}, ekran realizacji KTB Media`,
+      loading: "lazy",
+      decoding: "async"
+    }), /*#__PURE__*/React.createElement("span", {
+      className: "digital-case-index mono"
+    }, String(index + 1).padStart(2, '0'))), /*#__PURE__*/React.createElement("div", {
+      className: "digital-case-copy"
+    }, /*#__PURE__*/React.createElement("div", {
+      className: "digital-case-type mono"
+    }, item.type), /*#__PURE__*/React.createElement("h3", {
+      className: "display"
+    }, item.title), /*#__PURE__*/React.createElement("p", {
+      className: "digital-case-subtitle serif-italic"
+    }, item.subtitle), /*#__PURE__*/React.createElement("p", {
+      className: "digital-case-brief"
+    }, item.brief), /*#__PURE__*/React.createElement("div", {
+      className: "digital-case-tags"
+    }, item.scope.slice(0, 4).map(tag => /*#__PURE__*/React.createElement("span", {
+      key: tag
+    }, tag))), /*#__PURE__*/React.createElement("span", {
+      className: "digital-case-link mono"
+    }, lang === 'pl' ? 'Zobacz projekt' : 'View project', " ", /*#__PURE__*/React.createElement(ArrowIcon, {
+      size: 12
+    }))))))));
+  }));
 }
 function CaseChart({
   data,
@@ -1674,6 +1849,7 @@ function CasePage({
     duration: 'Czas trwania',
     timeline: 'Przebieg projektu',
     notes: 'Notatki z procesu',
+    deliverables: 'Co powstało',
     palette: 'Paleta',
     nextCase: 'Następny projekt'
   } : {
@@ -1685,12 +1861,15 @@ function CasePage({
     duration: 'Duration',
     timeline: 'Project timeline',
     notes: 'Process notes',
+    deliverables: 'What we made',
     palette: 'Palette',
     nextCase: 'Next project'
   };
   const idx = p.items.findIndex(x => x.slug === slug);
   const next = p.items[(idx + 1) % p.items.length];
-  const images = item.images || [];
+  const sourceImages = item.images || [];
+  const coverImage = item.coverImage || sourceImages[1] || sourceImages[0];
+  const images = coverImage ? [coverImage].concat(sourceImages.filter(src => src !== coverImage)) : sourceImages;
   return /*#__PURE__*/React.createElement("article", {
     className: "case-page"
   }, /*#__PURE__*/React.createElement("div", {
@@ -1740,6 +1919,8 @@ function CasePage({
   }, /*#__PURE__*/React.createElement("img", {
     src: src,
     alt: `${item.title1} ${j + 1}`,
+    loading: j === 0 ? "eager" : "lazy",
+    decoding: "async",
     onError: e => {
       e.target.style.display = 'none';
     }
@@ -1757,7 +1938,17 @@ function CasePage({
   }, (item.scope || []).map((tag, j) => /*#__PURE__*/React.createElement("span", {
     className: "case-scope-tag mono",
     key: j
-  }, tag)))), /*#__PURE__*/React.createElement("div", {
+  }, tag)))), item.deliverables && item.deliverables.length > 0 && /*#__PURE__*/React.createElement("section", {
+    className: "case-deliverables reveal"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "case-block-label mono"
+  }, t.deliverables), /*#__PURE__*/React.createElement("ul", {
+    className: "case-deliverables-list"
+  }, item.deliverables.map((deliverable, j) => /*#__PURE__*/React.createElement("li", {
+    key: j
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "case-deliverables-num mono"
+  }, String(j + 1).padStart(2, '0')), /*#__PURE__*/React.createElement("span", null, deliverable))))), /*#__PURE__*/React.createElement("div", {
     className: "case-grid"
   }, /*#__PURE__*/React.createElement("section", {
     className: "case-block reveal"
@@ -1822,6 +2013,120 @@ function CasePage({
   }, next.titleIt), " ", /*#__PURE__*/React.createElement(ArrowIcon, {
     size: 28
   }))));
+}
+function DigitalCasePage({
+  lang,
+  slug
+}) {
+  const items = getDigitalCases(lang);
+  const item = items.find(entry => entry.slug === slug);
+  if (!item) return /*#__PURE__*/React.createElement(NotFoundPage, {
+    lang: lang
+  });
+  const index = items.findIndex(entry => entry.slug === slug);
+  const next = items[(index + 1) % items.length];
+  const labels = lang === 'pl' ? {
+    back: 'Wszystkie realizacje',
+    scope: 'Zakres projektu',
+    problem: 'Punkt wyjścia',
+    solution: 'Co zbudowaliśmy',
+    features: 'Najważniejsze elementy',
+    gallery: 'Projekt w praktyce',
+    next: 'Następny projekt'
+  } : {
+    back: 'All work',
+    scope: 'Project scope',
+    problem: 'Starting point',
+    solution: 'What we built',
+    features: 'Core elements',
+    gallery: 'The project in practice',
+    next: 'Next project'
+  };
+  return /*#__PURE__*/React.createElement("article", {
+    className: "digital-case-page"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement(SmartLink, {
+    to: "/realizacje",
+    className: "case-back mono"
+  }, /*#__PURE__*/React.createElement(ArrowBackIcon, {
+    size: 14
+  }), " ", labels.back), /*#__PURE__*/React.createElement("header", {
+    className: "digital-case-header"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "case-meta mono"
+  }, /*#__PURE__*/React.createElement("span", null, item.type), /*#__PURE__*/React.createElement("span", {
+    className: "dot-sep"
+  }, "\xB7"), /*#__PURE__*/React.createElement("span", null, item.year)), /*#__PURE__*/React.createElement("h1", {
+    className: "display"
+  }, item.title), /*#__PURE__*/React.createElement("p", {
+    className: "digital-case-lead serif-italic"
+  }, item.subtitle), /*#__PURE__*/React.createElement("p", {
+    className: "digital-case-intro"
+  }, item.brief)), /*#__PURE__*/React.createElement("figure", {
+    className: "digital-case-hero reveal"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: item.images[0],
+    alt: `${item.title} - główny widok ${item.type}`,
+    loading: "eager",
+    decoding: "async"
+  })), /*#__PURE__*/React.createElement("section", {
+    className: "digital-case-scope reveal",
+    "aria-label": labels.scope
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "case-block-label mono"
+  }, labels.scope), /*#__PURE__*/React.createElement("div", null, item.scope.map(tag => /*#__PURE__*/React.createElement("span", {
+    key: tag
+  }, tag)))), /*#__PURE__*/React.createElement("div", {
+    className: "digital-case-story"
+  }, /*#__PURE__*/React.createElement("section", {
+    className: "reveal"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "case-block-label mono"
+  }, labels.problem), /*#__PURE__*/React.createElement("p", null, item.problem)), /*#__PURE__*/React.createElement("section", {
+    className: "reveal"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "case-block-label mono"
+  }, labels.solution), /*#__PURE__*/React.createElement("p", null, item.solution))), /*#__PURE__*/React.createElement("section", {
+    className: "digital-case-features reveal"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "case-block-label mono"
+  }, labels.features), /*#__PURE__*/React.createElement("ul", null, item.features.map((feature, featureIndex) => /*#__PURE__*/React.createElement("li", {
+    key: feature
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "mono"
+  }, String(featureIndex + 1).padStart(2, '0')), /*#__PURE__*/React.createElement("strong", null, feature))))), /*#__PURE__*/React.createElement("section", {
+    className: "digital-case-gallery"
+  }, /*#__PURE__*/React.createElement("header", {
+    className: "digital-gallery-head reveal"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "case-block-label mono"
+  }, labels.gallery), /*#__PURE__*/React.createElement("h2", {
+    className: "display"
+  }, lang === 'pl' ? 'Pełne ekrany, ' : 'Full screens, ', /*#__PURE__*/React.createElement("span", {
+    className: "it"
+  }, lang === 'pl' ? 'bez przypadkowych wycinków.' : 'without accidental crops.'))), /*#__PURE__*/React.createElement("div", {
+    className: "digital-gallery-grid"
+  }, item.images.slice(1).map((image, imageIndex) => /*#__PURE__*/React.createElement("figure", {
+    className: "reveal",
+    key: image
+  }, /*#__PURE__*/React.createElement("img", {
+    src: image,
+    alt: `${item.title} - widok projektu ${imageIndex + 2}`,
+    loading: "lazy",
+    decoding: "async"
+  }), /*#__PURE__*/React.createElement("figcaption", {
+    className: "mono"
+  }, String(imageIndex + 2).padStart(2, '0'), " / ", String(item.images.length).padStart(2, '0'))))), /*#__PURE__*/React.createElement(SmartLink, {
+    to: `/realizacje/digital/${next.slug}`,
+    className: "case-next reveal"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "case-next-label mono"
+  }, labels.next), /*#__PURE__*/React.createElement("div", {
+    className: "case-next-title"
+  }, next.title, " ", /*#__PURE__*/React.createElement(ArrowIcon, {
+    size: 28
+  }))))));
 }
 function FounderCard({
   m
@@ -2062,7 +2367,18 @@ function BlogArticle({
       }), /*#__PURE__*/React.createElement("figcaption", null, inlineImageAlt, " \u2014 ", item.cat || '')));
     }
     return out;
-  })), /*#__PURE__*/React.createElement(SmartLink, {
+  })), item.relatedCase && /*#__PURE__*/React.createElement("aside", {
+    className: "blog-related-case reveal"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "case-block-label mono"
+  }, lang === 'pl' ? 'Powiązana realizacja' : 'Related work'), /*#__PURE__*/React.createElement("h2", {
+    className: "display"
+  }, item.relatedCase.label), /*#__PURE__*/React.createElement("p", null, item.relatedCase.description), /*#__PURE__*/React.createElement(SmartLink, {
+    to: item.relatedCase.href,
+    className: "btn"
+  }, lang === 'pl' ? 'Zobacz więcej' : 'View more', " ", /*#__PURE__*/React.createElement(ArrowIcon, {
+    size: 12
+  }))), /*#__PURE__*/React.createElement(SmartLink, {
     to: `/blog/${next.slug}`,
     className: "case-next reveal"
   }, /*#__PURE__*/React.createElement("div", {
@@ -2725,7 +3041,13 @@ function App() {
   const t = COPY[lang];
   const showMiniCta = path !== '/kontakt';
   let content;
-  if (path.startsWith('/realizacje/')) {
+  if (path.startsWith('/realizacje/digital/')) {
+    const slug = path.slice('/realizacje/digital/'.length).replace(/\/$/, '');
+    content = /*#__PURE__*/React.createElement(DigitalCasePage, {
+      lang: lang,
+      slug: slug
+    });
+  } else if (path.startsWith('/realizacje/')) {
     const slug = path.slice('/realizacje/'.length).replace(/\/$/, '');
     content = /*#__PURE__*/React.createElement(CasePage, {
       lang: lang,
@@ -2740,6 +3062,8 @@ function App() {
     }), /*#__PURE__*/React.createElement(Portfolio, {
       lang: lang,
       hideHead: true
+    }), /*#__PURE__*/React.createElement(DigitalPortfolioSections, {
+      lang: lang
     }));
   } else if (path.startsWith('/blog/')) {
     const slug = path.slice('/blog/'.length).replace(/\/$/, '');

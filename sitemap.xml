@@ -228,4 +228,56 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://ktbmedia.eu/realizacje/digital/ktbtask/</loc>
+    <lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ktbmedia.eu/realizacje/digital/mojeakcje/</loc>
+    <lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ktbmedia.eu/realizacje/digital/mojteam/</loc>
+    <lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ktbmedia.eu/realizacje/digital/serwisplus/</loc>
+    <lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ktbmedia.eu/realizacje/digital/ktbmatic/</loc>
+    <lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ktbmedia.eu/realizacje/digital/grupa-janisz-www/</loc>
+    <lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ktbmedia.eu/realizacje/digital/gt-serwis-www/</loc>
+    <lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ktbmedia.eu/blog/vibe-coding-co-to-jest-i-czy-warto/</loc>
+    <lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ktbmedia.eu/blog/aplikacja-dla-firmy-ktorej-nie-wiedziales-ze-potrzebujesz/</loc>
+    <lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ktbmedia.eu/blog/czy-ai-nas-zastapi-w-marketingu-i-pracy/</loc>
+    <lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ktbmedia.eu/blog/ai-slop-co-to-jest-i-jak-go-unikac/</loc>
+    <lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ktbmedia.eu/blog/marketing-za-200-zl-z-allegro-czy-warto/</loc>
+    <lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ktbmedia.eu/blog/projekt-design-a-obrazek-grafika-roznice/</loc>
+    <lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
 </urlset>
