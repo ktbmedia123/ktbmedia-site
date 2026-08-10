@@ -19,7 +19,10 @@
 - `CaseChart` w `app.js` oraz nowe style w `styles.css` - wykres before/after, timeline i zakres projektu na stronach realizacji.
 - Zaktualizowane czasy współprac: AutoCentrum Elektronowa i Remontowa Marine Design jako ciągła współpraca, PulseGT jako 1 rok.
 - Dodane nowe realizacje: Grupa Janisz, GT Serwis Barniewice, BIG MOT, Extreme Tyres i DDP Supply wraz ze statycznymi stronami SEO, wpisami w portfolio i sitemapą.
-- Dodana sekcja „Zaufali nam” na stronie głównej: logo wall 25 marek z edycją w CMS i fallbackiem tekstowym, jeśli zewnętrzny favicon/logo nie załaduje się.
+- Usunięta sekcja „Marki, które z nami pracowały” ze strony głównej, danych i CMS.
+- `/realizacje/` przebudowane na minimalistyczny katalog z trzema zakładkami: „Obsługa marketingowa 360”, „Aplikacje” i „Strony WWW”.
+- Karty realizacji mają mniejsze, niekadrowane podglądy bez agresywnego powiększania.
+- Do zakładki „Strony WWW” dodano: Sergiej Auto, Serwis Dworaczek, Dejcomp, Auto Centrum Łódź i Nagare Studio wraz z lokalnymi screenshotami i linkami do wdrożeń.
 - `landing-configs.js` oraz 6 statycznych landing pages SEO:
   - `agencja-marketingowa-gdansk/index.html`
   - `agencja-marketingowa-pruszcz-gdanski/index.html`
@@ -63,7 +66,7 @@
 - `/realizacje/bigmot/`
 - `/realizacje/extreme-tyres/`
 - `/realizacje/ddp-supply/`
-- `/` — sekcja „Zaufali nam” między prezentacją a procesem.
+- `/realizacje/` — nowy katalog realizacji z filtrowaniem według typu projektu.
 - Dowolny nieistniejący adres, np. `/nie-ma-takiej-strony/`, dla custom 404.
 
 ## Rzeczy ręczne po deployu

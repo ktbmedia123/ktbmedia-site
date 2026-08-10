@@ -317,6 +317,31 @@ const DIGITAL_CASES = [{
   images: ['/assets/digital-gt-home.webp', '/assets/digital-gt-cennik.webp', '/assets/digital-gt-galeria.webp', '/assets/digital-gt-artykul.webp'],
   pl: { title: 'GT Serwis Barniewice', subtitle: 'Lokalny serwis, jasna droga do kontaktu.', type: 'Strona WWW / Automotive', brief: 'Responsywna strona warsztatu samochodowego: usługi, marki, cennik, galeria zaplecza, blog i formularz zgłoszeniowy.', scope: ['Strategia treści', 'UX/UI', 'Frontend', 'CMS', 'SEO lokalne', 'Analityka'], problem: 'Klient przed telefonem potrzebuje szybko sprawdzić zakres usług, cennik, lokalizację i wiarygodność zaplecza.', solution: 'Zaprojektowaliśmy szybką stronę prowadzącą z wyszukiwarki do konkretnej usługi i kontaktu, z pełnym widokiem warsztatu zamiast stockowych obietnic.', features: ['Strony usług i marek', 'Czytelny cennik', 'Galeria warsztatu', 'Blog ekspercki', 'Formularz kontaktowy', 'SEO lokalne'] },
   en: { title: 'GT Serwis Barniewice', subtitle: 'A local workshop with a clear contact path.', type: 'Website / Automotive', brief: 'A responsive workshop website with services, brands, pricing, gallery, blog and enquiry form.', scope: ['Content strategy', 'UX/UI', 'Frontend', 'CMS', 'Local SEO', 'Analytics'], problem: 'Customers need services, pricing, location and proof before making a call.', solution: 'We designed a fast local-search path from a specific service to contact, using real workshop imagery.', features: ['Service and brand pages', 'Clear pricing', 'Workshop gallery', 'Expert blog', 'Contact form', 'Local SEO'] }
+}, {
+  slug: 'sergiej-auto-www', group: 'web', externalUrl: 'https://sergiejauto.pl/',
+  images: ['/assets/web-sergiej-auto.jpg'],
+  pl: { title: 'Sergiej Auto Serwis', subtitle: 'Serwis samochodowy i pomoc drogowa.', type: 'Strona WWW / Automotive', brief: 'Wyrazisty serwis internetowy porządkujący szeroką ofertę warsztatu, geometrię 3D, pomoc drogową, cennik i szybkie umawianie wizyt.', scope: ['Architektura treści', 'UX/UI', 'RWD', 'Oferta usług'], problem: '', solution: '', features: [] },
+  en: { title: 'Sergiej Auto Service', subtitle: 'Workshop and roadside assistance.', type: 'Website / Automotive', brief: 'A distinctive website organising workshop services, 3D alignment, roadside assistance, pricing and booking.', scope: ['Content architecture', 'UX/UI', 'Responsive design', 'Service offer'], problem: '', solution: '', features: [] }
+}, {
+  slug: 'serwis-dworaczek-www', group: 'web', externalUrl: 'https://serwisdworaczek.pl/',
+  images: ['/assets/web-serwis-dworaczek.jpg'],
+  pl: { title: 'Auto Serwis Dworaczek', subtitle: 'Mechanika, diagnostyka i regeneracja silników.', type: 'Strona WWW / Automotive', brief: 'Strona warsztatu z mocnym podziałem usług, czytelnym kontaktem i bezpośrednim prowadzeniem klienta od problemu technicznego do umówienia wizyty.', scope: ['UX/UI', 'RWD', 'Struktura usług', 'Kontakt'], problem: '', solution: '', features: [] },
+  en: { title: 'Dworaczek Auto Service', subtitle: 'Mechanics, diagnostics and engine rebuilding.', type: 'Website / Automotive', brief: 'A workshop website with clear service areas and a direct path from a technical problem to booking.', scope: ['UX/UI', 'Responsive design', 'Service structure', 'Contact'], problem: '', solution: '', features: [] }
+}, {
+  slug: 'dejcomp-www', group: 'web', externalUrl: 'https://dejcomp.send.pl/',
+  images: ['/assets/web-dejcomp.jpg'],
+  pl: { title: 'Dejcomp Laminaty', subtitle: 'Techniczna oferta B2B w uporządkowanej formie.', type: 'Strona WWW / Przemysł', brief: 'Serwis firmowy producenta laminatów prezentujący ofertę, technologię, certyfikaty i kompetencje w spokojnym, technicznym układzie.', scope: ['B2B', 'Architektura informacji', 'UX/UI', 'RWD'], problem: '', solution: '', features: [] },
+  en: { title: 'Dejcomp Laminates', subtitle: 'A technical B2B offer in a clear structure.', type: 'Website / Industry', brief: 'A corporate website presenting laminate products, technology, certificates and production expertise.', scope: ['B2B', 'Information architecture', 'UX/UI', 'Responsive design'], problem: '', solution: '', features: [] }
+}, {
+  slug: 'autocentrum-lodz-www', group: 'web', externalUrl: 'https://autocentrumlodz.pl/',
+  images: ['/assets/web-autocentrum-lodz.jpg'],
+  pl: { title: 'AutoCentrum Elektronowa 18', subtitle: 'Serwis samochodowy w Łodzi.', type: 'Strona WWW / Automotive', brief: 'Konwersyjna strona serwisu samochodowego łącząca mechanikę, blacharstwo, lakiernictwo i Bosch Service z prostą ścieżką kontaktu.', scope: ['Strategia treści', 'UX/UI', 'RWD', 'Konwersja'], problem: '', solution: '', features: [] },
+  en: { title: 'AutoCentrum Elektronowa 18', subtitle: 'Car service in Lodz.', type: 'Website / Automotive', brief: 'A conversion-focused workshop site combining mechanics, bodywork, paint and Bosch Service with a clear contact path.', scope: ['Content strategy', 'UX/UI', 'Responsive design', 'Conversion'], problem: '', solution: '', features: [] }
+}, {
+  slug: 'nagare-studio-www', group: 'web', externalUrl: 'https://nagarestudio.netlify.app/',
+  images: ['/assets/web-nagare-studio.jpg'],
+  pl: { title: 'Nagare Studio', subtitle: 'Minimalizm, ruch i precyzyjne portfolio.', type: 'Strona WWW / Studio kreatywne', brief: 'Minimalistyczny serwis studia z wyrazistym systemem typografii, subtelnym motion designem i kompaktową prezentacją usług oraz projektów.', scope: ['Kierunek kreatywny', 'UX/UI', 'Frontend', 'Motion'], problem: '', solution: '', features: [] },
+  en: { title: 'Nagare Studio', subtitle: 'Minimalism, motion and a precise portfolio.', type: 'Website / Creative studio', brief: 'A minimalist studio website with a strong typographic system, subtle motion and a compact presentation of services and projects.', scope: ['Creative direction', 'UX/UI', 'Frontend', 'Motion'], problem: '', solution: '', features: [] }
 }];
 function getDigitalCases(lang) {
   return DIGITAL_CASES.map(item => ({
@@ -1314,58 +1339,6 @@ function Process({
     className: "d"
   }, st.d)))))));
 }
-function TrustedLogos({
-  lang
-}) {
-  if (!sectionEnabled(lang, 'trusted')) return null;
-  const t = COPY[lang].trusted;
-  if (!t || !Array.isArray(t.items) || t.items.length === 0) return null;
-  return /*#__PURE__*/React.createElement("section", {
-    className: "section trusted-section",
-    "aria-labelledby": "trusted-title"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "section-head reveal"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "sec-label"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "dot"
-  }), " ", t.label), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", {
-    id: "trusted-title",
-    className: "display section-title"
-  }, t.title1, " ", /*#__PURE__*/React.createElement("span", {
-    className: "it"
-  }, t.titleIt)), t.lede && /*#__PURE__*/React.createElement("p", {
-    className: "section-lede trusted-lede"
-  }, t.lede))), /*#__PURE__*/React.createElement("div", {
-    className: "trusted-grid reveal"
-  }, t.items.map((client, i) => /*#__PURE__*/React.createElement("a", {
-    href: client.url || '#',
-    className: "trusted-logo-card",
-    key: `${client.name}-${i}`,
-    target: "_blank",
-    rel: "noopener noreferrer",
-    "aria-label": client.name
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "trusted-logo-img-wrap"
-  }, client.logo && /*#__PURE__*/React.createElement("img", {
-    src: client.logo,
-    alt: `${client.name} logo`,
-    loading: "lazy",
-    decoding: "async",
-    onError: e => {
-      e.currentTarget.style.display = 'none';
-      const fallback = e.currentTarget.parentNode && e.currentTarget.parentNode.querySelector('.trusted-logo-fallback');
-      if (fallback) fallback.style.display = 'grid';
-    }
-  }), /*#__PURE__*/React.createElement("span", {
-    className: "trusted-logo-fallback",
-    "aria-hidden": "true"
-  }, client.name.split(/\s+/).slice(0, 2).map(part => part[0]).join('').slice(0, 3).toUpperCase())), /*#__PURE__*/React.createElement("span", {
-    className: "trusted-logo-name"
-  }, client.name))))));
-}
 function Portfolio({
   lang,
   hideHead
@@ -1564,6 +1537,139 @@ function DigitalPortfolioSections({
       size: 12
     }))))))));
   }));
+}
+function PortfolioCatalog({
+  lang
+}) {
+  const [activeCategory, setActiveCategory] = useState('marketing');
+  const p = COPY[lang].portfolio;
+  const marketingItems = (p.items || []).map((item, index) => {
+    const images = item.images || [];
+    return {
+      slug: item.slug,
+      href: `/realizacje/${item.slug}`,
+      title: [item.title1, item.titleIt].filter(Boolean).join(' '),
+      subtitle: item.tag,
+      description: item.brief,
+      image: item.coverImage || images[1] || images[0],
+      scope: item.scope || [],
+      year: item.year,
+      index
+    };
+  });
+  const digitalItems = getDigitalCases(lang);
+  const categories = [{
+    id: 'marketing',
+    label: lang === 'pl' ? 'Obsługa marketingowa 360' : '360 marketing',
+    shortLabel: lang === 'pl' ? 'Obsługa marketingowa 360' : '360 marketing',
+    description: lang === 'pl' ? 'Strategia, kampanie, social media, branding i produkcja prowadzone jako jeden spójny proces.' : 'Strategy, campaigns, social media, branding and production managed as one coherent process.',
+    items: marketingItems
+  }, {
+    id: 'apps',
+    label: lang === 'pl' ? 'Aplikacje' : 'Applications',
+    shortLabel: lang === 'pl' ? 'Aplikacje' : 'Applications',
+    description: lang === 'pl' ? 'Dedykowane narzędzia, które upraszczają codzienną pracę zespołów i klientów.' : 'Tailored tools that simplify the daily work of teams and customers.',
+    items: digitalItems.filter(item => item.group === 'apps').map((item, index) => ({
+      ...item,
+      href: `/realizacje/digital/${item.slug}`,
+      description: item.brief,
+      image: item.images[0],
+      index
+    }))
+  }, {
+    id: 'web',
+    label: lang === 'pl' ? 'Strony WWW' : 'Websites',
+    shortLabel: lang === 'pl' ? 'Strony WWW' : 'Websites',
+    description: lang === 'pl' ? 'Szybkie, uporządkowane serwisy zbudowane wokół treści, konwersji i lokalnego SEO.' : 'Fast, structured websites built around content, conversion and local SEO.',
+    items: digitalItems.filter(item => item.group === 'web').map((item, index) => ({
+      ...item,
+      href: item.externalUrl || `/realizacje/digital/${item.slug}`,
+      external: Boolean(item.externalUrl),
+      description: item.brief,
+      image: item.images[0],
+      index
+    }))
+  }];
+  const active = categories.find(category => category.id === activeCategory) || categories[0];
+  return /*#__PURE__*/React.createElement("main", {
+    className: "work-catalog"
+  }, /*#__PURE__*/React.createElement("header", {
+    className: "work-catalog-hero"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "sec-label reveal"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "dot"
+  }), " ", p.label), /*#__PURE__*/React.createElement("h1", {
+    className: "display reveal"
+  }, p.title1, " ", /*#__PURE__*/React.createElement("span", {
+    className: "it"
+  }, p.titleIt)), /*#__PURE__*/React.createElement("p", {
+    className: "work-catalog-lede reveal"
+  }, lang === 'pl' ? 'Marketing, produkty cyfrowe i strony internetowe. Wybierz obszar, żeby zobaczyć projekty bez przekopywania się przez długą prezentację.' : 'Marketing, digital products and websites. Choose an area to browse projects without scrolling through a long presentation.'))), /*#__PURE__*/React.createElement("section", {
+    className: "work-catalog-body",
+    "aria-labelledby": "work-catalog-title"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "work-tabs",
+    role: "tablist",
+    "aria-label": lang === 'pl' ? 'Kategorie realizacji' : 'Work categories'
+  }, categories.map(category => /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    role: "tab",
+    id: `work-tab-${category.id}`,
+    className: `work-tab ${active.id === category.id ? 'is-active' : ''}`,
+    "aria-selected": active.id === category.id,
+    "aria-controls": `work-panel-${category.id}`,
+    onClick: () => setActiveCategory(category.id),
+    key: category.id
+  }, /*#__PURE__*/React.createElement("span", null, category.shortLabel), /*#__PURE__*/React.createElement("sup", null, String(category.items.length).padStart(2, '0'))))), /*#__PURE__*/React.createElement("div", {
+    className: "work-category-head"
+  }, /*#__PURE__*/React.createElement("h2", {
+    className: "display",
+    id: "work-catalog-title"
+  }, active.label), /*#__PURE__*/React.createElement("p", null, active.description)), /*#__PURE__*/React.createElement("div", {
+    className: "work-grid",
+    id: `work-panel-${active.id}`,
+    role: "tabpanel",
+    "aria-labelledby": `work-tab-${active.id}`,
+    key: active.id
+  }, active.items.map((item, index) => /*#__PURE__*/React.createElement(SmartLink, {
+    to: item.href,
+    className: "work-card",
+    target: item.external ? "_blank" : undefined,
+    rel: item.external ? "noopener noreferrer" : undefined,
+    key: item.slug
+  }, /*#__PURE__*/React.createElement("figure", {
+    className: "work-card-media"
+  }, item.image ? /*#__PURE__*/React.createElement("img", {
+    src: item.image,
+    alt: `${item.title} - podgląd realizacji KTB Media`,
+    loading: "lazy",
+    decoding: "async"
+  }) : /*#__PURE__*/React.createElement("span", {
+    className: "work-card-placeholder",
+    "aria-hidden": "true"
+  }), /*#__PURE__*/React.createElement("span", {
+    className: "work-card-number mono"
+  }, String(index + 1).padStart(2, '0'))), /*#__PURE__*/React.createElement("div", {
+    className: "work-card-copy"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "work-card-meta mono"
+  }, /*#__PURE__*/React.createElement("span", null, item.subtitle || active.label), item.year && /*#__PURE__*/React.createElement("span", null, item.year)), /*#__PURE__*/React.createElement("h3", null, item.title), /*#__PURE__*/React.createElement("p", null, item.description), /*#__PURE__*/React.createElement("div", {
+    className: "work-card-footer"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "work-card-tags"
+  }, (item.scope || []).slice(0, 3).map(tag => /*#__PURE__*/React.createElement("span", {
+    key: tag
+  }, tag))), /*#__PURE__*/React.createElement("span", {
+    className: "work-card-link",
+    "aria-hidden": "true"
+  }, lang === 'pl' ? 'Zobacz' : 'View', " ", /*#__PURE__*/React.createElement(ArrowIcon, {
+    size: 12
+  }))))))))));
 }
 function CaseChart({
   data,
@@ -3054,17 +3160,9 @@ function App() {
       slug: slug
     });
   } else if (path === '/realizacje') {
-    content = /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(PageHeader, {
-      label: t.portfolio.label,
-      title: t.portfolio.title1,
-      titleIt: t.portfolio.titleIt,
-      lede: t.portfolio.lede
-    }), /*#__PURE__*/React.createElement(Portfolio, {
-      lang: lang,
-      hideHead: true
-    }), /*#__PURE__*/React.createElement(DigitalPortfolioSections, {
+    content = /*#__PURE__*/React.createElement(PortfolioCatalog, {
       lang: lang
-    }));
+    });
   } else if (path.startsWith('/blog/')) {
     const slug = path.slice('/blog/'.length).replace(/\/$/, '');
     content = /*#__PURE__*/React.createElement(BlogArticle, {
@@ -3106,8 +3204,6 @@ function App() {
     }), /*#__PURE__*/React.createElement(Services, {
       lang: lang
     }), /*#__PURE__*/React.createElement(Showcase, {
-      lang: lang
-    }), /*#__PURE__*/React.createElement(TrustedLogos, {
       lang: lang
     }), /*#__PURE__*/React.createElement(Process, {
       lang: lang

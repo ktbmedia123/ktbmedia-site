@@ -21,8 +21,7 @@ const COPY = {
       "blog": true,
       "contact": true,
       "founders": false,
-      "miniCta": true,
-      "trusted": true
+      "miniCta": true
     },
     "hero": {
       "eyebrow": "Agencja 360 · Gdańsk · Od 2022",
@@ -297,7 +296,7 @@ const COPY = {
       ]
     },
     "portfolio": {
-      "label": "# — Zaufali nam",
+      "label": "# — Realizacje",
       "title1": "Wybrane",
       "titleIt": "realizacje.",
       "lede": "Każdy projekt to indywidualna strategia. Zero template'ów, zero copy-paste.",
@@ -4765,164 +4764,6 @@ const COPY = {
           "W praktyce oznacza to oddzielne kampanie dla modeli, ofert specjalnych, aut dostępnych od ręki i samochodów używanych. Do tego dochodzi content pokazujący ludzi, proces wydania auta, serwis i realne historie klientów. Taki marketing pomaga sprzedawcom rozmawiać z osobami, które są lepiej przygotowane, a nie przypadkowo kliknęły reklamę."
         ]
       }
-    },
-    "trusted": {
-      "label": "# — Zaufali nam",
-      "title1": "Marki,",
-      "titleIt": "które z nami pracowały.",
-      "lede": "Od automotive i marine po lokalne usługi, e-commerce i B2B. Poniżej firmy oraz marki, przy których dokładaliśmy realną pracę: strategię, content, kampanie, targi, LinkedIn, social media albo produkcję.",
-      "items": [
-        {
-          "name": "Remontowa Marine Design",
-          "url": "https://rmdc.pl/",
-          "domain": "rmdc.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=rmdc.pl&sz=128"
-        },
-        {
-          "name": "DDP Supply",
-          "url": "https://ddp.eu/",
-          "domain": "ddp.eu",
-          "logo": "https://www.google.com/s2/favicons?domain=ddp.eu&sz=128"
-        },
-        {
-          "name": "ProfiAuto Serwis",
-          "url": "https://profiauto.pl/",
-          "domain": "profiauto.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=profiauto.pl&sz=128"
-        },
-        {
-          "name": "Wiktorowicz Auto Serwis",
-          "url": "https://wiktorowicz-auto-serwis.pl/",
-          "domain": "wiktorowicz-auto-serwis.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=wiktorowicz-auto-serwis.pl&sz=128"
-        },
-        {
-          "name": "Motoart",
-          "url": "https://motoart.pl/",
-          "domain": "motoart.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=motoart.pl&sz=128"
-        },
-        {
-          "name": "Qarmax",
-          "url": "https://qarmax.pl/",
-          "domain": "qarmax.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=qarmax.pl&sz=128"
-        },
-        {
-          "name": "PulseGT",
-          "url": "https://pulsegt.eu/",
-          "domain": "pulsegt.eu",
-          "logo": "https://www.google.com/s2/favicons?domain=pulsegt.eu&sz=128"
-        },
-        {
-          "name": "PMO Oleje",
-          "url": "https://pmolubricants.com/",
-          "domain": "pmolubricants.com",
-          "logo": "https://www.google.com/s2/favicons?domain=pmolubricants.com&sz=128"
-        },
-        {
-          "name": "Dongfeng",
-          "url": "https://www.dongfeng-global.com/",
-          "domain": "dongfeng-global.com",
-          "logo": "https://www.google.com/s2/favicons?domain=dongfeng-global.com&sz=128"
-        },
-        {
-          "name": "Voya",
-          "url": "https://voya.pl/",
-          "domain": "voya.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=voya.pl&sz=128"
-        },
-        {
-          "name": "MHero",
-          "url": "https://mhero.pl/",
-          "domain": "mhero.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=mhero.pl&sz=128"
-        },
-        {
-          "name": "Grupa Janisz",
-          "url": "https://grupajanisz.netlify.app/",
-          "domain": "grupajanisz.netlify.app",
-          "logo": "https://www.google.com/s2/favicons?domain=grupajanisz.netlify.app&sz=128"
-        },
-        {
-          "name": "Tasiem",
-          "url": "https://tasiem.pl/",
-          "domain": "tasiem.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=tasiem.pl&sz=128"
-        },
-        {
-          "name": "Mapadama",
-          "url": "https://mapadama.pl/",
-          "domain": "mapadama.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=mapadama.pl&sz=128"
-        },
-        {
-          "name": "Abaks",
-          "url": "https://abaks.pl/",
-          "domain": "abaks.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=abaks.pl&sz=128"
-        },
-        {
-          "name": "Tomex",
-          "url": "https://tomexbrakes.com/",
-          "domain": "tomexbrakes.com",
-          "logo": "https://www.google.com/s2/favicons?domain=tomexbrakes.com&sz=128"
-        },
-        {
-          "name": "BIG MOT",
-          "url": "https://bigmot.pl/",
-          "domain": "bigmot.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=bigmot.pl&sz=128"
-        },
-        {
-          "name": "Extreme Tyres",
-          "url": "https://extreme-tyres.com/",
-          "domain": "extreme-tyres.com",
-          "logo": "https://www.google.com/s2/favicons?domain=extreme-tyres.com&sz=128"
-        },
-        {
-          "name": "Arbolatorium Adrian Kiedrowski",
-          "url": "https://arbolatorium.pl/",
-          "domain": "arbolatorium.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=arbolatorium.pl&sz=128"
-        },
-        {
-          "name": "Beenergy",
-          "url": "https://beenergy.pl/",
-          "domain": "beenergy.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=beenergy.pl&sz=128"
-        },
-        {
-          "name": "Petronas",
-          "url": "https://www.petronas.com/",
-          "domain": "petronas.com",
-          "logo": "https://www.google.com/s2/favicons?domain=petronas.com&sz=128"
-        },
-        {
-          "name": "Remontowa Shipbuilding",
-          "url": "https://remontowa-rsb.pl/",
-          "domain": "remontowa-rsb.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=remontowa-rsb.pl&sz=128"
-        },
-        {
-          "name": "Auto Centrum Elektronowa",
-          "url": "https://autocentrum-elektronowa.pl/",
-          "domain": "autocentrum-elektronowa.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=autocentrum-elektronowa.pl&sz=128"
-        },
-        {
-          "name": "Bosch Service",
-          "url": "https://www.boschcarservice.com/",
-          "domain": "boschcarservice.com",
-          "logo": "https://www.google.com/s2/favicons?domain=boschcarservice.com&sz=128"
-        },
-        {
-          "name": "GT Serwis Barniewice",
-          "url": "https://gtserwis.com/",
-          "domain": "gtserwis.com",
-          "logo": "https://www.google.com/s2/favicons?domain=gtserwis.com&sz=128"
-        }
-      ]
     }
   },
   "en": {
@@ -4947,8 +4788,7 @@ const COPY = {
       "blog": true,
       "contact": true,
       "founders": false,
-      "miniCta": true,
-      "trusted": true
+      "miniCta": true
     },
     "hero": {
       "eyebrow": "360 Agency · Gdańsk · Est. 2022",
@@ -5223,7 +5063,7 @@ const COPY = {
       ]
     },
     "portfolio": {
-      "label": "# — Selected work",
+      "label": "# — Work",
       "title1": "Selected",
       "titleIt": "projects.",
       "lede": "Every project gets its own strategy. No templates, no copy-paste.",
@@ -7517,164 +7357,6 @@ const COPY = {
           "W praktyce oznacza to oddzielne kampanie dla modeli, ofert specjalnych, aut dostępnych od ręki i samochodów używanych. Do tego dochodzi content pokazujący ludzi, proces wydania auta, serwis i realne historie klientów. Taki marketing pomaga sprzedawcom rozmawiać z osobami, które są lepiej przygotowane, a nie przypadkowo kliknęły reklamę."
         ]
       }
-    },
-    "trusted": {
-      "label": "# — Trusted by",
-      "title1": "Brands",
-      "titleIt": "we worked with.",
-      "lede": "Automotive, marine, local services, e-commerce and B2B brands supported through strategy, content, campaigns, trade fairs, LinkedIn, social media or production.",
-      "items": [
-        {
-          "name": "Remontowa Marine Design",
-          "url": "https://rmdc.pl/",
-          "domain": "rmdc.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=rmdc.pl&sz=128"
-        },
-        {
-          "name": "DDP Supply",
-          "url": "https://ddp.eu/",
-          "domain": "ddp.eu",
-          "logo": "https://www.google.com/s2/favicons?domain=ddp.eu&sz=128"
-        },
-        {
-          "name": "ProfiAuto Serwis",
-          "url": "https://profiauto.pl/",
-          "domain": "profiauto.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=profiauto.pl&sz=128"
-        },
-        {
-          "name": "Wiktorowicz Auto Serwis",
-          "url": "https://wiktorowicz-auto-serwis.pl/",
-          "domain": "wiktorowicz-auto-serwis.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=wiktorowicz-auto-serwis.pl&sz=128"
-        },
-        {
-          "name": "Motoart",
-          "url": "https://motoart.pl/",
-          "domain": "motoart.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=motoart.pl&sz=128"
-        },
-        {
-          "name": "Qarmax",
-          "url": "https://qarmax.pl/",
-          "domain": "qarmax.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=qarmax.pl&sz=128"
-        },
-        {
-          "name": "PulseGT",
-          "url": "https://pulsegt.eu/",
-          "domain": "pulsegt.eu",
-          "logo": "https://www.google.com/s2/favicons?domain=pulsegt.eu&sz=128"
-        },
-        {
-          "name": "PMO Oleje",
-          "url": "https://pmolubricants.com/",
-          "domain": "pmolubricants.com",
-          "logo": "https://www.google.com/s2/favicons?domain=pmolubricants.com&sz=128"
-        },
-        {
-          "name": "Dongfeng",
-          "url": "https://www.dongfeng-global.com/",
-          "domain": "dongfeng-global.com",
-          "logo": "https://www.google.com/s2/favicons?domain=dongfeng-global.com&sz=128"
-        },
-        {
-          "name": "Voya",
-          "url": "https://voya.pl/",
-          "domain": "voya.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=voya.pl&sz=128"
-        },
-        {
-          "name": "MHero",
-          "url": "https://mhero.pl/",
-          "domain": "mhero.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=mhero.pl&sz=128"
-        },
-        {
-          "name": "Grupa Janisz",
-          "url": "https://grupajanisz.netlify.app/",
-          "domain": "grupajanisz.netlify.app",
-          "logo": "https://www.google.com/s2/favicons?domain=grupajanisz.netlify.app&sz=128"
-        },
-        {
-          "name": "Tasiem",
-          "url": "https://tasiem.pl/",
-          "domain": "tasiem.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=tasiem.pl&sz=128"
-        },
-        {
-          "name": "Mapadama",
-          "url": "https://mapadama.pl/",
-          "domain": "mapadama.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=mapadama.pl&sz=128"
-        },
-        {
-          "name": "Abaks",
-          "url": "https://abaks.pl/",
-          "domain": "abaks.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=abaks.pl&sz=128"
-        },
-        {
-          "name": "Tomex",
-          "url": "https://tomexbrakes.com/",
-          "domain": "tomexbrakes.com",
-          "logo": "https://www.google.com/s2/favicons?domain=tomexbrakes.com&sz=128"
-        },
-        {
-          "name": "BIG MOT",
-          "url": "https://bigmot.pl/",
-          "domain": "bigmot.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=bigmot.pl&sz=128"
-        },
-        {
-          "name": "Extreme Tyres",
-          "url": "https://extreme-tyres.com/",
-          "domain": "extreme-tyres.com",
-          "logo": "https://www.google.com/s2/favicons?domain=extreme-tyres.com&sz=128"
-        },
-        {
-          "name": "Arbolatorium Adrian Kiedrowski",
-          "url": "https://arbolatorium.pl/",
-          "domain": "arbolatorium.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=arbolatorium.pl&sz=128"
-        },
-        {
-          "name": "Beenergy",
-          "url": "https://beenergy.pl/",
-          "domain": "beenergy.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=beenergy.pl&sz=128"
-        },
-        {
-          "name": "Petronas",
-          "url": "https://www.petronas.com/",
-          "domain": "petronas.com",
-          "logo": "https://www.google.com/s2/favicons?domain=petronas.com&sz=128"
-        },
-        {
-          "name": "Remontowa Shipbuilding",
-          "url": "https://remontowa-rsb.pl/",
-          "domain": "remontowa-rsb.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=remontowa-rsb.pl&sz=128"
-        },
-        {
-          "name": "Auto Centrum Elektronowa",
-          "url": "https://autocentrum-elektronowa.pl/",
-          "domain": "autocentrum-elektronowa.pl",
-          "logo": "https://www.google.com/s2/favicons?domain=autocentrum-elektronowa.pl&sz=128"
-        },
-        {
-          "name": "Bosch Service",
-          "url": "https://www.boschcarservice.com/",
-          "domain": "boschcarservice.com",
-          "logo": "https://www.google.com/s2/favicons?domain=boschcarservice.com&sz=128"
-        },
-        {
-          "name": "GT Serwis Barniewice",
-          "url": "https://gtserwis.com/",
-          "domain": "gtserwis.com",
-          "logo": "https://www.google.com/s2/favicons?domain=gtserwis.com&sz=128"
-        }
-      ]
     }
   }
 };
