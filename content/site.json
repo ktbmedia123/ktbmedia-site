@@ -108,6 +108,18 @@
           "t": "Strategia",
           "tIt": "& consulting",
           "d": "Audyt, mapa drogowa, warsztaty. Pokazujemy co robić — i co przestać robić natychmiast."
+        },
+        {
+          "n": "07",
+          "t": "Tworzenie",
+          "tIt": "aplikacji",
+          "d": "Projektujemy i tworzymy nowoczesne aplikacje webowe oraz narzędzia cyfrowe dopasowane do procesów firmy — od prostych paneli i landingów po rozbudowane systemy, konfiguratory i rozwiązania wspierające sprzedaż."
+        },
+        {
+          "n": "08",
+          "t": "Ujęcia",
+          "tIt": "z drona",
+          "d": "Realizujemy ujęcia z powietrza do kampanii, social media i materiałów promocyjnych — dynamiczne kadry FPV oraz estetyczne, szerokie ujęcia."
         }
       ]
     },
@@ -1620,6 +1632,457 @@
             },
             {
               "p": "Wracasz za tydzień i pracujesz już tylko na tym, co zostało."
+            }
+          ]
+        },
+        {
+          "slug": "ile-kosztuje-stworzenie-aplikacji-webowej-dla-firmy",
+          "cat": "Aplikacje",
+          "date": "Sie 2026",
+          "title1": "Ile kosztuje stworzenie",
+          "titleIt": "aplikacji webowej dla firmy.",
+          "image": "/assets/blog-aplikacja-webowa-koszt-stock.webp",
+          "lede": "Prosty panel może kosztować kilkanaście tysięcy złotych, a system obsługujący kilka działów — wielokrotnie więcej. Najważniejsze pytanie nie brzmi jednak „ile ekranów?”, tylko „jaki proces aplikacja ma skrócić i ile ten proces dziś kosztuje?”.",
+          "body": [
+            {
+              "h": "Nie kupujesz ekranów. Kupujesz zmianę procesu"
+            },
+            {
+              "p": "Wycena aplikacji na podstawie liczby widoków przypomina wycenę warsztatu na podstawie liczby drzwi. Dwa podobne wizualnie panele mogą różnić się kosztem kilkukrotnie. Jeden tylko pokazuje dane z arkusza, drugi rozdziela uprawnienia, synchronizuje magazyn, generuje dokumenty, wysyła powiadomienia i zapisuje pełną historię zmian. Na ekranie oba mają tabelę oraz kilka przycisków. Pod spodem pracują zupełnie inaczej."
+            },
+            {
+              "p": "Dlatego pierwszym etapem dobrej wyceny jest opisanie procesu: kto zaczyna zadanie, jakie dane wprowadza, kto je zatwierdza, gdzie pojawiają się wyjątki i co ma zostać na końcu. Dopiero wtedy można policzyć pracę projektową, programistyczną, testy, integracje i wdrożenie. Bez tego oferta jest zgadywaniem albo zawiera duży bufor na ryzyko."
+            },
+            {
+              "h": "Realne przedziały budżetowe w 2026 roku"
+            },
+            {
+              "p": "Dla polskiej firmy prosty kalkulator, konfigurator lub zamknięty panel realizujący jeden dobrze opisany proces zwykle zaczyna się od około **15–30 tys. zł netto**. Aplikacja MVP z logowaniem, rolami użytkowników, bazą danych, panelem administracyjnym i jedną integracją najczęściej mieści się w przedziale **30–80 tys. zł**. Rozbudowany system dla kilku działów, z raportami, automatyzacjami i połączeniami z zewnętrznymi usługami, to zazwyczaj **80–250 tys. zł lub więcej**."
+            },
+            {
+              "p": "To nie jest cennik z półki. Przedziały pokazują skalę, a nie gotową ofertę. Ten sam pomysł można zbudować jako małe MVP za 40 tys. zł albo próbować od razu odwzorować każdy wyjątek z piętnastu lat działania firmy i dojść do 180 tys. zł. Dobra decyzja polega na znalezieniu najmniejszej wersji, która już daje mierzalny efekt."
+            },
+            {
+              "list": [
+                "**15–30 tys. zł:** formularz lub konfigurator z logiką, prosty panel, generator ofert, niewielkie narzędzie wewnętrzne.",
+                "**30–80 tys. zł:** MVP z kontami użytkowników, rolami, bazą danych, panelem administracyjnym i podstawową integracją.",
+                "**80–250 tys. zł+:** system wielomodułowy, rozbudowane raportowanie, automatyzacje, kilka integracji i większe wymagania bezpieczeństwa.",
+                "**Utrzymanie:** monitoring, kopie zapasowe, aktualizacje, rozwój oraz wsparcie po wdrożeniu."
+              ]
+            },
+            {
+              "h": "Co najbardziej podnosi koszt aplikacji"
+            },
+            {
+              "p": "Najdroższe nie muszą być efektowne animacje. Budżet rośnie przede wszystkim wtedy, gdy aplikacja musi rozmawiać z wieloma systemami, dane są niespójne albo uprawnienia zależą od kilku warunków. Integracja z dobrze opisanym API może zająć kilka dni. Połączenie ze starym programem, który eksportuje nieregularne pliki i nie ma dokumentacji, potrafi zająć tygodnie."
+            },
+            {
+              "p": "Drugim źródłem kosztów są wyjątki. Standardowa ścieżka „handlowiec tworzy ofertę, kierownik zatwierdza, klient dostaje PDF” jest przewidywalna. Jeśli jednak każda placówka ma własne zasady rabatowe, dokument można cofnąć na trzech etapach, a część klientów rozlicza się w innej walucie, logika rośnie szybciej niż liczba ekranów."
+            },
+            {
+              "list": [
+                "Liczba ról i poziomów dostępu do danych.",
+                "Jakość oraz dostępność API systemów zewnętrznych.",
+                "Import i porządkowanie historycznych danych.",
+                "Obsługa płatności, dokumentów, podpisów lub danych wrażliwych.",
+                "Działanie offline, aplikacja mobilna i powiadomienia push.",
+                "Wymagania raportowe oraz niestandardowe eksporty.",
+                "Liczba wyjątków w procesie i częstotliwość ich zmian."
+              ]
+            },
+            {
+              "type": "figure",
+              "image": "/assets/digital-ktbtask-dashboard.webp",
+              "caption": "KTBtask — przykład panelu, w którym interfejs został zbudowany wokół codziennego procesu zespołu."
+            },
+            {
+              "h": "MVP nie oznacza niedokończonego produktu"
+            },
+            {
+              "p": "MVP powinno być małe, ale kompletne. Użytkownik ma przejść jeden ważny proces od początku do końca bez ręcznego przepisywania danych do arkusza. Jeśli aplikacja tylko ładnie pokazuje połowę ścieżki, nie jest MVP — jest demonstracją. Najlepszy zakres pierwszej wersji często obejmuje jedną rolę, jeden typ dokumentu i jedną integrację."
+            },
+            {
+              "p": "Takie podejście pozwala wdrożyć narzędzie szybciej, zobaczyć prawdziwe zachowania użytkowników i zdecydować, co rozwijać. Funkcja, która podczas warsztatu wydaje się kluczowa, po miesiącu może okazać się zbędna. Z kolei drobna automatyzacja, o której nikt nie mówił, potrafi oszczędzić kilka godzin tygodniowo."
+            },
+            {
+              "h": "Jak policzyć, czy inwestycja się zwróci"
+            },
+            {
+              "p": "Zacznij od czasu. Jeżeli sześć osób po 40 minut dziennie przepisuje dane, firma traci około 80 godzin miesięcznie. Przy pełnym koszcie godziny pracy na poziomie 70 zł daje to 5600 zł miesięcznie, nie licząc błędów i opóźnień. Aplikacja za 50 tys. zł, która usuwa większość tej pracy, może zwrócić się w mniej niż rok."
+            },
+            {
+              "p": "Drugi wymiar to przychód. Konfigurator, który skraca przygotowanie oferty z dwóch dni do piętnastu minut, pozwala odpowiedzieć większej liczbie klientów i zmniejsza liczbę porzuconych zapytań. Panel dla handlowców może podpowiadać brakujące kontakty. Narzędzie dla serwisu może automatycznie przypominać o przeglądzie. Wartość aplikacji powinna być opisana wskaźnikiem, który biznes już rozumie."
+            },
+            {
+              "h": "Co powinna zawierać rzetelna wycena"
+            },
+            {
+              "p": "Dobra oferta rozdziela analizę, UX, implementację, testy, wdrożenie i utrzymanie. Opisuje założenia, zakres integracji, sposób odbioru oraz elementy poza budżetem. Powinna też wskazać, kto dostarcza treści i dane, gdzie będzie hostowany system oraz jak wygląda przeniesienie praw i dostępów."
+            },
+            {
+              "list": [
+                "Opis problemu i mierzalnego celu pierwszej wersji.",
+                "Lista ról użytkowników oraz kluczowych scenariuszy.",
+                "Zakres integracji i odpowiedzialność za dostęp do danych.",
+                "Makiety lub prototyp przed rozpoczęciem pełnej implementacji.",
+                "Plan testów, wdrożenia, kopii zapasowych i monitoringu.",
+                "Koszt utrzymania oraz zasady dalszego rozwoju.",
+                "Harmonogram z punktami, w których można zweryfikować kierunek."
+              ]
+            },
+            {
+              "h": "Najpierw proces, potem technologia"
+            },
+            {
+              "p": "Nie każda firma potrzebuje własnej aplikacji. Czasem wystarczy dobrze skonfigurowany system SaaS, automatyzacja między dwoma narzędziami albo prostszy formularz. Własne oprogramowanie ma sens, gdy proces daje firmie przewagę, gotowe rozwiązania wymuszają kosztowne obejścia lub skala ręcznej pracy zaczyna ograniczać wzrost."
+            },
+            {
+              "p": "W KTB Media zaczynamy od krótkiego warsztatu i mapy procesu. Zamiast obiecywać „system do wszystkiego”, wybieramy pierwszy fragment, który da się uruchomić i zmierzyć. Dzięki temu budżet pracuje na konkretny wynik, a aplikacja rośnie razem z firmą, nie obok niej."
+            }
+          ]
+        },
+        {
+          "slug": "wlasna-aplikacja-czy-gotowy-saas",
+          "cat": "Aplikacje",
+          "date": "Sie 2026",
+          "title1": "Własna aplikacja",
+          "titleIt": "czy gotowy SaaS.",
+          "image": "/assets/blog-wlasna-aplikacja-vs-saas-stock.webp",
+          "lede": "Gotowy system można uruchomić jutro. Własna aplikacja może dokładnie odwzorować przewagę firmy. Problem zaczyna się wtedy, gdy organizacja wybiera rozwiązanie zgodnie z modą, a nie z kosztem procesu i planem rozwoju.",
+          "body": [
+            {
+              "h": "Dwa dobre rozwiązania dla dwóch różnych sytuacji"
+            },
+            {
+              "p": "SaaS, czyli oprogramowanie dostępne w abonamencie, nie jest gorszą wersją aplikacji na zamówienie. Dla większości standardowych procesów będzie rozsądniejszym początkiem. CRM, newsletter, księgowość, zarządzanie zadaniami czy rezerwacje mają dojrzałe rozwiązania, które można uruchomić szybko i taniej niż własny system."
+            },
+            {
+              "p": "Własna aplikacja wygrywa wtedy, gdy firma działa inaczej niż rynek, a ta różnica naprawdę tworzy wartość. Może chodzić o niestandardowy sposób wyceny, obsługę sieci serwisów, konfigurację technicznego produktu, rozliczanie prowizji albo automatyzację procesu, który dziś przechodzi przez pięć arkuszy i trzy skrzynki e-mail."
+            },
+            {
+              "h": "Kiedy gotowy SaaS jest najlepszym wyborem"
+            },
+            {
+              "p": "Jeśli proces jest standardowy i nie stanowi przewagi konkurencyjnej, zacznij od gotowego narzędzia. System abonamentowy ma już logowanie, bezpieczeństwo, kopie zapasowe, aplikację mobilną i zespół rozwijający produkt. Koszt wdrożenia jest przewidywalny, a użytkownicy często znają interfejs z poprzednich firm."
+            },
+            {
+              "list": [
+                "Potrzebujesz zacząć w ciągu dni lub kilku tygodni.",
+                "Proces wygląda podobnie jak w setkach innych firm.",
+                "Zespół akceptuje dopasowanie sposobu pracy do narzędzia.",
+                "Dostępne integracje obejmują systemy, których już używasz.",
+                "Nie chcesz utrzymywać własnej infrastruktury i zespołu rozwoju.",
+                "Koszt abonamentu jest mały w porównaniu z wartością rozwiązania."
+              ]
+            },
+            {
+              "p": "Najczęstszy błąd polega na odrzuceniu SaaS, bo „nie ma jednego pola”. Czasem zmiana etykiety albo prosty krok wykonywany ręcznie kosztuje mniej niż budowa całego systemu. Własna aplikacja powinna usuwać istotne ograniczenie, a nie tylko odwzorowywać przyzwyczajenia."
+            },
+            {
+              "h": "Kiedy własna aplikacja zaczyna mieć przewagę"
+            },
+            {
+              "p": "Custom ma sens, gdy gotowe narzędzia wymuszają pracę obok systemu. Jeżeli zespół wykupuje CRM, ale nadal prowadzi główny proces w arkuszu, bo CRM nie rozumie produktu, abonament nie rozwiązuje problemu. Podobnie jest wtedy, gdy firma płaci za pięć narzędzi, a pracownicy codziennie przenoszą między nimi te same dane."
+            },
+            {
+              "p": "Własne rozwiązanie pozwala zaprojektować dokładnie te role, statusy i automatyzacje, których potrzebuje organizacja. Może połączyć dane klienta, ofertę, harmonogram, produkcję i raport w jednym przepływie. Nie musi zawierać setek funkcji zaprojektowanych dla innych branż."
+            },
+            {
+              "list": [
+                "Proces jest unikalny i bezpośrednio wpływa na marżę lub sprzedaż.",
+                "Ręczne obejścia zabierają wiele godzin i generują kosztowne błędy.",
+                "Firma potrzebuje kontroli nad danymi, roadmapą oraz integracjami.",
+                "Abonament rośnie szybko wraz z liczbą użytkowników lub transakcji.",
+                "Klienci mają korzystać z narzędzia jako części usługi firmy.",
+                "System ma stać się aktywem, które można rozwijać przez lata."
+              ]
+            },
+            {
+              "type": "figure",
+              "image": "/assets/digital-serwisplus-panel.webp",
+              "caption": "Serwis+ — przykład narzędzia zaprojektowanego pod konkretny proces obsługi kierowcy i historii pojazdu."
+            },
+            {
+              "h": "Ukryty koszt SaaS: obejścia, eksporty i zależność"
+            },
+            {
+              "p": "Cena na stronie producenta to tylko część kosztu. Trzeba doliczyć wdrożenie, konfigurację, szkolenia, dodatkowe moduły, limity API i czas pracy ludzi. Narzędzie za 3000 zł miesięcznie może być świetną inwestycją. Może też kosztować kolejne 10 tys. zł w pracy ręcznej, jeśli nie pasuje do procesu."
+            },
+            {
+              "p": "Dochodzi zależność od dostawcy. Cennik, zakres funkcji i regulamin mogą się zmienić. Integracja może zostać wyłączona, a eksport danych nie zawsze odtwarza pełną historię. Nie oznacza to, że należy unikać chmury. Oznacza, że przed wyborem trzeba sprawdzić warunki wyjścia: format eksportu, własność danych, okres wypowiedzenia i możliwość podłączenia innych systemów."
+            },
+            {
+              "h": "Ukryty koszt własnej aplikacji: odpowiedzialność"
+            },
+            {
+              "p": "Własny system nie kończy się w dniu publikacji. Trzeba monitorować błędy, aktualizować zależności, wykonywać kopie zapasowe, reagować na zmiany przeglądarek i rozwijać integracje. Firma musi wiedzieć, kto odpowiada za awarię, gdzie jest dokumentacja i jak odzyskać dostęp, jeśli zmieni się wykonawca."
+            },
+            {
+              "p": "Dlatego najtańsza oferta na wykonanie aplikacji bywa najdroższa po roku. Kod bez testów i dokumentacji działa do pierwszej większej zmiany. Oszczędność na architekturze wraca jako powolny rozwój, nieprzewidywalne błędy i uzależnienie od jednej osoby, która „wie, gdzie to jest”."
+            },
+            {
+              "h": "Rozwiązanie hybrydowe często jest najlepsze"
+            },
+            {
+              "p": "Nie trzeba wybierać wyłącznie między gotowym pakietem a budową wszystkiego od zera. Dobra architektura może zostawić księgowość, mailing i płatności dojrzałym usługom, a zbudować własny panel, który spina unikalny proces firmy. Użytkownik widzi jedno narzędzie, ale pod spodem pracują sprawdzone komponenty."
+            },
+            {
+              "p": "Przykład: firma może zachować popularny CRM, a własna aplikacja zbiera dane techniczne produktu, generuje ofertę i synchronizuje wynik z CRM. Dzięki temu nie płaci za odtwarzanie funkcji kontaktów czy poczty, ale zyskuje kontrolę nad elementem, który odróżnia jej sprzedaż."
+            },
+            {
+              "h": "Macierz decyzji: pięć pytań przed wyborem"
+            },
+            {
+              "list": [
+                "**Czy proces jest standardowy?** Jeśli tak, najpierw sprawdź SaaS.",
+                "**Ile kosztuje obecny problem?** Policz czas, błędy, utracone zapytania i abonamenty.",
+                "**Jak szybko potrzebujesz efektu?** SaaS zwykle wygrywa czasem startu.",
+                "**Czy firma potrafi utrzymywać produkt?** Custom wymaga właściciela biznesowego i budżetu po wdrożeniu.",
+                "**Czy rozwiązanie buduje przewagę?** Jeśli tak, kontrola nad roadmapą może być ważniejsza niż niższy koszt początku."
+              ]
+            },
+            {
+              "h": "Jak podejmujemy decyzję w praktyce"
+            },
+            {
+              "p": "Zaczynamy od mapy obecnego procesu i kosztu problemu. Potem sprawdzamy istniejące narzędzia, ich API, ograniczenia i realny koszt na dwa lub trzy lata. Jeżeli gotowy system rozwiązuje 80 procent potrzeb bez bolesnych obejść, zwykle rekomendujemy wdrożenie oraz integrację. Jeśli najważniejsze 20 procent jest właśnie tym, na czym firma zarabia, projektujemy mały własny moduł."
+            },
+            {
+              "p": "Dobra technologia nie powinna być manifestem. Ma działać, ograniczać pracę ręczną i dawać firmie swobodę rozwoju. Czasem oznacza abonament uruchomiony w tydzień. Czasem własny produkt rozwijany etapami. Najważniejsze, aby decyzję dało się obronić liczbami, nie samym wrażeniem nowoczesności."
+            }
+          ]
+        },
+        {
+          "slug": "ujecia-z-drona-w-marketingu-fpv-czy-klasyczny",
+          "cat": "Produkcja wideo",
+          "date": "Sie 2026",
+          "title1": "Ujęcia z drona w marketingu:",
+          "titleIt": "FPV czy klasyczny dron.",
+          "image": "/assets/blog-ujecia-z-drona-fpv-stock.webp",
+          "lede": "FPV przelatuje przez halę i daje widzowi poczucie ruchu. Klasyczny dron pokazuje skalę zakładu, lokalizację oraz otoczenie. Dobry film nie wybiera sprzętu dla efektu — wybiera kadr, który najlepiej opowiada konkretną historię.",
+          "body": [
+            {
+              "h": "Dron nie jest osobną strategią"
+            },
+            {
+              "p": "Ujęcie z powietrza potrafi w kilka sekund pokazać coś, czego nie da się wyjaśnić akapitem: wielkość zakładu, położenie inwestycji, ruch pojazdów, przebieg wydarzenia albo relację produktu z otoczeniem. Sam lot nie gwarantuje jednak dobrego materiału. Dron jest kamerą, a kamera potrzebuje celu, scenariusza i miejsca w montażu."
+            },
+            {
+              "p": "Najczęstszy błąd to zamówienie „kilku ujęć dronem” bez ustalenia formatu. Operator nagrywa szerokie panoramy, tymczasem marka potrzebuje pionowych rolek z dynamicznym przejazdem. Albo odwrotnie: powstaje efektowny lot FPV przez biuro, który nie pokazuje produktu, ludzi ani skali firmy. Najpierw określamy komunikat, później dobieramy rodzaj drona."
+            },
+            {
+              "h": "Klasyczny dron: skala, porządek i kontekst"
+            },
+            {
+              "p": "Dron ze stabilizowaną kamerą najlepiej sprawdza się w szerokich, płynnych ujęciach. Może powoli odsłonić halę produkcyjną, podążać za samochodem, pokazać stoisko targowe z góry albo zbudować spokojne otwarcie filmu firmowego. Obraz jest czytelny, elegancki i łatwy do połączenia z ujęciami z kamery naziemnej."
+            },
+            {
+              "list": [
+                "Filmy wizerunkowe i korporacyjne, w których ważna jest skala firmy.",
+                "Nieruchomości, zakłady, stocznie, magazyny i inwestycje.",
+                "Płynne przejazdy za samochodem lub jednostką pływającą.",
+                "Dokumentacja wydarzeń, targów, otwarć i realizacji.",
+                "Establishing shot, czyli kadr otwierający i lokalizujący scenę.",
+                "Materiały, z których potrzebne są spokojne wersje poziome i pionowe."
+              ]
+            },
+            {
+              "p": "Klasyczny lot daje też większą swobodę w wyborze ogniskowej i ruchu kamery. Operator może utrzymać obiekt w centrum, wykonać równy najazd lub powtarzalny orbit. To ważne w reklamie automotive, gdzie linia samochodu i ruch muszą wyglądać precyzyjnie, a nie przypadkowo."
+            },
+            {
+              "h": "FPV: energia, wejście w środek akcji i perspektywa człowieka"
+            },
+            {
+              "p": "FPV steruje się inaczej niż klasycznym dronem. Kamera porusza się razem z maszyną, dlatego widz czuje przyspieszenie, skręt i zmianę wysokości. Mały cinewhoop może wlecieć przez bramę warsztatu, przejść między stanowiskami, minąć mechanika i zakończyć lot przy produkcie. Większy zestaw może dynamicznie śledzić samochód na torze."
+            },
+            {
+              "p": "Ten język obrazu świetnie pasuje do rolek, otwarć kampanii, motorsportu, eventów i miejsc, które chcemy pokazać jednym ciągłym ruchem. FPV nie musi oznaczać agresywnego tempa. Dobrze zaplanowany lot może być płynny i filmowy, ale zawsze pozostaje bardziej bezpośredni niż klasyczna panorama."
+            },
+            {
+              "list": [
+                "Dynamiczne reklamy automotive, motorsport i wydarzenia.",
+                "Przeloty przez warsztat, biuro, magazyn albo stoisko targowe.",
+                "Jedno ujęcie łączące kilka etapów procesu bez cięć.",
+                "Krótkie formaty social media, w których pierwsza sekunda ma zatrzymać widza.",
+                "Ujęcia blisko produktu i ludzi, realizowane małym, osłoniętym dronem.",
+                "Materiały, w których energia marki jest ważniejsza niż spokojna prezentacja."
+              ]
+            },
+            {
+              "type": "figure",
+              "image": "/assets/case-extreme-tyres-drift-niebieski.webp",
+              "caption": "Motorsport dobrze pokazuje przewagę dynamicznej perspektywy — ruch ma prowadzić uwagę, nie tylko robić wrażenie."
+            },
+            {
+              "h": "FPV czy klasyczny? Najczęściej oba"
+            },
+            {
+              "p": "W pełnym materiale oba typy ujęć rozwiązują różne zadania. Klasyczny dron otwiera film panoramą zakładu. FPV prowadzi widza przez produkcję. Kamera naziemna pokazuje twarze, detale i wypowiedzi. Kolejny szeroki kadr zamyka historię. Dzięki temu film ma rytm i nie męczy jednym rodzajem ruchu."
+            },
+            {
+              "p": "Przy ograniczonym budżecie wybór zależy od kanału. Dla filmu na stronę firmy zwykle ważniejszy jest czytelny kontekst i jakość szerokiego obrazu. Dla kampanii na Instagramie lub TikToku dynamiczny przelot może szybciej zatrzymać uwagę. Dla rekrutacji dobry będzie lot przez prawdziwe stanowiska pracy połączony z krótkimi portretami zespołu."
+            },
+            {
+              "h": "Jedno nagranie, kilka formatów"
+            },
+            {
+              "p": "Materiał powinien być planowany od razu pod miejsce publikacji. Kadr poziomy 16:9 sprawdzi się na stronie, YouTube i ekranie targowym. Pion 9:16 jest podstawą rolek. Kwadrat lub 4:5 dobrze działa w feedzie. Nie każdy szeroki lot da się bezpiecznie przyciąć do pionu, bo główny obiekt wypadnie poza kadr."
+            },
+            {
+              "p": "Dlatego podczas realizacji powtarzamy kluczowe ruchy z inną kompozycją albo nagrywamy w rozdzielczości pozwalającej na rozsądny crop. Wcześniej przygotowujemy listę finalnych formatów, długości i miejsc na tekst. To niewielka decyzja produkcyjna, która znacząco zwiększa liczbę użytecznych materiałów."
+            },
+            {
+              "h": "Bezpieczeństwo i zgody są częścią produkcji"
+            },
+            {
+              "p": "Profesjonalna realizacja zaczyna się przed uruchomieniem silników. Operator sprawdza aktualne strefy geograficzne, wymagane zgody, pogodę i warunki miejsca oraz wykonuje wymagany check-in w systemie DroneTower. Przy locie blisko ludzi, pojazdów lub infrastruktury planuje trasę, punkt startu, procedurę przerwania i zabezpieczenie planu."
+            },
+            {
+              "p": "W hali lub warsztacie dochodzą przeszkody, pył, przewody, ruch pracowników i odbicia sygnału. FPV wymaga prób oraz osoby, która kontroluje otoczenie. Jeżeli lot nie może być wykonany bezpiecznie, zmieniamy trasę albo zastępujemy go kamerą na gimbalu. Efekt nie jest ważniejszy od ludzi i mienia."
+            },
+            {
+              "h": "Jak przygotować skuteczny brief dronowy"
+            },
+            {
+              "list": [
+                "Cel materiału i jedno zdanie, które widz ma zapamiętać.",
+                "Kanały publikacji, formaty oraz planowane długości filmu.",
+                "Lista obiektów, procesów i osób, które muszą znaleźć się w kadrze.",
+                "Informacja o lokalizacji, ruchu, przeszkodach i ograniczeniach terenu.",
+                "Przykłady tempa oraz stylu, ale bez kopiowania cudzej kampanii.",
+                "Plan B na pogodę i termin rezerwowy.",
+                "Osoba po stronie firmy, która może sprawnie podjąć decyzję na planie."
+              ]
+            },
+            {
+              "h": "Ujęcie ma pracować po publikacji"
+            },
+            {
+              "p": "Po montażu warto mierzyć nie tylko wyświetlenia. W kampanii sprawdzamy zatrzymanie pierwszych sekund, ukończenia, kliknięcia i koszt pozyskania uwagi. Na stronie możemy porównać zaangażowanie sekcji z filmem. W rekrutacji liczy się jakość zgłoszeń, a w sprzedaży liczba rozmów, w których klient powołuje się na materiał."
+            },
+            {
+              "p": "Dobry dron nie zastąpi pomysłu, ale potrafi pokazać przewagę firmy w sposób natychmiastowy. FPV daje bliskość i tempo. Klasyczny dron daje skalę i oddech. Gdy oba są podporządkowane historii, materiał przestaje być technicznym popisem i zaczyna pracować dla marki."
+            }
+          ]
+        },
+        {
+          "slug": "jak-przygotowac-firme-do-nagrania-dronem",
+          "cat": "Produkcja wideo",
+          "date": "Sie 2026",
+          "title1": "Jak przygotować firmę",
+          "titleIt": "do nagrania dronem.",
+          "image": "/assets/blog-produkcja-dronowa-przygotowanie-stock.webp",
+          "lede": "Najdroższy błąd na planie dronowym to nie zła pogoda. To piękny materiał, którego nie da się wykorzystać: puste stanowiska, brudny plac, przypadkowe samochody i kadry niedopasowane do pionowego formatu. Dobra checklista rozwiązuje większość tych problemów przed przyjazdem ekipy.",
+          "body": [
+            {
+              "h": "Zacznij od celu, nie od listy efektownych lotów"
+            },
+            {
+              "p": "Nagranie dronem może pokazać skalę zakładu, przeprowadzić widza przez proces, zbudować energię reklamy albo udokumentować wydarzenie. Każdy z tych celów wymaga innego światła, trasy i sprzętu. Jeśli brief brzmi tylko „chcemy kilka ujęć z góry”, ekipa może dostarczyć technicznie dobry materiał, który nie odpowiada żadnej konkretnej potrzebie."
+            },
+            {
+              "p": "Przed produkcją zapisz jedno zdanie: co odbiorca ma pomyśleć po obejrzeniu filmu? „To duża, poukładana firma”, „ten serwis zna nowoczesne samochody”, „na tym wydarzeniu naprawdę coś się dzieje” albo „ten produkt został sprawdzony w trudnych warunkach”. To zdanie pomaga wybrać kadry i odrzucić te, które tylko wyglądają efektownie."
+            },
+            {
+              "h": "1. Ustal kanały i proporcje obrazu"
+            },
+            {
+              "p": "Strona internetowa i YouTube potrzebują zwykle poziomu 16:9. Instagram Reels, TikTok i YouTube Shorts wymagają pionu 9:16. Kampania na Meta może korzystać również z 4:5. Te formaty nie są wymienne. Samochód jadący szeroko przez kadr poziomy może całkowicie zniknąć po przycięciu do telefonu."
+            },
+            {
+              "p": "Najlepiej przygotować listę materiałów przed zdjęciami: film główny 60–90 sekund, trzy rolki po 15 sekund, sześć krótkich przebitek i kilka nieruchomych klatek do reklam. Operator może wtedy powtórzyć najważniejsze ruchy z bezpieczną kompozycją dla różnych proporcji. Montażysta wie również, ile miejsca zostawić na tekst i logo."
+            },
+            {
+              "h": "2. Zrób wizję lokalną na mapie i na miejscu"
+            },
+            {
+              "p": "Adres nie wystarcza. Potrzebne są informacje o sąsiednich budynkach, liniach energetycznych, masztach, dźwigach, drzewach, ruchu ulicznym i miejscach, z których może wystartować dron. W przypadku hali ważne są bramy, przewody, lampy, wentylatory, pył oraz obszary, w których pracownicy i maszyny nie mogą się zatrzymać."
+            },
+            {
+              "p": "Operator sprawdza aktualne strefy geograficzne, wymagane zgody i możliwości lotu, a przed operacją wykonuje wymagany check-in w DroneTower. Firma powinna wcześniej przekazać informacje o wewnętrznych zasadach BHP, ochronie obiektu, tajemnicach produkcyjnych i osobach, które mogą znaleźć się w kadrze. Dzięki temu decyzje nie blokują planu w dniu zdjęć."
+            },
+            {
+              "type": "figure",
+              "image": "/assets/case-ddp-supply-stocznia-z-gory.webp",
+              "caption": "Przy obiektach przemysłowych plan lotu musi uwzględniać nie tylko kadr, ale też ruch, infrastrukturę i procedury bezpieczeństwa."
+            },
+            {
+              "h": "3. Przygotuj przestrzeń tak jak do wizyty klienta"
+            },
+            {
+              "p": "Dron widzi więcej niż kamera stojąca na ziemi. Z góry widać przypadkowo zaparkowane auta, kontenery, palety, uszkodzone oznakowanie i bałagan za budynkiem. W warsztacie mała kamera FPV przeleci obok półek, przewodów i koszy, których na co dzień nikt już nie zauważa. Porządek nie ma udawać sterylnej hali. Ma pokazać profesjonalną, bezpieczną pracę."
+            },
+            {
+              "list": [
+                "Usuń z kadru prywatne pojazdy, odpady i elementy z danymi klientów.",
+                "Ustaw firmowe samochody i maszyny zgodnie z planem ruchu.",
+                "Sprawdź oznakowanie, odzież zespołu oraz widoczność logo.",
+                "Wyczyść główny produkt i powierzchnie, które będą filmowane z bliska.",
+                "Wyłącz lub zabezpiecz ekrany pokazujące dane, hasła i dokumenty.",
+                "Przygotuj jedną osobę, która przed lotem przejdzie trasę razem z ekipą."
+              ]
+            },
+            {
+              "h": "4. Zaplanuj ludzi, pojazdy i prawdziwe działanie"
+            },
+            {
+              "p": "Pusta hala wygląda jak nieruchomość do wynajęcia, nie jak działająca firma. Z drugiej strony przypadkowy ruch jest trudny do kontrolowania i niebezpieczny. Warto wybrać konkretne osoby oraz procesy, które pokażemy: przyjęcie samochodu, diagnostykę, montaż części, załadunek, spotkanie zespołu albo przygotowanie stoiska."
+            },
+            {
+              "p": "Każdy uczestnik powinien wiedzieć, co robi w danym ujęciu, gdzie patrzy i kiedy może się poruszyć. Nie chodzi o aktorstwo. Najlepiej wygląda prawdziwa praca wykonana w spokojniejszym, powtarzalnym rytmie. Przy pojazdach ustalamy trasę, prędkość, punkt startu i sygnał przerwania. Jedna osoba koordynuje ruch, aby kierowca nie otrzymywał kilku sprzecznych poleceń."
+            },
+            {
+              "h": "5. Zadbaj o zgody i prywatność"
+            },
+            {
+              "p": "Pracownicy i goście powinni wiedzieć, że będą nagrywani, oraz rozumieć sposób wykorzystania materiału. Przy terenie współdzielonym warto ustalić zasady z administratorem. Tablice rejestracyjne, dokumenty, twarze klientów oraz elementy objęte tajemnicą mogą wymagać zmiany kadru, zasłonięcia albo obróbki."
+            },
+            {
+              "p": "To szczególnie ważne w zakładach przemysłowych, serwisach i podczas targów. Kilka minut przygotowania oszczędza później wiele godzin maskowania materiału albo konieczność rezygnacji z najlepszego ujęcia. Ekipa powinna dostać jasną listę obszarów dozwolonych i wyłączonych z nagrania."
+            },
+            {
+              "h": "6. Przygotuj plan na pogodę"
+            },
+            {
+              "p": "Wiatr, opady, niska podstawa chmur i ostre słońce wpływają zarówno na bezpieczeństwo, jak i jakość obrazu. Prognoza tydzień wcześniej pokazuje trend, ale ostateczna decyzja często zapada dzień przed realizacją. Ustal termin rezerwowy i osobę, która może szybko potwierdzić zmianę."
+            },
+            {
+              "p": "Nie każda chmura jest problemem. Lekko zachmurzone niebo daje miękkie światło, dobre dla ludzi i samochodów. Złota godzina buduje klimat, ale trwa krótko i wymaga gotowości całej firmy. W południe łatwiej nagrać proces, lecz kontrast może być większy. Harmonogram powinien dopasować najważniejszy kadr do najlepszego światła, a nie odwrotnie."
+            },
+            {
+              "h": "7. Przygotuj precyzyjną listę ujęć"
+            },
+            {
+              "list": [
+                "Kadr otwierający, który lokalizuje firmę i pokazuje skalę.",
+                "Jeden ruch prowadzący widza od zewnątrz do środka procesu.",
+                "Szerokie ujęcia ludzi i maszyn podczas prawdziwej pracy.",
+                "Detale produktu, oznakowania, narzędzi i elementów marki.",
+                "Powtarzalny przejazd pojazdu w poziomie i pionie.",
+                "Kadr końcowy z miejscem na hasło, logo lub wezwanie do działania.",
+                "Bezpieczne ujęcia alternatywne na wypadek zmiany warunków."
+              ]
+            },
+            {
+              "p": "Shotlista nie odbiera kreatywności. Zabezpiecza materiał obowiązkowy, a resztę czasu można wykorzystać na eksperyment. Dobrze zaznaczyć priorytety A, B i C. Jeśli pogoda skróci okno lotu, ekipa najpierw realizuje kadry, bez których montaż nie zadziała."
+            },
+            {
+              "h": "8. Myśl o montażu jeszcze przed startem"
+            },
+            {
+              "p": "Każdy ruch powinien mieć początek i koniec. Dron może wyjść zza obiektu, odsłonić scenę, przeprowadzić widza i zakończyć na detalu. Takie ujęcie łatwo połączyć z kolejnym. Losowe panoramy często są długie, podobne do siebie i trudne do skrócenia do dynamicznej reklamy."
+            },
+            {
+              "p": "Warto nagrać również dźwięki miejsca, krótkie wypowiedzi i detale z kamery naziemnej. Sam obraz z powietrza szybko staje się monotonny. Montaż działa najlepiej, gdy szeroki plan pokazuje gdzie jesteśmy, FPV wprowadza ruch, a zbliżenie daje człowieka lub produkt, na którym odbiorca może skupić uwagę."
+            },
+            {
+              "h": "9. Zaplanuj wykorzystanie materiału na kilka miesięcy"
+            },
+            {
+              "p": "Jedna dobrze przygotowana realizacja może dostarczyć film główny, rolki, tła na stronę, krótkie reklamy, klatki do grafik i materiał dla handlowców. Przed zdjęciami warto zebrać potrzeby kilku działów. Rekrutacja może potrzebować zespołu, sprzedaż infrastruktury, a social media dynamicznych detali."
+            },
+            {
+              "p": "Po publikacji sprawdzamy zatrzymanie uwagi, ukończenia filmu, kliknięcia i reakcje odbiorców. Dzięki temu kolejna produkcja nie zaczyna się od gustu, tylko od danych. Dron daje spektakularną perspektywę, ale największą wartość tworzy przygotowanie: jasny cel, bezpieczny plan i lista materiałów, które firma naprawdę wykorzysta."
             }
           ]
         },
@@ -4929,6 +5392,18 @@
           "t": "Strategy",
           "tIt": "& consulting",
           "d": "Audit, roadmap, workshops. We tell you what to do — and what to stop immediately."
+        },
+        {
+          "n": "07",
+          "t": "Application",
+          "tIt": "development",
+          "d": "We design and build modern web applications and digital tools tailored to company processes — from focused panels and landing pages to complex systems, configurators and sales-support solutions."
+        },
+        {
+          "n": "08",
+          "t": "Drone",
+          "tIt": "footage",
+          "d": "We produce aerial footage for campaigns, social media and promotional materials — dynamic FPV sequences as well as polished, wide establishing shots."
         }
       ]
     },
@@ -6405,6 +6880,62 @@
             },
             {
               "p": "Real growth at most companies we've worked with didn't come from adding another channel. It came from **cutting three things** that didn't work and reinvesting those budgets into one thing that started to. Discipline is invisible — it's about what you don't do."
+            }
+          ]
+        },
+        {
+          "slug": "ile-kosztuje-stworzenie-aplikacji-webowej-dla-firmy",
+          "cat": "Applications",
+          "date": "Aug 2026",
+          "title1": "How much does a business",
+          "titleIt": "web application cost.",
+          "image": "/assets/blog-aplikacja-webowa-koszt-stock.webp",
+          "lede": "The full English version of this practical guide is coming soon.",
+          "body": [
+            {
+              "p": "The full English article is coming soon. Read the Polish version in the meantime or contact KTB Media to discuss your project."
+            }
+          ]
+        },
+        {
+          "slug": "wlasna-aplikacja-czy-gotowy-saas",
+          "cat": "Applications",
+          "date": "Aug 2026",
+          "title1": "Custom application",
+          "titleIt": "or ready-made SaaS.",
+          "image": "/assets/blog-wlasna-aplikacja-vs-saas-stock.webp",
+          "lede": "The full English version of this practical guide is coming soon.",
+          "body": [
+            {
+              "p": "The full English article is coming soon. Read the Polish version in the meantime or contact KTB Media to discuss your project."
+            }
+          ]
+        },
+        {
+          "slug": "ujecia-z-drona-w-marketingu-fpv-czy-klasyczny",
+          "cat": "Video production",
+          "date": "Aug 2026",
+          "title1": "Drone footage in marketing:",
+          "titleIt": "FPV or classic drone.",
+          "image": "/assets/blog-ujecia-z-drona-fpv-stock.webp",
+          "lede": "The full English version of this practical guide is coming soon.",
+          "body": [
+            {
+              "p": "The full English article is coming soon. Read the Polish version in the meantime or contact KTB Media to discuss your project."
+            }
+          ]
+        },
+        {
+          "slug": "jak-przygotowac-firme-do-nagrania-dronem",
+          "cat": "Video production",
+          "date": "Aug 2026",
+          "title1": "How to prepare your company",
+          "titleIt": "for a drone shoot.",
+          "image": "/assets/blog-produkcja-dronowa-przygotowanie-stock.webp",
+          "lede": "The full English version of this practical guide is coming soon.",
+          "body": [
+            {
+              "p": "The full English article is coming soon. Read the Polish version in the meantime or contact KTB Media to discuss your project."
             }
           ]
         },
