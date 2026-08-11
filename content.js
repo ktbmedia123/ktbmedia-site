@@ -337,6 +337,7 @@ const COPY = {
             "#c9c9c9"
           ],
           "images": [
+            "/assets/case-autocentrum-elektronowa-zespol.webp",
             "/assets/case-autocentrum-elektronowa-1.jpg",
             "/assets/case-autocentrum-elektronowa-2.jpg",
             "/assets/case-autocentrum-elektronowa-3.jpg"
@@ -404,6 +405,13 @@ const COPY = {
             "Kreacje Meta Ads",
             "Sesje foto i wideo",
             "Materiały do Google Business Profile"
+          ],
+          "coverImage": "/assets/case-autocentrum-elektronowa-zespol.webp",
+          "imageAlts": [
+            "Zespół AutoCentrum Elektronowa 18 w hali serwisu samochodowego w Łodzi",
+            "AutoCentrum Elektronowa 18 - materiał z realizacji 2",
+            "AutoCentrum Elektronowa 18 - materiał z realizacji 3",
+            "AutoCentrum Elektronowa 18 - materiał z realizacji 4"
           ]
         },
         {
@@ -546,6 +554,8 @@ const COPY = {
             "#f4f4f4"
           ],
           "images": [
+            "/assets/case-pmo-lubricants-produkcja-foto.webp",
+            "/assets/case-pmo-lubricants-olej-warsztat.webp",
             "/assets/case-pmo-lubricants-1.jpg",
             "/assets/case-pmo-lubricants-2.jpg",
             "/assets/case-pmo-lubricants-3.jpg"
@@ -608,6 +618,14 @@ const COPY = {
             "Filmy, zdjęcia i ujęcia z drona",
             "Materiały dla dystrybutorów",
             "Merch, katalogi i aktywacje eventowe"
+          ],
+          "coverImage": "/assets/case-pmo-lubricants-produkcja-foto.webp",
+          "imageAlts": [
+            "Produkcja zdjęć produktu PMO 5W-30 Professional w warsztacie samochodowym",
+            "Olej silnikowy PMO 5W-30 Professional na tle wyposażenia warsztatu",
+            "PMO Lubricants - materiał z realizacji 3",
+            "PMO Lubricants - materiał z realizacji 4",
+            "PMO Lubricants - materiał z realizacji 5"
           ]
         },
         {
@@ -746,6 +764,8 @@ const COPY = {
             "#f4f4f4"
           ],
           "images": [
+            "/assets/case-pulsegt-plukanki-silnika.webp",
+            "/assets/case-pulsegt-warsztat-produkcja.webp",
             "/assets/case-pulsegt-1.jpg",
             "/assets/case-pulsegt-2.jpg",
             "/assets/case-pulsegt-3.jpg"
@@ -808,6 +828,14 @@ const COPY = {
             "Produkcja foto-wideo",
             "Merch oraz materiały promocyjne",
             "Landing page i kreacje e-commerce"
+          ],
+          "coverImage": "/assets/case-pulsegt-plukanki-silnika.webp",
+          "imageAlts": [
+            "Płukanki silnika i dodatki do paliwa PulseGT podczas sesji produktowej",
+            "Produkcja materiałów PulseGT z mechanikami w warsztacie samochodowym",
+            "PulseGT US Technology - materiał z realizacji 3",
+            "PulseGT US Technology - materiał z realizacji 4",
+            "PulseGT US Technology - materiał z realizacji 5"
           ]
         },
         {
@@ -846,6 +874,9 @@ const COPY = {
             "#efe9dc"
           ],
           "images": [
+            "/assets/case-grupa-janisz-dongfeng-wiatrak.webp",
+            "/assets/case-grupa-janisz-dongfeng-auto.webp",
+            "/assets/case-grupa-janisz-dongfeng-targi.webp",
             "/assets/digital-janisz-scroll.webp",
             "/assets/digital-janisz-bosch.webp",
             "/assets/digital-janisz-dongfeng.webp",
@@ -917,7 +948,16 @@ const COPY = {
             "Kreacje sprzedażowe i wizerunkowe",
             "Materiały drukowane i POS"
           ],
-          "coverImage": "/assets/digital-janisz-scroll.webp"
+          "coverImage": "/assets/case-grupa-janisz-dongfeng-wiatrak.webp",
+          "imageAlts": [
+            "Dongfeng Mage Grupy Janisz podczas plenerowej produkcji fotograficznej",
+            "Oznakowany Dongfeng Mage w salonie Grupy Janisz w Pruszczu Gdańskim",
+            "Stoisko Dongfeng Grupy Janisz podczas wydarzenia motoryzacyjnego",
+            "Grupa Janisz - materiał z realizacji 4",
+            "Grupa Janisz - materiał z realizacji 5",
+            "Grupa Janisz - materiał z realizacji 6",
+            "Grupa Janisz - materiał z realizacji 7"
+          ]
         },
         {
           "num": "07",
@@ -1160,7 +1200,12 @@ const COPY = {
             "#F4F4F4",
             "#757575"
           ],
-          "images": [],
+          "images": [
+            "/assets/case-extreme-tyres-drift-niebieski.webp",
+            "/assets/case-extreme-tyres-drift-zolty.webp",
+            "/assets/case-extreme-tyres-drift-detail.webp",
+            "/assets/case-extreme-tyres-opona-detail.webp"
+          ],
           "notes": [
             "Komunikacja według zastosowań motorsportowych",
             "Nacisk na produkt, kategorię i intencję zakupu",
@@ -1221,7 +1266,13 @@ const COPY = {
             "Materiały produktowe i e-commerce",
             "Kampanie Meta oraz Google Ads"
           ],
-          "coverImage": "/assets/case-extreme-tyres-cover.jpg"
+          "coverImage": "/assets/case-extreme-tyres-drift-niebieski.webp",
+          "imageAlts": [
+            "Samochód driftowy na oponach Extreme Tyres podczas przejazdu",
+            "Żółty samochód driftowy z oznakowaniem Extreme Tyres w parku serwisowym",
+            "Opona Extreme Tyres podczas dynamicznego przejazdu driftowego",
+            "Detal opony Extreme Tyres przygotowanej do jazdy motorsportowej"
+          ]
         },
         {
           "num": "10",
@@ -1258,7 +1309,14 @@ const COPY = {
             "#1a1a1a",
             "#efe9dc"
           ],
-          "images": [],
+          "images": [
+            "/assets/case-ddp-supply-praca-stocznia.webp",
+            "/assets/case-ddp-supply-stocznia-flota.webp",
+            "/assets/case-ddp-supply-targi.webp",
+            "/assets/case-ddp-supply-szlifowanie.webp",
+            "/assets/case-ddp-supply-stocznia-z-gory.webp",
+            "/assets/case-ddp-supply-kask.webp"
+          ],
           "notes": [
             "Komunikacja LinkedIn dla decydentów B2B w marine",
             "Wsparcie materiałów i narracji pod targi branżowe",
@@ -1324,7 +1382,15 @@ const COPY = {
             "Katalogi i materiały B2B",
             "Księga znaku oraz materiały firmowe"
           ],
-          "coverImage": "/assets/case-ddp-supply-cover.png"
+          "coverImage": "/assets/case-ddp-supply-praca-stocznia.webp",
+          "imageAlts": [
+            "Pracownik DDP Supply podczas realizacji na terenie stoczni",
+            "Flota serwisowa DDP Supply na tle infrastruktury stoczniowej",
+            "Stoisko DDP Supply podczas międzynarodowych targów branży marine",
+            "Prace techniczne DDP Supply przy obróbce elementu stalowego",
+            "Zespół techniczny podczas prac na jednostce w stoczni",
+            "Kask DDP Supply w przestrzeni technicznej jednostki morskiej"
+          ]
         }
       ]
     },
@@ -5092,6 +5158,7 @@ const COPY = {
             "#c9c9c9"
           ],
           "images": [
+            "/assets/case-autocentrum-elektronowa-zespol.webp",
             "/assets/case-autocentrum-elektronowa-1.jpg",
             "/assets/case-autocentrum-elektronowa-2.jpg",
             "/assets/case-autocentrum-elektronowa-3.jpg"
@@ -5159,6 +5226,13 @@ const COPY = {
             "Meta Ads creative",
             "Photo and video shoots",
             "Google Business Profile assets"
+          ],
+          "coverImage": "/assets/case-autocentrum-elektronowa-zespol.webp",
+          "imageAlts": [
+            "AutoCentrum Elektronowa 18 team inside the car service workshop in Lodz",
+            "AutoCentrum Elektronowa 18 - project material 2",
+            "AutoCentrum Elektronowa 18 - project material 3",
+            "AutoCentrum Elektronowa 18 - project material 4"
           ]
         },
         {
@@ -5301,6 +5375,8 @@ const COPY = {
             "#f4f4f4"
           ],
           "images": [
+            "/assets/case-pmo-lubricants-produkcja-foto.webp",
+            "/assets/case-pmo-lubricants-olej-warsztat.webp",
             "/assets/case-pmo-lubricants-1.jpg",
             "/assets/case-pmo-lubricants-2.jpg",
             "/assets/case-pmo-lubricants-3.jpg"
@@ -5363,6 +5439,14 @@ const COPY = {
             "Film, photography and drone work",
             "Distributor materials",
             "Merch, catalogues and event activations"
+          ],
+          "coverImage": "/assets/case-pmo-lubricants-produkcja-foto.webp",
+          "imageAlts": [
+            "PMO 5W-30 Professional product photo production in a car workshop",
+            "PMO 5W-30 Professional engine oil displayed among workshop equipment",
+            "PMO Lubricants - project material 3",
+            "PMO Lubricants - project material 4",
+            "PMO Lubricants - project material 5"
           ]
         },
         {
@@ -5501,6 +5585,8 @@ const COPY = {
             "#f4f4f4"
           ],
           "images": [
+            "/assets/case-pulsegt-plukanki-silnika.webp",
+            "/assets/case-pulsegt-warsztat-produkcja.webp",
             "/assets/case-pulsegt-1.jpg",
             "/assets/case-pulsegt-2.jpg",
             "/assets/case-pulsegt-3.jpg"
@@ -5563,6 +5649,14 @@ const COPY = {
             "Photo-video production",
             "Merch and promotional materials",
             "Landing page and e-commerce creative"
+          ],
+          "coverImage": "/assets/case-pulsegt-plukanki-silnika.webp",
+          "imageAlts": [
+            "PulseGT engine flush and fuel additive products during a product shoot",
+            "PulseGT content production with mechanics in a car workshop",
+            "PulseGT US Technology - project material 3",
+            "PulseGT US Technology - project material 4",
+            "PulseGT US Technology - project material 5"
           ]
         },
         {
@@ -5601,6 +5695,9 @@ const COPY = {
             "#efe9dc"
           ],
           "images": [
+            "/assets/case-grupa-janisz-dongfeng-wiatrak.webp",
+            "/assets/case-grupa-janisz-dongfeng-auto.webp",
+            "/assets/case-grupa-janisz-dongfeng-targi.webp",
             "/assets/digital-janisz-scroll.webp",
             "/assets/digital-janisz-bosch.webp",
             "/assets/digital-janisz-dongfeng.webp",
@@ -5667,7 +5764,16 @@ const COPY = {
             "Sales and brand creative",
             "Print and POS materials"
           ],
-          "coverImage": "/assets/digital-janisz-scroll.webp"
+          "coverImage": "/assets/case-grupa-janisz-dongfeng-wiatrak.webp",
+          "imageAlts": [
+            "Grupa Janisz Dongfeng Mage during an outdoor automotive photo shoot",
+            "Branded Dongfeng Mage inside the Grupa Janisz showroom in Pruszcz Gdanski",
+            "Grupa Janisz Dongfeng stand during an automotive event",
+            "Grupa Janisz - project material 4",
+            "Grupa Janisz - project material 5",
+            "Grupa Janisz - project material 6",
+            "Grupa Janisz - project material 7"
+          ]
         },
         {
           "num": "07",
@@ -5905,7 +6011,12 @@ const COPY = {
             "#F4F4F4",
             "#757575"
           ],
-          "images": [],
+          "images": [
+            "/assets/case-extreme-tyres-drift-niebieski.webp",
+            "/assets/case-extreme-tyres-drift-zolty.webp",
+            "/assets/case-extreme-tyres-drift-detail.webp",
+            "/assets/case-extreme-tyres-opona-detail.webp"
+          ],
           "notes": [
             "Communication by motorsport use case",
             "Focus on product, category and buying intent",
@@ -5966,7 +6077,13 @@ const COPY = {
             "Product and e-commerce materials",
             "Meta and Google Ads campaigns"
           ],
-          "coverImage": "/assets/case-extreme-tyres-cover.jpg"
+          "coverImage": "/assets/case-extreme-tyres-drift-niebieski.webp",
+          "imageAlts": [
+            "Drift car running Extreme Tyres during a competitive pass",
+            "Yellow drift car with Extreme Tyres branding in the service area",
+            "Extreme Tyres product during a dynamic drift pass",
+            "Close-up of an Extreme Tyres motorsport tyre"
+          ]
         },
         {
           "num": "10",
@@ -6003,7 +6120,14 @@ const COPY = {
             "#1a1a1a",
             "#efe9dc"
           ],
-          "images": [],
+          "images": [
+            "/assets/case-ddp-supply-praca-stocznia.webp",
+            "/assets/case-ddp-supply-stocznia-flota.webp",
+            "/assets/case-ddp-supply-targi.webp",
+            "/assets/case-ddp-supply-szlifowanie.webp",
+            "/assets/case-ddp-supply-stocznia-z-gory.webp",
+            "/assets/case-ddp-supply-kask.webp"
+          ],
           "notes": [
             "LinkedIn communication for marine B2B decision makers",
             "Trade-fair narrative and sales materials",
@@ -6069,7 +6193,15 @@ const COPY = {
             "B2B catalogues and materials",
             "Brand guidelines and company materials"
           ],
-          "coverImage": "/assets/case-ddp-supply-cover.png"
+          "coverImage": "/assets/case-ddp-supply-praca-stocznia.webp",
+          "imageAlts": [
+            "DDP Supply specialist working on a shipyard project",
+            "DDP Supply service fleet against shipyard infrastructure",
+            "DDP Supply stand at an international marine trade fair",
+            "DDP Supply technical work on a steel component",
+            "Technical team working aboard a vessel in the shipyard",
+            "DDP Supply hard hat inside a vessel technical space"
+          ]
         }
       ]
     },

@@ -312,29 +312,34 @@ const DIGITAL_CASES = [{
   en: { title: 'KTBmatic', subtitle: 'Local marketing without chaos.', type: 'Application / Marketing', brief: 'A proprietary tool for Google listings, customer reviews and local visibility across multiple locations.', scope: ['Product strategy', 'UX/UI', 'Frontend', 'Automation', 'Google Business Profile', 'Reporting'], problem: 'Managing listings, posts, reviews and audits manually did not scale.', solution: 'We built one panel for publishing, reviews, local audits and multi-location reporting.', features: ['Publishing plan', 'Review management', 'Listing audit', 'Visibility reporting', 'Multiple locations', 'Automation'] }
 }, {
   slug: 'grupa-janisz-www', group: 'web', year: '2026',
-  coverImage: '/assets/digital-janisz-scroll.webp',
+  coverImage: '/assets/web-grupa-janisz-long.webp',
   scrollShowcase: true,
-  images: ['/assets/digital-janisz-home-long.jpg', '/assets/digital-janisz-dongfeng-long.jpg', '/assets/digital-janisz-bosch-long.jpg', '/assets/digital-janisz-contact-long.jpg'],
+  images: ['/assets/web-grupa-janisz-long.webp', '/assets/digital-janisz-dongfeng-long.jpg', '/assets/digital-janisz-bosch-long.jpg', '/assets/digital-janisz-contact-long.jpg'],
   pl: { title: 'Grupa Janisz', subtitle: 'Jedna marka. Wiele ścieżek klienta.', type: 'Strona WWW / Automotive', brief: 'Cyfrowa platforma dla grupy serwisowo-sprzedażowej z Trójmiasta: mocna identyfikacja, wygodne konwersje i uporządkowane marki.', scope: ['Strategia treści', 'UX/UI', 'Frontend', 'CMS', 'SEO lokalne', 'Analityka'], problem: 'Wiele usług, lokalizacji i marek utrudniało użytkownikowi wybór właściwego serwisu i kontaktu.', solution: 'Zbudowaliśmy wspólny serwis, który porządkuje ofertę i prowadzi do zapytania, rezerwacji albo właściwej wizytówki Google.', features: ['Architektura wielu marek', 'Dedykowane podstrony usług', 'Cenniki i formularze', 'Widget kontaktowy', 'CMS', 'Mobile first i SEO'] },
   en: { title: 'Grupa Janisz', subtitle: 'One brand. Many customer paths.', type: 'Website / Automotive', brief: 'A digital platform for a Tri-City service and sales group, organising brands and conversion paths.', scope: ['Content strategy', 'UX/UI', 'Frontend', 'CMS', 'Local SEO', 'Analytics'], problem: 'Multiple services, locations and brands made it hard to choose the right path.', solution: 'We built one service that directs users to the right enquiry, booking or Google listing.', features: ['Multi-brand architecture', 'Service pages', 'Pricing and forms', 'Contact widget', 'CMS', 'Mobile-first SEO'] }
 }, {
   slug: 'gt-serwis-www', group: 'web', year: '2026',
-  images: ['/assets/digital-gt-home.webp', '/assets/digital-gt-cennik.webp', '/assets/digital-gt-galeria.webp', '/assets/digital-gt-artykul.webp'],
+  coverImage: '/assets/web-gt-serwis-long.webp',
+  scrollShowcase: true,
+  images: ['/assets/web-gt-serwis-long.webp', '/assets/web-gt-serwis-demo.m4v', '/assets/digital-gt-cennik.webp', '/assets/digital-gt-galeria.webp', '/assets/digital-gt-artykul.webp'],
   pl: { title: 'GT Serwis Barniewice', subtitle: 'Lokalny serwis, jasna droga do kontaktu.', type: 'Strona WWW / Automotive', brief: 'Responsywna strona warsztatu samochodowego: usługi, marki, cennik, galeria zaplecza, blog i formularz zgłoszeniowy.', scope: ['Strategia treści', 'UX/UI', 'Frontend', 'CMS', 'SEO lokalne', 'Analityka'], problem: 'Klient przed telefonem potrzebuje szybko sprawdzić zakres usług, cennik, lokalizację i wiarygodność zaplecza.', solution: 'Zaprojektowaliśmy szybką stronę prowadzącą z wyszukiwarki do konkretnej usługi i kontaktu, z pełnym widokiem warsztatu zamiast stockowych obietnic.', features: ['Strony usług i marek', 'Czytelny cennik', 'Galeria warsztatu', 'Blog ekspercki', 'Formularz kontaktowy', 'SEO lokalne'] },
   en: { title: 'GT Serwis Barniewice', subtitle: 'A local workshop with a clear contact path.', type: 'Website / Automotive', brief: 'A responsive workshop website with services, brands, pricing, gallery, blog and enquiry form.', scope: ['Content strategy', 'UX/UI', 'Frontend', 'CMS', 'Local SEO', 'Analytics'], problem: 'Customers need services, pricing, location and proof before making a call.', solution: 'We designed a fast local-search path from a specific service to contact, using real workshop imagery.', features: ['Service and brand pages', 'Clear pricing', 'Workshop gallery', 'Expert blog', 'Contact form', 'Local SEO'] }
 }, {
   slug: 'sergiej-auto-www', group: 'web', externalUrl: 'https://sergiejauto.pl/',
-  images: ['/assets/web-sergiej-auto.jpg'],
+  coverImage: '/assets/web-sergiej-auto-long.webp', scrollShowcase: true,
+  images: ['/assets/web-sergiej-auto-long.webp'],
   pl: { title: 'Sergiej Auto Serwis', subtitle: 'Serwis samochodowy i pomoc drogowa.', type: 'Strona WWW / Automotive', brief: 'Wyrazisty serwis internetowy porządkujący szeroką ofertę warsztatu, geometrię 3D, pomoc drogową, cennik i szybkie umawianie wizyt.', scope: ['Architektura treści', 'UX/UI', 'RWD', 'Oferta usług'], problem: '', solution: '', features: [] },
   en: { title: 'Sergiej Auto Service', subtitle: 'Workshop and roadside assistance.', type: 'Website / Automotive', brief: 'A distinctive website organising workshop services, 3D alignment, roadside assistance, pricing and booking.', scope: ['Content architecture', 'UX/UI', 'Responsive design', 'Service offer'], problem: '', solution: '', features: [] }
 }, {
   slug: 'serwis-dworaczek-www', group: 'web', externalUrl: 'https://serwisdworaczek.pl/',
-  images: ['/assets/web-serwis-dworaczek.jpg'],
+  coverImage: '/assets/web-serwis-dworaczek-long.webp', scrollShowcase: true,
+  images: ['/assets/web-serwis-dworaczek-long.webp'],
   pl: { title: 'Auto Serwis Dworaczek', subtitle: 'Mechanika, diagnostyka i regeneracja silników.', type: 'Strona WWW / Automotive', brief: 'Strona warsztatu z mocnym podziałem usług, czytelnym kontaktem i bezpośrednim prowadzeniem klienta od problemu technicznego do umówienia wizyty.', scope: ['UX/UI', 'RWD', 'Struktura usług', 'Kontakt'], problem: '', solution: '', features: [] },
   en: { title: 'Dworaczek Auto Service', subtitle: 'Mechanics, diagnostics and engine rebuilding.', type: 'Website / Automotive', brief: 'A workshop website with clear service areas and a direct path from a technical problem to booking.', scope: ['UX/UI', 'Responsive design', 'Service structure', 'Contact'], problem: '', solution: '', features: [] }
 }, {
   slug: 'dejcomp-www', group: 'web', externalUrl: 'https://dejcomp.send.pl/',
-  images: ['/assets/web-dejcomp.jpg'],
+  coverImage: '/assets/web-dejcomp-long.webp', scrollShowcase: true,
+  images: ['/assets/web-dejcomp-long.webp'],
   pl: { title: 'Dejcomp Laminaty', subtitle: 'Techniczna oferta B2B w uporządkowanej formie.', type: 'Strona WWW / Przemysł', brief: 'Serwis firmowy producenta laminatów prezentujący ofertę, technologię, certyfikaty i kompetencje w spokojnym, technicznym układzie.', scope: ['B2B', 'Architektura informacji', 'UX/UI', 'RWD'], problem: '', solution: '', features: [] },
   en: { title: 'Dejcomp Laminates', subtitle: 'A technical B2B offer in a clear structure.', type: 'Website / Industry', brief: 'A corporate website presenting laminate products, technology, certificates and production expertise.', scope: ['B2B', 'Information architecture', 'UX/UI', 'Responsive design'], problem: '', solution: '', features: [] }
 }, {
@@ -344,7 +349,9 @@ const DIGITAL_CASES = [{
   en: { title: 'AutoCentrum Elektronowa 18', subtitle: 'Car service in Lodz.', type: 'Website / Automotive', brief: 'A conversion-focused workshop site combining mechanics, bodywork, paint and Bosch Service with a clear contact path.', scope: ['Content strategy', 'UX/UI', 'Responsive design', 'Conversion'], problem: '', solution: '', features: [] }
 }, {
   slug: 'nagare-studio-www', group: 'web', externalUrl: 'https://nagarestudio.netlify.app/',
-  images: ['/assets/web-nagare-studio.jpg'],
+  coverImage: '/assets/web-nagare-studio-long.webp', scrollShowcase: true,
+  previewVideo: '/assets/web-nagare-studio-demo.m4v',
+  images: ['/assets/web-nagare-studio-long.webp'],
   pl: { title: 'Nagare Studio', subtitle: 'Minimalizm, ruch i precyzyjne portfolio.', type: 'Strona WWW / Studio kreatywne', brief: 'Minimalistyczny serwis studia z wyrazistym systemem typografii, subtelnym motion designem i kompaktową prezentacją usług oraz projektów.', scope: ['Kierunek kreatywny', 'UX/UI', 'Frontend', 'Motion'], problem: '', solution: '', features: [] },
   en: { title: 'Nagare Studio', subtitle: 'Minimalism, motion and a precise portfolio.', type: 'Website / Creative studio', brief: 'A minimalist studio website with a strong typographic system, subtle motion and a compact presentation of services and projects.', scope: ['Creative direction', 'UX/UI', 'Frontend', 'Motion'], problem: '', solution: '', features: [] }
 }];
@@ -1566,7 +1573,7 @@ function PortfolioCatalog({
   const categories = [{
     id: 'marketing',
     label: lang === 'pl' ? 'Obsługa marketingowa 360' : '360 marketing',
-    shortLabel: lang === 'pl' ? 'Obsługa marketingowa 360' : '360 marketing',
+    shortLabel: lang === 'pl' ? 'Marketing 360' : '360 marketing',
     description: lang === 'pl' ? 'Strategia, kampanie, social media, branding i produkcja prowadzone jako jeden spójny proces.' : 'Strategy, campaigns, social media, branding and production managed as one coherent process.',
     items: marketingItems
   }, {
@@ -1630,7 +1637,11 @@ function PortfolioCatalog({
     "aria-controls": `work-panel-${category.id}`,
     onClick: () => setActiveCategory(category.id),
     key: category.id
-  }, /*#__PURE__*/React.createElement("span", null, category.shortLabel), /*#__PURE__*/React.createElement("sup", null, String(category.items.length).padStart(2, '0'))))), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "work-tab-label-full"
+  }, category.label), /*#__PURE__*/React.createElement("span", {
+    className: "work-tab-label-short"
+  }, category.shortLabel), /*#__PURE__*/React.createElement("sup", null, String(category.items.length).padStart(2, '0'))))), /*#__PURE__*/React.createElement("div", {
     className: "work-category-head"
   }, /*#__PURE__*/React.createElement("h2", {
     className: "display",
@@ -1649,7 +1660,11 @@ function PortfolioCatalog({
     key: item.slug
   }, /*#__PURE__*/React.createElement("figure", {
     className: "work-card-media"
-  }, item.image ? /*#__PURE__*/React.createElement("img", {
+  }, item.image ? item.scrollShowcase || item.previewVideo ? /*#__PURE__*/React.createElement(ProjectScreen, {
+    item: item,
+    image: item.previewVideo || item.image,
+    alt: `${item.title} - podgląd strony internetowej w mockupie MacBooka`
+  }) : /*#__PURE__*/React.createElement("img", {
     src: item.image,
     alt: `${item.title} - podgląd realizacji KTB Media`,
     loading: "lazy",
@@ -2029,9 +2044,10 @@ function CasePage({
     }
   }, /*#__PURE__*/React.createElement("img", {
     src: src,
-    alt: `${item.title1} ${j + 1}`,
+    alt: Array.isArray(item.imageAlts) && sourceImages.indexOf(src) >= 0 && item.imageAlts[sourceImages.indexOf(src)] ? item.imageAlts[sourceImages.indexOf(src)] : item.imageAlts && item.imageAlts[src] ? item.imageAlts[src] : `${item.title1} ${item.titleIt || ''} - materiał z realizacji ${j + 1}`,
     loading: j === 0 ? "eager" : "lazy",
     decoding: "async",
+    fetchPriority: j === 0 ? "high" : "auto",
     onError: e => {
       e.target.style.display = 'none';
     }
@@ -2137,12 +2153,24 @@ function ProjectScreen({
   eager
 }) {
   const device = getProjectDevice(item, image);
-  const scrolling = Boolean(item.scrollShowcase && device === 'laptop');
+  const isVideo = /\.(?:m4v|mp4|webm)(?:\?|$)/i.test(image);
+  const scrolling = Boolean(item.scrollShowcase && device === 'laptop' && !isVideo);
+  const reduceMotion = typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   return /*#__PURE__*/React.createElement("div", {
     className: `project-device project-device-${device} ${scrolling ? 'is-scrolling' : ''}`
   }, /*#__PURE__*/React.createElement("div", {
     className: "project-device-screen"
-  }, /*#__PURE__*/React.createElement("img", {
+  }, isVideo ? /*#__PURE__*/React.createElement("video", {
+    src: image,
+    poster: item.coverImage,
+    autoPlay: !reduceMotion,
+    controls: reduceMotion,
+    muted: true,
+    loop: true,
+    playsInline: true,
+    preload: eager ? "metadata" : "none",
+    "aria-label": alt
+  }) : /*#__PURE__*/React.createElement("img", {
     src: image,
     alt: alt,
     loading: eager ? "eager" : "lazy",

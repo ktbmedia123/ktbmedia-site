@@ -412,10 +412,16 @@ collections:
                         name: palette
                         widget: list
                         field: { label: Kolor HEX, name: color, widget: string }
-                      - label: Obrazy (3 sztuki)
+                      - { label: Okładka realizacji, name: coverImage, widget: image, required: false }
+                      - label: Galeria realizacji
                         name: images
                         widget: list
                         field: { label: Obraz, name: image, widget: image }
+                      - label: Opisy alternatywne obrazów (ta sama kolejność)
+                        name: imageAlts
+                        widget: list
+                        required: false
+                        field: { label: Opis po polsku, name: alt, widget: string }
                       - label: Notatki z procesu
                         name: notes
                         widget: list
@@ -824,10 +830,16 @@ collections:
                         name: palette
                         widget: list
                         field: { label: HEX color, name: color, widget: string }
-                      - label: Images (3 items)
+                      - { label: Case cover image, name: coverImage, widget: image, required: false }
+                      - label: Case gallery
                         name: images
                         widget: list
                         field: { label: Image, name: image, widget: image }
+                      - label: Alternative image descriptions (same order)
+                        name: imageAlts
+                        widget: list
+                        required: false
+                        field: { label: English alt text, name: alt, widget: string }
                       - label: Process notes
                         name: notes
                         widget: list
