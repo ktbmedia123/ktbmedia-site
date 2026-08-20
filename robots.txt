@@ -25,5 +25,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Host: https://ktbmedia.eu
 Sitemap: https://ktbmedia.eu/sitemap.xml

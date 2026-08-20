@@ -37,6 +37,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -5032,6 +5033,9 @@ body.cursor-over-input .ktb-cursor::after {
   font-size: clamp(56px, 9vw, 138px);
   line-height: .88;
 }
+.landing-title.is-long {
+  font-size: clamp(44px, 7vw, 104px);
+}
 .landing-lede {
   max-width: 760px;
   margin-top: 28px;
@@ -5146,6 +5150,31 @@ body.cursor-over-input .ktb-cursor::after {
   color: var(--ink-60);
   line-height: 1.65;
 }
+.landing-related {
+  padding-block: 54px;
+  border-top: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
+}
+.landing-related-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+.landing-related-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 14px;
+  border: 1px solid color-mix(in srgb, var(--ink) 24%, transparent);
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.landing-related-links a:hover {
+  border-color: var(--accent-deep);
+  background: var(--accent);
+}
 .landing-final-cta {
   padding: 84px 0;
   background: var(--accent);
@@ -5169,6 +5198,12 @@ body.cursor-over-input .ktb-cursor::after {
   .landing-final-inner {
     align-items: flex-start;
     flex-direction: column;
+  }
+}
+@media (max-width: 520px) {
+  .landing-title.is-long {
+    font-size: 39px;
+    line-height: .94;
   }
 }
 
@@ -5477,6 +5512,15 @@ body.cursor-over-input .ktb-cursor::after {
   background: var(--bg);
   color: var(--ink);
   overflow: hidden;
+}
+body.static-404,
+body.static-404 a,
+body.static-404 button {
+  cursor: auto;
+}
+body.static-404 a,
+body.static-404 button {
+  cursor: pointer;
 }
 .not-found-inner {
   display: grid;

@@ -24,12 +24,12 @@
       "miniCta": true
     },
     "hero": {
-      "eyebrow": "Agencja 360 · Gdańsk · Od 2022",
-      "title1": "Marka,",
-      "title2": "którą",
-      "titleIt": "czuć",
-      "title3": "w sieci.",
-      "lede": "Zewnętrzny dział marketingu dla firm, które mają dość korporacyjnego bełkotu. Budujemy, prowadzimy, skalujemy — jak partner, nie podwykonawca.",
+      "eyebrow": "Agencja marketingowa · Gdańsk · Trójmiasto",
+      "title1": "Agencja marketingowa",
+      "title2": "Gdańsk /",
+      "titleIt": "Trójmiasto",
+      "title3": "",
+      "lede": "Strategia, reklama, SEO, social media, strony WWW i produkcja dla firm z Trójmiasta oraz całej Polski. Specjalizujemy się w automotive, ale nie zamykamy się na inne branże.",
       "cta1": "Porozmawiajmy",
       "cta2": "Zobacz realizacje",
       "image": "/assets/statue-greek.webp",
@@ -4831,6 +4831,14 @@
         {
           "label": "Marketing dla dealera",
           "href": "/marketing-dla-dealera-samochodowego"
+        },
+        {
+          "label": "Agencja marketingowa Gdynia",
+          "href": "/agencja-marketingowa-gdynia"
+        },
+        {
+          "label": "Marketing dla branży automotive",
+          "href": "/marketing-dla-motoryzacji"
         }
       ]
     },
@@ -4897,34 +4905,48 @@
           "rmdc"
         ],
         "faq": [
-          [
-            "Ile kosztuje agencja marketingowa w Gdańsku?",
-            "Sensowny start dla firmy lokalnej to zwykle od 3000 zł miesięcznie za obsługę plus budżet mediowy. Mniejszy budżet można wykorzystać punktowo, ale trudno wtedy równolegle prowadzić SEO, reklamy, content i analitykę."
-          ],
-          [
-            "Czy pracujecie tylko z firmami z Gdańska?",
-            "Nie. Obsługujemy firmy z całej Polski, ale dla Gdańska dobrze rozumiemy kontekst lokalny: dzielnice, konkurencję, sezonowość i zachowanie klientów w Trójmieście."
-          ],
-          [
-            "Co jest najważniejsze w marketingu lokalnym w Gdańsku?",
-            "Najczęściej: wizytówka Google, opinie, SEO lokalne, dobrze ustawione kampanie search oraz strona, która od razu mówi, co firma robi, gdzie działa i dlaczego warto zadzwonić."
-          ],
-          [
-            "Czy Google Ads działa dla usług lokalnych?",
-            "Tak, jeśli kampania jest ustawiona na realny obszar działania, ma dobrane frazy z intencją zakupu i mierzy połączenia oraz formularze, a nie tylko kliknięcia."
-          ],
-          [
-            "Jak szybko widać efekty?",
-            "Pierwsze dane z kampanii płatnych widać po kilku tygodniach. SEO lokalne i treści potrzebują zwykle 3-6 miesięcy, żeby pokazać stabilny trend."
-          ],
-          [
-            "Czy można zacząć od audytu?",
-            "Tak. Audyt jest dobrym początkiem, jeśli nie wiesz, czy problemem jest strona, reklamy, oferta, analityka czy widoczność w Google Maps."
-          ]
+          {
+            "q": "Ile kosztuje agencja marketingowa w Gdańsku?",
+            "a": "Sensowny start dla firmy lokalnej to zwykle od 3000 zł miesięcznie za obsługę plus budżet mediowy. Mniejszy budżet można wykorzystać punktowo, ale trudno wtedy równolegle prowadzić SEO, reklamy, content i analitykę."
+          },
+          {
+            "q": "Czy pracujecie tylko z firmami z Gdańska?",
+            "a": "Nie. Obsługujemy firmy z całej Polski, ale dla Gdańska dobrze rozumiemy kontekst lokalny: dzielnice, konkurencję, sezonowość i zachowanie klientów w Trójmieście."
+          },
+          {
+            "q": "Co jest najważniejsze w marketingu lokalnym w Gdańsku?",
+            "a": "Najczęściej: wizytówka Google, opinie, SEO lokalne, dobrze ustawione kampanie search oraz strona, która od razu mówi, co firma robi, gdzie działa i dlaczego warto zadzwonić."
+          },
+          {
+            "q": "Czy Google Ads działa dla usług lokalnych?",
+            "a": "Tak, jeśli kampania jest ustawiona na realny obszar działania, ma dobrane frazy z intencją zakupu i mierzy połączenia oraz formularze, a nie tylko kliknięcia."
+          },
+          {
+            "q": "Jak szybko widać efekty?",
+            "a": "Pierwsze dane z kampanii płatnych widać po kilku tygodniach. SEO lokalne i treści potrzebują zwykle 3-6 miesięcy, żeby pokazać stabilny trend."
+          },
+          {
+            "q": "Czy można zacząć od audytu?",
+            "a": "Tak. Audyt jest dobrym początkiem, jeśli nie wiesz, czy problemem jest strona, reklamy, oferta, analityka czy widoczność w Google Maps."
+          }
         ],
         "context": [
           "W Gdańsku konkurencja o uwagę klienta jest nierówna: innej komunikacji potrzebuje firma usługowa z Wrzeszcza, innej sklep techniczny obsługujący port, a jeszcze innej serwis motoryzacyjny z południa miasta. Dlatego nie zaczynamy od pakietu usług, tylko od sprawdzenia, skąd realnie mogą przyjść zapytania: Google Maps, wyniki lokalne, kampanie płatne, rekomendacje albo treści pokazujące proces pracy.",
           "Dobra agencja marketingowa Gdańsk nie powinna obiecywać wszystkiego naraz. Ustalamy priorytet na pierwsze 90 dni, porządkujemy stronę i analitykę, wzmacniamy wizytówkę Google Business Profile, a dopiero potem dokładamy reklamy lub content. Dzięki temu właściciel widzi, które działania budują kontakt telefoniczny, formularz, zapytanie ofertowe i sprzedaż."
+        ],
+        "related": [
+          {
+            "label": "Marketing dla branży automotive",
+            "href": "/marketing-dla-motoryzacji"
+          },
+          {
+            "label": "Marketing dla warsztatu samochodowego",
+            "href": "/marketing-dla-warsztatu-samochodowego"
+          },
+          {
+            "label": "Marketing dla serwisu samochodowego",
+            "href": "/marketing-dla-serwisu-samochodowego"
+          }
         ]
       },
       "agencja-marketingowa-pruszcz-gdanski": {
@@ -4968,34 +4990,48 @@
           "tomex-brakes"
         ],
         "faq": [
-          [
-            "Czy lokalna agencja marketingowa ma przewagę?",
-            "Tak, jeśli rozumie obszar działania firmy i nie ustawia kampanii tak, jakby klient miał obsługiwać pół Polski. W Pruszczu liczy się precyzja, opinie i czytelne pozycjonowanie usług."
-          ],
-          [
-            "Ile budżetu potrzebuje firma z Pruszcza?",
-            "Dla większości usług lokalnych sensowny miesięczny miks zaczyna się od około 3000 zł obsługi i osobnego budżetu reklamowego. Zakres zależy od konkurencji i liczby usług."
-          ],
-          [
-            "Czy pomagacie z wizytówką Google?",
-            "Tak. Porządkujemy kategorie, opisy, zdjęcia, produkty/usługi, posty, opinie i mierzenie połączeń. To często najszybszy fundament lokalnego wzrostu."
-          ],
-          [
-            "Czy robicie strony internetowe?",
-            "Tak. Projektujemy strony i landing page, które jasno prowadzą do telefonu, formularza albo zapytania. Design ma pomagać sprzedaży, nie tylko wyglądać."
-          ],
-          [
-            "Czy obsługujecie firmy B2B?",
-            "Tak. Szczególnie dobrze czujemy firmy techniczne, przemysłowe, automotive i marine, gdzie trzeba prosto wyjaśnić trudniejszą ofertę."
-          ],
-          [
-            "Czy można pracować etapami?",
-            "Tak. Często zaczynamy od audytu i priorytetów: co naprawić teraz, co testować reklamowo, a co rozwijać w SEO przez kilka miesięcy."
-          ]
+          {
+            "q": "Czy lokalna agencja marketingowa ma przewagę?",
+            "a": "Tak, jeśli rozumie obszar działania firmy i nie ustawia kampanii tak, jakby klient miał obsługiwać pół Polski. W Pruszczu liczy się precyzja, opinie i czytelne pozycjonowanie usług."
+          },
+          {
+            "q": "Ile budżetu potrzebuje firma z Pruszcza?",
+            "a": "Dla większości usług lokalnych sensowny miesięczny miks zaczyna się od około 3000 zł obsługi i osobnego budżetu reklamowego. Zakres zależy od konkurencji i liczby usług."
+          },
+          {
+            "q": "Czy pomagacie z wizytówką Google?",
+            "a": "Tak. Porządkujemy kategorie, opisy, zdjęcia, produkty/usługi, posty, opinie i mierzenie połączeń. To często najszybszy fundament lokalnego wzrostu."
+          },
+          {
+            "q": "Czy robicie strony internetowe?",
+            "a": "Tak. Projektujemy strony i landing page, które jasno prowadzą do telefonu, formularza albo zapytania. Design ma pomagać sprzedaży, nie tylko wyglądać."
+          },
+          {
+            "q": "Czy obsługujecie firmy B2B?",
+            "a": "Tak. Szczególnie dobrze czujemy firmy techniczne, przemysłowe, automotive i marine, gdzie trzeba prosto wyjaśnić trudniejszą ofertę."
+          },
+          {
+            "q": "Czy można pracować etapami?",
+            "a": "Tak. Często zaczynamy od audytu i priorytetów: co naprawić teraz, co testować reklamowo, a co rozwijać w SEO przez kilka miesięcy."
+          }
         ],
         "context": [
           "Pruszcz Gdański ma bardzo praktyczny rynek: klient często szuka firmy blisko domu lub pracy, porównuje opinie, sprawdza zdjęcia i chce szybko zadzwonić. To oznacza, że marketing lokalny musi być prosty w odbiorze, ale precyzyjny w wykonaniu. Dbamy o widoczność w mapach, jasne komunikaty na stronie i reklamy kierowane do osób, które faktycznie mogą dojechać do firmy.",
           "Nie kopiujemy strategii z dużych miast jeden do jednego. Dla firm z Pruszcza ważne są dzielnice, dojazd z okolicznych miejscowości, sezonowość i przewaga nad konkurencją z Gdańska. Dlatego plan łączymy z konkretną ofertą, zdjęciami miejsca, opiniami klientów i kampaniami, które mierzą telefony oraz formularze, a nie tylko kliknięcia."
+        ],
+        "related": [
+          {
+            "label": "Marketing dla branży automotive",
+            "href": "/marketing-dla-motoryzacji"
+          },
+          {
+            "label": "Marketing dla warsztatu samochodowego",
+            "href": "/marketing-dla-warsztatu-samochodowego"
+          },
+          {
+            "label": "Marketing dla serwisu samochodowego",
+            "href": "/marketing-dla-serwisu-samochodowego"
+          }
         ]
       },
       "agencja-marketingowa-tczew": {
@@ -5039,34 +5075,48 @@
           "pmo-lubricants"
         ],
         "faq": [
-          [
-            "Czy agencja marketingowa z Trójmiasta może obsługiwać Tczew?",
-            "Tak, jeśli rozumie lokalny kontekst i nie traktuje Tczewa jak dopisku do kampanii na Gdańsk. Obszar, frazy i komunikacja muszą być ustawione osobno."
-          ],
-          [
-            "Co najlepiej działa dla firm usługowych w Tczewie?",
-            "Najczęściej połączenie wizytówki Google, opinii, SEO lokalnego, kampanii search i strony, która jasno wyjaśnia usługę oraz obszar działania."
-          ],
-          [
-            "Czy warto inwestować w social media?",
-            "Tak, ale nie jako samotny kanał. Social media najlepiej działa, gdy wspiera zaufanie, remarketing i pokazuje ludzi oraz zaplecze firmy."
-          ],
-          [
-            "Jak mierzyć efekty?",
-            "Minimum to połączenia z reklam, formularze, kliknięcia w trasę, zapytania z wizytówki, koszt leada i jakość rozmów sprzedażowych."
-          ],
-          [
-            "Czy przygotowujecie zdjęcia i wideo?",
-            "Tak. Dla lokalnych firm prawdziwe zdjęcia z miejsca pracy zwykle wygrywają ze stockami, bo budują zaufanie przed pierwszym kontaktem."
-          ],
-          [
-            "Od czego zacząć?",
-            "Od audytu widoczności, wizytówki Google, strony i kampanii. Po nim wybieramy 2-3 działania, które mogą najszybciej poprawić liczbę kontaktów."
-          ]
+          {
+            "q": "Czy agencja marketingowa z Trójmiasta może obsługiwać Tczew?",
+            "a": "Tak, jeśli rozumie lokalny kontekst i nie traktuje Tczewa jak dopisku do kampanii na Gdańsk. Obszar, frazy i komunikacja muszą być ustawione osobno."
+          },
+          {
+            "q": "Co najlepiej działa dla firm usługowych w Tczewie?",
+            "a": "Najczęściej połączenie wizytówki Google, opinii, SEO lokalnego, kampanii search i strony, która jasno wyjaśnia usługę oraz obszar działania."
+          },
+          {
+            "q": "Czy warto inwestować w social media?",
+            "a": "Tak, ale nie jako samotny kanał. Social media najlepiej działa, gdy wspiera zaufanie, remarketing i pokazuje ludzi oraz zaplecze firmy."
+          },
+          {
+            "q": "Jak mierzyć efekty?",
+            "a": "Minimum to połączenia z reklam, formularze, kliknięcia w trasę, zapytania z wizytówki, koszt leada i jakość rozmów sprzedażowych."
+          },
+          {
+            "q": "Czy przygotowujecie zdjęcia i wideo?",
+            "a": "Tak. Dla lokalnych firm prawdziwe zdjęcia z miejsca pracy zwykle wygrywają ze stockami, bo budują zaufanie przed pierwszym kontaktem."
+          },
+          {
+            "q": "Od czego zacząć?",
+            "a": "Od audytu widoczności, wizytówki Google, strony i kampanii. Po nim wybieramy 2-3 działania, które mogą najszybciej poprawić liczbę kontaktów."
+          }
         ],
         "context": [
           "W Tczewie dobrze działa marketing, który łączy lokalne zaufanie z profesjonalnym wizerunkiem. Klient chce wiedzieć, czy firma jest blisko, czy ma doświadczenie i czy warto poświęcić czas na kontakt. Budujemy więc stronę i kampanie tak, żeby najważniejsze odpowiedzi były widoczne od razu: co robisz, dla kogo, za ile mniej więcej i dlaczego można Ci zaufać.",
           "Dla firm usługowych i technicznych z Tczewa najczęściej zaczynamy od porządku w Google: wizytówka, kategorie, zdjęcia, recenzje, podstrony usługowe i analityka połączeń. Dopiero na tej bazie dokładamy reklamy oraz treści, które pomagają przejąć klientów z okolicznych miejscowości i zbudować przewagę nad firmami, które są widoczne tylko z nazwy."
+        ],
+        "related": [
+          {
+            "label": "Marketing dla branży automotive",
+            "href": "/marketing-dla-motoryzacji"
+          },
+          {
+            "label": "Marketing dla warsztatu samochodowego",
+            "href": "/marketing-dla-warsztatu-samochodowego"
+          },
+          {
+            "label": "Marketing dla serwisu samochodowego",
+            "href": "/marketing-dla-serwisu-samochodowego"
+          }
         ]
       },
       "marketing-dla-warsztatu-samochodowego": {
@@ -5110,34 +5160,48 @@
           "tomex-brakes"
         ],
         "faq": [
-          [
-            "Co kampania Google Ads daje warsztatowi samochodowemu?",
-            "Daje szybki dostęp do kierowców, którzy już szukają konkretnej usługi. Najlepiej działa na frazy z intencją, np. klimatyzacja, hamulce, diagnostyka albo serwis konkretnej marki."
-          ],
-          [
-            "Czy warsztat potrzebuje SEO lokalnego?",
-            "Tak. Wielu klientów wybiera warsztat z mapy, więc widoczność w Google Maps, opinie, kategorie i lokalne podstrony usług mają bezpośredni wpływ na liczbę telefonów."
-          ],
-          [
-            "Jakie treści publikować?",
-            "Najlepsze są prawdziwe materiały: naprawy przed/po, krótkie porady, pokazanie sprzętu, zespołu i typowych błędów kierowców. To buduje zaufanie szybciej niż grafiki z banku zdjęć."
-          ],
-          [
-            "Ile kosztuje marketing warsztatu?",
-            "Najczęściej sensowny budżet zaczyna się od 3000 zł miesięcznie za obsługę plus media. Przy większej konkurencji lub kilku lokalizacjach budżet powinien być wyższy."
-          ],
-          [
-            "Czy social media sprzedają naprawy?",
-            "Same social media rzadko są głównym kanałem sprzedaży, ale świetnie wspierają zaufanie, remarketing i powracalność klientów."
-          ],
-          [
-            "Od czego zacząć?",
-            "Od wizytówki Google, strony, opinii i kampanii na najważniejsze usługi. Dopiero potem warto rozwijać szeroki content i automatyzacje."
-          ]
+          {
+            "q": "Co kampania Google Ads daje warsztatowi samochodowemu?",
+            "a": "Daje szybki dostęp do kierowców, którzy już szukają konkretnej usługi. Najlepiej działa na frazy z intencją, np. klimatyzacja, hamulce, diagnostyka albo serwis konkretnej marki."
+          },
+          {
+            "q": "Czy warsztat potrzebuje SEO lokalnego?",
+            "a": "Tak. Wielu klientów wybiera warsztat z mapy, więc widoczność w Google Maps, opinie, kategorie i lokalne podstrony usług mają bezpośredni wpływ na liczbę telefonów."
+          },
+          {
+            "q": "Jakie treści publikować?",
+            "a": "Najlepsze są prawdziwe materiały: naprawy przed/po, krótkie porady, pokazanie sprzętu, zespołu i typowych błędów kierowców. To buduje zaufanie szybciej niż grafiki z banku zdjęć."
+          },
+          {
+            "q": "Ile kosztuje marketing warsztatu?",
+            "a": "Najczęściej sensowny budżet zaczyna się od 3000 zł miesięcznie za obsługę plus media. Przy większej konkurencji lub kilku lokalizacjach budżet powinien być wyższy."
+          },
+          {
+            "q": "Czy social media sprzedają naprawy?",
+            "a": "Same social media rzadko są głównym kanałem sprzedaży, ale świetnie wspierają zaufanie, remarketing i powracalność klientów."
+          },
+          {
+            "q": "Od czego zacząć?",
+            "a": "Od wizytówki Google, strony, opinii i kampanii na najważniejsze usługi. Dopiero potem warto rozwijać szeroki content i automatyzacje."
+          }
         ],
         "context": [
           "Warsztat samochodowy nie potrzebuje ładnego marketingu dla samego wyglądu. Potrzebuje telefonów od klientów, którzy mają konkretny problem, wiedzą gdzie dojechać i rozumieją, dlaczego nie warto wybierać najtańszej opcji. Dlatego łączymy lokalne SEO, wizytówkę Google, zdjęcia z zaplecza, proste wideo i reklamy nastawione na usługi o najwyższej marży.",
           "Najpierw sprawdzamy, które naprawy naprawdę mają sens biznesowy: diagnostyka, klimatyzacja, elektronika, hamulce, floty, przeglądy czy obsługa konkretnej marki. Potem układamy komunikaty pod intencję klienta. Inaczej mówi się do kierowcy, któremu auto nie odpala, a inaczej do osoby szukającej stałego serwisu dla kilku samochodów firmowych."
+        ],
+        "related": [
+          {
+            "label": "Marketing dla branży automotive",
+            "href": "/marketing-dla-motoryzacji"
+          },
+          {
+            "label": "Agencja marketingowa Gdańsk",
+            "href": "/agencja-marketingowa-gdansk"
+          },
+          {
+            "label": "Agencja marketingowa Gdynia",
+            "href": "/agencja-marketingowa-gdynia"
+          }
         ]
       },
       "marketing-dla-serwisu-samochodowego": {
@@ -5180,34 +5244,48 @@
           "pmo-lubricants"
         ],
         "faq": [
-          [
-            "Czym różni się marketing serwisu od marketingu warsztatu?",
-            "Serwis często ma szerszą ofertę, większą skalę i kilka segmentów klientów: detal, floty, marki, usługi premium. Marketing musi to rozdzielić, żeby budżet nie mieszał intencji."
-          ],
-          [
-            "Jak reklamować usługi sezonowe?",
-            "Najlepiej z wyprzedzeniem: klimatyzacja przed upałami, opony przed zmianą sezonu, akumulatory przed zimą. Kampanie powinny mieć osobne landing page lub sekcje usług."
-          ],
-          [
-            "Czy warto robić wideo z serwisu?",
-            "Tak, bo klient widzi standard pracy, czystość, sprzęt i ludzi. W automotive zaufanie często powstaje zanim klient odda auto."
-          ],
-          [
-            "Jak mierzyć jakość leadów?",
-            "Poza liczbą telefonów warto sprawdzać temat rozmowy, markę auta, wartość zlecenia, termin i to, czy klient pojawił się w serwisie."
-          ],
-          [
-            "Czy opinie Google są ważne?",
-            "Bardzo. Przy usługach lokalnych opinie są częścią sprzedaży. Liczy się liczba, świeżość, treść i sposób odpowiadania."
-          ],
-          [
-            "Czy możecie obsłużyć kilka lokalizacji?",
-            "Tak. Każda lokalizacja potrzebuje osobnej wizytówki, lokalnych treści i często osobnego podejścia do budżetu reklamowego."
-          ]
+          {
+            "q": "Czym różni się marketing serwisu od marketingu warsztatu?",
+            "a": "Serwis często ma szerszą ofertę, większą skalę i kilka segmentów klientów: detal, floty, marki, usługi premium. Marketing musi to rozdzielić, żeby budżet nie mieszał intencji."
+          },
+          {
+            "q": "Jak reklamować usługi sezonowe?",
+            "a": "Najlepiej z wyprzedzeniem: klimatyzacja przed upałami, opony przed zmianą sezonu, akumulatory przed zimą. Kampanie powinny mieć osobne landing page lub sekcje usług."
+          },
+          {
+            "q": "Czy warto robić wideo z serwisu?",
+            "a": "Tak, bo klient widzi standard pracy, czystość, sprzęt i ludzi. W automotive zaufanie często powstaje zanim klient odda auto."
+          },
+          {
+            "q": "Jak mierzyć jakość leadów?",
+            "a": "Poza liczbą telefonów warto sprawdzać temat rozmowy, markę auta, wartość zlecenia, termin i to, czy klient pojawił się w serwisie."
+          },
+          {
+            "q": "Czy opinie Google są ważne?",
+            "a": "Bardzo. Przy usługach lokalnych opinie są częścią sprzedaży. Liczy się liczba, świeżość, treść i sposób odpowiadania."
+          },
+          {
+            "q": "Czy możecie obsłużyć kilka lokalizacji?",
+            "a": "Tak. Każda lokalizacja potrzebuje osobnej wizytówki, lokalnych treści i często osobnego podejścia do budżetu reklamowego."
+          }
         ],
         "context": [
           "Serwis samochodowy często ma więcej usług niż klient jest w stanie zrozumieć w kilka sekund. Marketing musi więc uporządkować ofertę, pokazać specjalizacje i skrócić drogę do kontaktu. Budujemy strukturę strony wokół konkretnych problemów: objawów, marek, sezonowych usług i napraw, które dają najlepszą rentowność.",
           "Dużą rolę odgrywa zaufanie. Zdjęcia stanowisk, proces przyjęcia auta, krótkie filmy z diagnostyki, opinie i jasne zasady kontaktu potrafią zwiększyć liczbę zapytań bez podnoszenia budżetu reklamowego. Kampanie płatne traktujemy jako wzmocnienie tej bazy, nie jako protezę dla strony, której klient nie rozumie."
+        ],
+        "related": [
+          {
+            "label": "Marketing dla branży automotive",
+            "href": "/marketing-dla-motoryzacji"
+          },
+          {
+            "label": "Agencja marketingowa Gdańsk",
+            "href": "/agencja-marketingowa-gdansk"
+          },
+          {
+            "label": "Agencja marketingowa Gdynia",
+            "href": "/agencja-marketingowa-gdynia"
+          }
         ]
       },
       "marketing-dla-dealera-samochodowego": {
@@ -5251,34 +5329,253 @@
           "autocentrum-elektronowa"
         ],
         "faq": [
-          [
-            "Czym różni się marketing nowych i używanych aut?",
-            "Nowe auta sprzedają konfigurację, finansowanie, dostępność i markę. Używane wymagają szybkiego zaufania do konkretnego egzemplarza, historii, zdjęć i ceny."
-          ],
-          [
-            "Czy Meta Ads działa dla dealerów?",
-            "Tak, szczególnie do budowania popytu, remarketingu i promocji konkretnych modeli. Dla gorącej intencji zwykle mocniejszy jest Google Search."
-          ],
-          [
-            "Jak poprawić jakość leadów?",
-            "Trzeba jasno komunikować cenę, finansowanie, dostępność, lokalizację i następny krok. Formularz powinien odsiać ciekawskich bez utrudniania kontaktu kupującym."
-          ],
-          [
-            "Czy dealer potrzebuje SEO lokalnego?",
-            "Tak. Salon, serwis, części, jazda testowa i finansowanie mają lokalne intencje, które warto obsłużyć osobnymi treściami i wizytówką."
-          ],
-          [
-            "Jak mierzyć kampanie dealera?",
-            "Poza CPL liczy się kontakt z handlowcem, wizyta, jazda testowa, rezerwacja i sprzedaż. Sam formularz nie jest jeszcze sukcesem."
-          ],
-          [
-            "Czy tworzycie landing page dla konkretnych modeli?",
-            "Tak. To często lepsze niż kierowanie całego ruchu na ogólną stronę, szczególnie przy promocjach, finansowaniu lub limitowanej dostępności."
-          ]
+          {
+            "q": "Czym różni się marketing nowych i używanych aut?",
+            "a": "Nowe auta sprzedają konfigurację, finansowanie, dostępność i markę. Używane wymagają szybkiego zaufania do konkretnego egzemplarza, historii, zdjęć i ceny."
+          },
+          {
+            "q": "Czy Meta Ads działa dla dealerów?",
+            "a": "Tak, szczególnie do budowania popytu, remarketingu i promocji konkretnych modeli. Dla gorącej intencji zwykle mocniejszy jest Google Search."
+          },
+          {
+            "q": "Jak poprawić jakość leadów?",
+            "a": "Trzeba jasno komunikować cenę, finansowanie, dostępność, lokalizację i następny krok. Formularz powinien odsiać ciekawskich bez utrudniania kontaktu kupującym."
+          },
+          {
+            "q": "Czy dealer potrzebuje SEO lokalnego?",
+            "a": "Tak. Salon, serwis, części, jazda testowa i finansowanie mają lokalne intencje, które warto obsłużyć osobnymi treściami i wizytówką."
+          },
+          {
+            "q": "Jak mierzyć kampanie dealera?",
+            "a": "Poza CPL liczy się kontakt z handlowcem, wizyta, jazda testowa, rezerwacja i sprzedaż. Sam formularz nie jest jeszcze sukcesem."
+          },
+          {
+            "q": "Czy tworzycie landing page dla konkretnych modeli?",
+            "a": "Tak. To często lepsze niż kierowanie całego ruchu na ogólną stronę, szczególnie przy promocjach, finansowaniu lub limitowanej dostępności."
+          }
         ],
         "context": [
           "Dealer samochodowy działa na kilku różnych ścieżkach sprzedaży naraz: nowe auta, używane, finansowanie, odkupy, serwis i relacje posprzedażowe. Każda z tych ścieżek ma inne tempo decyzji i inne argumenty. Dlatego marketing dealera musi rozdzielać komunikaty, mierzyć źródła kontaktów i pilnować jakości leadów, a nie tylko ich liczby.",
           "W praktyce oznacza to oddzielne kampanie dla modeli, ofert specjalnych, aut dostępnych od ręki i samochodów używanych. Do tego dochodzi content pokazujący ludzi, proces wydania auta, serwis i realne historie klientów. Taki marketing pomaga sprzedawcom rozmawiać z osobami, które są lepiej przygotowane, a nie przypadkowo kliknęły reklamę."
+        ],
+        "related": [
+          {
+            "label": "Marketing dla branży automotive",
+            "href": "/marketing-dla-motoryzacji"
+          },
+          {
+            "label": "Agencja marketingowa Gdańsk",
+            "href": "/agencja-marketingowa-gdansk"
+          },
+          {
+            "label": "Agencja marketingowa Gdynia",
+            "href": "/agencja-marketingowa-gdynia"
+          }
+        ]
+      },
+      "agencja-marketingowa-gdynia": {
+        "slug": "agencja-marketingowa-gdynia",
+        "key": "gdynia",
+        "keyword": "agencja marketingowa Gdynia",
+        "area": "Gdyni",
+        "type": "local",
+        "title": "Agencja marketingowa Gdynia dla firm · KTB Media",
+        "description": "Agencja marketingowa Gdynia dla firm lokalnych, automotive i B2B. SEO lokalne, Google Ads, social media, strony WWW i produkcja w całym Trójmieście i na Pomorzu.",
+        "keywords": [
+          "agencja marketingowa Gdynia",
+          "agencja reklamowa Gdynia",
+          "marketing Gdynia",
+          "marketing Trójmiasto",
+          "SEO lokalne Gdynia",
+          "Google Ads Gdynia",
+          "prowadzenie social media Gdynia",
+          "prowadzenie Instagrama Gdynia",
+          "marketing automotive Gdynia"
+        ],
+        "hero": {
+          "h1": "Agencja marketingowa Gdynia",
+          "lead": "Pomagamy firmom z Gdyni zamieniać widoczność w Google, kampanie i treści w telefony, formularze oraz sprzedaż. Łączymy lokalne SEO z reklamą, social media i zapleczem produkcyjnym."
+        },
+        "why": [
+          "Patrzymy na Gdynię jako część jednego rynku Trójmiasta, ale kampanie, frazy i ofertę dopasowujemy do realnego obszaru działania firmy.",
+          "Łączymy SEO, Google Ads, Meta Ads, social media, strony WWW oraz produkcję. Jeden zespół odpowiada za wspólny kierunek i pomiar.",
+          "Mamy doświadczenie w automotive, marine i technicznym B2B, dlatego potrafimy wyjaśnić ofertę, której nie da się sprzedać jednym sloganem.",
+          "Raportujemy kontakty, koszt pozyskania i jakość zapytań. Zasięg jest użyteczny tylko wtedy, gdy wspiera konkretny cel firmy."
+        ],
+        "services": [
+          "SEO lokalne i optymalizacja Google Business Profile w Gdyni",
+          "Kampanie Google Ads na Gdynię, Sopot i całe Trójmiasto",
+          "Prowadzenie social media i Instagrama z własnym contentem",
+          "Meta Ads, remarketing i kampanie leadowe",
+          "Strony WWW oraz landing page przygotowane pod SEO i konwersję",
+          "Marketing dla firm automotive, marine i technicznego B2B",
+          "Produkcja zdjęć, wideo i ujęć z drona",
+          "Analityka połączeń, formularzy i jakości leadów"
+        ],
+        "cases": [
+          "rmdc",
+          "ddp-supply",
+          "grupa-janisz"
+        ],
+        "faq": [
+          {
+            "q": "Ile kosztuje agencja marketingowa w Gdyni?",
+            "a": "Stała współpraca najczęściej zaczyna się od około 3000 zł netto miesięcznie za obsługę, do czego dochodzi budżet reklamowy lub produkcyjny. Ostateczny koszt zależy od liczby kanałów, materiałów i tempa wdrożeń."
+          },
+          {
+            "q": "Czy prowadzicie marketing tylko dla automotive?",
+            "a": "Nie. Automotive jest naszą najmocniejszą specjalizacją, ale pracujemy również z branżą morską, firmami technicznymi B2B, usługami lokalnymi i e-commerce."
+          },
+          {
+            "q": "Co daje lokalne SEO firmie z Gdyni?",
+            "a": "Pomaga pojawiać się na zapytania związane z usługą i lokalizacją, wzmacnia wizytówkę Google oraz prowadzi użytkownika do telefonu, trasy lub formularza."
+          },
+          {
+            "q": "Czy prowadzicie social media w Gdyni?",
+            "a": "Tak. Przygotowujemy strategię, plan publikacji, zdjęcia, krótkie wideo, teksty, moderację i kampanie. Treści powstają z realnej pracy firmy, a nie z przypadkowych stocków."
+          },
+          {
+            "q": "Czy Google Ads i SEO można prowadzić równolegle?",
+            "a": "Tak. Reklamy dostarczają dane oraz ruch szybciej, a SEO buduje stabilną widoczność. Wspólna analiza fraz pozwala lepiej dzielić budżet."
+          },
+          {
+            "q": "Jak szybko pojawiają się efekty?",
+            "a": "Pierwsze wiarygodne dane z kampanii płatnych zwykle zbieramy po kilku tygodniach. Lokalne SEO, treści i profil Google potrzebują najczęściej od trzech do sześciu miesięcy."
+          }
+        ],
+        "context": [
+          "Gdynia ma rynek oparty jednocześnie na usługach lokalnych, motoryzacji, logistyce, porcie i technicznym B2B. Agencja reklamowa Gdynia powinna rozumieć, że klient prywatny szukający serwisu zachowuje się inaczej niż osoba odpowiedzialna za zakupy lub rozwój w spółce morskiej. Dlatego każdą współpracę zaczynamy od intencji klienta i wartości kontaktu, nie od wyboru modnego kanału.",
+          "Dla firm lokalnych porządkujemy wizytówkę Google Business Profile, strukturę strony, opinie, pomiar połączeń i kampanie search. Dla marek B2B rozwijamy treści eksperckie, LinkedIn, materiały sprzedażowe, strony usług oraz komunikację, która skraca drogę od pierwszego kontaktu do rozmowy handlowej.",
+          "Prowadzenie social media Gdynia ma sens wtedy, gdy pokazuje kompetencje, ludzi i proces. Organizujemy produkcję foto-wideo, przygotowujemy krótkie formaty, materiały z drona i kampanie, które docierają ponownie do osób odwiedzających stronę. Każdy kanał pracuje na tę samą obietnicę marki.",
+          "Siedzibę mamy w Pruszczu Gdańskim, a projekty realizujemy w całym Trójmieście i w Polsce. Spotkania prowadzimy stacjonarnie lub online. Lokalna bliskość pomaga w produkcjach, ale nie ogranicza zakresu ani skali współpracy."
+        ],
+        "related": [
+          {
+            "label": "Marketing dla branży automotive",
+            "href": "/marketing-dla-motoryzacji"
+          },
+          {
+            "label": "Marketing dla warsztatu samochodowego",
+            "href": "/marketing-dla-warsztatu-samochodowego"
+          },
+          {
+            "label": "Marketing dla serwisu samochodowego",
+            "href": "/marketing-dla-serwisu-samochodowego"
+          }
+        ]
+      },
+      "marketing-dla-motoryzacji": {
+        "slug": "marketing-dla-motoryzacji",
+        "key": "automotive",
+        "keyword": "marketing dla branży automotive",
+        "area": "branży automotive",
+        "type": "industry",
+        "title": "Marketing dla branży automotive i motoryzacji · KTB Media",
+        "description": "Marketing automotive dla serwisów, dealerów, producentów aut i części. Strategia, SEO, Google Ads, Meta Ads, social media, strony WWW oraz produkcja foto-wideo.",
+        "keywords": [
+          "marketing motoryzacyjny",
+          "agencja marketingowa automotive",
+          "marketing dla branży automotive",
+          "marketing dla warsztatu samochodowego",
+          "reklama dla serwisu samochodowego",
+          "marketing dla auto detailingu",
+          "marketing dla salonu samochodowego",
+          "pozycjonowanie branża motoryzacyjna",
+          "reklama dla producenta części auto",
+          "pozyskiwanie klientów dla warsztatu"
+        ],
+        "hero": {
+          "h1": "Marketing dla Branży Automotive i Motoryzacji",
+          "lead": "Budujemy marketing dla producentów aut i części, dealerów, serwisów, warsztatów, detailerów oraz marek aftermarketowych. Łączymy strategię, sprzedaż, reklamę, SEO i produkcję w jeden system."
+        },
+        "servicesHeading": "Pozycjonowanie i reklama dla serwisów oraz firm motoryzacyjnych w Gdańsku, Gdyni i Pruszczu Gdańskim",
+        "why": [
+          "Znamy drogę klienta od pierwszego wyszukania usterki lub produktu do telefonu, wizyty, zakupu i ponownego serwisu.",
+          "Pracowaliśmy z serwisami, dealerami, producentami olejów i dodatków, dystrybutorami części oraz markami obecnymi w motorsporcie.",
+          "Produkujemy zdjęcia i wideo w warsztacie, salonie, na torze oraz podczas wydarzeń. Materiał powstaje pod konkretny kanał i etap sprzedaży.",
+          "Łączymy dane z reklam, strony, wizytówki Google i rozmów handlowych. Dzięki temu wiemy nie tylko ile było leadów, ale które miały wartość."
+        ],
+        "services": [
+          "Strategia marketingowa i pozycjonowanie marki automotive",
+          "SEO lokalne, Google Business Profile i pozyskiwanie opinii",
+          "Google Ads na usługi, części, modele i zapytania zakupowe",
+          "Meta Ads, remarketing i kampanie leadowe",
+          "Prowadzenie social media dla serwisów, dealerów i producentów",
+          "Strony WWW, landing page, katalogi i konfiguratory",
+          "Produkcja zdjęć, wideo, rolek oraz ujęć z drona i FPV",
+          "Branding, rebranding, materiały POS i wsparcie sprzedaży"
+        ],
+        "cases": [
+          "grupa-janisz",
+          "gt-serwis-barniewice",
+          "pmo-lubricants",
+          "pulsegt",
+          "extreme-tyres",
+          "autocentrum-elektronowa"
+        ],
+        "faq": [
+          {
+            "q": "Jakie działania marketingowe sprawdzają się w branży automotive?",
+            "a": "Najczęściej działa połączenie lokalnego SEO, wizytówki Google, kampanii search, wiarygodnych opinii i materiałów pokazujących ludzi oraz zaplecze. Dla producentów i dealerów dochodzą kampanie produktowe, remarketing, content ekspercki oraz wsparcie sieci sprzedaży."
+          },
+          {
+            "q": "Ile kosztuje marketing dla warsztatu w Gdańsku?",
+            "a": "Stała obsługa zwykle zaczyna się od około 3000 zł netto miesięcznie, a budżet reklamowy ustala się osobno. Koszt zależy od konkurencji, liczby usług, jakości obecnej strony i możliwości obsługi nowych klientów."
+          },
+          {
+            "q": "Czy obsługujecie producentów aut i części zamiennych?",
+            "a": "Tak. Pomagamy w pozycjonowaniu marki, komunikacji technicznej, kampaniach B2B i B2C, social media, materiałach sprzedażowych, stronach WWW oraz produkcji foto-wideo."
+          },
+          {
+            "q": "Jak reklamować studio auto detailingu?",
+            "a": "Najlepiej pokazywać realną jakość wykonania: etapy pracy, różnicę przed i po, konkretne pakiety oraz opinie. Google przechwytuje popyt lokalny, a Meta i Instagram budują aspirację oraz remarketing."
+          },
+          {
+            "q": "Czy Google Ads daje warsztatowi wartościowych klientów?",
+            "a": "Tak, jeśli kampania obejmuje usługi o odpowiedniej marży, precyzyjny obszar, wykluczenia i pomiar telefonów. Sama liczba kliknięć nie wystarczy; kampanię trzeba łączyć z dostępnością terminów i jakością rozmów."
+          },
+          {
+            "q": "Czym różni się marketing dealera od marketingu serwisu?",
+            "a": "Dealer prowadzi osobne ścieżki dla nowych aut, używanych, flot, finansowania i jazd testowych. Serwis częściej pracuje na pilnej potrzebie, zaufaniu lokalnym, opiniach i powtarzalności wizyt."
+          },
+          {
+            "q": "Po jakim czasie widać efekt SEO w motoryzacji?",
+            "a": "Pierwsze zmiany widoczności mogą pojawić się po kilku tygodniach, ale stabilny wzrost lokalnego SEO zwykle wymaga od trzech do sześciu miesięcy. Tempo zależy od konkurencji, historii domeny, opinii i jakości treści."
+          }
+        ],
+        "context": [
+          "Marketing motoryzacyjny nie jest jedną usługą. Inaczej pozyskuje się klienta na pilną naprawę, inaczej sprzedaje olej silnikowy do sieci dystrybucji, a jeszcze inaczej buduje zainteresowanie nową marką samochodów. Dlatego segmentujemy odbiorców, ofertę i kanały. Zaczynamy od tego, co firma sprzedaje, na czym zarabia i jak wygląda jej rzeczywista możliwość obsługi nowych zapytań.",
+          "W projektach dla Grupy Janisz i GT Serwis Barniewice łączyliśmy stronę, lokalne SEO, kampanie Google i Meta, social media, konsulting oraz produkcję treści. Dla PMO Lubricants i PulseGT pracowaliśmy z produktami wymagającymi wyjaśnienia technologii i korzyści. Extreme Tyres wymagało języka motorsportu, emocji oraz materiałów z toru. Auto Centrum Elektronowa pokazywało skalę warsztatu i ludzi stojących za usługą.",
+          "Dla warsztatu lub serwisu fundamentem jest spójna informacja: jakie auta i usterki obsługuje, gdzie działa, kiedy można zadzwonić i dlaczego warto mu zaufać. Optymalizujemy Google Business Profile, budujemy strony usług, porządkujemy dane NAP i planujemy system zdobywania opinii. Kampanie kierujemy na frazy o wysokiej intencji, a nie na przypadkowy szeroki ruch.",
+          "Marketing dla producenta części samochodowych lub marki aftermarketowej potrzebuje również materiałów dla dystrybutorów, mechaników i końcowych kierowców. Tworzymy content techniczny, katalogi, landing page, kampanie, materiały POS, zdjęcia produktów, filmy z testów i formaty do social media. Komunikat jest prosty, ale nie upraszcza produktu do pustego hasła.",
+          "Dealerzy i importerzy potrzebują osobnych ścieżek dla modeli, finansowania, jazd testowych, aut używanych i serwisu. Reklamy powinny przekazywać handlowcom leady z kontekstem, a strona odpowiadać na pytania o dostępność, cenę i kolejny krok. Mierzymy nie tylko formularz, ale także rozmowę, wizytę i jakość kontaktu.",
+          "Działamy z Pruszcza Gdańskiego na terenie Gdańska, Gdyni, Sopotu i całego Trójmiasta, ale obsługujemy marki z całej Polski. Automotive jest naszą specjalizacją, nie ograniczeniem: doświadczenie z wymagającym produktem, lokalną sprzedażą i technicznym contentem wykorzystujemy także w marine, B2B oraz innych branżach."
+        ],
+        "related": [
+          {
+            "label": "Agencja marketingowa Gdańsk",
+            "href": "/agencja-marketingowa-gdansk"
+          },
+          {
+            "label": "Agencja marketingowa Gdynia",
+            "href": "/agencja-marketingowa-gdynia"
+          },
+          {
+            "label": "Agencja marketingowa Pruszcz Gdański",
+            "href": "/agencja-marketingowa-pruszcz-gdanski"
+          },
+          {
+            "label": "Marketing dla warsztatu",
+            "href": "/marketing-dla-warsztatu-samochodowego"
+          },
+          {
+            "label": "Marketing dla serwisu",
+            "href": "/marketing-dla-serwisu-samochodowego"
+          },
+          {
+            "label": "Marketing dla dealera",
+            "href": "/marketing-dla-dealera-samochodowego"
+          }
         ]
       }
     }
@@ -7546,6 +7843,14 @@
         {
           "label": "Dealer marketing",
           "href": "/marketing-dla-dealera-samochodowego"
+        },
+        {
+          "label": "Agencja marketingowa Gdynia",
+          "href": "/agencja-marketingowa-gdynia"
+        },
+        {
+          "label": "Marketing dla branży automotive",
+          "href": "/marketing-dla-motoryzacji"
         }
       ]
     },
@@ -7612,34 +7917,48 @@
           "rmdc"
         ],
         "faq": [
-          [
-            "Ile kosztuje agencja marketingowa w Gdańsku?",
-            "Sensowny start dla firmy lokalnej to zwykle od 3000 zł miesięcznie za obsługę plus budżet mediowy. Mniejszy budżet można wykorzystać punktowo, ale trudno wtedy równolegle prowadzić SEO, reklamy, content i analitykę."
-          ],
-          [
-            "Czy pracujecie tylko z firmami z Gdańska?",
-            "Nie. Obsługujemy firmy z całej Polski, ale dla Gdańska dobrze rozumiemy kontekst lokalny: dzielnice, konkurencję, sezonowość i zachowanie klientów w Trójmieście."
-          ],
-          [
-            "Co jest najważniejsze w marketingu lokalnym w Gdańsku?",
-            "Najczęściej: wizytówka Google, opinie, SEO lokalne, dobrze ustawione kampanie search oraz strona, która od razu mówi, co firma robi, gdzie działa i dlaczego warto zadzwonić."
-          ],
-          [
-            "Czy Google Ads działa dla usług lokalnych?",
-            "Tak, jeśli kampania jest ustawiona na realny obszar działania, ma dobrane frazy z intencją zakupu i mierzy połączenia oraz formularze, a nie tylko kliknięcia."
-          ],
-          [
-            "Jak szybko widać efekty?",
-            "Pierwsze dane z kampanii płatnych widać po kilku tygodniach. SEO lokalne i treści potrzebują zwykle 3-6 miesięcy, żeby pokazać stabilny trend."
-          ],
-          [
-            "Czy można zacząć od audytu?",
-            "Tak. Audyt jest dobrym początkiem, jeśli nie wiesz, czy problemem jest strona, reklamy, oferta, analityka czy widoczność w Google Maps."
-          ]
+          {
+            "q": "Ile kosztuje agencja marketingowa w Gdańsku?",
+            "a": "Sensowny start dla firmy lokalnej to zwykle od 3000 zł miesięcznie za obsługę plus budżet mediowy. Mniejszy budżet można wykorzystać punktowo, ale trudno wtedy równolegle prowadzić SEO, reklamy, content i analitykę."
+          },
+          {
+            "q": "Czy pracujecie tylko z firmami z Gdańska?",
+            "a": "Nie. Obsługujemy firmy z całej Polski, ale dla Gdańska dobrze rozumiemy kontekst lokalny: dzielnice, konkurencję, sezonowość i zachowanie klientów w Trójmieście."
+          },
+          {
+            "q": "Co jest najważniejsze w marketingu lokalnym w Gdańsku?",
+            "a": "Najczęściej: wizytówka Google, opinie, SEO lokalne, dobrze ustawione kampanie search oraz strona, która od razu mówi, co firma robi, gdzie działa i dlaczego warto zadzwonić."
+          },
+          {
+            "q": "Czy Google Ads działa dla usług lokalnych?",
+            "a": "Tak, jeśli kampania jest ustawiona na realny obszar działania, ma dobrane frazy z intencją zakupu i mierzy połączenia oraz formularze, a nie tylko kliknięcia."
+          },
+          {
+            "q": "Jak szybko widać efekty?",
+            "a": "Pierwsze dane z kampanii płatnych widać po kilku tygodniach. SEO lokalne i treści potrzebują zwykle 3-6 miesięcy, żeby pokazać stabilny trend."
+          },
+          {
+            "q": "Czy można zacząć od audytu?",
+            "a": "Tak. Audyt jest dobrym początkiem, jeśli nie wiesz, czy problemem jest strona, reklamy, oferta, analityka czy widoczność w Google Maps."
+          }
         ],
         "context": [
           "W Gdańsku konkurencja o uwagę klienta jest nierówna: innej komunikacji potrzebuje firma usługowa z Wrzeszcza, innej sklep techniczny obsługujący port, a jeszcze innej serwis motoryzacyjny z południa miasta. Dlatego nie zaczynamy od pakietu usług, tylko od sprawdzenia, skąd realnie mogą przyjść zapytania: Google Maps, wyniki lokalne, kampanie płatne, rekomendacje albo treści pokazujące proces pracy.",
           "Dobra agencja marketingowa Gdańsk nie powinna obiecywać wszystkiego naraz. Ustalamy priorytet na pierwsze 90 dni, porządkujemy stronę i analitykę, wzmacniamy wizytówkę Google Business Profile, a dopiero potem dokładamy reklamy lub content. Dzięki temu właściciel widzi, które działania budują kontakt telefoniczny, formularz, zapytanie ofertowe i sprzedaż."
+        ],
+        "related": [
+          {
+            "label": "Marketing dla branży automotive",
+            "href": "/marketing-dla-motoryzacji"
+          },
+          {
+            "label": "Marketing dla warsztatu samochodowego",
+            "href": "/marketing-dla-warsztatu-samochodowego"
+          },
+          {
+            "label": "Marketing dla serwisu samochodowego",
+            "href": "/marketing-dla-serwisu-samochodowego"
+          }
         ]
       },
       "agencja-marketingowa-pruszcz-gdanski": {
@@ -7683,34 +8002,48 @@
           "tomex-brakes"
         ],
         "faq": [
-          [
-            "Czy lokalna agencja marketingowa ma przewagę?",
-            "Tak, jeśli rozumie obszar działania firmy i nie ustawia kampanii tak, jakby klient miał obsługiwać pół Polski. W Pruszczu liczy się precyzja, opinie i czytelne pozycjonowanie usług."
-          ],
-          [
-            "Ile budżetu potrzebuje firma z Pruszcza?",
-            "Dla większości usług lokalnych sensowny miesięczny miks zaczyna się od około 3000 zł obsługi i osobnego budżetu reklamowego. Zakres zależy od konkurencji i liczby usług."
-          ],
-          [
-            "Czy pomagacie z wizytówką Google?",
-            "Tak. Porządkujemy kategorie, opisy, zdjęcia, produkty/usługi, posty, opinie i mierzenie połączeń. To często najszybszy fundament lokalnego wzrostu."
-          ],
-          [
-            "Czy robicie strony internetowe?",
-            "Tak. Projektujemy strony i landing page, które jasno prowadzą do telefonu, formularza albo zapytania. Design ma pomagać sprzedaży, nie tylko wyglądać."
-          ],
-          [
-            "Czy obsługujecie firmy B2B?",
-            "Tak. Szczególnie dobrze czujemy firmy techniczne, przemysłowe, automotive i marine, gdzie trzeba prosto wyjaśnić trudniejszą ofertę."
-          ],
-          [
-            "Czy można pracować etapami?",
-            "Tak. Często zaczynamy od audytu i priorytetów: co naprawić teraz, co testować reklamowo, a co rozwijać w SEO przez kilka miesięcy."
-          ]
+          {
+            "q": "Czy lokalna agencja marketingowa ma przewagę?",
+            "a": "Tak, jeśli rozumie obszar działania firmy i nie ustawia kampanii tak, jakby klient miał obsługiwać pół Polski. W Pruszczu liczy się precyzja, opinie i czytelne pozycjonowanie usług."
+          },
+          {
+            "q": "Ile budżetu potrzebuje firma z Pruszcza?",
+            "a": "Dla większości usług lokalnych sensowny miesięczny miks zaczyna się od około 3000 zł obsługi i osobnego budżetu reklamowego. Zakres zależy od konkurencji i liczby usług."
+          },
+          {
+            "q": "Czy pomagacie z wizytówką Google?",
+            "a": "Tak. Porządkujemy kategorie, opisy, zdjęcia, produkty/usługi, posty, opinie i mierzenie połączeń. To często najszybszy fundament lokalnego wzrostu."
+          },
+          {
+            "q": "Czy robicie strony internetowe?",
+            "a": "Tak. Projektujemy strony i landing page, które jasno prowadzą do telefonu, formularza albo zapytania. Design ma pomagać sprzedaży, nie tylko wyglądać."
+          },
+          {
+            "q": "Czy obsługujecie firmy B2B?",
+            "a": "Tak. Szczególnie dobrze czujemy firmy techniczne, przemysłowe, automotive i marine, gdzie trzeba prosto wyjaśnić trudniejszą ofertę."
+          },
+          {
+            "q": "Czy można pracować etapami?",
+            "a": "Tak. Często zaczynamy od audytu i priorytetów: co naprawić teraz, co testować reklamowo, a co rozwijać w SEO przez kilka miesięcy."
+          }
         ],
         "context": [
           "Pruszcz Gdański ma bardzo praktyczny rynek: klient często szuka firmy blisko domu lub pracy, porównuje opinie, sprawdza zdjęcia i chce szybko zadzwonić. To oznacza, że marketing lokalny musi być prosty w odbiorze, ale precyzyjny w wykonaniu. Dbamy o widoczność w mapach, jasne komunikaty na stronie i reklamy kierowane do osób, które faktycznie mogą dojechać do firmy.",
           "Nie kopiujemy strategii z dużych miast jeden do jednego. Dla firm z Pruszcza ważne są dzielnice, dojazd z okolicznych miejscowości, sezonowość i przewaga nad konkurencją z Gdańska. Dlatego plan łączymy z konkretną ofertą, zdjęciami miejsca, opiniami klientów i kampaniami, które mierzą telefony oraz formularze, a nie tylko kliknięcia."
+        ],
+        "related": [
+          {
+            "label": "Marketing dla branży automotive",
+            "href": "/marketing-dla-motoryzacji"
+          },
+          {
+            "label": "Marketing dla warsztatu samochodowego",
+            "href": "/marketing-dla-warsztatu-samochodowego"
+          },
+          {
+            "label": "Marketing dla serwisu samochodowego",
+            "href": "/marketing-dla-serwisu-samochodowego"
+          }
         ]
       },
       "agencja-marketingowa-tczew": {
@@ -7754,34 +8087,48 @@
           "pmo-lubricants"
         ],
         "faq": [
-          [
-            "Czy agencja marketingowa z Trójmiasta może obsługiwać Tczew?",
-            "Tak, jeśli rozumie lokalny kontekst i nie traktuje Tczewa jak dopisku do kampanii na Gdańsk. Obszar, frazy i komunikacja muszą być ustawione osobno."
-          ],
-          [
-            "Co najlepiej działa dla firm usługowych w Tczewie?",
-            "Najczęściej połączenie wizytówki Google, opinii, SEO lokalnego, kampanii search i strony, która jasno wyjaśnia usługę oraz obszar działania."
-          ],
-          [
-            "Czy warto inwestować w social media?",
-            "Tak, ale nie jako samotny kanał. Social media najlepiej działa, gdy wspiera zaufanie, remarketing i pokazuje ludzi oraz zaplecze firmy."
-          ],
-          [
-            "Jak mierzyć efekty?",
-            "Minimum to połączenia z reklam, formularze, kliknięcia w trasę, zapytania z wizytówki, koszt leada i jakość rozmów sprzedażowych."
-          ],
-          [
-            "Czy przygotowujecie zdjęcia i wideo?",
-            "Tak. Dla lokalnych firm prawdziwe zdjęcia z miejsca pracy zwykle wygrywają ze stockami, bo budują zaufanie przed pierwszym kontaktem."
-          ],
-          [
-            "Od czego zacząć?",
-            "Od audytu widoczności, wizytówki Google, strony i kampanii. Po nim wybieramy 2-3 działania, które mogą najszybciej poprawić liczbę kontaktów."
-          ]
+          {
+            "q": "Czy agencja marketingowa z Trójmiasta może obsługiwać Tczew?",
+            "a": "Tak, jeśli rozumie lokalny kontekst i nie traktuje Tczewa jak dopisku do kampanii na Gdańsk. Obszar, frazy i komunikacja muszą być ustawione osobno."
+          },
+          {
+            "q": "Co najlepiej działa dla firm usługowych w Tczewie?",
+            "a": "Najczęściej połączenie wizytówki Google, opinii, SEO lokalnego, kampanii search i strony, która jasno wyjaśnia usługę oraz obszar działania."
+          },
+          {
+            "q": "Czy warto inwestować w social media?",
+            "a": "Tak, ale nie jako samotny kanał. Social media najlepiej działa, gdy wspiera zaufanie, remarketing i pokazuje ludzi oraz zaplecze firmy."
+          },
+          {
+            "q": "Jak mierzyć efekty?",
+            "a": "Minimum to połączenia z reklam, formularze, kliknięcia w trasę, zapytania z wizytówki, koszt leada i jakość rozmów sprzedażowych."
+          },
+          {
+            "q": "Czy przygotowujecie zdjęcia i wideo?",
+            "a": "Tak. Dla lokalnych firm prawdziwe zdjęcia z miejsca pracy zwykle wygrywają ze stockami, bo budują zaufanie przed pierwszym kontaktem."
+          },
+          {
+            "q": "Od czego zacząć?",
+            "a": "Od audytu widoczności, wizytówki Google, strony i kampanii. Po nim wybieramy 2-3 działania, które mogą najszybciej poprawić liczbę kontaktów."
+          }
         ],
         "context": [
           "W Tczewie dobrze działa marketing, który łączy lokalne zaufanie z profesjonalnym wizerunkiem. Klient chce wiedzieć, czy firma jest blisko, czy ma doświadczenie i czy warto poświęcić czas na kontakt. Budujemy więc stronę i kampanie tak, żeby najważniejsze odpowiedzi były widoczne od razu: co robisz, dla kogo, za ile mniej więcej i dlaczego można Ci zaufać.",
           "Dla firm usługowych i technicznych z Tczewa najczęściej zaczynamy od porządku w Google: wizytówka, kategorie, zdjęcia, recenzje, podstrony usługowe i analityka połączeń. Dopiero na tej bazie dokładamy reklamy oraz treści, które pomagają przejąć klientów z okolicznych miejscowości i zbudować przewagę nad firmami, które są widoczne tylko z nazwy."
+        ],
+        "related": [
+          {
+            "label": "Marketing dla branży automotive",
+            "href": "/marketing-dla-motoryzacji"
+          },
+          {
+            "label": "Marketing dla warsztatu samochodowego",
+            "href": "/marketing-dla-warsztatu-samochodowego"
+          },
+          {
+            "label": "Marketing dla serwisu samochodowego",
+            "href": "/marketing-dla-serwisu-samochodowego"
+          }
         ]
       },
       "marketing-dla-warsztatu-samochodowego": {
@@ -7825,34 +8172,48 @@
           "tomex-brakes"
         ],
         "faq": [
-          [
-            "Co kampania Google Ads daje warsztatowi samochodowemu?",
-            "Daje szybki dostęp do kierowców, którzy już szukają konkretnej usługi. Najlepiej działa na frazy z intencją, np. klimatyzacja, hamulce, diagnostyka albo serwis konkretnej marki."
-          ],
-          [
-            "Czy warsztat potrzebuje SEO lokalnego?",
-            "Tak. Wielu klientów wybiera warsztat z mapy, więc widoczność w Google Maps, opinie, kategorie i lokalne podstrony usług mają bezpośredni wpływ na liczbę telefonów."
-          ],
-          [
-            "Jakie treści publikować?",
-            "Najlepsze są prawdziwe materiały: naprawy przed/po, krótkie porady, pokazanie sprzętu, zespołu i typowych błędów kierowców. To buduje zaufanie szybciej niż grafiki z banku zdjęć."
-          ],
-          [
-            "Ile kosztuje marketing warsztatu?",
-            "Najczęściej sensowny budżet zaczyna się od 3000 zł miesięcznie za obsługę plus media. Przy większej konkurencji lub kilku lokalizacjach budżet powinien być wyższy."
-          ],
-          [
-            "Czy social media sprzedają naprawy?",
-            "Same social media rzadko są głównym kanałem sprzedaży, ale świetnie wspierają zaufanie, remarketing i powracalność klientów."
-          ],
-          [
-            "Od czego zacząć?",
-            "Od wizytówki Google, strony, opinii i kampanii na najważniejsze usługi. Dopiero potem warto rozwijać szeroki content i automatyzacje."
-          ]
+          {
+            "q": "Co kampania Google Ads daje warsztatowi samochodowemu?",
+            "a": "Daje szybki dostęp do kierowców, którzy już szukają konkretnej usługi. Najlepiej działa na frazy z intencją, np. klimatyzacja, hamulce, diagnostyka albo serwis konkretnej marki."
+          },
+          {
+            "q": "Czy warsztat potrzebuje SEO lokalnego?",
+            "a": "Tak. Wielu klientów wybiera warsztat z mapy, więc widoczność w Google Maps, opinie, kategorie i lokalne podstrony usług mają bezpośredni wpływ na liczbę telefonów."
+          },
+          {
+            "q": "Jakie treści publikować?",
+            "a": "Najlepsze są prawdziwe materiały: naprawy przed/po, krótkie porady, pokazanie sprzętu, zespołu i typowych błędów kierowców. To buduje zaufanie szybciej niż grafiki z banku zdjęć."
+          },
+          {
+            "q": "Ile kosztuje marketing warsztatu?",
+            "a": "Najczęściej sensowny budżet zaczyna się od 3000 zł miesięcznie za obsługę plus media. Przy większej konkurencji lub kilku lokalizacjach budżet powinien być wyższy."
+          },
+          {
+            "q": "Czy social media sprzedają naprawy?",
+            "a": "Same social media rzadko są głównym kanałem sprzedaży, ale świetnie wspierają zaufanie, remarketing i powracalność klientów."
+          },
+          {
+            "q": "Od czego zacząć?",
+            "a": "Od wizytówki Google, strony, opinii i kampanii na najważniejsze usługi. Dopiero potem warto rozwijać szeroki content i automatyzacje."
+          }
         ],
         "context": [
           "Warsztat samochodowy nie potrzebuje ładnego marketingu dla samego wyglądu. Potrzebuje telefonów od klientów, którzy mają konkretny problem, wiedzą gdzie dojechać i rozumieją, dlaczego nie warto wybierać najtańszej opcji. Dlatego łączymy lokalne SEO, wizytówkę Google, zdjęcia z zaplecza, proste wideo i reklamy nastawione na usługi o najwyższej marży.",
           "Najpierw sprawdzamy, które naprawy naprawdę mają sens biznesowy: diagnostyka, klimatyzacja, elektronika, hamulce, floty, przeglądy czy obsługa konkretnej marki. Potem układamy komunikaty pod intencję klienta. Inaczej mówi się do kierowcy, któremu auto nie odpala, a inaczej do osoby szukającej stałego serwisu dla kilku samochodów firmowych."
+        ],
+        "related": [
+          {
+            "label": "Marketing dla branży automotive",
+            "href": "/marketing-dla-motoryzacji"
+          },
+          {
+            "label": "Agencja marketingowa Gdańsk",
+            "href": "/agencja-marketingowa-gdansk"
+          },
+          {
+            "label": "Agencja marketingowa Gdynia",
+            "href": "/agencja-marketingowa-gdynia"
+          }
         ]
       },
       "marketing-dla-serwisu-samochodowego": {
@@ -7895,34 +8256,48 @@
           "pmo-lubricants"
         ],
         "faq": [
-          [
-            "Czym różni się marketing serwisu od marketingu warsztatu?",
-            "Serwis często ma szerszą ofertę, większą skalę i kilka segmentów klientów: detal, floty, marki, usługi premium. Marketing musi to rozdzielić, żeby budżet nie mieszał intencji."
-          ],
-          [
-            "Jak reklamować usługi sezonowe?",
-            "Najlepiej z wyprzedzeniem: klimatyzacja przed upałami, opony przed zmianą sezonu, akumulatory przed zimą. Kampanie powinny mieć osobne landing page lub sekcje usług."
-          ],
-          [
-            "Czy warto robić wideo z serwisu?",
-            "Tak, bo klient widzi standard pracy, czystość, sprzęt i ludzi. W automotive zaufanie często powstaje zanim klient odda auto."
-          ],
-          [
-            "Jak mierzyć jakość leadów?",
-            "Poza liczbą telefonów warto sprawdzać temat rozmowy, markę auta, wartość zlecenia, termin i to, czy klient pojawił się w serwisie."
-          ],
-          [
-            "Czy opinie Google są ważne?",
-            "Bardzo. Przy usługach lokalnych opinie są częścią sprzedaży. Liczy się liczba, świeżość, treść i sposób odpowiadania."
-          ],
-          [
-            "Czy możecie obsłużyć kilka lokalizacji?",
-            "Tak. Każda lokalizacja potrzebuje osobnej wizytówki, lokalnych treści i często osobnego podejścia do budżetu reklamowego."
-          ]
+          {
+            "q": "Czym różni się marketing serwisu od marketingu warsztatu?",
+            "a": "Serwis często ma szerszą ofertę, większą skalę i kilka segmentów klientów: detal, floty, marki, usługi premium. Marketing musi to rozdzielić, żeby budżet nie mieszał intencji."
+          },
+          {
+            "q": "Jak reklamować usługi sezonowe?",
+            "a": "Najlepiej z wyprzedzeniem: klimatyzacja przed upałami, opony przed zmianą sezonu, akumulatory przed zimą. Kampanie powinny mieć osobne landing page lub sekcje usług."
+          },
+          {
+            "q": "Czy warto robić wideo z serwisu?",
+            "a": "Tak, bo klient widzi standard pracy, czystość, sprzęt i ludzi. W automotive zaufanie często powstaje zanim klient odda auto."
+          },
+          {
+            "q": "Jak mierzyć jakość leadów?",
+            "a": "Poza liczbą telefonów warto sprawdzać temat rozmowy, markę auta, wartość zlecenia, termin i to, czy klient pojawił się w serwisie."
+          },
+          {
+            "q": "Czy opinie Google są ważne?",
+            "a": "Bardzo. Przy usługach lokalnych opinie są częścią sprzedaży. Liczy się liczba, świeżość, treść i sposób odpowiadania."
+          },
+          {
+            "q": "Czy możecie obsłużyć kilka lokalizacji?",
+            "a": "Tak. Każda lokalizacja potrzebuje osobnej wizytówki, lokalnych treści i często osobnego podejścia do budżetu reklamowego."
+          }
         ],
         "context": [
           "Serwis samochodowy często ma więcej usług niż klient jest w stanie zrozumieć w kilka sekund. Marketing musi więc uporządkować ofertę, pokazać specjalizacje i skrócić drogę do kontaktu. Budujemy strukturę strony wokół konkretnych problemów: objawów, marek, sezonowych usług i napraw, które dają najlepszą rentowność.",
           "Dużą rolę odgrywa zaufanie. Zdjęcia stanowisk, proces przyjęcia auta, krótkie filmy z diagnostyki, opinie i jasne zasady kontaktu potrafią zwiększyć liczbę zapytań bez podnoszenia budżetu reklamowego. Kampanie płatne traktujemy jako wzmocnienie tej bazy, nie jako protezę dla strony, której klient nie rozumie."
+        ],
+        "related": [
+          {
+            "label": "Marketing dla branży automotive",
+            "href": "/marketing-dla-motoryzacji"
+          },
+          {
+            "label": "Agencja marketingowa Gdańsk",
+            "href": "/agencja-marketingowa-gdansk"
+          },
+          {
+            "label": "Agencja marketingowa Gdynia",
+            "href": "/agencja-marketingowa-gdynia"
+          }
         ]
       },
       "marketing-dla-dealera-samochodowego": {
@@ -7966,34 +8341,253 @@
           "autocentrum-elektronowa"
         ],
         "faq": [
-          [
-            "Czym różni się marketing nowych i używanych aut?",
-            "Nowe auta sprzedają konfigurację, finansowanie, dostępność i markę. Używane wymagają szybkiego zaufania do konkretnego egzemplarza, historii, zdjęć i ceny."
-          ],
-          [
-            "Czy Meta Ads działa dla dealerów?",
-            "Tak, szczególnie do budowania popytu, remarketingu i promocji konkretnych modeli. Dla gorącej intencji zwykle mocniejszy jest Google Search."
-          ],
-          [
-            "Jak poprawić jakość leadów?",
-            "Trzeba jasno komunikować cenę, finansowanie, dostępność, lokalizację i następny krok. Formularz powinien odsiać ciekawskich bez utrudniania kontaktu kupującym."
-          ],
-          [
-            "Czy dealer potrzebuje SEO lokalnego?",
-            "Tak. Salon, serwis, części, jazda testowa i finansowanie mają lokalne intencje, które warto obsłużyć osobnymi treściami i wizytówką."
-          ],
-          [
-            "Jak mierzyć kampanie dealera?",
-            "Poza CPL liczy się kontakt z handlowcem, wizyta, jazda testowa, rezerwacja i sprzedaż. Sam formularz nie jest jeszcze sukcesem."
-          ],
-          [
-            "Czy tworzycie landing page dla konkretnych modeli?",
-            "Tak. To często lepsze niż kierowanie całego ruchu na ogólną stronę, szczególnie przy promocjach, finansowaniu lub limitowanej dostępności."
-          ]
+          {
+            "q": "Czym różni się marketing nowych i używanych aut?",
+            "a": "Nowe auta sprzedają konfigurację, finansowanie, dostępność i markę. Używane wymagają szybkiego zaufania do konkretnego egzemplarza, historii, zdjęć i ceny."
+          },
+          {
+            "q": "Czy Meta Ads działa dla dealerów?",
+            "a": "Tak, szczególnie do budowania popytu, remarketingu i promocji konkretnych modeli. Dla gorącej intencji zwykle mocniejszy jest Google Search."
+          },
+          {
+            "q": "Jak poprawić jakość leadów?",
+            "a": "Trzeba jasno komunikować cenę, finansowanie, dostępność, lokalizację i następny krok. Formularz powinien odsiać ciekawskich bez utrudniania kontaktu kupującym."
+          },
+          {
+            "q": "Czy dealer potrzebuje SEO lokalnego?",
+            "a": "Tak. Salon, serwis, części, jazda testowa i finansowanie mają lokalne intencje, które warto obsłużyć osobnymi treściami i wizytówką."
+          },
+          {
+            "q": "Jak mierzyć kampanie dealera?",
+            "a": "Poza CPL liczy się kontakt z handlowcem, wizyta, jazda testowa, rezerwacja i sprzedaż. Sam formularz nie jest jeszcze sukcesem."
+          },
+          {
+            "q": "Czy tworzycie landing page dla konkretnych modeli?",
+            "a": "Tak. To często lepsze niż kierowanie całego ruchu na ogólną stronę, szczególnie przy promocjach, finansowaniu lub limitowanej dostępności."
+          }
         ],
         "context": [
           "Dealer samochodowy działa na kilku różnych ścieżkach sprzedaży naraz: nowe auta, używane, finansowanie, odkupy, serwis i relacje posprzedażowe. Każda z tych ścieżek ma inne tempo decyzji i inne argumenty. Dlatego marketing dealera musi rozdzielać komunikaty, mierzyć źródła kontaktów i pilnować jakości leadów, a nie tylko ich liczby.",
           "W praktyce oznacza to oddzielne kampanie dla modeli, ofert specjalnych, aut dostępnych od ręki i samochodów używanych. Do tego dochodzi content pokazujący ludzi, proces wydania auta, serwis i realne historie klientów. Taki marketing pomaga sprzedawcom rozmawiać z osobami, które są lepiej przygotowane, a nie przypadkowo kliknęły reklamę."
+        ],
+        "related": [
+          {
+            "label": "Marketing dla branży automotive",
+            "href": "/marketing-dla-motoryzacji"
+          },
+          {
+            "label": "Agencja marketingowa Gdańsk",
+            "href": "/agencja-marketingowa-gdansk"
+          },
+          {
+            "label": "Agencja marketingowa Gdynia",
+            "href": "/agencja-marketingowa-gdynia"
+          }
+        ]
+      },
+      "agencja-marketingowa-gdynia": {
+        "slug": "agencja-marketingowa-gdynia",
+        "key": "gdynia",
+        "keyword": "agencja marketingowa Gdynia",
+        "area": "Gdyni",
+        "type": "local",
+        "title": "Agencja marketingowa Gdynia dla firm · KTB Media",
+        "description": "Agencja marketingowa Gdynia dla firm lokalnych, automotive i B2B. SEO lokalne, Google Ads, social media, strony WWW i produkcja w całym Trójmieście i na Pomorzu.",
+        "keywords": [
+          "agencja marketingowa Gdynia",
+          "agencja reklamowa Gdynia",
+          "marketing Gdynia",
+          "marketing Trójmiasto",
+          "SEO lokalne Gdynia",
+          "Google Ads Gdynia",
+          "prowadzenie social media Gdynia",
+          "prowadzenie Instagrama Gdynia",
+          "marketing automotive Gdynia"
+        ],
+        "hero": {
+          "h1": "Agencja marketingowa Gdynia",
+          "lead": "Pomagamy firmom z Gdyni zamieniać widoczność w Google, kampanie i treści w telefony, formularze oraz sprzedaż. Łączymy lokalne SEO z reklamą, social media i zapleczem produkcyjnym."
+        },
+        "why": [
+          "Patrzymy na Gdynię jako część jednego rynku Trójmiasta, ale kampanie, frazy i ofertę dopasowujemy do realnego obszaru działania firmy.",
+          "Łączymy SEO, Google Ads, Meta Ads, social media, strony WWW oraz produkcję. Jeden zespół odpowiada za wspólny kierunek i pomiar.",
+          "Mamy doświadczenie w automotive, marine i technicznym B2B, dlatego potrafimy wyjaśnić ofertę, której nie da się sprzedać jednym sloganem.",
+          "Raportujemy kontakty, koszt pozyskania i jakość zapytań. Zasięg jest użyteczny tylko wtedy, gdy wspiera konkretny cel firmy."
+        ],
+        "services": [
+          "SEO lokalne i optymalizacja Google Business Profile w Gdyni",
+          "Kampanie Google Ads na Gdynię, Sopot i całe Trójmiasto",
+          "Prowadzenie social media i Instagrama z własnym contentem",
+          "Meta Ads, remarketing i kampanie leadowe",
+          "Strony WWW oraz landing page przygotowane pod SEO i konwersję",
+          "Marketing dla firm automotive, marine i technicznego B2B",
+          "Produkcja zdjęć, wideo i ujęć z drona",
+          "Analityka połączeń, formularzy i jakości leadów"
+        ],
+        "cases": [
+          "rmdc",
+          "ddp-supply",
+          "grupa-janisz"
+        ],
+        "faq": [
+          {
+            "q": "Ile kosztuje agencja marketingowa w Gdyni?",
+            "a": "Stała współpraca najczęściej zaczyna się od około 3000 zł netto miesięcznie za obsługę, do czego dochodzi budżet reklamowy lub produkcyjny. Ostateczny koszt zależy od liczby kanałów, materiałów i tempa wdrożeń."
+          },
+          {
+            "q": "Czy prowadzicie marketing tylko dla automotive?",
+            "a": "Nie. Automotive jest naszą najmocniejszą specjalizacją, ale pracujemy również z branżą morską, firmami technicznymi B2B, usługami lokalnymi i e-commerce."
+          },
+          {
+            "q": "Co daje lokalne SEO firmie z Gdyni?",
+            "a": "Pomaga pojawiać się na zapytania związane z usługą i lokalizacją, wzmacnia wizytówkę Google oraz prowadzi użytkownika do telefonu, trasy lub formularza."
+          },
+          {
+            "q": "Czy prowadzicie social media w Gdyni?",
+            "a": "Tak. Przygotowujemy strategię, plan publikacji, zdjęcia, krótkie wideo, teksty, moderację i kampanie. Treści powstają z realnej pracy firmy, a nie z przypadkowych stocków."
+          },
+          {
+            "q": "Czy Google Ads i SEO można prowadzić równolegle?",
+            "a": "Tak. Reklamy dostarczają dane oraz ruch szybciej, a SEO buduje stabilną widoczność. Wspólna analiza fraz pozwala lepiej dzielić budżet."
+          },
+          {
+            "q": "Jak szybko pojawiają się efekty?",
+            "a": "Pierwsze wiarygodne dane z kampanii płatnych zwykle zbieramy po kilku tygodniach. Lokalne SEO, treści i profil Google potrzebują najczęściej od trzech do sześciu miesięcy."
+          }
+        ],
+        "context": [
+          "Gdynia ma rynek oparty jednocześnie na usługach lokalnych, motoryzacji, logistyce, porcie i technicznym B2B. Agencja reklamowa Gdynia powinna rozumieć, że klient prywatny szukający serwisu zachowuje się inaczej niż osoba odpowiedzialna za zakupy lub rozwój w spółce morskiej. Dlatego każdą współpracę zaczynamy od intencji klienta i wartości kontaktu, nie od wyboru modnego kanału.",
+          "Dla firm lokalnych porządkujemy wizytówkę Google Business Profile, strukturę strony, opinie, pomiar połączeń i kampanie search. Dla marek B2B rozwijamy treści eksperckie, LinkedIn, materiały sprzedażowe, strony usług oraz komunikację, która skraca drogę od pierwszego kontaktu do rozmowy handlowej.",
+          "Prowadzenie social media Gdynia ma sens wtedy, gdy pokazuje kompetencje, ludzi i proces. Organizujemy produkcję foto-wideo, przygotowujemy krótkie formaty, materiały z drona i kampanie, które docierają ponownie do osób odwiedzających stronę. Każdy kanał pracuje na tę samą obietnicę marki.",
+          "Siedzibę mamy w Pruszczu Gdańskim, a projekty realizujemy w całym Trójmieście i w Polsce. Spotkania prowadzimy stacjonarnie lub online. Lokalna bliskość pomaga w produkcjach, ale nie ogranicza zakresu ani skali współpracy."
+        ],
+        "related": [
+          {
+            "label": "Marketing dla branży automotive",
+            "href": "/marketing-dla-motoryzacji"
+          },
+          {
+            "label": "Marketing dla warsztatu samochodowego",
+            "href": "/marketing-dla-warsztatu-samochodowego"
+          },
+          {
+            "label": "Marketing dla serwisu samochodowego",
+            "href": "/marketing-dla-serwisu-samochodowego"
+          }
+        ]
+      },
+      "marketing-dla-motoryzacji": {
+        "slug": "marketing-dla-motoryzacji",
+        "key": "automotive",
+        "keyword": "marketing dla branży automotive",
+        "area": "branży automotive",
+        "type": "industry",
+        "title": "Marketing dla branży automotive i motoryzacji · KTB Media",
+        "description": "Marketing automotive dla serwisów, dealerów, producentów aut i części. Strategia, SEO, Google Ads, Meta Ads, social media, strony WWW oraz produkcja foto-wideo.",
+        "keywords": [
+          "marketing motoryzacyjny",
+          "agencja marketingowa automotive",
+          "marketing dla branży automotive",
+          "marketing dla warsztatu samochodowego",
+          "reklama dla serwisu samochodowego",
+          "marketing dla auto detailingu",
+          "marketing dla salonu samochodowego",
+          "pozycjonowanie branża motoryzacyjna",
+          "reklama dla producenta części auto",
+          "pozyskiwanie klientów dla warsztatu"
+        ],
+        "hero": {
+          "h1": "Marketing dla Branży Automotive i Motoryzacji",
+          "lead": "Budujemy marketing dla producentów aut i części, dealerów, serwisów, warsztatów, detailerów oraz marek aftermarketowych. Łączymy strategię, sprzedaż, reklamę, SEO i produkcję w jeden system."
+        },
+        "servicesHeading": "Pozycjonowanie i reklama dla serwisów oraz firm motoryzacyjnych w Gdańsku, Gdyni i Pruszczu Gdańskim",
+        "why": [
+          "Znamy drogę klienta od pierwszego wyszukania usterki lub produktu do telefonu, wizyty, zakupu i ponownego serwisu.",
+          "Pracowaliśmy z serwisami, dealerami, producentami olejów i dodatków, dystrybutorami części oraz markami obecnymi w motorsporcie.",
+          "Produkujemy zdjęcia i wideo w warsztacie, salonie, na torze oraz podczas wydarzeń. Materiał powstaje pod konkretny kanał i etap sprzedaży.",
+          "Łączymy dane z reklam, strony, wizytówki Google i rozmów handlowych. Dzięki temu wiemy nie tylko ile było leadów, ale które miały wartość."
+        ],
+        "services": [
+          "Strategia marketingowa i pozycjonowanie marki automotive",
+          "SEO lokalne, Google Business Profile i pozyskiwanie opinii",
+          "Google Ads na usługi, części, modele i zapytania zakupowe",
+          "Meta Ads, remarketing i kampanie leadowe",
+          "Prowadzenie social media dla serwisów, dealerów i producentów",
+          "Strony WWW, landing page, katalogi i konfiguratory",
+          "Produkcja zdjęć, wideo, rolek oraz ujęć z drona i FPV",
+          "Branding, rebranding, materiały POS i wsparcie sprzedaży"
+        ],
+        "cases": [
+          "grupa-janisz",
+          "gt-serwis-barniewice",
+          "pmo-lubricants",
+          "pulsegt",
+          "extreme-tyres",
+          "autocentrum-elektronowa"
+        ],
+        "faq": [
+          {
+            "q": "Jakie działania marketingowe sprawdzają się w branży automotive?",
+            "a": "Najczęściej działa połączenie lokalnego SEO, wizytówki Google, kampanii search, wiarygodnych opinii i materiałów pokazujących ludzi oraz zaplecze. Dla producentów i dealerów dochodzą kampanie produktowe, remarketing, content ekspercki oraz wsparcie sieci sprzedaży."
+          },
+          {
+            "q": "Ile kosztuje marketing dla warsztatu w Gdańsku?",
+            "a": "Stała obsługa zwykle zaczyna się od około 3000 zł netto miesięcznie, a budżet reklamowy ustala się osobno. Koszt zależy od konkurencji, liczby usług, jakości obecnej strony i możliwości obsługi nowych klientów."
+          },
+          {
+            "q": "Czy obsługujecie producentów aut i części zamiennych?",
+            "a": "Tak. Pomagamy w pozycjonowaniu marki, komunikacji technicznej, kampaniach B2B i B2C, social media, materiałach sprzedażowych, stronach WWW oraz produkcji foto-wideo."
+          },
+          {
+            "q": "Jak reklamować studio auto detailingu?",
+            "a": "Najlepiej pokazywać realną jakość wykonania: etapy pracy, różnicę przed i po, konkretne pakiety oraz opinie. Google przechwytuje popyt lokalny, a Meta i Instagram budują aspirację oraz remarketing."
+          },
+          {
+            "q": "Czy Google Ads daje warsztatowi wartościowych klientów?",
+            "a": "Tak, jeśli kampania obejmuje usługi o odpowiedniej marży, precyzyjny obszar, wykluczenia i pomiar telefonów. Sama liczba kliknięć nie wystarczy; kampanię trzeba łączyć z dostępnością terminów i jakością rozmów."
+          },
+          {
+            "q": "Czym różni się marketing dealera od marketingu serwisu?",
+            "a": "Dealer prowadzi osobne ścieżki dla nowych aut, używanych, flot, finansowania i jazd testowych. Serwis częściej pracuje na pilnej potrzebie, zaufaniu lokalnym, opiniach i powtarzalności wizyt."
+          },
+          {
+            "q": "Po jakim czasie widać efekt SEO w motoryzacji?",
+            "a": "Pierwsze zmiany widoczności mogą pojawić się po kilku tygodniach, ale stabilny wzrost lokalnego SEO zwykle wymaga od trzech do sześciu miesięcy. Tempo zależy od konkurencji, historii domeny, opinii i jakości treści."
+          }
+        ],
+        "context": [
+          "Marketing motoryzacyjny nie jest jedną usługą. Inaczej pozyskuje się klienta na pilną naprawę, inaczej sprzedaje olej silnikowy do sieci dystrybucji, a jeszcze inaczej buduje zainteresowanie nową marką samochodów. Dlatego segmentujemy odbiorców, ofertę i kanały. Zaczynamy od tego, co firma sprzedaje, na czym zarabia i jak wygląda jej rzeczywista możliwość obsługi nowych zapytań.",
+          "W projektach dla Grupy Janisz i GT Serwis Barniewice łączyliśmy stronę, lokalne SEO, kampanie Google i Meta, social media, konsulting oraz produkcję treści. Dla PMO Lubricants i PulseGT pracowaliśmy z produktami wymagającymi wyjaśnienia technologii i korzyści. Extreme Tyres wymagało języka motorsportu, emocji oraz materiałów z toru. Auto Centrum Elektronowa pokazywało skalę warsztatu i ludzi stojących za usługą.",
+          "Dla warsztatu lub serwisu fundamentem jest spójna informacja: jakie auta i usterki obsługuje, gdzie działa, kiedy można zadzwonić i dlaczego warto mu zaufać. Optymalizujemy Google Business Profile, budujemy strony usług, porządkujemy dane NAP i planujemy system zdobywania opinii. Kampanie kierujemy na frazy o wysokiej intencji, a nie na przypadkowy szeroki ruch.",
+          "Marketing dla producenta części samochodowych lub marki aftermarketowej potrzebuje również materiałów dla dystrybutorów, mechaników i końcowych kierowców. Tworzymy content techniczny, katalogi, landing page, kampanie, materiały POS, zdjęcia produktów, filmy z testów i formaty do social media. Komunikat jest prosty, ale nie upraszcza produktu do pustego hasła.",
+          "Dealerzy i importerzy potrzebują osobnych ścieżek dla modeli, finansowania, jazd testowych, aut używanych i serwisu. Reklamy powinny przekazywać handlowcom leady z kontekstem, a strona odpowiadać na pytania o dostępność, cenę i kolejny krok. Mierzymy nie tylko formularz, ale także rozmowę, wizytę i jakość kontaktu.",
+          "Działamy z Pruszcza Gdańskiego na terenie Gdańska, Gdyni, Sopotu i całego Trójmiasta, ale obsługujemy marki z całej Polski. Automotive jest naszą specjalizacją, nie ograniczeniem: doświadczenie z wymagającym produktem, lokalną sprzedażą i technicznym contentem wykorzystujemy także w marine, B2B oraz innych branżach."
+        ],
+        "related": [
+          {
+            "label": "Agencja marketingowa Gdańsk",
+            "href": "/agencja-marketingowa-gdansk"
+          },
+          {
+            "label": "Agencja marketingowa Gdynia",
+            "href": "/agencja-marketingowa-gdynia"
+          },
+          {
+            "label": "Agencja marketingowa Pruszcz Gdański",
+            "href": "/agencja-marketingowa-pruszcz-gdanski"
+          },
+          {
+            "label": "Marketing dla warsztatu",
+            "href": "/marketing-dla-warsztatu-samochodowego"
+          },
+          {
+            "label": "Marketing dla serwisu",
+            "href": "/marketing-dla-serwisu-samochodowego"
+          },
+          {
+            "label": "Marketing dla dealera",
+            "href": "/marketing-dla-dealera-samochodowego"
+          }
         ]
       }
     }

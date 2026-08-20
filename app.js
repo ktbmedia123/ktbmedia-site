@@ -396,7 +396,7 @@ const DIGITAL_SEO = {
 };
 function useSEO(lang, path) {
   useEffect(() => {
-    const base = lang === 'pl' ? 'KTB Media — Agencja marketingowa Gdańsk, Pruszcz Gdański, Tczew | Marketing dla motoryzacji' : 'KTB Media — Marketing agency Gdańsk | Automotive marketing specialists';
+    const base = lang === 'pl' ? 'Agencja marketingowa Gdańsk / Trójmiasto · KTB Media' : 'KTB Media — Marketing agency Gdańsk | Automotive marketing specialists';
     let meta;
     if (path.startsWith('/realizacje/digital/')) {
       const slug = path.slice('/realizacje/digital/'.length).replace(/\/$/, '');
@@ -1059,7 +1059,7 @@ function Hero({
     className: "split-inner"
   }, h.title2, " ", /*#__PURE__*/React.createElement("span", {
     className: "it"
-  }, h.titleIt))), /*#__PURE__*/React.createElement("span", {
+  }, h.titleIt))), h.title3 && /*#__PURE__*/React.createElement("span", {
     className: "split-line"
   }, /*#__PURE__*/React.createElement("span", {
     className: "split-inner"
@@ -1814,7 +1814,7 @@ function LandingPage({ lang, config }) {
   }, /*#__PURE__*/React.createElement("span", {
     className: "dot"
   }), " SEO landing"), /*#__PURE__*/React.createElement("h1", {
-    className: "display landing-title reveal"
+    className: `display landing-title reveal ${config.hero.h1.length > 36 ? 'is-long' : ''}`
   }, config.hero.h1), /*#__PURE__*/React.createElement("p", {
     className: "landing-lede reveal"
   }, config.hero.lead), /*#__PURE__*/React.createElement("div", {
@@ -1872,9 +1872,9 @@ function LandingPage({ lang, config }) {
     className: "dot"
   }), " ", lang === 'pl' ? 'Zakres' : 'Scope'), /*#__PURE__*/React.createElement("h2", {
     className: "display section-title"
-  }, lang === 'pl' ? 'Co robimy dla ' : 'What we do for ', /*#__PURE__*/React.createElement("span", {
+  }, config.servicesHeading || /*#__PURE__*/React.createElement(React.Fragment, null, lang === 'pl' ? 'Co robimy dla ' : 'What we do for ', /*#__PURE__*/React.createElement("span", {
     className: "it"
-  }, config.area))), /*#__PURE__*/React.createElement("ul", {
+  }, config.area)))), /*#__PURE__*/React.createElement("ul", {
     className: "landing-service-list reveal"
   }, (config.services || []).map((item, i) => /*#__PURE__*/React.createElement("li", {
     key: i
@@ -1921,7 +1921,23 @@ function LandingPage({ lang, config }) {
   }, faqs.map((item, i) => /*#__PURE__*/React.createElement("details", {
     className: "landing-faq-item reveal",
     key: i
-  }, /*#__PURE__*/React.createElement("summary", null, item.q), /*#__PURE__*/React.createElement("p", null, item.a)))))), /*#__PURE__*/React.createElement("section", {
+  }, /*#__PURE__*/React.createElement("summary", null, item.q), /*#__PURE__*/React.createElement("p", null, item.a)))))), (config.related || []).length > 0 && /*#__PURE__*/React.createElement("section", {
+    className: "section landing-related"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "sec-label reveal"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "dot"
+  }), " ", lang === 'pl' ? 'Powiązane strony' : 'Related pages'), /*#__PURE__*/React.createElement("nav", {
+    className: "landing-related-links reveal",
+    "aria-label": lang === 'pl' ? 'Powiązane usługi i lokalizacje' : 'Related services and locations'
+  }, config.related.map(relatedItem => /*#__PURE__*/React.createElement(SmartLink, {
+    to: relatedItem.href,
+    key: relatedItem.href
+  }, relatedItem.label, " ", /*#__PURE__*/React.createElement(ArrowIcon, {
+    size: 11
+  })))))), /*#__PURE__*/React.createElement("section", {
     className: "landing-final-cta"
   }, /*#__PURE__*/React.createElement("div", {
     className: "container landing-final-inner"

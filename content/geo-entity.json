@@ -22,7 +22,7 @@
       "telephone": "+48 792 614 834",
       "foundingDate": "2022",
       "priceRange": "PLN",
-      "description": "Agencja marketingowa i studio produktów cyfrowych z Pruszcza Gdańskiego. KTB Media obsługuje Gdańsk, Tczew, Trójmiasto i firmy w całej Polsce, łącząc marketing dla automotive, marine i B2B z projektowaniem stron WWW, aplikacji webowych, systemów SaaS oraz automatyzacji procesów.",
+      "description": "Agencja marketingowa z Pruszcza Gdańskiego obsługująca Gdańsk, Gdynię, Sopot i całe Trójmiasto. KTB Media specjalizuje się w marketingu automotive oraz łączy SEO, Google Ads, Meta Ads, social media, branding, strony WWW i produkcję.",
       "slogan": "Strategia, marketing, strony WWW i aplikacje dopasowane do realnego procesu firmy.",
       "address": {
         "@type": "PostalAddress",
@@ -100,7 +100,21 @@
         "automatyzacja procesów biznesowych",
         "systemy CRM i panele operacyjne",
         "integracje danych",
-        "vibe coding z kontrolą jakości"
+        "vibe coding z kontrolą jakości",
+        "agencja marketingowa Gdynia",
+        "agencja reklamowa Gdańsk",
+        "marketing Trójmiasto",
+        "agencja SEO Gdańsk",
+        "prowadzenie social media Gdańsk",
+        "prowadzenie Instagrama Gdańsk",
+        "marketing motoryzacyjny",
+        "agencja marketingowa automotive",
+        "marketing dla auto detailingu",
+        "reklama studia detailingu Gdańsk",
+        "marketing dla salonu samochodowego",
+        "pozycjonowanie branży motoryzacyjnej",
+        "pozyskiwanie klientów dla warsztatu",
+        "reklama dla producenta części samochodowych"
       ],
       "sameAs": [
         "https://www.facebook.com/KTBmedia.eu",
@@ -140,6 +154,24 @@
       "@id": "https://ktbmedia.eu/#services",
       "name": "Usługi marketingowe i cyfrowe KTB Media",
       "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Marketing dla branży automotive i motoryzacji",
+            "url": "https://ktbmedia.eu/marketing-dla-motoryzacji/",
+            "provider": {
+              "@id": "https://ktbmedia.eu/#organization/"
+            },
+            "areaServed": [
+              "Gdańsk",
+              "Gdynia",
+              "Pruszcz Gdański",
+              "Trójmiasto",
+              "Polska"
+            ]
+          }
+        },
         {
           "@type": "Offer",
           "itemOffered": {

@@ -124,6 +124,69 @@ collections:
                         fields:
                           - { label: Pytanie, name: q, widget: string }
                           - { label: Odpowiedź, name: a, widget: text }
+                  - label: Agencja marketingowa Gdynia
+                    name: agencja-marketingowa-gdynia
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - { label: Title SEO, name: title, widget: string }
+                      - { label: Meta description, name: description, widget: text }
+                      - label: Hero
+                        name: hero
+                        widget: object
+                        fields:
+                          - { label: H1, name: h1, widget: string }
+                          - { label: Lead, name: lead, widget: text }
+                      - label: Dlaczego my
+                        name: why
+                        widget: list
+                        field: { label: Punkt, name: value, widget: text }
+                      - label: Usługi
+                        name: services
+                        widget: list
+                        field: { label: Usługa, name: value, widget: string }
+                      - label: Treść GEO
+                        name: context
+                        widget: list
+                        field: { label: Akapit, name: value, widget: text }
+                      - label: FAQ
+                        name: faq
+                        widget: list
+                        fields:
+                          - { label: Pytanie, name: q, widget: string }
+                          - { label: Odpowiedź, name: a, widget: text }
+                  - label: Marketing dla branży automotive
+                    name: marketing-dla-motoryzacji
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - { label: Title SEO, name: title, widget: string }
+                      - { label: Meta description, name: description, widget: text }
+                      - { label: Nagłówek sekcji usług H2, name: servicesHeading, widget: string }
+                      - label: Hero
+                        name: hero
+                        widget: object
+                        fields:
+                          - { label: H1, name: h1, widget: string }
+                          - { label: Lead, name: lead, widget: text }
+                      - label: Dlaczego my
+                        name: why
+                        widget: list
+                        field: { label: Punkt, name: value, widget: text }
+                      - label: Usługi
+                        name: services
+                        widget: list
+                        field: { label: Usługa, name: value, widget: string }
+                      - label: Treść GEO
+                        name: context
+                        widget: list
+                        field: { label: Akapit, name: value, widget: text }
+                      - label: FAQ
+                        name: faq
+                        widget: list
+                        fields:
+                          - { label: Pytanie, name: q, widget: string }
+                          - { label: Odpowiedź, name: a, widget: text }
                   - label: Marketing dla warsztatu samochodowego
                     name: marketing-dla-warsztatu-samochodowego
                     widget: object

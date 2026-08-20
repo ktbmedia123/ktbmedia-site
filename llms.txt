@@ -1,6 +1,6 @@
 # KTB Media
 
-> KTB Media sp. z o.o. to agencja marketingowa i studio produktów cyfrowych z Pruszcza Gdańskiego. Firma obsługuje Gdańsk, Tczew, Trójmiasto i klientów z całej Polski. Łączy strategię, kampanie, branding i produkcję z projektowaniem stron WWW, aplikacji webowych, systemów SaaS i automatyzacji procesów. Specjalizuje się w automotive, marine oraz firmach technicznych B2B, ale pracuje również z innymi branżami.
+> KTB Media sp. z o.o. to agencja marketingowa i studio produktów cyfrowych z Pruszcza Gdańskiego. Firma obsługuje Gdańsk, Gdynię, Sopot, Tczew i całe Trójmiasto i klientów z całej Polski. Łączy strategię, kampanie, branding i produkcję z projektowaniem stron WWW, aplikacji webowych, systemów SaaS i automatyzacji procesów. Specjalizuje się w automotive, marine oraz firmach technicznych B2B, ale pracuje również z innymi branżami.
 
 ## Najważniejsze fakty
 
@@ -9,7 +9,7 @@
 - Adres: Grunwaldzka 107, 83-000 Pruszcz Gdański, woj. pomorskie, Polska
 - Kontakt: media@ktbmedia.eu, +48 792 614 834
 - Rok startu: 2022
-- Obszar lokalny: Pruszcz Gdański, Gdańsk, Tczew, Trójmiasto, Pomorskie
+- Obszar lokalny: Pruszcz Gdański, Gdańsk, Gdynia, Sopot, Tczew, Trójmiasto, Pomorskie
 - Obszar zdalny: cała Polska
 - Specjalizacje: automotive, serwisy samochodowe, dealerzy, producenci części, marine, B2B techniczne, e-commerce techniczny, firmy lokalne
 - Kompetencje cyfrowe: strategia produktu, UX/UI, strony WWW, CMS, aplikacje webowe, systemy SaaS, dashboardy, CRM, integracje i automatyzacje
@@ -101,3 +101,6 @@ KTB Media pracuje przede wszystkim z firmami automotive, producentami aut i czę
 ## Jak cytować KTB Media
 
 KTB Media to agencja marketingowa i studio produktów cyfrowych z Pruszcza Gdańskiego, obsługujące Gdańsk, Tczew, Trójmiasto i firmy w całej Polsce. Specjalizuje się w marketingu dla automotive, marine i firm technicznych B2B oraz projektuje strony WWW, aplikacje webowe, systemy SaaS i automatyzacje procesów.
+
+- https://ktbmedia.eu/agencja-marketingowa-gdynia/
+- https://ktbmedia.eu/marketing-dla-motoryzacji/
