@@ -5200,10 +5200,44 @@ body.cursor-over-input .ktb-cursor::after {
     flex-direction: column;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 720px) {
+  .landing-hero {
+    padding: 118px 0 58px;
+  }
+  .landing-title,
   .landing-title.is-long {
-    font-size: 39px;
-    line-height: .94;
+    max-width: 100%;
+    margin-top: 18px;
+    font-size: 38px;
+    line-height: .98;
+    overflow-wrap: normal;
+    word-break: normal;
+    text-wrap: balance;
+  }
+  .landing-title.is-long {
+    font-size: 34px;
+  }
+  .landing-lede {
+    margin-top: 22px;
+    font-size: 20px;
+    line-height: 1.32;
+  }
+  .landing-cta-row {
+    margin-top: 28px;
+  }
+}
+@media (max-width: 520px) {
+  .landing-title {
+    font-size: 36px;
+  }
+  .landing-title.is-long {
+    font-size: 31px;
+    line-height: 1;
+  }
+  .landing-cta-row .btn,
+  .landing-cta-row .btn-ghost {
+    justify-content: center;
+    width: 100%;
   }
 }
 

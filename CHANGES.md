@@ -94,3 +94,53 @@
 - Responsywność: 380px, 720px, 1440px.
 - W CMS: edycja widoczności sekcji, audience blocks i pól landing pages.
 - Weryfikacja, że `sitemap.xml` zawiera nowe landingi, artykuły i nowe realizacje.
+
+## Aktualizacja SEO/GEO — 21.08.2026
+
+### Nowe landing pages
+
+- `/agencja-marketingowa-sopot/`
+- `/agencja-marketingowa-starogard-gdanski/`
+- `/agencja-marketingowa-elblag/`
+- `/marketing-dla-auto-detailingu/`
+- `/marketing-dla-producenta-czesci-samochodowych/`
+- `/marketing-dla-branzy-morskiej/`
+
+Każda strona ma unikalne meta title i description, canonical, dane GEO, schema `Service`, `FAQPage` i `BreadcrumbList`, statyczną treść dla robotów oraz edytowalne pola w Decap CMS. Najdłuższe hero zostały sprawdzone przy szerokości 390 px.
+
+### Nowe artykuły
+
+- `/blog/jak-reklamowac-auto-detailing-w-2026/`
+- `/blog/google-ads-dla-dealera-samochodowego/`
+- `/blog/seo-dla-producenta-czesci-samochodowych/`
+- `/blog/marketing-b2b-w-branzy-morskiej/`
+- `/blog/ile-kosztuje-prowadzenie-social-media-gdansk/`
+- `/blog/landing-page-dla-firmy-lokalnej/`
+
+Artykuły mają osobne SEO title, opisy 150–200 znaków, canonical, `BlogPosting`, breadcrumb, obrazy wewnątrz tekstu i linkowanie do powiązanych usług oraz realizacji. Kolejność bloga nadal zaczyna się od „Codziennego Tetrisa”, a następnie „Marketingu dla samego marketingu”.
+
+### Sitemap i pliki dla robotów
+
+- `sitemap.xml` jest teraz indeksem map witryny.
+- `sitemap-pages.xml` zawiera strony i landingi.
+- `sitemap-blog.xml` zawiera artykuły.
+- `sitemap-realizacje.xml` zawiera case studies, aplikacje i strony WWW.
+- `scripts/generate-sitemaps.mjs` generuje wszystkie mapy z canonicali statycznych HTML i pomija strony `noindex`.
+- `scripts/sync-geo-schema.mjs` synchronizuje encję GEO we wszystkich publicznych HTML-ach.
+- `llms.txt` został uzupełniony o nowe lokalizacje, specjalizacje, artykuły i mapy. Wszystkie 57 umieszczonych w nim adresów istnieje.
+
+### Po wdrożeniu
+
+1. Otwórz `https://ktbmedia.eu/sitemap.xml` i sprawdź, czy widoczny jest element `sitemapindex`.
+2. W Google Search Console usuń stary wpis ze stanem „Nie udało się pobrać”.
+3. Zgłoś ponownie wyłącznie `sitemap.xml`. Mapy podrzędne Google odczyta z indeksu.
+4. Pierwszy ponowny odczyt może zająć od kilku godzin do kilku dni; wcześniejszy czerwony status nie znika natychmiast po deployu.
+
+### Wynik audytu lokalnego
+
+- 69 publicznych stron HTML, każda z jednym `h1` i jednym canonicalem.
+- 181 poprawnie parsujących się bloków JSON-LD.
+- 69 adresów w sitemapach: 18 stron, 33 artykuły i 18 realizacji.
+- Brak brakujących obrazów w 109 lokalnych referencjach i brak duplikatów slugów.
+- Brak poziomego overflow przy 390 px na nowych landingach i artykułach.
+- Przejęcie strony przez React w lokalnym teście: około 350–450 ms po rozgrzaniu cache.

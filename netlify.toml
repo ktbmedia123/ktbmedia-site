@@ -84,3 +84,14 @@
   to = "/404.html"
   status = 404
   force = false
+
+[[headers]]
+  for = "/sitemap-*.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=UTF-8"
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/landing-configs.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

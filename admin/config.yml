@@ -256,6 +256,138 @@ collections:
                         fields:
                           - { label: Pytanie, name: q, widget: string }
                           - { label: Odpowiedź, name: a, widget: text }
+                  - label: Agencja marketingowa Sopot
+                    name: agencja-marketingowa-sopot
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - { label: Title SEO, name: title, widget: string }
+                      - { label: Meta description, name: description, widget: text }
+                      - label: Hero
+                        name: hero
+                        widget: object
+                        fields:
+                          - { label: H1, name: h1, widget: string }
+                          - { label: Lead, name: lead, widget: text }
+                      - { label: Dlaczego my, name: why, widget: list, field: { label: Punkt, name: value, widget: text } }
+                      - { label: Usługi, name: services, widget: list, field: { label: Usługa, name: value, widget: string } }
+                      - { label: Treść GEO, name: context, widget: list, field: { label: Akapit, name: value, widget: text } }
+                      - label: FAQ
+                        name: faq
+                        widget: list
+                        fields:
+                          - { label: Pytanie, name: q, widget: string }
+                          - { label: Odpowiedź, name: a, widget: text }
+                  - label: Agencja marketingowa Starogard Gdański
+                    name: agencja-marketingowa-starogard-gdanski
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - { label: Title SEO, name: title, widget: string }
+                      - { label: Meta description, name: description, widget: text }
+                      - label: Hero
+                        name: hero
+                        widget: object
+                        fields:
+                          - { label: H1, name: h1, widget: string }
+                          - { label: Lead, name: lead, widget: text }
+                      - { label: Dlaczego my, name: why, widget: list, field: { label: Punkt, name: value, widget: text } }
+                      - { label: Usługi, name: services, widget: list, field: { label: Usługa, name: value, widget: string } }
+                      - { label: Treść GEO, name: context, widget: list, field: { label: Akapit, name: value, widget: text } }
+                      - label: FAQ
+                        name: faq
+                        widget: list
+                        fields:
+                          - { label: Pytanie, name: q, widget: string }
+                          - { label: Odpowiedź, name: a, widget: text }
+                  - label: Agencja marketingowa Elbląg
+                    name: agencja-marketingowa-elblag
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - { label: Title SEO, name: title, widget: string }
+                      - { label: Meta description, name: description, widget: text }
+                      - label: Hero
+                        name: hero
+                        widget: object
+                        fields:
+                          - { label: H1, name: h1, widget: string }
+                          - { label: Lead, name: lead, widget: text }
+                      - { label: Dlaczego my, name: why, widget: list, field: { label: Punkt, name: value, widget: text } }
+                      - { label: Usługi, name: services, widget: list, field: { label: Usługa, name: value, widget: string } }
+                      - { label: Treść GEO, name: context, widget: list, field: { label: Akapit, name: value, widget: text } }
+                      - label: FAQ
+                        name: faq
+                        widget: list
+                        fields:
+                          - { label: Pytanie, name: q, widget: string }
+                          - { label: Odpowiedź, name: a, widget: text }
+                  - label: Marketing dla auto detailingu
+                    name: marketing-dla-auto-detailingu
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - { label: Title SEO, name: title, widget: string }
+                      - { label: Meta description, name: description, widget: text }
+                      - label: Hero
+                        name: hero
+                        widget: object
+                        fields:
+                          - { label: H1, name: h1, widget: string }
+                          - { label: Lead, name: lead, widget: text }
+                      - { label: Dlaczego my, name: why, widget: list, field: { label: Punkt, name: value, widget: text } }
+                      - { label: Usługi, name: services, widget: list, field: { label: Usługa, name: value, widget: string } }
+                      - { label: Treść GEO, name: context, widget: list, field: { label: Akapit, name: value, widget: text } }
+                      - label: FAQ
+                        name: faq
+                        widget: list
+                        fields:
+                          - { label: Pytanie, name: q, widget: string }
+                          - { label: Odpowiedź, name: a, widget: text }
+                  - label: Marketing dla producenta części samochodowych
+                    name: marketing-dla-producenta-czesci-samochodowych
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - { label: Title SEO, name: title, widget: string }
+                      - { label: Meta description, name: description, widget: text }
+                      - label: Hero
+                        name: hero
+                        widget: object
+                        fields:
+                          - { label: H1, name: h1, widget: string }
+                          - { label: Lead, name: lead, widget: text }
+                      - { label: Dlaczego my, name: why, widget: list, field: { label: Punkt, name: value, widget: text } }
+                      - { label: Usługi, name: services, widget: list, field: { label: Usługa, name: value, widget: string } }
+                      - { label: Treść GEO, name: context, widget: list, field: { label: Akapit, name: value, widget: text } }
+                      - label: FAQ
+                        name: faq
+                        widget: list
+                        fields:
+                          - { label: Pytanie, name: q, widget: string }
+                          - { label: Odpowiedź, name: a, widget: text }
+                  - label: Marketing dla branży morskiej
+                    name: marketing-dla-branzy-morskiej
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - { label: Title SEO, name: title, widget: string }
+                      - { label: Meta description, name: description, widget: text }
+                      - label: Hero
+                        name: hero
+                        widget: object
+                        fields:
+                          - { label: H1, name: h1, widget: string }
+                          - { label: Lead, name: lead, widget: text }
+                      - { label: Dlaczego my, name: why, widget: list, field: { label: Punkt, name: value, widget: text } }
+                      - { label: Usługi, name: services, widget: list, field: { label: Usługa, name: value, widget: string } }
+                      - { label: Treść GEO, name: context, widget: list, field: { label: Akapit, name: value, widget: text } }
+                      - label: FAQ
+                        name: faq
+                        widget: list
+                        fields:
+                          - { label: Pytanie, name: q, widget: string }
+                          - { label: Odpowiedź, name: a, widget: text }
 
               # WIDOCZNOŚĆ SEKCJI
               - label: Widoczność sekcji
@@ -559,6 +691,14 @@ collections:
                       - { label: Slug (URL), name: slug, widget: string }
                       - { label: Kategoria, name: cat, widget: string }
                       - { label: Data (np. "Kwi 2026"), name: date, widget: string }
+                      - { label: Dokładna data publikacji, name: dateISO, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, required: false }
+                      - { label: Tytuł SEO, name: seoTitle, widget: string, required: false, hint: "Opcjonalny, krótszy tytuł widoczny w Google" }
+                      - { label: Opis SEO, name: seoDescription, widget: text, required: false }
+                      - label: Słowa kluczowe SEO
+                        name: seoKeywords
+                        widget: list
+                        required: false
+                        field: { label: Fraza, name: keyword, widget: string }
                       - { label: Tytuł 1 (bold), name: title1, widget: string }
                       - { label: Tytuł 2 (italic), name: titleIt, widget: string }
                       - { label: Obraz nagłówkowy, name: image, widget: image }
@@ -974,6 +1114,14 @@ collections:
                       - { label: Slug (URL), name: slug, widget: string }
                       - { label: Category, name: cat, widget: string }
                       - { label: Date, name: date, widget: string }
+                      - { label: Exact publication date, name: dateISO, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, required: false }
+                      - { label: SEO title, name: seoTitle, widget: string, required: false }
+                      - { label: SEO description, name: seoDescription, widget: text, required: false }
+                      - label: SEO keywords
+                        name: seoKeywords
+                        widget: list
+                        required: false
+                        field: { label: Keyword, name: keyword, widget: string }
                       - { label: Title 1 (bold), name: title1, widget: string }
                       - { label: Title 2 (italic), name: titleIt, widget: string }
                       - { label: Header image, name: image, widget: image }

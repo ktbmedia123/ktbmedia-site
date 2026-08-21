@@ -959,7 +959,8 @@ function Nav({
     onNav: closeMenu
   }, /*#__PURE__*/React.createElement("img", {
     src: "/assets/logo.png",
-    alt: "KTB Media"
+    alt: "KTB Media",
+    decoding: "async"
   })), /*#__PURE__*/React.createElement("div", {
     className: "nav-links"
   }, t.nav.map((n, i) => /*#__PURE__*/React.createElement(SmartLink, {
@@ -1034,7 +1035,10 @@ function Hero({
     className: "hero-statue"
   }, /*#__PURE__*/React.createElement("img", {
     src: h.image || "/assets/statue-greek.webp",
-    alt: h.imageAlt || ""
+    alt: h.imageAlt || "",
+    loading: "eager",
+    decoding: "async",
+    fetchPriority: "high"
   })), /*#__PURE__*/React.createElement("div", {
     className: "container hero-inner"
   }, /*#__PURE__*/React.createElement("div", {
@@ -1209,7 +1213,9 @@ function About({
   className: "about-samurai reveal"
   }, /*#__PURE__*/React.createElement("img", {
     src: a.image || "/assets/statue-samurai.webp",
-    alt: a.imageAlt || ""
+    alt: a.imageAlt || "",
+    loading: "lazy",
+    decoding: "async"
   }), /*#__PURE__*/React.createElement("div", {
     className: "quote"
   }, "\"", a.quote.split(a.quoteAccent).map((part, i, arr) => /*#__PURE__*/React.createElement(React.Fragment, {
@@ -2322,11 +2328,15 @@ function FounderCard({
   }, hasPhotos ? /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("img", {
     src: m.photo1,
     alt: m.name,
-    className: "founder-photo founder-photo-1"
+    className: "founder-photo founder-photo-1",
+    loading: "lazy",
+    decoding: "async"
   }), /*#__PURE__*/React.createElement("img", {
     src: m.photo2,
     alt: m.name,
-    className: "founder-photo founder-photo-2"
+    className: "founder-photo founder-photo-2",
+    loading: "lazy",
+    decoding: "async"
   })) : /*#__PURE__*/React.createElement("span", null, m.init)), /*#__PURE__*/React.createElement("div", {
     className: "founder-body"
   }, /*#__PURE__*/React.createElement("div", {
@@ -2372,7 +2382,9 @@ function AboutPage({
   className: "about-samurai reveal"
   }, /*#__PURE__*/React.createElement("img", {
     src: a.image || "/assets/statue-samurai.webp",
-    alt: a.imageAlt || ""
+    alt: a.imageAlt || "",
+    loading: "lazy",
+    decoding: "async"
   }), /*#__PURE__*/React.createElement("div", {
     className: "quote"
   }, "\"", a.quote.split(a.quoteAccent).map((part, i, arr) => /*#__PURE__*/React.createElement(React.Fragment, {
@@ -2438,7 +2450,9 @@ function Blog({
     className: "blog-thumb"
   }, it.image ? /*#__PURE__*/React.createElement("img", {
     src: it.image,
-    alt: it.title1
+    alt: it.title1,
+    loading: "lazy",
+    decoding: "async"
   }) : /*#__PURE__*/React.createElement("div", {
     className: `ph ${it.ph}`
   })), /*#__PURE__*/React.createElement("div", {
@@ -2516,7 +2530,10 @@ function BlogArticle({
     className: "blog-article-cover"
   }, /*#__PURE__*/React.createElement("img", {
     src: item.image,
-    alt: item.title1
+    alt: item.title1,
+    loading: "eager",
+    decoding: "async",
+    fetchPriority: "high"
   })), /*#__PURE__*/React.createElement("div", {
     className: "blog-article-body"
   }, (item.body || []).map((block, j) => {
@@ -2539,14 +2556,18 @@ function BlogArticle({
       key: `figure-${j}`
     }, /*#__PURE__*/React.createElement("img", {
       src: block.image,
-      alt: block.caption || item.title1
+      alt: block.caption || item.title1,
+      loading: "lazy",
+      decoding: "async"
     }), block.caption && /*#__PURE__*/React.createElement("figcaption", null, block.caption)));
     if (!hasInlineFigure && inlineImage && j === midIdx) {
       out.push(/*#__PURE__*/React.createElement("figure", {
         key: `fig-${j}`
       }, /*#__PURE__*/React.createElement("img", {
         src: inlineImage,
-        alt: inlineImageAlt
+        alt: inlineImageAlt,
+        loading: "lazy",
+        decoding: "async"
       }), /*#__PURE__*/React.createElement("figcaption", null, inlineImageAlt, " \u2014 ", item.cat || '')));
     }
     return out;
@@ -2893,6 +2914,8 @@ function ContactPage({
     src: c.image || "/assets/contact-phone.jpg",
     alt: c.imageAlt || "",
     "aria-hidden": "true",
+    loading: "lazy",
+    decoding: "async",
     onError: e => {
       e.target.style.display = 'none';
     }
@@ -2978,7 +3001,9 @@ function MiniCtaBar({
   }, /*#__PURE__*/React.createElement("img", {
     src: c.image || "/assets/contact-phone.jpg",
     alt: "",
-    "aria-hidden": "true"
+    "aria-hidden": "true",
+    loading: "lazy",
+    decoding: "async"
   }))));
 }
 function NotFoundCar() {

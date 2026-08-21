@@ -22,7 +22,7 @@
       "telephone": "+48 792 614 834",
       "foundingDate": "2022",
       "priceRange": "PLN",
-      "description": "Agencja marketingowa z Pruszcza Gdańskiego obsługująca Gdańsk, Gdynię, Sopot i całe Trójmiasto. KTB Media specjalizuje się w marketingu automotive oraz łączy SEO, Google Ads, Meta Ads, social media, branding, strony WWW i produkcję.",
+      "description": "Agencja marketingowa z Pruszcza Gdańskiego obsługująca Gdańsk, Gdynię, Sopot, Tczew, Starogard Gdański, Elbląg i całe Trójmiasto. KTB Media specjalizuje się w marketingu automotive, marine i technicznym B2B oraz łączy SEO, reklamy, social media, branding, strony WWW, aplikacje i produkcję.",
       "slogan": "Strategia, marketing, strony WWW i aplikacje dopasowane do realnego procesu firmy.",
       "address": {
         "@type": "PostalAddress",
@@ -59,6 +59,14 @@
           "name": "Sopot"
         },
         {
+          "@type": "City",
+          "name": "Starogard Gdański"
+        },
+        {
+          "@type": "City",
+          "name": "Elbląg"
+        },
+        {
           "@type": "AdministrativeArea",
           "name": "Trójmiasto"
         },
@@ -82,6 +90,12 @@
         "agencja marketingowa Gdańsk",
         "agencja marketingowa Pruszcz Gdański",
         "agencja marketingowa Tczew",
+        "agencja marketingowa Sopot",
+        "agencja marketingowa Starogard Gdański",
+        "agencja marketingowa Elbląg",
+        "marketing dla auto detailingu",
+        "marketing dla producenta części samochodowych",
+        "marketing dla branży morskiej",
         "SEO lokalne",
         "Google Business Profile",
         "Google Ads",

@@ -82,6 +82,14 @@ const LANDINGS = {
       {
         "label": "Marketing dla serwisu samochodowego",
         "href": "/marketing-dla-serwisu-samochodowego"
+      },
+      {
+        "label": "Agencja marketingowa Sopot",
+        "href": "/agencja-marketingowa-sopot"
+      },
+      {
+        "label": "Marketing dla auto detailingu",
+        "href": "/marketing-dla-auto-detailingu"
       }
     ]
   },
@@ -252,6 +260,14 @@ const LANDINGS = {
       {
         "label": "Marketing dla serwisu samochodowego",
         "href": "/marketing-dla-serwisu-samochodowego"
+      },
+      {
+        "label": "Agencja marketingowa Starogard Gdański",
+        "href": "/agencja-marketingowa-starogard-gdanski"
+      },
+      {
+        "label": "Agencja marketingowa Elbląg",
+        "href": "/agencja-marketingowa-elblag"
       }
     ]
   },
@@ -597,6 +613,14 @@ const LANDINGS = {
       {
         "label": "Marketing dla serwisu samochodowego",
         "href": "/marketing-dla-serwisu-samochodowego"
+      },
+      {
+        "label": "Agencja marketingowa Sopot",
+        "href": "/agencja-marketingowa-sopot"
+      },
+      {
+        "label": "Marketing dla branży morskiej",
+        "href": "/marketing-dla-branzy-morskiej"
       }
     ]
   },
@@ -711,6 +735,553 @@ const LANDINGS = {
       {
         "label": "Marketing dla dealera",
         "href": "/marketing-dla-dealera-samochodowego"
+      },
+      {
+        "label": "Marketing dla auto detailingu",
+        "href": "/marketing-dla-auto-detailingu"
+      },
+      {
+        "label": "Marketing dla producentów części",
+        "href": "/marketing-dla-producenta-czesci-samochodowych"
+      },
+      {
+        "label": "Marketing dla branży morskiej",
+        "href": "/marketing-dla-branzy-morskiej"
+      }
+    ]
+  },
+  "agencja-marketingowa-sopot": {
+    "slug": "agencja-marketingowa-sopot",
+    "key": "sopot",
+    "keyword": "agencja marketingowa Sopot",
+    "area": "Sopot",
+    "type": "local",
+    "title": "Agencja marketingowa Sopot | SEO, Ads i social media",
+    "description": "Agencja marketingowa Sopot dla usług premium, automotive, gastronomii i B2B. SEO lokalne, Google Ads, social media, strony WWW i produkcja dla firm lokalnych.",
+    "keywords": [
+      "agencja marketingowa Sopot",
+      "agencja reklamowa Sopot",
+      "marketing Sopot",
+      "SEO lokalne Sopot",
+      "Google Ads Sopot",
+      "social media Sopot",
+      "strony internetowe Sopot",
+      "reklama dla firm Sopot"
+    ],
+    "hero": {
+      "h1": "Agencja marketingowa Sopot",
+      "lead": "Pomagamy firmom z Sopotu zamienić rozpoznawalność w zapytania i sprzedaż. Łączymy lokalne SEO, kampanie, social media, strony WWW oraz produkcję treści bez kopiowania komunikacji z Gdańska czy Gdyni."
+    },
+    "why": [
+      "Rozumiemy rynek, na którym lokalny klient miesza się z ruchem sezonowym, turystyką i odbiorcą premium.",
+      "Porządkujemy ofertę tak, aby reklamy, wizytówka Google i strona mówiły jednym językiem.",
+      "Mierzymy telefony, rezerwacje, formularze i koszt wartościowego kontaktu, a nie sam zasięg.",
+      "Tworzymy własne zdjęcia i wideo, dzięki czemu marka nie wygląda jak kolejna firma oparta na stockach."
+    ],
+    "services": [
+      "SEO lokalne i Google Business Profile w Sopocie",
+      "Google Ads na usługi i zapytania o wysokiej intencji",
+      "Meta Ads, Instagram i remarketing",
+      "Strony WWW i landing page dla marek lokalnych",
+      "Produkcja foto-wideo oraz ujęcia z drona",
+      "Strategia komunikacji i pozycjonowanie marki",
+      "Analityka połączeń, formularzy i rezerwacji"
+    ],
+    "cases": [
+      "grupa-janisz",
+      "gt-serwis-barniewice"
+    ],
+    "faq": [
+      {
+        "q": "Ile kosztuje agencja marketingowa w Sopocie?",
+        "a": "Stała obsługa najczęściej zaczyna się od około 3000 zł netto miesięcznie, do czego dochodzi budżet reklamowy. Dokładny koszt zależy od liczby kanałów, sezonowości i jakości obecnej strony."
+      },
+      {
+        "q": "Jak reklamować lokalną firmę w Sopocie?",
+        "a": "Najpierw trzeba rozdzielić klienta stałego od sezonowego. Następnie łączymy Google Maps, kampanie search, opinie i treści pokazujące realne miejsce, zespół oraz standard obsługi."
+      },
+      {
+        "q": "Czy prowadzicie Instagram dla firm z Sopotu?",
+        "a": "Tak, ale Instagram traktujemy jako element procesu. Treści mają budować zaufanie, wspierać remarketing i prowadzić do rezerwacji, telefonu albo formularza."
+      },
+      {
+        "q": "Czy SEO lokalne działa w mieście turystycznym?",
+        "a": "Tak. Trzeba jednak uwzględnić sezonowość zapytań, wersje językowe, precyzyjne usługi i frazy związane z lokalizacją, a nie opierać się wyłącznie na nazwie miasta."
+      },
+      {
+        "q": "Jak szybko widać efekty?",
+        "a": "Kampanie płatne dostarczają pierwsze dane w ciągu kilku tygodni. Stabilny wzrost w mapach i wynikach organicznych zwykle wymaga od trzech do sześciu miesięcy."
+      },
+      {
+        "q": "Czy możecie przygotować stronę i materiały w jednym projekcie?",
+        "a": "Tak. Projektujemy serwis, planujemy sesję, przygotowujemy zdjęcia i wideo oraz układamy kampanie, dzięki czemu wszystkie elementy są spójne od startu."
+      }
+    ],
+    "context": [
+      "Sopot ma specyficzny rytm sprzedaży. Część firm żyje z klientów lokalnych przez cały rok, część mocno rośnie w sezonie, a część konkuruje o odbiorcę premium z całego Trójmiasta. Dlatego plan marketingowy zaczynamy od rozpisania sezonów, marż i realnej dostępności usług. Reklama ma kierować do tego, co firma może sprzedać teraz, nie do ogólnego katalogu.",
+      "Widoczność lokalna nie kończy się na dodaniu nazwy miasta do nagłówka. Porządkujemy kategorie i usługi w Google Business Profile, rozwijamy podstrony odpowiadające konkretnym potrzebom, dbamy o opinie i spójność danych NAP. Kampanie Google Ads ustawiamy na zapytania z intencją kontaktu, a social media wykorzystujemy do pokazania standardu, atmosfery i dowodów jakości.",
+      "Dla marek z Sopotu ważna jest także warstwa wizualna. Własne zdjęcia, krótkie filmy, ujęcia z drona i czytelny design strony pomagają uzasadnić cenę oraz odróżnić się od firm publikujących te same stocki. Nie oznacza to jednak sztuki dla sztuki: każdy materiał powinien wspierać konkretną usługę, ofertę sezonową albo decyzję klienta.",
+      "Plan działań dzielimy na sezon wysoki, okres przygotowania i miesiące spokojniejsze. W sezonie reklamy powinny kierować do usług, które można szybko zrealizować, a komunikacja musi odpowiadać na pytania o dostępność. Poza sezonem rozwijamy SEO, materiały eksperckie, bazę opinii i oferty dla klienta lokalnego, dzięki czemu firma nie zaczyna każdego lata od zera.",
+      "Współpraca nie musi oznaczać prowadzenia wszystkich kanałów. Czasem największy efekt daje nowa strona, uporządkowana wizytówka i jedna dobrze mierzona kampania. W innym przypadku problemem jest brak materiałów albo niespójna obsługa zapytań. Dobieramy zakres do wąskiego gardła i dopiero po jego usunięciu dokładamy kolejne działania.",
+      "Przed startem sprawdzamy również konkurencję w wynikach lokalnych, jakość profili Google i widoczność konkretnych usług. Nie kopiujemy jednak ich komunikacji. Szukamy miejsca, w którym firma może być bardziej użyteczna i wiarygodna: szybszej odpowiedzi, lepiej opisanej oferty, mocniejszych zdjęć, czytelniejszego dojazdu albo wygodniejszej rezerwacji. Te drobne przewagi łączymy w spójny system i testujemy na prawdziwych zapytaniach klientów."
+    ],
+    "related": [
+      {
+        "label": "Agencja marketingowa Gdańsk",
+        "href": "/agencja-marketingowa-gdansk"
+      },
+      {
+        "label": "Agencja marketingowa Gdynia",
+        "href": "/agencja-marketingowa-gdynia"
+      },
+      {
+        "label": "Marketing dla branży automotive",
+        "href": "/marketing-dla-motoryzacji"
+      }
+    ]
+  },
+  "agencja-marketingowa-starogard-gdanski": {
+    "slug": "agencja-marketingowa-starogard-gdanski",
+    "key": "starogard-gdanski",
+    "keyword": "agencja marketingowa Starogard Gdański",
+    "area": "Starogard Gdański",
+    "type": "local",
+    "title": "Agencja marketingowa Starogard Gdański · KTB Media",
+    "description": "Agencja marketingowa Starogard Gdański dla usług lokalnych, automotive, produkcji i B2B. SEO, Google Ads, social media, strony WWW i branding w regionie.",
+    "keywords": [
+      "agencja marketingowa Starogard Gdański",
+      "marketing Starogard Gdański",
+      "SEO lokalne Starogard Gdański",
+      "Google Ads Starogard Gdański",
+      "reklama Starogard Gdański",
+      "social media Starogard Gdański",
+      "strony WWW Starogard Gdański"
+    ],
+    "hero": {
+      "h1": "Agencja marketingowa Starogard Gdański",
+      "lead": "Budujemy marketing dla firm, które chcą rosnąć w Starogardzie Gdańskim, na Kociewiu i w całym Pomorskiem. Łączymy lokalną widoczność z kampaniami, stroną i treściami pokazującymi prawdziwą przewagę firmy."
+    },
+    "why": [
+      "Nie rozciągamy kampanii na całe województwo, jeśli firma obsługuje konkretny obszar.",
+      "Łączymy szybkie pozyskiwanie zapytań z budową widoczności organicznej.",
+      "Dobrze czujemy automotive, produkcję, handel techniczny i lokalne usługi.",
+      "Raport przekładamy na decyzje: gdzie zwiększyć budżet, co poprawić i co wyłączyć."
+    ],
+    "services": [
+      "SEO lokalne dla Starogardu i Kociewia",
+      "Optymalizacja wizytówki Google i system opinii",
+      "Kampanie Google Ads oraz Meta Ads",
+      "Strony internetowe i podstrony usługowe",
+      "Social media i content z firmy",
+      "Branding, rebranding i materiały sprzedażowe",
+      "Produkcja zdjęć, filmów i ujęć z drona"
+    ],
+    "cases": [
+      "autocentrum-elektronowa",
+      "bigmot"
+    ],
+    "faq": [
+      {
+        "q": "Czy obsługujecie firmy ze Starogardu Gdańskiego?",
+        "a": "Tak. Pracujemy zdalnie i na miejscu w województwie pomorskim. Produkcje foto-wideo planujemy w siedzibie klienta, a bieżące działania prowadzimy w stałym rytmie."
+      },
+      {
+        "q": "Jaki budżet warto przeznaczyć na lokalny marketing?",
+        "a": "Dla stałej obsługi rozsądny punkt startu to zwykle około 3000 zł netto miesięcznie plus budżet mediowy. W mniejszym zakresie można zacząć od audytu lub konkretnej kampanii."
+      },
+      {
+        "q": "Co działa najlepiej dla usług lokalnych?",
+        "a": "Najczęściej połączenie Google Business Profile, opinii, dobrej strony, lokalnego SEO i kampanii search ustawionej na usługi o największej wartości."
+      },
+      {
+        "q": "Czy pomagacie firmom produkcyjnym i B2B?",
+        "a": "Tak. Upraszczamy techniczną ofertę, tworzymy content ekspercki, materiały handlowe, strony oraz kampanie kierowane do konkretnych branż i stanowisk."
+      },
+      {
+        "q": "Czy tworzycie strony internetowe?",
+        "a": "Tak. Projektujemy strony od architektury informacji po wdrożenie, analitykę i treści. Serwis ma wspierać kontakt i sprzedaż, nie tylko prezentować firmę."
+      },
+      {
+        "q": "Od czego zaczyna się współpraca?",
+        "a": "Od rozmowy o celach, marży, obszarze działania i obecnych źródłach klientów. Następnie wskazujemy priorytety na pierwsze 90 dni."
+      }
+    ],
+    "context": [
+      "Firmy ze Starogardu Gdańskiego często konkurują jednocześnie lokalnie i regionalnie. Warsztat chce docierać do kierowców z miasta oraz okolic, producent szuka odbiorców w całej Polsce, a firma usługowa musi pilnować rentowności dojazdu. Dlatego obszar kampanii i treści ustalamy według modelu sprzedaży, nie według administracyjnych granic.",
+      "Pierwszym krokiem jest zwykle uporządkowanie fundamentów: oferty, strony, danych kontaktowych, wizytówki Google i pomiaru telefonów. Gdy wiemy, które usługi przynoszą marżę i ile firma może przyjąć nowych zleceń, uruchamiamy reklamy. Dzięki temu budżet nie rozprasza się na przypadkowe hasła i zbyt szeroki teren.",
+      "W firmach technicznych ważne są dowody. Zdjęcia zaplecza, realizacje, proces kontroli jakości, doświadczenie zespołu i konkretne parametry budują zaufanie lepiej niż ogólne obietnice. Przekładamy te informacje na stronę, materiały dla handlowców, social media i kampanie kierowane do właściwych odbiorców.",
+      "Dla lokalnych usług budujemy osobne strony najważniejszych problemów i ofert. Klient nie szuka „kompleksowych rozwiązań”, tylko konkretnej naprawy, produktu albo terminu. Każda podstrona ma własny nagłówek, odpowiedzi, dowody i wezwanie do kontaktu. Taka struktura pomaga zarówno użytkownikowi, jak i wyszukiwarce zrozumieć, w czym firma naprawdę jest dobra.",
+      "Po uruchomieniu kampanii analizujemy nie tylko koszt formularza. Pytamy, czy lead pasował do oferty, z jakiej miejscowości pochodził, jak szybko firma odpowiedziała i czy kontakt zakończył się sprzedażą. Te dane pozwalają przesuwać budżet między usługami oraz poprawiać treści zamiast bez końca zwiększać liczbę kliknięć.",
+      "W Starogardzie ważna jest także reputacja budowana poza internetem. Rekomendacje, historia firmy i rozpoznawalność właściciela przenosimy do kanałów cyfrowych przez opinie, case studies, zdjęcia zespołu i konkretne przykłady pracy. Dzięki temu nowy klient widzi w Google to samo zaufanie, o którym dotychczas słyszał z polecenia. To szczególnie istotne, gdy firma chce wyjść poza dotychczasowy krąg odbiorców."
+    ],
+    "related": [
+      {
+        "label": "Agencja marketingowa Gdańsk",
+        "href": "/agencja-marketingowa-gdansk"
+      },
+      {
+        "label": "Agencja marketingowa Gdynia",
+        "href": "/agencja-marketingowa-gdynia"
+      },
+      {
+        "label": "Marketing dla branży automotive",
+        "href": "/marketing-dla-motoryzacji"
+      }
+    ]
+  },
+  "agencja-marketingowa-elblag": {
+    "slug": "agencja-marketingowa-elblag",
+    "key": "elblag",
+    "keyword": "agencja marketingowa Elbląg",
+    "area": "Elbląg",
+    "type": "local",
+    "title": "Agencja marketingowa Elbląg | SEO, Ads i strony WWW",
+    "description": "Agencja marketingowa Elbląg dla automotive, przemysłu, usług i B2B. SEO lokalne, Google Ads, Meta Ads, strony WWW, branding, produkcja i realne leady.",
+    "keywords": [
+      "agencja marketingowa Elbląg",
+      "agencja reklamowa Elbląg",
+      "marketing Elbląg",
+      "SEO lokalne Elbląg",
+      "Google Ads Elbląg",
+      "social media Elbląg",
+      "strony internetowe Elbląg"
+    ],
+    "hero": {
+      "h1": "Agencja marketingowa Elbląg",
+      "lead": "Pomagamy firmom z Elbląga porządkować marketing, zdobywać wartościowe zapytania i budować markę poza lokalnym rynkiem. Pracujemy konkretnie: strategia, reklamy, SEO, content i technologia w jednym zespole."
+    },
+    "why": [
+      "Łączymy marketing lokalny z działaniami ogólnopolskimi dla producentów i B2B.",
+      "Znamy techniczne branże, w których klient potrzebuje informacji, nie pustego hasła.",
+      "Budżety opieramy na potencjale usług i jakości leadów.",
+      "Stronę, kampanie, content i analitykę prowadzimy jako jeden proces."
+    ],
+    "services": [
+      "SEO lokalne i Google Maps w Elblągu",
+      "Google Ads dla usług, handlu i przemysłu",
+      "Meta Ads i prowadzenie social media",
+      "Strony WWW oraz landing page B2B",
+      "Content ekspercki i materiały handlowe",
+      "Branding i uporządkowanie architektury marki",
+      "Produkcja foto-wideo i ujęcia przemysłowe"
+    ],
+    "cases": [
+      "rmdc",
+      "ddp-supply"
+    ],
+    "faq": [
+      {
+        "q": "Czy agencja z Pomorza może skutecznie obsługiwać Elbląg?",
+        "a": "Tak. Strategię, kampanie i analitykę prowadzimy zdalnie, a sesje oraz warsztaty realizujemy na miejscu. Kluczowe jest zrozumienie lokalnego rynku i procesu sprzedaży."
+      },
+      {
+        "q": "Czy pracujecie z firmami przemysłowymi?",
+        "a": "Tak. Potrafimy przełożyć techniczną ofertę na czytelną stronę, content ekspercki, LinkedIn, materiały handlowe i kampanie B2B."
+      },
+      {
+        "q": "Co daje lokalne SEO w Elblągu?",
+        "a": "Pomaga przejmować zapytania osób szukających konkretnej usługi w mieście i okolicy. Największy efekt daje razem z wizytówką Google, opiniami i podstronami usług."
+      },
+      {
+        "q": "Czy prowadzicie LinkedIn dla B2B?",
+        "a": "Tak. Budujemy plan tematów, wspieramy profile ekspertów i stronę firmową, a treści łączymy z działaniami handlowymi oraz wydarzeniami branżowymi."
+      },
+      {
+        "q": "Jak wygląda raportowanie?",
+        "a": "Raport pokazuje zapytania, koszt kontaktu, widoczność, zachowanie użytkowników i rekomendacje. Nie kończymy na zestawieniu zasięgów."
+      },
+      {
+        "q": "Czy można zacząć od nowej strony?",
+        "a": "Tak, jeśli obecna strona blokuje sprzedaż lub nie tłumaczy oferty. Równolegle ustawiamy pomiar i plan widoczności, żeby serwis nie był samotnym projektem."
+      }
+    ],
+    "context": [
+      "Elbląg łączy rynek lokalny z przemysłem, logistyką i firmami obsługującymi klientów w całej Polsce. To wymaga dwóch sposobów pozyskiwania klientów. Dla usług lokalnych liczą się mapy, opinie i kampanie z intencją kontaktu. Dla B2B potrzebne są treści eksperckie, czytelna oferta, LinkedIn i wsparcie handlowców.",
+      "Nie zaczynamy od wyboru kanału. Sprawdzamy, kto podejmuje decyzję, jak długo trwa sprzedaż i jakie informacje muszą pojawić się przed rozmową. Następnie budujemy stronę oraz treści odpowiadające na te pytania, ustawiamy analitykę i uruchamiamy kampanie tam, gdzie można zmierzyć realną wartość kontaktu.",
+      "W technicznych branżach dobrze działa materiał z prawdziwego środowiska pracy. Sesja w zakładzie, film z procesu, ujęcia z drona i rozmowa z ekspertem pokazują skalę oraz kompetencje bez sztucznego nadęcia. Takie treści wykorzystujemy jednocześnie na stronie, LinkedIn, w prezentacjach sprzedażowych i reklamach.",
+      "Firmy obsługujące rynek ogólnopolski potrzebują innej architektury niż lokalny usługodawca. Zamiast mnożyć przypadkowe strony miast, rozwijamy branże, zastosowania, case studies i treści odpowiadające na pytania techniczne. Lokalną obecność w Elblągu wykorzystujemy jako dowód zaplecza, ale sprzedaż budujemy według segmentów klientów i wartości projektu.",
+      "Wyniki omawiamy wspólnie z osobami odpowiedzialnymi za sprzedaż. Jeżeli kampania dostarcza dużo kontaktów, ale żaden nie przechodzi dalej, sprawdzamy komunikat, kryteria kwalifikacji i czas odpowiedzi. Marketing ma pomagać w budowie pipeline, dlatego raport nie może kończyć się na ruchu i liczbie wyświetleń.",
+      "Dla firm z kilkoma liniami biznesowymi porządkujemy także architekturę marki. Klient powinien od razu rozumieć, które usługi są dla niego, kto odpowiada za kontakt i czym różnią się poszczególne specjalizacje. Jasny podział poprawia skuteczność kampanii, SEO oraz pracy handlowców. Zamiast kierować cały ruch na stronę główną, tworzymy ścieżki dla konkretnych branż, problemów i etapów decyzji."
+    ],
+    "related": [
+      {
+        "label": "Agencja marketingowa Gdańsk",
+        "href": "/agencja-marketingowa-gdansk"
+      },
+      {
+        "label": "Agencja marketingowa Gdynia",
+        "href": "/agencja-marketingowa-gdynia"
+      },
+      {
+        "label": "Marketing dla branży automotive",
+        "href": "/marketing-dla-motoryzacji"
+      }
+    ]
+  },
+  "marketing-dla-auto-detailingu": {
+    "slug": "marketing-dla-auto-detailingu",
+    "key": "auto-detailing",
+    "keyword": "marketing dla auto detailingu",
+    "area": "studia auto detailingu",
+    "type": "industry",
+    "title": "Marketing dla auto detailingu | Reklama studia · KTB Media",
+    "description": "Marketing dla auto detailingu: Google Ads, SEO lokalne, Instagram, wideo, opinie i strona WWW, która sprzedaje pakiety zamiast samych efektownych zdjęć.",
+    "keywords": [
+      "marketing dla auto detailingu",
+      "reklama studia detailingu",
+      "Google Ads auto detailing",
+      "SEO auto detailing",
+      "Instagram detailing",
+      "pozyskiwanie klientów detailing",
+      "strona dla studia detailingu"
+    ],
+    "hero": {
+      "h1": "Marketing dla auto detailingu",
+      "lead": "Budujemy widoczność studia detailingu tam, gdzie klient porównuje jakość, zakres i cenę: w Google, mapach, social mediach oraz na stronie. Pokazujemy efekt, ale sprzedajemy proces, zaufanie i właściwy pakiet."
+    },
+    "why": [
+      "Rozumiemy różnicę między korektą lakieru, PPF, ceramiką i zwykłym myciem.",
+      "Łączymy popyt z Google z wizualnym contentem na Instagramie i Meta.",
+      "Pomagamy opisać pakiety tak, żeby klient wiedział, za co płaci.",
+      "Mierzymy telefony, formularze i rezerwacje, nie liczbę serduszek pod rolką."
+    ],
+    "services": [
+      "Google Business Profile i lokalne SEO",
+      "Google Ads na konkretne usługi detailingowe",
+      "Instagram, Reels i kampanie Meta Ads",
+      "Strona WWW z pakietami i formularzem wyceny",
+      "Zdjęcia przed i po oraz produkcja wideo",
+      "System pozyskiwania opinii klientów",
+      "Remarketing i kampanie sezonowe"
+    ],
+    "cases": [
+      "extreme-tyres",
+      "gt-serwis-barniewice"
+    ],
+    "faq": [
+      {
+        "q": "Jak pozyskiwać klientów do studia auto detailingu?",
+        "a": "Najskuteczniej łączyć Google na istniejący popyt, Google Maps i opinie z materiałami pokazującymi proces oraz rezultat. Strona musi jasno opisywać pakiety i prowadzić do wyceny."
+      },
+      {
+        "q": "Czy Instagram wystarczy studiu detailingu?",
+        "a": "Nie. Instagram buduje zainteresowanie i zaufanie, ale klient często finalnie szuka nazwy usługi w Google, sprawdza opinie i porównuje ofertę na stronie."
+      },
+      {
+        "q": "Ile kosztuje reklama auto detailingu?",
+        "a": "Budżet zależy od miasta i usług. W praktyce warto oddzielić obsługę marketingową od budżetu reklamowego i zacząć od usług o najlepszej marży oraz dostępnych terminach."
+      },
+      {
+        "q": "Co publikować poza zdjęciami przed i po?",
+        "a": "Etapy przygotowania, błędy klientów, dobór usługi, pielęgnację po zabezpieczeniu, czas realizacji, pracę zespołu i odpowiedzi na obiekcje dotyczące ceny."
+      },
+      {
+        "q": "Czy warto reklamować powłoki ceramiczne w Google Ads?",
+        "a": "Tak, jeśli landing wyjaśnia warianty, trwałość, przygotowanie lakieru i kolejny krok. Sama reklama kierująca na ogólną stronę zwykle traci część wartościowych zapytań."
+      },
+      {
+        "q": "Jak mierzyć skuteczność?",
+        "a": "Śledzimy połączenia, formularze, wiadomości, umówione wizyty, koszt kontaktu i wartość wybranych pakietów. Zasięg jest tylko wskaźnikiem pomocniczym."
+      }
+    ],
+    "context": [
+      "Detailing jest wizualny, ale decyzja klienta nie jest wyłącznie estetyczna. Właściciel auta chce wiedzieć, czy studio pracuje bezpiecznie, jak długo potrwa usługa, co obejmuje cena i jak dbać o samochód po odbiorze. Dlatego atrakcyjne zdjęcia łączymy z konkretnymi odpowiedziami oraz dowodami jakości.",
+      "Google przechwytuje osoby, które już szukają korekty lakieru, PPF albo powłoki ceramicznej. Instagram i Meta pomagają zbudować aspirację oraz wrócić do osób, które oglądały realizacje. Oba kanały muszą prowadzić do strony z czytelną ofertą, opiniami, lokalizacją i prostą wyceną.",
+      "Nie reklamujemy wszystkiego równocześnie. Wspólnie wybieramy usługi o najlepszej marży, dostępności i potencjale sezonowym. Dla każdej tworzymy osobny komunikat, materiał i punkt konwersji. Dzięki temu wiadomo, czy budżet sprowadza klientów na usługę, którą studio naprawdę chce rozwijać.",
+      "W ofercie porządkujemy nazwy pakietów, czas realizacji i zasady wyceny. Jeżeli cena zależy od stanu lakieru, strona powinna to uczciwie wyjaśnić i poprosić o potrzebne dane lub zdjęcia. Klient nie oczekuje zawsze pełnego cennika, ale chce wiedzieć, od czego zależy koszt i jak wygląda kolejny krok.",
+      "Po wykonaniu usługi uruchamiamy prosty rytm utrzymania relacji: instrukcję pielęgnacji, prośbę o opinię, przypomnienie o kontroli i remarketing usług uzupełniających. Dzięki temu marketing nie kończy się w dniu odbioru auta. Dobra obsługa posprzedażowa buduje polecenia i zwiększa wartość klienta bez ciągłego kupowania nowego ruchu.",
+      "W sezonie planujemy kampanie z wyprzedzeniem, aby studio nie reklamowało usługi dopiero wtedy, gdy kalendarz jest już pełny albo konkurencja podniosła stawki. Kalendarz łączymy z pogodą, okresem wymiany aut, przygotowaniem do wakacji i ochroną przed zimą. Poza sezonem rozwijamy treści edukacyjne i ofertę utrzymaniową. Dzięki temu zainteresowanie nie zależy wyłącznie od jednej viralowej rolki."
+    ],
+    "related": [
+      {
+        "label": "Marketing dla motoryzacji",
+        "href": "/marketing-dla-motoryzacji"
+      },
+      {
+        "label": "Marketing dla serwisu samochodowego",
+        "href": "/marketing-dla-serwisu-samochodowego"
+      },
+      {
+        "label": "Agencja marketingowa Gdańsk",
+        "href": "/agencja-marketingowa-gdansk"
+      }
+    ]
+  },
+  "marketing-dla-producenta-czesci-samochodowych": {
+    "slug": "marketing-dla-producenta-czesci-samochodowych",
+    "key": "producent-czesci",
+    "keyword": "marketing dla producenta części samochodowych",
+    "area": "producentów części samochodowych",
+    "type": "industry",
+    "title": "Marketing dla producenta części samochodowych · KTB Media",
+    "description": "Marketing dla producentów części samochodowych i marek aftermarket: strategia B2B/B2C, content techniczny, LinkedIn, kampanie, strony, produkcja i leady B2B.",
+    "keywords": [
+      "marketing dla producenta części samochodowych",
+      "marketing automotive B2B",
+      "reklama części samochodowych",
+      "marketing aftermarket",
+      "content techniczny automotive",
+      "LinkedIn automotive",
+      "kampanie dla dystrybutora części"
+    ],
+    "hero": {
+      "h1": "Marketing dla producenta części samochodowych",
+      "lead": "Przekładamy parametry, technologię i przewagi produktu na komunikację dla dystrybutorów, mechaników oraz kierowców. Łączymy content techniczny, kampanie, materiały sprzedażowe, stronę i produkcję."
+    },
+    "why": [
+      "Znamy różnicę między komunikacją do dystrybutora, warsztatu i kierowcy.",
+      "Nie spłaszczamy technicznego produktu do sloganu bez dowodu.",
+      "Łączymy działania B2B, B2C i wsparcie sieci sprzedaży.",
+      "Potrafimy wyprodukować materiał w warsztacie, fabryce, na targach i na torze."
+    ],
+    "services": [
+      "Strategia marki aftermarket i architektura komunikacji",
+      "Content techniczny, poradniki i materiały produktowe",
+      "LinkedIn, Meta Ads, Google Ads i YouTube",
+      "Strony produktowe, katalogi i landing page",
+      "Materiały dla dystrybutorów oraz warsztatów",
+      "Produkcja foto-wideo, testy i realizacje z drona",
+      "Analityka leadów B2B i wsparcie handlowców"
+    ],
+    "cases": [
+      "pmo-lubricants",
+      "pulsegt"
+    ],
+    "faq": [
+      {
+        "q": "Jak reklamować producenta części samochodowych?",
+        "a": "Najpierw trzeba rozdzielić odbiorców: dystrybutor, warsztat i kierowca oczekują innych informacji. Następnie budujemy treści, materiały i kampanie dla każdej ścieżki."
+      },
+      {
+        "q": "Czy content techniczny pomaga w sprzedaży?",
+        "a": "Tak. Dobrze przygotowane porównania, instrukcje, testy i odpowiedzi na problemy pomagają handlowcom, wspierają SEO i ograniczają niepewność przed zakupem."
+      },
+      {
+        "q": "Jak wykorzystać LinkedIn w automotive B2B?",
+        "a": "LinkedIn sprawdza się przy budowaniu relacji z dystrybutorami, sieciami, flotami i partnerami technicznymi. Potrzebuje jednak regularnego wkładu ekspertów oraz powiązania z działem sprzedaży."
+      },
+      {
+        "q": "Czy prowadzicie produkcje w warsztatach i zakładach?",
+        "a": "Tak. Realizujemy zdjęcia, filmy produktowe, rozmowy z ekspertami, materiały z testów, wydarzeń, torów i produkcji, również z użyciem drona."
+      },
+      {
+        "q": "Co powinien zawierać landing produktu technicznego?",
+        "a": "Problem, zastosowanie, parametry, dowody, kompatybilność, instrukcję, materiały do pobrania oraz jasny następny krok dla klienta B2B lub detalicznego."
+      },
+      {
+        "q": "Jak mierzyć marketing producenta?",
+        "a": "Poza ruchem mierzymy zapytania handlowe, pobrania katalogów, kontakty od dystrybutorów, aktywację punktów sprzedaży, koszt leadów i wpływ kampanii na konkretne grupy produktów."
+      }
+    ],
+    "context": [
+      "Producent części samochodowych rzadko sprzedaje jednemu odbiorcy. Dystrybutor patrzy na dostępność, marżę i wsparcie. Mechanik potrzebuje pewności montażu i argumentu dla klienta. Kierowca chce zrozumieć korzyść bez studiowania dokumentacji technicznej. Skuteczny marketing rozdziela te potrzeby, ale zachowuje jeden spójny rdzeń marki.",
+      "Dla PMO Lubricants i PulseGT pracowaliśmy z produktami wymagającymi edukacji, pokazania zastosowania i wiarygodnego środowiska. Materiał z warsztatu, testu lub rozmowy z praktykiem ma większą siłę niż packshot na neutralnym tle. Z jednego dnia produkcyjnego tworzymy bazę dla strony, reklam, social mediów, dystrybutorów i handlowców.",
+      "W B2B kampania nie kończy się formularzem. Ważne jest, kto odpowiada, jakie informacje trafiają do CRM i czy handlowiec otrzymuje kontekst. Dlatego marketing łączymy z procesem sprzedaży: materiałami do rozmów, segmentacją leadów, automatyzacją follow-upu i raportem pokazującym jakość, nie tylko liczbę kontaktów.",
+      "Strona producenta powinna pomagać w doborze i sprzedaży. Budujemy kategorie, strony zastosowań, porównania, FAQ, dokumentację oraz miejsca pobrania katalogów. Dane techniczne pozostają konkretne, ale otrzymują kontekst zrozumiały dla mechanika i kierowcy. Wyszukiwarka widzi dzięki temu nie tylko numer produktu, lecz także problem, który produkt rozwiązuje.",
+      "Wspieramy również premiery i sieć dystrybucji. Przygotowujemy pakiet materiałów dla partnerów, landing, kreacje, plan komunikacji i pomiar zainteresowania. Dzięki centralnej bazie contentu marka zachowuje spójność, a dystrybutor nie musi tworzyć przypadkowych grafik i opisów na własną rękę.",
+      "Przy dużym katalogu zaczynamy od produktów priorytetowych, a nie od równomiernego promowania wszystkiego. Bierzemy pod uwagę marżę, dostępność, przewagę technologiczną, sezonowość i możliwości dystrybucji. Następnie budujemy dla nich komplet: stronę, treść ekspercką, materiał foto-wideo, kreacje, wsparcie partnerów i pomiar. Gdy schemat działa, można go skalować na kolejne grupy bez utraty jakości oraz spójności komunikacji."
+    ],
+    "related": [
+      {
+        "label": "Marketing dla motoryzacji",
+        "href": "/marketing-dla-motoryzacji"
+      },
+      {
+        "label": "Marketing dla dealera",
+        "href": "/marketing-dla-dealera-samochodowego"
+      },
+      {
+        "label": "Marketing dla branży morskiej",
+        "href": "/marketing-dla-branzy-morskiej"
+      }
+    ]
+  },
+  "marketing-dla-branzy-morskiej": {
+    "slug": "marketing-dla-branzy-morskiej",
+    "key": "marine",
+    "keyword": "marketing dla branży morskiej",
+    "area": "branży morskiej",
+    "type": "industry",
+    "title": "Marketing dla branży morskiej i marine B2B · KTB Media",
+    "description": "Marketing dla branży morskiej, stoczniowej i marine B2B: LinkedIn, targi, content ekspercki, strony WWW, materiały sprzedażowe oraz produkcja foto-wideo.",
+    "keywords": [
+      "marketing dla branży morskiej",
+      "marketing marine B2B",
+      "agencja marketingowa marine",
+      "LinkedIn branża morska",
+      "marketing stoczniowy",
+      "organizacja targów marine",
+      "content B2B przemysł morski"
+    ],
+    "hero": {
+      "h1": "Marketing dla branży morskiej",
+      "lead": "Pomagamy firmom marine i stoczniowym pokazać kompetencje, ludzi oraz skalę realizacji. Łączymy komunikację B2B, LinkedIn, wydarzenia, materiały handlowe, strony WWW i produkcję w wymagającym środowisku."
+    },
+    "why": [
+      "Rozumiemy długi proces sprzedaży i wieloosobowe decyzje w B2B.",
+      "Potrafimy pracować z ofertą techniczną bez upraszczania jej do pustych haseł.",
+      "Tworzymy materiały w stoczni, zakładzie, na statku i podczas targów.",
+      "Łączymy marketing z działaniami handlowców przed wydarzeniem i po nim."
+    ],
+    "services": [
+      "Strategia komunikacji marine B2B",
+      "LinkedIn firmowy i profile ekspertów",
+      "Organizacja komunikacji wokół targów branżowych",
+      "Strony WWW, case studies i content ekspercki",
+      "Katalogi, prezentacje i materiały dla handlowców",
+      "Produkcja foto-wideo, dron i dokumentacja realizacji",
+      "Kampanie ABM, remarketing i pomiar leadów"
+    ],
+    "cases": [
+      "ddp-supply",
+      "rmdc"
+    ],
+    "faq": [
+      {
+        "q": "Jak wygląda marketing firmy z branży morskiej?",
+        "a": "Najczęściej łączy stronę i case studies z LinkedIn, materiałami dla handlowców, obecnością na targach oraz regularnym pokazywaniem realizacji, kompetencji i zespołu."
+      },
+      {
+        "q": "Czy LinkedIn działa w marine B2B?",
+        "a": "Tak, jeśli treści pochodzą od ekspertów i wspierają realny proces handlowy. Sama publikacja newsów firmowych rzadko wystarcza do budowania relacji z decydentami."
+      },
+      {
+        "q": "Jak wykorzystać targi branżowe?",
+        "a": "Plan zaczyna się przed wydarzeniem: umawianiem spotkań, komunikacją tematów i przygotowaniem materiałów. Po targach potrzebny jest szybki follow-up, content i porządek w leadach."
+      },
+      {
+        "q": "Czy możecie realizować zdjęcia na terenie stoczni?",
+        "a": "Tak, po uzgodnieniu zasad bezpieczeństwa i zakresu dostępu. Pracujemy z fotografią, wideo i dronem w środowisku przemysłowym oraz morskim."
+      },
+      {
+        "q": "Co powinien zawierać case study B2B?",
+        "a": "Kontekst projektu, problem, zakres odpowiedzialności, proces, ograniczenia, dowody wykonania i rezultat. Techniczny klient potrzebuje konkretów, nie wyłącznie efektownego podsumowania."
+      },
+      {
+        "q": "Jak mierzyć działania marine B2B?",
+        "a": "Śledzimy jakościowe zapytania, spotkania, pobrania materiałów, aktywność kluczowych firm, skuteczność follow-upu i wpływ treści na kolejne etapy sprzedaży."
+      }
+    ],
+    "context": [
+      "W branży morskiej pojedynczy kontrakt może dojrzewać miesiącami, a decyzja przechodzi przez dział techniczny, zakupowy i zarząd. Marketing nie powinien udawać szybkiego e-commerce. Jego rolą jest dostarczyć właściwe dowody, uporządkować ofertę i pomóc handlowcom utrzymać uwagę między pierwszym kontaktem a zapytaniem.",
+      "Dla DDP Supply wspieraliśmy komunikację na LinkedIn, działania wokół targów i produkcję materiałów w środowisku stoczniowym. Pokazywaliśmy ludzi, logistykę, bezpieczeństwo i realny kontekst pracy. Taki materiał działa jednocześnie jako dowód kompetencji, źródło contentu oraz wsparcie rozmów z partnerami.",
+      "Targi traktujemy jako kampanię, nie trzy dni na stoisku. Przed wydarzeniem przygotowujemy listę tematów, zaproszenia, komunikację ekspertów i plan spotkań. Na miejscu zbieramy materiał oraz leady z kontekstem. Po wydarzeniu uruchamiamy follow-up, publikacje i podsumowania, żeby inwestycja pracowała dłużej niż sam event.",
+      "Strona i materiały handlowe muszą odpowiadać na pytania o zakres, normy, doświadczenie i sposób współpracy. Rozbudowujemy case studies, profile ekspertów, karty usług i dokumenty do pobrania. Każdy element projektujemy tak, aby mógł zostać użyty przez handlowca przed spotkaniem, podczas rozmowy i w późniejszym follow-upie.",
+      "W działaniach międzynarodowych dbamy o wersje językowe, lokalny kontekst i spójne nazewnictwo techniczne. Nie publikujemy automatycznych tłumaczeń bez weryfikacji, ponieważ błąd w terminologii obniża wiarygodność bardziej niż prosty język. Priorytet otrzymują rynki, na których firma ma realną możliwość obsługi zapytań.",
+      "W projektach marine istotne są zgody i bezpieczeństwo. Produkcję planujemy wspólnie z osobą odpowiedzialną za teren, ustalamy zakres możliwych ujęć, wymagane środki ochrony i zasady pracy dronem. Dzięki temu zespół nie blokuje operacji, a materiał pozostaje zgodny z wymaganiami klienta. Dobre przygotowanie pozwala w krótkim czasie zebrać wiarygodny content, którego nie da się zastąpić biblioteką stockową."
+    ],
+    "related": [
+      {
+        "label": "Agencja marketingowa Gdynia",
+        "href": "/agencja-marketingowa-gdynia"
+      },
+      {
+        "label": "Agencja marketingowa Gdańsk",
+        "href": "/agencja-marketingowa-gdansk"
+      },
+      {
+        "label": "Marketing dla producentów części",
+        "href": "/marketing-dla-producenta-czesci-samochodowych"
       }
     ]
   }
