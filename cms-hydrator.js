@@ -115,6 +115,7 @@
           });
         });
 
+        if (data.visibility) window.KTB_VISIBILITY = data.visibility;
         if (data.pl) window.COPY.pl = deepMerge(window.COPY.pl, data.pl);
         if (data.en) window.COPY.en = deepMerge(window.COPY.en, data.en);
         console.log('[KTB CMS] Treści z site.json załadowane');

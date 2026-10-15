@@ -35,6 +35,25 @@ collections:
         file: content/site.json
         format: json
         fields:
+          - label: "Widoczność realizacji (wspólna dla PL i EN)"
+            name: visibility
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Kategoria: Marketing 360", name: marketing, widget: boolean, default: true, required: false }
+              - { label: "Kategoria: Aplikacje", name: apps, widget: boolean, default: true, required: false }
+              - { label: "Kategoria: Strony WWW", name: web, widget: boolean, default: true, required: false }
+              - label: Pojedyncze realizacje
+                name: items
+                widget: list
+                allow_add: false
+                collapsed: true
+                summary: '{{fields.label}}'
+                hint: 'Wyłącz Widoczna na stronie i opublikuj zmiany. Treść pozostaje zachowana. Zmiana obejmuje obie wersje językowe, katalog, podstronę i sitemap po wdrożeniu Netlify.'
+                fields:
+                  - { name: slug, widget: hidden }
+                  - { label: Nazwa w panelu, name: label, widget: string }
+                  - { label: Widoczna na stronie, name: visible, widget: boolean, default: true, required: false }
 
           # ================== POLSKI ==================
           - label: "🇵🇱 Polski"
