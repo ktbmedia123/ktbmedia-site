@@ -355,8 +355,20 @@ const DIGITAL_CASES = [{
   pl: { title: 'Nagare Studio', subtitle: 'Minimalizm, ruch i precyzyjne portfolio.', type: 'Strona WWW / Studio kreatywne', brief: 'Minimalistyczny serwis studia z wyrazistym systemem typografii, subtelnym motion designem i kompaktową prezentacją usług oraz projektów.', scope: ['Kierunek kreatywny', 'UX/UI', 'Frontend', 'Motion'], problem: '', solution: '', features: [] },
   en: { title: 'Nagare Studio', subtitle: 'Minimalism, motion and a precise portfolio.', type: 'Website / Creative studio', brief: 'A minimalist studio website with a strong typographic system, subtle motion and a compact presentation of services and projects.', scope: ['Creative direction', 'UX/UI', 'Frontend', 'Motion'], problem: '', solution: '', features: [] }
 }];
+function portfolioGroupEnabled(group) {
+  const config = window.KTB_VISIBILITY || {};
+  return config[group] !== false;
+}
+function portfolioItemVisible(slug, group = 'marketing') {
+  const config = window.KTB_VISIBILITY || {};
+  const entry = (config.items || []).find(item => item.slug === slug);
+  return portfolioGroupEnabled(group) && (!entry || entry.visible !== false);
+}
+function getMarketingCases(lang) {
+  return (COPY[lang].portfolio.items || []).filter(item => portfolioItemVisible(item.slug));
+}
 function getDigitalCases(lang) {
-  return DIGITAL_CASES.map(item => ({
+  return DIGITAL_CASES.filter(item => portfolioItemVisible(item.slug, item.group)).map(item => ({
     ...item,
     ...(item[lang] || item.pl)
   }));
@@ -407,7 +419,7 @@ function useSEO(lang, path) {
       };
     } else if (path.startsWith('/realizacje/')) {
       const slug = path.slice('/realizacje/'.length).replace(/\/$/, '');
-      const item = (COPY[lang].portfolio.items || []).find(x => x.slug === slug);
+      const item = getMarketingCases(lang).find(x => x.slug === slug);
       if (item) meta = {
         title: `${item.title1} ${item.titleIt} — case study · KTB Media`,
         desc: item.brief
@@ -1361,7 +1373,7 @@ function Portfolio({
   lang,
   hideHead
 }) {
-  if (!sectionEnabled(lang, 'portfolio')) return null;
+  if (!sectionEnabled(lang, 'portfolio') || !getMarketingCases(lang).length) return null;
   const p = COPY[lang].portfolio;
   const caseCta = lang === 'pl' ? 'Zobacz case study' : 'View case study';
   const shorten = text => {
@@ -1398,7 +1410,7 @@ function Portfolio({
     className: "it"
   }, lang === 'pl' ? 'rozwój marek.' : 'brand growth.')), /*#__PURE__*/React.createElement("p", null, lang === 'pl' ? 'Strategia, kampanie, social media, branding i produkcja pokazane przez problem, zakres pracy i konkretny efekt.' : 'Strategy, campaigns, social media, branding and production shown through the problem, scope and outcome.')), /*#__PURE__*/React.createElement("div", {
     className: "sketchbook-grid"
-  }, p.items.map((it, i) => {
+  }, getMarketingCases(lang).map((it, i) => {
     const images = it.images || [];
     const primaryImage = it.coverImage || images[1] || images[0];
     const scope = (it.scope || []).slice(0, 4);
@@ -1504,6 +1516,7 @@ function DigitalPortfolioSections({
   }];
   return /*#__PURE__*/React.createElement(React.Fragment, null, groups.map(group => {
     const groupItems = items.filter(item => item.group === group.id);
+    if (!groupItems.length) return null;
     return /*#__PURE__*/React.createElement("section", {
       className: `section digital-portfolio digital-portfolio-${group.id}`,
       id: `realizacje-${group.id}`,
@@ -1561,7 +1574,7 @@ function PortfolioCatalog({
 }) {
   const [activeCategory, setActiveCategory] = useState('marketing');
   const p = COPY[lang].portfolio;
-  const marketingItems = (p.items || []).map((item, index) => {
+  const marketingItems = getMarketingCases(lang).map((item, index) => {
     const images = item.images || [];
     return {
       slug: item.slug,
@@ -1608,7 +1621,8 @@ function PortfolioCatalog({
       index
     }))
   }];
-  const active = categories.find(category => category.id === activeCategory) || categories[0];
+  const availableCategories = categories.filter(category => portfolioGroupEnabled(category.id) && category.items.length);
+  const active = availableCategories.find(category => category.id === activeCategory) || availableCategories[0] || { id: 'empty', label: lang === 'pl' ? 'Wkrótce nowe realizacje' : 'New projects coming soon', description: '', items: [] };
   return /*#__PURE__*/React.createElement("main", {
     className: "work-catalog"
   }, /*#__PURE__*/React.createElement("header", {
@@ -1634,7 +1648,7 @@ function PortfolioCatalog({
     className: "work-tabs",
     role: "tablist",
     "aria-label": lang === 'pl' ? 'Kategorie realizacji' : 'Work categories'
-  }, categories.map(category => /*#__PURE__*/React.createElement("button", {
+  }, availableCategories.map(category => /*#__PURE__*/React.createElement("button", {
     type: "button",
     role: "tab",
     id: `work-tab-${category.id}`,
@@ -1804,7 +1818,7 @@ function CaseChart({
 }
 function LandingPage({ lang, config }) {
   const portfolio = COPY[lang].portfolio || {};
-  const cases = (config.cases || []).map(slug => (portfolio.items || []).find(item => item.slug === slug)).filter(Boolean);
+  const cases = (config.cases || []).map(slug => getMarketingCases(lang).find(item => item.slug === slug)).filter(Boolean);
   const faqs = (config.faq || []).map(item => Array.isArray(item) ? {
     q: item[0],
     a: item[1]
@@ -1963,7 +1977,7 @@ function CasePage({
   slug
 }) {
   const p = COPY[lang].portfolio;
-  const item = p.items.find(x => x.slug === slug);
+  const item = getMarketingCases(lang).find(x => x.slug === slug);
   if (!item) {
     return /*#__PURE__*/React.createElement("section", {
       className: "section"
@@ -2013,8 +2027,9 @@ function CasePage({
     palette: 'Palette',
     nextCase: 'Next project'
   };
-  const idx = p.items.findIndex(x => x.slug === slug);
-  const next = p.items[(idx + 1) % p.items.length];
+  const visibleItems = getMarketingCases(lang);
+  const idx = visibleItems.findIndex(x => x.slug === slug);
+  const next = visibleItems[(idx + 1) % visibleItems.length];
   const sourceImages = item.images || [];
   const coverImage = item.coverImage || sourceImages[1] || sourceImages[0];
   const images = coverImage ? [coverImage].concat(sourceImages.filter(src => src !== coverImage)) : sourceImages;
