@@ -18,15 +18,26 @@
 - Końcowy build: 67 adresów (18 stron, 33 blogi, 16 adresów w mapie realizacji, wliczając katalog).
 - Reguły HTTP 404 są przygotowane w _redirects; wymagają potwierdzenia po rzeczywistym wdrożeniu Netlify. Lokalny prosty serwer nie wykonuje reguł Netlify.
 
-## Wdrożenie — BLOKADA DOSTĘPU
-Zmiany są lokalne i przetestowane, ale NIE zostały opublikowane.
-GitHub connector zgłasza pull=true, push=false dla repozytorium ktbmedia123/ktbmedia-site.
-Git push --dry-run również nie działa: skonfigurowany helper wskazuje usunięty plik /tmp/gh-cli-2.97.0/gh_2.97.0_macOS_arm64/bin/gh, a Git nie ma dostępnych danych logowania.
-Nie zmieniano globalnej konfiguracji ani danych logowania.
+## Wdrożenie — ZAKOŃCZONE
+15 października 2026, 11:09 Europe/Warsaw: Netlify potwierdził Published.
+GitHub main: d7eca4cf9c3dacb2f5b405f456de88bb9ad690ea.
+Deployment: 6ad09826c6ebe913848b21b0.
+https://app.netlify.com/projects/ktbmedia/deploys/6ad09826c6ebe913848b21b0
+
+Zapis przez zalogowaną przeglądarkę właściciela, w czterech commitach (scripts, admin, content, końcowe pliki). Poprzednia blokada dostępu została rozwiązana tą drogą; lokalny helper Git nadal wymaga osobnego uporządkowania, jeżeli będzie potrzebny git push z terminala. Nie odczytywano ani nie kopiowano danych logowania.
+Lokalny kod połączono z origin/main bez konfliktów; dokumentacja projektu pozostaje lokalna.
+
+## Kontrola produkcji po wdrożeniu
+- /realizacje/: HTTP 200, 9 marketing / 4 aplikacje / 7 stron WWW; bez Bigmot i MójTeam.
+- /realizacje/bigmot/: HTTP 404.
+- /realizacje/digital/mojteam/: HTTP 404.
+- /realizacje/digital/ktbtask/: HTTP 200.
+- /sitemap-realizacje.xml: HTTP 200, bez ukrytych adresów.
+- /content/site.json: HTTP 200, oba projekty visible=false.
+- /admin/config.yml: HTTP 200, nowe pola visibility obecne.
+- Przeglądarka: potwierdzono działający katalog aplikacji, zapisano zrzut w outputs bieżącego czatu.
 
 ## Następne kroki
 1. W Codexie dodać istniejący folder /Users/radek/Documents/Codex/Projekty/ktbmedia-site jako projekt; w nowych czatach korzystać z tego folderu.
-2. Przywrócić logowanie GitHub z prawem zapisu do repo. Pobrać najnowszy main, zachować ewentualne nowe zmiany CMS i wysłać lokalny commit.
-3. Sprawdzić pomyślny deploy Netlify (build command i publish directory z netlify.toml).
-4. Na produkcji sprawdzić katalog, /admin/, HTTP 404 dla Bigmot/MójTeam i brak tych URL w sitemap.
-5. Zaktualizować ten dokument o commit wdrożenia i wynik kontroli produkcyjnej.
+2. Zarządzać widocznością w /admin/: Strona → Wszystkie treści strony → Widoczność realizacji (wspólna dla PL i EN).
+3. Przy nowej zmianie CMS poczekać na deploy Netlify i zweryfikować produkcję; zapisać wynik tutaj.
