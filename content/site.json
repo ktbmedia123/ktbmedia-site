@@ -5153,6 +5153,104 @@
             "#efe9dc"
           ],
           "year": "2026"
+        },
+        {
+          "num": "08",
+          "slug": "bigmot",
+          "title1": "BIG",
+          "titleIt": "MOT",
+          "tag": "Parts · E-commerce · B2B",
+          "year": "2026",
+          "ph": "ph-stripe-2",
+          "brief": "Sklep i hurtownia części samochodowych z Pruszcza Gdańskiego działające od 1990 roku. BIG MOT pracuje w sieci ProfiAuto, obsługuje klientów detalicznych i B2B oraz komunikuje szeroki katalog części, akcesoriów i marek premium.",
+          "challenge": "BIG MOT ma mocne zaplecze: długoletnią historię, duży katalog produktów i specjalistów. W marketingu trzeba było przełożyć tę skalę na prosty przekaz dla kierowcy oraz warsztatu: dostępność, doradztwo, szybkość i wiarygodność.",
+          "solution": "Pełen zakres działań: strategia, social media, kampanie Meta Ads i Google Ads, content produktowy, consulting oraz porządkowanie komunikacji B2B/B2C. Łączymy sprzedaż części z edukacją klienta, promocją marek i lokalnym SEO dla Pruszcza Gdańskiego oraz Gdańska.",
+          "results": [
+            {
+              "k": "Historia firmy",
+              "v": "od 1990"
+            },
+            {
+              "k": "Katalog",
+              "v": "3M+ produktów"
+            },
+            {
+              "k": "Zespół",
+              "v": "26 specjalistów"
+            },
+            {
+              "k": "Model",
+              "v": "B2B + detal"
+            }
+          ],
+          "palette": [
+            "#F0B323",
+            "#0D47A1",
+            "#1a1a1a",
+            "#f4f4f4"
+          ],
+          "images": [],
+          "notes": [
+            "Komunikacja dla kierowców i warsztatów w jednym ekosystemie",
+            "Nacisk na dostępność, doradztwo i katalog produktów",
+            "Content produktowy zamiast ogólnych grafik promocyjnych"
+          ],
+          "duration": "Pełen zakres",
+          "scope": [
+            "Strategia",
+            "Meta Ads",
+            "Google Ads",
+            "Social media",
+            "Content produktowy",
+            "Consulting"
+          ],
+          "timeline": [
+            {
+              "phase": "Porządkowanie przewag",
+              "duration": "2 tyg.",
+              "description": "Wyciągnęliśmy z oferty najmocniejsze argumenty: doświadczenie, katalog, doradztwo i obsługę warsztatów."
+            },
+            {
+              "phase": "Segmentacja odbiorców",
+              "duration": "2 tyg.",
+              "description": "Oddzieliliśmy komunikaty dla klientów detalicznych, warsztatów, zakupów pilnych i planowanych."
+            },
+            {
+              "phase": "Kampanie i content",
+              "duration": "ciągłe",
+              "description": "Łączymy promocje, marki produktowe, sezonowość i edukację techniczną w kampaniach oraz social mediach."
+            },
+            {
+              "phase": "Optymalizacja",
+              "duration": "co miesiąc",
+              "description": "Sprawdzamy, które kategorie i komunikaty generują najlepsze zapytania oraz ruch o intencji zakupowej."
+            }
+          ],
+          "chartData": {
+            "label": "Zapytania produktowe miesięcznie",
+            "before": [
+              95,
+              101,
+              98,
+              106
+            ],
+            "after": [
+              128,
+              147,
+              163,
+              181,
+              196,
+              214
+            ],
+            "unit": "zapytań/mies"
+          },
+          "deliverables": [
+            "Facebook i content produktowy",
+            "Katalogi, ulotki i POS",
+            "Brandbook oraz materiały firmowe",
+            "Kampanie Meta i Google Ads"
+          ],
+          "coverImage": "/assets/case-bigmot-cover.jpg"
         }
       ]
     },
@@ -8638,6 +8736,104 @@
             "#efe9dc"
           ],
           "year": "2026"
+        },
+        {
+          "num": "08",
+          "slug": "bigmot",
+          "title1": "BIG",
+          "titleIt": "MOT",
+          "tag": "Parts · E-commerce · B2B",
+          "year": "2026",
+          "ph": "ph-stripe-2",
+          "brief": "A car parts store and wholesaler from Pruszcz Gdański operating since 1990 in the ProfiAuto network.",
+          "challenge": "The scale of the offer had to be translated into a simple message: availability, advice, speed and credibility.",
+          "solution": "Full scope: strategy, social media, Meta Ads, Google Ads, product content, consulting and B2B/B2C communication.",
+          "results": [
+            {
+              "k": "History",
+              "v": "since 1990"
+            },
+            {
+              "k": "Catalogue",
+              "v": "3M+ products"
+            },
+            {
+              "k": "Team",
+              "v": "26 specialists"
+            },
+            {
+              "k": "Model",
+              "v": "B2B + retail"
+            }
+          ],
+          "palette": [
+            "#F0B323",
+            "#0D47A1",
+            "#1a1a1a",
+            "#f4f4f4"
+          ],
+          "images": [],
+          "notes": [
+            "Communication for drivers and workshops",
+            "Focus on availability, advice and catalogue strength",
+            "Product content over generic promo graphics"
+          ],
+          "duration": "Full scope",
+          "scope": [
+            "Strategy",
+            "Meta Ads",
+            "Google Ads",
+            "Social media",
+            "Product content",
+            "Consulting"
+          ],
+          "timeline": [
+            {
+              "phase": "Advantages",
+              "duration": "2 weeks",
+              "description": "We extracted the strongest commercial arguments."
+            },
+            {
+              "phase": "Audience split",
+              "duration": "2 weeks",
+              "description": "We separated retail and workshop communication."
+            },
+            {
+              "phase": "Campaigns and content",
+              "duration": "ongoing",
+              "description": "We connect promotions, product brands, seasonality and education."
+            },
+            {
+              "phase": "Optimisation",
+              "duration": "monthly",
+              "description": "We monitor categories and messages generating purchase intent."
+            }
+          ],
+          "chartData": {
+            "label": "Monthly product enquiries",
+            "before": [
+              95,
+              101,
+              98,
+              106
+            ],
+            "after": [
+              128,
+              147,
+              163,
+              181,
+              196,
+              214
+            ],
+            "unit": "enquiries/mo"
+          },
+          "deliverables": [
+            "Facebook and product content",
+            "Catalogues, flyers and POS",
+            "Brandbook and company materials",
+            "Meta and Google Ads campaigns"
+          ],
+          "coverImage": "/assets/case-bigmot-cover.jpg"
         }
       ]
     },
@@ -9652,5 +9848,122 @@
         }
       ]
     }
+  },
+  "visibility": {
+    "marketing": true,
+    "apps": true,
+    "web": true,
+    "items": [
+      {
+        "slug": "bigmot",
+        "label": "BIG MOT",
+        "visible": false
+      },
+      {
+        "slug": "autocentrum-elektronowa",
+        "label": "AutoCentrum Elektronowa 18",
+        "visible": true
+      },
+      {
+        "slug": "rmdc",
+        "label": "Remontowa Marine Design",
+        "visible": true
+      },
+      {
+        "slug": "pmo-lubricants",
+        "label": "PMO Lubricants",
+        "visible": true
+      },
+      {
+        "slug": "tomex-brakes",
+        "label": "Tomex Brakes",
+        "visible": true
+      },
+      {
+        "slug": "pulsegt",
+        "label": "PulseGT US Technology",
+        "visible": true
+      },
+      {
+        "slug": "grupa-janisz",
+        "label": "Grupa Janisz",
+        "visible": true
+      },
+      {
+        "slug": "gt-serwis-barniewice",
+        "label": "GT Serwis Barniewice",
+        "visible": true
+      },
+      {
+        "slug": "extreme-tyres",
+        "label": "Extreme Tyres",
+        "visible": true
+      },
+      {
+        "slug": "ddp-supply",
+        "label": "DDP Supply",
+        "visible": true
+      },
+      {
+        "slug": "ktbtask",
+        "label": "KTBtask",
+        "visible": true
+      },
+      {
+        "slug": "mojeakcje",
+        "label": "MojeAkcje.pl",
+        "visible": true
+      },
+      {
+        "slug": "mojteam",
+        "label": "MójTeam",
+        "visible": false
+      },
+      {
+        "slug": "serwisplus",
+        "label": "Serwis+",
+        "visible": true
+      },
+      {
+        "slug": "ktbmatic",
+        "label": "KTBmatic",
+        "visible": true
+      },
+      {
+        "slug": "grupa-janisz-www",
+        "label": "Grupa Janisz",
+        "visible": true
+      },
+      {
+        "slug": "gt-serwis-www",
+        "label": "GT Serwis Barniewice",
+        "visible": true
+      },
+      {
+        "slug": "sergiej-auto-www",
+        "label": "Sergiej Auto Serwis",
+        "visible": true
+      },
+      {
+        "slug": "serwis-dworaczek-www",
+        "label": "Auto Serwis Dworaczek",
+        "visible": true
+      },
+      {
+        "slug": "dejcomp-www",
+        "label": "Dejcomp Laminaty",
+        "visible": true
+      },
+      {
+        "slug": "autocentrum-lodz-www",
+        "label": "AutoCentrum Elektronowa 18",
+        "visible": true
+      },
+      {
+        "slug": "nagare-studio-www",
+        "label": "Nagare Studio",
+        "visible": true
+      }
+    ]
   }
 }
