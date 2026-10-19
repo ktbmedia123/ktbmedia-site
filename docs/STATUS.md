@@ -1,3 +1,14 @@
+# Aktualizacja — 2026-10-19: Google Analytics
+
+- Utworzono i podłączono GA4 G-ZFT5BFB9EW do GTM-PHWKQGG7; GTM v2 opublikowany.
+- Wdrożono analytics.js i wstrzyknięcie do publicznych HTML przez build; analityka uruchamia się dopiero po zgodzie, ustawienia cookies pozwalają odmówić lub cofnąć zgodę.
+- Własne odsłony SPA z tytułem i referrerem; automatyczne odsłony historii i formularze wyłączone; Universal Analytics wstrzymany; user-provided data wyłączone.
+- Netlify 6ad66206bbe583187531f76a: Deploy successful. GitHub main 0d20847.
+- Testy zgody i SPA PASS; produkcja potwierdza brak loadera Google po odmowie i uruchomienie po zgodzie. GA4 realtime odebrał testowego użytkownika i pierwszą odsłonę.
+- Szczegóły identyfikatorów i dalszej obsługi: docs/ANALYTICS.md. Dokumentacja pozostaje lokalnie w stałym folderze projektu.
+
+---
+
 # Stan prac — 2026-10-15
 
 ## Wykonano
@@ -41,3 +52,5 @@ Lokalny kod połączono z origin/main bez konfliktów; dokumentacja projektu poz
 1. W Codexie dodać istniejący folder /Users/radek/Documents/Codex/Projekty/ktbmedia-site jako projekt; w nowych czatach korzystać z tego folderu.
 2. Zarządzać widocznością w /admin/: Strona → Wszystkie treści strony → Widoczność realizacji (wspólna dla PL i EN).
 3. Przy nowej zmianie CMS poczekać na deploy Netlify i zweryfikować produkcję; zapisać wynik tutaj.
+
+Potwierdzenie końcowe: GA4 realtime odebrał dokładnie 2 odsłony — stronę główną i realizacje, każdą raz, z poprawnymi tytułami.
