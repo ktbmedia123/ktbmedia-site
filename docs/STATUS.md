@@ -1,3 +1,15 @@
+# Aktualizacja — 2026-10-25: Delikatnie mocniejsze wejście i kontakt przez przytrzymanie
+
+- Zachowano preferowany klasyczny wjazd 2,1 s; dodano subtelny radialny złoty blask, płynniejsze przyspieszenie, głębsze smugi z jasnymi zakończeniami i delikatną falę. Bez powrotu do odrzuconej soczewki; scroll pozostaje.
+- Po dotychczasowych 6 s pojawia się pigułka „Przytrzymaj, by nawiązać kontakt” / „Hold to make contact” z czasem 2,5 s. Ciągłe przytrzymanie myszą/dotykiem/Enter/Spacją stopniowo wypełnia ją kolorem galaktyki i nasila zakłócenia. Pełne 2500 ms odsłania kontakt z zachowaniem języka.
+- Puszczenie przed czasem zeruje postęp i wygasza FX. Pojedynczy klik nie pomija przytrzymania. pointercancel, utrata capture/fokusu, ukrycie karty, Escape i reset przerywają. Puszczenie tuż po 2500 ms przed następną klatką nadal zalicza pełny gest. Wypełniona część ma ciemną kopię tekstu dla czytelności; brak czujnika.
+- Walidacja: składnia/build 68 adresów/diff — PASS. Playwright: wejście, klik bez nawigacji, ~48% po 1,2 s, narastający glitch, puszczenie/reset, zmierzony pełny czas 2,5 s i kontakt PL; dotyk/touchcancel przy 320 px, blur, reset, pełne przytrzymanie klawiaturą i kontakt EN, reduced motion — PASS.
+- Publikacja GitHub main → Netlify: 6f2e6342999b8d38e6d065e9a5b24382bf6351c6; zasoby 20261025-hold-contact.
+- Kontrola produkcji: normalne wejście, przytrzymanie CDP touch na emulowanym telefonie 390×844, częściowe wypełnienie po 1 s i automatyczny kontakt po pełnym geście, brak błędów JS — PASS. Zrzut output/playwright/contact-hold-production.png.
+- Aktualne zachowanie i obsługa w docs/PROCESS.md.
+
+---
+
 # Aktualizacja — 2026-10-25: Powrót do wcześniejszego wejścia i dyskretny przycisk kontaktu
 
 - Na życzenie użytkownika przywrócono klasyczne wejście 2,1 s z powiększeniem kropki, 150 smugami i 4 pierścieniami (wariant sprzed ostatniej soczewki). Bogatsze przewijanie galaktyk pozostaje.
