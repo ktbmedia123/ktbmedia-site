@@ -1,0 +1,26 @@
+/* A small invitation becomes a signal, then a tear into the contact page. */
+.shake-contact{position:absolute;z-index:25;left:50%;bottom:112px;transform:translateX(-50%);width:366px;max-width:calc(100% - 36px);padding:23px 24px 20px;border:1px solid #e8a83855;border-radius:3px;background:#1a1d19ed;color:var(--paper);box-shadow:0 15px 65px #0006;backdrop-filter:blur(18px);animation:shake-in .6s cubic-bezier(.16,1,.3,1)}
+.shake-eyebrow{display:block;color:var(--galaxy-color);font:8px monospace;letter-spacing:1.3px;text-transform:uppercase;padding-right:12px}
+.shake-contact h2{font-size:22px;font-weight:500;line-height:1.18;letter-spacing:-.65px;margin:12px 0 9px;max-width:295px}
+.shake-instruction{font-size:11px;line-height:1.5;color:#adb19e;margin:0 0 17px}
+.shake-dismiss{position:absolute;top:7px;right:8px;border:0;background:none;color:#a5aa98;font-size:20px;padding:4px 8px}
+.shake-meter{height:3px;overflow:hidden;background:#d3d3bb22;margin-bottom:16px}
+.shake-meter>span{display:block;height:100%;background:var(--galaxy-color);transform:scaleX(0);transform-origin:left;box-shadow:0 0 15px #e8a83888}
+.shake-actions{display:flex;gap:8px;flex-wrap:wrap}
+.shake-actions button{font-size:10px;line-height:1.4;border:1px solid #c9ceae45;border-radius:25px;padding:9px 12px;color:var(--paper);background:transparent}
+.shake-actions .shake-hold{background:var(--galaxy-color);border-color:var(--galaxy-color);color:#141513;touch-action:none;user-select:none;-webkit-user-select:none}
+.shake-contact.is-charging{border-color:var(--galaxy-color)}
+.universe>.world,.universe>canvas,.universe>#galaxy-heading{translate:var(--shake-x,0px) var(--shake-y,0px);rotate:var(--shake-turn,0deg)}
+.contact-rift{position:fixed;inset:0;z-index:60;pointer-events:none;isolation:isolate;overflow:hidden}
+.contact-rift>canvas{position:absolute;inset:0;opacity:1!important;width:100%;height:100%;transition:none}
+.contact-rift:before{content:'';position:absolute;inset:0;z-index:-1;background:var(--paper);opacity:calc(var(--rift-progress,0)*1.3);clip-path:inset(calc((1 - var(--rift-progress,0))*50%) 0)}
+.rift-arrival{position:absolute;inset:0;display:flex;align-items:flex-start;justify-content:center;flex-direction:column;padding:8vw;visibility:hidden;color:var(--ink)}
+.rift-arrival img{position:absolute;left:4.5%;top:35px;width:150px}
+.rift-signal{font:10px monospace;letter-spacing:3px;color:#84775d}
+.rift-arrival h2{font-size:clamp(48px,9vw,140px);font-weight:500;letter-spacing:-.065em;line-height:1;margin:25px 0}
+.rift-arrival p{font-size:clamp(13px,1.4vw,19px);line-height:1.6;margin:0 0 35px;color:#6c685e}
+.rift-address{font-size:13px;border-bottom:1px solid #e8a838;padding-bottom:9px}
+.contact-departing .world{pointer-events:none}
+@keyframes shake-in{from{opacity:0;transform:translate(-50%,18px)}to{opacity:1;transform:translate(-50%,0)}}
+@media(max-width:700px){.shake-contact{bottom:115px;width:330px;padding:19px 20px 17px}.shake-contact h2{font-size:21px}.rift-arrival{padding:8vw}.rift-arrival img{width:112px;top:28px}.rift-arrival h2{font-size:clamp(44px,13vw,72px)}}
+@media(prefers-reduced-motion:reduce){.shake-contact{animation:none}.universe>.world,.universe>canvas,.universe>#galaxy-heading{translate:none;rotate:none}.rift-arrival{opacity:1!important}}

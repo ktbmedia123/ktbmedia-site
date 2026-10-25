@@ -51,9 +51,10 @@
   let step = 900, depth = 0, targetDepth = 0, previousDepth = 0, enteringAt = 0, entryTimer;
   let settleTimer, scrollFlight=null, touching=false, lastScrollY=0, scrollDirection=1;
   let compact=false, scene={left:0,top:0,width:0,height:0};
+  const ENTRY_DURATION=3400;
   let connectionStarted=0;
   let visibleNodes = [], pointer = {x:0,y:0,active:false};
-  const stars = Array.from({length:220},(_,i)=>({x:Math.sin(i*127.1)*.5+.5,y:Math.cos(i*311.7)*.5+.5,r:i%7===0?1.3:.65,phase:i*.43}));
+  const stars = Array.from({length:220},(_,i)=>({x:Math.sin(i*127.1)*.5+.5,y:Math.cos(i*311.7)*.5+.5,r:i%7===0?1.3:.65,phase:i*.43,z:(i*.61803398875)%1}));
   const nodes = items.map((item,i)=>{
     const el = document.createElement('button');
     el.className = 'idea'; el.dataset.category = item[0]; el.setAttribute('aria-pressed','false');
@@ -90,7 +91,7 @@
   function resize(){
     const r=stage.getBoundingClientRect(); width=r.width; height=r.height;
     compact=width<=700||matchMedia('(pointer:coarse)').matches;
-    const dpr=Math.min(devicePixelRatio||1,compact?1.5:2);
+    const dpr=Math.min(devicePixelRatio||1,stage.dataset.state==='entering'?2:compact?1.5:2);
     if(canvas.width!==Math.round(width*dpr)||canvas.height!==Math.round(height*dpr)){
       canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);
     }
@@ -105,21 +106,89 @@
     request();
   }
   function smooth(a,b,value){const x=Math.max(0,Math.min(1,(value-a)/(b-a)));return x*x*(3-2*x);}
+  // Perspective layers belong to the camera, so changing a constellation never resets the flight.
+  function blendGalaxy(value){
+    const first=Math.min(1,Math.floor(value)),mix=smooth(0,1,value-first);
+    const a=galaxies[first],b=galaxies[first+1],ar=a.rgb.split(',').map(Number),br=b.rgb.split(',').map(Number);
+    return {rgb:ar.map((v,i)=>Math.round(v+(br[i]-v)*mix)).join(','),angle:a.angle+(b.angle-a.angle)*mix};
+  }
   function paintTunnel(cx,cy,intensity,clock,rgb,direction=1){
     if(intensity<=.005)return;
-    for(let i=0;i<(compact?64:150);i++){
-      const a=i*2.39996+clock*.13;
-      const z=((i*.618+clock*.5)%1),r=Math.pow(z,2.6)*Math.max(width,height)*.85;
-      const x=Math.cos(a)*r,y=Math.sin(a)*r*.68;
+    const extent=Math.hypot(width,height)*.62;
+    ctx.save();ctx.lineCap='round';
+    for(let i=0;i<(compact?130:210);i++){
+      const z=((((Math.sin(i*91.117)*43758.5453)%1)-clock*.16)%1+1)%1;
+      const r=extent*.065/(z+.065),angle=i*2.399963+clock*.09+(1-z)*.24;
+      const x=Math.cos(angle)*r,y=Math.sin(angle)*r*.78;
+      const length=intensity*(.035+(1-z)*.25)*direction;
+      ctx.beginPath();ctx.moveTo(cx+x,cy+y);ctx.lineTo(cx+x*(1+length),cy+y*(1+length));
+      ctx.strokeStyle=`rgba(${i%9===0?'242,235,216':rgb},${intensity*(1-z)*.5})`;
+      ctx.lineWidth=.45+(1-z)*1.2;ctx.stroke();
+    }
+    for(let j=0;j<9;j++){
+      const z=((j/9-clock*.12)%1+1)%1,r=extent*.055/(z+.055);
+      const fade=Math.sin(z*Math.PI);
+      ctx.beginPath();ctx.ellipse(cx,cy,r,r*.76,clock*.035,0,Math.PI*2);
+      ctx.strokeStyle=`rgba(${rgb},${intensity*fade*.2})`;ctx.lineWidth=.7;ctx.stroke();
+    }
+    ctx.restore();
+  }
+  function paintEntry(t){
+    const cx=width/2,cy=height/2,extent=Math.hypot(width,height)*.65;
+    const pull=smooth(0,.28,t),dive=smooth(.18,.78,t),arrival=smooth(.72,1,t);
+    const energy=smooth(.07,.27,t)*(1-smooth(.78,1,t));
+    ctx.save();
+    // The circular event horizon expands out of the original dot before the camera crosses it.
+    ctx.fillStyle=`rgba(12,14,12,${smooth(.15,.34,t)})`;ctx.fillRect(0,0,width,height);
+    const halo=ctx.createRadialGradient(cx,cy,0,cx,cy,extent);
+    halo.addColorStop(0,`rgba(232,168,56,${.08+energy*.16})`);
+    halo.addColorStop(.38,`rgba(176,113,39,${energy*.12})`);halo.addColorStop(1,'rgba(0,0,0,0)');
+    ctx.fillStyle=halo;ctx.fillRect(0,0,width,height);
+    const motion=pull*.28+dive*2.8;
+    ctx.lineCap='round';
+    for(let i=0;i<420;i++){
+      const seed=((Math.sin(i*91.117)*43758.5453)%1+1)%1;
+      const z=((seed-motion)%1+1)%1;
+      const radius=extent*.055/(z+.055);
+      const angle=i*2.399963+(1-z)*(.18+dive*.3)+dive*.48;
+      const squash=.8+.2*arrival;
+      const x=Math.cos(angle)*radius,y=Math.sin(angle)*radius*squash;
+      const tail=(.025+dive*.23)*(1-arrival*.9);
+      const alpha=(.14+(1-z)*.64)*smooth(0,.18,t)*(1-arrival*.85);
       ctx.beginPath();ctx.moveTo(cx+x,cy+y);
-      ctx.lineTo(cx+x*(1+intensity*.38*direction),cy+y*(1+intensity*.38*direction));
-      ctx.strokeStyle=`rgba(${rgb},${intensity*(.1+z*.65)})`;ctx.lineWidth=.3+z*1.4;ctx.stroke();
+      ctx.lineTo(cx+x*(1+tail),cy+y*(1+tail));
+      ctx.strokeStyle=`rgba(${i%11===0?'241,236,218':i%17===0?'142,185,215':'232,168,56'},${alpha})`;
+      ctx.lineWidth=.45+(1-z)*1.7;ctx.stroke();
     }
-    for(let j=0;j<4;j++){
-      const r=((clock*.3+j/4)%1)*Math.max(width,height)*.65;
-      ctx.beginPath();ctx.ellipse(cx,cy,Math.max(1,r),Math.max(1,r*.68),clock*.08,0,Math.PI*2);
-      ctx.strokeStyle=`rgba(${rgb},${intensity*.14})`;ctx.lineWidth=1;ctx.stroke();
+    // Nested curved gates and spiral filaments establish depth, not a flat starburst.
+    for(let i=0;i<15;i++){
+      const z=((i/15-motion*.38)%1+1)%1;
+      const r=extent*.045/(z+.045),rotation=dive*.35+(1-z)*.2;
+      ctx.beginPath();ctx.ellipse(cx,cy,r,r*.78,rotation,0,Math.PI*2);
+      ctx.strokeStyle=`rgba(232,168,56,${energy*Math.sin(z*Math.PI)*.32})`;
+      ctx.lineWidth=.6+(1-z)*1.2;ctx.stroke();
     }
+    for(let strand=0;strand<7;strand++){
+      ctx.beginPath();
+      for(let j=0;j<=50;j++){
+        const z=j/50,r=24+z*z*extent*1.3;
+        const angle=strand*Math.PI*2/7+z*.65+dive*.65;
+        const x=cx+Math.cos(angle)*r,y=cy+Math.sin(angle)*r*.78;
+        if(j===0)ctx.moveTo(x,y);else ctx.lineTo(x,y);
+      }
+      ctx.strokeStyle=`rgba(232,168,56,${energy*.12})`;ctx.lineWidth=.7;ctx.stroke();
+    }
+    if(t<.66){
+      const radius=(compact?67.5:Math.max(62.5,Math.min(width*.07,95)))*(1-pull*.4)+Math.pow(dive,3)*extent*.24;
+      ctx.beginPath();ctx.arc(cx,cy,radius,0,Math.PI*2);ctx.fillStyle='#101310';ctx.fill();
+      ctx.shadowBlur=25+energy*30;ctx.shadowColor='#e8a838';ctx.strokeStyle=`rgba(244,190,90,${1-smooth(.39,.66,t)})`;
+      ctx.lineWidth=1.4+energy*1.5;ctx.stroke();ctx.shadowBlur=0;
+    }
+    // A single warm arrival bloom fades into the first constellation, without a white flash.
+    const bloom=Math.sin(smooth(.65,.96,t)*Math.PI)*.12;
+    const light=ctx.createRadialGradient(cx,cy,0,cx,cy,extent*.65);
+    light.addColorStop(0,`rgba(243,211,151,${bloom})`);light.addColorStop(1,'rgba(232,168,56,0)');
+    ctx.fillStyle=light;ctx.fillRect(0,0,width,height);ctx.restore();
   }
   function paintConnection(cx,cy,now,g,opacity){
     if(selected<0||nodes[selected].el.hidden)return false;
@@ -162,8 +231,8 @@
     const cx=wr.left+wr.width/2,cy=wr.top+wr.height/2;
     if(!open){
       if(stage.dataset.state==='entering'&&!reduced.matches){
-        const t=Math.min(1,(now-enteringAt)/2100);
-        paintTunnel(cx,height/2,Math.sin(t*Math.PI),t*5,'232,168,56');request();
+        const t=Math.min(1,(now-enteringAt)/ENTRY_DURATION);
+        paintEntry(t);request();
       }
       return;
     }
@@ -173,28 +242,33 @@
     if(Math.abs(depth-targetDepth)<.0002)depth=targetDepth;
     const index=Math.max(0,Math.min(2,Math.round(depth)));
     if(index!==active)updateGalaxy(index);
-    const g=galaxies[active],offset=depth-active;
+    const g=galaxies[active],atmosphere=blendGalaxy(depth),offset=depth-active;
     const travel=reduced.matches?0:smooth(.1,.49,Math.abs(offset));
     const zoom=reduced.matches?1:Math.exp(offset*(compact?1.25:1.75));
     const visibility=reduced.matches?1:1-smooth(.15,.48,Math.abs(offset));
     progress=reduced.matches?1:Math.min(1,progress+dt*1.4);
     const speed=Math.min(.7,Math.abs(depth-previousDepth)/Math.max(dt,.001)*.12);
     $('#galaxy-heading').style.opacity=String(reduced.matches?1:1-travel);
-    const glow=ctx.createRadialGradient(cx,cy,0,cx,cy,width*.65);
-    glow.addColorStop(0,`rgba(${g.rgb},${.06+travel*.09})`);glow.addColorStop(1,'rgba(0,0,0,0)');
+    const glow=ctx.createRadialGradient(cx+Math.sin(depth*2)*width*.16,cy-height*.08,0,cx,cy,width*.8);
+    glow.addColorStop(0,`rgba(${atmosphere.rgb},${.065+travel*.14})`);glow.addColorStop(.45,`rgba(${atmosphere.rgb},${.015+travel*.025})`);glow.addColorStop(1,'rgba(0,0,0,0)');
     ctx.fillStyle=glow;ctx.fillRect(0,0,width,height);
-    for(let i=0;i<(compact?96:stars.length);i++){
-      const s=stars[i];
-      const x=(s.x-.5)*width*zoom+cx,y=(s.y-.5)*height*zoom+cy;
-      ctx.beginPath();ctx.arc(x,y,s.r*(1+travel),0,Math.PI*2);
-      ctx.fillStyle=`rgba(221,222,204,${.16+.12*Math.sin(time*.5+s.phase)})`;ctx.fill();
+    for(let i=0;i<(compact?150:stars.length);i++){
+      const s=stars[i],z=reduced.matches?s.z:((s.z-depth*.22)%1+1)%1;
+      const perspective=.65/(.32+z),alpha=Math.sin(z*Math.PI);
+      const x=(s.x-.5)*width*perspective+cx,y=(s.y-.5)*height*perspective+cy;
+      ctx.beginPath();ctx.arc(x,y,s.r*(.6+perspective*.6),0,Math.PI*2);
+      ctx.fillStyle=`rgba(221,222,204,${alpha*(.14+.14*Math.sin(time*.5+s.phase))})`;ctx.fill();
+      if(!reduced.matches&&speed>.03){
+        ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x+(x-cx)*speed*.11,y+(y-cy)*speed*.11);
+        ctx.strokeStyle=`rgba(${atmosphere.rgb},${alpha*speed*.45})`;ctx.lineWidth=.6;ctx.stroke();
+      }
     }
-    if(!reduced.matches)paintTunnel(cx,cy,Math.max(travel*.7,speed),time+depth*4,g.rgb,depth>=previousDepth?1:-1);
-    ctx.save();ctx.translate(cx,cy);ctx.rotate(g.angle+(ambient?Math.sin(time*.07)*.06:0));
+    if(!reduced.matches)paintTunnel(cx,cy,Math.max(travel*.85,speed),time*.4+depth*3,atmosphere.rgb,depth>=previousDepth?1:-1);
+    ctx.save();ctx.translate(cx,cy);ctx.rotate(atmosphere.angle+(ambient?Math.sin(time*.07)*.06:0));
     for(let i=0;i<4;i++){
       const r=(90+i*94)*zoom;
       ctx.beginPath();ctx.ellipse(0,0,r*1.5,r*.6,0,0,Math.PI*2);
-      ctx.strokeStyle=`rgba(${g.rgb},${(.12-i*.022)*(1-travel*.6)})`;ctx.lineWidth=1;ctx.stroke();
+      ctx.strokeStyle=`rgba(${atmosphere.rgb},${(.12-i*.022)*(1-travel*.35)})`;ctx.lineWidth=1;ctx.stroke();
       const a=time*(.1+i*.018)+i*1.8;
       ctx.beginPath();ctx.arc(Math.cos(a)*r*1.5,Math.sin(a)*r*.6,2,0,Math.PI*2);ctx.fillStyle=g.color;ctx.fill();
     }
@@ -203,7 +277,9 @@
       const p=layout(order);
       const reveal=reduced.matches?1:smooth(order*.012,order*.012+.55,progress);
       const ease=1-Math.pow(1-reveal,3);
-      let x=(p.x-.5)*wr.width*zoom*ease,y=(p.y-.5)*wr.height*zoom*ease;
+      const layer=reduced.matches?1:Math.exp(offset*((order%3)-1)*.12);
+      let x=(p.x-.5)*wr.width*zoom*layer*ease,y=(p.y-.5)*wr.height*zoom*layer*ease;
+      if(!reduced.matches){const angle=offset*.1,rx=x*Math.cos(angle)-y*Math.sin(angle);y=x*Math.sin(angle)+y*Math.cos(angle);x=rx;}
       if(ambient){x+=Math.sin(time*.36+order*1.6)*3*ease;y+=Math.cos(time*.3+order*.9)*4*ease;}
       if(pointer.active&&ambient){const dx=x+wr.width/2-pointer.x,dy=y+wr.height/2-pointer.y,d=Math.hypot(dx,dy);if(d<120){x+=dx/Math.max(1,d)*(1-d/120)*10;y+=dy/Math.max(1,d)*(1-d/120)*10;}}
       n.x=x+wr.width/2+wr.left;n.y=y+wr.height/2+wr.top;
@@ -229,13 +305,13 @@
     if(value){
       if(stage.dataset.state!=='closed')return;
       stage.dataset.state='entering';document.body.classList.add('inside');
-      enteringAt=performance.now();$('#seed').disabled=true;request();
+      enteringAt=performance.now();$('#seed').disabled=true;resize();request();
       entryTimer=setTimeout(()=>{
         open=true;depth=targetDepth=0;stage.dataset.state='open';journey.classList.add('journey');document.body.classList.add('journey-open');
         list.hidden=false;$('.controls').hidden=false;$('#galaxy-heading').hidden=false;
         $('#galaxy-navigation').hidden=false;$('#scroll-hint').hidden=false;
         progress=0;last=0;window.scrollTo({top:0,behavior:'instant'});updateGalaxy(0);resize();
-      },reduced.matches?0:2100);
+      },reduced.matches?0:ENTRY_DURATION);
     }else{
       open=false;depth=targetDepth=0;stage.dataset.state='closed';document.body.classList.remove('inside','journey-open');
       journey.classList.remove('journey');journey.style.height='100svh';
