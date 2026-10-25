@@ -49,7 +49,8 @@
   let open = false, paused = reduced.matches, selected = -1, active = 0;
   let progress = 0, time = 0, last = 0, width = 0, height = 0, frame = 0, inView = true;
   let step = 900, depth = 0, targetDepth = 0, previousDepth = 0, enteringAt = 0, entryTimer;
-  let settleTimer, programmaticUntil=0, lastScrollY=0, scrollDirection=1;
+  let settleTimer, scrollFlight=null, touching=false, lastScrollY=0, scrollDirection=1;
+  let compact=false, scene={left:0,top:0,width:0,height:0};
   let connectionStarted=0;
   let visibleNodes = [], pointer = {x:0,y:0,active:false};
   const stars = Array.from({length:220},(_,i)=>({x:Math.sin(i*127.1)*.5+.5,y:Math.cos(i*311.7)*.5+.5,r:i%7===0?1.3:.65,phase:i*.43}));
@@ -88,18 +89,25 @@
   }
   function resize(){
     const r=stage.getBoundingClientRect(); width=r.width; height=r.height;
-    const dpr=Math.min(devicePixelRatio||1,2);
-    canvas.width=width*dpr;canvas.height=height*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
-    const oldStep=step;step=Math.max(innerHeight,720);
+    compact=width<=700||matchMedia('(pointer:coarse)').matches;
+    const dpr=Math.min(devicePixelRatio||1,compact?1.5:2);
+    if(canvas.width!==Math.round(width*dpr)||canvas.height!==Math.round(height*dpr)){
+      canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);
+    }
+    const wr=world.getBoundingClientRect();
+    scene={left:wr.left-r.left,top:wr.top-r.top,width:wr.width,height:wr.height};
+    // svh stays stable when mobile browser chrome expands or collapses.
+    const oldStep=step,position=window.scrollY/oldStep;step=Math.max(height,720);
     journey.style.height=open?`${height+step*2}px`:'100svh';
-    if(open && oldStep!==step)window.scrollTo({top:depth*step,behavior:'instant'});
+    if(open&&oldStep!==step){cancelTravel();window.scrollTo({top:position*step,behavior:'instant'});}
+    lastScrollY=window.scrollY;
     targetDepth=open?Math.max(0,Math.min(2,window.scrollY/step)):0;
     request();
   }
   function smooth(a,b,value){const x=Math.max(0,Math.min(1,(value-a)/(b-a)));return x*x*(3-2*x);}
   function paintTunnel(cx,cy,intensity,clock,rgb,direction=1){
     if(intensity<=.005)return;
-    for(let i=0;i<150;i++){
+    for(let i=0;i<(compact?64:150);i++){
       const a=i*2.39996+clock*.13;
       const z=((i*.618+clock*.5)%1),r=Math.pow(z,2.6)*Math.max(width,height)*.85;
       const x=Math.cos(a)*r,y=Math.sin(a)*r*.68;
@@ -143,9 +151,15 @@
     const dt=Math.min((now-(last||now))/1000,.05);last=now;
     const ambient=!paused&&!reduced.matches;
     if(ambient)time+=dt;
+    if(scrollFlight){
+      const flight=scrollFlight,t=Math.min(1,(now-flight.start)/flight.duration);
+      window.scrollTo({top:flight.from+(flight.to-flight.from)*smooth(0,1,t),behavior:'instant'});
+      targetDepth=Math.max(0,Math.min(2,window.scrollY/step));
+      if(t===1)scrollFlight=null;
+    }
     ctx.clearRect(0,0,width,height);
-    const wr=world.getBoundingClientRect(),sr=stage.getBoundingClientRect();
-    const cx=wr.left-sr.left+wr.width/2,cy=wr.top-sr.top+wr.height/2;
+    const wr=scene;
+    const cx=wr.left+wr.width/2,cy=wr.top+wr.height/2;
     if(!open){
       if(stage.dataset.state==='entering'&&!reduced.matches){
         const t=Math.min(1,(now-enteringAt)/2100);
@@ -154,22 +168,23 @@
       return;
     }
     previousDepth=depth;
-    depth=reduced.matches?targetDepth:depth+(targetDepth-depth)*Math.min(1,dt*11);
+    // One easing curve during automatic travel; fast, frame-rate independent follow for native input.
+    depth=reduced.matches||scrollFlight||touching?targetDepth:depth+(targetDepth-depth)*(1-Math.exp(-dt/(compact?.055:.085)));
     if(Math.abs(depth-targetDepth)<.0002)depth=targetDepth;
     const index=Math.max(0,Math.min(2,Math.round(depth)));
     if(index!==active)updateGalaxy(index);
     const g=galaxies[active],offset=depth-active;
     const travel=reduced.matches?0:smooth(.1,.49,Math.abs(offset));
-    const zoom=reduced.matches?1:Math.exp(offset*2.1);
+    const zoom=reduced.matches?1:Math.exp(offset*(compact?1.25:1.75));
     const visibility=reduced.matches?1:1-smooth(.15,.48,Math.abs(offset));
     progress=reduced.matches?1:Math.min(1,progress+dt*1.4);
-    const speed=Math.min(1,Math.abs(depth-previousDepth)*32);
-    stage.style.setProperty('--travel',travel.toFixed(3));
+    const speed=Math.min(.7,Math.abs(depth-previousDepth)/Math.max(dt,.001)*.12);
     $('#galaxy-heading').style.opacity=String(reduced.matches?1:1-travel);
     const glow=ctx.createRadialGradient(cx,cy,0,cx,cy,width*.65);
     glow.addColorStop(0,`rgba(${g.rgb},${.06+travel*.09})`);glow.addColorStop(1,'rgba(0,0,0,0)');
     ctx.fillStyle=glow;ctx.fillRect(0,0,width,height);
-    for(const s of stars){
+    for(let i=0;i<(compact?96:stars.length);i++){
+      const s=stars[i];
       const x=(s.x-.5)*width*zoom+cx,y=(s.y-.5)*height*zoom+cy;
       ctx.beginPath();ctx.arc(x,y,s.r*(1+travel),0,Math.PI*2);
       ctx.fillStyle=`rgba(221,222,204,${.16+.12*Math.sin(time*.5+s.phase)})`;ctx.fill();
@@ -191,11 +206,13 @@
       let x=(p.x-.5)*wr.width*zoom*ease,y=(p.y-.5)*wr.height*zoom*ease;
       if(ambient){x+=Math.sin(time*.36+order*1.6)*3*ease;y+=Math.cos(time*.3+order*.9)*4*ease;}
       if(pointer.active&&ambient){const dx=x+wr.width/2-pointer.x,dy=y+wr.height/2-pointer.y,d=Math.hypot(dx,dy);if(d<120){x+=dx/Math.max(1,d)*(1-d/120)*10;y+=dy/Math.max(1,d)*(1-d/120)*10;}}
-      n.x=x+wr.width/2+wr.left-sr.left;n.y=y+wr.height/2+wr.top-sr.top;
+      n.x=x+wr.width/2+wr.left;n.y=y+wr.height/2+wr.top;
       n.el.style.transform=`translate(-50%,-50%) translate(${x.toFixed(2)}px,${y.toFixed(2)}px) scale(${(reduced.matches?1:Math.max(.55,Math.min(1.8,zoom))).toFixed(3)})`;
-      n.el.style.opacity=String(reveal*visibility);n.el.style.filter=travel>.02?`blur(${(travel*3).toFixed(2)}px)`:'none';
+      n.el.style.opacity=String(reveal*visibility);
       // No invisible hit targets while the camera passes between galaxies.
-      n.el.style.pointerEvents=visibility<.35?'none':'';n.el.tabIndex=reveal*visibility<.35?-1:0;
+      const interactive=reveal*visibility>=.35;
+      n.el.style.pointerEvents=interactive?'':'none';
+      if(n.el.tabIndex!==(interactive?0:-1))n.el.tabIndex=interactive?0:-1;
       if(order%3===0&&n.el.getAttribute('aria-pressed')!=='true'){
         ctx.beginPath();ctx.moveTo(cx,cy);ctx.lineTo(n.x,n.y);
         ctx.strokeStyle=`rgba(${g.rgb},${.06*visibility})`;ctx.stroke();
@@ -204,10 +221,10 @@
     const connectionAnimating=paintConnection(cx,cy,now,g,visibility);
     $('.origin').style.opacity=String(1-travel*.85);
     $('.origin').style.transform=`translate(-50%,-50%) scale(${zoom.toFixed(3)})`;
-    if(ambient||depth!==targetDepth||progress<1||connectionAnimating)request();
+    if(ambient||scrollFlight||depth!==targetDepth||progress<1||connectionAnimating)request();
   }
   function setOpen(value){
-    clearTimeout(entryTimer);clearTimeout(settleTimer);closeDetail(false);
+    clearTimeout(entryTimer);cancelTravel();closeDetail(false);
     $('#seed').setAttribute('aria-expanded',String(value));
     if(value){
       if(stage.dataset.state!=='closed')return;
@@ -230,8 +247,23 @@
   }
   function goToGalaxy(index){
     if(!open)return;
-    closeDetail(false);clearTimeout(settleTimer);programmaticUntil=performance.now()+1000;
-    window.scrollTo({top:Math.max(0,Math.min(2,index))*step,behavior:reduced.matches?'instant':'smooth'});
+    closeDetail(false);cancelTravel();
+    const to=Math.max(0,Math.min(2,index))*step,from=window.scrollY;
+    if(reduced.matches){window.scrollTo({top:to,behavior:'instant'});return;}
+    scrollFlight={from,to,start:performance.now(),duration:Math.min(850,420+Math.abs(to-from)/step*260)};
+    request();
+  }
+  function cancelTravel(){
+    clearTimeout(settleTimer);scrollFlight=null;
+  }
+  function settle(){
+    clearTimeout(settleTimer);
+    if(!open||touching||scrollFlight||!$('#detail').hidden)return;
+    // Native inertia finishes first. Never snap while a finger is still on the screen.
+    settleTimer=setTimeout(()=>{
+      if(!open||touching||scrollFlight||!$('#detail').hidden||Math.abs(targetDepth-Math.round(targetDepth))<.035)return;
+      goToGalaxy(scrollDirection>0?Math.ceil(targetDepth):Math.floor(targetDepth));
+    },compact?240:180);
   }
   function closeDetail(focus=true){
     $('#detail').hidden=true;
@@ -239,6 +271,7 @@
     selected=-1;$('.origin').classList.remove('is-selected');request();
   }
   function showDetail(i){
+    cancelTravel();
     const changed=selected!==i||$('#detail').hidden;
     if(changed)connectionStarted=performance.now();
     if(selected>=0)nodes[selected].el.setAttribute('aria-pressed','false');
@@ -286,15 +319,13 @@
     if(!open)return;
     const y=window.scrollY,delta=y-lastScrollY;lastScrollY=y;
     if(Math.abs(delta)>2)scrollDirection=delta>0?1:-1;
-    targetDepth=Math.max(0,Math.min(2,y/step));request();clearTimeout(settleTimer);
-    if(performance.now()<programmaticUntil)return;
-    // Finish a deliberate gesture at a readable constellation, without blocking native scrolling.
-    settleTimer=setTimeout(()=>{
-      if(!open||!$('#detail').hidden||Math.abs(targetDepth-Math.round(targetDepth))<.12)return;
-      goToGalaxy(scrollDirection>0?Math.ceil(targetDepth):Math.floor(targetDepth));
-    },420);
+    targetDepth=Math.max(0,Math.min(2,y/step));request();settle();
   },{passive:true});
-  ['wheel','touchstart'].forEach(event=>window.addEventListener(event,()=>{programmaticUntil=0;},{passive:true}));
+  window.addEventListener('wheel',cancelTravel,{passive:true});
+  window.addEventListener('touchstart',()=>{touching=true;cancelTravel();},{passive:true});
+  function releaseTouch(e){touching=e.touches.length>0;if(!touching)settle();}
+  window.addEventListener('touchend',releaseTouch,{passive:true});
+  window.addEventListener('touchcancel',releaseTouch,{passive:true});
   window.addEventListener('resize',resize,{passive:true});
   world.addEventListener('pointermove',e=>{if(e.pointerType==='touch')return;const r=world.getBoundingClientRect();pointer={x:e.clientX-r.left,y:e.clientY-r.top,active:true};});
   world.addEventListener('pointerleave',()=>pointer.active=false);
@@ -315,7 +346,10 @@
     }
   });
   document.addEventListener('visibilitychange',()=>{last=0;request();});
-  reduced.addEventListener('change',()=>{paused=reduced.matches;$('#pause').setAttribute('aria-pressed',String(paused));$('#pause').textContent=copy[lang][paused?'resume':'pause'];request();});
+  reduced.addEventListener('change',()=>{
+    if(reduced.matches&&scrollFlight){const to=scrollFlight.to;cancelTravel();window.scrollTo({top:to,behavior:'instant'});}
+    paused=reduced.matches;$('#pause').setAttribute('aria-pressed',String(paused));$('#pause').textContent=copy[lang][paused?'resume':'pause'];request();
+  });
   new ResizeObserver(resize).observe(stage);
   new IntersectionObserver(entries=>{inView=entries[0].isIntersecting;last=0;request();},{threshold:.01}).observe(stage);
   history.scrollRestoration='manual';window.scrollTo({top:0,behavior:'instant'});

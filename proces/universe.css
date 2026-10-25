@@ -77,3 +77,10 @@ header{position:fixed}
 /* Keep the selected phrase visible by opening its description on the opposite side. */
 #detail{animation:none}
 @media(min-width:901px){#detail[data-side=left]{left:4.5%;right:auto}#detail[data-side=right]{left:auto;right:4.5%}}
+/* RAF owns travel opacity; a CSS transition here would keep chasing every frame. */
+.idea{will-change:auto;transition:color .25s,border-color .25s,background .25s,padding .25s}
+.idea:not([hidden]){will-change:transform,opacity}
+.world{contain:layout style}
+@media(max-width:700px),(pointer:coarse){
+  .idea,.idea:hover,.idea:focus-visible,.idea[aria-pressed=true]{transition:color .2s,border-color .2s,background .2s}
+}
