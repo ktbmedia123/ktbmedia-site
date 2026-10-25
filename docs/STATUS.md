@@ -1,3 +1,15 @@
+# Aktualizacja — 2026-10-25: Więcej haseł i animowane połączenia
+
+- Dodano 9 haseł z opisami PL/EN i właściwymi linkami. Łącznie 57: Strategia 19, Kreacja 20, Digital 18.
+- Na desktopie opis pojawia się po stronie przeciwnej do wybranego hasła, z krótkim wejściem. Na telefonie pozostaje w stałym położeniu.
+- Kropkę i hasło łączy rysowana krzywa (650 ms), świetlny impuls i początkowa fala. Kolor odpowiada galaktyce. Pauza zatrzymuje impuls po reakcji na kliknięcie; reduced motion wyłącza animację.
+- Walidacja lokalna: node --check, build 68 adresów, diff --check i wszystkie 57 celów w publicznym dist — PASS. Playwright: obie strony panelu, animacja przy pauzie, link EN, 320×667 bez kolizji we wszystkich galaktykach, 390×844 ze stałym położeniem opisu i brak błędów JS — PASS.
+- Publikacja GitHub main → Netlify: 4c36f266b87d3d889ba855922524eb9c3536f50b; zasoby 20261025-connections dostępne pod https://ktbmedia.eu/proces/.
+- Kontrola produkcji w przeglądarce: 57 haseł, panel po obu stronach, przejście przez 3 galaktyki, nowy link z HTTP 200 i brak błędów JS — PASS. Zrzut output/playwright/connection-production-final.png.
+- Dalsza obsługa w docs/PROCESS.md. Kolejne hasła wymagają rekordów PL/EN oraz kontroli układu na małym ekranie.
+
+---
+
 # Aktualizacja — 2026-10-25: Podróż między galaktykami scrollem
 
 - Zamiast przycisku Więcej pomysłów: 3 galaktyki sterowane zwykłym przewijaniem dokumentu — Strategia (16), Kreacja (17), Digital (15), łącznie wszystkie 48 haseł z dotychczasowymi linkami.
