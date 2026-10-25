@@ -6,7 +6,7 @@ Identyfikator pomiaru: G-ZFT5BFB9EW. Kontener: GTM-PHWKQGG7 (konto 6222719462, k
 Opublikowana wersja GTM: 2, „KTBmedia GA4 — pomiar SPA po zgodzie”.
 
 ## Zgoda i pomiar
-analytics.js ładuje GTM dopiero po zgodzie na analitykę. Odmowa nie wysyła danych do Google. Reklamowe zgody pozostają denied. Decyzja jest przechowywana 180 dni w localStorage (ktb-analytics-consent-v1). Ustawienia cookies pozwalają zmienić decyzję; cofnięcie zgody czyści cookies GA i przeładowuje stronę. Panel /admin/ jest wyłączony z integracji.
+analytics.js ładuje GTM dopiero po zgodzie na analitykę. Odmowa nie wysyła danych do Google. Reklamowe zgody pozostają denied. Decyzja jest przechowywana 180 dni w localStorage (ktb-analytics-consent-v1). Przycisk „Zmień ustawienia cookies” w polityce prywatności pozwala zmienić decyzję; cofnięcie zgody czyści cookies GA i przeładowuje stronę. Panel /admin/ jest wyłączony z integracji.
 
 Router wysyła ktb_page_view po zmianie trasy. GTM przekształca je w page_view z page_location, page_title i page_referrer. send_page_view=false. Pomiar zmian historii oraz interakcji formularzy wyłączony zarówno w strumieniu, jak i ustawieniach GTM. Dane przekazywane przez użytkowników (w tym automatyczne wykrywanie e-maili i telefonów) wyłączone. Stary Universal Analytics wstrzymany. Pozostają przewinięcia, linki wychodzące, filmy i pobrania po zgodzie.
 
@@ -21,3 +21,5 @@ Build i node --check: PASS. Produkcja w przeglądarce: baner, odmowa bez Google,
 Źródła: https://developers.google.com/tag-platform/security/guides/consent?consentmode=basic oraz https://developers.google.com/analytics/devguides/collection/ga4/single-page-applications
 
 Potwierdzenie końcowe: GA4 realtime odebrał dokładnie 2 odsłony — stronę główną i realizacje, każdą raz, z poprawnymi tytułami.
+
+25.10.2026: usunięto pływający przycisk cookies. Po zgodzie/odmowie box znika; zarządzanie zgodą znajduje się w sekcji Cookies polityki prywatności (PL/EN).

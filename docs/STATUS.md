@@ -1,3 +1,14 @@
+# Aktualizacja — 2026-10-25: Znikający box cookies
+
+- Po wybraniu zgody lub odmowy baner znika bez pozostawiania pływającego przycisku „Ustawienia cookies”. Zapamiętana decyzja jest respektowana po odświeżeniu i zmianie podstrony.
+- Zarządzanie zgodą przeniesiono do sekcji Cookies w polityce prywatności: przycisk „Zmień ustawienia cookies” / „Change cookie settings”. Dalsze ładowanie GTM po zgodzie i cofnięcie zgody działają jak wcześniej.
+- Zmieniono wersję analytics.js w buildzie, aby przeglądarki pobrały poprawiony skrypt.
+- Build, node --check i Playwright: zgoda, odmowa, powrót po odświeżeniu, brak Google po odmowie, zmiana i cofnięcie zgody z polityki prywatności oraz przycisk EN — PASS. Google mockowane w teście lokalnym.
+- Kontrola produkcji: po odmowie i odświeżeniu brak boxu; przycisk w polityce prywatności ponownie otwiera wybór — PASS.
+- Publikacja GitHub main: 96fd679123987e438a0fb752388a9a3a40c173ae; istniejący automatyczny deploy Netlify.
+
+---
+
 # Aktualizacja — 2026-10-25: Proces jako publiczna podstrona
 
 - Przeniesiono gotową animację do /proces/ (proces/index.html, universe.css, universe.js). Menu Proces na komputerze i telefonie prowadzi do osobnego dokumentu; hero strony głównej pozostaje bez zmian.
