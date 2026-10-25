@@ -118,3 +118,5 @@ Udokumentowane realizacje obejmują między innymi AutoCentrum Elektronowa, Grup
 - Mapa realizacji: https://ktbmedia.eu/sitemap-realizacje.xml
 - Robots: https://ktbmedia.eu/robots.txt
 - Encja Schema.org: https://ktbmedia.eu/content/geo-entity.json
+
+- Proces kreatywny KTB Media: https://ktbmedia.eu/proces/ — interaktywna mapa strategii, kreacji i digital z powiązanymi realizacjami i artykułami.

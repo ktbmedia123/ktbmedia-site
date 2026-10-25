@@ -215,6 +215,11 @@ function usePath() {
 }
 function navigate(path) {
   const targetPath = prettyPath(path);
+  // Process is an independent immersive document, so enter it with a full navigation.
+  if (normalizePath(path) === '/proces') {
+    window.location.assign(targetPath + (document.documentElement.lang === 'en' ? '?lang=en' : ''));
+    return;
+  }
   if (normalizePath(window.location.pathname) === normalizePath(path)) {
     window.scrollTo({
       top: 0,
@@ -269,7 +274,7 @@ function SmartLink({
 }
 
 // Nav: Usługi · Realizacje · Proces · O nas · Blog · Kontakt
-const NAV_TARGETS = ["#services", "/realizacje", "#process", "/o-nas", "/blog", "/kontakt"];
+const NAV_TARGETS = ["#services", "/realizacje", "/proces", "/o-nas", "/blog", "/kontakt"];
 const DIGITAL_CASES = [{
   slug: 'ktbtask',
   group: 'apps',
@@ -3254,7 +3259,7 @@ function Footer({
   }), " pages visited this session")), /*#__PURE__*/React.createElement("div", null, "Pruszcz Gda\u0144ski \xB7 PL")));
 }
 function App() {
-  const [lang, setLang] = useState('pl');
+  const [lang, setLang] = useState(() => new URLSearchParams(window.location.search).get('lang') === 'en' ? 'en' : 'pl');
   const path = usePath();
   const visitedCount = useVisitedPages(path);
   useReveal([lang, path]);
