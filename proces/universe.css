@@ -20,3 +20,57 @@ header nav{display:flex;gap:23px;margin-left:auto;margin-right:34px;align-items:
 @media(max-width:700px){header nav{gap:12px;margin-right:4px}header nav a{display:none}header nav a:nth-child(2),header nav a:nth-child(6){display:block;font-size:10px}.brand{width:112px}.motion-controls{flex-wrap:wrap;justify-content:center}#detail{max-height:calc(100svh - 155px);overflow:auto}#next{border-color:#b6baa22a}.seed-label{font-size:12px}}
 @media(min-width:800px){.idea{max-width:calc((100vw - 70px)*.185);white-space:normal;line-height:1.35;text-align:center}}
 @media(max-width:700px){#detail{position:fixed;top:100px}}
+
+/* A native scroll runway moves the camera; the scene itself stays in the viewport. */
+body.journey-open{background:#141513}
+main{position:relative}
+.universe{position:sticky;top:0;height:100svh;min-height:0;--galaxy-color:#e8a838}
+[data-state=open].universe{min-height:0}
+header{position:fixed}
+.world{inset:260px 35px 140px}
+#galaxy-heading{position:absolute;left:4.5%;top:146px;z-index:6;pointer-events:none;max-width:75%}
+#galaxy-number{font:9px monospace;letter-spacing:2px;color:var(--galaxy-color)}
+#galaxy-name{font-size:44px;letter-spacing:-1.8px;font-weight:500;line-height:1;margin:10px 0;color:var(--paper)}
+#galaxy-description{font-size:12px;line-height:1.5;color:#a7aa9b;margin:0}
+.origin{background:var(--galaxy-color);transition:background .5s,box-shadow .5s}
+.origin.is-selected{background:#e5e0c8}
+.idea:hover,.idea:focus-visible,.idea[aria-pressed=true]{background:var(--galaxy-color);border-color:var(--galaxy-color)}
+.topline i,.cross{background:var(--galaxy-color)}
+.cross{background:none;color:var(--galaxy-color)}
+.controls{align-items:center;bottom:58px}
+#scroll-hint{font-size:11px;line-height:1.4;color:#aeb29e;letter-spacing:.02em}
+#scroll-hint:before{content:'↓';display:inline-block;color:var(--galaxy-color);font-size:17px;margin-right:12px}
+[data-galaxy=digital] #scroll-hint:before{content:'↑'}
+#galaxy-navigation{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:10px}
+.controls #galaxy-navigation button{width:36px;height:36px;border:1px solid transparent;padding:0;background:transparent;display:grid;place-items:center;border-radius:50%}
+#galaxy-navigation button span{display:block;width:6px;height:6px;border-radius:50%;background:#69715e;transition:background .4s,transform .4s}
+#galaxy-navigation button[aria-current] span{background:var(--galaxy-color);transform:scale(1.3)}
+.controls #galaxy-navigation button[aria-current]{border-color:var(--galaxy-color)}
+#detail{position:fixed;overscroll-behavior:contain;max-height:calc(100svh - 170px);overflow:auto;border-top-color:var(--galaxy-color)}
+#detail a{line-height:1.5}
+@media(max-width:900px){.world{inset:250px 25px 140px}.idea{max-width:29vw}}
+@media(max-width:700px){
+  .world{inset:195px 12px 125px}
+  #galaxy-heading{top:113px;max-width:91%}
+  #galaxy-number{font-size:8px;letter-spacing:1.2px}
+  #galaxy-name{font-size:29px;letter-spacing:-1px;margin:7px 0}
+  #galaxy-description{font-size:10px;line-height:1.4;max-width:290px}
+  .idea{font-size:clamp(9px,2.4vw,10px);padding:6px 8px;max-width:calc((100vw - 24px)/2 - 12px);line-height:1.25}
+  .idea:before{width:3px;height:3px;margin-right:5px}
+  .idea:hover,.idea:focus-visible,.idea[aria-pressed=true]{padding:7px 9px}
+  .controls{bottom:43px;gap:10px;align-items:flex-start}
+  #scroll-hint{font-size:10px;max-width:65%;min-height:29px;display:flex;align-items:center}
+  #galaxy-navigation{left:auto;right:0;top:0;transform:none;gap:0}
+  .controls #galaxy-navigation button{width:31px;height:31px}
+  .motion-controls{gap:6px}
+  .controls .motion-controls button{padding:5px 8px;font-size:9px}
+  .bottomline{bottom:14px;font-size:7px}
+  #detail{top:90px;max-height:calc(100svh - 110px)}
+}
+@media(max-height:650px) and (min-width:701px){
+  #galaxy-heading{top:108px}#galaxy-name{font-size:28px;margin:5px 0}#galaxy-description{font-size:10px}
+  .topline{top:90px}.world{inset:180px 25px 110px}.controls{bottom:48px}.bottomline{bottom:17px}.idea{font-size:10px;padding:6px 10px}
+}
+@media(max-width:700px){.world{inset:185px 12px 110px}}
+@media(max-width:360px){.idea{font-size:9px;padding:5px 7px;line-height:1.2}.idea:hover,.idea:focus-visible,.idea[aria-pressed=true]{padding:6px 8px}}
+@media(max-width:700px){.world{inset:210px 12px 105px}.origin{width:20px;height:20px}}
