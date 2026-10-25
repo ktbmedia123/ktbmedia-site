@@ -1,13 +1,19 @@
-/* A quiet invitation; one click opens the signal into the contact page. */
-.contact-invitation{position:absolute;z-index:11;left:50%;bottom:89px;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;gap:22px;min-height:52px;max-width:calc(100% - 36px);padding:6px 7px 6px 24px;border:1px solid #d5d5c645;border-radius:999px;background:#22251fe8;color:var(--paper);font-size:12px;line-height:1.35;letter-spacing:-.1px;box-shadow:0 8px 25px #0003;backdrop-filter:blur(12px);animation:contact-in 1.1s cubic-bezier(.16,1,.3,1) both;transition:background .3s,border-color .3s}
-.contact-invitation-label{white-space:nowrap}
+/* A quiet invitation fills only while the visitor holds it. */
+.contact-invitation{position:absolute;z-index:11;left:50%;bottom:89px;transform:translateX(-50%);display:block;isolation:isolate;overflow:hidden;min-height:52px;max-width:calc(100% - 36px);padding:0;border:1px solid #d5d5c645;border-radius:999px;background:#22251fe8;color:var(--paper);font-size:12px;line-height:1.35;letter-spacing:-.1px;box-shadow:0 8px 25px #0003;backdrop-filter:blur(12px);animation:contact-in 1.1s cubic-bezier(.16,1,.3,1) both;transition:background .3s,border-color .3s;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.contact-invitation-base,.contact-invitation-fill{display:flex;align-items:center;justify-content:center;gap:22px;min-height:52px;padding:6px 7px 6px 24px}
+.contact-invitation-fill{position:absolute;inset:0;color:#141513;background:var(--galaxy-color);clip-path:inset(0 calc((1 - var(--contact-charge,0))*100%) 0 0);transition:clip-path .28s ease-out;pointer-events:none}
+.contact-invitation.is-holding .contact-invitation-fill{transition:none}
+.contact-invitation-copy{display:flex;flex-direction:column;gap:2px;text-align:left;white-space:nowrap}
+.contact-invitation-duration{font:8px monospace;letter-spacing:.04em;opacity:.65}
 .contact-invitation-arrow{display:grid;place-items:center;flex:none;width:36px;height:36px;border-radius:50%;background:var(--galaxy-color);color:#141513;font-size:17px;transition:transform .3s}
-.contact-invitation:hover,.contact-invitation:focus-visible{border-color:var(--galaxy-color);background:#2b2e26}
-.contact-invitation:hover .contact-invitation-arrow{transform:rotate(45deg)}
+.contact-invitation-fill .contact-invitation-arrow{background:#141513;color:var(--galaxy-color)}
+.contact-invitation:hover,.contact-invitation:focus-visible,.contact-invitation.is-holding{border-color:var(--galaxy-color);background:#2b2e26}
+.contact-invitation.is-holding .contact-invitation-arrow{transform:rotate(45deg)}
 .contact-rift{position:fixed;inset:0;z-index:60;pointer-events:none;isolation:isolate;overflow:hidden}
 .contact-rift>canvas{position:absolute;inset:0;opacity:1!important;width:100%;height:100%;transition:none}
 .contact-rift:before{content:'';position:absolute;inset:0;z-index:-1;background:var(--paper);opacity:calc(var(--rift-progress,0)*1.3);clip-path:inset(calc((1 - var(--rift-progress,0))*50%) 0)}
-.rift-arrival{position:absolute;inset:0;display:flex;align-items:flex-start;justify-content:center;flex-direction:column;padding:8vw;color:var(--ink)}
+.rift-arrival{position:absolute;inset:0;display:flex;align-items:flex-start;justify-content:center;flex-direction:column;padding:8vw;color:var(--ink);visibility:hidden}
+.contact-rift.is-departing .rift-arrival{visibility:visible}
 .rift-arrival img{position:absolute;left:4.5%;top:35px;width:150px}
 .rift-signal{font:10px monospace;letter-spacing:3px;color:#84775d}
 .rift-arrival h2{font-size:clamp(48px,9vw,140px);font-weight:500;letter-spacing:-.065em;line-height:1;margin:25px 0}
@@ -15,5 +21,5 @@
 .rift-address{font-size:13px;border-bottom:1px solid #e8a838;padding-bottom:9px}
 .contact-departing .world{pointer-events:none}
 @keyframes contact-in{from{opacity:0;transform:translate(-50%,8px)}to{opacity:1;transform:translate(-50%,0)}}
-@media(max-width:700px){.contact-invitation{bottom:58px;padding-left:18px;gap:13px;font-size:11px;min-height:44px}.contact-invitation-arrow{width:30px;height:30px}.contact-invited #scroll-hint{visibility:hidden}.contact-invited .controls{bottom:15px}.contact-invited #galaxy-navigation{top:auto;bottom:-2px}.contact-invited .bottomline{opacity:0!important}.rift-arrival{padding:8vw}.rift-arrival img{width:112px;top:28px}.rift-arrival h2{font-size:clamp(44px,13vw,72px)}}
+@media(max-width:700px){.contact-invitation{bottom:58px;font-size:11px;min-height:44px}.contact-invitation-base,.contact-invitation-fill{padding-left:18px;gap:13px;min-height:44px}.contact-invitation-arrow{width:30px;height:30px}.contact-invited #scroll-hint{visibility:hidden}.contact-invited .controls{bottom:15px}.contact-invited #galaxy-navigation{top:auto;bottom:-2px}.contact-invited .bottomline{opacity:0!important}.rift-arrival{padding:8vw}.rift-arrival img{width:112px;top:28px}.rift-arrival h2{font-size:clamp(44px,13vw,72px)}}
 @media(prefers-reduced-motion:reduce){.contact-invitation{animation:none}.rift-arrival{opacity:1!important}}
