@@ -30,7 +30,7 @@ const cleanSchema = value => {
 fs.writeFileSync(path.join(root, 'content.js'), `const COPY = ${JSON.stringify({ pl: data.pl, en: data.en }, null, 2)};\nwindow.COPY = COPY;\nwindow.KTB_VISIBILITY = ${JSON.stringify(config, null, 2)};\n`);
 fs.rmSync(dist, { recursive: true, force: true });
 fs.mkdirSync(dist);
-const excluded = new Set(['dist', '.git', '.gitignore', 'node_modules', 'docs', 'scripts', 'AGENTS.md', 'CHANGES.md', 'README.md']);
+const excluded = new Set(['dist', 'prototypes', 'output', '.git', '.gitignore', 'node_modules', 'docs', 'scripts', 'AGENTS.md', 'CHANGES.md', 'README.md']);
 for (const entry of fs.readdirSync(root)) {
   if (excluded.has(entry) || entry.startsWith('.')) continue;
   fs.cpSync(path.join(root, entry), path.join(dist, entry), { recursive: true });

@@ -1,3 +1,15 @@
+# Aktualizacja — 2026-10-25: Wszechświat pomysłów (prototyp)
+
+- Gotowy oddzielny prototyp w prototypes/universe/: index.html, universe.css, universe.js. Canvas 2D + przyciski DOM, bez zależności JS i bez Blendera.
+- Pulsująca kropka otwiera animowaną przestrzeń z falą, cząstkami, orbitami i 25 hasłami. Hasła reagują na kursor, kliknięcie otwiera opis i link kontaktowy.
+- Filtry Strategia/Kreacja/Digital, zwijanie z resetem filtra, pauza; wersje PL/EN; układ dotykowy z dwiema kolumnami na telefonie.
+- Klawiatura: Tab/Enter, Escape zamyka opis i przywraca fokus. prefers-reduced-motion zatrzymuje animacje, renderowanie Canvas jest wstrzymywane poza ekranem i w ukrytej karcie.
+- Kontrola Playwright: otwarcie opisu, filtr (8 strategii), reset (25 aktywnych haseł), Enter/Escape, PL/EN, reduced motion i brak poziomego overflow przy 390 px — PASS. Zrzuty lokalnie w output/playwright/.
+- node --check i build PASS. Prototyp oraz output wyłączone z kopiowania do dist; brak zmian na produkcji. Oczekuje oceny wyglądu przed integracją z „O nas”.
+- Podgląd: python3 -m http.server 8765 --bind 127.0.0.1, adres http://127.0.0.1:8765/prototypes/universe/.
+
+---
+
 # Aktualizacja — 2026-10-19: Google Analytics
 
 - Utworzono i podłączono GA4 G-ZFT5BFB9EW do GTM-PHWKQGG7; GTM v2 opublikowany.
