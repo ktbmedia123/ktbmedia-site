@@ -134,21 +134,37 @@
     ctx.restore();
   }
   function paintEntry(t){
-    const cx=width/2,cy=height/2,intensity=Math.sin(t*Math.PI),clock=t*5,rgb='232,168,56',direction=1;
+    const cx=width/2,cy=height/2,intensity=Math.sin(t*Math.PI),clock=t*4.7+t*t*.6,rgb='232,168,56';
     if(intensity<=.005)return;
+    const extent=Math.max(width,height);
+    ctx.save();ctx.lineCap='round';
+    // Keep the familiar expanding dot, with a softer glow and a little more depth in its wake.
+    const glow=ctx.createRadialGradient(cx,cy,0,cx,cy,extent*.58);
+    glow.addColorStop(0,`rgba(232,168,56,${intensity*.105})`);
+    glow.addColorStop(.42,`rgba(232,168,56,${intensity*.035})`);glow.addColorStop(1,'rgba(232,168,56,0)');
+    ctx.fillStyle=glow;ctx.fillRect(0,0,width,height);
     for(let i=0;i<150;i++){
       const a=i*2.39996+clock*.13;
-      const z=((i*.618+clock*.5)%1),r=Math.pow(z,2.6)*Math.max(width,height)*.85;
+      const z=((i*.618+clock*.5)%1),r=Math.pow(z,2.6)*extent*.85;
       const x=Math.cos(a)*r,y=Math.sin(a)*r*.68;
-      ctx.beginPath();ctx.moveTo(cx+x,cy+y);
-      ctx.lineTo(cx+x*(1+intensity*.38*direction),cy+y*(1+intensity*.38*direction));
-      ctx.strokeStyle=`rgba(${rgb},${intensity*(.1+z*.65)})`;ctx.lineWidth=.3+z*1.4;ctx.stroke();
+      const tail=1+intensity*(.29+z*.23);
+      ctx.beginPath();ctx.moveTo(cx+x,cy+y);ctx.lineTo(cx+x*tail,cy+y*tail);
+      ctx.strokeStyle=`rgba(${i%13===0?'245,222,174':rgb},${intensity*(.1+z*.65)})`;
+      ctx.lineWidth=.3+z*1.4;ctx.stroke();
+      if(i%6===0){
+        ctx.beginPath();ctx.arc(cx+x*tail,cy+y*tail,.6+z*.85,0,Math.PI*2);
+        ctx.fillStyle=`rgba(247,228,190,${intensity*z*.65})`;ctx.fill();
+      }
     }
     for(let j=0;j<4;j++){
-      const r=((clock*.3+j/4)%1)*Math.max(width,height)*.65;
+      const r=((clock*.3+j/4)%1)*extent*.65;
       ctx.beginPath();ctx.ellipse(cx,cy,Math.max(1,r),Math.max(1,r*.68),clock*.08,0,Math.PI*2);
-      ctx.strokeStyle=`rgba(${rgb},${intensity*.14})`;ctx.lineWidth=1;ctx.stroke();
+      ctx.strokeStyle=`rgba(${rgb},${intensity*.17})`;ctx.lineWidth=.7+j*.12;ctx.stroke();
     }
+    const ripple=smooth(.12,.85,t),radius=45+ripple*extent*.58;
+    ctx.beginPath();ctx.ellipse(cx,cy,radius,radius*.68,clock*.08,0,Math.PI*2);
+    ctx.strokeStyle=`rgba(241,205,132,${intensity*(1-ripple)*.2})`;ctx.lineWidth=1.1;ctx.stroke();
+    ctx.restore();
   }
   function paintConnection(cx,cy,now,g,opacity){
     if(selected<0||nodes[selected].el.hidden)return false;
