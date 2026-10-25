@@ -1,3 +1,16 @@
+# Aktualizacja — 2026-10-25: Płynniejsze przewijanie Procesu
+
+- Telefon: kamera podąża za palcem, a domknięcie przejścia czeka na puszczenie i koniec natywnej bezwładności. Nowy dotyk natychmiast przerywa automatyczny przelot. Na desktopie także jedna krzywa płynnego wyhamowania zamiast nakładającego się wygładzania.
+- Łagodniejszy zoom; bez rozmywania haseł i bez CSS transition opacity ścigającej RAF. Geometria buforowana poza pętlą renderowania. Na telefonie mniej gwiazd/smug i DPR do 1.5, z zachowaniem charakteru animacji.
+- Wysokość trasy bazuje na stabilnym 100svh; pasek adresu nie zmienia pozycji scrolla. Zmiana orientacji zachowuje względną pozycję. Pauza, reduced motion, 57 haseł, opisy i języki zachowane.
+- Walidacja: składnia, build 68 adresów i diff --check — PASS. Playwright/CDP: gest przytrzymany, puszczenie, szybka bezwładność bez cofnięcia, przerwanie nowym dotykiem, wheel w obie strony, klawiatura, reduced motion w trakcie przelotu, symulacja paska adresu, obrót ekranu, 320×667 bez kolizji, linki EN i reset — PASS.
+- Orientacyjny pomiar 2 s w Chromium, 390×844 i CPU 4×: przed 113 klatek / 1 przerwa >25 ms; po 120 / 0. P95 16.7 ms w obu. To porównanie w emulacji, nie pomiar fizycznego telefonu.
+- Publikacja GitHub main → Netlify: 9f1ecc265dec676d942900c29bdb60ea7906ad2b; zasoby 20261025-smooth-travel dostępne na produkcji.
+- Kontrola produkcji: rzeczywiste zdarzenia dotykowe w Chromium, brak snapu przy przytrzymanym palcu, domknięcie po puszczeniu, powrót kółkiem na desktopie i 57 haseł, brak błędów JS — PASS. Zrzut output/playwright/smooth-travel-production-mobile.png.
+- Szczegóły utrzymania w docs/PROCESS.md. Ewentualne dalsze strojenie tempa według odczuć użytkownika na jego telefonie.
+
+---
+
 # Aktualizacja — 2026-10-25: Więcej haseł i animowane połączenia
 
 - Dodano 9 haseł z opisami PL/EN i właściwymi linkami. Łącznie 57: Strategia 19, Kreacja 20, Digital 18.
