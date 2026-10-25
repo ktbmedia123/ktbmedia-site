@@ -48,6 +48,7 @@
   let open = false, paused = reduced.matches, selected = -1, active = 0;
   let progress = 0, time = 0, last = 0, width = 0, height = 0, frame = 0, inView = true;
   let step = 900, depth = 0, targetDepth = 0, previousDepth = 0, enteringAt = 0, entryTimer;
+  let settleTimer, programmaticUntil=0, lastScrollY=0, scrollDirection=1;
   let visibleNodes = [], pointer = {x:0,y:0,active:false};
   const stars = Array.from({length:220},(_,i)=>({x:Math.sin(i*127.1)*.5+.5,y:Math.cos(i*311.7)*.5+.5,r:i%7===0?1.3:.65,phase:i*.43}));
   const nodes = items.map((item,i)=>{
@@ -178,7 +179,7 @@
     if(ambient||depth!==targetDepth||progress<1)request();
   }
   function setOpen(value){
-    clearTimeout(entryTimer);closeDetail(false);
+    clearTimeout(entryTimer);clearTimeout(settleTimer);closeDetail(false);
     $('#seed').setAttribute('aria-expanded',String(value));
     if(value){
       if(stage.dataset.state!=='closed')return;
@@ -201,7 +202,7 @@
   }
   function goToGalaxy(index){
     if(!open)return;
-    closeDetail(false);
+    closeDetail(false);clearTimeout(settleTimer);programmaticUntil=performance.now()+1000;
     window.scrollTo({top:Math.max(0,Math.min(2,index))*step,behavior:reduced.matches?'instant':'smooth'});
   }
   function closeDetail(focus=true){
@@ -241,7 +242,19 @@
   $('#pause').addEventListener('click',()=>{paused=!paused;$('#pause').setAttribute('aria-pressed',String(paused));$('#pause').textContent=copy[lang][paused?'resume':'pause'];request();});
   $('#language').addEventListener('click',()=>{lang=lang==='pl'?'en':'pl';applyLanguage();});
   document.querySelectorAll('#galaxy-navigation [data-galaxy]').forEach((el,i)=>el.addEventListener('click',()=>goToGalaxy(i)));
-  window.addEventListener('scroll',()=>{if(!open)return;targetDepth=Math.max(0,Math.min(2,window.scrollY/step));request();},{passive:true});
+  window.addEventListener('scroll',()=>{
+    if(!open)return;
+    const y=window.scrollY,delta=y-lastScrollY;lastScrollY=y;
+    if(Math.abs(delta)>2)scrollDirection=delta>0?1:-1;
+    targetDepth=Math.max(0,Math.min(2,y/step));request();clearTimeout(settleTimer);
+    if(performance.now()<programmaticUntil)return;
+    // Finish a deliberate gesture at a readable constellation, without blocking native scrolling.
+    settleTimer=setTimeout(()=>{
+      if(!open||!$('#detail').hidden||Math.abs(targetDepth-Math.round(targetDepth))<.12)return;
+      goToGalaxy(scrollDirection>0?Math.ceil(targetDepth):Math.floor(targetDepth));
+    },420);
+  },{passive:true});
+  ['wheel','touchstart'].forEach(event=>window.addEventListener(event,()=>{programmaticUntil=0;},{passive:true}));
   window.addEventListener('resize',resize,{passive:true});
   world.addEventListener('pointermove',e=>{if(e.pointerType==='touch')return;const r=world.getBoundingClientRect();pointer={x:e.clientX-r.left,y:e.clientY-r.top,active:true};});
   world.addEventListener('pointerleave',()=>pointer.active=false);
