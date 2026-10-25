@@ -1,3 +1,18 @@
+# Aktualizacja — 2026-10-25: Podróż między galaktykami scrollem
+
+- Zamiast przycisku Więcej pomysłów: 3 galaktyki sterowane zwykłym przewijaniem dokumentu — Strategia (16), Kreacja (17), Digital (15), łącznie wszystkie 48 haseł z dotychczasowymi linkami.
+- Scena pozostaje w ekranie (sticky), scroll zmienia głębię kamery; zoom, zanikanie/pojawianie się konstelacji, smugi i pierścienie tworzą przelot. Scroll w górę wraca do poprzednich galaktyk.
+- Złota Strategia, ciepła Kreacja i chłodny Digital: osobne kolory kropki i orbit, tytuły i opisy PL/EN. Dyskretne trzy kropki pokazują pozycję i pozwalają przeskoczyć; wskazówka „Przewiń. Zmień perspektywę.”.
+- Zachowano logo, wejście Zacznij Proces, kursor, opisy, linki i reset. Pauza zatrzymuje dryf; reduced motion pozwala zmieniać galaktyki bez zoomu/rozmyć. Klawiatura i natywny scroll (bez blokowania wheel/touch).
+- Walidacja Playwright: prawdziwe wheel przez 3 galaktyki i z powrotem, 48 unikalnych haseł, linki EN, Home/End/PageDown, reduced motion, reset, rozmiary 390×844 oraz 320×667 (bez overflow i kolizji haseł) — PASS. node --check, build 68 adresów i diff --check — PASS.
+- Po puszczeniu scrolla przelot domyka się w kierunku gestu, żeby hasła nie pozostawały rozmyte między galaktykami. Test krótkich gestów +250/-250 px — PASS.
+- Wysłano na GitHub main: 7918947f2148c0054611676f10835e7417467b16 (pierwsza wersja: 1ead5d337e7ed61e417afe16f12ba4dc4cb99497). Istniejący automatyczny deploy Netlify; lokalny projekt zsynchronizowany.
+- Kontrola pierwszego wdrożenia w przeglądarce produkcyjnej: scroll Strategia → Kreacja → Digital i z powrotem, brak błędów JS — PASS.
+- Końcowa kontrola produkcji: krótkie gesty +250/-250 px przechodzą do Kreacji i wracają do Strategii, animacja kończy się na czytelnych hasłach — PASS. Zrzut output/playwright/galaxy-production-final.png.
+- Dokumentacja dalszej obsługi: docs/PROCESS.md.
+
+---
+
 # Aktualizacja — 2026-10-25: Znikający box cookies
 
 - Po wybraniu zgody lub odmowy baner znika bez pozostawiania pływającego przycisku „Ustawienia cookies”. Zapamiętana decyzja jest respektowana po odświeżeniu i zmianie podstrony.
