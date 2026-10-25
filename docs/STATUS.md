@@ -1,3 +1,15 @@
+# Aktualizacja — 2026-10-25: Powrót do wcześniejszego wejścia i dyskretny przycisk kontaktu
+
+- Na życzenie użytkownika przywrócono klasyczne wejście 2,1 s z powiększeniem kropki, 150 smugami i 4 pierścieniami (wariant sprzed ostatniej soczewki). Bogatsze przewijanie galaktyk pozostaje.
+- Całkowicie usunięto potrząsanie, czujnik, żądania zgody, przytrzymanie i pasek. Po 6 s w galaktyce wyłania się jedna zaokrąglona pigułka „Naciśnij, by nawiązać kontakt” / „Press to make contact”. Pojawienie 1,1 s bez pulsowania, pojedynczy klik/Enter/Spacja prowadzi przez dotychczasowe zakłócenia do kontaktu.
+- Telefon: przycisk mieści się pod hasłami, zastępuje wskazówkę przewijania, a sterowanie przesuwa się niżej. Escape ukrywa; reset/wyjście z galaktyki kasuje timer. Języki, reduced motion i statyczny indeks 57 haseł zachowane.
+- Walidacja: node --check, diff --check, build 68 adresów i 114 wpisów indeksu — PASS. Playwright normalne wejście, brak przycisku przed 6 s, desktop/390 px, 320×667 i 390×844 bez kolizji z hasłami we wszystkich galaktykach, PL/EN, click i klawiatura do właściwego kontaktu, Escape/reset — PASS.
+- Publikacja GitHub main → Netlify: 3161728fc25ac260f09b78c7af41cc316cf340d4; zasoby 20261025-contact-button.
+- Kontrola produkcji: normalne wcześniejsze wejście, brak przycisku przed 6 s, nowy napis i pojedynczy klik do /kontakt/, brak starego UI czujnika i błędów JS — PASS. Zrzut output/playwright/contact-pill-production.png.
+- Szczegóły bieżącego zachowania w docs/PROCESS.md. Potrząsanie pozostaje wyłącznie historią poprzedniego wdrożenia.
+
+---
+
 # Aktualizacja — 2026-10-25: Filmowa galaktyka, potrząsanie do kontaktu i indeks SEO/GEO
 
 - Jakość animacji zgodnie z preferencją użytkownika: pełniejsze wejście 3,4 s (420 promieni, 15 bram, 7 włókien i soczewka), także na telefonie. Bogatszy scroll: parallax, smugi i interpolacja atmosfery, z zachowaniem natywnych gestów i stabilnego svh.
