@@ -74,3 +74,6 @@ header{position:fixed}
 @media(max-width:700px){.world{inset:185px 12px 110px}}
 @media(max-width:360px){.idea{font-size:9px;padding:5px 7px;line-height:1.2}.idea:hover,.idea:focus-visible,.idea[aria-pressed=true]{padding:6px 8px}}
 @media(max-width:700px){.world{inset:210px 12px 105px}.origin{width:20px;height:20px}}
+/* Keep the selected phrase visible by opening its description on the opposite side. */
+#detail{animation:none}
+@media(min-width:901px){#detail[data-side=left]{left:4.5%;right:auto}#detail[data-side=right]{left:auto;right:4.5%}}

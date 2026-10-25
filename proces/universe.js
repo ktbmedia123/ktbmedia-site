@@ -31,6 +31,7 @@
   const routeKeys = ["brand", "social", "web", "strategy", "ads", "finance", "rebrand", "strategy", "web", "brand", "marine", "product", "design", "strategy", "finance", "video", "launch", "ads", "marine", "rebrand", "product", "social", "strategy", "design", "auto"];
   items.forEach((item,i)=>item.push(routeKeys[i]));
   items.push(...[["strategy", "Nie każda cisza wymaga kampanii.", "Not every silence needs a campaign.", "Najpierw sprawdzamy, czy problemem jest widoczność, oferta czy doświadczenie klienta. Reklama nie powinna maskować złej diagnozy.", "First we ask whether the problem is visibility, the offer or the customer experience. Advertising should not hide a poor diagnosis.", "strategy"], ["creation", "Twój brand nie musi krzyczeć, żeby go usłyszano.", "Your brand need not shout to be heard.", "Rozpoznawalny język i konsekwencja potrafią zrobić więcej niż kolejny wykrzyknik. Pokazujemy markę przez jej własne cechy.", "A recognisable voice and consistency can do more than another exclamation mark. We build around the brand’s own qualities.", "brand"], ["digital", "Dobry UX nie prosi o instrukcję.", "Good UX needs no manual.", "Projektujemy ścieżki, w których kolejny krok jest oczywisty. Mniej zgadywania po stronie użytkownika, mniej tarcia w produkcie.", "We design journeys where the next step is obvious. Less guessing for the user, less friction in the product.", "web"], ["creation", "Algorytm nie ma gustu. Twoja marka powinna.", "The algorithm has no taste. Your brand should.", "Format dobieramy do kanału, ale charakter zostawiamy marce. Trend jest narzędziem, nie dyrektorem kreatywnym.", "We adapt the format to the channel while preserving the brand’s character. A trend is a tool, not a creative director.", "ai"], ["strategy", "Najdroższy zasięg? Ten do nikogo.", "The most expensive reach? Reaching no one.", "Ustalamy, kogo naprawdę chcemy poruszyć. Dopiero potem wybieramy komunikat, kanał i sposób sprawdzenia efektu.", "We define who we need to move. Then we choose the message, the channel and how to assess the result.", "ads"], ["digital", "Nie dokładaj ludziom kolejnej zakładki.", "Do not give people another tab to manage.", "Dobra aplikacja porządkuje zadania, zamiast tworzyć nowy obowiązek. Zaczynamy od tego, co można uprościć.", "A useful app organises work instead of creating another obligation. We start with what can be simplified.", "product"], ["creation", "Logo nie zamknie sprzedaży. Ale otworzy drzwi.", "A logo will not close the sale. It can open doors.", "To pierwszy sygnał, nie cała historia. Łączymy znak z językiem, materiałami i doświadczeniem, które podtrzymuje obietnicę.", "It is a first signal, not the whole story. We connect the mark to language, materials and an experience that keeps the promise.", "brand"], ["strategy", "Zanim zrobimy efekt, ustalmy po co.", "Before making an effect, define its purpose.", "Każda decyzja projektowa powinna czemuś służyć. Wrażenie jest ważne, ale nie zastępuje kierunku.", "Every design decision should serve a purpose. An impression matters, but it does not replace direction.", "design"], ["digital", "Automatyzuj nudę. Zostaw miejsce na pomysł.", "Automate the boring. Make room for ideas.", "Powtarzalne zadania oddajmy systemowi. Zespołowi zostawmy uwagę potrzebną do rozmowy, decyzji i tworzenia.", "Let the system handle repetitive tasks. Leave your team the attention needed for conversations, decisions and creative work.", "product"], ["creation", "Kadr z góry. Pomysł przy ziemi.", "A view from above. An idea grounded in purpose.", "Dron ma opowiadać o miejscu i skali, a nie tylko pokazać, że potrafi latać. Najpierw historia, potem trajektoria.", "A drone should tell a story about place and scale, rather than merely show it can fly. Story first, flight path second.", "drone"], ["strategy", "Brief nie jest wyrokiem. Jest początkiem rozmowy.", "A brief is not a verdict. It starts a conversation.", "Pytamy o to, co kryje się za zamówionym formatem. Czasem firma potrzebuje uporządkowania oferty, zanim zamówi nową stronę.", "We ask what sits behind the requested format. Sometimes a business needs a clearer offer before a new website.", "local"], ["digital", "Strona może być piękna. I nie przeszkadzać.", "A website can be beautiful. And stay out of the way.", "Ruch, typografia i obraz mają ułatwiać odbiór. Dbamy też o szybkość, małe ekrany i sytuacje, których nie widać na makiecie.", "Motion, typography and imagery should support understanding. We also consider speed, small screens and states beyond the mockup.", "web"], ["creation", "Dobra historia nie pachnie stockiem.", "A good story does not smell like stock footage.", "Szukamy tego, co dzieje się naprawdę: ludzi, pracy i szczegółów, których konkurencja nie może po prostu skopiować.", "We look for what is real: people, their work and details competitors cannot simply copy.", "video"], ["strategy", "Klient nie szuka kampanii. Szuka powodu.", "Customers do not seek campaigns. They seek a reason.", "Powodu, by zaufać, wrócić albo wybrać właśnie Ciebie. Układamy komunikację wokół tej decyzji.", "A reason to trust, return or choose you. We shape communication around that decision.", "auto"], ["digital", "Mniej „gdzie to jest?”. Więcej „już zrobione”.", "Less “where is it?”. More “already done”.", "Jedno miejsce na kontekst, zadania i wynik. Tak projektujemy narzędzia, które pomagają zespołowi działać.", "One place for context, tasks and results. That is how we design tools that help a team get work done.", "product"], ["creation", "Ładnie to za mało, żeby było Twoje.", "Looking good is not enough to make it yours.", "Marka potrzebuje zasad, które da się rozpoznać w poście, katalogu i na stoisku. Budujemy spójny system, nie kolekcję przypadków.", "A brand needs rules that work across a post, a catalogue and an exhibition stand. We build a system, not a collection of accidents.", "design"], ["strategy", "Pierwsze wrażenie nie ma przycisku „ponów”.", "First impressions have no retry button.", "Porządkujemy pierwsze spotkanie z marką: obietnicę, dowód i następny krok. To musi tworzyć jedną historię.", "We shape the first encounter: a promise, proof and a next step. They need to tell one story.", "launch"], ["digital", "Nie każde „klik” oznacza „chcę”.", "Not every click means “I want it”.", "Sam ruch nie wystarcza do oceny kampanii. Patrzymy, dokąd prowadzi i czy ułatwia klientowi sensowną decyzję.", "Traffic alone cannot assess a campaign. We look at where it leads and whether it helps people make a meaningful decision.", "ads"], ["creation", "Zróbmy coś, czego nie da się pomylić z konkurencją.", "Make something people cannot mistake for a competitor.", "Szukamy własnego terytorium: tonu, rytmu i obrazu. Rozpoznawalność zaczyna się od decyzji, z czego rezygnujemy.", "We find a territory of your own: voice, rhythm and imagery. Recognition starts with deciding what to leave out.", "rebrand"], ["strategy", "B2B też czytają ludzie.", "People read B2B too.", "Kompetencje techniczne nie wymagają sztywnego języka. Pomagamy opowiadać o trudnych rzeczach jasno i wiarygodnie.", "Technical expertise does not require stiff language. We help explain complex work clearly and credibly.", "marine"], ["digital", "Twoja firma nie mieści się w gotowym szablonie?", "Your business does not fit a template?", "Porównujemy realny proces z ograniczeniami gotowych narzędzi. Własny produkt ma sens wtedy, gdy rozwiązuje konkretny problem.", "We compare the real workflow with off-the-shelf limitations. A custom product makes sense when it solves a specific problem.", "saas"], ["creation", "AI zrobi więcej. Ty zdecyduj, co warto.", "AI can make more. You decide what is worth making.", "Więcej materiałów nie oznacza lepszej komunikacji. Selekcja, perspektywa i odpowiedzialność za efekt nadal należą do ludzi.", "More material does not mean better communication. Selection, perspective and responsibility still belong to people.", "ai"], ["strategy", "Bądź odpowiedzią, zanim padnie telefon.", "Be the answer before the phone rings.", "Widoczność w wyszukiwarce łączymy z jasną ofertą i lokalnym kontekstem. Pomagamy klientowi trafić tam, gdzie znajdzie odpowiedź.", "We connect search visibility with a clear offer and local context. We help people find a useful answer.", "seo"]]);
+  items.push(...[["strategy", "Pozycja marki to miejsce w głowie.", "A brand position lives in the mind.", "Nie zajmujemy miejsca w kolejnym kanale dla samej obecności. Szukamy skojarzenia, które Twoja marka może zbudować i konsekwentnie wzmacniać.", "We do not enter another channel just to be present. We look for an association your brand can build and consistently strengthen.", "brand"], ["strategy", "Zanim skalujesz, sprawdź fundamenty.", "Check the foundations before scaling.", "Większy budżet potrafi powiększyć także zły pomysł. Zaczynamy od oferty, odbiorcy i dowodów, że komunikacja odpowiada na realną potrzebę.", "A larger budget can also amplify a poor idea. We start with the offer, the audience and evidence that the message answers a real need.", "strategy"], ["strategy", "Nie sprzedawaj cech. Uruchom wyobraźnię.", "Do not list features. Spark imagination.", "Przekładamy parametry na sytuacje z życia klienta. Pokazujemy, co produkt zmienia, zamiast zostawiać odbiorcę z listą danych.", "We turn specifications into situations customers recognise. We show what a product changes rather than leaving people with a list of facts.", "launch"], ["creation", "Zostaw ślad, nie szum.", "Leave a mark, not noise.", "Jedno własne spostrzeżenie jest więcej warte niż seria tekstów, które mogłyby należeć do dowolnej firmy. Zostawiamy w treści rozpoznawalny punkt widzenia.", "One original observation is worth more than a stream of copy that could belong to any company. We give content a recognisable point of view.", "ai"], ["creation", "Kadruj odważniej niż konkurencja.", "Frame it more boldly than the competition.", "Szukamy scen, gestów i detali, które mówią coś o marce. Kamera ma zauważyć historię, zanim zacznie ją efektownie pokazywać.", "We look for scenes, gestures and details that say something about the brand. The camera needs to notice the story before showing it beautifully.", "video"], ["creation", "Niech forma dotrzyma słowa.", "Let the form keep the promise.", "Jeśli marka mówi o precyzji, powinno być ją widać w układzie. Jeśli o odwadze — w decyzjach. Projekt i komunikat muszą się ze sobą zgadzać.", "If a brand speaks of precision, the layout should show it. If it speaks of courage, its choices should too. Design and message need to agree.", "design"], ["digital", "Mniej pól. Więcej „gotowe”.", "Fewer fields. More “done”.", "Każde pole formularza prosi o uwagę i czas. Zostawiamy to, co naprawdę potrzebne, i projektujemy jasne potwierdzenie następnego kroku.", "Every form field asks for attention and time. We keep what is needed and design a clear confirmation of the next step.", "web"], ["digital", "Klik to początek rozmowy.", "A click starts a conversation.", "Dopasowujemy obietnicę reklamy do tego, co czeka po drugiej stronie. Landing powinien rozwijać zainteresowanie, zamiast zaczynać zupełnie inny temat.", "We connect the ad’s promise to what awaits on the other side. A landing page should build on interest rather than start an unrelated subject.", "local"], ["digital", "Technologia nie musi być widoczna.", "Technology need not be visible.", "Najlepsze narzędzie pozwala skupić się na zadaniu. Ukrywamy złożoność tam, gdzie nie pomaga użytkownikowi podjąć decyzji.", "The best tool lets people focus on the task. We hide complexity where it does not help the user make a decision.", "saas"]]);
   const copy = {
     pl: { open:'Zacznij Proces',system:'PRZESTRZEŃ KREATYWNA',pause:'Ⅱ Zatrzymaj ruch',resume:'▷ Wznów ruch',reset:'↙ Zwiń',hint:'Przewiń. Zmień perspektywę.',last:'Przewiń w górę. Odkryj na nowo.',galaxy:'GALAKTYKA',strategy:'Strategia',creation:'Kreacja',digital:'Digital',strategyText:'Najpierw kierunek. Potem cała reszta.',creationText:'To, co masz do powiedzenia. W formie, której nie da się przeoczyć.',digitalText:'Pomysł nabiera kształtu. I zaczyna działać.' },
     en: { open:'Start the Process',system:'CREATIVE SPACE',pause:'Ⅱ Pause motion',resume:'▷ Resume motion',reset:'↙ Collapse',hint:'Scroll. Change perspective.',last:'Scroll up. Discover again.',galaxy:'GALAXY',strategy:'Strategy',creation:'Creative',digital:'Digital',strategyText:'Direction first. Everything else follows.',creationText:'What you have to say. In a form people cannot overlook.',digitalText:'The idea takes shape. And starts to work.' }
@@ -49,6 +50,7 @@
   let progress = 0, time = 0, last = 0, width = 0, height = 0, frame = 0, inView = true;
   let step = 900, depth = 0, targetDepth = 0, previousDepth = 0, enteringAt = 0, entryTimer;
   let settleTimer, programmaticUntil=0, lastScrollY=0, scrollDirection=1;
+  let connectionStarted=0;
   let visibleNodes = [], pointer = {x:0,y:0,active:false};
   const stars = Array.from({length:220},(_,i)=>({x:Math.sin(i*127.1)*.5+.5,y:Math.cos(i*311.7)*.5+.5,r:i%7===0?1.3:.65,phase:i*.43}));
   const nodes = items.map((item,i)=>{
@@ -111,6 +113,31 @@
       ctx.strokeStyle=`rgba(${rgb},${intensity*.14})`;ctx.lineWidth=1;ctx.stroke();
     }
   }
+  function paintConnection(cx,cy,now,g,opacity){
+    if(selected<0||nodes[selected].el.hidden)return false;
+    const node=nodes[selected],dx=node.x-cx,dy=node.y-cy,length=Math.max(1,Math.hypot(dx,dy));
+    const bend=Math.min(70,length*.18)*(dy<0?-1:1);
+    const control={x:(cx+node.x)/2-dy/length*bend,y:(cy+node.y)/2+dx/length*bend};
+    const age=now-connectionStarted;
+    const extension=reduced.matches?1:smooth(0,650,age);
+    const at=t=>({x:(1-t)*(1-t)*cx+2*(1-t)*t*control.x+t*t*node.x,y:(1-t)*(1-t)*cy+2*(1-t)*t*control.y+t*t*node.y});
+    const end=at(extension);
+    ctx.save();ctx.globalAlpha=opacity;ctx.lineCap='round';
+    ctx.beginPath();ctx.moveTo(cx,cy);ctx.quadraticCurveTo(control.x,control.y,node.x,node.y);
+    ctx.strokeStyle=`rgba(${g.rgb},.12)`;ctx.lineWidth=1;ctx.stroke();
+    ctx.beginPath();ctx.moveTo(cx,cy);
+    ctx.quadraticCurveTo(cx+(control.x-cx)*extension,cy+(control.y-cy)*extension,end.x,end.y);
+    ctx.strokeStyle=`rgba(${g.rgb},.9)`;ctx.lineWidth=1.6;ctx.shadowBlur=12;ctx.shadowColor=g.color;ctx.stroke();
+    if(!reduced.matches&&(extension<1||!paused)){
+      const t=extension<1?extension:((age-650)%1800)/1800;
+      const p=at(t);ctx.beginPath();ctx.arc(p.x,p.y,2.8,0,Math.PI*2);ctx.fillStyle='#f8edd4';ctx.shadowBlur=18;ctx.fill();
+    }
+    if(!reduced.matches&&age<850){
+      const t=age/850;ctx.beginPath();ctx.arc(cx,cy,17+t*29,0,Math.PI*2);
+      ctx.strokeStyle=`rgba(${g.rgb},${(1-t)*.6})`;ctx.lineWidth=1;ctx.shadowBlur=0;ctx.stroke();
+    }
+    ctx.restore();return !reduced.matches&&age<850;
+  }
   function draw(now){
     frame=0;
     const dt=Math.min((now-(last||now))/1000,.05);last=now;
@@ -169,14 +196,15 @@
       n.el.style.opacity=String(reveal*visibility);n.el.style.filter=travel>.02?`blur(${(travel*3).toFixed(2)}px)`:'none';
       // No invisible hit targets while the camera passes between galaxies.
       n.el.style.pointerEvents=visibility<.35?'none':'';n.el.tabIndex=reveal*visibility<.35?-1:0;
-      if(order%3===0||n.el.getAttribute('aria-pressed')==='true'){
+      if(order%3===0&&n.el.getAttribute('aria-pressed')!=='true'){
         ctx.beginPath();ctx.moveTo(cx,cy);ctx.lineTo(n.x,n.y);
-        ctx.strokeStyle=`rgba(${g.rgb},${n.el.getAttribute('aria-pressed')==='true'?.45:.06*visibility})`;ctx.stroke();
+        ctx.strokeStyle=`rgba(${g.rgb},${.06*visibility})`;ctx.stroke();
       }
     });
+    const connectionAnimating=paintConnection(cx,cy,now,g,visibility);
     $('.origin').style.opacity=String(1-travel*.85);
     $('.origin').style.transform=`translate(-50%,-50%) scale(${zoom.toFixed(3)})`;
-    if(ambient||depth!==targetDepth||progress<1)request();
+    if(ambient||depth!==targetDepth||progress<1||connectionAnimating)request();
   }
   function setOpen(value){
     clearTimeout(entryTimer);clearTimeout(settleTimer);closeDetail(false);
@@ -211,6 +239,8 @@
     selected=-1;$('.origin').classList.remove('is-selected');request();
   }
   function showDetail(i){
+    const changed=selected!==i||$('#detail').hidden;
+    if(changed)connectionStarted=performance.now();
     if(selected>=0)nodes[selected].el.setAttribute('aria-pressed','false');
     selected=i;$('.origin').classList.add('is-selected');nodes[i].el.setAttribute('aria-pressed','true');
     const item=items[i],destination=destinations[item[5]];
@@ -218,7 +248,17 @@
     $('#detail-title').textContent=item[lang==='pl'?1:2];$('#detail-description').textContent=item[lang==='pl'?3:4];
     const url=new URL(destination[0],location.origin);if(lang==='en')url.searchParams.set('lang','en');
     $('#detail-link').href=url.pathname+url.search+url.hash;$('#detail-link').textContent=destination[lang==='pl'?1:2]+' ↗';
-    $('#detail').hidden=false;$('#close-detail').focus({preventScroll:true});request();
+    const panel=$('#detail');
+    if(changed){
+      const r=nodes[i].el.getBoundingClientRect();
+      panel.dataset.side=r.x+r.width/2>innerWidth/2?'left':'right';
+    }
+    panel.hidden=false;
+    if(changed&&!reduced.matches){
+      panel.getAnimations().forEach(a=>a.cancel());
+      panel.animate([{opacity:0,transform:`translate(${panel.dataset.side==='left'?-18:18}px,8px)`},{opacity:1,transform:'translate(0,0)'}],{duration:340,easing:'cubic-bezier(.2,.8,.2,1)'});
+    }
+    $('#close-detail').focus({preventScroll:true});request();
   }
   function applyLanguage(){
     document.documentElement.lang=lang;
