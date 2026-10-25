@@ -1,3 +1,13 @@
+# Aktualizacja — 2026-10-25: Wszechświat, poprawka wejścia
+
+- Zgodnie z uwagą użytkownika usunięto nagłówek, ramę, instrukcję, plus i centralną gwiazdkę. Start: czarna kropka pośrodku pustej kremowej strony, płynnie zmieniająca kolor na złoto #e8a838.
+- Kliknięcie uruchamia 1,65 s przejście przez powiększającą się kropkę do pełnoekranowej ciemnej przestrzeni. Następnie pojawiają się wcześniejsze hasła, orbity i filtry.
+- Oryginalne logo assets/logo.png; kursor ring + kropka jak na stronie głównej, złoty hover, bez własnego kursora na dotyku. Wewnątrz złota kropka, po wybraniu hasła kremowa.
+- Playwright: środek ekranu, normalne wejście, reduced motion, wybór hasła/zmiana koloru, Escape, reset i telefon 390 px bez overflow — PASS. Składnia JS OK. Podgląd w aplikacji odświeżony.
+- Nadal lokalny prototyp; produkcja bez zmian.
+
+---
+
 # Aktualizacja — 2026-10-25: Wszechświat pomysłów (prototyp)
 
 - Gotowy oddzielny prototyp w prototypes/universe/: index.html, universe.css, universe.js. Canvas 2D + przyciski DOM, bez zależności JS i bez Blendera.
