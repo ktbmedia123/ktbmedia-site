@@ -3,6 +3,7 @@ import path from 'node:path';
 import vm from 'node:vm';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+import { buildProcessIdeasIndex } from './process-ideas-index.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
@@ -36,12 +37,17 @@ for (const entry of fs.readdirSync(root)) {
   fs.cpSync(path.join(root, entry), path.join(dist, entry), { recursive: true });
 }
 for (const url of hiddenPaths) fs.rmSync(path.join(dist, url), { recursive: true, force: true });
+const processIndex = buildProcessIdeasIndex(root, dist, isHiddenUrl);
 function walk(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     const file = path.join(dir, entry.name);
     if (entry.isDirectory()) { walk(file); continue; }
     if (!file.endsWith('.html')) continue;
     let html = fs.readFileSync(file, 'utf8');
+    if (path.relative(dist, file) === path.join('proces', 'index.html')) {
+      if (!html.includes('<!-- PROCESS_IDEAS_INDEX -->')) throw new Error('Brak miejsca na indeks pomysłów Procesu');
+      html = html.replace('<!-- PROCESS_IDEAS_INDEX -->', processIndex.html);
+    }
     if (!path.relative(dist, file).startsWith('admin' + path.sep) && !html.includes('/analytics.js')) {
       html = html.replace('</head>', '  <script src="/analytics.js?v=20261025-cookies" defer></script>\n</head>');
     }
@@ -53,9 +59,10 @@ function walk(dir) {
 }
 walk(dist);
 const llms = path.join(dist, 'llms.txt');
-fs.writeFileSync(llms, fs.readFileSync(llms, 'utf8').split('\n').filter(line => !hiddenLinks.some(url => line.includes(url))).join('\n'));
+fs.writeFileSync(llms, fs.readFileSync(llms, 'utf8').split('\n').filter(line => !hiddenLinks.some(url => line.includes(url))).map(line => line.startsWith('- Proces kreatywny KTB Media:') ? `- Proces kreatywny KTB Media: https://ktbmedia.eu/proces/ — interaktywna mapa strategii, kreacji i digital. Indeks ${processIndex.count} pomysłów PL/EN, z opisami i powiązanymi realizacjami oraz artykułami, jest dostępny w statycznym HTML pod https://ktbmedia.eu/proces/#process-ideas-index.` : line).join('\n'));
 // Force a real HTTP 404 even when a legacy redirect or SPA fallback matches.
 const redirects = path.join(dist, '_redirects');
 fs.writeFileSync(redirects, hiddenPaths.flatMap(url => [`${url} /404.html 404!`, `${url.slice(0, -1)} /404.html 404!`, `${url}* /404.html 404!`]).join('\n') + '\n' + fs.readFileSync(redirects, 'utf8'));
 execFileSync(process.execPath, [path.join(root, 'scripts/generate-sitemaps.mjs'), dist], { stdio: 'inherit' });
 console.log(`Build OK: ${cases.length - hidden.length} widocznych realizacji, ${hidden.length} ukrytych. Wynik: dist/`);
+console.log(`Proces: ${processIndex.count} pomysłów PL/EN w statycznym HTML i danych strukturalnych.`);
