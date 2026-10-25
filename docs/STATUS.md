@@ -1,3 +1,16 @@
+# Aktualizacja — 2026-10-25: Filmowa galaktyka, potrząsanie do kontaktu i indeks SEO/GEO
+
+- Jakość animacji zgodnie z preferencją użytkownika: pełniejsze wejście 3,4 s (420 promieni, 15 bram, 7 włókien i soczewka), także na telefonie. Bogatszy scroll: parallax, smugi i interpolacja atmosfery, z zachowaniem natywnych gestów i stabilnego svh.
+- Po 3 s w galaktyce wskazówka PL „Potrząśnij wszechświatem. Porozmawiajmy.” / EN „Shake the universe for contact”. Pasek 2,5 s, drżenie i zakłócenia odsłaniają kontakt, potem prawdziwe /kontakt/ z językiem. Przytrzymanie przycisku działa też myszą/klawiaturą oraz przy odmowie/braku czujnika.
+- Systemowe requestPermission dopiero po kliknięciu „Włącz potrząsanie”; cookies nie zastępują zgody czujnika. Reduced motion wyłącza drgania/glitch i skraca finał. Escape, zamknięcie, reset i opuszczenie galaktyki odpinają czujnik; brak niewidocznego ładowania.
+- 57 haseł i opisów w każdym języku także w statycznym HTML: czytelny indeks pod animacją, konkretne linki, kotwice, CollectionPage/ItemList i odnośnik w llms.txt. Jedno źródło danych universe.js, generowanie przy buildzie; ukryte realizacje nie są linkowane.
+- Walidacja: składnia/build/diff, 114 statycznych wpisów, 2×57 JSON-LD, wszystkie cele i pełny check-visibility — PASS. Playwright: wejście, scroll desktop/touch, 320×667 bez kolizji; pasek/zanik, przytrzymanie myszą i klawiaturą, mock zgody i odmowy, bezruch, potrząsanie z acceleration i accelerationIncludingGravity, Escape/reset, PL/EN kontakt oraz indeks/deep links — PASS. Czujnik testowany syntetycznymi zdarzeniami, nie fizycznym potrząsaniem telefonu.
+- Publikacja GitHub main → Netlify: 191821bff0ce964eec9d1179a5779fba96db9ff5; zasoby 20261025-cinematic-contact.
+- Kontrola produkcji: pełne wejście, opóźniona wskazówka PL, wheel do kolejnej galaktyki, przytrzymanie do rzeczywistego /kontakt/, angielska kotwica z 57 widocznymi hasłami i brak błędów JS — PASS. HTTP potwierdza 114 wpisów HTML, oba ItemList i link indeksu w llms.txt. Zrzuty output/playwright/rift-production-*.png.
+- Obsługa techniczna i decyzje w docs/PROCESS.md. Dalsze strojenie progu czujnika według odczuć na prawdziwym telefonie, jeśli potrzebne.
+
+---
+
 # Aktualizacja — 2026-10-25: Płynniejsze przewijanie Procesu
 
 - Telefon: kamera podąża za palcem, a domknięcie przejścia czeka na puszczenie i koniec natywnej bezwładności. Nowy dotyk natychmiast przerywa automatyczny przelot. Na desktopie także jedna krzywa płynnego wyhamowania zamiast nakładającego się wygładzania.
