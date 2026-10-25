@@ -51,7 +51,7 @@
   let step = 900, depth = 0, targetDepth = 0, previousDepth = 0, enteringAt = 0, entryTimer;
   let settleTimer, scrollFlight=null, touching=false, lastScrollY=0, scrollDirection=1;
   let compact=false, scene={left:0,top:0,width:0,height:0};
-  const ENTRY_DURATION=3400;
+  const ENTRY_DURATION=2100;
   let connectionStarted=0;
   let visibleNodes = [], pointer = {x:0,y:0,active:false};
   const stars = Array.from({length:220},(_,i)=>({x:Math.sin(i*127.1)*.5+.5,y:Math.cos(i*311.7)*.5+.5,r:i%7===0?1.3:.65,phase:i*.43,z:(i*.61803398875)%1}));
@@ -134,61 +134,21 @@
     ctx.restore();
   }
   function paintEntry(t){
-    const cx=width/2,cy=height/2,extent=Math.hypot(width,height)*.65;
-    const pull=smooth(0,.28,t),dive=smooth(.18,.78,t),arrival=smooth(.72,1,t);
-    const energy=smooth(.07,.27,t)*(1-smooth(.78,1,t));
-    ctx.save();
-    // The circular event horizon expands out of the original dot before the camera crosses it.
-    ctx.fillStyle=`rgba(12,14,12,${smooth(.15,.34,t)})`;ctx.fillRect(0,0,width,height);
-    const halo=ctx.createRadialGradient(cx,cy,0,cx,cy,extent);
-    halo.addColorStop(0,`rgba(232,168,56,${.08+energy*.16})`);
-    halo.addColorStop(.38,`rgba(176,113,39,${energy*.12})`);halo.addColorStop(1,'rgba(0,0,0,0)');
-    ctx.fillStyle=halo;ctx.fillRect(0,0,width,height);
-    const motion=pull*.28+dive*2.8;
-    ctx.lineCap='round';
-    for(let i=0;i<420;i++){
-      const seed=((Math.sin(i*91.117)*43758.5453)%1+1)%1;
-      const z=((seed-motion)%1+1)%1;
-      const radius=extent*.055/(z+.055);
-      const angle=i*2.399963+(1-z)*(.18+dive*.3)+dive*.48;
-      const squash=.8+.2*arrival;
-      const x=Math.cos(angle)*radius,y=Math.sin(angle)*radius*squash;
-      const tail=(.025+dive*.23)*(1-arrival*.9);
-      const alpha=(.14+(1-z)*.64)*smooth(0,.18,t)*(1-arrival*.85);
+    const cx=width/2,cy=height/2,intensity=Math.sin(t*Math.PI),clock=t*5,rgb='232,168,56',direction=1;
+    if(intensity<=.005)return;
+    for(let i=0;i<150;i++){
+      const a=i*2.39996+clock*.13;
+      const z=((i*.618+clock*.5)%1),r=Math.pow(z,2.6)*Math.max(width,height)*.85;
+      const x=Math.cos(a)*r,y=Math.sin(a)*r*.68;
       ctx.beginPath();ctx.moveTo(cx+x,cy+y);
-      ctx.lineTo(cx+x*(1+tail),cy+y*(1+tail));
-      ctx.strokeStyle=`rgba(${i%11===0?'241,236,218':i%17===0?'142,185,215':'232,168,56'},${alpha})`;
-      ctx.lineWidth=.45+(1-z)*1.7;ctx.stroke();
+      ctx.lineTo(cx+x*(1+intensity*.38*direction),cy+y*(1+intensity*.38*direction));
+      ctx.strokeStyle=`rgba(${rgb},${intensity*(.1+z*.65)})`;ctx.lineWidth=.3+z*1.4;ctx.stroke();
     }
-    // Nested curved gates and spiral filaments establish depth, not a flat starburst.
-    for(let i=0;i<15;i++){
-      const z=((i/15-motion*.38)%1+1)%1;
-      const r=extent*.045/(z+.045),rotation=dive*.35+(1-z)*.2;
-      ctx.beginPath();ctx.ellipse(cx,cy,r,r*.78,rotation,0,Math.PI*2);
-      ctx.strokeStyle=`rgba(232,168,56,${energy*Math.sin(z*Math.PI)*.32})`;
-      ctx.lineWidth=.6+(1-z)*1.2;ctx.stroke();
+    for(let j=0;j<4;j++){
+      const r=((clock*.3+j/4)%1)*Math.max(width,height)*.65;
+      ctx.beginPath();ctx.ellipse(cx,cy,Math.max(1,r),Math.max(1,r*.68),clock*.08,0,Math.PI*2);
+      ctx.strokeStyle=`rgba(${rgb},${intensity*.14})`;ctx.lineWidth=1;ctx.stroke();
     }
-    for(let strand=0;strand<7;strand++){
-      ctx.beginPath();
-      for(let j=0;j<=50;j++){
-        const z=j/50,r=24+z*z*extent*1.3;
-        const angle=strand*Math.PI*2/7+z*.65+dive*.65;
-        const x=cx+Math.cos(angle)*r,y=cy+Math.sin(angle)*r*.78;
-        if(j===0)ctx.moveTo(x,y);else ctx.lineTo(x,y);
-      }
-      ctx.strokeStyle=`rgba(232,168,56,${energy*.12})`;ctx.lineWidth=.7;ctx.stroke();
-    }
-    if(t<.66){
-      const radius=(compact?67.5:Math.max(62.5,Math.min(width*.07,95)))*(1-pull*.4)+Math.pow(dive,3)*extent*.24;
-      ctx.beginPath();ctx.arc(cx,cy,radius,0,Math.PI*2);ctx.fillStyle='#101310';ctx.fill();
-      ctx.shadowBlur=25+energy*30;ctx.shadowColor='#e8a838';ctx.strokeStyle=`rgba(244,190,90,${1-smooth(.39,.66,t)})`;
-      ctx.lineWidth=1.4+energy*1.5;ctx.stroke();ctx.shadowBlur=0;
-    }
-    // A single warm arrival bloom fades into the first constellation, without a white flash.
-    const bloom=Math.sin(smooth(.65,.96,t)*Math.PI)*.12;
-    const light=ctx.createRadialGradient(cx,cy,0,cx,cy,extent*.65);
-    light.addColorStop(0,`rgba(243,211,151,${bloom})`);light.addColorStop(1,'rgba(232,168,56,0)');
-    ctx.fillStyle=light;ctx.fillRect(0,0,width,height);ctx.restore();
   }
   function paintConnection(cx,cy,now,g,opacity){
     if(selected<0||nodes[selected].el.hidden)return false;

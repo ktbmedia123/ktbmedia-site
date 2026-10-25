@@ -84,17 +84,3 @@ header{position:fixed}
 @media(max-width:700px),(pointer:coarse){
   .idea,.idea:hover,.idea:focus-visible,.idea[aria-pressed=true]{transition:color .2s,border-color .2s,background .2s}
 }
-
-/* The click gets a dedicated, full-quality gravity dive; scroll keeps its own camera. */
-[data-state=entering] canvas{transition:none;opacity:1}
-.space-backdrop{transition:clip-path 1.35s cubic-bezier(.66,0,.18,1)}
-[data-state=entering] .orb{animation:gravity-seed 3.4s cubic-bezier(.3,0,.25,1) forwards}
-@keyframes gravity-seed{
-  0%{background:#e8a838;transform:scale(1);box-shadow:0 0 45px #e8a83835}
-  14%{background:#151713;transform:scale(.6);box-shadow:0 0 0 2px #f1c579,0 0 65px #e8a83870}
-  32%{background:#101310;transform:scale(2.6);opacity:1;box-shadow:0 0 0 1px #e8a838,0 0 100px #e8a83840}
-  48%,100%{transform:scale(12);opacity:0;box-shadow:none}
-}
-[data-state=open] #galaxy-heading{animation:constellation-arrive .85s cubic-bezier(.2,.8,.2,1) both}
-@keyframes constellation-arrive{from{translate:0 14px;filter:blur(5px)}to{translate:0 0;filter:none}}
-@media(prefers-reduced-motion:reduce){[data-state=open] #galaxy-heading{animation:none}}
