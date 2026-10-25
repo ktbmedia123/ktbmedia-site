@@ -43,7 +43,7 @@ function walk(dir) {
     if (!file.endsWith('.html')) continue;
     let html = fs.readFileSync(file, 'utf8');
     if (!path.relative(dist, file).startsWith('admin' + path.sep) && !html.includes('/analytics.js')) {
-      html = html.replace('</head>', '  <script src="/analytics.js?v=20261019" defer></script>\n</head>');
+      html = html.replace('</head>', '  <script src="/analytics.js?v=20261025-cookies" defer></script>\n</head>');
     }
     html = html.replace(/<li\b[^>]*>[\s\S]*?<\/li>/gi, block => hiddenLinks.some(url => block.includes(`href="${url}"`) || block.includes(`href="${url.replace(/\/$/, '')}"`)) ? '' : block);
     html = html.replace(/<section>\s*<h2>[^<]*<\/h2>\s*<ul>\s*<\/ul>\s*<\/section>/gi, '');

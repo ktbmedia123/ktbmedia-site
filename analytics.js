@@ -10,7 +10,6 @@
   let lastPage = '';
   let pageTimer;
   let banner;
-  let settings;
   window.dataLayer = window.dataLayer || [];
   // Google reads gtag commands as Arguments objects rather than ordinary arrays.
   function gtag() { window.dataLayer.push(arguments); }
@@ -69,7 +68,6 @@
     try { localStorage.setItem(STORAGE_KEY, JSON.stringify({ analytics: analytics, at: Date.now() })); } catch (_) {}
     updateConsent('update', analytics);
     if (banner) banner.hidden = true;
-    if (settings) settings.hidden = false;
     if (analytics) { loadContainer(); schedulePage(); }
     else {
       clearTimeout(pageTimer);
@@ -82,7 +80,7 @@
   function initBanner() {
     const en = document.documentElement.lang === 'en';
     const style = document.createElement('style');
-    style.textContent = '.ktb-consent[hidden],.ktb-consent-settings[hidden]{display:none!important}.ktb-consent{position:fixed;z-index:100001;left:20px;bottom:20px;width:min(460px,calc(100vw - 40px));box-sizing:border-box;padding:22px;background:#efe9dc;color:#1a1a1a;border:1px solid #1a1a1a;box-shadow:0 8px 28px #0002;font:14px/1.5 Arial,sans-serif}.ktb-consent h2{font:600 21px/1.2 Arial,sans-serif;margin:0 0 10px}.ktb-consent p{margin:0 0 14px}.ktb-consent a{color:inherit;text-decoration:underline}.ktb-consent-actions{display:flex;flex-wrap:wrap;gap:8px}.ktb-consent button,.ktb-consent-settings{cursor:pointer;font:600 12px/1.4 Arial,sans-serif;border:1px solid #1a1a1a;padding:11px 14px;background:#efe9dc;color:#1a1a1a}.ktb-consent button:first-child{background:#1a1a1a;color:#efe9dc}.ktb-consent-settings{position:fixed;z-index:100000;left:10px;bottom:10px;padding:6px 9px;font-weight:400}.ktb-consent button:focus-visible,.ktb-consent-settings:focus-visible{outline:3px solid #e8a838;outline-offset:3px}@media(max-width:600px){.ktb-consent{left:10px;bottom:10px;width:calc(100vw - 20px);padding:18px}}';
+    style.textContent = '.ktb-consent[hidden]{display:none!important}.ktb-consent{position:fixed;z-index:100001;left:20px;bottom:20px;width:min(460px,calc(100vw - 40px));box-sizing:border-box;padding:22px;background:#efe9dc;color:#1a1a1a;border:1px solid #1a1a1a;box-shadow:0 8px 28px #0002;font:14px/1.5 Arial,sans-serif}.ktb-consent h2{font:600 21px/1.2 Arial,sans-serif;margin:0 0 10px}.ktb-consent p{margin:0 0 14px}.ktb-consent a{color:inherit;text-decoration:underline}.ktb-consent-actions{display:flex;flex-wrap:wrap;gap:8px}.ktb-consent button{cursor:pointer;font:600 12px/1.4 Arial,sans-serif;border:1px solid #1a1a1a;padding:11px 14px;background:#efe9dc;color:#1a1a1a}.ktb-consent button:first-child{background:#1a1a1a;color:#efe9dc}.ktb-consent button:focus-visible{outline:3px solid #e8a838;outline-offset:3px}@media(max-width:600px){.ktb-consent{left:10px;bottom:10px;width:calc(100vw - 20px);padding:18px}}';
     document.head.appendChild(style);
     banner = document.createElement('section');
     banner.className = 'ktb-consent';
@@ -93,15 +91,9 @@
       '<a href="/polityka-prywatnosci/">' + (en ? 'Privacy policy' : 'Polityka prywatności') + '</a></p><div class="ktb-consent-actions"><button type="button">' + (en ? 'Allow analytics' : 'Zezwalam na analitykę') + '</button><button type="button">' + (en ? 'Necessary only' : 'Tylko niezbędne') + '</button></div>';
     banner.querySelectorAll('button')[0].addEventListener('click', function () { saveChoice(true); });
     banner.querySelectorAll('button')[1].addEventListener('click', function () { saveChoice(false); });
-    settings = document.createElement('button');
-    settings.type = 'button'; settings.className = 'ktb-consent-settings';
-    settings.textContent = en ? 'Cookie settings' : 'Ustawienia cookies';
-    settings.addEventListener('click', showBanner);
     const choice = readChoice();
     banner.hidden = !!choice;
-    settings.hidden = !choice;
     document.body.appendChild(banner);
-    document.body.appendChild(settings);
     if (choice && choice.analytics) { granted = true; updateConsent('update', true); loadContainer(); schedulePage(); }
   }
   window.KTBAnalytics = { showSettings: showBanner };

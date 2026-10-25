@@ -2643,7 +2643,7 @@ function PrivacyPolicy({
       p: 'Dostęp, sprostowanie, usunięcie, ograniczenie, przenoszenie, sprzeciw, cofnięcie zgody, skarga do Prezesa UODO (ul. Stawki 2, 00-193 Warszawa).'
     }, {
       h: '8. Cookies',
-      p: 'Techniczne, analityczne i marketingowe. Zarządzaj w ustawieniach przeglądarki.'
+      p: 'Zgodę na analitykę strony możesz zmienić lub cofnąć w każdej chwili przyciskiem poniżej.'
     }, {
       h: '9. Przekazywanie poza EOG',
       p: 'Google i Meta mogą przekazywać dane poza EOG na podstawie Standard Contractual Clauses Komisji Europejskiej.'
@@ -2651,7 +2651,7 @@ function PrivacyPolicy({
       h: '10. Zmiany',
       p: 'Zastrzegamy prawo do zmian. Aktualna wersja jest zawsze na tej stronie.'
     }],
-    updated: 'Ostatnia aktualizacja: kwiecień 2026'
+    updated: 'Ostatnia aktualizacja: październik 2026'
   } : {
     title: 'Privacy policy',
     sections: [{
@@ -2677,7 +2677,7 @@ function PrivacyPolicy({
       p: 'Access, rectification, erasure, restriction, portability, objection, consent withdrawal, complaint to UODO.'
     }, {
       h: '8. Cookies',
-      p: 'Technical, analytical, marketing. Manage in browser settings.'
+      p: 'You can change or withdraw your website analytics consent at any time using the button below.'
     }, {
       h: '9. International transfers',
       p: 'Google and Meta may transfer data outside EEA under Standard Contractual Clauses.'
@@ -2685,7 +2685,7 @@ function PrivacyPolicy({
       h: '10. Changes',
       p: 'We reserve the right to amend. Current version always on this page.'
     }],
-    updated: 'Last updated: April 2026'
+    updated: 'Last updated: October 2026'
   };
   return /*#__PURE__*/React.createElement("article", {
     className: "legal-page"
@@ -2701,7 +2701,11 @@ function PrivacyPolicy({
     dangerouslySetInnerHTML: {
       __html: s.p
     }
-  }))), /*#__PURE__*/React.createElement("p", {
+  }), i === 7 && React.createElement("button", {
+    type: "button",
+    className: "btn",
+    onClick: () => window.KTBAnalytics?.showSettings()
+  }, lang === 'pl' ? 'Zmień ustawienia cookies' : 'Change cookie settings'))), /*#__PURE__*/React.createElement("p", {
     className: "legal-updated mono"
   }, t.updated))));
 }
