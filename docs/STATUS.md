@@ -1,3 +1,18 @@
+# Aktualizacja — 2026-10-25: Proces jako publiczna podstrona
+
+- Przeniesiono gotową animację do /proces/ (proces/index.html, universe.css, universe.js). Menu Proces na komputerze i telefonie prowadzi do osobnego dokumentu; hero strony głównej pozostaje bez zmian.
+- Pod kropką „Zacznij Proces” / „Start the Process”. Rozbudowano przejście do 2,1 s: smugi, pierścienie tunelu, rozszerzenie kropki, fala i pojawianie się konstelacji. Bez plusa/gwiazdki; oryginalne logo i kursor zachowane.
+- 48 haseł PL/EN, w tym 23 nowe. Dwie konstelacje po 24 elementy, filtry Strategia/Kreacja/Digital i przycisk Więcej pomysłów.
+- Każde hasło ma konkretny cel wśród 18 opublikowanych case studies i artykułów. Etykieta linku opisuje cel; nie ma wspólnego odsyłania do kontaktu. Wszystkie cele istnieją w dist i są widoczne.
+- Zachowanie języka w przejściach przez ?lang=en. Na telefonie opis jest przypięty do widoku, także po kliknięciu hasła na dole strony.
+- Canonical, opis, OG, H1, no-JS fallback, /proces → /proces/ i sitemap (68 adresów). Analityka zgody jest wstrzykiwana przez dotychczasowy build.
+- Walidacja lokalna Playwright: normalne wejście, reduced motion, 24+24 hasła, filtry, reset, linki PL/EN, menu desktop/mobile i brak overflow przy 390 px — PASS. node --check, diff --check, build i kontrola wszystkich 48 celów — PASS.
+- Opublikowano przez git push na istniejący main: ac100b6e017d64bd805a199b2e26753847a9c767. GitHub/Netlify automatyczne wdrożenie. Produkcja /proces/ zwraca HTTP 200 i nowy napis.
+- Kontrola produkcji w przeglądarce: menu główne → Proces, nowa etykieta, 48 haseł i przejście do właściwego artykułu — PASS. Zrzuty w output/playwright/proces-production-*.png.
+- Lokalne źródła projektu zsynchronizowane z origin/main. Prototypes/universe/index.html jest tylko lokalnym przekierowaniem do /proces/; build nadal wyklucza prototypes i output.
+
+---
+
 # Aktualizacja — 2026-10-25: Wszechświat, poprawka wejścia
 
 - Zgodnie z uwagą użytkownika usunięto nagłówek, ramę, instrukcję, plus i centralną gwiazdkę. Start: czarna kropka pośrodku pustej kremowej strony, płynnie zmieniająca kolor na złoto #e8a838.
