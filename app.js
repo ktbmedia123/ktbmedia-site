@@ -3267,6 +3267,8 @@ function Footer({
   }), " pages visited this session")), /*#__PURE__*/React.createElement("div", null, "Pruszcz Gda\u0144ski \xB7 PL")));
 }
 function App() {
+  // The DOM is committed before the first paint: never uncover the SEO fallback.
+  React.useLayoutEffect(() => { window.KTB_PAGE_BOOT?.ready(); }, []);
   const [lang, setLang] = useState(() => new URLSearchParams(window.location.search).get('lang') === 'en' ? 'en' : 'pl');
   const path = usePath();
   const visitedCount = useVisitedPages(path);

@@ -5,6 +5,7 @@ import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { buildProcessIdeasIndex } from './process-ideas-index.mjs';
 import { buildMarineLanding } from './build-marine-landing.mjs';
+import { installPageBoot } from './page-boot.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
@@ -50,6 +51,7 @@ function walk(dir) {
     if (html.includes('src="/app.js') && !html.includes('src="/marine-landing.js')) {
       html = html.replace(/(<script src="\/app\.js)/, '<script src="/marine-landing.js?v=20261026-marine"></script>\n  $1');
     }
+    html = installPageBoot(html);
     if (path.relative(dist, file) === path.join('proces', 'index.html')) {
       if (!html.includes('<!-- PROCESS_IDEAS_INDEX -->')) throw new Error('Brak miejsca na indeks pomysłów Procesu');
       html = html.replace('<!-- PROCESS_IDEAS_INDEX -->', processIndex.html);
