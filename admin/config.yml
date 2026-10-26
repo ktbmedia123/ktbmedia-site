@@ -700,6 +700,13 @@ collections:
                         widget: list
                         required: false
                         field: { label: Opis po polsku, name: alt, widget: string }
+                      - label: Powiązane usługi i poradniki / Related services and guides
+                        name: relatedLinks
+                        widget: list
+                        required: false
+                        fields:
+                          - { label: Etykieta / Label, name: label, widget: string }
+                          - { label: Adres względny / Relative URL, name: href, widget: string }
                       - label: Notatki z procesu
                         name: notes
                         widget: list
@@ -1217,6 +1224,13 @@ collections:
                         widget: list
                         required: false
                         field: { label: English alt text, name: alt, widget: string }
+                      - label: Powiązane usługi i poradniki / Related services and guides
+                        name: relatedLinks
+                        widget: list
+                        required: false
+                        fields:
+                          - { label: Etykieta / Label, name: label, widget: string }
+                          - { label: Adres względny / Relative URL, name: href, widget: string }
                       - label: Process notes
                         name: notes
                         widget: list

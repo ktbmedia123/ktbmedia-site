@@ -239,7 +239,7 @@ function SmartLink({
   innerRef,
   ...rest
 }) {
-  const href = to.startsWith('/') && !to.includes('#') ? prettyPath(to) : to;
+  const href = to.startsWith('#') ? `/${to}` : to.startsWith('/') && !to.includes('#') ? prettyPath(to) : to;
   const onClick = e => {
     if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
     const isExternal = /^(?:https?:)?\/\//i.test(to) || /^(?:mailto|tel):/i.test(to);
@@ -411,8 +411,7 @@ const DIGITAL_SEO = {
     desc: 'Responsywna strona WWW GT Serwis Barniewice: usługi, marki, cennik, galeria warsztatu, blog i formularz. Zobacz projekt UX/UI, CMS i lokalne SEO.'
   }
 };
-function useSEO(lang, path) {
-  useEffect(() => {
+function getSEOMetadata(lang, path) {
     const base = lang === 'pl' ? 'Agencja marketingowa Gdańsk / Trójmiasto · KTB Media' : 'KTB Media — Marketing agency Gdańsk | Automotive marketing specialists';
     let meta;
     if (path.startsWith('/realizacje/digital/')) {
@@ -478,6 +477,11 @@ function useSEO(lang, path) {
         desc: lang === 'pl' ? 'Agencja marketingowa Gdańsk, Pruszcz Gdański, Tczew. Specjalizacja: marketing dla motoryzacji i warsztatów samochodowych. Google Ads, Meta Ads, SEO lokalne, strony WWW. Od 2022.' : 'Marketing agency in Pruszcz Gdański (near Gdańsk). Automotive & workshop specialists. Google Ads, Meta Ads, local SEO, web dev. Est. 2022.'
       };
     }
+  return meta;
+}
+function useSEO(lang, path) {
+  useEffect(() => {
+    const meta = getSEOMetadata(lang, path);
     document.title = meta.title;
     let md = document.querySelector('meta[name="description"]');
     if (!md) {
@@ -1671,13 +1675,14 @@ function PortfolioCatalog({
   }, /*#__PURE__*/React.createElement("h2", {
     className: "display",
     id: "work-catalog-title"
-  }, active.label), /*#__PURE__*/React.createElement("p", null, active.description)), /*#__PURE__*/React.createElement("div", {
+  }, active.label), /*#__PURE__*/React.createElement("p", null, active.description)), availableCategories.map(category => /*#__PURE__*/React.createElement("div", {
     className: "work-grid",
-    id: `work-panel-${active.id}`,
+    hidden: category.id !== active.id,
+    id: `work-panel-${category.id}`,
     role: "tabpanel",
-    "aria-labelledby": `work-tab-${active.id}`,
-    key: active.id
-  }, active.items.map((item, index) => /*#__PURE__*/React.createElement(SmartLink, {
+    "aria-labelledby": `work-tab-${category.id}`,
+    key: category.id
+  }, React.createElement("h3", {className: "work-panel-title"}, category.label), category.items.map((item, index) => /*#__PURE__*/React.createElement(SmartLink, {
     to: item.href,
     className: "work-card",
     target: item.external ? "_blank" : undefined,
@@ -1688,6 +1693,7 @@ function PortfolioCatalog({
   }, item.image ? item.scrollShowcase || item.previewVideo ? /*#__PURE__*/React.createElement(ProjectScreen, {
     item: item,
     image: item.previewVideo || item.image,
+    active: category.id === active.id,
     alt: `${item.title} - podgląd strony internetowej w mockupie MacBooka`
   }) : /*#__PURE__*/React.createElement("img", {
     src: item.image,
@@ -1703,7 +1709,7 @@ function PortfolioCatalog({
     className: "work-card-copy"
   }, /*#__PURE__*/React.createElement("div", {
     className: "work-card-meta mono"
-  }, /*#__PURE__*/React.createElement("span", null, item.subtitle || active.label), item.year && /*#__PURE__*/React.createElement("span", null, item.year)), /*#__PURE__*/React.createElement("h3", null, item.title), /*#__PURE__*/React.createElement("p", null, item.description), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("span", null, item.subtitle || category.label), item.year && /*#__PURE__*/React.createElement("span", null, item.year)), /*#__PURE__*/React.createElement("h3", null, item.title), /*#__PURE__*/React.createElement("p", null, item.description), /*#__PURE__*/React.createElement("div", {
     className: "work-card-footer"
   }, /*#__PURE__*/React.createElement("div", {
     className: "work-card-tags"
@@ -1714,7 +1720,7 @@ function PortfolioCatalog({
     "aria-hidden": "true"
   }, lang === 'pl' ? 'Zobacz' : 'View', " ", /*#__PURE__*/React.createElement(ArrowIcon, {
     size: 12
-  }))))))))));
+  })))))))))));
 }
 function CaseChart({
   data,
@@ -1981,6 +1987,13 @@ function LandingPage({ lang, config }) {
     size: 12
   })))));
 }
+function CaseRelatedLinks({ lang, links = [] }) {
+  if (!links.length) return null;
+  return React.createElement('section', {className: 'case-notes reveal'},
+    React.createElement('h2', {className: 'case-block-label mono'}, lang === 'pl' ? 'Powiązane usługi i poradniki' : 'Related services and guides'),
+    React.createElement('ul', {className: 'case-notes-list'}, links.map(link =>
+      React.createElement('li', {key: link.href}, React.createElement(SmartLink, {to: link.href}, link.label)))));
+}
 function CasePage({
   lang,
   slug
@@ -2174,7 +2187,7 @@ function CasePage({
     className: "case-notes-list"
   }, item.notes.map((n, j) => /*#__PURE__*/React.createElement("li", {
     key: j
-  }, n)))), /*#__PURE__*/React.createElement(SmartLink, {
+  }, n)))), React.createElement(CaseRelatedLinks, {lang, links: item.relatedLinks}), /*#__PURE__*/React.createElement(SmartLink, {
     to: `/realizacje/${next.slug}`,
     className: "case-next reveal"
   }, /*#__PURE__*/React.createElement("div", {
@@ -2196,7 +2209,8 @@ function ProjectScreen({
   item,
   image,
   alt,
-  eager
+  eager,
+  active = true
 }) {
   const device = getProjectDevice(item, image);
   const isVideo = /\.(?:m4v|mp4|webm)(?:\?|$)/i.test(image);
@@ -2207,10 +2221,10 @@ function ProjectScreen({
   }, /*#__PURE__*/React.createElement("div", {
     className: "project-device-screen"
   }, isVideo ? /*#__PURE__*/React.createElement("video", {
-    src: image,
+    src: active ? image : undefined,
     poster: item.coverImage,
-    autoPlay: !reduceMotion,
-    controls: reduceMotion,
+    autoPlay: active && !reduceMotion,
+    controls: active && reduceMotion,
     muted: true,
     loop: true,
     playsInline: true,

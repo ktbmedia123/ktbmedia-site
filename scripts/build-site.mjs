@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { buildProcessIdeasIndex } from './process-ideas-index.mjs';
 import { buildMarineLanding } from './build-marine-landing.mjs';
 import { installPageBoot } from './page-boot.mjs';
+import { prerenderPages } from './prerender-pages.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
@@ -33,13 +34,14 @@ const cleanSchema = value => {
 fs.writeFileSync(path.join(root, 'content.js'), `const COPY = ${JSON.stringify({ pl: data.pl, en: data.en }, null, 2)};\nwindow.COPY = COPY;\nwindow.KTB_VISIBILITY = ${JSON.stringify(config, null, 2)};\n`);
 fs.rmSync(dist, { recursive: true, force: true });
 fs.mkdirSync(dist);
-const excluded = new Set(['dist', 'prototypes', 'output', '.git', '.gitignore', 'node_modules', 'docs', 'scripts', 'AGENTS.md', 'CHANGES.md', 'README.md']);
+const excluded = new Set(['dist', 'prototypes', 'output', '.git', '.gitignore', 'node_modules', 'docs', 'scripts', 'seo', 'package.json', 'package-lock.json', 'AGENTS.md', 'CHANGES.md', 'README.md']);
 for (const entry of fs.readdirSync(root)) {
   if (excluded.has(entry) || entry.startsWith('.')) continue;
   fs.cpSync(path.join(root, entry), path.join(dist, entry), { recursive: true });
 }
 for (const url of hiddenPaths) fs.rmSync(path.join(dist, url), { recursive: true, force: true });
 buildMarineLanding(root, dist, data, isVisible);
+prerenderPages(root, dist, data);
 const processIndex = buildProcessIdeasIndex(root, dist, isHiddenUrl);
 function walk(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
