@@ -53,6 +53,7 @@ const loader = '<div id="ktb-page-loader" role="status"><span class="ktb-boot-do
 
 export function installPageBoot(html) {
   if (!html.includes('src="/app.js')) return html;
+  html = html.replace(/(href="\/styles\.css)(?:\?[^"']*)?"/g, '$1?v=20261026-seo"');
   const head = `<style id="ktb-page-boot-style">${style}</style><script id="ktb-page-boot">(${bootPage.toString()})();</script>`;
   html = html.replace(/(<meta name="viewport"[^>]*>)/, '$1\n' + head);
   html = html.replace(/(<body\b[^>]*>)/, '$1\n' + loader);
@@ -60,7 +61,8 @@ export function installPageBoot(html) {
   // Fetch the independent files in parallel; defer preserves their execution order.
   return html.replace(/<script\b[^>]*\bsrc="([^"]+)"[^>]*>/g, (tag, src) => {
     if (!/^https:\/\/unpkg\.com\/react(?:-dom)?@|^\/(?:content|landing-configs|cms-hydrator|marine-landing|app)\.js/.test(src)) return tag;
-    tag = tag.replace(/(\/(?:app|cms-hydrator)\.js)(?:\?[^"']*)?/, '$1?v=20261026-boot');
+    tag = tag.replace(/(\/(?:app|cms-hydrator|content)\.js)(?:\?[^"']*)?/, '$1?v=20261026-seo');
+    tag = tag.replace(/(\/landing-configs\.js)(?:\?[^"']*)?/, '$1?v=20261026-seo');
     return /\bdefer\b/.test(tag) ? tag : tag.replace('<script', '<script defer');
   });
 }
