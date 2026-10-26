@@ -1,3 +1,19 @@
+# Aktualizacja — 2026-10-26: Landing marine, fotografia Kormorana i czytelniejszy Proces
+
+- Rozbudowano istniejący /marketing-dla-branzy-morskiej/ w PL/EN: hero, 4 segmenty odbiorców, 6 usług, DDP Supply i RMDC, proces współpracy, pomiar, 9 FAQ i linki do właściwych podstron. Link w stopce. Hero strony głównej zachowane.
+- CMS jest jedynym źródłem treści. Wspólny marine-landing.js renderuje statyczny HTML i widok React; scripts/build-marine-landing.mjs generuje metadata, Service, FAQPage, BreadcrumbList i listę widocznych realizacji. Obsługa ukrycia realizacji zachowana. Dodano pola do panelu PL/EN.
+- Przy RMDC rzeczywista fotografia ORP Kormoran w doku Remontowej: Thomas Dahlstrøm Nielsen, CC BY 4.0, z widocznym podpisem, źródłem, licencją i informacją o pomniejszeniu. Projekt okrętu potwierdzony na oficjalnej stronie RMDC. Szczegóły w docs/MARINE.md.
+- Proces: wolny środek wszystkich galaktyk, także Kreacji z 20 hasłami. Na telefonie po 6 wybranych haseł na galaktykę, większy tekst i kontrast; wszystkie 57 nadal w desktopie i statycznym indeksie PL/EN.
+- Jedna linia kropka → notatka. Zamiast czarnego portalu jasna szczelina i poziome rozwinięcie: 198+616 ms (10% wolniej); zamknięcie 320 ms, toggle i reduced motion zachowane.
+- Kontakt przechodzi bezpośrednio na /kontakt/ po 2500 ms przytrzymania. Usunięto pośrednią scenę i 1450 ms opóźnienia. Pozostało wyłanianie po 6 s, wypełnienie, glitch, anulowanie i język; prefetch dokumentu przy rozpoczęciu gestu.
+- Dodatkowo przycisk wyceny nie zasłania już wyboru języka w otwartym menu mobilnym.
+- Walidacja lokalna: składnia JS, YAML panelu, build 68 adresów, check-visibility i diff — PASS. Statyczne teksty/9 FAQ/JSON-LD, licencja zdjęcia i linki — PASS. Playwright: landing desktop/390 px, FAQ, PL/EN i kontakt, wejście przez stopkę, treść bez JS i brak overflow; Proces desktop/390/320 px, brak kolizji w 3 galaktykach, pojedyncza linia/toggle i 198+616 ms, dotyk/touchcancel i klawiatura do kontaktu — PASS. Nawigacja lokalna po około 2,53 s (Enter) / 2,56 s (CDP touch), bez błędów JS. Testy telefonu w emulacji Chromium.
+- Publikacja GitHub main → Netlify: 25fde4ad103dbabbd3c138ccff4397cb775e79c2. Zasoby Procesu 20261026-clear-notes; marine 20261026-marine.
+- Produkcja: HTTP 200, statyczne H1/9 FAQ/Service/podpis zdjęcia, zgodność JPEG z lokalnym plikiem (213397 B) — PASS. Playwright: angielski landing i fotografia, normalne wejście mobilne Procesu, 6 haseł Kreacji bez kolizji z kropką, otwarcie/toggle i pełny dotyk do /kontakt/ — PASS, bez błędów JS. Zrzuty output/playwright/marine-kormoran-production-mobile.png i process-clear-production-mobile.png. Przy testach ruchomych haseł używać tap we współrzędnych po ustaleniu scrollY; locator.tap może czekać na stabilność i swoim scrollIntoView zmienić galaktykę.
+- Dalsze kroki: ocena przez użytkownika zdjęcia i nowego zachowania. Nie składano obietnic pozycji SEO/cytowań AI; obserwacja wyników wymaga danych po indeksacji.
+
+---
+
 # Aktualizacja — 2026-10-26: Przełączanie notatek i portal przy opisie
 
 - Ponowne kliknięcie tego samego hasła zamyka opis. Wybranie innego zmienia notatkę; zmiana języka aktualizuje otwartą treść.
