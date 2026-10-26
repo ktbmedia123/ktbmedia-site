@@ -63,7 +63,7 @@ function walk(dir) {
     }
     html = html.replace(/<li\b[^>]*>[\s\S]*?<\/li>/gi, block => hiddenLinks.some(url => block.includes(`href="${url}"`) || block.includes(`href="${url.replace(/\/$/, '')}"`)) ? '' : block);
     html = html.replace(/<section>\s*<h2>[^<]*<\/h2>\s*<ul>\s*<\/ul>\s*<\/section>/gi, '');
-    html = html.replace(/(<script\b[^>]*type="application\/ld\+json"[^>]*>)([\s\S]*?)(<\/script>)/gi, (_, open, json, close) => `${open}\n${JSON.stringify(cleanSchema(JSON.parse(json)), null, 2)}\n${close}`);
+    html = html.replace(/(<script\b[^>]*type="application\/ld\+json"[^>]*>)([\s\S]*?)(<\/script>)/gi, (_, open, json, close) => `${open}\n${JSON.stringify(cleanSchema(JSON.parse(json)), null, 2).replace(/</g, '\\u003c')}\n${close}`);
     fs.writeFileSync(file, html);
   }
 }

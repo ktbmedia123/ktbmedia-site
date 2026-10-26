@@ -14,6 +14,28 @@ export function visit(node, callback) {
   for (const child of node.childNodes || []) visit(child, callback);
 }
 
+function synchronizeFaq(html, markup) {
+  const text = node => node.nodeName === '#text' ? node.value : (node.childNodes || []).map(text).join(' ');
+  const questions = [];
+  visit(parse(markup), node => {
+    if (node.tagName !== 'details') return;
+    const summary = node.childNodes.find(child => child.tagName === 'summary');
+    if (!summary) return;
+    const question = text(summary).replace(/\s+/g, ' ').trim();
+    const answer = node.childNodes.filter(child => child !== summary).map(text).join(' ').replace(/\s+/g, ' ').trim();
+    if (question && answer) questions.push({'@type': 'Question', name: question, acceptedAnswer: {'@type': 'Answer', text: answer}});
+  });
+  function sync(schema) {
+    if ([schema['@type']].flat().includes('FAQPage')) return questions.length ? {...schema, mainEntity: questions} : null;
+    if (schema['@graph']) return {...schema, '@graph': schema['@graph'].map(sync).filter(Boolean)};
+    return schema;
+  }
+  return html.replace(/(<script\b[^>]*type="application\/ld\+json"[^>]*>)([\s\S]*?)(<\/script>)/g, (_, open, json, close) => {
+    const schema = sync(JSON.parse(json));
+    return schema ? open + JSON.stringify(schema).replace(/</g, '\\u003c') + close : '';
+  });
+}
+
 export function prerenderPages(root, dist, data) {
   const source = fs.readFileSync(path.join(root, 'app.js'), 'utf8');
   const mount = source.indexOf("ReactDOM.createRoot(document.getElementById('root'))");
@@ -72,6 +94,7 @@ export function prerenderPages(root, dist, data) {
       html = html.slice(0, location.startTag.endOffset) +
         '<div data-ktb-prerender="true">' + markup + '</div>' +
         html.slice(location.endTag.startOffset);
+      html = synchronizeFaq(html, markup);
       html = html.replace('</head>', `<noscript><style>
         body{cursor:auto!important}a,button{cursor:pointer!important}
         .ktb-cursor,.nav-burger,.lang-toggle,.mobile-menu,.sticky-quote{display:none!important}
