@@ -5464,6 +5464,10 @@ const COPY = {
         {
           "label": "Marketing dla branży automotive",
           "href": "/marketing-dla-motoryzacji"
+        },
+        {
+          "label": "Marketing dla branży morskiej",
+          "href": "/marketing-dla-branzy-morskiej/"
         }
       ]
     },
@@ -6545,88 +6549,185 @@ const COPY = {
           "rmdc"
         ],
         "why": [
-          "Rozumiemy długi proces sprzedaży i wieloosobowe decyzje w B2B.",
-          "Potrafimy pracować z ofertą techniczną bez upraszczania jej do pustych haseł.",
-          "Tworzymy materiały w stoczni, zakładzie, na statku i podczas targów.",
-          "Łączymy marketing z działaniami handlowców przed wydarzeniem i po nim."
+          "Łączymy komunikację marki z pracą handlowców: od pierwszego wyszukania firmy po materiały potrzebne przy zapytaniu ofertowym.",
+          "Przekładamy techniczną ofertę na zrozumiały język. Parametry, nazwy technologii i zakres odpowiedzialności weryfikujemy z zespołem klienta.",
+          "Pokazujemy prawdziwe projekty i ludzi. Zakres zdjęć, informacji o jednostkach oraz publikacji uzgadniamy przed produkcją.",
+          "Dobieramy kanały do odbiorcy i etapu sprzedaży. Regularnie sprawdzamy jakość kontaktów, nie tylko liczbę wyświetleń."
         ],
         "keyword": "marketing dla branży morskiej",
         "keywords": [
           "marketing dla branży morskiej",
           "marketing marine B2B",
           "agencja marketingowa marine",
-          "LinkedIn branża morska",
-          "marketing stoczniowy",
-          "organizacja targów marine",
-          "content B2B przemysł morski"
+          "marketing dla stoczni",
+          "LinkedIn dla firm morskich",
+          "SEO dla branży morskiej",
+          "marketing dla firm jachtowych"
         ],
         "related": [
           {
+            "label": "Poradnik: marketing B2B w branży morskiej",
+            "href": "/blog/marketing-b2b-w-branzy-morskiej/"
+          },
+          {
             "label": "Agencja marketingowa Gdynia",
-            "href": "/agencja-marketingowa-gdynia"
+            "href": "/agencja-marketingowa-gdynia/"
           },
           {
             "label": "Agencja marketingowa Gdańsk",
-            "href": "/agencja-marketingowa-gdansk"
+            "href": "/agencja-marketingowa-gdansk/"
           },
           {
-            "label": "Marketing dla producentów części",
-            "href": "/marketing-dla-producenta-czesci-samochodowych"
+            "label": "Poznaj KTB Media",
+            "href": "/o-nas/"
           }
         ],
         "slug": "marketing-dla-branzy-morskiej",
         "area": "branży morskiej",
         "context": [
-          "W branży morskiej pojedynczy kontrakt może dojrzewać miesiącami, a decyzja przechodzi przez dział techniczny, zakupowy i zarząd. Marketing nie powinien udawać szybkiego e-commerce. Jego rolą jest dostarczyć właściwe dowody, uporządkować ofertę i pomóc handlowcom utrzymać uwagę między pierwszym kontaktem a zapytaniem.",
-          "Dla DDP Supply wspieraliśmy komunikację na LinkedIn, działania wokół targów i produkcję materiałów w środowisku stoczniowym. Pokazywaliśmy ludzi, logistykę, bezpieczeństwo i realny kontekst pracy. Taki materiał działa jednocześnie jako dowód kompetencji, źródło contentu oraz wsparcie rozmów z partnerami.",
-          "Targi traktujemy jako kampanię, nie trzy dni na stoisku. Przed wydarzeniem przygotowujemy listę tematów, zaproszenia, komunikację ekspertów i plan spotkań. Na miejscu zbieramy materiał oraz leady z kontekstem. Po wydarzeniu uruchamiamy follow-up, publikacje i podsumowania, żeby inwestycja pracowała dłużej niż sam event.",
-          "Strona i materiały handlowe muszą odpowiadać na pytania o zakres, normy, doświadczenie i sposób współpracy. Rozbudowujemy case studies, profile ekspertów, karty usług i dokumenty do pobrania. Każdy element projektujemy tak, aby mógł zostać użyty przez handlowca przed spotkaniem, podczas rozmowy i w późniejszym follow-upie.",
-          "W działaniach międzynarodowych dbamy o wersje językowe, lokalny kontekst i spójne nazewnictwo techniczne. Nie publikujemy automatycznych tłumaczeń bez weryfikacji, ponieważ błąd w terminologii obniża wiarygodność bardziej niż prosty język. Priorytet otrzymują rynki, na których firma ma realną możliwość obsługi zapytań.",
-          "W projektach marine istotne są zgody i bezpieczeństwo. Produkcję planujemy wspólnie z osobą odpowiedzialną za teren, ustalamy zakres możliwych ujęć, wymagane środki ochrony i zasady pracy dronem. Dzięki temu zespół nie blokuje operacji, a materiał pozostaje zgodny z wymaganiami klienta. Dobre przygotowanie pozwala w krótkim czasie zebrać wiarygodny content, którego nie da się zastąpić biblioteką stockową."
+          "W marine o wyborze partnera decydują kompetencje, doświadczenie i zaufanie do zespołu. Innych dowodów potrzebuje inżynier, innych dział zakupów, a jeszcze innych zarząd. Dobra komunikacja pomaga każdej z tych osób zrozumieć, co firma dostarcza i dlaczego warto zaprosić ją do rozmowy.",
+          "Zaczynamy od oferty, odbiorców i pytań zadawanych podczas sprzedaży. Następnie łączymy stronę, case studies, LinkedIn i materiały handlowe w spójny system. Działamy z Pruszcza Gdańskiego, wspierając firmy z Gdańska, Gdyni, Trójmiasta i całej Polski. Komunikację PL/EN dopasowujemy do wybranych rynków i możliwości obsługi klienta."
         ],
         "faq": [
           {
-            "q": "Jak wygląda marketing firmy z branży morskiej?",
-            "a": "Najczęściej łączy stronę i case studies z LinkedIn, materiałami dla handlowców, obecnością na targach oraz regularnym pokazywaniem realizacji, kompetencji i zespołu."
+            "q": "Na czym polega marketing dla branży morskiej?",
+            "a": "Marketing dla branży morskiej pomaga firmom stoczniowym, projektowym, serwisowym i dostawcom marine jasno pokazać ofertę oraz kompetencje. Łączy strategię B2B, stronę internetową, case studies, SEO, LinkedIn, komunikację targową i materiały dla handlowców. Zakres dobiera się do odbiorcy, rynku i długości procesu zakupowego."
           },
           {
-            "q": "Czy LinkedIn działa w marine B2B?",
-            "a": "Tak, jeśli treści pochodzą od ekspertów i wspierają realny proces handlowy. Sama publikacja newsów firmowych rzadko wystarcza do budowania relacji z decydentami."
+            "q": "Dla jakich firm marine pracuje KTB Media?",
+            "a": "Nasza oferta jest skierowana do stoczni i podwykonawców, biur projektowych, dostawców wyposażenia, firm serwisowych oraz firm związanych z jachtami i obsługą jednostek. Na tej stronie pokazujemy dostępne realizacje z sektora marine oraz zakres wykonanych prac."
           },
           {
-            "q": "Jak wykorzystać targi branżowe?",
-            "a": "Plan zaczyna się przed wydarzeniem: umawianiem spotkań, komunikacją tematów i przygotowaniem materiałów. Po targach potrzebny jest szybki follow-up, content i porządek w leadach."
+            "q": "Ile kosztuje marketing firmy z branży morskiej?",
+            "a": "Wycenę przygotowujemy na podstawie zakresu usług, liczby rynków i języków, potrzeb produkcyjnych oraz posiadanych materiałów. Osobno ustalamy koszt obsługi, produkcji foto-wideo, wdrożenia strony i budżet reklamowy. Możemy zacząć od jednego projektu lub ułożyć stałą współpracę."
           },
           {
-            "q": "Czy możecie realizować zdjęcia na terenie stoczni?",
-            "a": "Tak, po uzgodnieniu zasad bezpieczeństwa i zakresu dostępu. Pracujemy z fotografią, wideo i dronem w środowisku przemysłowym oraz morskim."
+            "q": "Czy LinkedIn może wspierać sprzedaż w branży morskiej?",
+            "a": "LinkedIn może pomagać dotrzeć do osób technicznych, zakupowych i zarządzających oraz podtrzymywać kontakt po spotkaniach. Przygotowujemy treści pokazujące projekty, zespół i specjalizację firmy. Skuteczność oceniamy razem z handlowcami: przez jakość rozmów i dalsze etapy sprzedaży, a nie samą liczbę reakcji."
           },
           {
-            "q": "Co powinien zawierać case study B2B?",
-            "a": "Kontekst projektu, problem, zakres odpowiedzialności, proces, ograniczenia, dowody wykonania i rezultat. Techniczny klient potrzebuje konkretów, nie wyłącznie efektownego podsumowania."
+            "q": "Jak łączycie SEO i GEO dla firm marine?",
+            "a": "SEO rozwija widoczność strony w wyszukiwarkach, a GEO oznacza pracę nad obecnością treści w odpowiedziach narzędzi AI. W obu obszarach dbamy o czytelną ofertę, konkretne odpowiedzi, wiarygodne realizacje, dostępny tekst i spójne dane firmy. Nie gwarantujemy pozycji ani cytowania przez AI; obserwujemy widoczność i ruch prowadzący do zapytań."
           },
           {
-            "q": "Jak mierzyć działania marine B2B?",
-            "a": "Śledzimy jakościowe zapytania, spotkania, pobrania materiałów, aktywność kluczowych firm, skuteczność follow-upu i wpływ treści na kolejne etapy sprzedaży."
+            "q": "Czy przygotowujecie komunikację morską po angielsku?",
+            "a": "Tak. Tworzymy treści PL/EN na stronę, LinkedIn, do prezentacji i materiałów targowych. Nazwy usług, terminologię techniczną i informacje o realizacjach uzgadniamy z ekspertami po stronie klienta. Komunikację dopasowujemy do konkretnego rynku oraz odbiorcy."
+          },
+          {
+            "q": "Jak wspieracie udział w targach branży morskiej?",
+            "a": "Przed targami porządkujemy przekaz, przygotowujemy materiały i komunikację zapraszającą do spotkań. Podczas wydarzenia możemy zbierać materiał foto-wideo i relacjonować obecność zespołu. Po wydarzeniu przygotowujemy treści i materiały do dalszego kontaktu handlowców z poznanymi osobami."
+          },
+          {
+            "q": "Czy możecie nagrywać w stoczni lub na jednostce?",
+            "a": "Produkcję planujemy po uzgodnieniu dostępu, zasad bezpieczeństwa i zakresu publikacji z gospodarzem obiektu. Przed zdjęciami ustalamy, które osoby, jednostki, dokumenty i parametry mogą być widoczne. Ewentualne ujęcia z drona zależą od warunków miejsca i wymaganych zezwoleń."
+          },
+          {
+            "q": "Po czym poznać, że marketing B2B działa?",
+            "a": "Sprawdzamy źródła zapytań, ich zgodność z ofertą, liczbę spotkań i przejście kontaktów do kolejnych etapów sprzedaży. Wspólnie z klientem ustalamy definicję wartościowego leada. W długim procesie B2B uwzględniamy także wykorzystanie case studies, prezentacji i materiałów przez handlowców."
           }
         ],
         "title": "Marketing dla branży morskiej i marine B2B · KTB Media",
         "type": "industry",
         "hero": {
           "h1": "Marketing dla branży morskiej",
-          "lead": "Pomagamy firmom marine i stoczniowym pokazać kompetencje, ludzi oraz skalę realizacji. Łączymy komunikację B2B, LinkedIn, wydarzenia, materiały handlowe, strony WWW i produkcję w wymagającym środowisku."
+          "lead": "KTB Media łączy strategię B2B, LinkedIn, strony WWW, SEO i materiały handlowe dla firm marine. Pomagamy przełożyć wiedzę techniczną na komunikację, która otwiera rozmowy z właściwymi klientami."
         },
-        "description": "Marketing dla branży morskiej, stoczniowej i marine B2B: LinkedIn, targi, content ekspercki, strony WWW, materiały sprzedażowe oraz produkcja foto-wideo.",
+        "description": "Marketing dla branży morskiej: strategia B2B, LinkedIn, SEO, strony WWW, targi i foto-wideo. Zobacz realizacje DDP Supply i Remontowa Marine Design.",
         "services": [
-          "Strategia komunikacji marine B2B",
-          "LinkedIn firmowy i profile ekspertów",
-          "Organizacja komunikacji wokół targów branżowych",
-          "Strony WWW, case studies i content ekspercki",
-          "Katalogi, prezentacje i materiały dla handlowców",
-          "Produkcja foto-wideo, dron i dokumentacja realizacji",
-          "Kampanie ABM, remarketing i pomiar leadów"
+          "Strategia i pozycjonowanie marki marine",
+          "LinkedIn i komunikacja ekspercka",
+          "Strony WWW, SEO i widoczność w AI",
+          "Targi i materiały dla sprzedaży",
+          "Fotografia, wideo i employer branding",
+          "Kampanie i pomiar zapytań B2B"
         ],
-        "key": "marine"
+        "key": "marine",
+        "marine": {
+          "eyebrow": "Marine / B2B / KTB Media",
+          "promise": "Kompetencje macie. Nadajmy im zasięg.",
+          "introTitle": "Zanim pojawi się kontrakt, musi pojawić się zaufanie.",
+          "segmentsTitle": "Jedna branża. Różne kursy.",
+          "servicesTitle": "Od specjalizacji do rozpoznawalnej marki.",
+          "proofTitle": "Znamy ten sektor z pracy.",
+          "processTitle": "Kierunek ustalamy wspólnie.",
+          "measurementTitle": "Mierzymy drogę do rozmowy.",
+          "finalTitle": "Czas wypłynąć z dobrą komunikacją.",
+          "finalText": "Napisz, czym zajmuje się Twoja firma, do kogo chce dotrzeć i na jakich rynkach działa. Wrócimy z propozycją zakresu i wyceną.",
+          "cta": "Porozmawiajmy o Twojej firmie",
+          "secondaryCta": "Zobacz doświadczenie marine",
+          "segments": [
+            {
+              "title": "Stocznie i podwykonawcy",
+              "text": "Pokazujemy zakres prac, zaplecze i sposób prowadzenia projektów. Porządkujemy ofertę dla osób odpowiedzialnych za technikę, zakupy i wybór wykonawców."
+            },
+            {
+              "title": "Biura projektowe i inżynieria",
+              "text": "Przekładamy złożone kompetencje na czytelne portfolio, prezentacje i treści ekspertów. Łączymy budowanie marki z komunikacją do partnerów i kandydatów."
+            },
+            {
+              "title": "Dostawcy i serwis marine",
+              "text": "Wyjaśniamy, co dostarczacie, gdzie działacie i jak wygląda współpraca. Rozwijamy karty usług oraz materiały wspierające zapytania i rozmowy handlowe."
+            },
+            {
+              "title": "Yachting i wyposażenie jednostek",
+              "text": "Łączymy jakość wizualną z konkretem: zakresem usług, produktami, procesem i realizacjami. Dopasowujemy przekaz do właścicieli, zarządców i partnerów B2B."
+            }
+          ],
+          "serviceNotes": [
+            "Porządkujemy segmenty odbiorców, przewagi i język oferty. Powstaje kierunek komunikacji, z którego korzystają marketing, zarząd i sprzedaż.",
+            "Tworzymy treści firmowe i eksperckie PL/EN: projekty, perspektywa zespołu, odpowiedzi na pytania klientów. Planujemy stały rytm i tematy publikacji.",
+            "Budujemy czytelne strony usług i realizacji. Łączymy techniczne SEO z treściami odpowiadającymi na pytania klientów i porządkiem informacji dla wyszukiwarek oraz narzędzi AI.",
+            "Przygotowujemy prezentacje, katalogi, treści zaproszeń i komunikację wydarzenia. Materiały mają pomagać przed spotkaniem, przy stoisku i podczas dalszych rozmów.",
+            "Dokumentujemy projekty, ludzi i zaplecze. Tworzymy materiały na stronę, do social mediów, prezentacji oraz rekrutacji — w uzgodnionym zakresie dostępu i publikacji.",
+            "Dobieramy Google Ads, LinkedIn Ads lub remarketing do celu i budżetu. Ustalamy pomiar kontaktów oraz sposób oceny jakości zapytań z zespołem sprzedaży."
+          ],
+          "steps": [
+            {
+              "title": "Poznajemy ofertę",
+              "text": "Rozmawiamy o usługach, klientach i procesie sprzedaży. Sprawdzamy obecną stronę, materiały, kanały oraz dostępne dane."
+            },
+            {
+              "title": "Wyznaczamy priorytety",
+              "text": "Ustalamy odbiorców, rynki, komunikaty i zakres pierwszego etapu. Określamy odpowiedzialności, budżet oraz sposób oceny efektów."
+            },
+            {
+              "title": "Tworzymy i wdrażamy",
+              "text": "Przygotowujemy treści, projekt strony i materiały. Zespół techniczny klienta zatwierdza informacje, a my dbamy o spójne wykonanie."
+            },
+            {
+              "title": "Sprawdzamy i rozwijamy",
+              "text": "Analizujemy zapytania i informacje od handlowców. Rozwijamy treści i kanały, które pomagają docierać do właściwych klientów."
+            }
+          ],
+          "measurements": [
+            {
+              "title": "Jakość zapytań",
+              "text": "Czy kontakt pasuje do usług, rynku i skali projektów firmy?"
+            },
+            {
+              "title": "Rozmowy i szanse",
+              "text": "Które działania prowadzą do spotkań, ofert i kolejnych etapów sprzedaży?"
+            },
+            {
+              "title": "Widoczność oferty",
+              "text": "Czy klienci trafiają na właściwe usługi i znajdują odpowiedzi na swoje pytania?"
+            }
+          ],
+          "caseImages": [
+            {
+              "slug": "rmdc",
+              "image": "/assets/marine-rmdc-orp-kormoran-dock.jpg",
+              "alt": "ORP Kormoran w doku nr 1 Gdańskiej Stoczni Remontowa",
+              "caption": "ORP Kormoran — projekt RMDC",
+              "author": "Thomas Dahlstrøm Nielsen",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:ORP_Kormoran_(ship,_2017)_in_Dok_1_-_Gda%C5%84sk_Shiprepair_Yard_Remontowa.jpg",
+              "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+              "licenseLabel": "CC BY 4.0",
+              "changeNote": "Pomniejszenie do 1280 px.",
+              "projectUrl": "https://rmdc.rh.pl/references/orp-kormoran"
+            }
+          ]
+        }
       },
       "marketing-dla-motoryzacji": {
         "cases": [
@@ -9047,6 +9148,10 @@ const COPY = {
         {
           "label": "Marketing dla branży automotive",
           "href": "/marketing-dla-motoryzacji"
+        },
+        {
+          "label": "Maritime marketing",
+          "href": "/marketing-dla-branzy-morskiej/"
         }
       ]
     },
@@ -9765,6 +9870,189 @@ const COPY = {
           "Branding, rebranding, materiały POS i wsparcie sprzedaży"
         ],
         "key": "automotive"
+      },
+      "marketing-dla-branzy-morskiej": {
+        "cases": [
+          "ddp-supply",
+          "rmdc"
+        ],
+        "why": [
+          "We connect brand communication with sales: from the first search for your company to the materials needed for an enquiry.",
+          "We make technical offers clear. Your experts verify specifications, technology names and the scope of responsibility.",
+          "We show real projects and people. Access, vessel information and publication permissions are agreed before production.",
+          "We match channels to the audience and sales stage. We review the quality of contacts, not just impressions."
+        ],
+        "keyword": "maritime marketing",
+        "keywords": [
+          "maritime marketing",
+          "marine B2B marketing",
+          "shipyard marketing",
+          "LinkedIn for maritime companies"
+        ],
+        "related": [
+          {
+            "label": "Guide: B2B marketing in the maritime industry",
+            "href": "/blog/marketing-b2b-w-branzy-morskiej/"
+          },
+          {
+            "label": "Marketing agency in Gdynia",
+            "href": "/agencja-marketingowa-gdynia/"
+          },
+          {
+            "label": "Marketing agency in Gdańsk",
+            "href": "/agencja-marketingowa-gdansk/"
+          },
+          {
+            "label": "Meet KTB Media",
+            "href": "/o-nas/"
+          }
+        ],
+        "slug": "marketing-dla-branzy-morskiej",
+        "area": "the maritime industry",
+        "context": [
+          "In marine B2B, capability, experience and trust help shape the choice of a partner. Engineers, procurement teams and management need different evidence. Clear communication helps each of them understand what your company delivers and why it belongs in the conversation.",
+          "We start with your offer, audience and the questions that come up in sales. Then we connect your website, case studies, LinkedIn and sales materials. Based in Pruszcz Gdański, we support companies in Gdańsk, Gdynia, the Tri-City and across Poland. Polish and English communication is tailored to selected markets and your ability to serve them."
+        ],
+        "faq": [
+          {
+            "q": "What does maritime marketing involve?",
+            "a": "Maritime marketing helps shipyards, engineering offices, service companies and marine suppliers communicate their offer and capabilities. It combines B2B strategy, websites, case studies, SEO, LinkedIn, trade-show communication and sales materials. The scope depends on the audience, market and buying process."
+          },
+          {
+            "q": "Which marine companies does KTB Media support?",
+            "a": "Our offer is designed for shipyards and subcontractors, engineering offices, equipment suppliers, service businesses and companies in yachting and vessel support. This page presents our available marine case studies and the work delivered."
+          },
+          {
+            "q": "How much does marine marketing cost?",
+            "a": "We quote according to the scope, markets, languages, production requirements and existing materials. Agency work, photo and video production, website development and advertising spend are agreed separately. We can start with one project or plan an ongoing collaboration."
+          },
+          {
+            "q": "Can LinkedIn support maritime B2B sales?",
+            "a": "LinkedIn can help reach technical, procurement and management audiences and maintain contact after meetings. We create content about projects, people and expertise. We assess progress with your sales team through relevant conversations and sales stages, not reactions alone."
+          },
+          {
+            "q": "How do you combine SEO and GEO for marine companies?",
+            "a": "SEO develops search visibility; GEO focuses on the presence of content in AI-generated answers. Both rely on a clear offer, specific answers, credible work, accessible text and consistent company information. We do not guarantee rankings or AI citations. We monitor visibility and traffic leading to enquiries."
+          },
+          {
+            "q": "Do you create maritime content in English and Polish?",
+            "a": "Yes. We prepare Polish and English content for websites, LinkedIn, presentations and trade shows. Service names, technical terminology and project information are reviewed with your experts. Communication is adapted to the intended audience and market."
+          },
+          {
+            "q": "How do you support maritime trade shows?",
+            "a": "Before the event, we clarify the message and prepare materials and communication inviting people to meet. During the show, we can produce photo and video coverage. Afterwards, we develop content and materials that help your sales team follow up with contacts."
+          },
+          {
+            "q": "Can you film in a shipyard or aboard a vessel?",
+            "a": "Production is planned with the site operator after access, safety requirements and publication scope are agreed. We establish which people, vessels, documents and specifications may be shown. Drone footage depends on site conditions and the necessary permissions."
+          },
+          {
+            "q": "How do you assess B2B marketing performance?",
+            "a": "We review enquiry sources, fit with the offer, meetings and progression through sales stages. We agree what a qualified lead means for your company. For longer B2B cycles, we also consider how sales teams use case studies, presentations and supporting materials."
+          }
+        ],
+        "title": "Maritime marketing & marine B2B · KTB Media",
+        "type": "industry",
+        "hero": {
+          "h1": "Marketing for the maritime industry",
+          "lead": "KTB Media brings together B2B strategy, LinkedIn, websites, SEO and sales materials for marine companies. We turn technical expertise into communication that starts conversations with the right customers."
+        },
+        "description": "Marine B2B marketing: strategy, LinkedIn, SEO, websites, trade shows and visual content. Explore our work for DDP Supply and Remontowa Marine Design.",
+        "services": [
+          "Marine brand strategy and positioning",
+          "LinkedIn and expert communication",
+          "Websites, SEO and AI search visibility",
+          "Trade shows and sales materials",
+          "Photography, video and employer branding",
+          "Campaigns and B2B enquiry measurement"
+        ],
+        "key": "marine",
+        "marine": {
+          "eyebrow": "Marine / B2B / KTB Media",
+          "promise": "You have the expertise. Let’s give it reach.",
+          "introTitle": "Before a contract comes trust.",
+          "segmentsTitle": "One industry. Different courses.",
+          "servicesTitle": "From specialist expertise to a recognised brand.",
+          "proofTitle": "Experience built in the sector.",
+          "processTitle": "We set the course together.",
+          "measurementTitle": "Measuring the path to a conversation.",
+          "finalTitle": "Give your communication a wider horizon.",
+          "finalText": "Tell us what your company does, who you want to reach and which markets you serve. We will come back with a proposed scope and a quote.",
+          "cta": "Let’s talk about your company",
+          "secondaryCta": "Explore our marine experience",
+          "segments": [
+            {
+              "title": "Shipyards and subcontractors",
+              "text": "We show your scope, facilities and approach to delivery. We structure the offer for technical, procurement and supplier-selection teams."
+            },
+            {
+              "title": "Design offices and engineering",
+              "text": "We turn complex expertise into clear portfolios, presentations and expert content. Brand communication also supports partnerships and recruitment."
+            },
+            {
+              "title": "Marine suppliers and service",
+              "text": "We explain what you deliver, where you operate and how collaboration works. Service pages and sales materials help prospective customers make informed enquiries."
+            },
+            {
+              "title": "Yachting and vessel equipment",
+              "text": "We connect visual quality with substance: services, products, processes and completed work. Messages are tailored to owners, managers and B2B partners."
+            }
+          ],
+          "serviceNotes": [
+            "We define audience segments, strengths and the language of your offer. The result is a shared direction for marketing, management and sales.",
+            "We develop Polish and English company and expert content: projects, team perspectives and answers to customer questions, with a clear publishing plan.",
+            "We build clear service and project pages. Technical SEO works alongside useful answers and well-organised information for search engines and AI tools.",
+            "We prepare presentations, catalogues, invitations and event communication. Materials support conversations before, during and after the show.",
+            "We document projects, people and facilities for websites, social media, presentations and recruitment, within the agreed access and publication scope.",
+            "We select Google Ads, LinkedIn Ads or remarketing according to goals and budget. We agree how to measure enquiries and review their quality with sales."
+          ],
+          "steps": [
+            {
+              "title": "Understand the offer",
+              "text": "We discuss services, customers and the buying process, then review your website, materials, channels and available data."
+            },
+            {
+              "title": "Set priorities",
+              "text": "We agree audiences, markets, messages and the first stage of work, including responsibilities, budget and success criteria."
+            },
+            {
+              "title": "Create and launch",
+              "text": "We prepare content, the website design and materials. Your technical team validates the information; we ensure consistent execution."
+            },
+            {
+              "title": "Review and develop",
+              "text": "We analyse enquiries and sales feedback, then develop the content and channels that help reach relevant customers."
+            }
+          ],
+          "measurements": [
+            {
+              "title": "Enquiry quality",
+              "text": "Does the contact fit your services, markets and project scale?"
+            },
+            {
+              "title": "Conversations and opportunities",
+              "text": "Which activities lead to meetings, proposals and further sales stages?"
+            },
+            {
+              "title": "Offer visibility",
+              "text": "Do customers find the right services and the answers they need?"
+            }
+          ],
+          "caseImages": [
+            {
+              "slug": "rmdc",
+              "image": "/assets/marine-rmdc-orp-kormoran-dock.jpg",
+              "alt": "ORP Kormoran in Dock 1 at Gdańsk Shiprepair Yard Remontowa",
+              "caption": "ORP Kormoran — RMDC design",
+              "author": "Thomas Dahlstrøm Nielsen",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:ORP_Kormoran_(ship,_2017)_in_Dok_1_-_Gda%C5%84sk_Shiprepair_Yard_Remontowa.jpg",
+              "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+              "licenseLabel": "CC BY 4.0",
+              "changeNote": "Resized to 1280 px.",
+              "projectUrl": "https://rmdc.rh.pl/references/orp-kormoran"
+            }
+          ]
+        }
       }
     },
     "team": {

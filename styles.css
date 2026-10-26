@@ -6050,3 +6050,126 @@ a:focus-visible {
     aspect-ratio: 3 / 2;
   }
 }
+
+/* Marine: editorial landing; shared by the static build and PL/EN client view. */
+.marine-page { --marine-rule: #14121030; }
+.marine-page p { line-height: 1.65; }
+.marine-page section[id] { scroll-margin-top: 100px; }
+.marine-page a { text-underline-offset: 5px; }
+.marine-page a:focus-visible, .marine-page summary:focus-visible { outline: 2px solid var(--accent-deep); outline-offset: 6px; }
+.marine-breadcrumb { display:flex; gap:12px; font-size:11px; padding:0 0 35px; opacity:.7; }
+.marine-hero { padding-top:130px; }
+.marine-hero-grid { display:grid; grid-template-columns:1.15fr 1fr; gap:48px; align-items:center; }
+.marine-hero h1 { font-size:clamp(42px,5.5vw,82px); line-height:.99; letter-spacing:-.055em; margin-top:26px; max-width:750px; text-wrap:balance; }
+.marine-gold { color:var(--accent-deep); }
+.marine-promise { font-family:var(--font-serif); font-style:italic; font-size:clamp(24px,2.6vw,36px); line-height:1.15!important; margin:26px 0 20px; max-width:530px; }
+.marine-lead { max-width:580px; font-size:16px; color:var(--ink-60); }
+.marine-cta-row { display:flex; align-items:flex-start; flex-direction:column; gap:22px; margin-top:28px; }
+.marine-text-link { display:inline-flex; align-items:center; gap:18px; font-weight:600; font-size:14px; }
+.marine-text-link:hover { color:var(--accent-deep); }
+.marine-hero-figure { position:relative; margin:0; background:var(--ink); color:var(--bg); align-self:stretch; min-height:590px; }
+.marine-hero-figure>img { position:absolute; width:100%; height:100%; object-fit:cover; object-position:50% 50%; }
+.marine-hero-figure:after { content:""; position:absolute; inset:40% 0 0; background:linear-gradient(transparent,#09191be6); pointer-events:none; }
+.marine-hero-figure figcaption { position:absolute; bottom:28px; left:28px; right:28px; z-index:1; display:flex; flex-direction:column; gap:12px; }
+.marine-hero-figure figcaption .mono { font-size:10px; letter-spacing:.1em; }
+.marine-hero-figure figcaption a { font-size:26px; display:flex; justify-content:space-between; }
+.marine-compass { position:absolute; top:22px; right:24px; border:1px solid #ffffff70; border-radius:50%; width:48px; height:48px; display:grid; place-items:center; font-size:30px; font-weight:300; }
+.marine-section-nav { display:flex; flex-wrap:wrap; gap:24px; padding:26px 0; margin-top:48px; border-block:1px solid var(--marine-rule); }
+.marine-section-nav a { display:flex; align-items:center; gap:12px; font-size:13px; font-weight:600; }
+.marine-section-nav .mono { color:var(--accent-deep); font-size:10px; }
+.marine-section-nav a:hover { text-decoration:underline; }
+.marine-section { padding-top:96px; padding-bottom:96px; }
+.marine-section-head { margin-bottom:44px; }
+.marine-section-head h2 { font-size:clamp(32px,4vw,58px); line-height:1.04; letter-spacing:-.04em; max-width:880px; margin-top:22px; text-wrap:balance; }
+.marine-intro { display:grid; grid-template-columns:1fr 1fr; gap:70px; padding-top:88px; padding-bottom:10px; }
+.marine-intro h2 { font-size:clamp(30px,3.5vw,48px); }
+.marine-prose p+p { margin-top:20px; }
+.marine-prose { padding-top:38px; color:var(--ink-60); }
+.marine-segments { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:30px; }
+.marine-segments article { border-top:1px solid var(--marine-rule); padding-top:22px; }
+.marine-number { color:var(--accent-deep); font-size:12px; }
+.marine-page h3 { font-size:22px; line-height:1.2; letter-spacing:-.02em; }
+.marine-segments h3 { margin:25px 0 16px; }
+.marine-segments p, .marine-steps p, .marine-case-body p { color:var(--ink-60); font-size:15px; }
+.marine-dark { background:#142b30; color:var(--bg); }
+.marine-dark .sec-label { color:var(--bg); }
+.marine-services { display:grid; grid-template-columns:1fr 1fr; gap:0 50px; }
+.marine-services article { display:grid; grid-template-columns:28px 1fr 16px; gap:15px; border-top:1px solid #efe9dc40; padding:28px 0; }
+.marine-services h3 { font-size:24px; margin-bottom:15px; }
+.marine-services p { color:#efe9dcc7; font-size:15px; }
+.marine-services .marine-number, .marine-services article>span:last-child { color:var(--accent); }
+.marine-cases { display:grid; grid-template-columns:1fr 1fr; gap:32px; }
+.marine-cases article { border-bottom:1px solid var(--marine-rule); padding-bottom:30px; }
+.marine-case-image { display:block; overflow:hidden; background:var(--ink); }
+.marine-case-image img { display:block; width:100%; height:auto; aspect-ratio:3/2; object-fit:cover; transition:transform .65s ease; }
+.marine-case-image:hover img { transform:scale(1.035); }
+.marine-case-body .mono { font-size:10px; margin-top:25px; }
+.marine-case-body h3 { font-size:clamp(26px,3vw,38px); margin:15px 0; }
+.marine-case-body h3 a { display:flex; justify-content:space-between; gap:16px; }
+.marine-case-body .marine-text-link { margin-top:24px; }
+.marine-reasons { border-top:1px solid var(--marine-rule); padding-top:36px; }
+.marine-reasons ul { display:grid; grid-template-columns:1fr 1fr; gap:24px 50px; list-style:none; margin-top:30px; }
+.marine-reasons li { padding-left:20px; position:relative; line-height:1.6; font-size:15px; }
+.marine-reasons li:before { content:""; position:absolute; left:0; top:.6em; width:6px; height:6px; border-radius:50%; background:var(--accent-deep); }
+.marine-steps { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:30px; list-style:none; }
+.marine-step { display:grid; place-items:center; width:48px; height:48px; border:1px solid var(--marine-rule); border-radius:50%; margin-bottom:24px; }
+.marine-steps h3 { margin-bottom:14px; }
+.marine-measure { background:#e4ddce; }
+.marine-measures { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:36px; }
+.marine-measures h3 { margin-bottom:15px; }
+.marine-measures p { color:var(--ink-60); }
+.marine-faq { max-width:960px; }
+.marine-faq details { border-bottom:1px solid var(--marine-rule); padding:24px 0; }
+.marine-faq details:first-child { border-top:1px solid var(--marine-rule); }
+.marine-faq summary { font-size:18px; font-weight:600; padding-right:16px; cursor:pointer; }
+.marine-faq details[open] summary { color:#895b0e; }
+.marine-faq p { margin-top:18px; max-width:840px; color:var(--ink-60); }
+.marine-related { padding-bottom:72px; }
+.marine-related nav { display:flex; flex-wrap:wrap; gap:18px 32px; margin-top:24px; }
+.marine-related a { display:flex; gap:14px; align-items:center; font-size:14px; border-bottom:1px solid var(--marine-rule); padding-bottom:10px; }
+.marine-final { background:var(--accent); padding:75px 0; }
+.marine-final>.container { display:grid; grid-template-columns:1fr auto; align-items:center; gap:50px; }
+.marine-final h2 { font-size:clamp(35px,4.2vw,60px); max-width:740px; line-height:1.03; margin-top:22px; }
+.marine-final p { max-width:660px; margin-top:26px; }
+@media(max-width:1000px) {
+ .marine-hero-grid { gap:28px; }
+ .marine-hero h1 { font-size:clamp(38px,5.6vw,66px); }
+ .marine-hero-figure { min-height:560px; }
+ .marine-segments,.marine-steps { grid-template-columns:1fr 1fr; gap:36px; }
+ .marine-intro { gap:35px; }
+ .marine-final>.container { grid-template-columns:1fr; gap:30px; justify-items:start; }
+}
+@media(max-width:720px) {
+ .marine-hero { padding-top:108px; }
+ .marine-breadcrumb { padding-bottom:28px; }
+ .marine-hero-grid,.marine-intro,.marine-services,.marine-cases,.marine-measures,.marine-reasons ul { grid-template-columns:1fr; }
+ .marine-hero h1 { font-size:clamp(40px,9.5vw,64px); max-width:560px; }
+ .marine-promise { font-size:28px; }
+ .marine-hero-figure { min-height:0; height:380px; margin-top:12px; }
+ .marine-hero-figure figcaption { left:22px; bottom:22px; }
+ .marine-section-nav { gap:20px 25px; margin-top:28px; }
+ .marine-intro { padding-top:58px; gap:0; }
+ .marine-intro .marine-section-head { margin-bottom:22px; }
+ .marine-prose { padding-top:0; }
+ .marine-section { padding-block:64px; }
+ .marine-section-head { margin-bottom:32px; }
+ .marine-services article { gap:12px; }
+ .marine-section-head h2 { font-size:36px; }
+ .marine-measures { gap:28px; }
+ .marine-related { padding-bottom:48px; }
+ .marine-faq summary { font-size:17px; }
+}
+@media(max-width:420px) {
+ .marine-segments,.marine-steps { grid-template-columns:1fr; gap:30px; }
+ .marine-hero h1 { font-size:40px; }
+ .marine-section-head h2 { font-size:32px; }
+ .marine-hero .btn,.marine-final .btn { width:100%; text-align:center; white-space:normal; justify-content:center; }
+ .marine-hero-figure { height:330px; }
+}
+@media(prefers-reduced-motion:reduce) { .marine-case-image img { transition:none; } }
+.marine-photo-credit { font-size:11px!important;line-height:1.5!important;color:var(--ink-60);margin-top:10px; }
+.marine-photo-credit a { text-decoration:underline; }
+.marine-hero-figure .marine-photo-credit { color:var(--bg); }
+.marine-hero-figure .marine-photo-credit a { display:inline;font-size:inherit; }
+/* Keep the mobile language controls reachable while the navigation is open. */
+body.menu-open .sticky-quote { visibility:hidden;pointer-events:none; }

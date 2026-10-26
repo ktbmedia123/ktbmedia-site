@@ -134,7 +134,7 @@ function useCursor() {
 
     let lastDark = false;
     let lastDarkCheck = 0;
-    const DARK_SEL = '.about, .showcase-section, .footer, .marquee, .case-results, .nav.scrolled, .mini-cta-pre-footer, .about-page-main, .blog-dark, .process-steps, .pricing-grid, .price-card.featured, .case-page-dark';
+    const DARK_SEL = '.about, .showcase-section, .footer, .marquee, .case-results, .nav.scrolled, .mini-cta-pre-footer, .about-page-main, .blog-dark, .process-steps, .pricing-grid, .price-card.featured, .case-page-dark, .marine-dark, .marine-hero-figure';
 
     const onMove = e => {
       const x = e.clientX;
@@ -1822,6 +1822,10 @@ function CaseChart({
   }, "+", growth, "%")));
 }
 function LandingPage({ lang, config }) {
+  if (config.marine && window.KTBMarine) {
+    const cases = (config.cases || []).map(slug => getMarketingCases(lang).find(item => item.slug === slug)).filter(Boolean);
+    return React.createElement('div', { dangerouslySetInnerHTML: { __html: window.KTBMarine.render(config, lang, cases) } });
+  }
   const portfolio = COPY[lang].portfolio || {};
   const cases = (config.cases || []).map(slug => getMarketingCases(lang).find(item => item.slug === slug)).filter(Boolean);
   const faqs = (config.faq || []).map(item => Array.isArray(item) ? {

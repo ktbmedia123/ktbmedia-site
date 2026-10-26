@@ -4,6 +4,7 @@ import vm from 'node:vm';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { buildProcessIdeasIndex } from './process-ideas-index.mjs';
+import { buildMarineLanding } from './build-marine-landing.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
@@ -37,6 +38,7 @@ for (const entry of fs.readdirSync(root)) {
   fs.cpSync(path.join(root, entry), path.join(dist, entry), { recursive: true });
 }
 for (const url of hiddenPaths) fs.rmSync(path.join(dist, url), { recursive: true, force: true });
+buildMarineLanding(root, dist, data, isVisible);
 const processIndex = buildProcessIdeasIndex(root, dist, isHiddenUrl);
 function walk(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -44,6 +46,10 @@ function walk(dir) {
     if (entry.isDirectory()) { walk(file); continue; }
     if (!file.endsWith('.html')) continue;
     let html = fs.readFileSync(file, 'utf8');
+    // All React entry points can navigate to the marine landing through the footer.
+    if (html.includes('src="/app.js') && !html.includes('src="/marine-landing.js')) {
+      html = html.replace(/(<script src="\/app\.js)/, '<script src="/marine-landing.js?v=20261026-marine"></script>\n  $1');
+    }
     if (path.relative(dist, file) === path.join('proces', 'index.html')) {
       if (!html.includes('<!-- PROCESS_IDEAS_INDEX -->')) throw new Error('Brak miejsca na indeks pomysłów Procesu');
       html = html.replace('<!-- PROCESS_IDEAS_INDEX -->', processIndex.html);

@@ -11,15 +11,8 @@
 .contact-invitation.is-holding .contact-invitation-arrow{transform:rotate(45deg)}
 .contact-rift{position:fixed;inset:0;z-index:60;pointer-events:none;isolation:isolate;overflow:hidden}
 .contact-rift>canvas{position:absolute;inset:0;opacity:1!important;width:100%;height:100%;transition:none}
-.contact-rift:before{content:'';position:absolute;inset:0;z-index:-1;background:var(--paper);opacity:calc(var(--rift-progress,0)*1.3);clip-path:inset(calc((1 - var(--rift-progress,0))*50%) 0)}
-.rift-arrival{position:absolute;inset:0;display:flex;align-items:flex-start;justify-content:center;flex-direction:column;padding:8vw;color:var(--ink);visibility:hidden}
-.contact-rift.is-departing .rift-arrival{visibility:visible}
-.rift-arrival img{position:absolute;left:4.5%;top:35px;width:150px}
-.rift-signal{font:10px monospace;letter-spacing:3px;color:#84775d}
-.rift-arrival h2{font-size:clamp(48px,9vw,140px);font-weight:500;letter-spacing:-.065em;line-height:1;margin:25px 0}
-.rift-arrival p{font-size:clamp(13px,1.4vw,19px);line-height:1.6;margin:0 0 35px;color:#6c685e}
-.rift-address{font-size:13px;border-bottom:1px solid #e8a838;padding-bottom:9px}
+
 .contact-departing .world{pointer-events:none}
 @keyframes contact-in{from{opacity:0;transform:translate(-50%,8px)}to{opacity:1;transform:translate(-50%,0)}}
-@media(max-width:700px){.contact-invitation{bottom:58px;font-size:11px;min-height:44px}.contact-invitation-base,.contact-invitation-fill{padding-left:18px;gap:13px;min-height:44px}.contact-invitation-arrow{width:30px;height:30px}.contact-invited #scroll-hint{visibility:hidden}.contact-invited .controls{bottom:15px}.contact-invited #galaxy-navigation{top:auto;bottom:-2px}.contact-invited .bottomline{opacity:0!important}.rift-arrival{padding:8vw}.rift-arrival img{width:112px;top:28px}.rift-arrival h2{font-size:clamp(44px,13vw,72px)}}
-@media(prefers-reduced-motion:reduce){.contact-invitation{animation:none}.rift-arrival{opacity:1!important}}
+@media(max-width:700px){.contact-invitation{bottom:58px;font-size:11px;min-height:44px}.contact-invitation-base,.contact-invitation-fill{padding-left:18px;gap:13px;min-height:44px}.contact-invitation-arrow{width:30px;height:30px}.contact-invited #scroll-hint{visibility:hidden}.contact-invited .controls{bottom:15px}.contact-invited #galaxy-navigation{top:auto;bottom:-2px}.contact-invited .bottomline{opacity:0!important}}
+@media(prefers-reduced-motion:reduce){.contact-invitation{animation:none}}

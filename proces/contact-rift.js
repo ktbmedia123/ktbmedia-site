@@ -4,8 +4,8 @@
   if(!stage)return;
   const reduced=matchMedia('(prefers-reduced-motion: reduce)');
   const copy={
-    pl:{button:'Przytrzymaj, by nawiązać kontakt',hint:'Przytrzymaj przez 2,5 sekundy, by nawiązać kontakt',signal:'SYGNAŁ ODEBRANY',arrival:'Porozmawiajmy.',line:'Dobry pomysł zaczyna się od rozmowy.'},
-    en:{button:'Hold to make contact',hint:'Hold for 2.5 seconds to make contact',signal:'SIGNAL RECEIVED',arrival:'Let’s talk.',line:'A good idea starts with a conversation.'}
+    pl:{button:'Przytrzymaj, by nawiązać kontakt',hint:'Przytrzymaj przez 2,5 sekundy, by nawiązać kontakt'},
+    en:{button:'Hold to make contact',hint:'Hold for 2.5 seconds to make contact'}
   };
   const invitation=document.createElement('button');
   invitation.type='button';invitation.className='contact-invitation';invitation.hidden=true;
@@ -13,10 +13,10 @@
   invitation.innerHTML=`<span class="contact-invitation-base">${buttonContent}</span><span class="contact-invitation-fill" aria-hidden="true">${buttonContent}</span>`;
   stage.appendChild(invitation);
   const rift=document.createElement('div');rift.className='contact-rift';rift.hidden=true;rift.setAttribute('aria-hidden','true');
-  rift.innerHTML='<canvas></canvas><div class="rift-arrival"><img src="/assets/logo.png" alt=""><span class="rift-signal"></span><h2></h2><p></p><span class="rift-address">media@ktbmedia.eu ↗</span></div>';
+  rift.innerHTML='<canvas></canvas>';
   document.body.appendChild(rift);
   const riftCanvas=rift.querySelector('canvas'),ctx=riftCanvas.getContext('2d');
-  let timer=0,raf=0,departing=false,departureAt=0,navigating=false,inGalaxy=true,dismissed=false;
+  let timer=0,raf=0,departing=false,inGalaxy=true,dismissed=false;
   let holding=false,holdStarted=0,charge=0,fx=0,lastFrame=0;
   let canvasWidth=0,canvasHeight=0;
   const lang=()=>document.documentElement.lang==='en'?'en':'pl';
@@ -24,7 +24,6 @@
   function language(){
     const c=copy[lang()];invitation.querySelectorAll('.contact-invitation-label').forEach(el=>el.textContent=c.button);
     invitation.setAttribute('aria-label',c.hint);setCharge(charge);
-    rift.querySelector('.rift-signal').textContent=c.signal;rift.querySelector('h2').textContent=c.arrival;rift.querySelector('p').textContent=c.line;
     document.querySelectorAll('.process-ideas-index [data-process-lang]').forEach(el=>{el.hidden=el.dataset.processLang!==lang();});
   }
   function size(){
@@ -41,7 +40,7 @@
   }
   function begin(){
     if(holding||departing||invitation.hidden||!active()||!inGalaxy||document.hidden)return;
-    holding=true;holdStarted=performance.now();invitation.classList.add('is-holding');setCharge(0);lastFrame=0;request();
+    prefetchContact();holding=true;holdStarted=performance.now();invitation.classList.add('is-holding');setCharge(0);lastFrame=0;request();
   }
   function release(completed=false){
     if(departing)return;
@@ -73,34 +72,30 @@
       ctx.beginPath();ctx.ellipse(w/2,h/2,Math.max(1,radius),Math.max(1,radius*.6),-.2,0,Math.PI*2);ctx.stroke();
     }
   }
-  function depart(now){
+  function contactUrl(){const url=new URL('/kontakt/',location.origin);if(lang()==='en')url.searchParams.set('lang','en');return url.href;}
+  function prefetchContact(){
+    let link=document.querySelector('link[data-contact-prefetch]');
+    if(!link){link=document.createElement('link');link.rel='prefetch';link.as='document';link.dataset.contactPrefetch='';document.head.appendChild(link);}
+    link.href=contactUrl();
+  }
+  function depart(){
     if(departing||!active()||!inGalaxy)return;
-    clearTimeout(timer);departing=true;holding=false;departureAt=now;invitation.hidden=true;stage.classList.remove('contact-invited');
-    rift.hidden=false;rift.classList.add('is-departing');stage.classList.add('contact-departing');
-    if(!reduced.matches)rift.querySelector('.rift-arrival').animate([
-      {opacity:0,clipPath:'inset(45% 0 45% 0)',transform:'translateY(25px)'},
-      {opacity:1,clipPath:'inset(0)',transform:'translateY(0)'}
-    ],{duration:1100,delay:150,fill:'both',easing:'cubic-bezier(.16,1,.3,1)'});
-    request();
+    clearTimeout(timer);departing=true;holding=false;
+    invitation.disabled=true;stage.classList.add('contact-departing');
+    location.assign(contactUrl());
   }
   function frame(now){
     raf=0;if(document.hidden)return;
     const dt=Math.min(.1,Math.max(0,(now-(lastFrame||now))/1000));lastFrame=now;
-    if(holding){setCharge(Math.min(1,(now-holdStarted)/2500));if(charge===1)depart(now);}
-    const exit=departing?Math.min(1,(now-departureAt)/(reduced.matches?240:1450)):0;
-    fx=departing?Math.sin(exit*Math.PI)*.85:fx+((holding?charge*.65:0)-fx)*(1-Math.exp(-dt*20));
-    rift.hidden=!departing&&fx<.003;
-    rift.style.setProperty('--rift-progress',String(exit));paint(now,fx,exit);
-    if(departing&&exit===1&&!navigating){
-      navigating=true;const url=new URL('/kontakt/',location.origin);if(lang()==='en')url.searchParams.set('lang','en');location.assign(url.href);return;
-    }
-    if(holding||departing||fx>=.003)request();else lastFrame=0;
+    if(holding){setCharge(Math.min(1,(now-holdStarted)/2500));if(charge===1){depart();return;}}
+    fx=fx+((holding?charge*.65:0)-fx)*(1-Math.exp(-dt*20));
+    rift.hidden=fx<.003;paint(now,fx,0);
+    if(holding||fx>=.003)request();else lastFrame=0;
   }
   function stop(){
-    clearTimeout(timer);timer=0;cancelAnimationFrame(raf);raf=0;departing=false;navigating=false;
+    clearTimeout(timer);timer=0;cancelAnimationFrame(raf);raf=0;departing=false;invitation.disabled=false;
     holding=false;holdStarted=0;fx=0;lastFrame=0;setCharge(0);invitation.classList.remove('is-holding');rift.classList.remove('is-departing');
     invitation.hidden=true;rift.hidden=true;stage.classList.remove('contact-departing','contact-invited');
-    rift.querySelector('.rift-arrival').getAnimations().forEach(a=>a.cancel());
   }
   function schedule(){
     clearTimeout(timer);
@@ -127,7 +122,7 @@
   document.addEventListener('visibilitychange',()=>{
     clearTimeout(timer);
     if(document.hidden){if(!departing){release();fx=0;rift.hidden=true;}cancelAnimationFrame(raf);raf=0;return;}
-    if(departing){departureAt=performance.now();request();}else if(invitation.hidden)schedule();
+    if(!departing&&invitation.hidden)schedule();
   });
   window.addEventListener('resize',size,{passive:true});
   new MutationObserver(state).observe(stage,{attributes:true,attributeFilter:['data-state']});

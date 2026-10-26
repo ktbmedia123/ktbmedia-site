@@ -392,6 +392,12 @@ collections:
                     fields:
                       - { label: Title SEO, name: title, widget: string }
                       - { label: Meta description, name: description, widget: text }
+                      - { name: slug, widget: hidden, default: marketing-dla-branzy-morskiej }
+                      - { name: key, widget: hidden, default: marine }
+                      - { name: type, widget: hidden, default: industry }
+                      - { label: Nazwa branży, name: area, widget: string }
+                      - { label: Główna fraza, name: keyword, widget: string }
+                      - { label: Tematy i frazy, name: keywords, widget: list, field: { label: Fraza, name: value, widget: string } }
                       - label: Hero
                         name: hero
                         widget: object
@@ -399,14 +405,72 @@ collections:
                           - { label: H1, name: h1, widget: string }
                           - { label: Lead, name: lead, widget: text }
                       - { label: Dlaczego my, name: why, widget: list, field: { label: Punkt, name: value, widget: text } }
-                      - { label: Usługi, name: services, widget: list, field: { label: Usługa, name: value, widget: string } }
-                      - { label: Treść GEO, name: context, widget: list, field: { label: Akapit, name: value, widget: text } }
+                      - { label: Usługi, name: services, widget: list, hint: 'Każda usługa musi mieć opis o tej samej pozycji w sekcji Marine.', field: { label: Usługa, name: value, widget: string } }
+                      - { label: Wprowadzenie, name: context, widget: list, field: { label: Akapit, name: value, widget: text } }
+                      - { label: Realizacje (slugi), name: cases, widget: list, hint: 'Widoczność realizacji jest respektowana automatycznie.', field: { label: Slug, name: value, widget: string } }
+                      - label: Powiązane strony
+                        name: related
+                        widget: list
+                        fields:
+                          - { label: Etykieta, name: label, widget: string }
+                          - { label: Adres względny, name: href, widget: string }
                       - label: FAQ
                         name: faq
                         widget: list
                         fields:
                           - { label: Pytanie, name: q, widget: string }
                           - { label: Odpowiedź, name: a, widget: text }
+                      - label: Marine — sekcje i nagłówki
+                        name: marine
+                        widget: object
+                        collapsed: true
+                        fields:
+                          - { label: Nadtytuł, name: eyebrow, widget: string }
+                          - { label: Hasło, name: promise, widget: string }
+                          - { label: Nagłówek wprowadzenia, name: introTitle, widget: string }
+                          - { label: Nagłówek odbiorców, name: segmentsTitle, widget: string }
+                          - { label: Nagłówek usług, name: servicesTitle, widget: string }
+                          - { label: Nagłówek realizacji, name: proofTitle, widget: string }
+                          - { label: Nagłówek procesu, name: processTitle, widget: string }
+                          - { label: Nagłówek pomiaru, name: measurementTitle, widget: string }
+                          - { label: Nagłówek końcowy, name: finalTitle, widget: string }
+                          - { label: Opis końcowy, name: finalText, widget: text }
+                          - { label: Przycisk kontaktu, name: cta, widget: string }
+                          - { label: Odnośnik do realizacji, name: secondaryCta, widget: string }
+                          - { label: Opisy usług (kolejność jak w Usługach), name: serviceNotes, widget: list, field: { label: Opis, name: value, widget: text } }
+                          - label: Zdjęcia przy realizacjach i podpisy
+                            name: caseImages
+                            widget: list
+                            required: false
+                            fields:
+                              - { label: Slug realizacji, name: slug, widget: string }
+                              - { label: Zdjęcie, name: image, widget: image }
+                              - { label: Tekst alternatywny, name: alt, widget: string }
+                              - { label: Podpis, name: caption, widget: string }
+                              - { label: Autor, name: author, widget: string }
+                              - { label: Źródło fotografii, name: sourceUrl, widget: string }
+                              - { label: Adres licencji, name: licenseUrl, widget: string }
+                              - { label: Nazwa licencji, name: licenseLabel, widget: string }
+                              - { label: Zmiany fotografii, name: changeNote, widget: string }
+                              - { label: Źródło informacji o projekcie, name: projectUrl, widget: string }
+                          - label: Odbiorcy
+                            name: segments
+                            widget: list
+                            fields:
+                              - { label: Tytuł, name: title, widget: string }
+                              - { label: Opis, name: text, widget: text }
+                          - label: Etapy współpracy
+                            name: steps
+                            widget: list
+                            fields:
+                              - { label: Tytuł, name: title, widget: string }
+                              - { label: Opis, name: text, widget: text }
+                          - label: Co mierzymy
+                            name: measurements
+                            widget: list
+                            fields:
+                              - { label: Tytuł, name: title, widget: string }
+                              - { label: Opis, name: text, widget: text }
 
               # WIDOCZNOŚĆ SEKCJI
               - label: Widoczność sekcji
@@ -835,6 +899,97 @@ collections:
             widget: object
             collapsed: true
             fields:
+              - label: Landing pages SEO
+                name: landings
+                widget: object
+                collapsed: true
+                fields:
+                  - label: Marketing dla branży morskiej
+                    name: marketing-dla-branzy-morskiej
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - { label: Title SEO, name: title, widget: string }
+                      - { label: Meta description, name: description, widget: text }
+                      - { name: slug, widget: hidden, default: marketing-dla-branzy-morskiej }
+                      - { name: key, widget: hidden, default: marine }
+                      - { name: type, widget: hidden, default: industry }
+                      - { label: Nazwa branży, name: area, widget: string }
+                      - { label: Główna fraza, name: keyword, widget: string }
+                      - { label: Tematy i frazy, name: keywords, widget: list, field: { label: Fraza, name: value, widget: string } }
+                      - label: Hero
+                        name: hero
+                        widget: object
+                        fields:
+                          - { label: H1, name: h1, widget: string }
+                          - { label: Lead, name: lead, widget: text }
+                      - { label: Dlaczego my, name: why, widget: list, field: { label: Punkt, name: value, widget: text } }
+                      - { label: Usługi, name: services, widget: list, hint: 'Każda usługa musi mieć opis o tej samej pozycji w sekcji Marine.', field: { label: Usługa, name: value, widget: string } }
+                      - { label: Wprowadzenie, name: context, widget: list, field: { label: Akapit, name: value, widget: text } }
+                      - { label: Realizacje (slugi), name: cases, widget: list, hint: 'Widoczność realizacji jest respektowana automatycznie.', field: { label: Slug, name: value, widget: string } }
+                      - label: Powiązane strony
+                        name: related
+                        widget: list
+                        fields:
+                          - { label: Etykieta, name: label, widget: string }
+                          - { label: Adres względny, name: href, widget: string }
+                      - label: FAQ
+                        name: faq
+                        widget: list
+                        fields:
+                          - { label: Pytanie, name: q, widget: string }
+                          - { label: Odpowiedź, name: a, widget: text }
+                      - label: Marine — sekcje i nagłówki
+                        name: marine
+                        widget: object
+                        collapsed: true
+                        fields:
+                          - { label: Nadtytuł, name: eyebrow, widget: string }
+                          - { label: Hasło, name: promise, widget: string }
+                          - { label: Nagłówek wprowadzenia, name: introTitle, widget: string }
+                          - { label: Nagłówek odbiorców, name: segmentsTitle, widget: string }
+                          - { label: Nagłówek usług, name: servicesTitle, widget: string }
+                          - { label: Nagłówek realizacji, name: proofTitle, widget: string }
+                          - { label: Nagłówek procesu, name: processTitle, widget: string }
+                          - { label: Nagłówek pomiaru, name: measurementTitle, widget: string }
+                          - { label: Nagłówek końcowy, name: finalTitle, widget: string }
+                          - { label: Opis końcowy, name: finalText, widget: text }
+                          - { label: Przycisk kontaktu, name: cta, widget: string }
+                          - { label: Odnośnik do realizacji, name: secondaryCta, widget: string }
+                          - { label: Opisy usług (kolejność jak w Usługach), name: serviceNotes, widget: list, field: { label: Opis, name: value, widget: text } }
+                          - label: Zdjęcia przy realizacjach i podpisy
+                            name: caseImages
+                            widget: list
+                            required: false
+                            fields:
+                              - { label: Slug realizacji, name: slug, widget: string }
+                              - { label: Zdjęcie, name: image, widget: image }
+                              - { label: Tekst alternatywny, name: alt, widget: string }
+                              - { label: Podpis, name: caption, widget: string }
+                              - { label: Autor, name: author, widget: string }
+                              - { label: Źródło fotografii, name: sourceUrl, widget: string }
+                              - { label: Adres licencji, name: licenseUrl, widget: string }
+                              - { label: Nazwa licencji, name: licenseLabel, widget: string }
+                              - { label: Zmiany fotografii, name: changeNote, widget: string }
+                              - { label: Źródło informacji o projekcie, name: projectUrl, widget: string }
+                          - label: Odbiorcy
+                            name: segments
+                            widget: list
+                            fields:
+                              - { label: Tytuł, name: title, widget: string }
+                              - { label: Opis, name: text, widget: text }
+                          - label: Etapy współpracy
+                            name: steps
+                            widget: list
+                            fields:
+                              - { label: Tytuł, name: title, widget: string }
+                              - { label: Opis, name: text, widget: text }
+                          - label: Co mierzymy
+                            name: measurements
+                            widget: list
+                            fields:
+                              - { label: Tytuł, name: title, widget: string }
+                              - { label: Opis, name: text, widget: text }
               - label: Navigation
                 name: nav
                 widget: list
