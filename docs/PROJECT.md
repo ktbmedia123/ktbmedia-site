@@ -7,7 +7,7 @@ Hosting: Netlify, automatyczne wdrożenia po aktualizacji GitHub.
 CMS: Decap CMS przez Netlify Git Gateway, panel /admin/.
 
 ## Architektura
-Statyczne HTML dla SEO + React w app.js (bez JSX i bez bundlera).
+Pełne HTML generowane podczas builda z komponentów React w app.js (bez JSX i bez bundlera). npm ci; przypięte zależności builda w package-lock.json. Obsługa i kontrola SEO: docs/SEO.md.
 Treści PL/EN w content/site.json; content.js to fallback, cms-hydrator.js pobiera dane przed pierwszym renderem. Build dołącza wczesną osłonę startu (scripts/page-boot.mjs); App zdejmuje ją w useLayoutEffect. Podgląd pełnego zachowania przez dist po buildzie, nie surowy katalog źródeł.
 Aplikacje i strony WWW są opisane w DIGITAL_CASES w app.js.
 Landingi: landing-configs.js i treści CMS. Marine ma wspólny renderer marine-landing.js dla builda i React; obsługa w docs/MARINE.md. Style: styles.css.

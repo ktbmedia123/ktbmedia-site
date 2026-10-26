@@ -1,5 +1,6 @@
 dist/
 node_modules/
+.tools/
 .DS_Store
 
 # Local browser verification artifacts
