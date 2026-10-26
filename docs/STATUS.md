@@ -1,3 +1,17 @@
+# Aktualizacja — 2026-10-26: Start strony bez migania tekstu zapasowego
+
+- Potwierdzono przyczynę na /kontakt/: statyczne .seo-static było widoczne przed załadowaniem React/app, a dotychczasowy loader CMS pojawiał się dopiero później i dodawał 280 ms przed renderem.
+- scripts/page-boot.mjs dodaje do 67 dokumentów React osłonę w samym head, przed body. Jednolite tło strony i dyskretna kropka (dopiero po 180 ms) pozostają do gotowego widoku; App zgłasza gotowość w useLayoutEffect, po commit i przed paint. Bez minimalnego czasu oczekiwania i bez późniejszego odkrywania statycznego tekstu.
+- Skrypty zależności pobierane równolegle przez defer, z zachowaniem kolejności wykonania. Nowe wersje app/cms-hydrator: 20261026-boot. CMS nadal ma pierwszeństwo i fallback content.js po 3 s, ale nie zastępuje już root loaderem ani nie opóźnia renderowania o 280 ms.
+- Treść HTML, metadane, schema i linki pozostają. Bez JS osłona nie jest uruchamiana. Awaria skryptu lub pierwszego renderu przywraca statyczną treść; bezpiecznik po 6 s zapobiega pozostawieniu pustego ekranu. Późniejsze poprawne uruchomienie aplikacji działa. Reduced motion bez animowania kropki. Proces nie otrzymuje osłony; dotyczy ona docelowego kontaktu i pozostałych stron React.
+- Walidacja: odtworzenie problemu przed poprawką; Playwright z opóźnieniem app 900 ms — zero klatek widocznego .seo-static na home i kontakcie EN/mobile; osłona znika z gotowym menu. Landing marine działa. Wolny CMS (1200 ms), timeout CMS, zablokowany app, wyjątek komponentu, timeout skryptu z późniejszym odzyskaniem oraz JS wyłączony — PASS. Nie ma nieskończonego loadera, fallback czytelny.
+- Test normalnego Proces → kontakt (CDP touch przez 2,5 s, 390 px, CPU 4×, app opóźnione o 900 ms): zero klatek tekstu statycznego, gotowe menu przed odsłonięciem, powrót do Procesu działa i brak błędów JS. Składnia/build 68 URL/check-visibility/diff — PASS. Zrzuty output/playwright/boot-before-contact.png i boot-process-contact.png.
+- Publikacja GitHub main → Netlify: a380cd37331d097cb258f5d5865e85b3e422d914. Wersja app/cms 20261026-boot; osłona w statycznym head obecna na produkcji.
+- Produkcja: home, kontakt EN/mobile i marine — zero klatek .seo-static przed gotowym widokiem, menu obecne w chwili odsłonięcia, brak błędów JS. Pełny Proces → kontakt z dotykiem, CPU 4× i app opóźnionym 900 ms także bez mignięcia; powrót do Procesu działa. Zrzuty output/playwright/boot-production-loading-*.png i boot-process-contact-production.png.
+- Dalsze kroki: obserwacja na urządzeniu użytkownika; kompletna poprawka wdrożona, brak oczekujących zmian kodu.
+
+---
+
 # Aktualizacja — 2026-10-26: Landing marine, fotografia Kormorana i czytelniejszy Proces
 
 - Rozbudowano istniejący /marketing-dla-branzy-morskiej/ w PL/EN: hero, 4 segmenty odbiorców, 6 usług, DDP Supply i RMDC, proces współpracy, pomiar, 9 FAQ i linki do właściwych podstron. Link w stopce. Hero strony głównej zachowane.

@@ -8,7 +8,7 @@ CMS: Decap CMS przez Netlify Git Gateway, panel /admin/.
 
 ## Architektura
 Statyczne HTML dla SEO + React w app.js (bez JSX i bez bundlera).
-Treści PL/EN w content/site.json; content.js to fallback, cms-hydrator.js pobiera dane przed pierwszym renderem.
+Treści PL/EN w content/site.json; content.js to fallback, cms-hydrator.js pobiera dane przed pierwszym renderem. Build dołącza wczesną osłonę startu (scripts/page-boot.mjs); App zdejmuje ją w useLayoutEffect. Podgląd pełnego zachowania przez dist po buildzie, nie surowy katalog źródeł.
 Aplikacje i strony WWW są opisane w DIGITAL_CASES w app.js.
 Landingi: landing-configs.js i treści CMS. Marine ma wspólny renderer marine-landing.js dla builda i React; obsługa w docs/MARINE.md. Style: styles.css.
 Proces: osobny dokument /proces/, Canvas 2D + DOM, źródła w proces/. Menu wykonuje pełną nawigację; ?lang=en zachowuje język.
