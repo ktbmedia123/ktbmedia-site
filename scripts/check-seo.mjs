@@ -17,7 +17,7 @@ const pages = new Map();
 function inspect(node, result) {
   const attrs = Object.fromEntries((node.attrs || []).map(attr => [attr.name, attr.value]));
   if (node.tagName === 'script') {
-    if (attrs.type === 'application/ld+json') JSON.parse(node.childNodes.map(child => child.value || '').join(''));
+    if (attrs.type === 'application/ld+json') result.schemas.push(JSON.parse(node.childNodes.map(child => child.value || '').join('')));
     return;
   }
   if (['style', 'noscript', 'svg'].includes(node.tagName)) return;
@@ -34,9 +34,16 @@ for (const url of urls) {
   const html = fs.readFileSync(file, 'utf8');
   assert(!/<meta[^>]+name="robots"[^>]+content="[^"]*noindex/i.test(html), route);
   assert.deepEqual([...html.matchAll(/<link[^>]+rel="canonical"[^>]+href="([^"]+)"/g)].map(m => m[1]), [url], `canonical ${route}`);
-  const result = {text: [], links: [], ids: [], headings: 0, prerender: false};
+  const result = {text: [], links: [], ids: [], headings: 0, prerender: false, schemas: []};
   inspect(parse(html), result);
   result.text = result.text.join(' ').replace(/\s+/g, ' ');
+  for (const schema of result.schemas.flatMap(s => s['@graph'] || [s])) {
+    if (![schema['@type']].flat().includes('FAQPage')) continue;
+    for (const question of schema.mainEntity) {
+      assert(result.text.includes(question.name), `Niewidoczne pytanie FAQ ${route}`);
+      assert(result.text.includes(question.acceptedAnswer.text), `Niewidoczna odpowiedź FAQ ${route}`);
+    }
+  }
   assert.equal(result.headings, 1, `H1 ${route}`);
   assert.equal(new Set(result.ids).size, result.ids.length, `Powtórzone id ${route}`);
   assert(result.prerender || route === '/proces/', `Brak pełnej treści ${route}`);
