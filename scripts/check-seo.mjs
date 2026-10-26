@@ -72,6 +72,10 @@ assert(pages.get('/').text.includes('Marka,') && pages.get('/').text.includes('c
 const catalog = pages.get('/realizacje/').links;
 for (const route of pages.keys()) if (route.startsWith('/realizacje/') && route !== '/realizacje/') assert(catalog.includes(route), `Brak realizacji w katalogu ${route}`);
 const sample = fs.readFileSync(path.join(dist, 'kontakt/index.html'), 'utf8');
+const marine = pages.get('/marketing-dla-branzy-morskiej/');
+const marineFaq = marine.schemas.flatMap(schema => schema['@graph'] || [schema]).find(schema => [schema['@type']].flat().includes('FAQPage'));
+assert.equal(marineFaq?.mainEntity.length, data.pl.landings['marketing-dla-branzy-morskiej'].faq.length, 'Brak FAQ schema marine');
+assert(fs.readFileSync(path.join(dist, 'marketing-dla-branzy-morskiej/index.html'), 'utf8').includes('data-marine-schema'), 'Brak pełnego widoku marine w prerenderze');
 assert.equal(pageFingerprint(sample), pageFingerprint(sample.replace('v=20261026-seo', 'v=20990101').replace('page-header', 'changed-layout')), 'Klasy i build ID zmieniają lastmod');
 assert.notEqual(pageFingerprint(sample), pageFingerprint(sample.replace('</h1>', ' Zmieniona treść</h1>')), 'Treść nie zmienia fingerprint');
 const temporary = fs.mkdtempSync(path.join(os.tmpdir(), 'ktb-sitemap-check-'));
