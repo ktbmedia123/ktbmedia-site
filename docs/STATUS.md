@@ -1,3 +1,15 @@
+# Aktualizacja — 2026-10-26: Przełączanie notatek i portal przy opisie
+
+- Ponowne kliknięcie tego samego hasła zamyka opis. Wybranie innego zmienia notatkę; zmiana języka aktualizuje otwartą treść.
+- Linia od kropki dochodzi do małego ciemnego portalu przy krawędzi notatki. Kołowe wyłanianie (180+560 ms), cienki kolorowy pierścień i cofnięcie maski/linii przy zamykaniu (320 ms). Desktop nadal po stronie przeciwnej do hasła, telefon w dotychczasowym stałym miejscu.
+- Obsłużono szybkie zamykanie/ponowne otwieranie i przełączanie (unieważnianie poprzednich callbacków), aktualny styl przy odwróceniu, fokus i aria-expanded/pressed. Reset/galaktyka sprzątają natychmiast; reduced motion pomija efekt. Geometria poza pętlą renderowania, RAF wygasa po zamknięciu w pauzie.
+- Walidacja: składnia, build 68 adresów/indeks57 PL/EN i diff — PASS. Playwright: toggle, oba boki, szybkie przełączenia, język/fokus, ×/Escape, brak stałego RAF, 320 px reduced motion, 390 px dotyk, zamknięcie przed początkiem maski, reset/zmiana galaktyki podczas animacji — PASS.
+- Publikacja GitHub main → Netlify: 3e611705876f1d2ee22128c6db642acb9caaa980; zasoby 20261026-detail-portal.
+- Kontrola produkcji: portal, ponowny klik tego samego hasła, aria-expanded, ponowne otwarcie, EN bez zamykania i Escape, brak błędów JS — PASS. Zrzut output/playwright/detail-portal-production.png.
+- Obsługa i decyzje w docs/PROCESS.md.
+
+---
+
 # Aktualizacja — 2026-10-25: Delikatnie mocniejsze wejście i kontakt przez przytrzymanie
 
 - Zachowano preferowany klasyczny wjazd 2,1 s; dodano subtelny radialny złoty blask, płynniejsze przyspieszenie, głębsze smugi z jasnymi zakończeniami i delikatną falę. Bez powrotu do odrzuconej soczewki; scroll pozostaje.
