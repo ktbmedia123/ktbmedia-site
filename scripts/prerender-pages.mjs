@@ -52,6 +52,9 @@ export function prerenderPages(root, dist, data) {
   for (const name of ['landing-configs.js', 'marine-landing.js']) {
     vm.runInContext(fs.readFileSync(path.join(root, name), 'utf8'), context, { timeout: 1000 });
   }
+  // In a browser window === globalThis; keep the shared UMD renderer on the
+  // simulated window too, so marine uses its full custom view during SSR.
+  window.KTBMarine = context.KTBMarine;
   vm.runInContext(source.slice(0, mount), context, { timeout: 1000 });
   // A static document must contain the final values, rather than the zero at
   // which the browser's count-up effect starts. The client still animates them.
