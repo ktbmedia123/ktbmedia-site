@@ -14,19 +14,24 @@ const maps = ['pages', 'blog', 'realizacje'].map(name => fs.readFileSync(path.jo
 const urls = maps.flatMap(map => [...map.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]));
 assert.equal(new Set(urls).size, urls.length, 'Powtórzone adresy w sitemap');
 const pages = new Map();
-function inspect(node, result) {
+function inspect(node, result, inPrerender = false) {
   const attrs = Object.fromEntries((node.attrs || []).map(attr => [attr.name, attr.value]));
   if (node.tagName === 'script') {
     if (attrs.type === 'application/ld+json') result.schemas.push(JSON.parse(node.childNodes.map(child => child.value || '').join('')));
     return;
   }
   if (['style', 'noscript', 'svg'].includes(node.tagName)) return;
-  if (node.nodeName === '#text') result.text.push(node.value);
+  if ('data-ktb-prerender' in attrs) { result.prerender = true; inPrerender = true; }
+  if (node.nodeName === '#text') {
+    result.text.push(node.value);
+    if (inPrerender) result.renderedText.push(node.value);
+  }
+  if (node.tagName === 'meta') result.metadata[attrs.property || attrs.name] = attrs.content;
+  if (node.tagName === 'img' && inPrerender) result.images.push(attrs);
   if (node.tagName === 'h1') result.headings++;
   if (node.tagName === 'a' && attrs.href) result.links.push(attrs.href);
   if (attrs.id) result.ids.push(attrs.id);
-  if ('data-ktb-prerender' in attrs) result.prerender = true;
-  for (const child of node.childNodes || []) inspect(child, result);
+  for (const child of node.childNodes || []) inspect(child, result, inPrerender);
 }
 for (const url of urls) {
   const route = new URL(url).pathname;
@@ -34,9 +39,10 @@ for (const url of urls) {
   const html = fs.readFileSync(file, 'utf8');
   assert(!/<meta[^>]+name="robots"[^>]+content="[^"]*noindex/i.test(html), route);
   assert.deepEqual([...html.matchAll(/<link[^>]+rel="canonical"[^>]+href="([^"]+)"/g)].map(m => m[1]), [url], `canonical ${route}`);
-  const result = {text: [], links: [], ids: [], headings: 0, prerender: false, schemas: []};
+  const result = {text: [], renderedText: [], metadata: {}, images: [], links: [], ids: [], headings: 0, prerender: false, schemas: []};
   inspect(parse(html), result);
   result.text = result.text.join(' ').replace(/\s+/g, ' ');
+  result.renderedText = result.renderedText.join(' ').replace(/\s+/g, ' ');
   for (const schema of result.schemas.flatMap(s => s['@graph'] || [s])) {
     if (![schema['@type']].flat().includes('FAQPage')) continue;
     for (const question of schema.mainEntity) {
@@ -66,6 +72,35 @@ for (const [route] of pages) {
 for (const item of data.pl.portfolio.items.filter(item => data.visibility.marketing !== false && data.visibility.items.find(entry => entry.slug === item.slug)?.visible !== false)) {
   const page = pages.get(`/realizacje/${item.slug}/`);
   for (const key of ['brief', 'challenge', 'solution']) assert(page.text.includes(item[key].replace(/\s+/g, ' ')), `Brak CMS ${item.slug}.${key}`);
+  const story = item.editorial;
+  if (!story?.heroMetric) continue;
+  const rendered = (value, field) => {
+    if (value === undefined || value === null || value === '') return;
+    assert(page.renderedText.includes(String(value).replace(/\s+/g, ' ')), `Brak treści editorial w prerenderze ${item.slug}.${field}`);
+  };
+  rendered(story.headline, 'headline');
+  for (const field of ['value', 'label', 'context']) rendered(story.heroMetric[field], `heroMetric.${field}`);
+  for (const [index, result] of (item.results || []).entries()) {
+    for (const field of ['v', 'k', 'context']) rendered(result[field], `results[${index}].${field}`);
+  }
+  for (const [index, chapter] of (story.chapters || []).entries()) {
+    rendered(chapter.title, `chapters[${index}].title`);
+    rendered(chapter.text, `chapters[${index}].text`);
+  }
+  for (const [index, note] of (story.reportingNotes || []).entries()) rendered(note, `reportingNotes[${index}]`);
+  const cover = item.coverImage || item.images?.[1] || item.images?.[0];
+  if (cover) {
+    const absoluteCover = new URL(cover, 'https://ktbmedia.eu').href;
+    assert.equal(page.metadata['og:image'], absoluteCover, `Okładka OG niezgodna z CMS ${item.slug}`);
+    assert.equal(page.metadata['twitter:image'], absoluteCover, `Okładka Twitter niezgodna z CMS ${item.slug}`);
+  }
+  for (const image of [cover, ...(story.chapters || []).map(chapter => chapter.image)].filter(Boolean)) {
+    assert(page.images.some(entry => entry.src === image), `Brak obrazu w prerenderze ${item.slug}: ${image}`);
+    const imageUrl = new URL(image, 'https://ktbmedia.eu');
+    if (imageUrl.origin !== 'https://ktbmedia.eu') continue;
+    const imageFile = path.join(dist, decodeURIComponent(imageUrl.pathname));
+    assert(fs.existsSync(imageFile) && fs.statSync(imageFile).isFile(), `Brak publicznego pliku obrazu ${item.slug}: ${image}`);
+  }
 }
 for (const item of data.pl.blog.items) assert(pages.get(`/blog/${item.slug}/`).text.includes(item.title1), `Brak wpisu CMS ${item.slug}`);
 assert(pages.get('/').text.includes('Marka,') && pages.get('/').text.includes('czuć w sieci.'), 'Zmiana hero');

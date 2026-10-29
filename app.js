@@ -134,7 +134,7 @@ function useCursor() {
 
     let lastDark = false;
     let lastDarkCheck = 0;
-    const DARK_SEL = '.about, .showcase-section, .footer, .marquee, .case-results, .nav.scrolled, .mini-cta-pre-footer, .about-page-main, .blog-dark, .process-steps, .pricing-grid, .price-card.featured, .case-page-dark, .marine-dark, .marine-hero-figure';
+    const DARK_SEL = '.about, .showcase-section, .footer, .marquee, .case-results, .editorial-stats, .editorial-comparison, .nav.scrolled, .mini-cta-pre-footer, .about-page-main, .blog-dark, .process-steps, .pricing-grid, .price-card.featured, .case-page-dark, .marine-dark, .marine-hero-figure';
 
     const onMove = e => {
       const x = e.clientX;
@@ -214,10 +214,10 @@ function usePath() {
   return path;
 }
 function navigate(path) {
-  const targetPath = prettyPath(path);
+  const targetPath = prettyPath(path) + (document.documentElement.lang === 'en' ? '?lang=en' : '');
   // Process is an independent immersive document, so enter it with a full navigation.
   if (normalizePath(path) === '/proces') {
-    window.location.assign(targetPath + (document.documentElement.lang === 'en' ? '?lang=en' : ''));
+    window.location.assign(targetPath);
     return;
   }
   if (normalizePath(window.location.pathname) === normalizePath(path)) {
@@ -513,6 +513,10 @@ function useSEO(lang, path) {
     }
     can.setAttribute('href', canonicalUrl);
     document.documentElement.setAttribute('lang', lang);
+    const languageUrl = new URL(window.location.href);
+    if (lang === 'en') languageUrl.searchParams.set('lang', 'en');
+    else languageUrl.searchParams.delete('lang');
+    if (languageUrl.href !== window.location.href) window.history.replaceState(window.history.state, '', languageUrl.href);
   }, [lang, path]);
 }
 function prefersReducedMotion() {
@@ -1592,6 +1596,8 @@ function PortfolioCatalog({
       subtitle: item.tag,
       description: item.brief,
       image: item.coverImage || images[1] || images[0],
+      imageAlt: (item.imageAlts || [])[0],
+      proof: item.editorial?.heroMetric,
       scope: item.scope || [],
       year: item.year,
       index
@@ -1684,7 +1690,7 @@ function PortfolioCatalog({
     key: category.id
   }, React.createElement("h3", {className: "work-panel-title"}, category.label), category.items.map((item, index) => /*#__PURE__*/React.createElement(SmartLink, {
     to: item.href,
-    className: "work-card",
+    className: `work-card${item.proof ? ' work-card-editorial' : ''}`,
     target: item.external ? "_blank" : undefined,
     rel: item.external ? "noopener noreferrer" : undefined,
     key: item.slug
@@ -1697,7 +1703,7 @@ function PortfolioCatalog({
     alt: `${item.title} - podgląd strony internetowej w mockupie MacBooka`
   }) : /*#__PURE__*/React.createElement("img", {
     src: item.image,
-    alt: `${item.title} - podgląd realizacji KTB Media`,
+    alt: item.imageAlt || `${item.title} - podgląd realizacji KTB Media`,
     loading: "lazy",
     decoding: "async"
   }) : /*#__PURE__*/React.createElement("span", {
@@ -1709,7 +1715,10 @@ function PortfolioCatalog({
     className: "work-card-copy"
   }, /*#__PURE__*/React.createElement("div", {
     className: "work-card-meta mono"
-  }, /*#__PURE__*/React.createElement("span", null, item.subtitle || category.label), item.year && /*#__PURE__*/React.createElement("span", null, item.year)), /*#__PURE__*/React.createElement("h3", null, item.title), /*#__PURE__*/React.createElement("p", null, item.description), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("span", null, item.subtitle || category.label), item.year && /*#__PURE__*/React.createElement("span", null, item.year)), /*#__PURE__*/React.createElement("h3", null, item.title), /*#__PURE__*/React.createElement("p", null, item.description), item.proof && React.createElement("div", {className: "work-card-proof"},
+    React.createElement("strong", null, item.proof.value),
+    React.createElement("span", null, item.proof.label),
+    React.createElement("small", null, item.proof.context)), /*#__PURE__*/React.createElement("div", {
     className: "work-card-footer"
   }, /*#__PURE__*/React.createElement("div", {
     className: "work-card-tags"
@@ -1994,6 +2003,68 @@ function CaseRelatedLinks({ lang, links = [] }) {
     React.createElement('ul', {className: 'case-notes-list'}, links.map(link =>
       React.createElement('li', {key: link.href}, React.createElement(SmartLink, {to: link.href}, link.label)))));
 }
+function EditorialCasePage({lang, item}) {
+  const h = React.createElement;
+  const story = item.editorial;
+  const metric = story.heroMetric;
+  const comparison = story.comparison;
+  const items = getMarketingCases(lang);
+  const next = items[(items.findIndex(entry => entry.slug === item.slug) + 1) % items.length];
+  const en = lang === 'en';
+  const cover = item.coverImage || (item.images || [])[1] || (item.images || [])[0];
+  const coverAlt = (item.imageAlts || [])[(item.images || []).indexOf(cover)] || `${item.title1} ${item.titleIt}`;
+  const number = value => Number(value).toLocaleString(en ? 'en-GB' : 'pl-PL');
+  const max = comparison ? Math.max(comparison.beforeValue, comparison.afterValue, 1) : 1;
+  return h('article', {className: 'editorial-case'}, h('div', {className: 'container'},
+    h(SmartLink, {to: '/realizacje', className: 'case-back mono'}, h(ArrowBackIcon, {size: 14}), en ? 'All work' : 'Wszystkie realizacje'),
+    h('header', {className: `editorial-hero${cover ? '' : ' is-text-only'}`},
+      h('div', {className: 'editorial-hero-copy'},
+        h('div', {className: 'editorial-meta mono'}, h('span', null, 'Case study / ' + item.num), h('span', null, item.year)),
+        h('h1', {className: `display${item.title1.length > 10 ? ' editorial-title-long' : ''}`}, item.title1, ' ', h('span', {className: 'it'}, item.titleIt)),
+        h('p', {className: 'editorial-headline serif-italic'}, story.headline),
+        h('p', {className: 'editorial-brief'}, item.brief),
+        h('div', {className: 'editorial-tags', 'aria-label': en ? 'Project scope' : 'Zakres projektu'},
+          (item.scope || []).map(tag => h('span', {key: tag}, tag)))),
+      cover && h('figure', {className: 'editorial-hero-media'},
+        h('img', {src: cover, alt: coverAlt, width: 1600, height: 1200, fetchPriority: 'high', decoding: 'async'}),
+        story.photoCredit && h('figcaption', null, story.photoCredit))),
+    h('section', {className: 'editorial-outcomes', 'aria-label': en ? 'Selected results' : 'Wybrane wyniki'},
+      h('div', {className: 'editorial-primary'},
+        h('span', {className: 'mono'}, en ? 'The project in numbers' : 'Projekt w liczbach'),
+        h('strong', null, metric.value), h('p', null, metric.label), h('small', null, metric.context)),
+      h('div', {className: 'editorial-stats'}, (item.results || []).map((result, index) =>
+        h('div', {className: 'editorial-stat', key: index}, h('strong', null, result.v), h('p', null, result.k), result.context && h('small', null, result.context))))),
+    h('section', {className: 'editorial-intro'},
+      h('div', null, h('h2', {className: 'mono'}, en ? '01 / The challenge' : '01 / Wyzwanie'), h('p', null, item.challenge)),
+      h('div', null, h('h2', {className: 'mono'}, en ? '02 / Our approach' : '02 / Podejście'), h('p', null, item.solution))),
+    h('div', {className: 'editorial-chapters'}, (story.chapters || []).map((chapter, index) =>
+      h('section', {className: `editorial-chapter${index % 2 ? ' is-reversed' : ''}${chapter.image ? '' : ' is-text-only'}`, key: index},
+        chapter.image && h('figure', null, h('a', {href: chapter.image, target: '_blank', rel: 'noopener noreferrer', 'aria-label': `${en ? 'Enlarge image' : 'Powiększ obraz'}: ${chapter.title}`},
+          h('img', {src: chapter.image, alt: chapter.imageAlt || chapter.title, width: 1600, height: 1000, loading: 'lazy', decoding: 'async'}), h('span', {className: 'editorial-image-zoom mono'}, en ? 'Enlarge ↗' : 'Powiększ ↗')),
+          chapter.caption && h('figcaption', null, chapter.caption)),
+        h('div', {className: 'editorial-chapter-copy'}, h('span', {className: 'mono'}, `${String(index + 3).padStart(2, '0')} / ${en ? 'In practice' : 'W praktyce'}`),
+          h('h2', {className: 'display'}, chapter.title), h('p', null, chapter.text))))),
+    comparison && h('section', {className: 'editorial-comparison'},
+      h('div', {className: 'editorial-comparison-copy'}, h('span', {className: 'mono'}, en ? 'A closer look at the data' : 'Bliżej danych'),
+        h('h2', {className: 'display'}, comparison.title), h('strong', {className: 'editorial-change'}, comparison.change), h('p', null, comparison.metric)),
+      h('div', {className: 'editorial-bars'}, [{label: comparison.beforeLabel, value: comparison.beforeValue}, {label: comparison.afterLabel, value: comparison.afterValue}].map((entry, index) =>
+        h('div', {className: `editorial-bar${index ? ' is-after' : ''}`, key: index}, h('div', {className: 'editorial-bar-caption'}, h('span', null, entry.label), h('strong', null, number(entry.value))),
+          h('div', {className: 'editorial-bar-track', 'aria-hidden': 'true'}, h('span', {style: {width: `${entry.value / max * 100}%`}})))),
+        h('p', {className: 'editorial-comparison-note'}, comparison.context))),
+    (item.deliverables || []).length > 0 && h('section', {className: 'editorial-deliverables'},
+      h('h2', {className: 'mono'}, en ? 'What we made' : 'Co powstało'),
+      h('ul', null, item.deliverables.map((text, index) => h('li', {key: index}, h('span', {className: 'mono'}, String(index + 1).padStart(2, '0')), text)))),
+    (story.reportingNotes || []).length > 0 && h('details', {className: 'editorial-reporting'},
+      h('summary', null, en ? 'Sources, periods and how to read the results' : 'Źródła, okresy i jak czytać wyniki', h('span', {'aria-hidden': 'true'}, '+')),
+      h('ul', null, story.reportingNotes.map((note, index) => h('li', {key: index}, note)))),
+    h(CaseRelatedLinks, {lang, links: item.relatedLinks}),
+    h('section', {className: 'editorial-cta'}, h('div', null, h('span', {className: 'mono'}, en ? 'Your next chapter' : 'Kolejny rozdział?'),
+      h('h2', {className: 'display'}, en ? 'Your brand.' : 'Twoja marka.', h('br'), h('span', {className: 'it'}, en ? 'Our next project.' : 'Nasz następny projekt.'))),
+      h(SmartLink, {to: '/kontakt', className: 'btn'}, en ? 'Let’s talk' : 'Porozmawiajmy', h(ArrowIcon, {size: 18}))),
+    next && h(SmartLink, {to: `/realizacje/${next.slug}`, className: 'case-next'},
+      h('span', {className: 'case-next-label mono'}, en ? 'Next project' : 'Następny projekt'),
+      h('div', {className: 'case-next-title'}, next.title1, ' ', h('span', {className: 'it'}, next.titleIt), ' ', h(ArrowIcon, {size: 28})))));
+}
 function CasePage({
   lang,
   slug
@@ -2024,6 +2095,7 @@ function CasePage({
       className: "btn"
     }, lang === 'pl' ? 'Wróć do realizacji' : 'Back to work')));
   }
+  if (item.editorial?.heroMetric) return React.createElement(EditorialCasePage, {lang, item});
   const t = lang === 'pl' ? {
     back: 'Wszystkie realizacje',
     challenge: 'Wyzwanie',

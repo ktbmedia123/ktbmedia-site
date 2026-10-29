@@ -661,13 +661,60 @@ collections:
                       - { label: Numer (np. "01"), name: num, widget: string }
                       - { label: Slug (URL), name: slug, widget: string, hint: 'Użyje się w /realizacje/SLUG' }
                       - { label: Tytuł 1 (bold), name: title1, widget: string }
-                      - { label: Tytuł 2 (italic), name: titleIt, widget: string }
+                      - { label: Tytuł 2 (italic), name: titleIt, widget: string, required: false }
                       - { label: Tag (Performance · Brand · itd.), name: tag, widget: string }
                       - { label: Rok, name: year, widget: string }
                       - { label: Placeholder (wewnętrzna nazwa grafiki), name: ph, widget: string, required: false }
                       - { label: Brief (skrót), name: brief, widget: text }
                       - { label: Wyzwanie, name: challenge, widget: text }
                       - { label: Rozwiązanie / podejście, name: solution, widget: text }
+                      - label: Rozbudowane case study
+                        name: editorial
+                        widget: object
+                        required: false
+                        collapsed: true
+                        fields:
+                          - { label: Nagłówek historii, name: headline, widget: string, required: false }
+                          - label: Wyróżniony wynik
+                            name: heroMetric
+                            widget: object
+                            required: false
+                            collapsed: true
+                            fields:
+                              - { label: Wartość, name: value, widget: string }
+                              - { label: Etykieta, name: label, widget: string }
+                              - { label: Okres i kontekst, name: context, widget: text, required: false }
+                          - label: Porównanie przed i po
+                            name: comparison
+                            widget: object
+                            required: false
+                            collapsed: true
+                            fields:
+                              - { label: Tytuł sekcji, name: title, widget: string }
+                              - { label: Nazwa wskaźnika, name: metric, widget: string }
+                              - { label: Etykieta przed, name: beforeLabel, widget: string }
+                              - { label: Wartość przed, name: beforeValue, widget: number, value_type: float, min: 0 }
+                              - { label: Etykieta po, name: afterLabel, widget: string }
+                              - { label: Wartość po, name: afterValue, widget: number, value_type: float, min: 0 }
+                              - { label: 'Zmiana (np. +662,8%)', name: change, widget: string, required: false }
+                              - { label: Kontekst porównania, name: context, widget: text, required: false }
+                          - label: Rozdziały historii
+                            name: chapters
+                            widget: list
+                            required: false
+                            summary: '{{fields.title}}'
+                            fields:
+                              - { label: Tytuł rozdziału, name: title, widget: string }
+                              - { label: Treść rozdziału, name: text, widget: text }
+                              - { label: Obraz, name: image, widget: image, required: false }
+                              - { label: Opis alternatywny obrazu, name: imageAlt, widget: string, required: false }
+                              - { label: Podpis obrazu, name: caption, widget: text, required: false }
+                          - label: Uwagi do danych
+                            name: reportingNotes
+                            widget: list
+                            required: false
+                            field: { label: Uwaga, name: note, widget: text }
+                          - { label: Autorstwo zdjęć, name: photoCredit, widget: text, required: false }
                       - { label: Czas współpracy, name: duration, widget: string, required: false }
                       - label: Zakres współpracy
                         name: scope
@@ -686,6 +733,7 @@ collections:
                         fields:
                           - { label: Opis, name: k, widget: string }
                           - { label: Wartość, name: v, widget: string }
+                          - { label: Kontekst i okres pomiaru, name: context, widget: text, required: false }
                       - label: Paleta kolorów (4 HEX)
                         name: palette
                         widget: list
@@ -1185,13 +1233,60 @@ collections:
                       - { label: Number, name: num, widget: string }
                       - { label: Slug (URL), name: slug, widget: string }
                       - { label: Title 1 (bold), name: title1, widget: string }
-                      - { label: Title 2 (italic), name: titleIt, widget: string }
+                      - { label: Title 2 (italic), name: titleIt, widget: string, required: false }
                       - { label: Tag, name: tag, widget: string }
                       - { label: Year, name: year, widget: string }
                       - { label: Placeholder name, name: ph, widget: string, required: false }
                       - { label: Brief, name: brief, widget: text }
                       - { label: Challenge, name: challenge, widget: text }
                       - { label: Solution, name: solution, widget: text }
+                      - label: Editorial case study
+                        name: editorial
+                        widget: object
+                        required: false
+                        collapsed: true
+                        fields:
+                          - { label: Story headline, name: headline, widget: string, required: false }
+                          - label: Headline metric
+                            name: heroMetric
+                            widget: object
+                            required: false
+                            collapsed: true
+                            fields:
+                              - { label: Value, name: value, widget: string }
+                              - { label: Label, name: label, widget: string }
+                              - { label: Period and context, name: context, widget: text, required: false }
+                          - label: Before and after
+                            name: comparison
+                            widget: object
+                            required: false
+                            collapsed: true
+                            fields:
+                              - { label: Section title, name: title, widget: string }
+                              - { label: Metric name, name: metric, widget: string }
+                              - { label: Before label, name: beforeLabel, widget: string }
+                              - { label: Before value, name: beforeValue, widget: number, value_type: float, min: 0 }
+                              - { label: After label, name: afterLabel, widget: string }
+                              - { label: After value, name: afterValue, widget: number, value_type: float, min: 0 }
+                              - { label: 'Change (e.g. +662.8%)', name: change, widget: string, required: false }
+                              - { label: Comparison context, name: context, widget: text, required: false }
+                          - label: Story chapters
+                            name: chapters
+                            widget: list
+                            required: false
+                            summary: '{{fields.title}}'
+                            fields:
+                              - { label: Chapter title, name: title, widget: string }
+                              - { label: Chapter text, name: text, widget: text }
+                              - { label: Image, name: image, widget: image, required: false }
+                              - { label: Alternative image text, name: imageAlt, widget: string, required: false }
+                              - { label: Image caption, name: caption, widget: text, required: false }
+                          - label: Reporting notes
+                            name: reportingNotes
+                            widget: list
+                            required: false
+                            field: { label: Note, name: note, widget: text }
+                          - { label: Photo credit, name: photoCredit, widget: text, required: false }
                       - { label: Partnership duration, name: duration, widget: string, required: false }
                       - label: Scope of work
                         name: scope
@@ -1210,6 +1305,7 @@ collections:
                         fields:
                           - { label: Label, name: k, widget: string }
                           - { label: Value, name: v, widget: string }
+                          - { label: Reporting period and context, name: context, widget: text, required: false }
                       - label: Color palette (4 HEX)
                         name: palette
                         widget: list

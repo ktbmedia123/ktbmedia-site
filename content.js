@@ -4162,117 +4162,536 @@ const COPY = {
       "lede": "Każdy projekt to indywidualna strategia. Zero template'ów, zero copy-paste.",
       "items": [
         {
-          "timeline": [
-            {
-              "phase": "Audyt i pozycjonowanie",
-              "duration": "2 tyg.",
-              "description": "Przejrzeliśmy komunikację, wizytówkę Google, profile social media i sposób prezentowania usług mechanicznych oraz blacharsko-lakierniczych."
-            },
-            {
-              "phase": "Identyfikacja i język marki",
-              "duration": "3 tyg.",
-              "description": "Ułożyliśmy nowy system wizualny, ton komunikacji i priorytety: poziom ASO, zespół, zaplecze, partnerstwo z Petronas."
-            },
-            {
-              "phase": "Produkcja foto-wideo",
-              "duration": "2 dni zdjęciowe",
-              "description": "Nagraliśmy wywiad z właścicielem, materiały z działów serwisu i serię krótkich formatów pod Meta oraz stronę."
-            },
-            {
-              "phase": "Kampanie i GBP",
-              "duration": "8 tyg.",
-              "description": "Uruchomiliśmy kampanie lokalne, uporządkowaliśmy wizytówkę Google i zbudowaliśmy rytm publikacji oparty na usługach."
-            },
-            {
-              "phase": "Optymalizacja",
-              "duration": "co miesiąc",
-              "description": "Analizowaliśmy telefony, zapytania, wyświetlenia wideo i zachowanie użytkowników, przesuwając budżet na najlepsze formaty."
-            }
-          ],
           "notes": [
-            "Full rebrand w 6 tygodni",
-            "Wywiad z właścicielem jako flagowe wideo",
-            "Działy blacharsko-lakiernicze i mechaniczne w osobnych seriach"
+            "Otwarcie salonu w Pruszczu Gdańskim w 2025 r. i Gdańsku Osowej w 2026 r.",
+            "Autorski CMS: treści, banery, osobne grafiki mobilne oraz publikacja i ukrywanie slajdów.",
+            "Pozycja salonu Dongfeng nr 1 w Polsce pod względem sprzedaży to informacja przekazana przez Grupę Janisz; bez wskazanego okresu rankingu."
           ],
-          "challenge": "Zwiększenie rozpoznawalności i autorytetu AutoCentrum jako serwisu na poziomie ASO poprzez stworzenie nowej identyfikacji wizualnej, efektywne działania marketingowe online, produkcję profesjonalnych materiałów oraz zacieśnienie współpracy z marką Petronas.",
-          "titleIt": "Elektronowa 18",
-          "coverImage": "/assets/case-autocentrum-elektronowa-zespol.webp",
+          "challenge": "Nowe marki samochodowe potrzebowały rozpoznawalności i zaufania na lokalnym rynku. Dwa salony, różne segmenty aut i kolejne otwarcia wymagały wspólnej komunikacji oraz prostej drogi od zainteresowania do kontaktu ze sprzedawcą.",
+          "titleIt": "Janisz",
+          "coverImage": "/assets/case-20261029-grupa-janisz-hero.webp",
           "imageAlts": [
-            "Zespół AutoCentrum Elektronowa 18 w hali serwisu samochodowego w Łodzi",
-            "AutoCentrum Elektronowa 18 - materiał z realizacji 2",
-            "AutoCentrum Elektronowa 18 - materiał z realizacji 3",
-            "AutoCentrum Elektronowa 18 - materiał z realizacji 4"
+            "Salon Grupy Janisz i samochód Dongfeng MAGE przed budynkiem",
+            "Wybrane archiwalne kreacje KTB Media dla marek Grupy Janisz",
+            "Publiczny widok strony internetowej Grupy Janisz wykonanej przez KTB Media"
           ],
-          "num": "01",
-          "chartData": {
-            "label": "Miesięczne kontakty z wizytówki GBP",
-            "before": [
-              45,
-              52,
-              48,
-              51
-            ],
-            "after": [
-              89,
-              124,
-              156,
-              198,
-              234,
-              287
-            ],
-            "unit": "kontaktów/mies"
-          },
-          "slug": "autocentrum-elektronowa",
+          "num": "06",
+          "slug": "grupa-janisz",
           "deliverables": [
-            "Facebook i Instagram",
-            "Kreacje Meta Ads",
-            "Sesje foto i wideo",
-            "Materiały do Google Business Profile"
+            "Strona janisz.pl z autorskim CMS-em",
+            "Kampanie kontaktowe i wideo",
+            "Zdjęcia, rolki i kreacje dla marek",
+            "Materiały i koordynacja otwarć salonów"
           ],
-          "duration": "Ciągła współpraca",
+          "duration": "Stała współpraca",
           "scope": [
-            "Rebrand",
-            "Social media",
+            "Strategia",
             "Meta Ads",
-            "Google Business Profile",
-            "Produkcja wideo"
+            "Google Ads",
+            "Social media",
+            "Foto i wideo",
+            "Strona WWW i CMS",
+            "Eventy"
           ],
           "results": [
             {
-              "k": "Wyświetlenia wideo",
-              "v": "1M+"
+              "v": "7,0 mln",
+              "k": "wyświetleń treści na Facebooku",
+              "context": "Dokładnie 7 000 635 · 21.07.2025–28.10.2026"
             },
             {
-              "k": "Obserwujący",
-              "v": "×4"
+              "v": "25 293",
+              "k": "wyświetlenia stron docelowych z Meta",
+              "context": "Historia 6 analizowanych kampanii do 29.10.2026"
             },
             {
-              "k": "Pozycja ASO",
-              "v": "Lider regionu"
+              "v": "+75,7%",
+              "k": "wyświetleń Facebook miesiąc do miesiąca",
+              "context": "Sierpień → wrzesień 2026 · 317 564 → 557 855"
+            }
+          ],
+          "ph": "ph-stripe-3",
+          "images": [
+            "/assets/case-20261029-grupa-janisz-hero.webp",
+            "/assets/case-20261029-grupa-janisz-work.webp",
+            "/assets/case-20261029-grupa-janisz-web.webp"
+          ],
+          "title1": "Grupa",
+          "solution": "Połączyliśmy przygotowanie otwarć salonów, produkcję zdjęć i wideo, prowadzenie komunikacji oraz kampanie Meta Ads i Google Ads. Zaprojektowaliśmy janisz.pl z autorskim CMS-em. Działania uzupełniały eventy, materiały prasowe i radiowe oraz współprace z twórcami.",
+          "brief": "Od otwarcia salonów w Pruszczu Gdańskim i Gdańsku Osowej po stronę z autorskim CMS-em, komunikację marek i kampanie pozyskujące kontakty dla zespołu sprzedaży.",
+          "tag": "Automotive · Marketing 360 · WWW",
+          "palette": [
+            "#0F5132",
+            "#D6B15E",
+            "#1a1a1a",
+            "#efe9dc"
+          ],
+          "year": "2025–2026",
+          "editorial": {
+            "headline": "Od otwarcia salonów do kontaktów z klientami.",
+            "heroMetric": {
+              "value": "1 764",
+              "label": "raportowane leady z Meta Ads",
+              "context": "Dostępna historia kampanii Dongfeng do 29.10.2026"
+            },
+            "comparison": {
+              "title": "Większa widoczność. Konkretny okres.",
+              "metric": "Wyświetlenia treści na Facebooku",
+              "beforeLabel": "Sierpień 2026",
+              "beforeValue": 317564,
+              "afterLabel": "Wrzesień 2026",
+              "afterValue": 557855,
+              "change": "+75,7%",
+              "context": "Pełne miesiące: 31 i 30 dni. Metricool; treści strony, bez podziału na ruch organiczny i płatny."
+            },
+            "chapters": [
+              {
+                "title": "Strona, którą klient zarządza sam.",
+                "text": "Zaprojektowaliśmy i wdrożyliśmy janisz.pl oraz autorski CMS dopasowany do pracy zespołu. Panel pozwala edytować treści i banery, dobierać osobne grafiki na telefon oraz decydować o publikacji slajdów.",
+                "image": "/assets/case-20261029-grupa-janisz-web.webp",
+                "imageAlt": "Publiczny widok strony internetowej Grupy Janisz wykonanej przez KTB Media",
+                "caption": "janisz.pl · projekt i wdrożenie KTB Media"
+              },
+              {
+                "title": "Różne marki. Jeden kierunek.",
+                "text": "Zdjęcia z salonów, materiały produktowe i kampanie prowadziły odbiorcę od poznania samochodu do zgłoszenia. Komunikację Dongfeng uzupełniały osobne materiały dla marek VOYAH i MHERO oraz wsparcie otwarć i wydarzeń.",
+                "image": "/assets/case-20261029-grupa-janisz-work.webp",
+                "imageAlt": "Wybrane archiwalne kreacje KTB Media dla marek Grupy Janisz",
+                "caption": "Archiwalne realizacje · nie stanowią aktualnej oferty handlowej"
+              }
+            ],
+            "reportingNotes": [
+              "Źródła: Metricool, raporty Meta Ads i Google Ads oraz materiały projektowe KTB Media. Odczyt: 29.10.2026.",
+              "1764 leady to zgłoszenia przed deduplikacją i kwalifikacją; nie liczba unikalnych osób, jazd testowych ani sprzedanych aut.",
+              "Wyświetlenia treści i stron docelowych mogą się powtarzać. Nie oznaczają unikalnego zasięgu ani unikalnych wizyt.",
+              "Wyniki opisują różne wskazane okresy. Nie sumujemy ich i nie przypisujemy całej zmiany jednej usłudze."
+            ]
+          }
+        },
+        {
+          "slug": "qarmax",
+          "ph": "ph-stripe-3",
+          "num": "11",
+          "title1": "QARMAX",
+          "titleIt": "",
+          "palette": [
+            "#E3262E",
+            "#141414",
+            "#F4F4F4",
+            "#8A8A8A"
+          ],
+          "year": "2025–2026",
+          "brief": "Chemia motoryzacyjna pokazana w praktyce. Strategia, treści produktowe, kampanie i motorsport połączone w rozpoznawalną komunikację marki.",
+          "tag": "Automotive · Content · Meta Ads",
+          "duration": "Współpraca od listopada 2025",
+          "challenge": "Techniczny produkt potrzebuje konkretu: do czego służy, kiedy po niego sięgnąć i jak działa w codziennej eksploatacji. Zadaniem było zbudowanie spójnej komunikacji, która łączy edukację, ofertę i obecność marki w motorsporcie.",
+          "solution": "Połączyliśmy strategię, regularną produkcję grafik i wideo oraz kampanie Meta Ads. Produkty pokazywaliśmy w kontekście warsztatu, sezonowych potrzeb kierowców i motorsportu. Przygotowywaliśmy też gadżety reklamowe oraz wspieraliśmy organizację wydarzeń.",
+          "scope": [
+            "Strategia",
+            "Social media",
+            "Grafiki i wideo",
+            "Meta Ads",
+            "Eventy",
+            "Materiały reklamowe"
+          ],
+          "deliverables": [
+            "Strategia i spójna komunikacja produktowa",
+            "Grafiki, materiały wideo i treści edukacyjne",
+            "Kampanie Meta Ads",
+            "Gadżety reklamowe i materiały wydarzeń"
+          ],
+          "notes": [
+            "Współpraca rozpoczęła się w listopadzie 2025 r.",
+            "Porównanie rok do roku obejmuje te same 11 miesięcy i po 334 dni kompletnych danych.",
+            "Materiały łączą praktyczne zastosowania produktów z komunikacją wydarzeń i motorsportu."
+          ],
+          "results": [
+            {
+              "v": "+662,8%",
+              "k": "obserwujących na Facebooku",
+              "context": "242 → 1 846 · 1.11.2025–30.09.2026"
             },
             {
-              "k": "Partner",
-              "v": "Petronas"
+              "v": "23 087",
+              "k": "interakcji z postami i rolkami",
+              "context": "1.11.2025–30.09.2026 · bez Stories"
+            },
+            {
+              "v": "58,6×",
+              "k": "tyle wyświetleń treści rok do roku",
+              "context": "31 955 → 1 873 999 · te same 11 miesięcy"
+            }
+          ],
+          "editorial": {
+            "headline": "Od produktu na półce do marki w praktyce.",
+            "heroMetric": {
+              "value": "1,87 mln",
+              "label": "wyświetleń treści na Facebooku",
+              "context": "Dokładnie 1 873 999 · 1.11.2025–30.09.2026"
+            },
+            "comparison": {
+              "title": "Nowa skala widoczności.",
+              "metric": "Wyświetlenia treści na Facebooku",
+              "beforeLabel": "XI 2024–IX 2025",
+              "beforeValue": 31955,
+              "afterLabel": "XI 2025–IX 2026",
+              "afterValue": 1873999,
+              "change": "58,6×",
+              "context": "Te same miesiące, po 334 dni kompletnych danych. Pierwszy okres przed KTB, drugi podczas współpracy; start w listopadzie 2025."
+            },
+            "chapters": [
+              {
+                "title": "Produkt zrozumiały w użyciu.",
+                "text": "Zamiast samego opakowania pokazaliśmy zastosowanie. Treści wyjaśniały rolę preparatów, odpowiadały na sezonowe potrzeby kierowców i korzystały z kontekstu realnej pracy warsztatu.",
+                "image": "/assets/case-20261029-qarmax-work.webp",
+                "imageAlt": "Archiwalne kreacje QARMAX pokazujące produkty i ich praktyczne zastosowanie",
+                "caption": "Oryginalne projekty KTB Media dla QARMAX · materiały archiwalne"
+              },
+              {
+                "title": "Motorsport jako część marki.",
+                "text": "Komunikację produktową połączyliśmy z wydarzeniami i driftem. Grafiki, wideo oraz materiały reklamowe budowały wspólny język dla produktów, społeczności i obecności marki poza półką sklepową.",
+                "image": "/assets/case-20261029-qarmax-detail.webp",
+                "imageAlt": "Materiały QARMAX łączące prezentację produktów z motorsportem",
+                "caption": "Archiwalne realizacje · nie są zapowiedzią aktualnych wydarzeń ani ofertą"
+              }
+            ],
+            "reportingNotes": [
+              "Źródło: statystyki Metricool profilu QARMAX i materiały projektowe KTB Media. Odczyt: 29.10.2026.",
+              "Okres główny: 1.11.2025–30.09.2026, 334 dni. Obserwujący: stany na początku i końcu tego okresu.",
+              "Wyświetlenia obejmują powtórzenia i nie są unikalnym zasięgiem ani wyłącznie ruchem organicznym. Nie wykazano liczby leadów ani sprzedaży.",
+              "Porównanie rok do roku nie oznacza przypisania całej zmiany jednej usłudze marketingowej."
+            ]
+          },
+          "coverImage": "/assets/case-20261029-qarmax-hero.webp",
+          "images": [
+            "/assets/case-20261029-qarmax-hero.webp",
+            "/assets/case-20261029-qarmax-work.webp",
+            "/assets/case-20261029-qarmax-detail.webp"
+          ],
+          "imageAlts": [
+            "Samochód driftowy i kierowca z oznaczeniami QARMAX podczas nocnej sesji",
+            "Archiwalne kreacje QARMAX pokazujące produkty i ich praktyczne zastosowanie",
+            "Materiały QARMAX łączące prezentację produktów z motorsportem"
+          ]
+        },
+        {
+          "notes": [
+            "Współpraca od 2024 r.; nie ustalono dokładnego miesiąca rozpoczęcia.",
+            "Osobne tematy komunikacji dla mechaniki, diagnostyki oraz blacharstwa i lakiernictwa.",
+            "Zdjęcia i filmy pokazują realny serwis oraz jego zespół."
+          ],
+          "challenge": "Szeroki zakres usług mechanicznych i blacharsko-lakierniczych wymagał czytelnej prezentacji. Chcieliśmy pokazać ludzi, zaplecze i standard pracy, a kierowcy ułatwić znalezienie właściwej usługi oraz kontakt z serwisem.",
+          "titleIt": "Elektronowa 18",
+          "coverImage": "/assets/case-20261029-autocentrum-elektronowa-hero.webp",
+          "imageAlts": [
+            "Zespół AutoCentrum Elektronowa 18 w hali serwisu",
+            "Wybrane archiwalne materiały AutoCentrum o usługach i eksploatacji samochodu",
+            "Publiczny widok strony AutoCentrum Elektronowa 18 wykonanej przez KTB Media"
+          ],
+          "num": "01",
+          "slug": "autocentrum-elektronowa",
+          "deliverables": [
+            "Strona autocentrumlodz.pl",
+            "Identyfikacja i kreacje do social mediów",
+            "Sesja zdjęciowa i filmy z serwisu",
+            "Kampanie Meta Ads i materiały Google"
+          ],
+          "duration": "Współpraca od 2024",
+          "scope": [
+            "Strona WWW",
+            "Identyfikacja",
+            "Social media",
+            "Meta Ads",
+            "Profil Firmy w Google",
+            "Foto i wideo"
+          ],
+          "results": [
+            {
+              "v": "+259,1%",
+              "k": "obserwujących na Facebooku",
+              "context": "574 → 2 061 · 19.04.2024–30.09.2026"
+            },
+            {
+              "v": "+78,0%",
+              "k": "wyświetleń treści Facebook rok do roku",
+              "context": "II kwartał 2025 → II kwartał 2026"
+            },
+            {
+              "v": "2 542",
+              "k": "kliknięcia wskazówek dojazdu w Google",
+              "context": "1.01–30.09.2026 · zarejestrowane akcje"
             }
           ],
           "ph": "ph-stripe-1",
           "images": [
-            "/assets/case-autocentrum-elektronowa-zespol.webp",
-            "/assets/case-autocentrum-elektronowa-1.jpg",
-            "/assets/case-autocentrum-elektronowa-2.jpg",
-            "/assets/case-autocentrum-elektronowa-3.jpg"
+            "/assets/case-20261029-autocentrum-elektronowa-hero.webp",
+            "/assets/case-20261029-autocentrum-elektronowa-work.webp",
+            "/assets/case-20261029-autocentrum-elektronowa-web.webp"
           ],
           "title1": "AutoCentrum",
-          "solution": "Stworzyliśmy nową identyfikację wizualną i przejęliśmy prowadzenie social mediów, pozycjonowanie wizytówki Google oraz kampanie Meta Ads. Wyprodukowaliśmy serię materiałów wideo: wywiad z właścicielem, prezentacje działów blacharsko-lakierniczego i mechanicznego. Sesja fotograficzna pokazująca serwis i zespół mechaników. Zacieśniliśmy współpracę z marką Petronas pozycjonując AutoCentrum jako autoryzowanego partnera.",
-          "brief": "Duży serwis samochodowy w Łodzi z pełną obsługą pojazdów wszystkich marek i zaawansowanymi usługami blacharsko-lakierniczymi.",
-          "tag": "Serwis · Social · Video",
+          "solution": "Zbudowaliśmy stronę autocentrumlodz.pl, nową identyfikację oraz spójną komunikację usług. Przygotowaliśmy zdjęcia i filmy z warsztatu, treści edukacyjne, kampanie Meta Ads i materiały do Profilu Firmy w Google.",
+          "brief": "Strona WWW i komunikacja serwisu w Łodzi, któremu można przyjrzeć się z bliska. Identyfikacja, zdjęcia, wideo i lokalna widoczność rozwijane we współpracy od 2024 roku.",
+          "tag": "Serwis · WWW · Social media",
           "palette": [
             "#E86F1F",
             "#1a1a1a",
             "#f4f4f4",
             "#c9c9c9"
           ],
-          "year": "2024"
+          "year": "2024–2026",
+          "editorial": {
+            "headline": "Serwis, któremu można przyjrzeć się z bliska.",
+            "heroMetric": {
+              "value": "1 499",
+              "label": "kliknięć przycisku telefonu w Google",
+              "context": "1.01–30.09.2026 · zarejestrowane akcje Profilu Firmy"
+            },
+            "comparison": {
+              "title": "Więcej wyświetleń rok do roku.",
+              "metric": "Wyświetlenia treści na Facebooku",
+              "beforeLabel": "II kwartał 2025",
+              "beforeValue": 69142,
+              "afterLabel": "II kwartał 2026",
+              "afterValue": 123047,
+              "change": "+78,0%",
+              "context": "Oba kwartały mają po 91 dni kompletnych danych i przypadają podczas współpracy z KTB. To porównanie rok do roku."
+            },
+            "chapters": [
+              {
+                "title": "Od usługi do kontaktu.",
+                "text": "Na autocentrumlodz.pl uporządkowaliśmy mechanikę, diagnostykę oraz blacharstwo i lakiernictwo. Prezentacja zaplecza i usług prowadzi do telefonu oraz formularza kontaktowego.",
+                "image": "/assets/case-20261029-autocentrum-elektronowa-web.webp",
+                "imageAlt": "Publiczny widok strony AutoCentrum Elektronowa 18 wykonanej przez KTB Media",
+                "caption": "autocentrumlodz.pl · projekt i wykonanie KTB Media"
+              },
+              {
+                "title": "Prawdziwy warsztat. Spójny wizerunek.",
+                "text": "Nową identyfikację wypełniły zdjęcia zespołu, filmy z serwisu i konkretne tematy dla kierowców. Hamulce, geometria czy eksploatacja auta stały się czytelnymi materiałami, które łączą wiedzę z prezentacją usług.",
+                "image": "/assets/case-20261029-autocentrum-elektronowa-work.webp",
+                "imageAlt": "Wybrane archiwalne materiały AutoCentrum o usługach i eksploatacji samochodu",
+                "caption": "Archiwalne projekty KTB Media · nie stanowią aktualnej oferty"
+              }
+            ],
+            "reportingNotes": [
+              "Źródła: Metricool, raport Profilu Firmy w Google i materiały KTB Media. Odczyt: 29.10.2026.",
+              "Kliknięcia telefonu i dojazdu to zarejestrowane akcje, nie potwierdzone rozmowy, wizyty ani unikalne leady. Puste pola nie były uzupełniane.",
+              "Wzrost obserwujących pokazuje dwa stany profilu; odczyt z 19.04.2024 nie jest potwierdzoną bazą sprzed współpracy.",
+              "Porównanie II kwartałów dotyczy czasu współpracy, bez założenia jednakowych wydatków. Wyświetlenia mogą się powtarzać i nie oznaczają sprzedaży."
+            ]
+          }
+        },
+        {
+          "notes": [
+            "Początek współpracy: kwiecień 2024.",
+            "Marka prowadziła komunikację przed KTB; brak pełnej bazy analitycznej sprzed współpracy.",
+            "Materiały łączą produkt, zawodników i relacje z europejskich wydarzeń."
+          ],
+          "challenge": "Opona motorsportowa potrzebuje więcej niż zdjęcia produktu. Marka wymagała spójnej identyfikacji i komunikacji, która pokazuje zastosowanie opon, obecność na torze oraz relacje z zawodnikami i międzynarodową społecznością.",
+          "titleIt": "Tyres",
+          "coverImage": "/assets/case-20261029-extreme-tyres-hero.webp",
+          "imageAlts": [
+            "Conor Shanahan z zespołem i kibicami podczas Drift Masters 2025; fot. Paddy McGrath / Drift Masters",
+            "Archiwalne projekty Extreme Tyres z serią zawodników i materiałami produktowymi",
+            "Archiwalne materiały Extreme Tyres pokazujące produkt w kontekście motorsportu"
+          ],
+          "num": "09",
+          "slug": "extreme-tyres",
+          "deliverables": [
+            "Nowa identyfikacja i zasady komunikacji",
+            "Materiały produktowe i kreacje marki",
+            "Treści o zawodnikach i wydarzeniach",
+            "Grafiki, wideo i bieżąca komunikacja społeczności"
+          ],
+          "duration": "Współpraca od kwietnia 2024",
+          "scope": [
+            "Rebranding",
+            "Strategia komunikacji",
+            "Social media",
+            "Grafiki i wideo",
+            "Content produktowy",
+            "Motorsport"
+          ],
+          "results": [
+            {
+              "v": "+244,8%",
+              "k": "wyświetleń Instagram miesiąc do miesiąca",
+              "context": "48 790 → 168 236 · VIII → IX 2026"
+            },
+            {
+              "v": "+19,6%",
+              "k": "obserwujących na Instagramie",
+              "context": "2 326 → 2 781 · 1.01–30.09.2026"
+            },
+            {
+              "v": "490",
+              "k": "publikacji: postów i rolek",
+              "context": "1.01–30.09.2026 · bez Stories"
+            }
+          ],
+          "ph": "ph-stripe-3",
+          "images": [
+            "/assets/case-20261029-extreme-tyres-hero.webp",
+            "/assets/case-20261029-extreme-tyres-work.webp",
+            "/assets/case-20261029-extreme-tyres-detail.webp"
+          ],
+          "title1": "Extreme",
+          "solution": "Przeprowadziliśmy rebranding i ułożyliśmy spójne zasady komunikacji. Tworzyliśmy treści produktowe, grafiki i wideo, relacje z wydarzeń w Europie oraz materiały prezentujące zawodników. Wspieraliśmy koordynację z partnerami marki i kontakt z odbiorcami.",
+          "brief": "Od rebrandingu do komunikacji na europejskich torach. Produkt, zawodnicy i społeczność motorsportowa połączeni w spójnym wizerunku Extreme Performance Tyres.",
+          "tag": "Motorsport · Rebranding · Social",
+          "palette": [
+            "#D71920",
+            "#111111",
+            "#F4F4F4",
+            "#757575"
+          ],
+          "year": "2024–2026",
+          "editorial": {
+            "headline": "Marka, która jedzie razem z motorsportem.",
+            "heroMetric": {
+              "value": "537 611",
+              "label": "wyświetleń na Instagramie",
+              "context": "1.01–30.09.2026 · 273 dni kompletnych danych"
+            },
+            "comparison": {
+              "title": "Widoczność rośnie. W liczbach.",
+              "metric": "Wyświetlenia na Instagramie",
+              "beforeLabel": "Sierpień 2026",
+              "beforeValue": 48790,
+              "afterLabel": "Wrzesień 2026",
+              "afterValue": 168236,
+              "change": "+244,8%",
+              "context": "Pełne miesiące: 31 i 30 dni, oba podczas współpracy. Wyświetlenia treści i profilu, organiczne i płatne."
+            },
+            "chapters": [
+              {
+                "title": "Jeden rozpoznawalny język marki.",
+                "text": "Rebranding uporządkował identyfikację i sposób prezentacji produktów. Powtarzalny key visual połączył grafiki zawodników, materiały produktowe oraz komunikację wydarzeń w jedną rozpoznawalną całość.",
+                "image": "/assets/case-20261029-extreme-tyres-work.webp",
+                "imageAlt": "Archiwalne projekty Extreme Tyres z serią zawodników i materiałami produktowymi",
+                "caption": "Archiwalne kreacje marki: zawodnicy, produkt i wydarzenia"
+              },
+              {
+                "title": "Produkt w swoim środowisku.",
+                "text": "Opony pokazujemy w kontekście jazdy i motorsportu. Treści z europejskich wydarzeń, obecność zawodników oraz kontakt ze społecznością pozwalają opowiadać o marce poprzez jej rzeczywiste zastosowanie.",
+                "image": "/assets/case-20261029-extreme-tyres-detail.webp",
+                "imageAlt": "Archiwalne materiały Extreme Tyres pokazujące produkt w kontekście motorsportu",
+                "caption": "Materiały archiwalne · komunikacja produktu i wydarzeń"
+              }
+            ],
+            "reportingNotes": [
+              "Źródła: Metricool profilu extreme.performance.tyres, portfolio KTB Media i archiwalne projekty marki. Odczyt: 29.10.2026.",
+              "Wyświetlenia obejmują treści i profil, ruch organiczny oraz płatny. Powtórzenia są wliczone; to nie unikalny zasięg.",
+              "Porównanie VIII–IX 2026 dotyczy miesięcy podczas współpracy. Brak pełnych danych sprzed kwietnia 2024 nie pozwala wyliczyć rocznego wzrostu względem tego okresu.",
+              "Liczba publikacji obejmuje posty i rolki, bez Stories. Wzrost obserwujących to zmiana stanu netto. Nie deklarujemy wyników sprzedaży ani leadów."
+            ],
+            "photoCredit": "Conor Shanahan / Drift Masters 2025. Fot. Paddy McGrath / Drift Masters."
+          }
+        },
+        {
+          "notes": [
+            "Formularz łączy kontakt, wybór usługi i informacje o aucie.",
+            "Treści pokazują rzeczywistą pracę serwisu oraz tłumaczą objawy i diagnozę.",
+            "Dane Facebook obejmują 1.11.2025–30.09.2026; raport Google ma niepełne pokrycie tego okresu."
+          ],
+          "challenge": "Lokalny warsztat potrzebuje zaufania w chwili, gdy kierowca szuka rozwiązania konkretnego problemu. Trzeba było czytelnie pokazać usługi, realne zaplecze i lokalizację oraz ułatwić kontakt i zgłoszenie auta do serwisu.",
+          "titleIt": "Barniewice",
+          "coverImage": "/assets/case-20261029-gt-serwis-barniewice-hero.webp",
+          "num": "07",
+          "slug": "gt-serwis-barniewice",
+          "deliverables": [
+            "Strona gtserwis.com z formularzem zgłoszeniowym",
+            "Opisy usług i treści blogowe",
+            "Grafiki oraz zdjęcia z warsztatu",
+            "Komunikacja w social mediach i materiały Google"
+          ],
+          "duration": "Stała współpraca",
+          "scope": [
+            "Strona WWW",
+            "Social media",
+            "Content",
+            "Foto i wideo",
+            "Profil Firmy w Google",
+            "Marketing lokalny"
+          ],
+          "results": [
+            {
+              "v": "+64,4%",
+              "k": "obserwujących na Facebooku",
+              "context": "264 → 434 · 30.11.2025–30.09.2026"
+            },
+            {
+              "v": "1 298",
+              "k": "kliknięć wskazówek dojazdu w Google",
+              "context": "XI 2025–IX 2026 · dostępne 329 z 334 dni"
+            },
+            {
+              "v": "296",
+              "k": "kliknięć przycisku telefonu w Google",
+              "context": "XI 2025–IX 2026 · dostępne 329 z 334 dni"
+            }
+          ],
+          "ph": "ph-stripe-1",
+          "images": [
+            "/assets/case-20261029-gt-serwis-barniewice-hero.webp",
+            "/assets/case-20261029-gt-serwis-barniewice-work.webp",
+            "/assets/case-20261029-gt-serwis-barniewice-web.webp"
+          ],
+          "title1": "GT Serwis",
+          "solution": "Zaprojektowaliśmy i wdrożyliśmy gtserwis.com z usługami, formularzem zgłoszeniowym i blogiem. Komunikację w social mediach oparliśmy na prawdziwej pracy warsztatu, technicznych wyjaśnieniach i zdjęciach. Stronę połączyliśmy ze spójną obecnością lokalną i Profilem Firmy w Google.",
+          "brief": "Strona WWW, treści z prawdziwego warsztatu i lokalne profile. Wspólna prezentacja GT Serwis, która pokazuje zakres usług i ułatwia kierowcy kolejny krok.",
+          "tag": "Warsztat · WWW · Marketing lokalny",
+          "palette": [
+            "#E8A838",
+            "#23395B",
+            "#1a1a1a",
+            "#f4f4f4"
+          ],
+          "year": "2025–2026",
+          "editorial": {
+            "headline": "Prawdziwy warsztat. Widoczny lokalnie.",
+            "heroMetric": {
+              "value": "442 927",
+              "label": "wyświetleń treści na Facebooku",
+              "context": "1.11.2025–30.09.2026 · 334 dni kompletnych danych"
+            },
+            "comparison": {
+              "title": "Jeden z momentów wzrostu.",
+              "metric": "Wyświetlenia treści na Facebooku",
+              "beforeLabel": "Kwiecień 2026",
+              "beforeValue": 28237,
+              "afterLabel": "Maj 2026",
+              "afterValue": 90241,
+              "change": "+219,6%",
+              "context": "Wybrane pełne miesiące: 30 i 31 dni. Porównanie nie oznacza stałego wzrostu ani jednakowego budżetu reklamowego."
+            },
+            "chapters": [
+              {
+                "title": "Od informacji do zgłoszenia.",
+                "text": "Na gtserwis.com zakres usług, blog i lokalne informacje prowadzą do wspólnego formularza. Kierowca może wybrać usługę, podać informacje o aucie i zostawić dane do kontaktu.",
+                "image": "/assets/case-20261029-gt-serwis-barniewice-web.webp",
+                "imageAlt": "Publiczny widok strony GT Serwis Barniewice wykonanej przez KTB Media",
+                "caption": "gtserwis.com · projekt i wdrożenie KTB Media"
+              },
+              {
+                "title": "Techniczny konkret zamiast ogólników.",
+                "text": "Hamulce, objawy usterek i praca przy samochodach stały się tematami komunikacji. Materiały pokazują rzeczywiste zaplecze warsztatu i tłumaczą usługi językiem zrozumiałym dla kierowcy.",
+                "image": "/assets/case-20261029-gt-serwis-barniewice-work.webp",
+                "imageAlt": "Archiwalne kreacje GT Serwis pokazujące usługi i wiedzę techniczną",
+                "caption": "Archiwalne realizacje KTB Media · nie stanowią aktualnej oferty"
+              }
+            ],
+            "reportingNotes": [
+              "Źródła: Metricool profilu GT Serwis Barniewice, raport Profilu Firmy w Google i materiały KTB Media. Odczyt: 29.10.2026.",
+              "Facebook: 1.11.2025–30.09.2026, 334 dni kompletnych danych wyświetleń. Wyświetlenia mogą się powtarzać i nie są unikalnym zasięgiem.",
+              "Raport Google obejmuje 329 dziennych rekordów z 334 dni okresu. Brakujących rekordów nie dopisywano.",
+              "Kliknięcia telefonu i dojazdu nie są odbytymi rozmowami, wizytami ani unikalnymi leadami. Wyniki nie określają liczby sprzedaży lub umówionych wizyt."
+            ]
+          },
+          "imageAlts": [
+            "GT Serwis Barniewice — zaplecze warsztatu samochodowego",
+            "Archiwalne kreacje GT Serwis pokazujące usługi i wiedzę techniczną",
+            "Publiczny widok strony GT Serwis Barniewice wykonanej przez KTB Media"
+          ]
         },
         {
           "timeline": [
@@ -4707,344 +5126,6 @@ const COPY = {
             "#f4f4f4"
           ],
           "year": "2024"
-        },
-        {
-          "timeline": [
-            {
-              "phase": "Mapa oferty",
-              "duration": "2 tyg.",
-              "description": "Podzieliliśmy komunikację na serwis, ASO, SKP, blacharnię, geometrię, Krown i sprzedaż samochodów, żeby każda usługa miała jasny kontekst."
-            },
-            {
-              "phase": "SEO lokalne i GBP",
-              "duration": "ciągłe",
-              "description": "Porządkujemy treści i widoczność pod zapytania kierowców z Pruszcza Gdańskiego, Gdańska oraz najbliższych miejscowości."
-            },
-            {
-              "phase": "Kampanie reklamowe",
-              "duration": "co miesiąc",
-              "description": "Meta Ads i Google Ads kierują ruch do usług o największym potencjale kontaktu, z oddzielną komunikacją dla różnych intencji."
-            },
-            {
-              "phase": "Content i social media",
-              "duration": "ciągłe",
-              "description": "Pokazujemy zaplecze, zespół, usługi i standard pracy tak, aby klient widział konkret, nie samą grafikę reklamową."
-            },
-            {
-              "phase": "Consulting i raportowanie",
-              "duration": "co miesiąc",
-              "description": "Analizujemy zapytania, telefony, sezonowość i jakość leadów, a następnie korygujemy priorytety komunikacji."
-            }
-          ],
-          "notes": [
-            "Oferta rozpisana według intencji lokalnych kierowców",
-            "Komunikacja dla wielu marek bez utraty czytelności",
-            "Nacisk na zaufanie, standard serwisu i lokalną dostępność"
-          ],
-          "challenge": "Grupa Janisz ma bardzo szeroką ofertę i kilka mocnych marek pod jednym adresem. Wyzwanie polegało na tym, żeby nie rozmyć komunikacji: klient szukający mechaniki, blacharza, ASO, kontroli SKP albo zabezpieczenia antykorozyjnego musi od razu rozumieć, gdzie trafił i jaki jest następny krok.",
-          "titleIt": "Janisz",
-          "coverImage": "/assets/case-grupa-janisz-dongfeng-wiatrak.webp",
-          "imageAlts": [
-            "Dongfeng Mage Grupy Janisz podczas plenerowej produkcji fotograficznej",
-            "Oznakowany Dongfeng Mage w salonie Grupy Janisz w Pruszczu Gdańskim",
-            "Stoisko Dongfeng Grupy Janisz podczas wydarzenia motoryzacyjnego",
-            "Grupa Janisz - materiał z realizacji 4",
-            "Grupa Janisz - materiał z realizacji 5",
-            "Grupa Janisz - materiał z realizacji 6",
-            "Grupa Janisz - materiał z realizacji 7"
-          ],
-          "num": "06",
-          "chartData": {
-            "label": "Miesięczne zapytania z kanałów lokalnych",
-            "before": [
-              82,
-              88,
-              91,
-              86
-            ],
-            "after": [
-              118,
-              134,
-              151,
-              169,
-              187,
-              204
-            ],
-            "unit": "zapytań/mies"
-          },
-          "slug": "grupa-janisz",
-          "deliverables": [
-            "Facebook i LinkedIn",
-            "Foto-wideo, także z drona",
-            "Kreacje sprzedażowe i wizerunkowe",
-            "Materiały drukowane i POS"
-          ],
-          "duration": "Ciągła współpraca",
-          "scope": [
-            "Strategia",
-            "Meta Ads",
-            "Google Ads",
-            "SEO lokalne",
-            "Social media",
-            "Foto-wideo",
-            "Consulting"
-          ],
-          "results": [
-            {
-              "k": "Zakres usług",
-              "v": "Full service"
-            },
-            {
-              "k": "Historia marki",
-              "v": "od 1993"
-            },
-            {
-              "k": "Audyt TÜV",
-              "v": "100%"
-            },
-            {
-              "k": "Kanały",
-              "v": "Meta · Google · SEO · Social"
-            }
-          ],
-          "ph": "ph-stripe-3",
-          "images": [
-            "/assets/case-grupa-janisz-dongfeng-wiatrak.webp",
-            "/assets/case-grupa-janisz-dongfeng-auto.webp",
-            "/assets/case-grupa-janisz-dongfeng-targi.webp",
-            "/assets/digital-janisz-scroll.webp",
-            "/assets/digital-janisz-bosch.webp",
-            "/assets/digital-janisz-dongfeng.webp",
-            "/assets/digital-janisz-cennik.webp"
-          ],
-          "title1": "Grupa",
-          "solution": "Prowadzimy komunikację full service: strategia, lokalne SEO, porządkowanie ścieżek kontaktu, kampanie Meta Ads i Google Ads, social media, treści usługowe, materiały foto-wideo i konsulting. Ułożyliśmy ofertę wokół realnych intencji kierowców z Pruszcza Gdańskiego, Gdańska i okolic, a nie wokół ogólnych haseł o kompleksowości.",
-          "brief": "Rodzinna grupa automotive z Pruszcza Gdańskiego działająca od 1993 roku: Bosch Car Service, ASO Volkswagen i Skoda, autoryzowany dealer Dongfeng, blacharnia i lakiernia, SKP, geometria 3D oraz zabezpieczenia Krown.",
-          "tag": "Automotive · Full service · Local SEO",
-          "palette": [
-            "#0F5132",
-            "#D6B15E",
-            "#1a1a1a",
-            "#efe9dc"
-          ],
-          "year": "2026"
-        },
-        {
-          "timeline": [
-            {
-              "phase": "Audyt lokalny",
-              "duration": "1 tydz.",
-              "description": "Sprawdziliśmy frazy, konkurencję, profil usług i punkty kontaktu, które decydują o telefonie do warsztatu."
-            },
-            {
-              "phase": "Priorytety usług",
-              "duration": "1 tydz.",
-              "description": "Ułożyliśmy komunikację wokół diagnostyki, hamulców, klimatyzacji, oleju, elektromechaniki i opon."
-            },
-            {
-              "phase": "Meta Ads i Google Ads",
-              "duration": "ciągłe",
-              "description": "Prowadzimy kampanie pod lokalne zapytania oraz przypominanie o usługach sezonowych."
-            },
-            {
-              "phase": "Social media",
-              "duration": "ciągłe",
-              "description": "Publikacje pokazują konkretne prace, zaplecze i przewagi, które budują zaufanie przed pierwszym telefonem."
-            },
-            {
-              "phase": "Raport i konsulting",
-              "duration": "co miesiąc",
-              "description": "Na bieżąco korygujemy budżet, tematy postów i kierunki kampanii zgodnie z sezonem oraz obłożeniem serwisu."
-            }
-          ],
-          "notes": [
-            "Osobna komunikacja dla najważniejszych usług warsztatu",
-            "Reklamy połączone z lokalną intencją wyszukiwania",
-            "Stały consulting zamiast przypadkowego publikowania postów"
-          ],
-          "challenge": "Lokalny warsztat konkuruje nie tylko ceną, ale też szybkością kontaktu, zaufaniem i widocznością w momencie, gdy kierowca ma konkretny problem. Trzeba było połączyć działania reklamowe z czytelną komunikacją usług i lokalizacją Barniewice/Gdańsk.",
-          "titleIt": "Barniewice",
-          "coverImage": "/assets/digital-gt-home.webp",
-          "num": "07",
-          "chartData": {
-            "label": "Kontakty z kampanii lokalnych",
-            "before": [
-              24,
-              27,
-              26,
-              29
-            ],
-            "after": [
-              41,
-              49,
-              58,
-              66,
-              73,
-              81
-            ],
-            "unit": "kontaktów/mies"
-          },
-          "slug": "gt-serwis-barniewice",
-          "deliverables": [
-            "Facebook i Instagram",
-            "Meta Ads oraz Google Ads",
-            "Zdjęcia i filmy z serwisu",
-            "Kreacje lokalne i materiały sprzedażowe"
-          ],
-          "duration": "Pełna współpraca",
-          "scope": [
-            "Meta Ads",
-            "Google Ads",
-            "Social media",
-            "SEO lokalne",
-            "Consulting",
-            "Content"
-          ],
-          "results": [
-            {
-              "k": "Zakres",
-              "v": "Pełna współpraca"
-            },
-            {
-              "k": "Kanały reklamowe",
-              "v": "Meta + Google"
-            },
-            {
-              "k": "Usługi promowane",
-              "v": "6+"
-            },
-            {
-              "k": "Obszar",
-              "v": "Barniewice · Gdańsk"
-            }
-          ],
-          "ph": "ph-stripe-1",
-          "images": [
-            "/assets/digital-gt-home.webp",
-            "/assets/digital-gt-galeria.webp",
-            "/assets/digital-gt-cennik.webp",
-            "/assets/digital-gt-artykul.webp"
-          ],
-          "title1": "GT Serwis",
-          "solution": "Pełna współpraca: Meta Ads, Google Ads, prowadzenie social mediów, consulting, SEO lokalne, treści usługowe i analiza zapytań. Kampanie kierujemy pod realne potrzeby: hamulce, klimatyzacja, diagnostyka, serwis olejowy i opony, a nie ogólne hasło „dobry mechanik”.",
-          "brief": "Warsztat samochodowy w Barniewicach obsługujący kierowców z Gdańska, Osowej, Oliwy i Trójmiasta. Oferta obejmuje diagnostykę komputerową, hamulce, serwis olejowy, elektromechanikę, klimatyzację i serwis opon.",
-          "tag": "Warsztat · Ads · Social",
-          "palette": [
-            "#E8A838",
-            "#23395B",
-            "#1a1a1a",
-            "#f4f4f4"
-          ],
-          "year": "2026"
-        },
-        {
-          "timeline": [
-            {
-              "phase": "Analiza kategorii",
-              "duration": "1 tydz.",
-              "description": "Rozpisaliśmy komunikację dla driftu, rally, rallycrossu i track dayów, bo każda grupa ma inne kryteria wyboru."
-            },
-            {
-              "phase": "Content produktowy",
-              "duration": "3 tyg.",
-              "description": "Ułożyliśmy język sprzedaży wokół zastosowania, parametrów i scenariuszy jazdy."
-            },
-            {
-              "phase": "Kampanie performance",
-              "duration": "ciągłe",
-              "description": "Meta Ads i Google Ads kierujemy na użytkowników o intencji zakupowej oraz osoby porównujące produkty."
-            },
-            {
-              "phase": "Social i consulting",
-              "duration": "ciągłe",
-              "description": "Budujemy regularną komunikację marki i korygujemy działania na podstawie sezonowości motorsportu."
-            }
-          ],
-          "notes": [
-            "Komunikacja według zastosowań motorsportowych",
-            "Nacisk na produkt, kategorię i intencję zakupu",
-            "Połączenie działań e-commerce, reklam i social mediów"
-          ],
-          "challenge": "Produkty motorsportowe wymagają bardzo konkretnej komunikacji: kierowca chce wiedzieć, do czego nadaje się dana opona, jak zachowa się na torze i dlaczego ma zaufać marce. Ogólna reklama e-commerce nie wystarcza.",
-          "titleIt": "Tyres",
-          "coverImage": "/assets/case-extreme-tyres-drift-niebieski.webp",
-          "imageAlts": [
-            "Samochód driftowy na oponach Extreme Tyres podczas przejazdu",
-            "Żółty samochód driftowy z oznakowaniem Extreme Tyres w parku serwisowym",
-            "Opona Extreme Tyres podczas dynamicznego przejazdu driftowego",
-            "Detal opony Extreme Tyres przygotowanej do jazdy motorsportowej"
-          ],
-          "num": "09",
-          "chartData": {
-            "label": "Sesje produktowe miesięcznie",
-            "before": [
-              620,
-              680,
-              705,
-              660
-            ],
-            "after": [
-              840,
-              980,
-              1120,
-              1280,
-              1420,
-              1580
-            ],
-            "unit": "sesji/mies"
-          },
-          "slug": "extreme-tyres",
-          "deliverables": [
-            "Social media i kreacje performance",
-            "Foto-wideo z motorsportu",
-            "Materiały produktowe i e-commerce",
-            "Kampanie Meta oraz Google Ads"
-          ],
-          "duration": "Pełen zakres",
-          "scope": [
-            "Strategia",
-            "E-commerce",
-            "Meta Ads",
-            "Google Ads",
-            "Social media",
-            "Consulting"
-          ],
-          "results": [
-            {
-              "k": "Kategorie",
-              "v": "Drift · Rally · Track"
-            },
-            {
-              "k": "Model sprzedaży",
-              "v": "E-commerce"
-            },
-            {
-              "k": "Rynek",
-              "v": "PL + eksport"
-            },
-            {
-              "k": "Zakres",
-              "v": "Pełen zakres"
-            }
-          ],
-          "ph": "ph-stripe-3",
-          "images": [
-            "/assets/case-extreme-tyres-drift-niebieski.webp",
-            "/assets/case-extreme-tyres-drift-zolty.webp",
-            "/assets/case-extreme-tyres-drift-detail.webp",
-            "/assets/case-extreme-tyres-opona-detail.webp"
-          ],
-          "title1": "Extreme",
-          "solution": "Przygotowaliśmy pełny zakres działań: strategia, e-commerce, Meta Ads, Google Ads, social media, consulting i content produktowy. Komunikację opieramy na zastosowaniu opon: drift, rally, rallycross i track, a nie na uniwersalnych obietnicach „najlepszej przyczepności”.",
-          "brief": "Marka opon performance dla motorsportu i szybkiej jazdy: drift, rally, rallycross oraz track day. Sprzedaż online, komunikacja produktowa i kontakt z klientami w Polsce oraz za granicą.",
-          "tag": "Motorsport · E-commerce · Global",
-          "palette": [
-            "#D71920",
-            "#111111",
-            "#F4F4F4",
-            "#757575"
-          ],
-          "year": "2026"
         },
         {
           "timeline": [
@@ -7876,117 +7957,536 @@ const COPY = {
       "lede": "Every project gets its own strategy. No templates, no copy-paste.",
       "items": [
         {
-          "timeline": [
-            {
-              "phase": "Audyt i pozycjonowanie",
-              "duration": "2 tyg.",
-              "description": "Przejrzeliśmy komunikację, wizytówkę Google, profile social media i sposób prezentowania usług mechanicznych oraz blacharsko-lakierniczych."
-            },
-            {
-              "phase": "Identyfikacja i język marki",
-              "duration": "3 tyg.",
-              "description": "Ułożyliśmy nowy system wizualny, ton komunikacji i priorytety: poziom ASO, zespół, zaplecze, partnerstwo z Petronas."
-            },
-            {
-              "phase": "Produkcja foto-wideo",
-              "duration": "2 dni zdjęciowe",
-              "description": "Nagraliśmy wywiad z właścicielem, materiały z działów serwisu i serię krótkich formatów pod Meta oraz stronę."
-            },
-            {
-              "phase": "Kampanie i GBP",
-              "duration": "8 tyg.",
-              "description": "Uruchomiliśmy kampanie lokalne, uporządkowaliśmy wizytówkę Google i zbudowaliśmy rytm publikacji oparty na usługach."
-            },
-            {
-              "phase": "Optymalizacja",
-              "duration": "co miesiąc",
-              "description": "Analizowaliśmy telefony, zapytania, wyświetlenia wideo i zachowanie użytkowników, przesuwając budżet na najlepsze formaty."
-            }
-          ],
           "notes": [
-            "Full rebrand in 6 weeks",
-            "Owner interview as hero video",
-            "Body shop & mechanical as separate series"
+            "Pruszcz Gdański showroom opened in 2025; Gdańsk Osowa followed in 2026.",
+            "Custom CMS: content, banners, separate mobile images, and slide publication and visibility.",
+            "The claim that the Dongfeng showroom ranks first in Poland by sales was supplied by Grupa Janisz, without a ranking period."
           ],
-          "challenge": "Build AutoCentrum's recognition and authority up to ASO-tier reputation through a new visual identity, focused online marketing, professional content production, and a stronger partnership with Petronas.",
-          "titleIt": "Elektronowa 18",
-          "coverImage": "/assets/case-autocentrum-elektronowa-zespol.webp",
+          "challenge": "New car brands needed awareness and trust in the local market. Two showrooms, different vehicle segments and successive openings called for consistent communication and a clear route from interest to a sales enquiry.",
+          "titleIt": "Janisz",
+          "coverImage": "/assets/case-20261029-grupa-janisz-hero.webp",
           "imageAlts": [
-            "AutoCentrum Elektronowa 18 team inside the car service workshop in Lodz",
-            "AutoCentrum Elektronowa 18 - project material 2",
-            "AutoCentrum Elektronowa 18 - project material 3",
-            "AutoCentrum Elektronowa 18 - project material 4"
+            "Grupa Janisz showroom with a Dongfeng MAGE parked outside",
+            "Selected archived KTB Media creative for Grupa Janisz brands",
+            "Public view of the Grupa Janisz website built by KTB Media"
           ],
-          "num": "01",
-          "chartData": {
-            "label": "Miesięczne kontakty z wizytówki GBP",
-            "before": [
-              45,
-              52,
-              48,
-              51
-            ],
-            "after": [
-              89,
-              124,
-              156,
-              198,
-              234,
-              287
-            ],
-            "unit": "kontaktów/mies"
-          },
-          "slug": "autocentrum-elektronowa",
+          "num": "06",
+          "slug": "grupa-janisz",
           "deliverables": [
-            "Facebook and Instagram",
-            "Meta Ads creative",
-            "Photo and video shoots",
-            "Google Business Profile assets"
+            "janisz.pl website with a custom CMS",
+            "Lead generation and video campaigns",
+            "Photography, reels and brand creative",
+            "Showroom opening materials and coordination"
           ],
           "duration": "Ongoing cooperation",
           "scope": [
-            "Rebrand",
-            "Social media",
+            "Strategy",
             "Meta Ads",
-            "Google Business Profile",
-            "Produkcja wideo"
+            "Google Ads",
+            "Social media",
+            "Photo and video",
+            "Website and CMS",
+            "Events"
           ],
           "results": [
             {
-              "k": "Video views",
-              "v": "1M+"
+              "v": "7.0M",
+              "k": "Facebook content views",
+              "context": "Exactly 7,000,635 · 21 Jul 2025–28 Oct 2026"
             },
             {
-              "k": "Followers",
-              "v": "×4"
+              "v": "25,293",
+              "k": "Meta landing page views",
+              "context": "History of 6 analysed campaigns through 29 Oct 2026"
             },
             {
-              "k": "ASO status",
-              "v": "Regional lead"
+              "v": "+75.7%",
+              "k": "Facebook views month on month",
+              "context": "August → September 2026 · 317,564 → 557,855"
+            }
+          ],
+          "ph": "ph-stripe-3",
+          "images": [
+            "/assets/case-20261029-grupa-janisz-hero.webp",
+            "/assets/case-20261029-grupa-janisz-work.webp",
+            "/assets/case-20261029-grupa-janisz-web.webp"
+          ],
+          "title1": "Grupa",
+          "solution": "We combined showroom launch support, photography and video, social communication, and Meta Ads and Google Ads campaigns. We designed janisz.pl with a custom CMS. Events, press and radio materials, and creator collaborations supported the activity.",
+          "brief": "From showroom openings in Pruszcz Gdański and Gdańsk Osowa to a website with a custom CMS, brand communication and campaigns generating contacts for the sales team.",
+          "tag": "Automotive · 360 marketing · Web",
+          "palette": [
+            "#0F5132",
+            "#D6B15E",
+            "#1a1a1a",
+            "#efe9dc"
+          ],
+          "year": "2025–2026",
+          "editorial": {
+            "headline": "From showroom openings to customer contacts.",
+            "heroMetric": {
+              "value": "1,764",
+              "label": "reported Meta Ads leads",
+              "context": "Available Dongfeng campaign history through 29 Oct 2026"
+            },
+            "comparison": {
+              "title": "More visibility. A defined period.",
+              "metric": "Facebook content views",
+              "beforeLabel": "August 2026",
+              "beforeValue": 317564,
+              "afterLabel": "September 2026",
+              "afterValue": 557855,
+              "change": "+75.7%",
+              "context": "Full months: 31 and 30 days. Metricool; page content, with no organic/paid split."
+            },
+            "chapters": [
+              {
+                "title": "A website the client can manage.",
+                "text": "We designed and built janisz.pl and a custom CMS suited to the team’s workflow. The panel supports content and banner editing, separate mobile images, and control over slide publication.",
+                "image": "/assets/case-20261029-grupa-janisz-web.webp",
+                "imageAlt": "Public view of the Grupa Janisz website built by KTB Media",
+                "caption": "janisz.pl · designed and built by KTB Media"
+              },
+              {
+                "title": "Different brands. One direction.",
+                "text": "Showroom photography, product content and campaigns guided audiences from discovering a car to submitting an enquiry. Dongfeng communication sat alongside dedicated VOYAH and MHERO materials and support for launches and events.",
+                "image": "/assets/case-20261029-grupa-janisz-work.webp",
+                "imageAlt": "Selected archived KTB Media creative for Grupa Janisz brands",
+                "caption": "Archived creative · not a current commercial offer"
+              }
+            ],
+            "reportingNotes": [
+              "Sources: Metricool, Meta Ads and Google Ads reports, and KTB Media project materials. Read on 29 Oct 2026.",
+              "The 1,764 leads are reported submissions before deduplication and qualification, not unique people, test drives or cars sold.",
+              "Content views and landing page views can repeat. They do not represent unique reach or unique visits.",
+              "Figures cover the specified, different reporting periods. They are not added together or attributed entirely to one service."
+            ]
+          }
+        },
+        {
+          "slug": "qarmax",
+          "ph": "ph-stripe-3",
+          "num": "11",
+          "title1": "QARMAX",
+          "titleIt": "",
+          "palette": [
+            "#E3262E",
+            "#141414",
+            "#F4F4F4",
+            "#8A8A8A"
+          ],
+          "year": "2025–2026",
+          "brief": "Automotive chemicals shown in use. Strategy, product content, campaigns and motorsport brought together in a recognisable brand voice.",
+          "tag": "Automotive · Content · Meta Ads",
+          "duration": "Cooperation since November 2025",
+          "challenge": "A technical product needs a clear explanation: what it does, when to use it and how it helps with everyday maintenance. The task was to connect education, the product range and the brand’s motorsport presence in consistent communication.",
+          "solution": "We combined strategy, regular graphic and video production, and Meta Ads campaigns. Products appeared in workshop settings, seasonal driving needs and motorsport. We also prepared promotional merchandise and supported events.",
+          "scope": [
+            "Strategy",
+            "Social media",
+            "Graphics and video",
+            "Meta Ads",
+            "Events",
+            "Promotional materials"
+          ],
+          "deliverables": [
+            "Strategy and consistent product communication",
+            "Graphics, video and educational content",
+            "Meta Ads campaigns",
+            "Promotional merchandise and event materials"
+          ],
+          "notes": [
+            "Cooperation began in November 2025.",
+            "The year-on-year comparison covers the same 11 months, with 334 complete days in each period.",
+            "Content connects practical product use with events and motorsport."
+          ],
+          "results": [
+            {
+              "v": "+662.8%",
+              "k": "Facebook followers",
+              "context": "242 → 1,846 · 1 Nov 2025–30 Sep 2026"
             },
             {
-              "k": "Partner",
-              "v": "Petronas"
+              "v": "23,087",
+              "k": "post and reel interactions",
+              "context": "1 Nov 2025–30 Sep 2026 · excluding Stories"
+            },
+            {
+              "v": "58.6×",
+              "k": "as many content views year on year",
+              "context": "31,955 → 1,873,999 · the same 11 months"
+            }
+          ],
+          "editorial": {
+            "headline": "From a product on the shelf to a brand in use.",
+            "heroMetric": {
+              "value": "1.87M",
+              "label": "Facebook content views",
+              "context": "Exactly 1,873,999 · 1 Nov 2025–30 Sep 2026"
+            },
+            "comparison": {
+              "title": "A new scale of visibility.",
+              "metric": "Facebook content views",
+              "beforeLabel": "Nov 2024–Sep 2025",
+              "beforeValue": 31955,
+              "afterLabel": "Nov 2025–Sep 2026",
+              "afterValue": 1873999,
+              "change": "58.6×",
+              "context": "The same months, with 334 complete days each. The first period preceded KTB; the second covered cooperation, which began in November 2025."
+            },
+            "chapters": [
+              {
+                "title": "Product knowledge made practical.",
+                "text": "We showed the application alongside the packaging. Content explained what products do, addressed seasonal driver needs and drew on real workshop situations.",
+                "image": "/assets/case-20261029-qarmax-work.webp",
+                "imageAlt": "Archived QARMAX creative showing products and their practical uses",
+                "caption": "Original KTB Media projects for QARMAX · archived materials"
+              },
+              {
+                "title": "Motorsport as part of the brand.",
+                "text": "We connected product communication with events and drift. Graphics, video and promotional materials gave products, the community and the brand’s presence beyond the shelf a consistent voice.",
+                "image": "/assets/case-20261029-qarmax-detail.webp",
+                "imageAlt": "QARMAX materials combining product presentation and motorsport",
+                "caption": "Archived creative · not a current event announcement or commercial offer"
+              }
+            ],
+            "reportingNotes": [
+              "Source: Metricool statistics for the QARMAX profile and KTB Media project materials. Read on 29 Oct 2026.",
+              "Main period: 1 Nov 2025–30 Sep 2026, 334 days. Follower figures are snapshots at the start and end of this period.",
+              "Views include repeats and do not mean unique reach or exclusively organic traffic. Lead and sales counts were not established.",
+              "The year-on-year comparison does not attribute the entire change to a single marketing service."
+            ]
+          },
+          "coverImage": "/assets/case-20261029-qarmax-hero.webp",
+          "images": [
+            "/assets/case-20261029-qarmax-hero.webp",
+            "/assets/case-20261029-qarmax-work.webp",
+            "/assets/case-20261029-qarmax-detail.webp"
+          ],
+          "imageAlts": [
+            "QARMAX-branded drift car and driver during a night shoot",
+            "Archived QARMAX creative showing products and their practical uses",
+            "QARMAX materials combining product presentation and motorsport"
+          ]
+        },
+        {
+          "notes": [
+            "Cooperation began in 2024; the exact start month was not established.",
+            "Separate communication themes for mechanics, diagnostics, and body and paint work.",
+            "Photography and video show the actual workshop and its team."
+          ],
+          "challenge": "A wide range of mechanical, body and paint services needed a clear presentation. We wanted to show the people, facilities and working standards while helping drivers find the right service and contact the workshop.",
+          "titleIt": "Elektronowa 18",
+          "coverImage": "/assets/case-20261029-autocentrum-elektronowa-hero.webp",
+          "imageAlts": [
+            "AutoCentrum Elektronowa 18 team inside the workshop",
+            "Selected archived AutoCentrum content about car services and maintenance",
+            "Public view of the AutoCentrum Elektronowa 18 website built by KTB Media"
+          ],
+          "num": "01",
+          "slug": "autocentrum-elektronowa",
+          "deliverables": [
+            "autocentrumlodz.pl website",
+            "Visual identity and social creative",
+            "Workshop photo shoot and videos",
+            "Meta Ads campaigns and Google materials"
+          ],
+          "duration": "Cooperation since 2024",
+          "scope": [
+            "Website",
+            "Visual identity",
+            "Social media",
+            "Meta Ads",
+            "Google Business Profile",
+            "Photo and video"
+          ],
+          "results": [
+            {
+              "v": "+259.1%",
+              "k": "Facebook followers",
+              "context": "574 → 2,061 · 19 Apr 2024–30 Sep 2026"
+            },
+            {
+              "v": "+78.0%",
+              "k": "Facebook content views year on year",
+              "context": "Q2 2025 → Q2 2026"
+            },
+            {
+              "v": "2,542",
+              "k": "Google directions clicks",
+              "context": "1 Jan–30 Sep 2026 · recorded actions"
             }
           ],
           "ph": "ph-stripe-1",
           "images": [
-            "/assets/case-autocentrum-elektronowa-zespol.webp",
-            "/assets/case-autocentrum-elektronowa-1.jpg",
-            "/assets/case-autocentrum-elektronowa-2.jpg",
-            "/assets/case-autocentrum-elektronowa-3.jpg"
+            "/assets/case-20261029-autocentrum-elektronowa-hero.webp",
+            "/assets/case-20261029-autocentrum-elektronowa-work.webp",
+            "/assets/case-20261029-autocentrum-elektronowa-web.webp"
           ],
           "title1": "AutoCentrum",
-          "solution": "New visual identity, full social media ownership, Google Business optimisation, Meta Ads. Video production: owner interview, paint & body department walkthrough, mechanical department. Professional photo shoot featuring the service and the mechanics. Reinforced the Petronas partnership, positioning AutoCentrum as authorised partner.",
-          "brief": "Large-scale auto service in Łódź, covering all brands with advanced paint & body work.",
-          "tag": "Service · Social · Video",
+          "solution": "We built autocentrumlodz.pl, a new visual identity and consistent service communication. We produced workshop photography and video, educational content, Meta Ads campaigns and Google Business Profile materials.",
+          "brief": "A website and communication that bring a Łódź car workshop into focus. Identity, photography, video and local visibility developed in cooperation since 2024.",
+          "tag": "Car service · Web · Social media",
           "palette": [
             "#E86F1F",
             "#1a1a1a",
             "#f4f4f4",
             "#c9c9c9"
           ],
-          "year": "2024"
+          "year": "2024–2026",
+          "editorial": {
+            "headline": "A workshop you can see up close.",
+            "heroMetric": {
+              "value": "1,499",
+              "label": "Google call button clicks",
+              "context": "1 Jan–30 Sep 2026 · recorded Business Profile actions"
+            },
+            "comparison": {
+              "title": "More views year on year.",
+              "metric": "Facebook content views",
+              "beforeLabel": "Q2 2025",
+              "beforeValue": 69142,
+              "afterLabel": "Q2 2026",
+              "afterValue": 123047,
+              "change": "+78.0%",
+              "context": "Both quarters contain 91 complete days and fall within the KTB cooperation period. This is a year-on-year comparison."
+            },
+            "chapters": [
+              {
+                "title": "From a service to a conversation.",
+                "text": "At autocentrumlodz.pl we organised mechanics, diagnostics, and body and paint services. The presentation of facilities and services leads to a phone number and contact form.",
+                "image": "/assets/case-20261029-autocentrum-elektronowa-web.webp",
+                "imageAlt": "Public view of the AutoCentrum Elektronowa 18 website built by KTB Media",
+                "caption": "autocentrumlodz.pl · designed and built by KTB Media"
+              },
+              {
+                "title": "A real workshop. A consistent identity.",
+                "text": "Team photography, workshop videos and practical driver topics brought the new identity to life. Brakes, wheel alignment and car maintenance became clear content combining advice with service presentation.",
+                "image": "/assets/case-20261029-autocentrum-elektronowa-work.webp",
+                "imageAlt": "Selected archived AutoCentrum content about car services and maintenance",
+                "caption": "Archived KTB Media projects · not a current commercial offer"
+              }
+            ],
+            "reportingNotes": [
+              "Sources: Metricool, the Google Business Profile report and KTB Media materials. Read on 29 Oct 2026.",
+              "Call and directions clicks are recorded actions, not confirmed calls, visits or unique leads. Empty fields were not filled in.",
+              "Follower growth compares two profile snapshots; 19 Apr 2024 is not a confirmed baseline from before cooperation.",
+              "The Q2 comparison covers cooperation periods and does not assume equal advertising spend. Views can repeat and do not represent sales."
+            ]
+          }
+        },
+        {
+          "notes": [
+            "Cooperation began in April 2024.",
+            "The brand communicated before KTB; a complete pre-cooperation analytics baseline is unavailable.",
+            "Materials connect products, drivers and European events."
+          ],
+          "challenge": "A motorsport tyre needs more than a product photograph. The brand needed a consistent identity and communication showing tyre applications, track presence, and relationships with drivers and an international community.",
+          "titleIt": "Tyres",
+          "coverImage": "/assets/case-20261029-extreme-tyres-hero.webp",
+          "imageAlts": [
+            "Conor Shanahan with the team and fans at Drift Masters 2025; photo: Paddy McGrath / Drift Masters",
+            "Archived Extreme Tyres designs featuring drivers and product materials",
+            "Archived Extreme Tyres content showing products in a motorsport setting"
+          ],
+          "num": "09",
+          "slug": "extreme-tyres",
+          "deliverables": [
+            "New visual identity and communication guidelines",
+            "Product materials and brand creative",
+            "Driver and event content",
+            "Graphics, video and ongoing community communication"
+          ],
+          "duration": "Cooperation since April 2024",
+          "scope": [
+            "Rebranding",
+            "Communication strategy",
+            "Social media",
+            "Graphics and video",
+            "Product content",
+            "Motorsport"
+          ],
+          "results": [
+            {
+              "v": "+244.8%",
+              "k": "Instagram views month on month",
+              "context": "48,790 → 168,236 · Aug → Sep 2026"
+            },
+            {
+              "v": "+19.6%",
+              "k": "Instagram followers",
+              "context": "2,326 → 2,781 · 1 Jan–30 Sep 2026"
+            },
+            {
+              "v": "490",
+              "k": "published posts and reels",
+              "context": "1 Jan–30 Sep 2026 · excluding Stories"
+            }
+          ],
+          "ph": "ph-stripe-3",
+          "images": [
+            "/assets/case-20261029-extreme-tyres-hero.webp",
+            "/assets/case-20261029-extreme-tyres-work.webp",
+            "/assets/case-20261029-extreme-tyres-detail.webp"
+          ],
+          "title1": "Extreme",
+          "solution": "We rebranded the company and established consistent communication guidelines. We created product content, graphics and video, European event coverage and driver features. We supported coordination with brand partners and audience communication.",
+          "brief": "From rebranding to communication at European circuits. Products, drivers and the motorsport community brought together in a consistent Extreme Performance Tyres identity.",
+          "tag": "Motorsport · Rebranding · Social",
+          "palette": [
+            "#D71920",
+            "#111111",
+            "#F4F4F4",
+            "#757575"
+          ],
+          "year": "2024–2026",
+          "editorial": {
+            "headline": "A brand moving with motorsport.",
+            "heroMetric": {
+              "value": "537,611",
+              "label": "Instagram views",
+              "context": "1 Jan–30 Sep 2026 · 273 complete days"
+            },
+            "comparison": {
+              "title": "Visibility grows. In numbers.",
+              "metric": "Instagram views",
+              "beforeLabel": "August 2026",
+              "beforeValue": 48790,
+              "afterLabel": "September 2026",
+              "afterValue": 168236,
+              "change": "+244.8%",
+              "context": "Full months: 31 and 30 days, both during cooperation. Content and profile views, organic and paid."
+            },
+            "chapters": [
+              {
+                "title": "One recognisable brand language.",
+                "text": "Rebranding brought structure to the identity and product presentation. A repeatable visual system connected driver graphics, product materials and event communication into a recognisable whole.",
+                "image": "/assets/case-20261029-extreme-tyres-work.webp",
+                "imageAlt": "Archived Extreme Tyres designs featuring drivers and product materials",
+                "caption": "Archived brand designs: drivers, products and events"
+              },
+              {
+                "title": "The product in its own environment.",
+                "text": "We show tyres in the context of driving and motorsport. European event content, driver presence and community contact tell the brand story through its actual applications.",
+                "image": "/assets/case-20261029-extreme-tyres-detail.webp",
+                "imageAlt": "Archived Extreme Tyres content showing products in a motorsport setting",
+                "caption": "Archived materials · product and event communication"
+              }
+            ],
+            "reportingNotes": [
+              "Sources: Metricool for extreme.performance.tyres, the KTB Media portfolio and archived brand projects. Read on 29 Oct 2026.",
+              "Views include content and profile views, both organic and paid. Repeats count; the figure is not unique reach.",
+              "The Aug–Sep 2026 comparison covers months during cooperation. Incomplete data before April 2024 prevents a reliable annual comparison against that earlier period.",
+              "Publication count includes posts and reels, excluding Stories. Follower growth is the net change between snapshots. Sales and lead results are not claimed."
+            ],
+            "photoCredit": "Conor Shanahan / Drift Masters 2025. Photo: Paddy McGrath / Drift Masters."
+          }
+        },
+        {
+          "notes": [
+            "The form brings contact details, service selection and vehicle information together.",
+            "Content shows actual workshop work and explains symptoms and diagnostics.",
+            "Facebook data cover 1 Nov 2025–30 Sep 2026; the Google report has incomplete coverage of that period."
+          ],
+          "challenge": "A local workshop needs trust at the moment a driver is looking for a solution to a specific problem. Services, real facilities and location needed a clear presentation, alongside an easy way to contact the team and submit a vehicle enquiry.",
+          "titleIt": "Barniewice",
+          "coverImage": "/assets/case-20261029-gt-serwis-barniewice-hero.webp",
+          "num": "07",
+          "slug": "gt-serwis-barniewice",
+          "deliverables": [
+            "gtserwis.com website with an enquiry form",
+            "Service descriptions and blog content",
+            "Graphics and workshop photography",
+            "Social communication and Google materials"
+          ],
+          "duration": "Ongoing cooperation",
+          "scope": [
+            "Website",
+            "Social media",
+            "Content",
+            "Photo and video",
+            "Google Business Profile",
+            "Local marketing"
+          ],
+          "results": [
+            {
+              "v": "+64.4%",
+              "k": "Facebook followers",
+              "context": "264 → 434 · 30 Nov 2025–30 Sep 2026"
+            },
+            {
+              "v": "1,298",
+              "k": "Google directions clicks",
+              "context": "Nov 2025–Sep 2026 · 329 of 334 days available"
+            },
+            {
+              "v": "296",
+              "k": "Google call button clicks",
+              "context": "Nov 2025–Sep 2026 · 329 of 334 days available"
+            }
+          ],
+          "ph": "ph-stripe-1",
+          "images": [
+            "/assets/case-20261029-gt-serwis-barniewice-hero.webp",
+            "/assets/case-20261029-gt-serwis-barniewice-work.webp",
+            "/assets/case-20261029-gt-serwis-barniewice-web.webp"
+          ],
+          "title1": "GT Serwis",
+          "solution": "We designed and built gtserwis.com with service information, an enquiry form and a blog. Social communication drew on real workshop jobs, technical explanations and photography. The website connected with a consistent local presence and Google Business Profile.",
+          "brief": "A website, content from a real workshop and local profiles. A joined-up GT Serwis presence that explains its services and helps drivers take the next step.",
+          "tag": "Workshop · Web · Local marketing",
+          "palette": [
+            "#E8A838",
+            "#23395B",
+            "#1a1a1a",
+            "#f4f4f4"
+          ],
+          "year": "2025–2026",
+          "editorial": {
+            "headline": "A real workshop. Visible locally.",
+            "heroMetric": {
+              "value": "442,927",
+              "label": "Facebook content views",
+              "context": "1 Nov 2025–30 Sep 2026 · 334 complete days"
+            },
+            "comparison": {
+              "title": "One documented moment of growth.",
+              "metric": "Facebook content views",
+              "beforeLabel": "April 2026",
+              "beforeValue": 28237,
+              "afterLabel": "May 2026",
+              "afterValue": 90241,
+              "change": "+219.6%",
+              "context": "Selected full months: 30 and 31 days. The comparison does not imply constant growth or equal advertising spend."
+            },
+            "chapters": [
+              {
+                "title": "From information to an enquiry.",
+                "text": "At gtserwis.com, service information, the blog and local content lead to a single form. Drivers can choose a service, describe the vehicle and leave their contact details.",
+                "image": "/assets/case-20261029-gt-serwis-barniewice-web.webp",
+                "imageAlt": "Public view of the GT Serwis Barniewice website built by KTB Media",
+                "caption": "gtserwis.com · designed and built by KTB Media"
+              },
+              {
+                "title": "Clear technical detail.",
+                "text": "Brakes, fault symptoms and work on real cars became communication topics. The materials show the workshop’s actual facilities and explain services in language drivers can understand.",
+                "image": "/assets/case-20261029-gt-serwis-barniewice-work.webp",
+                "imageAlt": "Archived GT Serwis creative showing services and technical knowledge",
+                "caption": "Archived KTB Media projects · not a current commercial offer"
+              }
+            ],
+            "reportingNotes": [
+              "Sources: Metricool for GT Serwis Barniewice, the Google Business Profile report and KTB Media materials. Read on 29 Oct 2026.",
+              "Facebook: 1 Nov 2025–30 Sep 2026, 334 complete days of view data. Views can repeat and do not mean unique reach.",
+              "The Google report contains 329 daily records out of 334 days in the period. Missing records were not added.",
+              "Call and directions clicks do not establish completed calls, visits or unique leads. Results do not state sales or booked appointment counts."
+            ]
+          },
+          "imageAlts": [
+            "GT Serwis Barniewice — car workshop facilities",
+            "Archived GT Serwis creative showing services and technical knowledge",
+            "Public view of the GT Serwis Barniewice website built by KTB Media"
+          ]
         },
         {
           "timeline": [
@@ -8421,334 +8921,6 @@ const COPY = {
             "#f4f4f4"
           ],
           "year": "2024"
-        },
-        {
-          "timeline": [
-            {
-              "phase": "Offer mapping",
-              "duration": "2 weeks",
-              "description": "We split communication into key services and customer intents."
-            },
-            {
-              "phase": "Local SEO and GBP",
-              "duration": "ongoing",
-              "description": "We strengthen visibility for Pruszcz Gdański and Gdańsk searches."
-            },
-            {
-              "phase": "Advertising campaigns",
-              "duration": "monthly",
-              "description": "Meta and Google campaigns support the strongest service lines."
-            },
-            {
-              "phase": "Content and social",
-              "duration": "ongoing",
-              "description": "We show the team, workshop standards and real services."
-            }
-          ],
-          "notes": [
-            "Offer mapped to local search intent",
-            "Clear communication for multiple automotive brands",
-            "Focus on trust, service standard and availability"
-          ],
-          "challenge": "The offer includes several brands and service lines, so the message had to stay clear for drivers looking for repair, inspection, authorised service or corrosion protection.",
-          "titleIt": "Janisz",
-          "coverImage": "/assets/case-grupa-janisz-dongfeng-wiatrak.webp",
-          "imageAlts": [
-            "Grupa Janisz Dongfeng Mage during an outdoor automotive photo shoot",
-            "Branded Dongfeng Mage inside the Grupa Janisz showroom in Pruszcz Gdanski",
-            "Grupa Janisz Dongfeng stand during an automotive event",
-            "Grupa Janisz - project material 4",
-            "Grupa Janisz - project material 5",
-            "Grupa Janisz - project material 6",
-            "Grupa Janisz - project material 7"
-          ],
-          "num": "06",
-          "chartData": {
-            "label": "Monthly local enquiries",
-            "before": [
-              82,
-              88,
-              91,
-              86
-            ],
-            "after": [
-              118,
-              134,
-              151,
-              169,
-              187,
-              204
-            ],
-            "unit": "enquiries/mo"
-          },
-          "slug": "grupa-janisz",
-          "deliverables": [
-            "Facebook and LinkedIn",
-            "Photo-video, including drone work",
-            "Sales and brand creative",
-            "Print and POS materials"
-          ],
-          "duration": "Ongoing cooperation",
-          "scope": [
-            "Strategy",
-            "Meta Ads",
-            "Google Ads",
-            "Local SEO",
-            "Social media",
-            "Photo-video",
-            "Consulting"
-          ],
-          "results": [
-            {
-              "k": "Scope",
-              "v": "Full service"
-            },
-            {
-              "k": "Brand history",
-              "v": "since 1993"
-            },
-            {
-              "k": "TÜV audit",
-              "v": "100%"
-            },
-            {
-              "k": "Channels",
-              "v": "Meta · Google · SEO · Social"
-            }
-          ],
-          "ph": "ph-stripe-3",
-          "images": [
-            "/assets/case-grupa-janisz-dongfeng-wiatrak.webp",
-            "/assets/case-grupa-janisz-dongfeng-auto.webp",
-            "/assets/case-grupa-janisz-dongfeng-targi.webp",
-            "/assets/digital-janisz-scroll.webp",
-            "/assets/digital-janisz-bosch.webp",
-            "/assets/digital-janisz-dongfeng.webp",
-            "/assets/digital-janisz-cennik.webp"
-          ],
-          "title1": "Grupa",
-          "solution": "Full service marketing: strategy, local SEO, contact paths, Meta Ads, Google Ads, social media, service content, photo-video production and consulting.",
-          "brief": "A Pruszcz Gdański automotive group operating since 1993: Bosch Car Service, VW and Skoda authorised service, Dongfeng dealer, body and paint shop, vehicle inspection station, 3D alignment and Krown protection.",
-          "tag": "Automotive · Full service · Local SEO",
-          "palette": [
-            "#0F5132",
-            "#D6B15E",
-            "#1a1a1a",
-            "#efe9dc"
-          ],
-          "year": "2026"
-        },
-        {
-          "timeline": [
-            {
-              "phase": "Local audit",
-              "duration": "1 week",
-              "description": "We checked phrases, competitors, service profile and contact paths."
-            },
-            {
-              "phase": "Service priorities",
-              "duration": "1 week",
-              "description": "We structured communication around diagnostics, brakes, AC, oil, electromechanics and tyres."
-            },
-            {
-              "phase": "Ads",
-              "duration": "ongoing",
-              "description": "Campaigns support local searches and seasonal services."
-            },
-            {
-              "phase": "Social media",
-              "duration": "ongoing",
-              "description": "Posts show real work, facilities and trust signals."
-            }
-          ],
-          "notes": [
-            "Separate communication for core workshop services",
-            "Advertising connected with local search intent",
-            "Ongoing consulting instead of random posting"
-          ],
-          "challenge": "A local workshop needs to win trust and contacts at the exact moment a driver has a specific issue.",
-          "titleIt": "Barniewice",
-          "coverImage": "/assets/digital-gt-home.webp",
-          "num": "07",
-          "chartData": {
-            "label": "Local campaign contacts",
-            "before": [
-              24,
-              27,
-              26,
-              29
-            ],
-            "after": [
-              41,
-              49,
-              58,
-              66,
-              73,
-              81
-            ],
-            "unit": "contacts/mo"
-          },
-          "slug": "gt-serwis-barniewice",
-          "deliverables": [
-            "Facebook and Instagram",
-            "Meta Ads and Google Ads",
-            "Workshop photography and video",
-            "Local creative and sales materials"
-          ],
-          "duration": "Full cooperation",
-          "scope": [
-            "Meta Ads",
-            "Google Ads",
-            "Social media",
-            "Local SEO",
-            "Consulting",
-            "Content"
-          ],
-          "results": [
-            {
-              "k": "Scope",
-              "v": "Full cooperation"
-            },
-            {
-              "k": "Ad channels",
-              "v": "Meta + Google"
-            },
-            {
-              "k": "Services promoted",
-              "v": "6+"
-            },
-            {
-              "k": "Area",
-              "v": "Barniewice · Gdańsk"
-            }
-          ],
-          "ph": "ph-stripe-1",
-          "images": [
-            "/assets/digital-gt-home.webp",
-            "/assets/digital-gt-galeria.webp",
-            "/assets/digital-gt-cennik.webp",
-            "/assets/digital-gt-artykul.webp"
-          ],
-          "title1": "GT Serwis",
-          "solution": "Full cooperation: Meta Ads, Google Ads, social media management, consulting, local SEO, service content and enquiry analysis.",
-          "brief": "A car workshop in Barniewice serving drivers from Gdańsk, Osowa, Oliwa and the wider Tricity area.",
-          "tag": "Workshop · Ads · Social",
-          "palette": [
-            "#E8A838",
-            "#23395B",
-            "#1a1a1a",
-            "#f4f4f4"
-          ],
-          "year": "2026"
-        },
-        {
-          "timeline": [
-            {
-              "phase": "Category analysis",
-              "duration": "1 week",
-              "description": "We mapped drift, rally, rallycross and track day audiences."
-            },
-            {
-              "phase": "Product content",
-              "duration": "3 weeks",
-              "description": "We structured sales language around use cases and parameters."
-            },
-            {
-              "phase": "Performance campaigns",
-              "duration": "ongoing",
-              "description": "Meta and Google campaigns target users with buying intent."
-            },
-            {
-              "phase": "Social and consulting",
-              "duration": "ongoing",
-              "description": "We adapt activity to motorsport seasonality."
-            }
-          ],
-          "notes": [
-            "Communication by motorsport use case",
-            "Focus on product, category and buying intent",
-            "E-commerce, ads and social in one system"
-          ],
-          "challenge": "Motorsport products require specific, use-case based communication. Generic e-commerce advertising is not enough.",
-          "titleIt": "Tyres",
-          "coverImage": "/assets/case-extreme-tyres-drift-niebieski.webp",
-          "imageAlts": [
-            "Drift car running Extreme Tyres during a competitive pass",
-            "Yellow drift car with Extreme Tyres branding in the service area",
-            "Extreme Tyres product during a dynamic drift pass",
-            "Close-up of an Extreme Tyres motorsport tyre"
-          ],
-          "num": "09",
-          "chartData": {
-            "label": "Monthly product sessions",
-            "before": [
-              620,
-              680,
-              705,
-              660
-            ],
-            "after": [
-              840,
-              980,
-              1120,
-              1280,
-              1420,
-              1580
-            ],
-            "unit": "sessions/mo"
-          },
-          "slug": "extreme-tyres",
-          "deliverables": [
-            "Social media and performance creative",
-            "Motorsport photo-video",
-            "Product and e-commerce materials",
-            "Meta and Google Ads campaigns"
-          ],
-          "duration": "Full scope",
-          "scope": [
-            "Strategy",
-            "E-commerce",
-            "Meta Ads",
-            "Google Ads",
-            "Social media",
-            "Consulting"
-          ],
-          "results": [
-            {
-              "k": "Categories",
-              "v": "Drift · Rally · Track"
-            },
-            {
-              "k": "Sales model",
-              "v": "E-commerce"
-            },
-            {
-              "k": "Market",
-              "v": "PL + export"
-            },
-            {
-              "k": "Scope",
-              "v": "Full scope"
-            }
-          ],
-          "ph": "ph-stripe-3",
-          "images": [
-            "/assets/case-extreme-tyres-drift-niebieski.webp",
-            "/assets/case-extreme-tyres-drift-zolty.webp",
-            "/assets/case-extreme-tyres-drift-detail.webp",
-            "/assets/case-extreme-tyres-opona-detail.webp"
-          ],
-          "title1": "Extreme",
-          "solution": "Full scope: strategy, e-commerce, Meta Ads, Google Ads, social media, consulting and product content based on tyre application.",
-          "brief": "A performance tyre brand for drift, rally, rallycross and track day use, selling online in Poland and abroad.",
-          "tag": "Motorsport · E-commerce · Global",
-          "palette": [
-            "#D71920",
-            "#111111",
-            "#F4F4F4",
-            "#757575"
-          ],
-          "year": "2026"
         },
         {
           "timeline": [
@@ -10292,6 +10464,11 @@ window.KTB_VISIBILITY = {
     {
       "slug": "nagare-studio-www",
       "label": "Nagare Studio",
+      "visible": true
+    },
+    {
+      "slug": "qarmax",
+      "label": "QARMAX",
       "visible": true
     }
   ]

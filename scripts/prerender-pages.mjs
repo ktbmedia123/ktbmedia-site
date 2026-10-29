@@ -36,6 +36,62 @@ function synchronizeFaq(html, markup) {
   });
 }
 
+function synchronizeMarketingCase(html, item, route) {
+  if (!item) return html;
+  const escape = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[char]));
+  const title = [item.title1, item.titleIt].filter(Boolean).join(' ');
+  const images = item.images || [];
+  const image = item.coverImage || images[1] || images[0];
+  const imageIndex = images.indexOf(image);
+  const imageAlt = (Array.isArray(item.imageAlts) ? item.imageAlts[imageIndex] : item.imageAlts?.[image]) || `${title} — realizacja KTB Media`;
+  const url = new URL(route + '/', 'https://ktbmedia.eu').href;
+  const absoluteImage = image ? new URL(image, 'https://ktbmedia.eu').href : undefined;
+  const meta = (key, value) => {
+    const attribute = key.startsWith('og:') ? 'property' : 'name';
+    const pattern = new RegExp(`<meta\\s+${attribute}="${key}"[^>]*>`, 'g');
+    if (!value) { html = html.replace(pattern, ''); return; }
+    const tag = `<meta ${attribute}="${key}" content="${escape(value)}" />`;
+    html = pattern.test(html) ? html.replace(pattern, () => tag) : html.replace('</head>', () => `  ${tag}\n</head>`);
+  };
+  meta('og:image', absoluteImage);
+  meta('og:image:alt', absoluteImage ? imageAlt : undefined);
+  meta('twitter:image', absoluteImage);
+  meta('twitter:image:alt', absoluteImage ? imageAlt : undefined);
+
+  function sync(schema) {
+    if (Array.isArray(schema)) return schema.map(sync);
+    if (!schema || typeof schema !== 'object') return schema;
+    if (schema['@graph']) return {...schema, '@graph': schema['@graph'].map(sync)};
+    const types = [schema['@type']].flat();
+    if (types.some(type => ['Article', 'CreativeWork', 'CaseStudy'].includes(type))) {
+      // Rebuild from the current CMS rather than carrying old claims or result
+      // figures forward from a hand-authored entry document.
+      return {
+        ...(schema['@context'] ? {'@context': schema['@context']} : {}),
+        '@type': types.includes('Article') ? 'Article' : 'CreativeWork',
+        ...(schema['@id'] ? {'@id': schema['@id']} : {}),
+        name: title,
+        headline: item.editorial?.headline || title,
+        description: item.brief,
+        url,
+        mainEntityOfPage: url,
+        ...(absoluteImage ? {image: absoluteImage} : {}),
+        inLanguage: 'pl-PL',
+        author: schema.author || {'@type': 'Organization', name: 'KTB Media'},
+        publisher: schema.publisher || {'@type': 'Organization', name: 'KTB Media'},
+        about: item.scope || []
+      };
+    }
+    if (types.includes('BreadcrumbList')) {
+      return {...schema, itemListElement: (schema.itemListElement || []).map(entry =>
+        entry.item === url || entry.item?.['@id'] === url ? {...entry, name: title} : entry)};
+    }
+    return schema;
+  }
+  return html.replace(/(<script\b[^>]*type="application\/ld\+json"[^>]*>)([\s\S]*?)(<\/script>)/g, (_, open, json, close) =>
+    open + JSON.stringify(sync(JSON.parse(json))).replace(/</g, '\\u003c') + close);
+}
+
 export function prerenderPages(root, dist, data) {
   const source = fs.readFileSync(path.join(root, 'app.js'), 'utf8');
   const mount = source.indexOf("ReactDOM.createRoot(document.getElementById('root'))");
@@ -83,6 +139,9 @@ export function prerenderPages(root, dist, data) {
         const attribute = key.startsWith('og:') ? 'property' : 'name';
         html = html.replace(new RegExp(`<meta ${attribute}="${key}"[^>]*>`, 'g'), `<meta ${attribute}="${key}" content="${escape(value)}" />`);
       }
+      const marketingCase = /^\/realizacje\/[^/]+$/.test(route) ?
+        data.pl.portfolio.items.find(item => route === `/realizacje/${item.slug}`) : null;
+      html = synchronizeMarketingCase(html, marketingCase, route);
       // Metadata changes above alter source offsets, so locate root again.
       let rootLocation;
       visit(parse(html, {sourceCodeLocationInfo: true}), node => {

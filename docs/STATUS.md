@@ -1,3 +1,15 @@
+# Aktualizacja — 2026-10-29: Pięć rozbudowanych case studies
+
+- Na podstawie przekazanej paczki PDF/PNG odświeżono Grupę Janisz, AutoCentrum Elektronowa 18, Extreme Tyres i GT Serwis oraz dodano QARMAX pod /realizacje/qarmax/. Nowa kolejność katalogu rozpoczyna się od tych pięciu projektów; PMO i pozostali klienci zachowani.
+- Hybryda materiałów i dotychczasowej identyfikacji: fotografie, duży główny wynik, trzy dodatkowe wskaźniki z okresami, wyzwanie/podejście, rozdziały z oryginalnymi kreacjami i WWW, porównania dwóch okresów, zakres, rozwijane źródła i kontakt. Treści natywne HTML PL/EN, zamiast plansz z drobnym tekstem. 15 WebP, razem ok. 1,84 MB; powiększanie materiałów. Zachowany credit fotografii Extreme.
+- CMS: opcjonalny editorial i results.context w obu językach. content/site.json pozostaje źródłem prawdy; content.js synchronizowany buildem. Stare niepotwierdzone chartData i harmonogramy usunięte z pięciu projektów. Każda metryka ma okres; kliknięcia Google i raportowane leady Meta opisane zgodnie z definicjami. Szczegóły i utrzymanie: docs/CASE_STUDIES.md.
+- Obrazy OG/Twitter i Article/CreativeWork marketingowych realizacji synchronizowane z CMS w prerenderze. Wersja zasobów 20261029-cases. QARMAX w widoczności, katalogu, llms i sitemap. Zachowano hero, pozostałą treść PL/EN, Bigmot i MójTeam ukryte. Nawigacja EN zachowuje ?lang=en; zmiana języka aktualizuje adres i działa po odświeżeniu.
+- Walidacja lokalna: build 69 URL, check:seo (rozszerzony o faktyczny prerender editorial, konteksty danych i obrazy), check-visibility, JSON/YAML, składnia i diff — PASS. Przegląd kodu i porównanie danych PL/EN ze źródłem — PASS. Playwright: 30 widoków (5 projektów × PL/EN × 1440/390/320 px), obrazy, brak poziomego overflow i błędów JS, trzy zakładki katalogu, źródła, następny projekt i kontakt EN — PASS. Hero, odświeżenie po zmianie języka i realizacje/katalog bez JS — PASS. Zrzuty w output/playwright/cases-*.
+- Stan wdrożenia: przygotowane i zweryfikowane lokalnie; publikacja przez istniejący GitHub main → Netlify w toku. Bieżący zdalny main przed publikacją: 05ce88f579e0889330f061e2273ef2b560672896; brak nowszych zmian CMS na zdalnym main.
+- Dalszy krok: potwierdzić produkcyjny build, treści i media po publikacji; bez przenoszenia hostingu.
+
+---
+
 # Aktualizacja — 2026-10-26: Pełny HTML i poprawa wykrywania podstron
 
 - Wdrożono GitHub main → Netlify: 05ce88f579e0889330f061e2273ef2b560672896 (pierwsza publikacja 0a32212, synchronizacja FAQ 88ae12e); wersja zasobów 20261026-seo. Użytkownik osobno potwierdził publikację po zatrzymaniu pierwszej próby przez automatyczną kontrolę uprawnień.
