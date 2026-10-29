@@ -5,7 +5,7 @@
 - Katalog: usunięte bloki wyników oraz numeracja na zdjęciach kart, zachowane fotografie i styl nowych realizacji. Wyniki pozostają wewnątrz podstron projektów. Zachowane atrybucje fotografii, hero, PL/EN i wspólna widoczność. Zasoby 20261029-cases-clean.
 - Walidacja lokalna: build i check:seo (69 adresów), składnia JS, YAML i kontrola publicznych JSON/JS/HTML — PASS; brak reportingNotes, dawnych nagłówków i not Metricool w publicznych danych realizacji, brak wyników/numeracji na kartach.
 - Playwright lokalnie: 20 widoków realizacji (PL/EN, desktop/390 px), katalog bez liczb i numeracji, zachowane style kart i wyniki wewnątrz, bez overflow i błędów JS; wersja bez JS — PASS.
-- Stan wdrożenia: korekta zweryfikowana lokalnie; publikacja przez GitHub main → Netlify w toku.
+- Publikacja GitHub main → Netlify: bfa9c57, zasoby 20261029-cases-clean. Kontrola produkcji: 9 adresów (katalog, 5 realizacji, publiczne site.json/content.js/app.js) — brak wewnętrznych przypisów i liczb na kartach, wyniki wewnątrz zachowane. Playwright produkcja: katalog i QARMAX w PL/EN na telefonie — PASS. Korekta wdrożona, brak oczekujących zmian kodu.
 
 ---
 
