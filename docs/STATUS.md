@@ -4,7 +4,7 @@
 - PulseGT: usunięty cały dopisek US Technology z tytułu PL/EN, etykiety CMS/widoczności, źródłowych etykiet i ItemList/Breadcrumb. Build synchronizuje nową nazwę w publicznym HTML/JSON/JS oraz metadata. Nagłówek nie łamie już długiego dopisku na pojedyncze litery.
 - Zakres ograniczony do PMO/PulseGT i ich nazw/obrazów; wyniki, pozostałe realizacje, hero, języki i widoczność bez zmian. Bez powrotu wewnętrznych przypisów ani wyników na kartach. Wersja zasobów 20261029-pmo-photos.
 - Walidacja lokalna: build 73 URL, check:seo, poprawność JSON, kontrola zakresu zmian i diff — PASS. Playwright 12 widoków (PMO/PulseGT × PL/EN × 1440/390/320 px), nowe obrazy na podstronie i karcie, pełny kadr samochodu, krótki H1 PulseGT, brak overflow i błędów JS — PASS. Przegląd wizualny zrzutów output/playwright/photo-update-* — PASS.
-- Stan wdrożenia: przygotowane i sprawdzone lokalnie; publikacja GitHub main → Netlify w toku. Dalszy krok: potwierdzić nowe zdjęcia i nagłówek na produkcji.
+- Publikacja GitHub main → Netlify: bf78937, wersja 20261029-pmo-photos. Produkcja: 7 stron/plików bez starego dopisku, oba wskazane stare kadry PMO zastąpione; 2 nowe fotografie zgodne bajtowo z lokalnymi. Playwright PL/EN na telefonie i karta katalogu na desktopie — PASS, bez błędów JS. Zrzuty output/playwright/photo-update-production-*. Korekta wdrożona i zweryfikowana; brak oczekujących zmian kodu.
 
 ---
 
