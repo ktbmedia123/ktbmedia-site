@@ -1597,7 +1597,7 @@ function PortfolioCatalog({
       description: item.brief,
       image: item.coverImage || images[1] || images[0],
       imageAlt: (item.imageAlts || [])[0],
-      proof: item.editorial?.heroMetric,
+      editorial: Boolean(item.editorial),
       scope: item.scope || [],
       year: item.year,
       index
@@ -1688,9 +1688,9 @@ function PortfolioCatalog({
     role: "tabpanel",
     "aria-labelledby": `work-tab-${category.id}`,
     key: category.id
-  }, React.createElement("h3", {className: "work-panel-title"}, category.label), category.items.map((item, index) => /*#__PURE__*/React.createElement(SmartLink, {
+  }, React.createElement("h3", {className: "work-panel-title"}, category.label), category.items.map(item => /*#__PURE__*/React.createElement(SmartLink, {
     to: item.href,
-    className: `work-card${item.proof ? ' work-card-editorial' : ''}`,
+    className: `work-card${item.editorial ? ' work-card-editorial' : ''}`,
     target: item.external ? "_blank" : undefined,
     rel: item.external ? "noopener noreferrer" : undefined,
     key: item.slug
@@ -1709,16 +1709,11 @@ function PortfolioCatalog({
   }) : /*#__PURE__*/React.createElement("span", {
     className: "work-card-placeholder",
     "aria-hidden": "true"
-  }), /*#__PURE__*/React.createElement("span", {
-    className: "work-card-number mono"
-  }, String(index + 1).padStart(2, '0'))), /*#__PURE__*/React.createElement("div", {
+  })), /*#__PURE__*/React.createElement("div", {
     className: "work-card-copy"
   }, /*#__PURE__*/React.createElement("div", {
     className: "work-card-meta mono"
-  }, /*#__PURE__*/React.createElement("span", null, item.subtitle || category.label), item.year && /*#__PURE__*/React.createElement("span", null, item.year)), /*#__PURE__*/React.createElement("h3", null, item.title), /*#__PURE__*/React.createElement("p", null, item.description), item.proof && React.createElement("div", {className: "work-card-proof"},
-    React.createElement("strong", null, item.proof.value),
-    React.createElement("span", null, item.proof.label),
-    React.createElement("small", null, item.proof.context)), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("span", null, item.subtitle || category.label), item.year && /*#__PURE__*/React.createElement("span", null, item.year)), /*#__PURE__*/React.createElement("h3", null, item.title), /*#__PURE__*/React.createElement("p", null, item.description), /*#__PURE__*/React.createElement("div", {
     className: "work-card-footer"
   }, /*#__PURE__*/React.createElement("div", {
     className: "work-card-tags"
@@ -2049,14 +2044,10 @@ function EditorialCasePage({lang, item}) {
         h('h2', {className: 'display'}, comparison.title), h('strong', {className: 'editorial-change'}, comparison.change), h('p', null, comparison.metric)),
       h('div', {className: 'editorial-bars'}, [{label: comparison.beforeLabel, value: comparison.beforeValue}, {label: comparison.afterLabel, value: comparison.afterValue}].map((entry, index) =>
         h('div', {className: `editorial-bar${index ? ' is-after' : ''}`, key: index}, h('div', {className: 'editorial-bar-caption'}, h('span', null, entry.label), h('strong', null, number(entry.value))),
-          h('div', {className: 'editorial-bar-track', 'aria-hidden': 'true'}, h('span', {style: {width: `${entry.value / max * 100}%`}})))),
-        h('p', {className: 'editorial-comparison-note'}, comparison.context))),
+          h('div', {className: 'editorial-bar-track', 'aria-hidden': 'true'}, h('span', {style: {width: `${entry.value / max * 100}%`}})))))),
     (item.deliverables || []).length > 0 && h('section', {className: 'editorial-deliverables'},
       h('h2', {className: 'mono'}, en ? 'What we made' : 'Co powstało'),
       h('ul', null, item.deliverables.map((text, index) => h('li', {key: index}, h('span', {className: 'mono'}, String(index + 1).padStart(2, '0')), text)))),
-    (story.reportingNotes || []).length > 0 && h('details', {className: 'editorial-reporting'},
-      h('summary', null, en ? 'Sources, periods and how to read the results' : 'Źródła, okresy i jak czytać wyniki', h('span', {'aria-hidden': 'true'}, '+')),
-      h('ul', null, story.reportingNotes.map((note, index) => h('li', {key: index}, note)))),
     h(CaseRelatedLinks, {lang, links: item.relatedLinks}),
     h('section', {className: 'editorial-cta'}, h('div', null, h('span', {className: 'mono'}, en ? 'Your next chapter' : 'Kolejny rozdział?'),
       h('h2', {className: 'display'}, en ? 'Your brand.' : 'Twoja marka.', h('br'), h('span', {className: 'it'}, en ? 'Our next project.' : 'Nasz następny projekt.'))),

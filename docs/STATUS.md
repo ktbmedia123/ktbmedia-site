@@ -1,3 +1,14 @@
+# Aktualizacja — 2026-10-29: Realizacje bez wewnętrznych przypisów i liczb na kartach
+
+- Na prośbę użytkownika usunięto sekcję „Źródła, okresy i jak czytać wyniki” ze wszystkich pięciu realizacji w PL/EN. Notatki źródłowe/metodologiczne nie są treścią do publicznego udostępniania.
+- Usunięto nie tylko widok sekcji, ale także reportingNotes, techniczne konteksty porównań i niewidoczne notes tych pięciu projektów z content/site.json, a build odtworzył content.js. Uproszczono pozostałe konteksty do publicznych dat; usunięto pola CMS pozwalające przywrócić te przypisy.
+- Katalog: usunięte bloki wyników oraz numeracja na zdjęciach kart, zachowane fotografie i styl nowych realizacji. Wyniki pozostają wewnątrz podstron projektów. Zachowane atrybucje fotografii, hero, PL/EN i wspólna widoczność. Zasoby 20261029-cases-clean.
+- Walidacja lokalna: build i check:seo (69 adresów), składnia JS, YAML i kontrola publicznych JSON/JS/HTML — PASS; brak reportingNotes, dawnych nagłówków i not Metricool w publicznych danych realizacji, brak wyników/numeracji na kartach.
+- Playwright lokalnie: 20 widoków realizacji (PL/EN, desktop/390 px), katalog bez liczb i numeracji, zachowane style kart i wyniki wewnątrz, bez overflow i błędów JS; wersja bez JS — PASS.
+- Stan wdrożenia: korekta zweryfikowana lokalnie; publikacja przez GitHub main → Netlify w toku.
+
+---
+
 # Aktualizacja — 2026-10-29: Pięć rozbudowanych case studies
 
 - Na podstawie przekazanej paczki PDF/PNG odświeżono Grupę Janisz, AutoCentrum Elektronowa 18, Extreme Tyres i GT Serwis oraz dodano QARMAX pod /realizacje/qarmax/. Nowa kolejność katalogu rozpoczyna się od tych pięciu projektów; PMO i pozostali klienci zachowani.

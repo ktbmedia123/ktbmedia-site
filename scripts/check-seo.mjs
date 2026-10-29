@@ -87,7 +87,6 @@ for (const item of data.pl.portfolio.items.filter(item => data.visibility.market
     rendered(chapter.title, `chapters[${index}].title`);
     rendered(chapter.text, `chapters[${index}].text`);
   }
-  for (const [index, note] of (story.reportingNotes || []).entries()) rendered(note, `reportingNotes[${index}]`);
   const cover = item.coverImage || item.images?.[1] || item.images?.[0];
   if (cover) {
     const absoluteCover = new URL(cover, 'https://ktbmedia.eu').href;

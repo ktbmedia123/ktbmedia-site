@@ -697,7 +697,6 @@ collections:
                               - { label: Etykieta po, name: afterLabel, widget: string }
                               - { label: Wartość po, name: afterValue, widget: number, value_type: float, min: 0 }
                               - { label: 'Zmiana (np. +662,8%)', name: change, widget: string, required: false }
-                              - { label: Kontekst porównania, name: context, widget: text, required: false }
                           - label: Rozdziały historii
                             name: chapters
                             widget: list
@@ -709,11 +708,6 @@ collections:
                               - { label: Obraz, name: image, widget: image, required: false }
                               - { label: Opis alternatywny obrazu, name: imageAlt, widget: string, required: false }
                               - { label: Podpis obrazu, name: caption, widget: text, required: false }
-                          - label: Uwagi do danych
-                            name: reportingNotes
-                            widget: list
-                            required: false
-                            field: { label: Uwaga, name: note, widget: text }
                           - { label: Autorstwo zdjęć, name: photoCredit, widget: text, required: false }
                       - { label: Czas współpracy, name: duration, widget: string, required: false }
                       - label: Zakres współpracy
@@ -1269,7 +1263,6 @@ collections:
                               - { label: After label, name: afterLabel, widget: string }
                               - { label: After value, name: afterValue, widget: number, value_type: float, min: 0 }
                               - { label: 'Change (e.g. +662.8%)', name: change, widget: string, required: false }
-                              - { label: Comparison context, name: context, widget: text, required: false }
                           - label: Story chapters
                             name: chapters
                             widget: list
@@ -1281,11 +1274,6 @@ collections:
                               - { label: Image, name: image, widget: image, required: false }
                               - { label: Alternative image text, name: imageAlt, widget: string, required: false }
                               - { label: Image caption, name: caption, widget: text, required: false }
-                          - label: Reporting notes
-                            name: reportingNotes
-                            widget: list
-                            required: false
-                            field: { label: Note, name: note, widget: text }
                           - { label: Photo credit, name: photoCredit, widget: text, required: false }
                       - { label: Partnership duration, name: duration, widget: string, required: false }
                       - label: Scope of work

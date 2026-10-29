@@ -4162,11 +4162,6 @@ const COPY = {
       "lede": "Każdy projekt to indywidualna strategia. Zero template'ów, zero copy-paste.",
       "items": [
         {
-          "notes": [
-            "Otwarcie salonu w Pruszczu Gdańskim w 2025 r. i Gdańsku Osowej w 2026 r.",
-            "Autorski CMS: treści, banery, osobne grafiki mobilne oraz publikacja i ukrywanie slajdów.",
-            "Pozycja salonu Dongfeng nr 1 w Polsce pod względem sprzedaży to informacja przekazana przez Grupę Janisz; bez wskazanego okresu rankingu."
-          ],
           "challenge": "Nowe marki samochodowe potrzebowały rozpoznawalności i zaufania na lokalnym rynku. Dwa salony, różne segmenty aut i kolejne otwarcia wymagały wspólnej komunikacji oraz prostej drogi od zainteresowania do kontaktu ze sprzedawcą.",
           "titleIt": "Janisz",
           "coverImage": "/assets/case-20261029-grupa-janisz-hero.webp",
@@ -4202,7 +4197,7 @@ const COPY = {
             {
               "v": "25 293",
               "k": "wyświetlenia stron docelowych z Meta",
-              "context": "Historia 6 analizowanych kampanii do 29.10.2026"
+              "context": "Do 29.10.2026"
             },
             {
               "v": "+75,7%",
@@ -4232,7 +4227,7 @@ const COPY = {
             "heroMetric": {
               "value": "1 764",
               "label": "raportowane leady z Meta Ads",
-              "context": "Dostępna historia kampanii Dongfeng do 29.10.2026"
+              "context": "Kampanie Dongfeng · do 29.10.2026"
             },
             "comparison": {
               "title": "Większa widoczność. Konkretny okres.",
@@ -4241,8 +4236,7 @@ const COPY = {
               "beforeValue": 317564,
               "afterLabel": "Wrzesień 2026",
               "afterValue": 557855,
-              "change": "+75,7%",
-              "context": "Pełne miesiące: 31 i 30 dni. Metricool; treści strony, bez podziału na ruch organiczny i płatny."
+              "change": "+75,7%"
             },
             "chapters": [
               {
@@ -4259,12 +4253,6 @@ const COPY = {
                 "imageAlt": "Wybrane archiwalne kreacje KTB Media dla marek Grupy Janisz",
                 "caption": "Archiwalne realizacje · nie stanowią aktualnej oferty handlowej"
               }
-            ],
-            "reportingNotes": [
-              "Źródła: Metricool, raporty Meta Ads i Google Ads oraz materiały projektowe KTB Media. Odczyt: 29.10.2026.",
-              "1764 leady to zgłoszenia przed deduplikacją i kwalifikacją; nie liczba unikalnych osób, jazd testowych ani sprzedanych aut.",
-              "Wyświetlenia treści i stron docelowych mogą się powtarzać. Nie oznaczają unikalnego zasięgu ani unikalnych wizyt.",
-              "Wyniki opisują różne wskazane okresy. Nie sumujemy ich i nie przypisujemy całej zmiany jednej usłudze."
             ]
           }
         },
@@ -4300,11 +4288,6 @@ const COPY = {
             "Kampanie Meta Ads",
             "Gadżety reklamowe i materiały wydarzeń"
           ],
-          "notes": [
-            "Współpraca rozpoczęła się w listopadzie 2025 r.",
-            "Porównanie rok do roku obejmuje te same 11 miesięcy i po 334 dni kompletnych danych.",
-            "Materiały łączą praktyczne zastosowania produktów z komunikacją wydarzeń i motorsportu."
-          ],
           "results": [
             {
               "v": "+662,8%",
@@ -4314,7 +4297,7 @@ const COPY = {
             {
               "v": "23 087",
               "k": "interakcji z postami i rolkami",
-              "context": "1.11.2025–30.09.2026 · bez Stories"
+              "context": "1.11.2025–30.09.2026"
             },
             {
               "v": "58,6×",
@@ -4336,8 +4319,7 @@ const COPY = {
               "beforeValue": 31955,
               "afterLabel": "XI 2025–IX 2026",
               "afterValue": 1873999,
-              "change": "58,6×",
-              "context": "Te same miesiące, po 334 dni kompletnych danych. Pierwszy okres przed KTB, drugi podczas współpracy; start w listopadzie 2025."
+              "change": "58,6×"
             },
             "chapters": [
               {
@@ -4354,12 +4336,6 @@ const COPY = {
                 "imageAlt": "Materiały QARMAX łączące prezentację produktów z motorsportem",
                 "caption": "Archiwalne realizacje · nie są zapowiedzią aktualnych wydarzeń ani ofertą"
               }
-            ],
-            "reportingNotes": [
-              "Źródło: statystyki Metricool profilu QARMAX i materiały projektowe KTB Media. Odczyt: 29.10.2026.",
-              "Okres główny: 1.11.2025–30.09.2026, 334 dni. Obserwujący: stany na początku i końcu tego okresu.",
-              "Wyświetlenia obejmują powtórzenia i nie są unikalnym zasięgiem ani wyłącznie ruchem organicznym. Nie wykazano liczby leadów ani sprzedaży.",
-              "Porównanie rok do roku nie oznacza przypisania całej zmiany jednej usłudze marketingowej."
             ]
           },
           "coverImage": "/assets/case-20261029-qarmax-hero.webp",
@@ -4375,11 +4351,6 @@ const COPY = {
           ]
         },
         {
-          "notes": [
-            "Współpraca od 2024 r.; nie ustalono dokładnego miesiąca rozpoczęcia.",
-            "Osobne tematy komunikacji dla mechaniki, diagnostyki oraz blacharstwa i lakiernictwa.",
-            "Zdjęcia i filmy pokazują realny serwis oraz jego zespół."
-          ],
           "challenge": "Szeroki zakres usług mechanicznych i blacharsko-lakierniczych wymagał czytelnej prezentacji. Chcieliśmy pokazać ludzi, zaplecze i standard pracy, a kierowcy ułatwić znalezienie właściwej usługi oraz kontakt z serwisem.",
           "titleIt": "Elektronowa 18",
           "coverImage": "/assets/case-20261029-autocentrum-elektronowa-hero.webp",
@@ -4419,7 +4390,7 @@ const COPY = {
             {
               "v": "2 542",
               "k": "kliknięcia wskazówek dojazdu w Google",
-              "context": "1.01–30.09.2026 · zarejestrowane akcje"
+              "context": "1.01–30.09.2026"
             }
           ],
           "ph": "ph-stripe-1",
@@ -4444,7 +4415,7 @@ const COPY = {
             "heroMetric": {
               "value": "1 499",
               "label": "kliknięć przycisku telefonu w Google",
-              "context": "1.01–30.09.2026 · zarejestrowane akcje Profilu Firmy"
+              "context": "1.01–30.09.2026"
             },
             "comparison": {
               "title": "Więcej wyświetleń rok do roku.",
@@ -4453,8 +4424,7 @@ const COPY = {
               "beforeValue": 69142,
               "afterLabel": "II kwartał 2026",
               "afterValue": 123047,
-              "change": "+78,0%",
-              "context": "Oba kwartały mają po 91 dni kompletnych danych i przypadają podczas współpracy z KTB. To porównanie rok do roku."
+              "change": "+78,0%"
             },
             "chapters": [
               {
@@ -4471,21 +4441,10 @@ const COPY = {
                 "imageAlt": "Wybrane archiwalne materiały AutoCentrum o usługach i eksploatacji samochodu",
                 "caption": "Archiwalne projekty KTB Media · nie stanowią aktualnej oferty"
               }
-            ],
-            "reportingNotes": [
-              "Źródła: Metricool, raport Profilu Firmy w Google i materiały KTB Media. Odczyt: 29.10.2026.",
-              "Kliknięcia telefonu i dojazdu to zarejestrowane akcje, nie potwierdzone rozmowy, wizyty ani unikalne leady. Puste pola nie były uzupełniane.",
-              "Wzrost obserwujących pokazuje dwa stany profilu; odczyt z 19.04.2024 nie jest potwierdzoną bazą sprzed współpracy.",
-              "Porównanie II kwartałów dotyczy czasu współpracy, bez założenia jednakowych wydatków. Wyświetlenia mogą się powtarzać i nie oznaczają sprzedaży."
             ]
           }
         },
         {
-          "notes": [
-            "Początek współpracy: kwiecień 2024.",
-            "Marka prowadziła komunikację przed KTB; brak pełnej bazy analitycznej sprzed współpracy.",
-            "Materiały łączą produkt, zawodników i relacje z europejskich wydarzeń."
-          ],
           "challenge": "Opona motorsportowa potrzebuje więcej niż zdjęcia produktu. Marka wymagała spójnej identyfikacji i komunikacji, która pokazuje zastosowanie opon, obecność na torze oraz relacje z zawodnikami i międzynarodową społecznością.",
           "titleIt": "Tyres",
           "coverImage": "/assets/case-20261029-extreme-tyres-hero.webp",
@@ -4525,7 +4484,7 @@ const COPY = {
             {
               "v": "490",
               "k": "publikacji: postów i rolek",
-              "context": "1.01–30.09.2026 · bez Stories"
+              "context": "1.01–30.09.2026"
             }
           ],
           "ph": "ph-stripe-3",
@@ -4550,7 +4509,7 @@ const COPY = {
             "heroMetric": {
               "value": "537 611",
               "label": "wyświetleń na Instagramie",
-              "context": "1.01–30.09.2026 · 273 dni kompletnych danych"
+              "context": "1.01–30.09.2026"
             },
             "comparison": {
               "title": "Widoczność rośnie. W liczbach.",
@@ -4559,8 +4518,7 @@ const COPY = {
               "beforeValue": 48790,
               "afterLabel": "Wrzesień 2026",
               "afterValue": 168236,
-              "change": "+244,8%",
-              "context": "Pełne miesiące: 31 i 30 dni, oba podczas współpracy. Wyświetlenia treści i profilu, organiczne i płatne."
+              "change": "+244,8%"
             },
             "chapters": [
               {
@@ -4578,21 +4536,10 @@ const COPY = {
                 "caption": "Materiały archiwalne · komunikacja produktu i wydarzeń"
               }
             ],
-            "reportingNotes": [
-              "Źródła: Metricool profilu extreme.performance.tyres, portfolio KTB Media i archiwalne projekty marki. Odczyt: 29.10.2026.",
-              "Wyświetlenia obejmują treści i profil, ruch organiczny oraz płatny. Powtórzenia są wliczone; to nie unikalny zasięg.",
-              "Porównanie VIII–IX 2026 dotyczy miesięcy podczas współpracy. Brak pełnych danych sprzed kwietnia 2024 nie pozwala wyliczyć rocznego wzrostu względem tego okresu.",
-              "Liczba publikacji obejmuje posty i rolki, bez Stories. Wzrost obserwujących to zmiana stanu netto. Nie deklarujemy wyników sprzedaży ani leadów."
-            ],
             "photoCredit": "Conor Shanahan / Drift Masters 2025. Fot. Paddy McGrath / Drift Masters."
           }
         },
         {
-          "notes": [
-            "Formularz łączy kontakt, wybór usługi i informacje o aucie.",
-            "Treści pokazują rzeczywistą pracę serwisu oraz tłumaczą objawy i diagnozę.",
-            "Dane Facebook obejmują 1.11.2025–30.09.2026; raport Google ma niepełne pokrycie tego okresu."
-          ],
           "challenge": "Lokalny warsztat potrzebuje zaufania w chwili, gdy kierowca szuka rozwiązania konkretnego problemu. Trzeba było czytelnie pokazać usługi, realne zaplecze i lokalizację oraz ułatwić kontakt i zgłoszenie auta do serwisu.",
           "titleIt": "Barniewice",
           "coverImage": "/assets/case-20261029-gt-serwis-barniewice-hero.webp",
@@ -4622,12 +4569,12 @@ const COPY = {
             {
               "v": "1 298",
               "k": "kliknięć wskazówek dojazdu w Google",
-              "context": "XI 2025–IX 2026 · dostępne 329 z 334 dni"
+              "context": "XI 2025–IX 2026"
             },
             {
               "v": "296",
               "k": "kliknięć przycisku telefonu w Google",
-              "context": "XI 2025–IX 2026 · dostępne 329 z 334 dni"
+              "context": "XI 2025–IX 2026"
             }
           ],
           "ph": "ph-stripe-1",
@@ -4652,7 +4599,7 @@ const COPY = {
             "heroMetric": {
               "value": "442 927",
               "label": "wyświetleń treści na Facebooku",
-              "context": "1.11.2025–30.09.2026 · 334 dni kompletnych danych"
+              "context": "1.11.2025–30.09.2026"
             },
             "comparison": {
               "title": "Jeden z momentów wzrostu.",
@@ -4661,8 +4608,7 @@ const COPY = {
               "beforeValue": 28237,
               "afterLabel": "Maj 2026",
               "afterValue": 90241,
-              "change": "+219,6%",
-              "context": "Wybrane pełne miesiące: 30 i 31 dni. Porównanie nie oznacza stałego wzrostu ani jednakowego budżetu reklamowego."
+              "change": "+219,6%"
             },
             "chapters": [
               {
@@ -4679,12 +4625,6 @@ const COPY = {
                 "imageAlt": "Archiwalne kreacje GT Serwis pokazujące usługi i wiedzę techniczną",
                 "caption": "Archiwalne realizacje KTB Media · nie stanowią aktualnej oferty"
               }
-            ],
-            "reportingNotes": [
-              "Źródła: Metricool profilu GT Serwis Barniewice, raport Profilu Firmy w Google i materiały KTB Media. Odczyt: 29.10.2026.",
-              "Facebook: 1.11.2025–30.09.2026, 334 dni kompletnych danych wyświetleń. Wyświetlenia mogą się powtarzać i nie są unikalnym zasięgiem.",
-              "Raport Google obejmuje 329 dziennych rekordów z 334 dni okresu. Brakujących rekordów nie dopisywano.",
-              "Kliknięcia telefonu i dojazdu nie są odbytymi rozmowami, wizytami ani unikalnymi leadami. Wyniki nie określają liczby sprzedaży lub umówionych wizyt."
             ]
           },
           "imageAlts": [
@@ -7957,11 +7897,6 @@ const COPY = {
       "lede": "Every project gets its own strategy. No templates, no copy-paste.",
       "items": [
         {
-          "notes": [
-            "Pruszcz Gdański showroom opened in 2025; Gdańsk Osowa followed in 2026.",
-            "Custom CMS: content, banners, separate mobile images, and slide publication and visibility.",
-            "The claim that the Dongfeng showroom ranks first in Poland by sales was supplied by Grupa Janisz, without a ranking period."
-          ],
           "challenge": "New car brands needed awareness and trust in the local market. Two showrooms, different vehicle segments and successive openings called for consistent communication and a clear route from interest to a sales enquiry.",
           "titleIt": "Janisz",
           "coverImage": "/assets/case-20261029-grupa-janisz-hero.webp",
@@ -7997,7 +7932,7 @@ const COPY = {
             {
               "v": "25,293",
               "k": "Meta landing page views",
-              "context": "History of 6 analysed campaigns through 29 Oct 2026"
+              "context": "Through 29 Oct 2026"
             },
             {
               "v": "+75.7%",
@@ -8027,7 +7962,7 @@ const COPY = {
             "heroMetric": {
               "value": "1,764",
               "label": "reported Meta Ads leads",
-              "context": "Available Dongfeng campaign history through 29 Oct 2026"
+              "context": "Dongfeng campaigns · through 29 Oct 2026"
             },
             "comparison": {
               "title": "More visibility. A defined period.",
@@ -8036,8 +7971,7 @@ const COPY = {
               "beforeValue": 317564,
               "afterLabel": "September 2026",
               "afterValue": 557855,
-              "change": "+75.7%",
-              "context": "Full months: 31 and 30 days. Metricool; page content, with no organic/paid split."
+              "change": "+75.7%"
             },
             "chapters": [
               {
@@ -8054,12 +7988,6 @@ const COPY = {
                 "imageAlt": "Selected archived KTB Media creative for Grupa Janisz brands",
                 "caption": "Archived creative · not a current commercial offer"
               }
-            ],
-            "reportingNotes": [
-              "Sources: Metricool, Meta Ads and Google Ads reports, and KTB Media project materials. Read on 29 Oct 2026.",
-              "The 1,764 leads are reported submissions before deduplication and qualification, not unique people, test drives or cars sold.",
-              "Content views and landing page views can repeat. They do not represent unique reach or unique visits.",
-              "Figures cover the specified, different reporting periods. They are not added together or attributed entirely to one service."
             ]
           }
         },
@@ -8095,11 +8023,6 @@ const COPY = {
             "Meta Ads campaigns",
             "Promotional merchandise and event materials"
           ],
-          "notes": [
-            "Cooperation began in November 2025.",
-            "The year-on-year comparison covers the same 11 months, with 334 complete days in each period.",
-            "Content connects practical product use with events and motorsport."
-          ],
           "results": [
             {
               "v": "+662.8%",
@@ -8131,8 +8054,7 @@ const COPY = {
               "beforeValue": 31955,
               "afterLabel": "Nov 2025–Sep 2026",
               "afterValue": 1873999,
-              "change": "58.6×",
-              "context": "The same months, with 334 complete days each. The first period preceded KTB; the second covered cooperation, which began in November 2025."
+              "change": "58.6×"
             },
             "chapters": [
               {
@@ -8149,12 +8071,6 @@ const COPY = {
                 "imageAlt": "QARMAX materials combining product presentation and motorsport",
                 "caption": "Archived creative · not a current event announcement or commercial offer"
               }
-            ],
-            "reportingNotes": [
-              "Source: Metricool statistics for the QARMAX profile and KTB Media project materials. Read on 29 Oct 2026.",
-              "Main period: 1 Nov 2025–30 Sep 2026, 334 days. Follower figures are snapshots at the start and end of this period.",
-              "Views include repeats and do not mean unique reach or exclusively organic traffic. Lead and sales counts were not established.",
-              "The year-on-year comparison does not attribute the entire change to a single marketing service."
             ]
           },
           "coverImage": "/assets/case-20261029-qarmax-hero.webp",
@@ -8170,11 +8086,6 @@ const COPY = {
           ]
         },
         {
-          "notes": [
-            "Cooperation began in 2024; the exact start month was not established.",
-            "Separate communication themes for mechanics, diagnostics, and body and paint work.",
-            "Photography and video show the actual workshop and its team."
-          ],
           "challenge": "A wide range of mechanical, body and paint services needed a clear presentation. We wanted to show the people, facilities and working standards while helping drivers find the right service and contact the workshop.",
           "titleIt": "Elektronowa 18",
           "coverImage": "/assets/case-20261029-autocentrum-elektronowa-hero.webp",
@@ -8214,7 +8125,7 @@ const COPY = {
             {
               "v": "2,542",
               "k": "Google directions clicks",
-              "context": "1 Jan–30 Sep 2026 · recorded actions"
+              "context": "1 Jan–30 Sep 2026"
             }
           ],
           "ph": "ph-stripe-1",
@@ -8239,7 +8150,7 @@ const COPY = {
             "heroMetric": {
               "value": "1,499",
               "label": "Google call button clicks",
-              "context": "1 Jan–30 Sep 2026 · recorded Business Profile actions"
+              "context": "1 Jan–30 Sep 2026"
             },
             "comparison": {
               "title": "More views year on year.",
@@ -8248,8 +8159,7 @@ const COPY = {
               "beforeValue": 69142,
               "afterLabel": "Q2 2026",
               "afterValue": 123047,
-              "change": "+78.0%",
-              "context": "Both quarters contain 91 complete days and fall within the KTB cooperation period. This is a year-on-year comparison."
+              "change": "+78.0%"
             },
             "chapters": [
               {
@@ -8266,21 +8176,10 @@ const COPY = {
                 "imageAlt": "Selected archived AutoCentrum content about car services and maintenance",
                 "caption": "Archived KTB Media projects · not a current commercial offer"
               }
-            ],
-            "reportingNotes": [
-              "Sources: Metricool, the Google Business Profile report and KTB Media materials. Read on 29 Oct 2026.",
-              "Call and directions clicks are recorded actions, not confirmed calls, visits or unique leads. Empty fields were not filled in.",
-              "Follower growth compares two profile snapshots; 19 Apr 2024 is not a confirmed baseline from before cooperation.",
-              "The Q2 comparison covers cooperation periods and does not assume equal advertising spend. Views can repeat and do not represent sales."
             ]
           }
         },
         {
-          "notes": [
-            "Cooperation began in April 2024.",
-            "The brand communicated before KTB; a complete pre-cooperation analytics baseline is unavailable.",
-            "Materials connect products, drivers and European events."
-          ],
           "challenge": "A motorsport tyre needs more than a product photograph. The brand needed a consistent identity and communication showing tyre applications, track presence, and relationships with drivers and an international community.",
           "titleIt": "Tyres",
           "coverImage": "/assets/case-20261029-extreme-tyres-hero.webp",
@@ -8345,7 +8244,7 @@ const COPY = {
             "heroMetric": {
               "value": "537,611",
               "label": "Instagram views",
-              "context": "1 Jan–30 Sep 2026 · 273 complete days"
+              "context": "1 Jan–30 Sep 2026"
             },
             "comparison": {
               "title": "Visibility grows. In numbers.",
@@ -8354,8 +8253,7 @@ const COPY = {
               "beforeValue": 48790,
               "afterLabel": "September 2026",
               "afterValue": 168236,
-              "change": "+244.8%",
-              "context": "Full months: 31 and 30 days, both during cooperation. Content and profile views, organic and paid."
+              "change": "+244.8%"
             },
             "chapters": [
               {
@@ -8373,21 +8271,10 @@ const COPY = {
                 "caption": "Archived materials · product and event communication"
               }
             ],
-            "reportingNotes": [
-              "Sources: Metricool for extreme.performance.tyres, the KTB Media portfolio and archived brand projects. Read on 29 Oct 2026.",
-              "Views include content and profile views, both organic and paid. Repeats count; the figure is not unique reach.",
-              "The Aug–Sep 2026 comparison covers months during cooperation. Incomplete data before April 2024 prevents a reliable annual comparison against that earlier period.",
-              "Publication count includes posts and reels, excluding Stories. Follower growth is the net change between snapshots. Sales and lead results are not claimed."
-            ],
             "photoCredit": "Conor Shanahan / Drift Masters 2025. Photo: Paddy McGrath / Drift Masters."
           }
         },
         {
-          "notes": [
-            "The form brings contact details, service selection and vehicle information together.",
-            "Content shows actual workshop work and explains symptoms and diagnostics.",
-            "Facebook data cover 1 Nov 2025–30 Sep 2026; the Google report has incomplete coverage of that period."
-          ],
           "challenge": "A local workshop needs trust at the moment a driver is looking for a solution to a specific problem. Services, real facilities and location needed a clear presentation, alongside an easy way to contact the team and submit a vehicle enquiry.",
           "titleIt": "Barniewice",
           "coverImage": "/assets/case-20261029-gt-serwis-barniewice-hero.webp",
@@ -8417,12 +8304,12 @@ const COPY = {
             {
               "v": "1,298",
               "k": "Google directions clicks",
-              "context": "Nov 2025–Sep 2026 · 329 of 334 days available"
+              "context": "Nov 2025–Sep 2026"
             },
             {
               "v": "296",
               "k": "Google call button clicks",
-              "context": "Nov 2025–Sep 2026 · 329 of 334 days available"
+              "context": "Nov 2025–Sep 2026"
             }
           ],
           "ph": "ph-stripe-1",
@@ -8447,7 +8334,7 @@ const COPY = {
             "heroMetric": {
               "value": "442,927",
               "label": "Facebook content views",
-              "context": "1 Nov 2025–30 Sep 2026 · 334 complete days"
+              "context": "1 Nov 2025–30 Sep 2026"
             },
             "comparison": {
               "title": "One documented moment of growth.",
@@ -8456,8 +8343,7 @@ const COPY = {
               "beforeValue": 28237,
               "afterLabel": "May 2026",
               "afterValue": 90241,
-              "change": "+219.6%",
-              "context": "Selected full months: 30 and 31 days. The comparison does not imply constant growth or equal advertising spend."
+              "change": "+219.6%"
             },
             "chapters": [
               {
@@ -8474,12 +8360,6 @@ const COPY = {
                 "imageAlt": "Archived GT Serwis creative showing services and technical knowledge",
                 "caption": "Archived KTB Media projects · not a current commercial offer"
               }
-            ],
-            "reportingNotes": [
-              "Sources: Metricool for GT Serwis Barniewice, the Google Business Profile report and KTB Media materials. Read on 29 Oct 2026.",
-              "Facebook: 1 Nov 2025–30 Sep 2026, 334 complete days of view data. Views can repeat and do not mean unique reach.",
-              "The Google report contains 329 daily records out of 334 days in the period. Missing records were not added.",
-              "Call and directions clicks do not establish completed calls, visits or unique leads. Results do not state sales or booked appointment counts."
             ]
           },
           "imageAlts": [
