@@ -6277,3 +6277,5 @@ body.menu-open .sticky-quote { visibility:hidden;pointer-events:none; }
 .editorial-hero h1.editorial-title-long { max-width:none; }
 .editorial-primary-long > strong { font-size:clamp(38px,5vw,76px); white-space:nowrap; }
 @media(max-width:760px) { .editorial-primary-long > strong { font-size:clamp(36px,9.4vw,64px); } }
+
+.editorial-hero-media figcaption a { text-decoration:underline; text-underline-offset:2px; }

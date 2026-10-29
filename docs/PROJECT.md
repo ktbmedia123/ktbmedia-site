@@ -12,7 +12,7 @@ Treści PL/EN w content/site.json; content.js to fallback, cms-hydrator.js pobie
 Aplikacje i strony WWW są opisane w DIGITAL_CASES w app.js.
 Landingi: landing-configs.js i treści CMS. Marine ma wspólny renderer marine-landing.js dla builda i React; obsługa w docs/MARINE.md. Style: styles.css.
 Proces: osobny dokument /proces/, Canvas 2D + DOM, źródła w proces/. Menu wykonuje pełną nawigację; ?lang=en zachowuje język.
-Realizacje: marketing, aplikacje, strony WWW; katalog /realizacje/. Dwanaście rozbudowanych case studies korzysta z opcjonalnego modelu editorial w CMS; format i źródła: docs/CASE_STUDIES.md.
+Realizacje: marketing, aplikacje, strony WWW; katalog /realizacje/. Trzynaście rozbudowanych case studies korzysta z opcjonalnego modelu editorial w CMS; format i źródła: docs/CASE_STUDIES.md.
 Mapy: sitemap.xml oraz sitemap-pages.xml, sitemap-blog.xml, sitemap-realizacje.xml.
 
 ## Historia / decyzje
@@ -26,6 +26,7 @@ Hero ma zostać „Marka, którą czuć w sieci.” i wcześniejszy lead o zewn�
 Wcześniejsze prace: mobilne hero, favicon, CMS, landingi lokalne i automotive, blogi, SEO/GEO, llms.txt oraz sitemap.
 W sierpniu 2026 zgłoszono sitemap do Google Search Console; stan Google wymaga oddzielnego sprawdzenia, jeśli użytkownik o to poprosi.
 15 października 2026 użytkownik potwierdził, że „Bigteam” oznacza MójTeam: ukryć MójTeam i Bigmot, zachowując możliwość przywrócenia w CMS.
+29 października 2026 użytkownik zlecił również ukrycie Tomex Brakes. Wszystkie trzy realizacje pozostają w CMS do przywrócenia; katalog, linki, mapa i publiczne podstrony respektują widoczność wspólną dla PL/EN.
 
 ## Ciągłość pracy
 Projekt i dokumentacja mają trwać niezależnie od długości pojedynczego czatu.

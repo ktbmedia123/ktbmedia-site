@@ -675,6 +675,7 @@ collections:
                         collapsed: true
                         fields:
                           - { label: Nagłówek historii, name: headline, widget: string, required: false }
+                          - { label: Etykieta wyróżnienia projektu, name: outcomeLabel, widget: string, required: false }
                           - { label: Kadrowanie okładki, name: coverFit, widget: select, options: [cover, contain], default: cover, required: false, hint: "cover: wypełnij zdjęciem; contain: pokaż całą kreację" }
                           - label: Wyróżniony wynik
                             name: heroMetric
@@ -710,6 +711,8 @@ collections:
                               - { label: Opis alternatywny obrazu, name: imageAlt, widget: string, required: false }
                               - { label: Podpis obrazu, name: caption, widget: text, required: false }
                           - { label: Autorstwo zdjęć, name: photoCredit, widget: text, required: false }
+                          - { label: Źródło fotografii (URL), name: photoSourceUrl, widget: string, required: false }
+                          - { label: Licencja fotografii (URL), name: photoLicenseUrl, widget: string, required: false }
                       - { label: Czas współpracy, name: duration, widget: string, required: false }
                       - label: Zakres współpracy
                         name: scope
@@ -1242,6 +1245,7 @@ collections:
                         collapsed: true
                         fields:
                           - { label: Story headline, name: headline, widget: string, required: false }
+                          - { label: Project highlight label, name: outcomeLabel, widget: string, required: false }
                           - { label: Cover fit, name: coverFit, widget: select, options: [cover, contain], default: cover, required: false, hint: "cover: fill with photo; contain: show the full design" }
                           - label: Headline metric
                             name: heroMetric
@@ -1277,6 +1281,8 @@ collections:
                               - { label: Alternative image text, name: imageAlt, widget: string, required: false }
                               - { label: Image caption, name: caption, widget: text, required: false }
                           - { label: Photo credit, name: photoCredit, widget: text, required: false }
+                          - { label: Photo source URL, name: photoSourceUrl, widget: string, required: false }
+                          - { label: Photo licence URL, name: photoLicenseUrl, widget: string, required: false }
                       - { label: Partnership duration, name: duration, widget: string, required: false }
                       - label: Scope of work
                         name: scope

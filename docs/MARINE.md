@@ -17,6 +17,7 @@ SEO/GEO: jedno H1, czytelne segmenty i usługi, prawdziwe realizacje DDP Supply/
 - Licencja CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 - Pobrana miniatura 1280 px; bez retuszu. Zachować widoczny podpis autora, odnośnik do źródła i licencji oraz informację o pomniejszeniu. W hero, jeśli DDP zostanie ukryte, zdjęcie RMDC i podpis są również obsłużone.
 - Potwierdzenie projektu okrętu przez RMDC: https://rmdc.rh.pl/references/orp-kormoran (initial/basic/classification/detail design i wsparcie realizacji/prób).
+- Od 29.10.2026 ta sama fotografia jest okładką rozbudowanego case study `/realizacje/rmdc/`. Widoczny credit PL/EN, źródło, licencja i informacja o pomniejszeniu pozostają także w prerenderze; autorskie materiały KTB pokazują dalsze rozdziały.
 - Zdjęcie przedstawia projekt klienta; zakres pracy KTB opisany osobno w karcie. Nie przypisywać KTB projektowania okrętu ani autorstwa fotografii.
 
 Wdrożenie jak reszta strony: GitHub main → Netlify. Aktualny SHA i walidacja w docs/STATUS.md. Dokumentacja pozostaje lokalna.

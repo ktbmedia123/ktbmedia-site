@@ -1,3 +1,14 @@
+# Aktualizacja — 2026-10-29: Tomex ukryty, Remontowa Marine Design i fotografie warsztatów
+
+- Tomex Brakes ustawiony jako niewidoczny wspólnie dla PL/EN. Treści zachowane do przywrócenia, brak publicznej podstrony, katalogu, sitemap i llms. Blogowe polecenia realizacji respektują teraz przełącznik widoczności; ukryto też istniejące polecenie Tomex w artykule o projektowaniu. Bigmot i MójTeam pozostają ukryte.
+- Remontowa Marine Design: rozbudowano istniejące /realizacje/rmdc/ w układzie editorial PL/EN. Opis identyfikacji, dwujęzycznej komunikacji, employer brandingu, portfolio jednostek i relacji z wydarzeń, dwie oryginalne kreacje KTB. Fotografia ORP Kormoran z istniejącego landingu marine z pełnym podpisem autora i linkami źródła/licencji. Zamiast starych niepotwierdzonych +100%, wykresu i harmonogramu — jakościowy blok Zakres współpracy. Model CMS obsługuje opcjonalny tytuł tego bloku i linki do źródła/licencji zdjęcia.
+- Cztery nowe okładki DED, Wiktorowicza, AR Serwis i Sergieja z fotografii użytkownika. Wiktorowicz ma dodatkowy dyptyk, Sergiej trzeci rozdział ze zdjęciami hali i pracy. Przypisanie zdjęć potwierdzone przez użytkownika: 563/4409/049 Wiktorowicz, A7400859-2 AR, pozostałe Sergiej, osobny plik DED. Sześć WebP case-20261029d-*, około 1,18 MB, bez retuszu treści.
+- Zachowane wyniki pozostałych realizacji, zmiany PMO/PulseGT, hero strony głównej i pozostałe sekcje PL/EN. Bez wewnętrznych przypisów i bez wyników/numeracji kart. Katalog: 13 marketing / 4 aplikacje / 7 WWW; 13 editorial. Build 72 adresy (71 React + Proces), wersja 20261029-marine-workshops.
+- Walidacja lokalna: build, check:seo (72 URL), check-visibility (ukrycie/przywrócenie wszystkich trzech projektów i kategorie), składnia, JSON/YAML i kontrola zakresu zmian — PASS. Playwright: 30 widoków (5 realizacji × PL/EN × 1440/390/320 px), dekodowanie obrazów, brak overflow i błędów JS, katalog i blog bez Tomex, RMDC bez JS z credit/linkami, nawigacja do kontaktu EN — PASS. Przegląd wizualny zrzutów output/playwright/marine-workshops-* — PASS.
+- Stan wdrożenia: gotowe do publikacji przez istniejący GitHub main → Netlify; weryfikacja produkcji pozostaje do wykonania.
+
+---
+
 # Aktualizacja — 2026-10-29: Nowe fotografie PMO i krótka nazwa PulseGT
 
 - Na prośbę użytkownika zastąpiono dwa wskazane kadry PMO: nowa okładka to BMW z oznaczeniami marki, a drugi blok pokazuje szeroki kadr driftu. Wykorzystano dostarczone IMG_1183.JPG i A7403640.JPG, bez generowania nowych obrazów. Dwa zoptymalizowane WebP case-20261029c-pmo-lubricants-* mają razem około 0,49 MB. CoverFit contain zachowuje cały samochód w hero i katalogu; zaktualizowane alty i podpis PL/EN.

@@ -4699,9 +4699,9 @@ const COPY = {
               {
                 "title": "Filmy z konkretnym tematem.",
                 "text": "Czyszczenie klimatyzacji, olej w nowym Audi i ochrona podwozia MG ZS Hybrid to przykłady tematów z warsztatu. Krótka forma pozwala pokazać usługę w działaniu i przekazać kierowcy użyteczną wiedzę.",
-                "image": "/assets/case-20261029b-wiktorowicz-detail.webp",
-                "imageAlt": "Materiały wideo Wiktorowicz Auto Serwis pokazujące rzeczywiste tematy warsztatowe",
-                "caption": "Kadry i kreacje z materiałów serwisu"
+                "image": "/assets/case-20261029d-wiktorowicz-photo.webp",
+                "imageAlt": "Konserwacja podwozia i detal silnika w Auto Serwis Wiktorowicz",
+                "caption": "Fotografie z Auto Serwis Wiktorowicz"
               }
             ],
             "comparison": {
@@ -4712,18 +4712,19 @@ const COPY = {
               "afterLabel": "30 września 2026",
               "afterValue": 2885,
               "change": "+45,0%"
-            }
+            },
+            "coverFit": "cover"
           },
-          "coverImage": "/assets/case-20261029b-wiktorowicz-hero.webp",
+          "coverImage": "/assets/case-20261029d-wiktorowicz-hero.webp",
           "images": [
-            "/assets/case-20261029b-wiktorowicz-hero.webp",
+            "/assets/case-20261029d-wiktorowicz-hero.webp",
             "/assets/case-20261029b-wiktorowicz-work.webp",
-            "/assets/case-20261029b-wiktorowicz-detail.webp"
+            "/assets/case-20261029d-wiktorowicz-photo.webp"
           ],
           "imageAlts": [
-            "Kadr z filmu Auto Serwis Wiktorowicz nagranego w warsztacie",
+            "Praca przy samochodzie w Auto Serwis Wiktorowicz",
             "Wybrane materiały Wiktorowicz Auto Serwis o naprawach i eksploatacji samochodu",
-            "Materiały wideo Wiktorowicz Auto Serwis pokazujące rzeczywiste tematy warsztatowe"
+            "Konserwacja podwozia i detal silnika w Auto Serwis Wiktorowicz"
           ]
         },
         {
@@ -4795,6 +4796,13 @@ const COPY = {
                 "image": "/assets/case-20261029b-sergiej-auto-serwis-work.webp",
                 "imageAlt": "Archiwalne kreacje Sergiej Auto Serwis prezentujące usługi i tematy techniczne",
                 "caption": "Wybrane kreacje KTB Media dla Sergiej Auto Serwis"
+              },
+              {
+                "title": "Zaplecze, które widać.",
+                "text": "Fotografie pokazują halę, stanowiska i codzienną pracę przy samochodach. Autentyczne kadry uzupełniają kreacje i pozwalają zobaczyć zaplecze, które stoi za ofertą serwisu.",
+                "image": "/assets/case-20261029d-sergiej-auto-serwis-photo.webp",
+                "imageAlt": "Wnętrze Sergiej Auto Serwis ze stanowiskami i samochodami na podnośnikach",
+                "caption": "Fotografie z Sergiej Auto Serwis"
               }
             ],
             "comparison": {
@@ -4805,18 +4813,21 @@ const COPY = {
               "afterLabel": "30 września 2026",
               "afterValue": 1340,
               "change": "+8,8%"
-            }
+            },
+            "coverFit": "cover"
           },
-          "coverImage": "/assets/case-20261029b-sergiej-auto-serwis-hero.webp",
+          "coverImage": "/assets/case-20261029d-sergiej-auto-serwis-hero.webp",
           "images": [
-            "/assets/case-20261029b-sergiej-auto-serwis-hero.webp",
+            "/assets/case-20261029d-sergiej-auto-serwis-hero.webp",
             "/assets/case-20261029b-sergiej-auto-serwis-work.webp",
-            "/assets/case-20261029b-sergiej-auto-serwis-web.webp"
+            "/assets/case-20261029b-sergiej-auto-serwis-web.webp",
+            "/assets/case-20261029d-sergiej-auto-serwis-photo.webp"
           ],
           "imageAlts": [
-            "Wyposażenie warsztatu Sergiej Auto Serwis",
+            "Budynek i wjazd do Sergiej Auto Serwis",
             "Archiwalne kreacje Sergiej Auto Serwis prezentujące usługi i tematy techniczne",
-            "Podgląd strony sergiejauto.pl zaprojektowanej i zbudowanej przez KTB Media"
+            "Podgląd strony sergiejauto.pl zaprojektowanej i zbudowanej przez KTB Media",
+            "Wnętrze Sergiej Auto Serwis ze stanowiskami i samochodami na podnośnikach"
           ]
         },
         {
@@ -4890,16 +4901,16 @@ const COPY = {
                 "caption": "Materiały komunikacji usług DED Serwis"
               }
             ],
-            "coverFit": "contain"
+            "coverFit": "cover"
           },
-          "coverImage": "/assets/case-20261029b-ded-serwis-hero.webp",
+          "coverImage": "/assets/case-20261029d-ded-serwis-hero.webp",
           "images": [
-            "/assets/case-20261029b-ded-serwis-hero.webp",
+            "/assets/case-20261029d-ded-serwis-hero.webp",
             "/assets/case-20261029b-ded-serwis-work.webp",
             "/assets/case-20261029b-ded-serwis-detail.webp"
           ],
           "imageAlts": [
-            "DED Serwis — kreacja promująca pielęgnację lakieru",
+            "Praca przy nadwoziu samochodu w DED Serwis",
             "Kreacje DED Serwis zestawiające uszkodzenie nadwozia z efektem naprawy",
             "Archiwalne kreacje DED Serwis dotyczące usług warsztatowych"
           ]
@@ -4975,112 +4986,66 @@ const COPY = {
                 "caption": "Kreacje edukacyjne i usługowe AR Serwis"
               }
             ],
-            "coverFit": "contain"
+            "coverFit": "cover"
           },
-          "coverImage": "/assets/case-20261029b-ar-serwis-hero.webp",
+          "coverImage": "/assets/case-20261029d-ar-serwis-hero.webp",
           "images": [
-            "/assets/case-20261029b-ar-serwis-hero.webp",
+            "/assets/case-20261029d-ar-serwis-hero.webp",
             "/assets/case-20261029b-ar-serwis-work.webp",
             "/assets/case-20261029b-ar-serwis-detail.webp"
           ],
           "imageAlts": [
-            "AR Serwis — kreacja dotycząca wymiany filtra powietrza",
+            "Elektronika samochodowa oglądana pod lupą w AR Serwis",
             "Archiwalne kreacje AR Serwis o hamulcach, elektronice i diagnostyce",
             "Materiały AR Serwis dotyczące codziennej eksploatacji i usług samochodowych"
           ]
         },
         {
-          "timeline": [
-            {
-              "phase": "Warsztat oferty",
-              "duration": "1 tydz.",
-              "description": "Rozpisaliśmy segmenty klientów, główne obiekcje i usługi, które miały największy potencjał sprzedażowy."
-            },
-            {
-              "phase": "Architektura treści",
-              "duration": "2 tyg.",
-              "description": "Zbudowaliśmy strukturę strony i komunikacji tak, aby skomplikowane tematy techniczne były czytelne dla decydentów."
-            },
-            {
-              "phase": "Projekt i wdrożenie",
-              "duration": "5 tyg.",
-              "description": "Przygotowaliśmy layouty, teksty, komponenty oraz wdrożenie strony z naciskiem na szybkość i konwersję."
-            },
-            {
-              "phase": "Content ekspercki",
-              "duration": "6 tyg.",
-              "description": "Stworzyliśmy bazę materiałów do LinkedIna i sprzedaży, opartą na realnych pytaniach klientów."
-            }
-          ],
-          "notes": [
-            "Komunikacja dwujęzyczna PL/EN",
-            "Seria \"W głębi projektu\" – behind the scenes",
-            "Animowane portfolio jednostek pływających"
-          ],
-          "challenge": "Stworzenie nowej identyfikacji wizualnej podkreślającej profesjonalne podejście do projektowania i współpracę z największymi firmami z branży morskiej. Ukazanie firmy jako świetnego miejsca do pracy, zwiększenie liczby obserwujących w mediach społecznościowych i zbudowanie międzynarodowej rozpoznawalności.",
+          "challenge": "Specjalistyczne projekty okrętowe wymagają precyzji, ale o sile biura decydują także ludzie i ich kompetencje. Komunikacja miała pokazać tę pracę partnerom z branży morskiej oraz osobom zainteresowanym dołączeniem do zespołu.",
           "titleIt": "Marine Design",
           "num": "02",
-          "chartData": {
-            "label": "Zapytania B2B miesięcznie",
-            "before": [
-              8,
-              11,
-              9,
-              10
-            ],
-            "after": [
-              15,
-              19,
-              24,
-              28,
-              31,
-              36
-            ],
-            "unit": "zapytań/mies"
-          },
           "slug": "rmdc",
           "deliverables": [
-            "LinkedIn i Facebook",
-            "System identyfikacji wizualnej",
-            "Foto-wideo z targów i eventów",
-            "Employer branding"
+            "System identyfikacji i spójne kreacje marki",
+            "Dwujęzyczna komunikacja Facebook, Instagram i LinkedIn",
+            "Seria „W głębi projektu” o pracowniach i ludziach",
+            "Animowane portfolio projektów jednostek pływających",
+            "Relacje foto-wideo z targów i wydarzeń",
+            "Materiały wspierające wizerunek pracodawcy"
           ],
           "duration": "Ciągła współpraca",
           "scope": [
-            "Strategia marki",
-            "Strona WWW",
-            "Content",
-            "LinkedIn",
-            "Performance"
+            "Identyfikacja wizualna",
+            "Komunikacja PL/EN",
+            "LinkedIn i social media",
+            "Foto i wideo",
+            "Employer branding",
+            "Portfolio projektów"
           ],
           "results": [
             {
-              "k": "Wzrost obserwujących",
-              "v": "+100%"
+              "v": "Marka",
+              "k": "spójna identyfikacja wizualna"
             },
             {
-              "k": "Zasięg",
-              "v": "Międzynarodowy"
+              "v": "Zespół",
+              "k": "ludzie i pracownie w komunikacji"
             },
             {
-              "k": "Rekrutacja",
-              "v": "Aktywna"
-            },
-            {
-              "k": "Publikacje",
-              "v": "Grupa Remontowa"
+              "v": "Treści",
+              "k": "projekty, wiedza i wydarzenia branżowe"
             }
           ],
           "ph": "ph-stripe-2",
           "images": [
-            "/assets/case-rmdc-1.jpg",
-            "/assets/case-rmdc-2.jpg",
-            "/assets/case-rmdc-3.jpg"
+            "/assets/marine-rmdc-orp-kormoran-dock.jpg",
+            "/assets/case-rmdc-3.jpg",
+            "/assets/case-rmdc-2.jpg"
           ],
           "title1": "Remontowa",
-          "solution": "Przebudowaliśmy identyfikację wizualną pod B2B premium. Prowadzenie social mediów FB/IG/LinkedIn w języku polskim i angielskim. Stworzyliśmy serię \"W głębi projektu\" pokazującą pracownie i sylwetki pracowników. Opracowaliśmy animowane portfolio projektów jednostek pływających. Wspieraliśmy aktywną rekrutację nowych pracowników i tworzyliśmy relacje foto-wideo z targów i eventów.",
-          "brief": "Biuro projektowe okrętów i oceanotechniki, część grupy kapitałowej Remontowa Holding. Kompleksowe rozwiązania dla nowych i istniejących jednostek pływających.",
-          "tag": "B2B · Brand · Social PL/EN",
+          "solution": "Uporządkowaliśmy identyfikację wizualną i komunikację prowadzoną po polsku oraz angielsku. Połączyliśmy social media z materiałami o pracowniach, ludziach i projektach, animowanym portfolio jednostek oraz relacjami foto-wideo z targów i wydarzeń.",
+          "brief": "Identyfikacja wizualna i dwujęzyczna komunikacja biura projektowania okrętów. Ludzie, projekty i wydarzenia branżowe połączone w jeden rozpoznawalny wizerunek Remontowa Marine Design.",
+          "tag": "Marine · Branding · Social PL/EN",
           "palette": [
             "#1e3a8a",
             "#2aa8a8",
@@ -5097,7 +5062,42 @@ const COPY = {
               "label": "Jak prowadzić marketing B2B w branży morskiej",
               "href": "/blog/marketing-b2b-w-branzy-morskiej/"
             }
-          ]
+          ],
+          "coverImage": "/assets/marine-rmdc-orp-kormoran-dock.jpg",
+          "imageAlts": [
+            "ORP Kormoran w doku nr 1 Gdańskiej Stoczni Remontowa",
+            "Mockup komunikacji Remontowa Marine Design na Facebooku i Instagramie",
+            "Materiały Remontowa Marine Design łączące prezentację projektu jednostki z komunikacją w social mediach"
+          ],
+          "editorial": {
+            "headline": "Inżynierska precyzja. Rozpoznawalna marka.",
+            "outcomeLabel": "Zakres współpracy",
+            "heroMetric": {
+              "value": "PL / EN",
+              "label": "Komunikacja marki w dwóch językach",
+              "context": "B2B · Branża morska"
+            },
+            "chapters": [
+              {
+                "title": "Jeden rozpoznawalny kierunek.",
+                "text": "Nowa identyfikacja połączyła publikacje, materiały wizualne i obecność biura w mediach społecznościowych. Komunikacja w języku polskim i angielskim pomagała przedstawić kompetencje RMDC spójnie, niezależnie od kanału i odbiorcy.",
+                "image": "/assets/case-rmdc-3.jpg",
+                "imageAlt": "Mockup komunikacji Remontowa Marine Design na Facebooku i Instagramie",
+                "caption": "Identyfikacja i komunikacja Remontowa Marine Design"
+              },
+              {
+                "title": "Za projektem stoją ludzie.",
+                "text": "W serii „W głębi projektu” pokazywaliśmy pracownie i sylwetki pracowników. Tę perspektywę uzupełniały animowane portfolio jednostek oraz materiały z targów i wydarzeń, łącząc projekty, zespół i branżowy kontekst marki.",
+                "image": "/assets/case-rmdc-2.jpg",
+                "imageAlt": "Materiały Remontowa Marine Design łączące prezentację projektu jednostki z komunikacją w social mediach",
+                "caption": "Projekty, zespół i wydarzenia w materiałach marki"
+              }
+            ],
+            "photoCredit": "ORP Kormoran — projekt RMDC. Fot. Thomas Dahlstrøm Nielsen · CC BY 4.0 · pomniejszono do 1280 px.",
+            "photoSourceUrl": "https://commons.wikimedia.org/wiki/File:ORP_Kormoran_(ship,_2017)_in_Dok_1_-_Gda%C5%84sk_Shiprepair_Yard_Remontowa.jpg",
+            "photoLicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+            "coverFit": "contain"
+          }
         },
         {
           "challenge": "Marka olejów silnikowych działa wśród kierowców, twórców i partnerów biznesowych. Potrzebowała spójnego kierunku komunikacji łączącego produkt, wydarzenia i materiały wykorzystywane online oraz w dystrybucji.",
@@ -8714,9 +8714,9 @@ const COPY = {
               {
                 "title": "Videos with a clear subject.",
                 "text": "Air-conditioning cleaning, oil in a new Audi and underbody protection for an MG ZS Hybrid are examples of workshop topics. Short videos show services in action and give drivers useful knowledge.",
-                "image": "/assets/case-20261029b-wiktorowicz-detail.webp",
-                "imageAlt": "Wiktorowicz Auto Serwis video materials showing real workshop topics",
-                "caption": "Frames and creative materials from the workshop’s content"
+                "image": "/assets/case-20261029d-wiktorowicz-photo.webp",
+                "imageAlt": "Underbody treatment and an engine detail at Auto Serwis Wiktorowicz",
+                "caption": "Photography from Auto Serwis Wiktorowicz"
               }
             ],
             "comparison": {
@@ -8727,18 +8727,19 @@ const COPY = {
               "afterLabel": "30 September 2026",
               "afterValue": 2885,
               "change": "+45.0%"
-            }
+            },
+            "coverFit": "cover"
           },
-          "coverImage": "/assets/case-20261029b-wiktorowicz-hero.webp",
+          "coverImage": "/assets/case-20261029d-wiktorowicz-hero.webp",
           "images": [
-            "/assets/case-20261029b-wiktorowicz-hero.webp",
+            "/assets/case-20261029d-wiktorowicz-hero.webp",
             "/assets/case-20261029b-wiktorowicz-work.webp",
-            "/assets/case-20261029b-wiktorowicz-detail.webp"
+            "/assets/case-20261029d-wiktorowicz-photo.webp"
           ],
           "imageAlts": [
-            "A frame from an Auto Serwis Wiktorowicz video filmed in the workshop",
+            "Work on a car at Auto Serwis Wiktorowicz",
             "Selected Wiktorowicz Auto Serwis materials about repairs and vehicle maintenance",
-            "Wiktorowicz Auto Serwis video materials showing real workshop topics"
+            "Underbody treatment and an engine detail at Auto Serwis Wiktorowicz"
           ]
         },
         {
@@ -8810,6 +8811,13 @@ const COPY = {
                 "image": "/assets/case-20261029b-sergiej-auto-serwis-work.webp",
                 "imageAlt": "Archived Sergiej Auto Serwis creative materials presenting services and technical subjects",
                 "caption": "Selected KTB Media designs for Sergiej Auto Serwis"
+              },
+              {
+                "title": "Facilities you can see.",
+                "text": "Photography brings the workshop and its service bays into the brand communication. These real details complement the creative materials and show the setting behind the offer.",
+                "image": "/assets/case-20261029d-sergiej-auto-serwis-photo.webp",
+                "imageAlt": "Sergiej Auto Serwis workshop interior with service bays and cars on lifts",
+                "caption": "Photography from Sergiej Auto Serwis"
               }
             ],
             "comparison": {
@@ -8820,18 +8828,21 @@ const COPY = {
               "afterLabel": "30 September 2026",
               "afterValue": 1340,
               "change": "+8.8%"
-            }
+            },
+            "coverFit": "cover"
           },
-          "coverImage": "/assets/case-20261029b-sergiej-auto-serwis-hero.webp",
+          "coverImage": "/assets/case-20261029d-sergiej-auto-serwis-hero.webp",
           "images": [
-            "/assets/case-20261029b-sergiej-auto-serwis-hero.webp",
+            "/assets/case-20261029d-sergiej-auto-serwis-hero.webp",
             "/assets/case-20261029b-sergiej-auto-serwis-work.webp",
-            "/assets/case-20261029b-sergiej-auto-serwis-web.webp"
+            "/assets/case-20261029b-sergiej-auto-serwis-web.webp",
+            "/assets/case-20261029d-sergiej-auto-serwis-photo.webp"
           ],
           "imageAlts": [
-            "Workshop equipment at Sergiej Auto Serwis",
+            "Sergiej Auto Serwis workshop building and entrance",
             "Archived Sergiej Auto Serwis creative materials presenting services and technical subjects",
-            "Preview of sergiejauto.pl, designed and built by KTB Media"
+            "Preview of sergiejauto.pl, designed and built by KTB Media",
+            "Sergiej Auto Serwis workshop interior with service bays and cars on lifts"
           ]
         },
         {
@@ -8905,16 +8916,16 @@ const COPY = {
                 "caption": "Service communication materials for DED Serwis"
               }
             ],
-            "coverFit": "contain"
+            "coverFit": "cover"
           },
-          "coverImage": "/assets/case-20261029b-ded-serwis-hero.webp",
+          "coverImage": "/assets/case-20261029d-ded-serwis-hero.webp",
           "images": [
-            "/assets/case-20261029b-ded-serwis-hero.webp",
+            "/assets/case-20261029d-ded-serwis-hero.webp",
             "/assets/case-20261029b-ded-serwis-work.webp",
             "/assets/case-20261029b-ded-serwis-detail.webp"
           ],
           "imageAlts": [
-            "DED Serwis — a creative design promoting paint care",
+            "Bodywork on a car at DED Serwis",
             "DED Serwis creative materials comparing vehicle body damage with repair results",
             "Archived DED Serwis creative materials about workshop services"
           ]
@@ -8990,112 +9001,66 @@ const COPY = {
                 "caption": "Educational and service creative materials for AR Serwis"
               }
             ],
-            "coverFit": "contain"
+            "coverFit": "cover"
           },
-          "coverImage": "/assets/case-20261029b-ar-serwis-hero.webp",
+          "coverImage": "/assets/case-20261029d-ar-serwis-hero.webp",
           "images": [
-            "/assets/case-20261029b-ar-serwis-hero.webp",
+            "/assets/case-20261029d-ar-serwis-hero.webp",
             "/assets/case-20261029b-ar-serwis-work.webp",
             "/assets/case-20261029b-ar-serwis-detail.webp"
           ],
           "imageAlts": [
-            "AR Serwis — a creative design about air filter replacement",
+            "Automotive electronics examined under a magnifying glass at AR Serwis",
             "Archived AR Serwis creative materials about brakes, electronics and diagnostics",
             "AR Serwis materials about everyday vehicle maintenance and automotive services"
           ]
         },
         {
-          "timeline": [
-            {
-              "phase": "Warsztat oferty",
-              "duration": "1 tydz.",
-              "description": "Rozpisaliśmy segmenty klientów, główne obiekcje i usługi, które miały największy potencjał sprzedażowy."
-            },
-            {
-              "phase": "Architektura treści",
-              "duration": "2 tyg.",
-              "description": "Zbudowaliśmy strukturę strony i komunikacji tak, aby skomplikowane tematy techniczne były czytelne dla decydentów."
-            },
-            {
-              "phase": "Projekt i wdrożenie",
-              "duration": "5 tyg.",
-              "description": "Przygotowaliśmy layouty, teksty, komponenty oraz wdrożenie strony z naciskiem na szybkość i konwersję."
-            },
-            {
-              "phase": "Content ekspercki",
-              "duration": "6 tyg.",
-              "description": "Stworzyliśmy bazę materiałów do LinkedIna i sprzedaży, opartą na realnych pytaniach klientów."
-            }
-          ],
-          "notes": [
-            "Bilingual PL/EN comms",
-            "Inside the Project — behind-the-scenes series",
-            "Animated vessel portfolio"
-          ],
-          "challenge": "New visual identity reflecting professional design approach and relationships with leading marine players. Position the company as an attractive place to work, grow the social following, build international recognition.",
+          "challenge": "Specialist vessel design demands precision, while the people and expertise behind each project are equally important. Communication needed to show that work to maritime partners and people interested in joining the team.",
           "titleIt": "Marine Design",
           "num": "02",
-          "chartData": {
-            "label": "Zapytania B2B miesięcznie",
-            "before": [
-              8,
-              11,
-              9,
-              10
-            ],
-            "after": [
-              15,
-              19,
-              24,
-              28,
-              31,
-              36
-            ],
-            "unit": "zapytań/mies"
-          },
           "slug": "rmdc",
           "deliverables": [
-            "LinkedIn and Facebook",
-            "Visual identity system",
-            "Trade show and event photo-video",
-            "Employer branding"
+            "Visual identity system and consistent brand creative",
+            "Bilingual Facebook, Instagram and LinkedIn communication",
+            "Inside the Project series about studios and people",
+            "Animated portfolio of vessel designs",
+            "Trade show and event photography and video",
+            "Employer brand materials"
           ],
           "duration": "Ongoing cooperation",
           "scope": [
-            "Strategia marki",
-            "Strona WWW",
-            "Content",
-            "LinkedIn",
-            "Performance"
+            "Visual identity",
+            "Polish and English communication",
+            "LinkedIn and social media",
+            "Photo and video",
+            "Employer branding",
+            "Project portfolio"
           ],
           "results": [
             {
-              "k": "Follower growth",
-              "v": "+100%"
+              "v": "Brand",
+              "k": "a consistent visual identity"
             },
             {
-              "k": "Reach",
-              "v": "International"
+              "v": "Team",
+              "k": "people and studios in the communication"
             },
             {
-              "k": "Recruitment",
-              "v": "Active"
-            },
-            {
-              "k": "Publications",
-              "v": "Remontowa Group"
+              "v": "Content",
+              "k": "projects, expertise and industry events"
             }
           ],
           "ph": "ph-stripe-2",
           "images": [
-            "/assets/case-rmdc-1.jpg",
-            "/assets/case-rmdc-2.jpg",
-            "/assets/case-rmdc-3.jpg"
+            "/assets/marine-rmdc-orp-kormoran-dock.jpg",
+            "/assets/case-rmdc-3.jpg",
+            "/assets/case-rmdc-2.jpg"
           ],
           "title1": "Remontowa",
-          "solution": "Rebuilt identity for premium B2B. Social media on FB/IG/LinkedIn in both Polish and English. Created the 'Inside the Project' series showing studios and people. New animated portfolio of vessel designs. Supported active recruitment and produced foto-video coverage of trade shows and events.",
-          "brief": "Ship and ocean engineering design office, part of Remontowa Holding. End-to-end solutions for new builds and existing vessels.",
-          "tag": "B2B · Brand · Social PL/EN",
+          "solution": "We organised the visual identity and communication in Polish and English. Social media brought together stories about studios, people and projects, an animated vessel portfolio, and photo and video coverage of trade shows and events.",
+          "brief": "Visual identity and bilingual communication for a ship design office. People, projects and industry events brought together in one recognisable Remontowa Marine Design brand.",
+          "tag": "Marine · Branding · Social PL/EN",
           "palette": [
             "#1e3a8a",
             "#2aa8a8",
@@ -9112,7 +9077,42 @@ const COPY = {
               "label": "How to approach B2B marketing in the maritime industry",
               "href": "/blog/marketing-b2b-w-branzy-morskiej/"
             }
-          ]
+          ],
+          "coverImage": "/assets/marine-rmdc-orp-kormoran-dock.jpg",
+          "imageAlts": [
+            "ORP Kormoran in Dock 1 at Gdańsk Shiprepair Yard Remontowa",
+            "Mockup of Remontowa Marine Design communication on Facebook and Instagram",
+            "Remontowa Marine Design materials combining a vessel project with social media communication"
+          ],
+          "editorial": {
+            "headline": "Engineering precision. A recognisable brand.",
+            "outcomeLabel": "Scope of work",
+            "heroMetric": {
+              "value": "PL / EN",
+              "label": "Brand communication in two languages",
+              "context": "B2B · Maritime industry"
+            },
+            "chapters": [
+              {
+                "title": "One recognisable direction.",
+                "text": "The new identity connected publications, visual materials and the office’s social media presence. Communication in Polish and English presented RMDC’s expertise consistently across channels and audiences.",
+                "image": "/assets/case-rmdc-3.jpg",
+                "imageAlt": "Mockup of Remontowa Marine Design communication on Facebook and Instagram",
+                "caption": "Remontowa Marine Design identity and communication"
+              },
+              {
+                "title": "People behind every project.",
+                "text": "The Inside the Project series introduced the studios and the people working in them. An animated vessel portfolio and trade show and event materials added another perspective, bringing together projects, the team and the brand’s industry context.",
+                "image": "/assets/case-rmdc-2.jpg",
+                "imageAlt": "Remontowa Marine Design materials combining a vessel project with social media communication",
+                "caption": "Projects, people and events in the brand materials"
+              }
+            ],
+            "photoCredit": "ORP Kormoran — an RMDC project. Photo: Thomas Dahlstrøm Nielsen · CC BY 4.0 · resized to 1280 px.",
+            "photoSourceUrl": "https://commons.wikimedia.org/wiki/File:ORP_Kormoran_(ship,_2017)_in_Dok_1_-_Gda%C5%84sk_Shiprepair_Yard_Remontowa.jpg",
+            "photoLicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+            "coverFit": "contain"
+          }
         },
         {
           "challenge": "The engine-oil brand operates among drivers, creators and business partners. It needed a consistent communication direction connecting products, events and materials used online and across distribution.",
@@ -10819,7 +10819,7 @@ window.KTB_VISIBILITY = {
     {
       "slug": "tomex-brakes",
       "label": "Tomex Brakes",
-      "visible": true
+      "visible": false
     },
     {
       "slug": "pulsegt",

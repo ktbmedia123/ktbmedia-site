@@ -18,6 +18,10 @@ const run = ctx => vm.runInContext("({pl:getMarketingCases('pl').map(x=>x.slug),
 const active = run(runtime(data.visibility));
 assert(!active.pl.includes('bigmot')); assert(!active.en.includes('bigmot')); assert(!active.apps.includes('mojteam'));
 assert(active.apps.includes('ktbtask'));
+const marketingSlugs = new Set(data.pl.portfolio.items.map(item => item.slug));
+const hiddenEntries = (data.visibility.items || []).filter(item => item.visible === false);
+const hiddenRoutes = hiddenEntries.map(item => `realizacje/${marketingSlugs.has(item.slug) ? '' : 'digital/'}${item.slug}`);
+for (const item of hiddenEntries.filter(item => marketingSlugs.has(item.slug))) { assert(!active.pl.includes(item.slug)); assert(!active.en.includes(item.slug)); }
 const enabled = structuredClone(data.visibility); enabled.items.forEach(item => item.visible = true);
 assert(run(runtime(enabled)).pl.includes('bigmot')); assert(run(runtime(enabled)).apps.includes('mojteam'));
 const noApps = { ...enabled, apps: false }; assert.equal(run(runtime(noApps)).apps.length, 0);
@@ -27,9 +31,10 @@ const exists = route => fs.existsSync(path.join(root, 'dist', route, 'index.html
 const sitemap = () => fs.readFileSync(path.join(root, 'dist/sitemap-realizacje.xml'), 'utf8');
 try {
   build();
-  for (const route of ['realizacje/bigmot', 'realizacje/digital/mojteam']) { assert(!exists(route)); assert(!sitemap().includes(`/${route}/`)); }
-  assert(!/href="\/realizacje\/(bigmot|digital\/mojteam)\//.test(fs.readFileSync(path.join(root, 'dist/realizacje/index.html'), 'utf8')));
+  for (const route of hiddenRoutes) { assert(!exists(route)); assert(!sitemap().includes(`/${route}/`)); }
+  for (const route of hiddenRoutes) assert(!fs.readFileSync(path.join(root, 'dist/realizacje/index.html'), 'utf8').includes(`href="/${route}/"`));
   data.visibility = enabled; fs.writeFileSync(source, JSON.stringify(data)); build();
+  for (const route of hiddenRoutes) assert(exists(route), `Nie przywrócono ${route}`);
   assert(exists('realizacje/bigmot')); assert(exists('realizacje/digital/mojteam')); assert(sitemap().includes('/realizacje/bigmot/'));
   data.visibility = { ...enabled, marketing: false, apps: false, web: false }; fs.writeFileSync(source, JSON.stringify(data)); build();
   assert(!exists('realizacje/bigmot')); assert(!exists('realizacje/digital/ktbtask')); assert(!exists('realizacje/digital/grupa-janisz-www'));

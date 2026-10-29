@@ -14,6 +14,7 @@ const maps = ['pages', 'blog', 'realizacje'].map(name => fs.readFileSync(path.jo
 const urls = maps.flatMap(map => [...map.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]));
 assert.equal(new Set(urls).size, urls.length, 'Powtórzone adresy w sitemap');
 const pages = new Map();
+const hiddenSlugs = new Set((data.visibility?.items || []).filter(item => item.visible === false).map(item => item.slug));
 function inspect(node, result, inPrerender = false) {
   const attrs = Object.fromEntries((node.attrs || []).map(attr => [attr.name, attr.value]));
   if (node.tagName === 'script') {
@@ -57,7 +58,7 @@ for (const url of urls) {
     const target = new URL(href, url);
     if (target.origin !== 'https://ktbmedia.eu') continue;
     assert(fs.existsSync(path.join(dist, target.pathname, 'index.html')) || fs.existsSync(path.join(dist, target.pathname)), `Nieistniejący link ${route} → ${href}`);
-    assert(!['/realizacje/bigmot/', '/realizacje/digital/mojteam/'].includes(target.pathname), `Link do ukrytej realizacji ${route}`);
+    assert(!hiddenSlugs.has(target.pathname.match(/^\/realizacje\/(?:digital\/)?([^/]+)\/$/)?.[1]), `Link do ukrytej realizacji ${route}`);
   }
   const saved = history[route];
   const actual = maps.join('\n').match(new RegExp(`<loc>${url.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}</loc>\\s*(?:<lastmod>([^<]+)</lastmod>)?`))?.[1];
@@ -79,6 +80,9 @@ for (const item of data.pl.portfolio.items.filter(item => data.visibility.market
     assert(page.renderedText.includes(String(value).replace(/\s+/g, ' ')), `Brak treści editorial w prerenderze ${item.slug}.${field}`);
   };
   rendered(story.headline, 'headline');
+  rendered(story.outcomeLabel, 'outcomeLabel');
+  rendered(story.photoCredit, 'photoCredit');
+  for (const url of [story.photoSourceUrl, story.photoLicenseUrl].filter(Boolean)) assert(page.links.includes(url), `Brak źródła/licencji zdjęcia ${item.slug}`);
   for (const field of ['value', 'label', 'context']) rendered(story.heroMetric[field], `heroMetric.${field}`);
   for (const [index, result] of (item.results || []).entries()) {
     for (const field of ['v', 'k', 'context']) rendered(result[field], `results[${index}].${field}`);

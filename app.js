@@ -369,6 +369,16 @@ function portfolioItemVisible(slug, group = 'marketing') {
   const entry = (config.items || []).find(item => item.slug === slug);
   return portfolioGroupEnabled(group) && (!entry || entry.visible !== false);
 }
+function portfolioLinkVisible(href) {
+  const origin = window.location?.origin || 'https://ktbmedia.eu';
+  let target;
+  try { target = new URL(href, origin); } catch { return true; }
+  if (target.origin !== origin && target.origin !== 'https://ktbmedia.eu') return true;
+  const match = target.pathname.match(/^\/realizacje\/(?:(digital)\/)?([^/]+)\/?$/);
+  if (!match) return true;
+  const group = match[1] ? DIGITAL_CASES.find(item => item.slug === match[2])?.group : 'marketing';
+  return portfolioItemVisible(match[2], group);
+}
 function getMarketingCases(lang) {
   return (COPY[lang].portfolio.items || []).filter(item => portfolioItemVisible(item.slug));
 }
@@ -2024,10 +2034,12 @@ function EditorialCasePage({lang, item}) {
           (item.scope || []).map(tag => h('span', {key: tag}, tag)))),
       cover && h('figure', {className: 'editorial-hero-media'},
         h('img', {src: cover, alt: coverAlt, width: 1600, height: 1200, fetchPriority: 'high', decoding: 'async'}),
-        story.photoCredit && h('figcaption', null, story.photoCredit))),
+        story.photoCredit && h('figcaption', null, story.photoCredit,
+          /^https?:\/\//.test(story.photoSourceUrl || '') && h(React.Fragment, null, ' · ', h('a', {href: story.photoSourceUrl, target: '_blank', rel: 'noopener noreferrer'}, en ? 'Photo source' : 'Źródło zdjęcia')),
+          /^https?:\/\//.test(story.photoLicenseUrl || '') && h(React.Fragment, null, ' · ', h('a', {href: story.photoLicenseUrl, target: '_blank', rel: 'noopener noreferrer'}, en ? 'Licence' : 'Licencja'))))),
     h('section', {className: 'editorial-outcomes', 'aria-label': en ? 'Selected results' : 'Wybrane wyniki'},
       h('div', {className: `editorial-primary${String(metric.value).length > 8 ? ' editorial-primary-long' : ''}`},
-        h('span', {className: 'mono'}, en ? 'The project in numbers' : 'Projekt w liczbach'),
+        h('span', {className: 'mono'}, story.outcomeLabel || (en ? 'The project in numbers' : 'Projekt w liczbach')),
         h('strong', null, metric.value), h('p', null, metric.label), h('small', null, metric.context)),
       h('div', {className: 'editorial-stats'}, (item.results || []).map((result, index) =>
         h('div', {className: 'editorial-stat', key: index}, h('strong', null, result.v), h('p', null, result.k), result.context && h('small', null, result.context))))),
@@ -2674,7 +2686,7 @@ function BlogArticle({
       }), /*#__PURE__*/React.createElement("figcaption", null, inlineImageAlt, " \u2014 ", item.cat || '')));
     }
     return out;
-  })), item.relatedCase && /*#__PURE__*/React.createElement("aside", {
+  })), item.relatedCase && portfolioLinkVisible(item.relatedCase.href) && /*#__PURE__*/React.createElement("aside", {
     className: "blog-related-case reveal"
   }, /*#__PURE__*/React.createElement("div", {
     className: "case-block-label mono"
