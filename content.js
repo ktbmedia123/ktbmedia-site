@@ -4634,6 +4634,362 @@ const COPY = {
           ]
         },
         {
+          "num": "12",
+          "title1": "Wiktorowicz",
+          "titleIt": "Auto Serwis",
+          "year": "2025–2026",
+          "palette": [
+            "#E8A838",
+            "#141210",
+            "#F3EEE4",
+            "#8A847B"
+          ],
+          "slug": "wiktorowicz",
+          "ph": "ph-stripe-1",
+          "tag": "Warsztat · Wideo · Social media",
+          "duration": "Współpraca od kwietnia 2025",
+          "brief": "Codzienna praca warsztatu w Elblągu zamieniona w filmy i treści, które oglądają kierowcy. Od pomysłu i nagrania po montaż oraz regularne publikacje.",
+          "challenge": "Warsztat ma wiele historii, które mogą pomóc kierowcom: objawy usterek, przebieg naprawy i decyzje dotyczące eksploatacji. Potrzebował komunikacji pokazującej tę wiedzę w przystępnej, rozpoznawalnej formie.",
+          "solution": "Tworzymy pomysły oparte na rzeczywistych przypadkach serwisowych, nagrywamy w naturalnym otoczeniu warsztatu i montujemy krótkie filmy dopasowane do kanału. Całość łączymy z regularnymi publikacjami i spójną prezentacją usług.",
+          "scope": [
+            "Strategia treści",
+            "Produkcja wideo",
+            "Montaż",
+            "Social media",
+            "YouTube Shorts"
+          ],
+          "deliverables": [
+            "Pomysły i scenariusze materiałów warsztatowych",
+            "Nagrania i montaż krótkich filmów",
+            "Kreacje oraz regularne publikacje",
+            "Treści prezentujące usługi i wiedzę serwisu"
+          ],
+          "results": [
+            {
+              "v": "+45,0%",
+              "k": "obserwujących na Facebooku",
+              "context": "1.04–30.09.2026"
+            },
+            {
+              "v": "246 110",
+              "k": "wyświetleń trzech wybranych Shorts",
+              "context": "Do 29.10.2026"
+            },
+            {
+              "v": "646",
+              "k": "kliknięć przycisku telefonu w Google",
+              "context": "1.04–30.09.2026"
+            }
+          ],
+          "editorial": {
+            "headline": "Prawdziwy warsztat. Własny głos.",
+            "heroMetric": {
+              "value": "1 102 223",
+              "label": "wyświetlenia treści na Facebooku",
+              "context": "1.04–30.09.2026"
+            },
+            "chapters": [
+              {
+                "title": "Od przypadku do opowieści.",
+                "text": "Objaw usterki lub pytanie kierowcy staje się punktem wyjścia do materiału. Pokazujemy ludzi, samochody i kolejne etapy pracy, a techniczne wyjaśnienia układamy w czytelną historię.",
+                "image": "/assets/case-20261029b-wiktorowicz-work.webp",
+                "imageAlt": "Wybrane materiały Wiktorowicz Auto Serwis o naprawach i eksploatacji samochodu",
+                "caption": "Wybrane materiały komunikacji Wiktorowicz Auto Serwis"
+              },
+              {
+                "title": "Filmy z konkretnym tematem.",
+                "text": "Czyszczenie klimatyzacji, olej w nowym Audi i ochrona podwozia MG ZS Hybrid to przykłady tematów z warsztatu. Krótka forma pozwala pokazać usługę w działaniu i przekazać kierowcy użyteczną wiedzę.",
+                "image": "/assets/case-20261029b-wiktorowicz-detail.webp",
+                "imageAlt": "Materiały wideo Wiktorowicz Auto Serwis pokazujące rzeczywiste tematy warsztatowe",
+                "caption": "Kadry i kreacje z materiałów serwisu"
+              }
+            ],
+            "comparison": {
+              "title": "Społeczność wokół warsztatu.",
+              "metric": "Liczba obserwujących na Facebooku",
+              "beforeLabel": "1 kwietnia 2026",
+              "beforeValue": 1990,
+              "afterLabel": "30 września 2026",
+              "afterValue": 2885,
+              "change": "+45,0%"
+            }
+          },
+          "coverImage": "/assets/case-20261029b-wiktorowicz-hero.webp",
+          "images": [
+            "/assets/case-20261029b-wiktorowicz-hero.webp",
+            "/assets/case-20261029b-wiktorowicz-work.webp",
+            "/assets/case-20261029b-wiktorowicz-detail.webp"
+          ],
+          "imageAlts": [
+            "Kadr z filmu Auto Serwis Wiktorowicz nagranego w warsztacie",
+            "Wybrane materiały Wiktorowicz Auto Serwis o naprawach i eksploatacji samochodu",
+            "Materiały wideo Wiktorowicz Auto Serwis pokazujące rzeczywiste tematy warsztatowe"
+          ]
+        },
+        {
+          "num": "13",
+          "title1": "Sergiej",
+          "titleIt": "Auto Serwis",
+          "year": "2024–2026",
+          "palette": [
+            "#E8A838",
+            "#141210",
+            "#F3EEE4",
+            "#8A847B"
+          ],
+          "slug": "sergiej-auto-serwis",
+          "ph": "ph-stripe-1",
+          "tag": "Warsztat · Branding · WWW",
+          "duration": "Współpraca od maja 2024",
+          "brief": "Od identyfikacji i strony internetowej po komunikację technicznego serwisu w Pruszczu Gdańskim. Jeden rozpoznawalny wizerunek w każdym punkcie kontaktu.",
+          "challenge": "Specjalistyczne usługi serwisu potrzebowały czytelnej prezentacji i własnego charakteru. Zadaniem było połączenie marki, strony oraz bieżącej komunikacji tak, aby kierowca łatwo znalazł ofertę i drogę do kontaktu.",
+          "solution": "Stworzyliśmy identyfikację wizualną i zbudowaliśmy sergiejauto.pl. Ofertę uzupełniliśmy komunikacją w social mediach oraz kreacjami pokazującymi techniczne specjalizacje i zaplecze serwisu.",
+          "scope": [
+            "Branding",
+            "Identyfikacja wizualna",
+            "Strona WWW",
+            "Social media",
+            "Kreacje"
+          ],
+          "deliverables": [
+            "Identyfikacja wizualna serwisu",
+            "Projekt i budowa sergiejauto.pl",
+            "Kreacje oraz komunikacja w social mediach",
+            "Materiały prezentujące usługi i specjalizacje"
+          ],
+          "results": [
+            {
+              "v": "+8,8%",
+              "k": "obserwujących na Facebooku",
+              "context": "1.04–30.09.2026"
+            },
+            {
+              "v": "549",
+              "k": "kliknięć przycisku telefonu w Google",
+              "context": "1.04–30.09.2026"
+            },
+            {
+              "v": "786",
+              "k": "kliknięć wskazówek dojazdu w Google",
+              "context": "1.04–30.09.2026"
+            }
+          ],
+          "editorial": {
+            "headline": "Jedna marka. Każdy punkt styku.",
+            "heroMetric": {
+              "value": "192 816",
+              "label": "wyświetleń treści na Facebooku",
+              "context": "1.04–30.09.2026"
+            },
+            "chapters": [
+              {
+                "title": "Oferta pod ręką.",
+                "text": "Na sergiejauto.pl uporządkowaliśmy mechanikę, diagnostykę, geometrię 3D i pomoc drogową. Zakres usług oraz kontakt są dostępne w jednym miejscu, z prostą drogą do umówienia wizyty.",
+                "image": "/assets/case-20261029b-sergiej-auto-serwis-web.webp",
+                "imageAlt": "Podgląd strony sergiejauto.pl zaprojektowanej i zbudowanej przez KTB Media",
+                "caption": "sergiejauto.pl · projekt i budowa KTB Media"
+              },
+              {
+                "title": "Technicznie i zrozumiale.",
+                "text": "Rozrząd, geometria czy diagnostyka stają się konkretnymi tematami dla kierowcy. Spójny znak i układ kreacji łączą treści usługowe oraz edukacyjne w rozpoznawalny język serwisu.",
+                "image": "/assets/case-20261029b-sergiej-auto-serwis-work.webp",
+                "imageAlt": "Archiwalne kreacje Sergiej Auto Serwis prezentujące usługi i tematy techniczne",
+                "caption": "Wybrane kreacje KTB Media dla Sergiej Auto Serwis"
+              }
+            ],
+            "comparison": {
+              "title": "Więcej odbiorców wokół marki.",
+              "metric": "Liczba obserwujących na Facebooku",
+              "beforeLabel": "1 kwietnia 2026",
+              "beforeValue": 1232,
+              "afterLabel": "30 września 2026",
+              "afterValue": 1340,
+              "change": "+8,8%"
+            }
+          },
+          "coverImage": "/assets/case-20261029b-sergiej-auto-serwis-hero.webp",
+          "images": [
+            "/assets/case-20261029b-sergiej-auto-serwis-hero.webp",
+            "/assets/case-20261029b-sergiej-auto-serwis-work.webp",
+            "/assets/case-20261029b-sergiej-auto-serwis-web.webp"
+          ],
+          "imageAlts": [
+            "Wyposażenie warsztatu Sergiej Auto Serwis",
+            "Archiwalne kreacje Sergiej Auto Serwis prezentujące usługi i tematy techniczne",
+            "Podgląd strony sergiejauto.pl zaprojektowanej i zbudowanej przez KTB Media"
+          ]
+        },
+        {
+          "num": "14",
+          "title1": "DED",
+          "titleIt": "Serwis",
+          "year": "2025–2026",
+          "palette": [
+            "#E8A838",
+            "#141210",
+            "#F3EEE4",
+            "#8A847B"
+          ],
+          "slug": "ded-serwis",
+          "ph": "ph-stripe-1",
+          "tag": "Warsztat · Content · Social media",
+          "duration": "Współpraca od stycznia 2025",
+          "brief": "Naprawy pokazane efektem i komunikacja bliska lokalnym kierowcom. Materiały z realizacji, spójne kreacje i regularna obecność DED Serwis w Pruszczu Gdańskim.",
+          "challenge": "Efekt naprawy najlepiej pokazuje różnica między uszkodzeniem a gotowym samochodem. Serwis potrzebował formy, która czytelnie prezentuje wykonaną pracę i pomaga zapamiętać lokalną markę.",
+          "solution": "Materiały z napraw układamy w spójne kreacje pokazujące stan auta i efekt pracy. Łączymy realizacje z komunikacją usług sezonowych oraz regularnymi publikacjami dla kierowców.",
+          "scope": [
+            "Strategia treści",
+            "Social media",
+            "Kreacje graficzne",
+            "Materiały z realizacji",
+            "Komunikacja usług"
+          ],
+          "deliverables": [
+            "Kreacje pokazujące uszkodzenie i efekt naprawy",
+            "Spójne formaty materiałów serwisu",
+            "Treści oraz regularne publikacje",
+            "Komunikacja usług sezonowych"
+          ],
+          "results": [
+            {
+              "v": "55",
+              "k": "opublikowanych postów i rolek",
+              "context": "1.04–30.09.2026"
+            },
+            {
+              "v": "202",
+              "k": "kliknięcia przycisku telefonu w Google",
+              "context": "1.04–30.09.2026"
+            },
+            {
+              "v": "649",
+              "k": "kliknięć wskazówek dojazdu w Google",
+              "context": "1.04–30.09.2026"
+            }
+          ],
+          "editorial": {
+            "headline": "Rzeczywiste naprawy. Widoczny efekt.",
+            "heroMetric": {
+              "value": "96 678",
+              "label": "wyświetleń treści na Facebooku",
+              "context": "1.04–30.09.2026"
+            },
+            "chapters": [
+              {
+                "title": "Naprawa opowiedziana obrazem.",
+                "text": "Zestawienia uszkodzeń i efektów naprawy pozwalają szybko zrozumieć zakres pracy. Powtarzalna oprawa kreacji porządkuje materiały z realizacji i buduje rozpoznawalność serwisu.",
+                "image": "/assets/case-20261029b-ded-serwis-work.webp",
+                "imageAlt": "Kreacje DED Serwis zestawiające uszkodzenie nadwozia z efektem naprawy",
+                "caption": "Wybrane materiały z napraw DED Serwis"
+              },
+              {
+                "title": "Marka obecna przez cały sezon.",
+                "text": "Tematy z warsztatu uzupełniamy komunikacją usług sezonowych. Regularne materiały pokazują różne potrzeby kierowców i utrzymują jeden język wizualny marki.",
+                "image": "/assets/case-20261029b-ded-serwis-detail.webp",
+                "imageAlt": "Archiwalne kreacje DED Serwis dotyczące usług warsztatowych",
+                "caption": "Materiały komunikacji usług DED Serwis"
+              }
+            ],
+            "coverFit": "contain"
+          },
+          "coverImage": "/assets/case-20261029b-ded-serwis-hero.webp",
+          "images": [
+            "/assets/case-20261029b-ded-serwis-hero.webp",
+            "/assets/case-20261029b-ded-serwis-work.webp",
+            "/assets/case-20261029b-ded-serwis-detail.webp"
+          ],
+          "imageAlts": [
+            "DED Serwis — kreacja promująca pielęgnację lakieru",
+            "Kreacje DED Serwis zestawiające uszkodzenie nadwozia z efektem naprawy",
+            "Archiwalne kreacje DED Serwis dotyczące usług warsztatowych"
+          ]
+        },
+        {
+          "num": "15",
+          "title1": "AR",
+          "titleIt": "Serwis",
+          "year": "2022–2026",
+          "palette": [
+            "#E8A838",
+            "#141210",
+            "#F3EEE4",
+            "#8A847B"
+          ],
+          "slug": "ar-serwis",
+          "ph": "ph-stripe-1",
+          "tag": "Warsztat · Edukacja · Social media",
+          "duration": "Współpraca od września 2022",
+          "brief": "Techniczne tematy przełożone na zrozumiałą komunikację dla kierowców. Materiały edukacyjne, kreacje i regularne publikacje dla AR Serwis w Pruszczu Gdańskim.",
+          "challenge": "Elektronika, diagnostyka i codzienna eksploatacja wymagają jasnych wyjaśnień. Komunikacja miała pomóc kierowcy rozpoznać temat, zrozumieć możliwą przyczynę problemu i wykonać kolejny krok.",
+          "solution": "Budujemy treści wokół konkretnych objawów i pytań kierowców. Materiały techniczne oraz edukacyjne otrzymują spójną oprawę i trafiają do regularnej komunikacji serwisu.",
+          "scope": [
+            "Strategia treści",
+            "Social media",
+            "Kreacje graficzne",
+            "Treści edukacyjne",
+            "Komunikacja usług"
+          ],
+          "deliverables": [
+            "Kreacje o diagnostyce i elektronice samochodowej",
+            "Materiały edukacyjne dla kierowców",
+            "Spójna oprawa publikacji",
+            "Regularna komunikacja usług serwisu"
+          ],
+          "results": [
+            {
+              "v": "5 161",
+              "k": "interakcji na Facebooku",
+              "context": "1.04–30.09.2026"
+            },
+            {
+              "v": "277",
+              "k": "kliknięć przycisku telefonu w Google",
+              "context": "1.04–30.09.2026"
+            },
+            {
+              "v": "468",
+              "k": "kliknięć wskazówek dojazdu w Google",
+              "context": "1.04–30.09.2026"
+            }
+          ],
+          "editorial": {
+            "headline": "Techniczny temat. Zrozumiały przekaz.",
+            "heroMetric": {
+              "value": "101 036",
+              "label": "wyświetleń treści na Facebooku",
+              "context": "1.04–30.09.2026"
+            },
+            "chapters": [
+              {
+                "title": "Od objawu do wyjaśnienia.",
+                "text": "Układ hamulcowy, elektronika i diagnostyka stają się konkretnymi tematami komunikacji. Wyjaśniamy, na co zwrócić uwagę i dlaczego warto sprawdzić dany element samochodu.",
+                "image": "/assets/case-20261029b-ar-serwis-work.webp",
+                "imageAlt": "Archiwalne kreacje AR Serwis o hamulcach, elektronice i diagnostyce",
+                "caption": "Wybrane materiały komunikacji AR Serwis"
+              },
+              {
+                "title": "Wiedza bliska kierowcy.",
+                "text": "Treści o obsłudze i eksploatacji łączymy z regularną prezentacją usług. Powtarzalny język oraz oprawa graficzna pomagają odbiorcom rozpoznać markę i odnaleźć temat ważny dla własnego auta.",
+                "image": "/assets/case-20261029b-ar-serwis-detail.webp",
+                "imageAlt": "Materiały AR Serwis dotyczące codziennej eksploatacji i usług samochodowych",
+                "caption": "Kreacje edukacyjne i usługowe AR Serwis"
+              }
+            ],
+            "coverFit": "contain"
+          },
+          "coverImage": "/assets/case-20261029b-ar-serwis-hero.webp",
+          "images": [
+            "/assets/case-20261029b-ar-serwis-hero.webp",
+            "/assets/case-20261029b-ar-serwis-work.webp",
+            "/assets/case-20261029b-ar-serwis-detail.webp"
+          ],
+          "imageAlts": [
+            "AR Serwis — kreacja dotycząca wymiany filtra powietrza",
+            "Archiwalne kreacje AR Serwis o hamulcach, elektronice i diagnostyce",
+            "Materiały AR Serwis dotyczące codziennej eksploatacji i usług samochodowych"
+          ]
+        },
+        {
           "timeline": [
             {
               "phase": "Warsztat oferty",
@@ -4744,118 +5100,90 @@ const COPY = {
           ]
         },
         {
-          "timeline": [
-            {
-              "phase": "Audyt kont reklamowych",
-              "duration": "1 tydz.",
-              "description": "Sprawdziliśmy strukturę kampanii, tracking, feed produktowy i miejsca, w których budżet nie pracował na sprzedaż."
-            },
-            {
-              "phase": "Segmentacja oferty",
-              "duration": "2 tyg.",
-              "description": "Podzieliliśmy komunikację na zastosowania, typy klientów i produkty wymagające edukacji przed zakupem."
-            },
-            {
-              "phase": "Kampanie performance",
-              "duration": "10 tyg.",
-              "description": "Uruchomiliśmy osobne kampanie dla intencji zakupowej, remarketingu i treści poradnikowych."
-            },
-            {
-              "phase": "Optymalizacja koszyka",
-              "duration": "ciągła",
-              "description": "Przesuwaliśmy budżety na produkty i zestawy, które dawały najlepszy zwrot oraz powracalność klientów."
-            }
-          ],
-          "notes": [
-            "Współpraca z influencerami motoryzacyjnymi",
-            "Ponad 20 eventów motoryzacyjnych rocznie",
-            "Optymalizacja kosztów działalności"
-          ],
-          "challenge": "Zwiększenie rozpoznawalności marki wśród B2B i B2C, wprowadzenie serii eXpert oraz nowych produktów do serii eXtreme, stworzenie nowej identyfikacji wizualnej i zwiększenie sprzedaży w Polsce.",
+          "challenge": "Marka olejów silnikowych działa wśród kierowców, twórców i partnerów biznesowych. Potrzebowała spójnego kierunku komunikacji łączącego produkt, wydarzenia i materiały wykorzystywane online oraz w dystrybucji.",
           "titleIt": "Lubricants",
-          "coverImage": "/assets/case-pmo-lubricants-produkcja-foto.webp",
+          "coverImage": "/assets/case-20261029b-pmo-lubricants-hero.webp",
           "imageAlts": [
-            "Produkcja zdjęć produktu PMO 5W-30 Professional w warsztacie samochodowym",
-            "Olej silnikowy PMO 5W-30 Professional na tle wyposażenia warsztatu",
-            "PMO Lubricants - materiał z realizacji 3",
-            "PMO Lubricants - materiał z realizacji 4",
-            "PMO Lubricants - materiał z realizacji 5"
+            "PMO Lubricants — fotografia z działań marki motoryzacyjnej",
+            "Archiwalne kreacje PMO Lubricants łączące produkt, edukację i motorsport",
+            "Fotografie PMO Lubricants z wydarzeń motoryzacyjnych i działań marki"
           ],
           "num": "03",
-          "chartData": {
-            "label": "Przychód z kampanii miesięcznie",
-            "before": [
-              32000,
-              34500,
-              31800,
-              36100
-            ],
-            "after": [
-              48200,
-              61100,
-              73500,
-              86400,
-              97200,
-              118000
-            ],
-            "unit": "PLN/mies"
-          },
           "slug": "pmo-lubricants",
           "deliverables": [
-            "Facebook, Instagram i LinkedIn",
-            "Filmy, zdjęcia i ujęcia z drona",
-            "Materiały dla dystrybutorów",
-            "Merch, katalogi i aktywacje eventowe"
+            "Strategia komunikacji i kampanie reklamowe",
+            "Kreacje produktowe oraz relacje foto-wideo",
+            "Współprace z twórcami i materiały wydarzeń",
+            "Merchandise i materiały wspierające dystrybucję"
           ],
-          "duration": "Od 2024, bieżąca współpraca",
+          "duration": "2023–czerwiec 2025",
           "scope": [
-            "E-commerce",
+            "Strategia i consulting",
             "Meta Ads",
             "Google Ads",
-            "Content produktowy",
-            "Analityka"
+            "Social media",
+            "Foto i wideo",
+            "Motorsport",
+            "Materiały B2B"
           ],
           "results": [
             {
-              "k": "Wzrost obserwujących",
-              "v": "+150%"
+              "v": "9 380",
+              "k": "polubień na Facebooku z reklam",
+              "context": "1.01–1.04.2024"
             },
             {
-              "k": "Wyświetlenia reklam",
-              "v": "15M+"
+              "v": "1 250",
+              "k": "kliknięć linku z reklam",
+              "context": "1.01–1.04.2024"
             },
             {
-              "k": "Nowi dystrybutorzy B2B",
-              "v": "4"
-            },
-            {
-              "k": "Eventy motoryzacyjne",
-              "v": "20+"
-            },
-            {
-              "k": "Materiały wideo",
-              "v": "100+"
+              "v": "3 640",
+              "k": "aktywności dotyczących postów",
+              "context": "1.01–1.04.2024"
             }
           ],
           "ph": "ph-stripe-3",
           "images": [
-            "/assets/case-pmo-lubricants-produkcja-foto.webp",
-            "/assets/case-pmo-lubricants-olej-warsztat.webp",
-            "/assets/case-pmo-lubricants-1.jpg",
-            "/assets/case-pmo-lubricants-2.jpg",
-            "/assets/case-pmo-lubricants-3.jpg"
+            "/assets/case-20261029b-pmo-lubricants-hero.webp",
+            "/assets/case-20261029b-pmo-lubricants-work.webp",
+            "/assets/case-20261029b-pmo-lubricants-detail.webp"
           ],
           "title1": "PMO",
-          "solution": "Pełen pakiet: konsulting w zakresie finansów i sprzedaży, merchandise i reklamy pneumatyczne, zarządzanie social media i kampaniami Google Ads oraz Meta Ads, współpraca z influencerami, udział w eventach motoryzacyjnych z relacjami foto-wideo, usługi graficzne i webmasterskie, aktywne poszukiwanie klientów B2B. Dedykowane promocje dla dystrybutorów i program benefitów.",
-          "brief": "Producent olejów silnikowych klasy premium z jednej z najnowocześniejszych fabryk w Holandii. Seria eXpert i eXtreme.",
-          "tag": "B2B/B2C · Performance · Events",
+          "solution": "Łączyliśmy strategię i consulting z prowadzeniem social mediów oraz kampanii Meta Ads i Google Ads. Przygotowywaliśmy materiały produktowe, relacje foto-wideo, współprace z twórcami i merchandise. Zakres obejmował także wsparcie B2B oraz bieżące prace webmasterskie.",
+          "brief": "Od strategii marki po komunikację wśród kierowców i partnerów. Kampanie, motorsport, produkcja materiałów oraz wsparcie B2B dla PMO Lubricants.",
+          "tag": "Strategia · Motorsport · B2B",
           "palette": [
             "#e88420",
             "#8b1a1a",
             "#1a1a1a",
             "#f4f4f4"
           ],
-          "year": "2024"
+          "year": "2023–2025",
+          "editorial": {
+            "headline": "Produkt. Ludzie. Świat motoryzacji.",
+            "heroMetric": {
+              "value": "680 867",
+              "label": "wyświetleń wybranych reklam Meta",
+              "context": "1.01–1.04.2024"
+            },
+            "chapters": [
+              {
+                "title": "Produkt ma własną historię.",
+                "text": "Kreacje łączyły prezentację olejów i serii produktowych z edukacją o eksploatacji. Materiały motorsportowe oraz sylwetki zawodników korzystały z tego samego języka marki.",
+                "image": "/assets/case-20261029b-pmo-lubricants-work.webp",
+                "imageAlt": "Archiwalne kreacje PMO Lubricants łączące produkt, edukację i motorsport",
+                "caption": "Wybrane kreacje PMO Lubricants z okresu współpracy"
+              },
+              {
+                "title": "Marka wśród ludzi motoryzacji.",
+                "text": "Relacje z wydarzeń pokazywały markę w jej naturalnym otoczeniu: przy samochodach, w padoku i w rozmowach z odbiorcami. Zdjęcia, wideo oraz materiały promocyjne wspierały komunikację z kierowcami i partnerami.",
+                "image": "/assets/case-20261029b-pmo-lubricants-detail.webp",
+                "imageAlt": "Fotografie PMO Lubricants z wydarzeń motoryzacyjnych i działań marki",
+                "caption": "Fotografie i materiały wydarzeń PMO Lubricants"
+              }
+            ]
+          }
         },
         {
           "timeline": [
@@ -4958,232 +5286,150 @@ const COPY = {
           "year": "2024"
         },
         {
-          "timeline": [
-            {
-              "phase": "Hipotezy sprzedażowe",
-              "duration": "1 tydz.",
-              "description": "Zdefiniowaliśmy trzy kąty komunikacji i metryki, które miały pokazać, czy rynek reaguje."
-            },
-            {
-              "phase": "Landing i kreacje",
-              "duration": "3 tyg.",
-              "description": "Przygotowaliśmy stronę oraz zestaw formatów reklamowych do testowania hooków i segmentów odbiorców."
-            },
-            {
-              "phase": "Testy kampanii",
-              "duration": "6 tyg.",
-              "description": "Porównaliśmy zestawy reklam, grupy odbiorców i komunikaty, pilnując kosztu leada oraz jakości zapytań."
-            },
-            {
-              "phase": "Wnioski i skalowanie",
-              "duration": "2 tyg.",
-              "description": "Wybraliśmy najlepsze argumenty, uprościliśmy landing i przygotowaliśmy plan dalszej optymalizacji."
-            }
-          ],
-          "notes": [
-            "Wprowadzenie bez opóźnień",
-            "System benefitów powiązany ze sprzedażą",
-            "Motorsport: Drift i 1/4 mili"
-          ],
-          "challenge": "Strategia wprowadzenia nowego produktu na rynek polski, obejmująca opracowanie identyfikacji marki oraz pozyskanie bazy klientów od zera.",
+          "challenge": "Nowa marka dodatków i płukanek potrzebowała jasnej prezentacji produktów oraz materiałów do startu na polskim rynku. Ważne było pokazanie zastosowań i zbudowanie spójnej komunikacji wokół całej gamy.",
           "titleIt": "US Technology",
-          "coverImage": "/assets/case-pulsegt-plukanki-silnika.webp",
+          "coverImage": "/assets/case-20261029b-pulsegt-hero.webp",
           "imageAlts": [
-            "Płukanki silnika i dodatki do paliwa PulseGT podczas sesji produktowej",
-            "Produkcja materiałów PulseGT z mechanikami w warsztacie samochodowym",
-            "PulseGT US Technology - materiał z realizacji 3",
-            "PulseGT US Technology - materiał z realizacji 4",
-            "PulseGT US Technology - materiał z realizacji 5"
+            "PulseGT — fotografia produktów z realizacji KTB Media",
+            "Wybrane kreacje produktowe i materiał ze współpracy z twórcą dla PulseGT",
+            "Fotografia trzech wariantów produktów PulseGT"
           ],
           "num": "05",
-          "chartData": {
-            "label": "Leady miesięcznie",
-            "before": [
-              4,
-              5,
-              6,
-              5
-            ],
-            "after": [
-              18,
-              27,
-              39,
-              44,
-              52,
-              61
-            ],
-            "unit": "leadów/mies"
-          },
           "slug": "pulsegt",
           "deliverables": [
-            "Social media i influencer marketing",
-            "Produkcja foto-wideo",
-            "Merch oraz materiały promocyjne",
-            "Landing page i kreacje e-commerce"
+            "Strategia startu oraz doradztwo przy opakowaniach i WWW",
+            "Sesje produktowe i kreacje reklamowe",
+            "Współprace z twórcami motoryzacyjnymi",
+            "Odzież, katalogi i ekspozytory marki"
           ],
-          "duration": "1 rok",
+          "duration": "Styczeń 2024–czerwiec 2025",
           "scope": [
-            "Launch marki",
-            "Landing page",
+            "Strategia startu",
+            "Content produktowy",
+            "Social media",
             "Meta Ads",
-            "Kreacje",
-            "Analityka"
+            "Influencer marketing",
+            "Materiały promocyjne"
           ],
           "results": [
             {
-              "k": "Wyświetlenia Ads",
-              "v": "1M+"
+              "v": "1 726",
+              "k": "raportowanych polubień strony",
+              "context": "31.01–28.03.2024"
             },
             {
-              "k": "Obserwujący (3 mies.)",
-              "v": "3 330"
+              "v": "436",
+              "k": "raportowanych kliknięć linku",
+              "context": "31.01–28.03.2024"
             },
             {
-              "k": "Influencerzy",
-              "v": "WheelWithIt · Strzelecki Garage · Tasiemski"
-            },
-            {
-              "k": "Kanały uruchomione",
-              "v": "IG · FB · LI · Google"
+              "v": "1 102",
+              "k": "aktywności dotyczące postów",
+              "context": "31.01–28.03.2024"
             }
           ],
           "ph": "ph-stripe-2",
           "images": [
-            "/assets/case-pulsegt-plukanki-silnika.webp",
-            "/assets/case-pulsegt-warsztat-produkcja.webp",
-            "/assets/case-pulsegt-1.jpg",
-            "/assets/case-pulsegt-2.jpg",
-            "/assets/case-pulsegt-3.jpg"
+            "/assets/case-20261029b-pulsegt-hero.webp",
+            "/assets/case-20261029b-pulsegt-work.webp",
+            "/assets/case-20261029b-pulsegt-detail.webp"
           ],
           "title1": "PulseGT",
-          "solution": "Kompleksowa strategia wprowadzenia produktów PulseGT na rynek polski bez opóźnień. Consulting przy projektowaniu etykiet, puszek i nowoczesnej strony internetowej. Profesjonalna sesja zdjęciowa produktów. Współpraca z influencerami motoryzacyjnymi (WheelWithIt, Strzelecki Garage, Tasiemski, Kuba Dudek) oraz wydarzeniami motorsportowymi (Drift, 1/4 mili). Program benefitów dla pracowników i influencerów. Materiały promocyjne: koszulki, bluzy, czapki, katalogi, stojaki, gadżety. Stworzenie od podstaw profili Instagram, Facebook, LinkedIn i wizytówki Google.",
-          "brief": "Producent dodatków i płukanek motoryzacyjnych z opatentowanymi technologiami – detergenty i estry dla najwyższej wydajności silnika i układów paliwowych.",
-          "tag": "Launch · Brand · Influencer",
+          "solution": "Połączyliśmy strategię wprowadzenia marki, doradztwo przy opakowaniach i stronie WWW, sesję produktową oraz komunikację w social mediach. Organizowaliśmy współprace z twórcami, przygotowywaliśmy materiały promocyjne i prowadziliśmy kampanie reklamowe.",
+          "brief": "Wprowadzenie technicznych produktów PulseGT na polski rynek. Strategia startu, sesje produktowe, komunikacja, twórcy motoryzacyjni i kampanie reklamowe.",
+          "tag": "Launch marki · Content · Influencerzy",
           "palette": [
             "#00b8d4",
             "#d4008f",
             "#1a1a1a",
             "#f4f4f4"
           ],
-          "year": "2024"
+          "year": "2024–2025",
+          "editorial": {
+            "headline": "Od produktu technicznego do rozpoznawalnej marki.",
+            "heroMetric": {
+              "value": "140 391",
+              "label": "wyświetleń wybranych reklam Meta Ads",
+              "context": "31.01–28.03.2024"
+            },
+            "chapters": [
+              {
+                "title": "Produkt z jasną historią.",
+                "text": "Zdjęcia i kreacje pokazały Gasoline Power Cleaner, Diesel Power Cleaner oraz Ester Engine Flush we wspólnym języku marki. Komunikacja łączyła prezentację gamy z tematami technologii i zastosowania produktów.",
+                "image": "/assets/case-20261029b-pulsegt-detail.webp",
+                "imageAlt": "Fotografia trzech wariantów produktów PulseGT",
+                "caption": "Sesja produktowa PulseGT"
+              },
+              {
+                "title": "Marka w rękach ludzi motoryzacji.",
+                "text": "Organizowaliśmy współprace z twórcami motoryzacyjnymi i sesje wspierające komunikację produktów. Materiały online uzupełniały odzież, katalogi oraz ekspozytory przygotowane dla odbiorców i partnerów marki.",
+                "image": "/assets/case-20261029b-pulsegt-work.webp",
+                "imageAlt": "Wybrane kreacje produktowe i materiał ze współpracy z twórcą dla PulseGT",
+                "caption": "Kreacje produktowe i współprace z twórcami PulseGT"
+              }
+            ]
+          }
         },
         {
-          "timeline": [
-            {
-              "phase": "Audyt komunikacji B2B",
-              "duration": "1 tydz.",
-              "description": "Przełożyliśmy ofertę Service, Agency i Supply na jasne komunikaty dla armatorów, firm marine, partnerów technicznych i decydentów zakupowych."
-            },
-            {
-              "phase": "LinkedIn i content ekspercki",
-              "duration": "ciągłe",
-              "description": "Budujemy regularną komunikację pokazującą doświadczenie, projekty, kompetencje procurement i realną specjalizację zespołu."
-            },
-            {
-              "phase": "Materiały targowe",
-              "duration": "przed wydarzeniami",
-              "description": "Przygotowujemy narrację, key visuale, treści sprzedażowe i punkty rozmów, żeby obecność na targach nie kończyła się na samym stoisku."
-            },
-            {
-              "phase": "Wsparcie organizacyjne targów",
-              "duration": "cyklicznie",
-              "description": "Pomagamy spiąć komunikację przed, w trakcie i po wydarzeniu: zapowiedzi, obecność zespołu, relacje i follow-up do kontaktów."
-            },
-            {
-              "phase": "Consulting i optymalizacja",
-              "duration": "co miesiąc",
-              "description": "Analizujemy reakcje odbiorców, jakość kontaktów i tematy, które najlepiej wzmacniają wiarygodność DDP w branży marine."
-            }
-          ],
-          "notes": [
-            "Komunikacja LinkedIn dla decydentów B2B w marine",
-            "Wsparcie materiałów i narracji pod targi branżowe",
-            "Porządkowanie oferty Service, Agency i Supply w jednym systemie komunikacji"
-          ],
-          "challenge": "DDP działa w specjalistycznym segmencie B2B, gdzie decyzje zapadają przez relacje, zaufanie techniczne i obecność w odpowiednich miejscach branżowych. Komunikacja musiała pokazać doświadczenie marine bez upraszczania oferty do ogólnych haseł o dostawach i serwisie.",
+          "challenge": "DDP łączy serwis techniczny, dostawy i koordynację projektów morskich. Rozbudowana oferta Service, Supply i Agency potrzebowała uporządkowanej prezentacji w komunikacji online oraz w rozmowach z partnerami.",
           "titleIt": "Supply",
-          "coverImage": "/assets/case-ddp-supply-praca-stocznia.webp",
+          "coverImage": "/assets/case-20261029b-ddp-supply-hero.webp",
           "imageAlts": [
-            "Pracownik DDP Supply podczas realizacji na terenie stoczni",
-            "Flota serwisowa DDP Supply na tle infrastruktury stoczniowej",
-            "Stoisko DDP Supply podczas międzynarodowych targów branży marine",
-            "Prace techniczne DDP Supply przy obróbce elementu stalowego",
-            "Zespół techniczny podczas prac na jednostce w stoczni",
-            "Kask DDP Supply w przestrzeni technicznej jednostki morskiej"
+            "DDP Supply — fotografia z realizacji komunikacji marki marine",
+            "Kreacje DDP Supply pokazujące procesy techniczne i obszary oferty marine",
+            "Projekt katalogu i materiałów B2B dla DDP Supply"
           ],
           "num": "10",
-          "chartData": {
-            "label": "Miesięczne interakcje B2B na LinkedIn",
-            "before": [
-              18,
-              21,
-              19,
-              24
-            ],
-            "after": [
-              36,
-              44,
-              52,
-              61,
-              70,
-              82
-            ],
-            "unit": "interakcji/mies"
-          },
           "slug": "ddp-supply",
           "deliverables": [
-            "LinkedIn i komunikacja ekspercka",
-            "Organizacja obecności na targach",
-            "Katalogi i materiały B2B",
-            "Księga znaku oraz materiały firmowe"
+            "Strategia komunikacji i materiały identyfikacji",
+            "Sesje foto-wideo oraz treści LinkedIn",
+            "Katalog i prezentacje kompetencji DDP",
+            "Materiały do spotkań i wydarzeń branżowych"
           ],
-          "duration": "Ciągła współpraca",
+          "duration": "Współpraca od marca 2025",
           "scope": [
-            "LinkedIn",
-            "Organizacja targów",
-            "Materiały B2B",
             "Strategia komunikacji",
-            "Content ekspercki",
-            "Consulting"
+            "Identyfikacja wizualna",
+            "LinkedIn",
+            "Foto i wideo",
+            "Materiały B2B",
+            "Wsparcie targów"
           ],
           "results": [
             {
-              "k": "Zakres",
-              "v": "LinkedIn + targi"
+              "v": "1 647",
+              "k": "interakcji na LinkedIn",
+              "context": "1.04–31.08.2026"
             },
             {
-              "k": "Branża",
-              "v": "Marine B2B"
+              "v": "1 776",
+              "k": "kliknięć treści na LinkedIn",
+              "context": "1.04–31.08.2026"
             },
             {
-              "k": "Doświadczenie",
-              "v": "15+ lat"
-            },
-            {
-              "k": "Model pracy",
-              "v": "Service · Agency · Supply"
+              "v": "11",
+              "k": "opublikowanych treści na LinkedIn",
+              "context": "1.04–31.08.2026"
             }
           ],
           "ph": "ph-stripe-2",
           "images": [
-            "/assets/case-ddp-supply-praca-stocznia.webp",
-            "/assets/case-ddp-supply-stocznia-flota.webp",
-            "/assets/case-ddp-supply-targi.webp",
-            "/assets/case-ddp-supply-szlifowanie.webp",
-            "/assets/case-ddp-supply-stocznia-z-gory.webp",
-            "/assets/case-ddp-supply-kask.webp"
+            "/assets/case-20261029b-ddp-supply-hero.webp",
+            "/assets/case-20261029b-ddp-supply-work.webp",
+            "/assets/case-20261029b-ddp-supply-detail.webp"
           ],
           "title1": "DDP",
-          "solution": "Wspieramy DDP w działaniach targowych, komunikacji LinkedIn, przygotowaniu materiałów sprzedażowych i porządkowaniu narracji B2B. Łączymy język techniczny z biznesowym: procurement 24/7, service, agency, supply, projekty dla jednostek morskich i jachtów oraz gotowość operacyjna zespołu.",
-          "brief": "DDP Supply z Gdyni to turnkey solution provider dla branży yachting i marine. Firma działa w obszarach Service, Agency i Supply: procurement, materiały, wyposażenie, serwis, konsulting łańcucha dostaw i project management dla jednostek pływających.",
-          "tag": "Marine · LinkedIn · Targi",
+          "solution": "Połączyliśmy identyfikację i strategię komunikacji z sesjami foto-wideo oraz treściami LinkedIn. Zaprojektowaliśmy katalog, prezentacje i materiały firmowe, a działania uzupełniliśmy wsparciem obecności na targach.",
+          "brief": "Techniczne kompetencje DDP Supply pokazane partnerom biznesowym. Strategia komunikacji, LinkedIn, fotografie i materiały B2B dla branży marine.",
+          "tag": "Marine · LinkedIn · Materiały B2B",
           "palette": [
             "#0B3558",
             "#4CB3D4",
             "#1a1a1a",
             "#efe9dc"
           ],
-          "year": "2026",
+          "year": "2025–2026",
           "relatedLinks": [
             {
               "label": "Marketing dla branży morskiej",
@@ -5193,7 +5439,40 @@ const COPY = {
               "label": "Jak prowadzić marketing B2B w branży morskiej",
               "href": "/blog/marketing-b2b-w-branzy-morskiej/"
             }
-          ]
+          ],
+          "editorial": {
+            "headline": "Techniczne kompetencje. Czytelna marka B2B.",
+            "heroMetric": {
+              "value": "12 373",
+              "label": "wyświetlenia treści na LinkedIn",
+              "context": "1.04–31.08.2026"
+            },
+            "chapters": [
+              {
+                "title": "Materiały, które wspierają rozmowę.",
+                "text": "Katalog i prezentacje porządkują profil firmy oraz zakres usług. Zdjęcia, układ treści i identyfikacja pomagają przedstawić specjalistyczną ofertę podczas spotkań i wydarzeń branżowych.",
+                "image": "/assets/case-20261029b-ddp-supply-detail.webp",
+                "imageAlt": "Projekt katalogu i materiałów B2B dla DDP Supply",
+                "caption": "Katalog i materiały prezentacyjne DDP Supply"
+              },
+              {
+                "title": "Kompetencje pokazane w działaniu.",
+                "text": "Przygotowanie rur, kontrola jakości, prefabrykacja i Supply stały się tematami komunikacji. Autentyczne materiały pokazują zaplecze i specjalizacje DDP, łącząc techniczny konkret z przejrzystą oprawą.",
+                "image": "/assets/case-20261029b-ddp-supply-work.webp",
+                "imageAlt": "Kreacje DDP Supply pokazujące procesy techniczne i obszary oferty marine",
+                "caption": "Wybrane materiały komunikacji DDP Supply"
+              }
+            ],
+            "comparison": {
+              "title": "Społeczność wokół specjalizacji.",
+              "metric": "Liczba obserwujących na LinkedIn",
+              "beforeLabel": "1 kwietnia 2026",
+              "beforeValue": 850,
+              "afterLabel": "31 sierpnia 2026",
+              "afterValue": 892,
+              "change": "+4,9%"
+            }
+          }
         },
         {
           "num": "08",
@@ -8369,6 +8648,362 @@ const COPY = {
           ]
         },
         {
+          "num": "12",
+          "title1": "Wiktorowicz",
+          "titleIt": "Auto Serwis",
+          "year": "2025–2026",
+          "palette": [
+            "#E8A838",
+            "#141210",
+            "#F3EEE4",
+            "#8A847B"
+          ],
+          "slug": "wiktorowicz",
+          "ph": "ph-stripe-1",
+          "tag": "Workshop · Video · Social media",
+          "duration": "Cooperation since April 2025",
+          "brief": "Everyday work at an Elbląg workshop turned into videos and content for drivers. From ideas and filming to editing and regular publishing.",
+          "challenge": "A workshop has many stories that can help drivers: symptoms of faults, repair processes and maintenance decisions. It needed communication that presented this knowledge in an accessible and recognisable format.",
+          "solution": "We develop ideas around real service cases, film in the workshop and edit short videos for each channel. Regular publishing and a consistent presentation of services bring the communication together.",
+          "scope": [
+            "Content strategy",
+            "Video production",
+            "Editing",
+            "Social media",
+            "YouTube Shorts"
+          ],
+          "deliverables": [
+            "Ideas and scripts for workshop content",
+            "Filming and editing short videos",
+            "Creative materials and regular publishing",
+            "Content presenting the workshop’s services and expertise"
+          ],
+          "results": [
+            {
+              "v": "+45.0%",
+              "k": "Facebook followers",
+              "context": "1 Apr–30 Sep 2026"
+            },
+            {
+              "v": "246,110",
+              "k": "views of three selected Shorts",
+              "context": "Through 29 Oct 2026"
+            },
+            {
+              "v": "646",
+              "k": "Google call button clicks",
+              "context": "1 Apr–30 Sep 2026"
+            }
+          ],
+          "editorial": {
+            "headline": "A real workshop. A voice of its own.",
+            "heroMetric": {
+              "value": "1,102,223",
+              "label": "Facebook content views",
+              "context": "1 Apr–30 Sep 2026"
+            },
+            "chapters": [
+              {
+                "title": "From a service case to a story.",
+                "text": "A fault symptom or a driver’s question becomes the starting point. We show people, vehicles and stages of the work, shaping technical explanations into a clear story.",
+                "image": "/assets/case-20261029b-wiktorowicz-work.webp",
+                "imageAlt": "Selected Wiktorowicz Auto Serwis materials about repairs and vehicle maintenance",
+                "caption": "Selected communication materials for Wiktorowicz Auto Serwis"
+              },
+              {
+                "title": "Videos with a clear subject.",
+                "text": "Air-conditioning cleaning, oil in a new Audi and underbody protection for an MG ZS Hybrid are examples of workshop topics. Short videos show services in action and give drivers useful knowledge.",
+                "image": "/assets/case-20261029b-wiktorowicz-detail.webp",
+                "imageAlt": "Wiktorowicz Auto Serwis video materials showing real workshop topics",
+                "caption": "Frames and creative materials from the workshop’s content"
+              }
+            ],
+            "comparison": {
+              "title": "A community around the workshop.",
+              "metric": "Facebook follower count",
+              "beforeLabel": "1 April 2026",
+              "beforeValue": 1990,
+              "afterLabel": "30 September 2026",
+              "afterValue": 2885,
+              "change": "+45.0%"
+            }
+          },
+          "coverImage": "/assets/case-20261029b-wiktorowicz-hero.webp",
+          "images": [
+            "/assets/case-20261029b-wiktorowicz-hero.webp",
+            "/assets/case-20261029b-wiktorowicz-work.webp",
+            "/assets/case-20261029b-wiktorowicz-detail.webp"
+          ],
+          "imageAlts": [
+            "A frame from an Auto Serwis Wiktorowicz video filmed in the workshop",
+            "Selected Wiktorowicz Auto Serwis materials about repairs and vehicle maintenance",
+            "Wiktorowicz Auto Serwis video materials showing real workshop topics"
+          ]
+        },
+        {
+          "num": "13",
+          "title1": "Sergiej",
+          "titleIt": "Auto Serwis",
+          "year": "2024–2026",
+          "palette": [
+            "#E8A838",
+            "#141210",
+            "#F3EEE4",
+            "#8A847B"
+          ],
+          "slug": "sergiej-auto-serwis",
+          "ph": "ph-stripe-1",
+          "tag": "Workshop · Branding · Website",
+          "duration": "Cooperation since May 2024",
+          "brief": "From identity and website to communication for a technical workshop in Pruszcz Gdański. One recognisable brand across its points of contact.",
+          "challenge": "The workshop’s specialist services needed a clear presentation and a character of their own. The task was to connect its brand, website and ongoing communication so drivers could find the offer and get in touch easily.",
+          "solution": "We created the visual identity and built sergiejauto.pl. Social media communication and creative materials presented the workshop’s technical specialisms and facilities.",
+          "scope": [
+            "Branding",
+            "Visual identity",
+            "Website",
+            "Social media",
+            "Creative materials"
+          ],
+          "deliverables": [
+            "Workshop visual identity",
+            "Design and build of sergiejauto.pl",
+            "Creative materials and social media communication",
+            "Materials presenting services and specialisms"
+          ],
+          "results": [
+            {
+              "v": "+8.8%",
+              "k": "Facebook followers",
+              "context": "1 Apr–30 Sep 2026"
+            },
+            {
+              "v": "549",
+              "k": "Google call button clicks",
+              "context": "1 Apr–30 Sep 2026"
+            },
+            {
+              "v": "786",
+              "k": "Google directions clicks",
+              "context": "1 Apr–30 Sep 2026"
+            }
+          ],
+          "editorial": {
+            "headline": "One brand. Every point of contact.",
+            "heroMetric": {
+              "value": "192,816",
+              "label": "Facebook content views",
+              "context": "1 Apr–30 Sep 2026"
+            },
+            "chapters": [
+              {
+                "title": "The service offer within reach.",
+                "text": "On sergiejauto.pl we organised mechanical services, diagnostics, 3D alignment and roadside assistance. Services and contact information are available in one place, with a clear path to booking a visit.",
+                "image": "/assets/case-20261029b-sergiej-auto-serwis-web.webp",
+                "imageAlt": "Preview of sergiejauto.pl, designed and built by KTB Media",
+                "caption": "sergiejauto.pl · designed and built by KTB Media"
+              },
+              {
+                "title": "Technical subjects made clear.",
+                "text": "Timing systems, wheel alignment and diagnostics become practical topics for drivers. A consistent brand mark and layout connect service and educational content in a recognisable visual language.",
+                "image": "/assets/case-20261029b-sergiej-auto-serwis-work.webp",
+                "imageAlt": "Archived Sergiej Auto Serwis creative materials presenting services and technical subjects",
+                "caption": "Selected KTB Media designs for Sergiej Auto Serwis"
+              }
+            ],
+            "comparison": {
+              "title": "More people around the brand.",
+              "metric": "Facebook follower count",
+              "beforeLabel": "1 April 2026",
+              "beforeValue": 1232,
+              "afterLabel": "30 September 2026",
+              "afterValue": 1340,
+              "change": "+8.8%"
+            }
+          },
+          "coverImage": "/assets/case-20261029b-sergiej-auto-serwis-hero.webp",
+          "images": [
+            "/assets/case-20261029b-sergiej-auto-serwis-hero.webp",
+            "/assets/case-20261029b-sergiej-auto-serwis-work.webp",
+            "/assets/case-20261029b-sergiej-auto-serwis-web.webp"
+          ],
+          "imageAlts": [
+            "Workshop equipment at Sergiej Auto Serwis",
+            "Archived Sergiej Auto Serwis creative materials presenting services and technical subjects",
+            "Preview of sergiejauto.pl, designed and built by KTB Media"
+          ]
+        },
+        {
+          "num": "14",
+          "title1": "DED",
+          "titleIt": "Serwis",
+          "year": "2025–2026",
+          "palette": [
+            "#E8A838",
+            "#141210",
+            "#F3EEE4",
+            "#8A847B"
+          ],
+          "slug": "ded-serwis",
+          "ph": "ph-stripe-1",
+          "tag": "Workshop · Content · Social media",
+          "duration": "Cooperation since January 2025",
+          "brief": "Repairs shown through their results, with communication for local drivers. Service cases, consistent creative materials and regular publishing for DED Serwis in Pruszcz Gdański.",
+          "challenge": "The difference between damage and a finished vehicle tells the story of a repair. The workshop needed a format that presented its work clearly and helped drivers remember the local brand.",
+          "solution": "We turn repair materials into consistent creative formats showing the vehicle’s condition and the result of the work. Service cases are combined with seasonal topics and regular publishing for drivers.",
+          "scope": [
+            "Content strategy",
+            "Social media",
+            "Graphic design",
+            "Service case materials",
+            "Service communication"
+          ],
+          "deliverables": [
+            "Creative materials showing damage and repair results",
+            "Consistent workshop content formats",
+            "Content and regular publishing",
+            "Seasonal service communication"
+          ],
+          "results": [
+            {
+              "v": "55",
+              "k": "published posts and reels",
+              "context": "1 Apr–30 Sep 2026"
+            },
+            {
+              "v": "202",
+              "k": "Google call button clicks",
+              "context": "1 Apr–30 Sep 2026"
+            },
+            {
+              "v": "649",
+              "k": "Google directions clicks",
+              "context": "1 Apr–30 Sep 2026"
+            }
+          ],
+          "editorial": {
+            "headline": "Real repairs. Visible results.",
+            "heroMetric": {
+              "value": "96,678",
+              "label": "Facebook content views",
+              "context": "1 Apr–30 Sep 2026"
+            },
+            "chapters": [
+              {
+                "title": "A repair told through images.",
+                "text": "Comparing damage with repair results makes the scope of the work easy to understand. A consistent visual format organises service materials and builds recognition for the workshop.",
+                "image": "/assets/case-20261029b-ded-serwis-work.webp",
+                "imageAlt": "DED Serwis creative materials comparing vehicle body damage with repair results",
+                "caption": "Selected repair materials from DED Serwis"
+              },
+              {
+                "title": "A brand present through the seasons.",
+                "text": "Workshop topics are supported by seasonal service communication. Regular materials address different driver needs while maintaining a consistent visual language.",
+                "image": "/assets/case-20261029b-ded-serwis-detail.webp",
+                "imageAlt": "Archived DED Serwis creative materials about workshop services",
+                "caption": "Service communication materials for DED Serwis"
+              }
+            ],
+            "coverFit": "contain"
+          },
+          "coverImage": "/assets/case-20261029b-ded-serwis-hero.webp",
+          "images": [
+            "/assets/case-20261029b-ded-serwis-hero.webp",
+            "/assets/case-20261029b-ded-serwis-work.webp",
+            "/assets/case-20261029b-ded-serwis-detail.webp"
+          ],
+          "imageAlts": [
+            "DED Serwis — a creative design promoting paint care",
+            "DED Serwis creative materials comparing vehicle body damage with repair results",
+            "Archived DED Serwis creative materials about workshop services"
+          ]
+        },
+        {
+          "num": "15",
+          "title1": "AR",
+          "titleIt": "Serwis",
+          "year": "2022–2026",
+          "palette": [
+            "#E8A838",
+            "#141210",
+            "#F3EEE4",
+            "#8A847B"
+          ],
+          "slug": "ar-serwis",
+          "ph": "ph-stripe-1",
+          "tag": "Workshop · Education · Social media",
+          "duration": "Cooperation since September 2022",
+          "brief": "Technical subjects translated into clear communication for drivers. Educational materials, creative designs and regular publishing for AR Serwis in Pruszcz Gdański.",
+          "challenge": "Electronics, diagnostics and everyday maintenance need clear explanations. Communication had to help drivers recognise a subject, understand a possible cause and take the next step.",
+          "solution": "We develop content around specific symptoms and drivers’ questions. Technical and educational materials receive a consistent visual treatment and form part of the workshop’s regular communication.",
+          "scope": [
+            "Content strategy",
+            "Social media",
+            "Graphic design",
+            "Educational content",
+            "Service communication"
+          ],
+          "deliverables": [
+            "Creative materials about diagnostics and vehicle electronics",
+            "Educational content for drivers",
+            "A consistent look for publications",
+            "Regular communication of workshop services"
+          ],
+          "results": [
+            {
+              "v": "5,161",
+              "k": "Facebook interactions",
+              "context": "1 Apr–30 Sep 2026"
+            },
+            {
+              "v": "277",
+              "k": "Google call button clicks",
+              "context": "1 Apr–30 Sep 2026"
+            },
+            {
+              "v": "468",
+              "k": "Google directions clicks",
+              "context": "1 Apr–30 Sep 2026"
+            }
+          ],
+          "editorial": {
+            "headline": "Technical subjects. Clear communication.",
+            "heroMetric": {
+              "value": "101,036",
+              "label": "Facebook content views",
+              "context": "1 Apr–30 Sep 2026"
+            },
+            "chapters": [
+              {
+                "title": "From a symptom to an explanation.",
+                "text": "Brakes, electronics and diagnostics become clear communication topics. We explain what drivers should notice and why a vehicle component may need checking.",
+                "image": "/assets/case-20261029b-ar-serwis-work.webp",
+                "imageAlt": "Archived AR Serwis creative materials about brakes, electronics and diagnostics",
+                "caption": "Selected communication materials for AR Serwis"
+              },
+              {
+                "title": "Knowledge that matters to drivers.",
+                "text": "Maintenance and vehicle operation topics are combined with regular service communication. A consistent language and visual style help audiences recognise the brand and find subjects relevant to their own vehicle.",
+                "image": "/assets/case-20261029b-ar-serwis-detail.webp",
+                "imageAlt": "AR Serwis materials about everyday vehicle maintenance and automotive services",
+                "caption": "Educational and service creative materials for AR Serwis"
+              }
+            ],
+            "coverFit": "contain"
+          },
+          "coverImage": "/assets/case-20261029b-ar-serwis-hero.webp",
+          "images": [
+            "/assets/case-20261029b-ar-serwis-hero.webp",
+            "/assets/case-20261029b-ar-serwis-work.webp",
+            "/assets/case-20261029b-ar-serwis-detail.webp"
+          ],
+          "imageAlts": [
+            "AR Serwis — a creative design about air filter replacement",
+            "Archived AR Serwis creative materials about brakes, electronics and diagnostics",
+            "AR Serwis materials about everyday vehicle maintenance and automotive services"
+          ]
+        },
+        {
           "timeline": [
             {
               "phase": "Warsztat oferty",
@@ -8479,118 +9114,90 @@ const COPY = {
           ]
         },
         {
-          "timeline": [
-            {
-              "phase": "Audyt kont reklamowych",
-              "duration": "1 tydz.",
-              "description": "Sprawdziliśmy strukturę kampanii, tracking, feed produktowy i miejsca, w których budżet nie pracował na sprzedaż."
-            },
-            {
-              "phase": "Segmentacja oferty",
-              "duration": "2 tyg.",
-              "description": "Podzieliliśmy komunikację na zastosowania, typy klientów i produkty wymagające edukacji przed zakupem."
-            },
-            {
-              "phase": "Kampanie performance",
-              "duration": "10 tyg.",
-              "description": "Uruchomiliśmy osobne kampanie dla intencji zakupowej, remarketingu i treści poradnikowych."
-            },
-            {
-              "phase": "Optymalizacja koszyka",
-              "duration": "ciągła",
-              "description": "Przesuwaliśmy budżety na produkty i zestawy, które dawały najlepszy zwrot oraz powracalność klientów."
-            }
-          ],
-          "notes": [
-            "Automotive influencer network",
-            "20+ motorsport events per year",
-            "Cost optimization across operations"
-          ],
-          "challenge": "Build brand recognition across B2B and B2C, launch the eXpert line plus new eXtreme SKUs, create new visual identity, grow Polish sales.",
+          "challenge": "The engine-oil brand operates among drivers, creators and business partners. It needed a consistent communication direction connecting products, events and materials used online and across distribution.",
           "titleIt": "Lubricants",
-          "coverImage": "/assets/case-pmo-lubricants-produkcja-foto.webp",
+          "coverImage": "/assets/case-20261029b-pmo-lubricants-hero.webp",
           "imageAlts": [
-            "PMO 5W-30 Professional product photo production in a car workshop",
-            "PMO 5W-30 Professional engine oil displayed among workshop equipment",
-            "PMO Lubricants - project material 3",
-            "PMO Lubricants - project material 4",
-            "PMO Lubricants - project material 5"
+            "PMO Lubricants — photography from automotive brand activities",
+            "Archived PMO Lubricants creative materials combining products, education and motorsport",
+            "PMO Lubricants photography from automotive events and brand activities"
           ],
           "num": "03",
-          "chartData": {
-            "label": "Przychód z kampanii miesięcznie",
-            "before": [
-              32000,
-              34500,
-              31800,
-              36100
-            ],
-            "after": [
-              48200,
-              61100,
-              73500,
-              86400,
-              97200,
-              118000
-            ],
-            "unit": "PLN/mies"
-          },
           "slug": "pmo-lubricants",
           "deliverables": [
-            "Facebook, Instagram and LinkedIn",
-            "Film, photography and drone work",
-            "Distributor materials",
-            "Merch, catalogues and event activations"
+            "Communication strategy and advertising campaigns",
+            "Product creative materials with photo and video coverage",
+            "Creator partnerships and event materials",
+            "Merchandise and distribution support materials"
           ],
-          "duration": "Od 2024, bieżąca współpraca",
+          "duration": "2023–June 2025",
           "scope": [
-            "E-commerce",
+            "Strategy and consultancy",
             "Meta Ads",
             "Google Ads",
-            "Content produktowy",
-            "Analityka"
+            "Social media",
+            "Photo and video",
+            "Motorsport",
+            "B2B materials"
           ],
           "results": [
             {
-              "k": "Follower growth",
-              "v": "+150%"
+              "v": "9,380",
+              "k": "Facebook likes from ads",
+              "context": "1 Jan–1 Apr 2024"
             },
             {
-              "k": "Ad impressions",
-              "v": "15M+"
+              "v": "1,250",
+              "k": "link clicks from ads",
+              "context": "1 Jan–1 Apr 2024"
             },
             {
-              "k": "New B2B distributors",
-              "v": "4"
-            },
-            {
-              "k": "Motorsport events",
-              "v": "20+"
-            },
-            {
-              "k": "Video assets",
-              "v": "100+"
+              "v": "3,640",
+              "k": "post engagements",
+              "context": "1 Jan–1 Apr 2024"
             }
           ],
           "ph": "ph-stripe-3",
           "images": [
-            "/assets/case-pmo-lubricants-produkcja-foto.webp",
-            "/assets/case-pmo-lubricants-olej-warsztat.webp",
-            "/assets/case-pmo-lubricants-1.jpg",
-            "/assets/case-pmo-lubricants-2.jpg",
-            "/assets/case-pmo-lubricants-3.jpg"
+            "/assets/case-20261029b-pmo-lubricants-hero.webp",
+            "/assets/case-20261029b-pmo-lubricants-work.webp",
+            "/assets/case-20261029b-pmo-lubricants-detail.webp"
           ],
           "title1": "PMO",
-          "solution": "Full-stack work: finance and sales consulting, merchandise and pneumatic advertising, social media + Google Ads + Meta Ads, influencer relations, motorsport events with foto-video coverage, graphics and web, active B2B prospecting. Dedicated distributor promos and a benefits program.",
-          "brief": "Premium engine oil manufacturer from one of the most advanced facilities in the Netherlands. eXpert and eXtreme lines.",
-          "tag": "B2B/B2C · Performance · Events",
+          "solution": "We combined strategy and consultancy with social media management and Meta Ads and Google Ads campaigns. We produced product materials, photo and video coverage, creator partnerships and merchandise. The scope also included B2B support and ongoing webmaster work.",
+          "brief": "From brand strategy to communication among drivers and business partners. Campaigns, motorsport, content production and B2B support for PMO Lubricants.",
+          "tag": "Strategy · Motorsport · B2B",
           "palette": [
             "#e88420",
             "#8b1a1a",
             "#1a1a1a",
             "#f4f4f4"
           ],
-          "year": "2024"
+          "year": "2023–2025",
+          "editorial": {
+            "headline": "Products. People. The automotive world.",
+            "heroMetric": {
+              "value": "680,867",
+              "label": "impressions of selected Meta ads",
+              "context": "1 Jan–1 Apr 2024"
+            },
+            "chapters": [
+              {
+                "title": "Products with a story of their own.",
+                "text": "Creative materials connected oils and product ranges with maintenance education. Motorsport content and driver profiles followed the same brand language.",
+                "image": "/assets/case-20261029b-pmo-lubricants-work.webp",
+                "imageAlt": "Archived PMO Lubricants creative materials combining products, education and motorsport",
+                "caption": "Selected PMO Lubricants designs from the cooperation period"
+              },
+              {
+                "title": "A brand among automotive people.",
+                "text": "Event coverage showed the brand in its natural setting: around cars, in the paddock and in conversations with audiences. Photography, video and promotional materials supported communication with drivers and partners.",
+                "image": "/assets/case-20261029b-pmo-lubricants-detail.webp",
+                "imageAlt": "PMO Lubricants photography from automotive events and brand activities",
+                "caption": "PMO Lubricants event photography and materials"
+              }
+            ]
+          }
         },
         {
           "timeline": [
@@ -8693,232 +9300,150 @@ const COPY = {
           "year": "2024"
         },
         {
-          "timeline": [
-            {
-              "phase": "Hipotezy sprzedażowe",
-              "duration": "1 tydz.",
-              "description": "Zdefiniowaliśmy trzy kąty komunikacji i metryki, które miały pokazać, czy rynek reaguje."
-            },
-            {
-              "phase": "Landing i kreacje",
-              "duration": "3 tyg.",
-              "description": "Przygotowaliśmy stronę oraz zestaw formatów reklamowych do testowania hooków i segmentów odbiorców."
-            },
-            {
-              "phase": "Testy kampanii",
-              "duration": "6 tyg.",
-              "description": "Porównaliśmy zestawy reklam, grupy odbiorców i komunikaty, pilnując kosztu leada oraz jakości zapytań."
-            },
-            {
-              "phase": "Wnioski i skalowanie",
-              "duration": "2 tyg.",
-              "description": "Wybraliśmy najlepsze argumenty, uprościliśmy landing i przygotowaliśmy plan dalszej optymalizacji."
-            }
-          ],
-          "notes": [
-            "On-time market entry",
-            "Sales-linked benefits system",
-            "Motorsport: Drift and 1/4 mile"
-          ],
-          "challenge": "Launch PulseGT in the Polish market from scratch: build brand identity and build a customer base from zero.",
+          "challenge": "A new additives and engine-flush brand needed a clear product presentation and materials for entering the Polish market. The task was to show applications and build consistent communication across the range.",
           "titleIt": "US Technology",
-          "coverImage": "/assets/case-pulsegt-plukanki-silnika.webp",
+          "coverImage": "/assets/case-20261029b-pulsegt-hero.webp",
           "imageAlts": [
-            "PulseGT engine flush and fuel additive products during a product shoot",
-            "PulseGT content production with mechanics in a car workshop",
-            "PulseGT US Technology - project material 3",
-            "PulseGT US Technology - project material 4",
-            "PulseGT US Technology - project material 5"
+            "PulseGT — product photography from the KTB Media project",
+            "Selected product creative materials and a creator partnership design for PulseGT",
+            "Product photography of three PulseGT variants"
           ],
           "num": "05",
-          "chartData": {
-            "label": "Leady miesięcznie",
-            "before": [
-              4,
-              5,
-              6,
-              5
-            ],
-            "after": [
-              18,
-              27,
-              39,
-              44,
-              52,
-              61
-            ],
-            "unit": "leadów/mies"
-          },
           "slug": "pulsegt",
           "deliverables": [
-            "Social media and influencer marketing",
-            "Photo-video production",
-            "Merch and promotional materials",
-            "Landing page and e-commerce creative"
+            "Launch strategy with packaging and website consultancy",
+            "Product shoots and advertising creative",
+            "Partnerships with automotive creators",
+            "Branded clothing, catalogues and display stands"
           ],
-          "duration": "1 year",
+          "duration": "January 2024–June 2025",
           "scope": [
-            "Launch marki",
-            "Landing page",
+            "Launch strategy",
+            "Product content",
+            "Social media",
             "Meta Ads",
-            "Kreacje",
-            "Analityka"
+            "Influencer marketing",
+            "Promotional materials"
           ],
           "results": [
             {
-              "k": "Ad views",
-              "v": "1M+"
+              "v": "1,726",
+              "k": "reported page likes",
+              "context": "31 Jan–28 Mar 2024"
             },
             {
-              "k": "Followers (3 mo)",
-              "v": "3,330"
+              "v": "436",
+              "k": "reported link clicks",
+              "context": "31 Jan–28 Mar 2024"
             },
             {
-              "k": "Influencers",
-              "v": "WheelWithIt · Strzelecki Garage · Tasiemski"
-            },
-            {
-              "k": "Channels launched",
-              "v": "IG · FB · LI · Google"
+              "v": "1,102",
+              "k": "post engagements",
+              "context": "31 Jan–28 Mar 2024"
             }
           ],
           "ph": "ph-stripe-2",
           "images": [
-            "/assets/case-pulsegt-plukanki-silnika.webp",
-            "/assets/case-pulsegt-warsztat-produkcja.webp",
-            "/assets/case-pulsegt-1.jpg",
-            "/assets/case-pulsegt-2.jpg",
-            "/assets/case-pulsegt-3.jpg"
+            "/assets/case-20261029b-pulsegt-hero.webp",
+            "/assets/case-20261029b-pulsegt-work.webp",
+            "/assets/case-20261029b-pulsegt-detail.webp"
           ],
           "title1": "PulseGT",
-          "solution": "End-to-end launch strategy delivered on schedule. Consulting on label, can and website design. Professional product photography. Motorsport influencer network (WheelWithIt, Strzelecki Garage, Tasiemski, Kuba Dudek) plus motorsport events (Drift, 1/4 mile). Benefits program for staff and influencers tied to sales. Full promo kit: t-shirts, hoodies, caps, catalogues, stands, swag. Built Instagram, Facebook, LinkedIn and Google Business profiles from scratch.",
-          "brief": "Producer of advanced automotive additives and flushes — patented detergent and ester tech for engine and fuel-system performance.",
-          "tag": "Launch · Brand · Influencer",
+          "solution": "We combined launch strategy, packaging and website consultancy, a product shoot and social media communication. We arranged creator partnerships, produced promotional materials and managed advertising campaigns.",
+          "brief": "Launching PulseGT’s technical automotive products in Poland. Launch strategy, product shoots, communication, automotive creators and advertising campaigns.",
+          "tag": "Brand launch · Content · Creators",
           "palette": [
             "#00b8d4",
             "#d4008f",
             "#1a1a1a",
             "#f4f4f4"
           ],
-          "year": "2024"
+          "year": "2024–2025",
+          "editorial": {
+            "headline": "From a technical product to a recognisable brand.",
+            "heroMetric": {
+              "value": "140,391",
+              "label": "impressions of selected Meta Ads",
+              "context": "31 Jan–28 Mar 2024"
+            },
+            "chapters": [
+              {
+                "title": "Products with a clear story.",
+                "text": "Photography and creative materials presented Gasoline Power Cleaner, Diesel Power Cleaner and Ester Engine Flush in one brand language. Communication connected the range with technology and product applications.",
+                "image": "/assets/case-20261029b-pulsegt-detail.webp",
+                "imageAlt": "Product photography of three PulseGT variants",
+                "caption": "PulseGT product shoot"
+              },
+              {
+                "title": "A brand in the hands of automotive creators.",
+                "text": "We arranged partnerships with automotive creators and shoots supporting product communication. Online materials were complemented by clothing, catalogues and display stands for audiences and brand partners.",
+                "image": "/assets/case-20261029b-pulsegt-work.webp",
+                "imageAlt": "Selected product creative materials and a creator partnership design for PulseGT",
+                "caption": "PulseGT product creative and creator partnerships"
+              }
+            ]
+          }
         },
         {
-          "timeline": [
-            {
-              "phase": "B2B communication audit",
-              "duration": "1 week",
-              "description": "We translated Service, Agency and Supply into clear messages for owners, marine companies and procurement decision makers."
-            },
-            {
-              "phase": "LinkedIn and expert content",
-              "duration": "ongoing",
-              "description": "We build regular communication around experience, projects, procurement competence and team expertise."
-            },
-            {
-              "phase": "Trade-fair materials",
-              "duration": "before events",
-              "description": "We prepare narrative, visuals, sales copy and conversation points for industry events."
-            },
-            {
-              "phase": "Trade-fair support",
-              "duration": "cyclical",
-              "description": "We connect communication before, during and after events: announcements, coverage and follow-up."
-            },
-            {
-              "phase": "Consulting and optimisation",
-              "duration": "monthly",
-              "description": "We analyse audience response, contact quality and topics that strengthen DDP credibility."
-            }
-          ],
-          "notes": [
-            "LinkedIn communication for marine B2B decision makers",
-            "Trade-fair narrative and sales materials",
-            "Service, Agency and Supply offer structured into one message"
-          ],
-          "challenge": "DDP operates in a specialist B2B segment where trust, technical credibility and trade-fair presence matter. Communication had to show marine expertise without flattening the offer into generic supply messaging.",
+          "challenge": "DDP combines technical service, supply and marine project coordination. Its extensive Service, Supply and Agency offer needed a structured presentation online and in conversations with partners.",
           "titleIt": "Supply",
-          "coverImage": "/assets/case-ddp-supply-praca-stocznia.webp",
+          "coverImage": "/assets/case-20261029b-ddp-supply-hero.webp",
           "imageAlts": [
-            "DDP Supply specialist working on a shipyard project",
-            "DDP Supply service fleet against shipyard infrastructure",
-            "DDP Supply stand at an international marine trade fair",
-            "DDP Supply technical work on a steel component",
-            "Technical team working aboard a vessel in the shipyard",
-            "DDP Supply hard hat inside a vessel technical space"
+            "DDP Supply — photography from the marine brand communication project",
+            "DDP Supply creative materials showing technical processes and marine service areas",
+            "Catalogue and B2B material design for DDP Supply"
           ],
           "num": "10",
-          "chartData": {
-            "label": "Monthly B2B LinkedIn interactions",
-            "before": [
-              18,
-              21,
-              19,
-              24
-            ],
-            "after": [
-              36,
-              44,
-              52,
-              61,
-              70,
-              82
-            ],
-            "unit": "interactions/mo"
-          },
           "slug": "ddp-supply",
           "deliverables": [
-            "LinkedIn and expert communication",
-            "Trade fair presence",
-            "B2B catalogues and materials",
-            "Brand guidelines and company materials"
+            "Communication strategy and identity materials",
+            "Photo and video shoots with LinkedIn content",
+            "Catalogue and presentations of DDP’s capabilities",
+            "Materials for meetings and industry events"
           ],
-          "duration": "Ongoing cooperation",
+          "duration": "Cooperation since March 2025",
           "scope": [
-            "LinkedIn",
-            "Trade fairs",
-            "B2B materials",
             "Communication strategy",
-            "Expert content",
-            "Consulting"
+            "Visual identity",
+            "LinkedIn",
+            "Photo and video",
+            "B2B materials",
+            "Trade-show support"
           ],
           "results": [
             {
-              "k": "Scope",
-              "v": "LinkedIn + fairs"
+              "v": "1,647",
+              "k": "LinkedIn interactions",
+              "context": "1 Apr–31 Aug 2026"
             },
             {
-              "k": "Industry",
-              "v": "Marine B2B"
+              "v": "1,776",
+              "k": "LinkedIn content clicks",
+              "context": "1 Apr–31 Aug 2026"
             },
             {
-              "k": "Experience",
-              "v": "15+ years"
-            },
-            {
-              "k": "Model",
-              "v": "Service · Agency · Supply"
+              "v": "11",
+              "k": "published LinkedIn posts",
+              "context": "1 Apr–31 Aug 2026"
             }
           ],
           "ph": "ph-stripe-2",
           "images": [
-            "/assets/case-ddp-supply-praca-stocznia.webp",
-            "/assets/case-ddp-supply-stocznia-flota.webp",
-            "/assets/case-ddp-supply-targi.webp",
-            "/assets/case-ddp-supply-szlifowanie.webp",
-            "/assets/case-ddp-supply-stocznia-z-gory.webp",
-            "/assets/case-ddp-supply-kask.webp"
+            "/assets/case-20261029b-ddp-supply-hero.webp",
+            "/assets/case-20261029b-ddp-supply-work.webp",
+            "/assets/case-20261029b-ddp-supply-detail.webp"
           ],
           "title1": "DDP",
-          "solution": "We support DDP with trade-fair activity, LinkedIn communication, sales materials and B2B narrative. The work connects procurement, service, agency, supply and operational readiness into one clear communication system.",
-          "brief": "DDP Supply from Gdynia is a turnkey solution provider for yachting and marine, working across Service, Agency and Supply: procurement, materials, equipment, service, supply-chain consulting and project management.",
-          "tag": "Marine · LinkedIn · Trade fairs",
+          "solution": "We connected identity and communication strategy with photo and video shoots and LinkedIn content. We designed a catalogue, presentations and corporate materials, supported by work around the brand’s trade-show presence.",
+          "brief": "Presenting DDP Supply’s technical expertise to business partners. Communication strategy, LinkedIn, photography and B2B materials for the marine sector.",
+          "tag": "Marine · LinkedIn · B2B materials",
           "palette": [
             "#0B3558",
             "#4CB3D4",
             "#1a1a1a",
             "#efe9dc"
           ],
-          "year": "2026",
+          "year": "2025–2026",
           "relatedLinks": [
             {
               "label": "Marketing for the maritime industry",
@@ -8928,7 +9453,40 @@ const COPY = {
               "label": "How to approach B2B marketing in the maritime industry",
               "href": "/blog/marketing-b2b-w-branzy-morskiej/"
             }
-          ]
+          ],
+          "editorial": {
+            "headline": "Technical expertise. A clear B2B brand.",
+            "heroMetric": {
+              "value": "12,373",
+              "label": "LinkedIn content impressions",
+              "context": "1 Apr–31 Aug 2026"
+            },
+            "chapters": [
+              {
+                "title": "Materials that support a conversation.",
+                "text": "The catalogue and presentations organise the company profile and service offer. Photography, content layout and identity help present specialist capabilities at meetings and industry events.",
+                "image": "/assets/case-20261029b-ddp-supply-detail.webp",
+                "imageAlt": "Catalogue and B2B material design for DDP Supply",
+                "caption": "DDP Supply catalogue and presentation materials"
+              },
+              {
+                "title": "Expertise shown in action.",
+                "text": "Pipe preparation, quality control, prefabrication and Supply became communication topics. Authentic materials show DDP’s facilities and specialisms in a clear visual format.",
+                "image": "/assets/case-20261029b-ddp-supply-work.webp",
+                "imageAlt": "DDP Supply creative materials showing technical processes and marine service areas",
+                "caption": "Selected communication materials for DDP Supply"
+              }
+            ],
+            "comparison": {
+              "title": "A community around specialist expertise.",
+              "metric": "LinkedIn follower count",
+              "beforeLabel": "1 April 2026",
+              "beforeValue": 850,
+              "afterLabel": "31 August 2026",
+              "afterValue": 892,
+              "change": "+4.9%"
+            }
+          }
         },
         {
           "num": "08",
@@ -10349,6 +10907,26 @@ window.KTB_VISIBILITY = {
     {
       "slug": "qarmax",
       "label": "QARMAX",
+      "visible": true
+    },
+    {
+      "slug": "wiktorowicz",
+      "label": "Wiktorowicz Auto Serwis",
+      "visible": true
+    },
+    {
+      "slug": "sergiej-auto-serwis",
+      "label": "Sergiej Auto Serwis",
+      "visible": true
+    },
+    {
+      "slug": "ded-serwis",
+      "label": "DED Serwis",
+      "visible": true
+    },
+    {
+      "slug": "ar-serwis",
+      "label": "AR Serwis",
       "visible": true
     }
   ]

@@ -1598,6 +1598,7 @@ function PortfolioCatalog({
       image: item.coverImage || images[1] || images[0],
       imageAlt: (item.imageAlts || [])[0],
       editorial: Boolean(item.editorial),
+      coverFit: item.editorial?.coverFit === 'contain' ? 'contain' : 'cover',
       scope: item.scope || [],
       year: item.year,
       index
@@ -1691,6 +1692,7 @@ function PortfolioCatalog({
   }, React.createElement("h3", {className: "work-panel-title"}, category.label), category.items.map(item => /*#__PURE__*/React.createElement(SmartLink, {
     to: item.href,
     className: `work-card${item.editorial ? ' work-card-editorial' : ''}`,
+    style: {'--case-cover-fit': item.coverFit},
     target: item.external ? "_blank" : undefined,
     rel: item.external ? "noopener noreferrer" : undefined,
     key: item.slug
@@ -2010,7 +2012,7 @@ function EditorialCasePage({lang, item}) {
   const coverAlt = (item.imageAlts || [])[(item.images || []).indexOf(cover)] || `${item.title1} ${item.titleIt}`;
   const number = value => Number(value).toLocaleString(en ? 'en-GB' : 'pl-PL');
   const max = comparison ? Math.max(comparison.beforeValue, comparison.afterValue, 1) : 1;
-  return h('article', {className: 'editorial-case'}, h('div', {className: 'container'},
+  return h('article', {className: 'editorial-case', style: {'--case-cover-fit': story.coverFit === 'contain' ? 'contain' : 'cover'}}, h('div', {className: 'container'},
     h(SmartLink, {to: '/realizacje', className: 'case-back mono'}, h(ArrowBackIcon, {size: 14}), en ? 'All work' : 'Wszystkie realizacje'),
     h('header', {className: `editorial-hero${cover ? '' : ' is-text-only'}`},
       h('div', {className: 'editorial-hero-copy'},
@@ -2024,7 +2026,7 @@ function EditorialCasePage({lang, item}) {
         h('img', {src: cover, alt: coverAlt, width: 1600, height: 1200, fetchPriority: 'high', decoding: 'async'}),
         story.photoCredit && h('figcaption', null, story.photoCredit))),
     h('section', {className: 'editorial-outcomes', 'aria-label': en ? 'Selected results' : 'Wybrane wyniki'},
-      h('div', {className: 'editorial-primary'},
+      h('div', {className: `editorial-primary${String(metric.value).length > 8 ? ' editorial-primary-long' : ''}`},
         h('span', {className: 'mono'}, en ? 'The project in numbers' : 'Projekt w liczbach'),
         h('strong', null, metric.value), h('p', null, metric.label), h('small', null, metric.context)),
       h('div', {className: 'editorial-stats'}, (item.results || []).map((result, index) =>

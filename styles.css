@@ -6176,7 +6176,7 @@ body.menu-open .sticky-quote { visibility:hidden;pointer-events:none; }
 .editorial-tags { display:flex; flex-wrap:wrap; gap:7px; margin-top:25px; }
 .editorial-tags span { font-family:var(--font-mono); font-size:9px; border:1px solid #14121025; padding:7px 9px; }
 .editorial-hero-media { position:relative; align-self:stretch; min-height:450px; background:var(--bg-dark); margin:0; }
-.editorial-hero-media > img { width:100%; height:100%; max-height:650px; object-fit:cover; object-position:center; }
+.editorial-hero-media > img { width:100%; height:100%; max-height:650px; object-fit:var(--case-cover-fit,cover); object-position:center; }
 .editorial-hero-media > figcaption { position:absolute; bottom:0; left:0; right:0; padding:32px 18px 12px; background:linear-gradient(transparent,#141210e8); color:var(--paper); font-size:10px; line-height:1.6; }
 .editorial-outcomes { display:grid; grid-template-columns:1fr 1.05fr; margin:48px 0 0; background:var(--bg-dark); color:var(--paper); }
 .editorial-primary { padding:clamp(28px,4vw,54px); background:var(--accent); color:var(--ink); display:flex; flex-direction:column; align-items:flex-start; }
@@ -6230,7 +6230,7 @@ body.menu-open .sticky-quote { visibility:hidden;pointer-events:none; }
 .editorial-case a:focus-visible { outline:2px solid var(--accent-deep); outline-offset:5px; }
 #work-panel-marketing { grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
 .work-card-editorial .work-card-media { max-height:none; aspect-ratio:16/10; background:var(--bg-dark); }
-.work-card-editorial .work-card-media > img { padding:0; object-fit:cover; object-position:50% 45%; transition:transform .6s ease; }
+.work-card-editorial .work-card-media > img { padding:0; object-fit:var(--case-cover-fit,cover); object-position:50% 45%; transition:transform .6s ease; }
 .work-card-editorial:hover .work-card-media > img { transform:scale(1.025); }
 .work-card-editorial .work-card-copy { padding:26px; }
 .work-card-editorial h3 { font-size:clamp(27px,2.8vw,40px); }
@@ -6275,3 +6275,5 @@ body.menu-open .sticky-quote { visibility:hidden;pointer-events:none; }
 .editorial-hero h1.editorial-title-long { font-size:clamp(32px,4.6vw,70px); overflow-wrap:normal; }
 @media(max-width:760px) { .editorial-hero h1.editorial-title-long { font-size:clamp(28px,7.8vw,58px); } }
 .editorial-hero h1.editorial-title-long { max-width:none; }
+.editorial-primary-long > strong { font-size:clamp(38px,5vw,76px); white-space:nowrap; }
+@media(max-width:760px) { .editorial-primary-long > strong { font-size:clamp(36px,9.4vw,64px); } }

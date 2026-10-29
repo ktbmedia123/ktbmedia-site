@@ -3,7 +3,7 @@
 ## Build
 
 - `npm ci`, następnie `npm run build`. Netlify instaluje przypięte zależności z package-lock.json i nadal publikuje wyłącznie dist/.
-- `scripts/prerender-pages.mjs` renderuje 67 dokumentów tym samym Reactem 18.3.1 i komponentami app.js co przeglądarka. Czyta aktualne content/site.json, widoczność i konfiguracje landingów; nie uruchamia efektów ani zapytań sieciowych.
+- `scripts/prerender-pages.mjs` renderuje dokumenty tym samym Reactem 18.3.1 i komponentami app.js co przeglądarka. Czyta aktualne content/site.json, widoczność i konfiguracje landingów; nie uruchamia efektów ani zapytań sieciowych.
 - Tytuł i opis mają wspólną funkcję getSEOMetadata z aplikacją. FAQPage jest synchronizowany z faktycznie widocznymi details/summary; bez widocznych pytań nie jest publikowany. Wspólny renderer marine wymaga mapowania globalThis.KTBMarine na symulowane window w kontekście VM. W HTML są pełne opisy, artykuły, FAQ, nawigacja i stopka. Wartości liczników są docelowe. Animacje reveal w zapasowym dokumencie są odsłonięte.
 - Katalog zawiera wszystkie dozwolone kategorie. Aplikacja pokazuje aktywny panel, a bez JS dostępne są wszystkie. Nieaktywne filmy nie mają src i nie odtwarzają się w tle.
 - Dotychczasowa osłona startu pozostaje: gotowy React zastępuje prerender przed odsłonięciem. Bez JS lub przy awarii pozostaje pełny czytelny dokument. Hero zachowuje „Marka, którą czuć w sieci.”.

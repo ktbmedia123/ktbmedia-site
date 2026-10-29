@@ -675,6 +675,7 @@ collections:
                         collapsed: true
                         fields:
                           - { label: Nagłówek historii, name: headline, widget: string, required: false }
+                          - { label: Kadrowanie okładki, name: coverFit, widget: select, options: [cover, contain], default: cover, required: false, hint: "cover: wypełnij zdjęciem; contain: pokaż całą kreację" }
                           - label: Wyróżniony wynik
                             name: heroMetric
                             widget: object
@@ -1241,6 +1242,7 @@ collections:
                         collapsed: true
                         fields:
                           - { label: Story headline, name: headline, widget: string, required: false }
+                          - { label: Cover fit, name: coverFit, widget: select, options: [cover, contain], default: cover, required: false, hint: "cover: fill with photo; contain: show the full design" }
                           - label: Headline metric
                             name: heroMetric
                             widget: object

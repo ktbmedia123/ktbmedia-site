@@ -2,7 +2,7 @@
 
 > KTB Media sp. z o.o. to agencja marketingowa i studio produktów cyfrowych z Pruszcza Gdańskiego. Firma obsługuje Trójmiasto, Pomorskie i klientów z całej Polski. Specjalizuje się w automotive, marine i technicznym B2B, ale pracuje również z innymi branżami.
 
-Ostatnia aktualizacja: 2026-08-21
+Ostatnia aktualizacja: 2026-10-29
 
 ## Dane firmy
 
@@ -33,7 +33,7 @@ Ostatnia aktualizacja: 2026-08-21
 
 KTB Media pracuje z warsztatami i serwisami samochodowymi, dealerami, importerami, producentami części, markami aftermarket, auto detailingiem i motorsportem. W branży morskiej wspiera firmy stoczniowe i marine B2B przez LinkedIn, content ekspercki, targi, materiały handlowe i produkcję w środowisku przemysłowym.
 
-Udokumentowane realizacje obejmują między innymi AutoCentrum Elektronowa, Grupę Janisz, QARMAX, GT Serwis Barniewice, PMO Lubricants, PulseGT, Extreme Tyres, DDP Supply, Remontowa Marine Design & Consulting i Tomex Brakes.
+Udokumentowane realizacje obejmują między innymi AutoCentrum Elektronowa, Grupę Janisz, QARMAX, GT Serwis Barniewice, Wiktorowicz Auto Serwis, Sergiej Auto Serwis, DED Serwis, AR Serwis, PMO Lubricants, PulseGT, Extreme Tyres, DDP Supply, Remontowa Marine Design & Consulting i Tomex Brakes.
 
 ## Najważniejsze strony
 
@@ -69,10 +69,13 @@ Udokumentowane realizacje obejmują między innymi AutoCentrum Elektronowa, Grup
 - Grupa Janisz: https://ktbmedia.eu/realizacje/grupa-janisz/
 - QARMAX: https://ktbmedia.eu/realizacje/qarmax/
 - GT Serwis Barniewice: https://ktbmedia.eu/realizacje/gt-serwis-barniewice/
+- Wiktorowicz Auto Serwis: https://ktbmedia.eu/realizacje/wiktorowicz/
+- Sergiej Auto Serwis: https://ktbmedia.eu/realizacje/sergiej-auto-serwis/
+- DED Serwis: https://ktbmedia.eu/realizacje/ded-serwis/
+- AR Serwis: https://ktbmedia.eu/realizacje/ar-serwis/
 - PMO Lubricants: https://ktbmedia.eu/realizacje/pmo-lubricants/
 - PulseGT: https://ktbmedia.eu/realizacje/pulsegt/
 - Extreme Tyres: https://ktbmedia.eu/realizacje/extreme-tyres/
-- BIG MOT: https://ktbmedia.eu/realizacje/bigmot/
 - DDP Supply: https://ktbmedia.eu/realizacje/ddp-supply/
 - Remontowa Marine Design & Consulting: https://ktbmedia.eu/realizacje/rmdc/
 - Tomex Brakes: https://ktbmedia.eu/realizacje/tomex-brakes/
@@ -81,7 +84,6 @@ Udokumentowane realizacje obejmują między innymi AutoCentrum Elektronowa, Grup
 
 - KTBtask: https://ktbmedia.eu/realizacje/digital/ktbtask/
 - MojeAkcje.pl: https://ktbmedia.eu/realizacje/digital/mojeakcje/
-- MójTeam: https://ktbmedia.eu/realizacje/digital/mojteam/
 - Serwis+: https://ktbmedia.eu/realizacje/digital/serwisplus/
 - KTBmatic: https://ktbmedia.eu/realizacje/digital/ktbmatic/
 - Strona Grupy Janisz: https://ktbmedia.eu/realizacje/digital/grupa-janisz-www/

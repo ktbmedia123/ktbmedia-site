@@ -1,3 +1,15 @@
+# Aktualizacja — 2026-10-29: Kolejne siedem case studies
+
+- Z paczki Nowe_Case_Studies_KTB_Media_Do_Maila.zip dodano cztery marketingowe realizacje: Wiktorowicz Auto Serwis (/realizacje/wiktorowicz/), Sergiej Auto Serwis (/realizacje/sergiej-auto-serwis/), DED Serwis i AR Serwis. Zaktualizowano istniejące PulseGT, PMO Lubricants i DDP Supply pod dotychczasowymi adresami. Poprzednie pięć rozbudowanych realizacji bez zmian; brak duplikatów.
+- Pełne treści PL/EN, główny wynik i trzy dodatkowe wskaźniki wewnątrz każdej realizacji, dwa rozdziały z autentycznymi materiałami i zakres prac. Wiktorowicz, Sergiej i DDP mają porównania dwóch stanów obserwujących; pozostałe nowe projekty bez wymyślonych wykresów. Stare chartData/timeline/notes PulseGT, PMO i DDP usunięte. Doradztwo WWW PulseGT i prace webmasterskie PMO opisane zgodnie z zakresem; nie deklarujemy budowy całych stron tych marek.
+- 21 nowych WebP (około 2,30 MB) wyodrębnionych z dostarczonych PDF. Źródłowe PDF/archiwa i pliki robocze poza repo/hostingiem. Opcjonalny coverFit w CMS PL/EN: DED/AR pokazują całe kreacje, bez ucinania. Osobna skala typografii dla długich wartości liczbowych. Nowy marketingowy Sergiej nie koliduje z istniejącą realizacją digital.
+- Zachowane decyzje użytkownika: bez źródłowych/metodologicznych przypisów w publicznych HTML/JSON/JS i bez wyników/numeracji na kartach katalogu. Zachowany hero, pozostałe sekcje PL/EN oraz ukrycie Bigmot i MójTeam. DDP zachowuje powiązane linki marine. CMS jest źródłem prawdy, content.js generowany buildem.
+- Katalog: 14 marketingowych realizacji, 4 aplikacje i 7 stron WWW; 12 case studies w układzie editorial. Cztery nowe entry HTML, aktualne OG/Twitter/CreativeWork, llms i sitemap. Build: 73 publiczne adresy (72 prerenderowane dokumenty React + Proces), wersja 20261029-cases-expanded.
+- Walidacja lokalna: build, check:seo (73 adresy), check-visibility, JSON/YAML, składnia i diff — PASS. Niezależny przegląd zgodności PL/EN ze źródłami oraz porównanie pozostałych treści/widoczności — PASS. Playwright: 42 widoki (7 projektów × PL/EN × 1440/390/320 px), wszystkie obrazy, brak overflow i błędów JS, komplet katalogu i zakładek, przejście następny projekt → kontakt z EN, bez JS — PASS. Zrzuty output/playwright/cases-expanded-*.
+- Stan wdrożenia: gotowe i zweryfikowane lokalnie; publikacja przez istniejący GitHub main → Netlify w toku. Dalszy krok: kontrola produkcyjnego HTML, mediów i widoku po wdrożeniu.
+
+---
+
 # Aktualizacja — 2026-10-29: Realizacje bez wewnętrznych przypisów i liczb na kartach
 
 - Na prośbę użytkownika usunięto sekcję „Źródła, okresy i jak czytać wyniki” ze wszystkich pięciu realizacji w PL/EN. Notatki źródłowe/metodologiczne nie są treścią do publicznego udostępniania.

@@ -12,7 +12,7 @@ Treści PL/EN w content/site.json; content.js to fallback, cms-hydrator.js pobie
 Aplikacje i strony WWW są opisane w DIGITAL_CASES w app.js.
 Landingi: landing-configs.js i treści CMS. Marine ma wspólny renderer marine-landing.js dla builda i React; obsługa w docs/MARINE.md. Style: styles.css.
 Proces: osobny dokument /proces/, Canvas 2D + DOM, źródła w proces/. Menu wykonuje pełną nawigację; ?lang=en zachowuje język.
-Realizacje: marketing, aplikacje, strony WWW; katalog /realizacje/. Pięć rozbudowanych case studies korzysta z opcjonalnego modelu editorial w CMS; format i źródła: docs/CASE_STUDIES.md.
+Realizacje: marketing, aplikacje, strony WWW; katalog /realizacje/. Dwanaście rozbudowanych case studies korzysta z opcjonalnego modelu editorial w CMS; format i źródła: docs/CASE_STUDIES.md.
 Mapy: sitemap.xml oraz sitemap-pages.xml, sitemap-blog.xml, sitemap-realizacje.xml.
 
 ## Historia / decyzje
