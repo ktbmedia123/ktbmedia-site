@@ -5,8 +5,9 @@
 - CMS: opcjonalny editorial i results.context w obu językach. content/site.json pozostaje źródłem prawdy; content.js synchronizowany buildem. Stare niepotwierdzone chartData i harmonogramy usunięte z pięciu projektów. Każda metryka ma okres; kliknięcia Google i raportowane leady Meta opisane zgodnie z definicjami. Szczegóły i utrzymanie: docs/CASE_STUDIES.md.
 - Obrazy OG/Twitter i Article/CreativeWork marketingowych realizacji synchronizowane z CMS w prerenderze. Wersja zasobów 20261029-cases. QARMAX w widoczności, katalogu, llms i sitemap. Zachowano hero, pozostałą treść PL/EN, Bigmot i MójTeam ukryte. Nawigacja EN zachowuje ?lang=en; zmiana języka aktualizuje adres i działa po odświeżeniu.
 - Walidacja lokalna: build 69 URL, check:seo (rozszerzony o faktyczny prerender editorial, konteksty danych i obrazy), check-visibility, JSON/YAML, składnia i diff — PASS. Przegląd kodu i porównanie danych PL/EN ze źródłem — PASS. Playwright: 30 widoków (5 projektów × PL/EN × 1440/390/320 px), obrazy, brak poziomego overflow i błędów JS, trzy zakładki katalogu, źródła, następny projekt i kontakt EN — PASS. Hero, odświeżenie po zmianie języka i realizacje/katalog bez JS — PASS. Zrzuty w output/playwright/cases-*.
-- Stan wdrożenia: przygotowane i zweryfikowane lokalnie; publikacja przez istniejący GitHub main → Netlify w toku. Bieżący zdalny main przed publikacją: 05ce88f579e0889330f061e2273ef2b560672896; brak nowszych zmian CMS na zdalnym main.
-- Dalszy krok: potwierdzić produkcyjny build, treści i media po publikacji; bez przenoszenia hostingu.
+- Publikacja GitHub main → Netlify: 2c0d15a (2026-10-29). Produkcyjny HTML zawiera 20261029-cases i nowy natywny układ. Przed publikacją sprawdzono aktualny zdalny main; brak nowszych zmian CMS.
+- Walidacja produkcji: 69/69 adresów HTTP 200 z prawidłowymi canonical i wersją zasobów; 15/15 WebP identycznych bajtowo z lokalnymi; ukryte Bigmot i MójTeam zwracają 404. Playwright: 20 widoków (5 projektów × PL/EN × desktop/390 px), brak overflow, brak uszkodzonych obrazów i błędów JS, wszystkie zakładki katalogu, źródła, następny projekt i kontakt EN — PASS. Zrzuty output/playwright/cases-production-*.
+- Dalszy krok: ocena wizualna przez użytkownika. Funkcjonalność wdrożona i zweryfikowana; brak oczekujących zmian kodu.
 
 ---
 
