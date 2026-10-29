@@ -1,3 +1,13 @@
+# Aktualizacja — 2026-10-29: Nowe fotografie PMO i krótka nazwa PulseGT
+
+- Na prośbę użytkownika zastąpiono dwa wskazane kadry PMO: nowa okładka to BMW z oznaczeniami marki, a drugi blok pokazuje szeroki kadr driftu. Wykorzystano dostarczone IMG_1183.JPG i A7403640.JPG, bez generowania nowych obrazów. Dwa zoptymalizowane WebP case-20261029c-pmo-lubricants-* mają razem około 0,49 MB. CoverFit contain zachowuje cały samochód w hero i katalogu; zaktualizowane alty i podpis PL/EN.
+- PulseGT: usunięty cały dopisek US Technology z tytułu PL/EN, etykiety CMS/widoczności, źródłowych etykiet i ItemList/Breadcrumb. Build synchronizuje nową nazwę w publicznym HTML/JSON/JS oraz metadata. Nagłówek nie łamie już długiego dopisku na pojedyncze litery.
+- Zakres ograniczony do PMO/PulseGT i ich nazw/obrazów; wyniki, pozostałe realizacje, hero, języki i widoczność bez zmian. Bez powrotu wewnętrznych przypisów ani wyników na kartach. Wersja zasobów 20261029-pmo-photos.
+- Walidacja lokalna: build 73 URL, check:seo, poprawność JSON, kontrola zakresu zmian i diff — PASS. Playwright 12 widoków (PMO/PulseGT × PL/EN × 1440/390/320 px), nowe obrazy na podstronie i karcie, pełny kadr samochodu, krótki H1 PulseGT, brak overflow i błędów JS — PASS. Przegląd wizualny zrzutów output/playwright/photo-update-* — PASS.
+- Stan wdrożenia: przygotowane i sprawdzone lokalnie; publikacja GitHub main → Netlify w toku. Dalszy krok: potwierdzić nowe zdjęcia i nagłówek na produkcji.
+
+---
+
 # Aktualizacja — 2026-10-29: Kolejne siedem case studies
 
 - Z paczki Nowe_Case_Studies_KTB_Media_Do_Maila.zip dodano cztery marketingowe realizacje: Wiktorowicz Auto Serwis (/realizacje/wiktorowicz/), Sergiej Auto Serwis (/realizacje/sergiej-auto-serwis/), DED Serwis i AR Serwis. Zaktualizowano istniejące PulseGT, PMO Lubricants i DDP Supply pod dotychczasowymi adresami. Poprzednie pięć rozbudowanych realizacji bez zmian; brak duplikatów.

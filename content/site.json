@@ -5102,11 +5102,11 @@
         {
           "challenge": "Marka olejów silnikowych działa wśród kierowców, twórców i partnerów biznesowych. Potrzebowała spójnego kierunku komunikacji łączącego produkt, wydarzenia i materiały wykorzystywane online oraz w dystrybucji.",
           "titleIt": "Lubricants",
-          "coverImage": "/assets/case-20261029b-pmo-lubricants-hero.webp",
+          "coverImage": "/assets/case-20261029c-pmo-lubricants-hero.webp",
           "imageAlts": [
-            "PMO Lubricants — fotografia z działań marki motoryzacyjnej",
+            "Samochód driftowy BMW w zielono-żółtych barwach z oznaczeniami PMO",
             "Archiwalne kreacje PMO Lubricants łączące produkt, edukację i motorsport",
-            "Fotografie PMO Lubricants z wydarzeń motoryzacyjnych i działań marki"
+            "Samochód driftowy z oznaczeniami PMO pokonujący zakręt na torze"
           ],
           "num": "03",
           "slug": "pmo-lubricants",
@@ -5145,9 +5145,9 @@
           ],
           "ph": "ph-stripe-3",
           "images": [
-            "/assets/case-20261029b-pmo-lubricants-hero.webp",
+            "/assets/case-20261029c-pmo-lubricants-hero.webp",
             "/assets/case-20261029b-pmo-lubricants-work.webp",
-            "/assets/case-20261029b-pmo-lubricants-detail.webp"
+            "/assets/case-20261029c-pmo-lubricants-drift.webp"
           ],
           "title1": "PMO",
           "solution": "Łączyliśmy strategię i consulting z prowadzeniem social mediów oraz kampanii Meta Ads i Google Ads. Przygotowywaliśmy materiały produktowe, relacje foto-wideo, współprace z twórcami i merchandise. Zakres obejmował także wsparcie B2B oraz bieżące prace webmasterskie.",
@@ -5178,11 +5178,12 @@
               {
                 "title": "Marka wśród ludzi motoryzacji.",
                 "text": "Relacje z wydarzeń pokazywały markę w jej naturalnym otoczeniu: przy samochodach, w padoku i w rozmowach z odbiorcami. Zdjęcia, wideo oraz materiały promocyjne wspierały komunikację z kierowcami i partnerami.",
-                "image": "/assets/case-20261029b-pmo-lubricants-detail.webp",
-                "imageAlt": "Fotografie PMO Lubricants z wydarzeń motoryzacyjnych i działań marki",
-                "caption": "Fotografie i materiały wydarzeń PMO Lubricants"
+                "image": "/assets/case-20261029c-pmo-lubricants-drift.webp",
+                "imageAlt": "Samochód driftowy z oznaczeniami PMO pokonujący zakręt na torze",
+                "caption": "PMO w motorsporcie · fotografia z toru"
               }
-            ]
+            ],
+            "coverFit": "contain"
           }
         },
         {
@@ -5287,7 +5288,7 @@
         },
         {
           "challenge": "Nowa marka dodatków i płukanek potrzebowała jasnej prezentacji produktów oraz materiałów do startu na polskim rynku. Ważne było pokazanie zastosowań i zbudowanie spójnej komunikacji wokół całej gamy.",
-          "titleIt": "US Technology",
+          "titleIt": "",
           "coverImage": "/assets/case-20261029b-pulsegt-hero.webp",
           "imageAlts": [
             "PulseGT — fotografia produktów z realizacji KTB Media",
@@ -9116,11 +9117,11 @@
         {
           "challenge": "The engine-oil brand operates among drivers, creators and business partners. It needed a consistent communication direction connecting products, events and materials used online and across distribution.",
           "titleIt": "Lubricants",
-          "coverImage": "/assets/case-20261029b-pmo-lubricants-hero.webp",
+          "coverImage": "/assets/case-20261029c-pmo-lubricants-hero.webp",
           "imageAlts": [
-            "PMO Lubricants — photography from automotive brand activities",
+            "Green and yellow BMW drift car with PMO branding",
             "Archived PMO Lubricants creative materials combining products, education and motorsport",
-            "PMO Lubricants photography from automotive events and brand activities"
+            "PMO-branded drift car taking a corner on track"
           ],
           "num": "03",
           "slug": "pmo-lubricants",
@@ -9159,9 +9160,9 @@
           ],
           "ph": "ph-stripe-3",
           "images": [
-            "/assets/case-20261029b-pmo-lubricants-hero.webp",
+            "/assets/case-20261029c-pmo-lubricants-hero.webp",
             "/assets/case-20261029b-pmo-lubricants-work.webp",
-            "/assets/case-20261029b-pmo-lubricants-detail.webp"
+            "/assets/case-20261029c-pmo-lubricants-drift.webp"
           ],
           "title1": "PMO",
           "solution": "We combined strategy and consultancy with social media management and Meta Ads and Google Ads campaigns. We produced product materials, photo and video coverage, creator partnerships and merchandise. The scope also included B2B support and ongoing webmaster work.",
@@ -9192,11 +9193,12 @@
               {
                 "title": "A brand among automotive people.",
                 "text": "Event coverage showed the brand in its natural setting: around cars, in the paddock and in conversations with audiences. Photography, video and promotional materials supported communication with drivers and partners.",
-                "image": "/assets/case-20261029b-pmo-lubricants-detail.webp",
-                "imageAlt": "PMO Lubricants photography from automotive events and brand activities",
-                "caption": "PMO Lubricants event photography and materials"
+                "image": "/assets/case-20261029c-pmo-lubricants-drift.webp",
+                "imageAlt": "PMO-branded drift car taking a corner on track",
+                "caption": "PMO in motorsport · track photography"
               }
-            ]
+            ],
+            "coverFit": "contain"
           }
         },
         {
@@ -9301,7 +9303,7 @@
         },
         {
           "challenge": "A new additives and engine-flush brand needed a clear product presentation and materials for entering the Polish market. The task was to show applications and build consistent communication across the range.",
-          "titleIt": "US Technology",
+          "titleIt": "",
           "coverImage": "/assets/case-20261029b-pulsegt-hero.webp",
           "imageAlts": [
             "PulseGT — product photography from the KTB Media project",
@@ -10819,7 +10821,7 @@
       },
       {
         "slug": "pulsegt",
-        "label": "PulseGT US Technology",
+        "label": "PulseGT",
         "visible": true
       },
       {

@@ -17,6 +17,8 @@ Nowe media: 21 plików `assets/case-20261029b-{slug}-*.webp`, około 2,30 MB. DE
 
 Dla PulseGT zakres WWW to doradztwo, dla PMO bieżące prace webmasterskie. Przy obu pozostaje etykieta „wybrane reklamy” dla głównych wyników reklamowych. Współpraca PulseGT i PMO zakończyła się w czerwcu 2025; nie opisujemy jej jako bieżącej. Stare chartData, timeline i notes tych trzech odświeżanych projektów usunięto.
 
+Korekta fotografii PMO: okładka i drugi blok używają nowych zdjęć przekazanych bezpośrednio przez użytkownika (samochód BMW z oznaczeniami PMO oraz szeroki kadr driftu). Dwa zoptymalizowane WebP mają prefiks `case-20261029c-pmo-lubricants-`, razem około 0,49 MB. Pełne kadrowanie okładki zachowuje samochód w katalogu i hero. PulseGT ma nazwę bez dopisku „US Technology” w PL/EN, katalogu i metadanych. Wersja zasobów: `20261029-pmo-photos`.
+
 ## Zasady publikacji po korekcie użytkownika
 
 Notatki źródłowe i metodologiczne są wewnętrzne. Sekcja „Źródła, okresy i jak czytać wyniki” została usunięta z wszystkich pięciu realizacji PL/EN. Usunięto również reportingNotes, techniczne przypisy pod porównaniami oraz niewidoczne notatki tych realizacji z danych CMS i fallbacku, aby nie były udostępniane przez publiczne JSON/JS. Nie dodawać takich notatek do publicznego modelu treści.
@@ -25,6 +27,6 @@ Na kartach katalogu nie pokazujemy wyników liczbowych ani numeracji zdjęć. Ka
 
 ## Publikacja i utrzymanie
 
-Build synchronizuje `content.js`, renderuje HTML oraz aktualizuje obrazy OG/Twitter i dane Article/CreativeWork z aktualnego CMS. Case studies mają adresy `/realizacje/{slug}/`. Wersja zasobów po dodaniu kolejnych realizacji: `20261029-cases-expanded`. Dalsze wdrożenia przez istniejący GitHub main → Netlify.
+Build synchronizuje `content.js`, renderuje HTML oraz aktualizuje obrazy OG/Twitter i dane Article/CreativeWork z aktualnego CMS. Case studies mają adresy `/realizacje/{slug}/`. Bieżąca wersja zasobów: `20261029-pmo-photos`. Dalsze wdrożenia przez istniejący GitHub main → Netlify.
 
 Po zmianie treści wykonać build i kontrole opisane w `docs/SEO.md`; rzeczywiste daty zmian zapisywać w `seo/page-history.json`. Nie wyliczać nowych wzrostów z brakujących danych ani nie sumować wskaźników różnych typów.
