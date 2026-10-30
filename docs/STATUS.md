@@ -5,7 +5,8 @@
 - Progressive enhancement: pełna treść i końcowe wartości bez JS, bez IntersectionObserver i przy reduced motion; dynamiczne włączenie ograniczenia ruchu kończy liczniki i pokazuje całość. Sprzątanie rAF, obserwatora i listenera przy zmianie realizacji/języka. Link obrazu widoczny po wejściu fokusu klawiatury.
 - Treści, wyniki, fotografie, hero, widoczność i kolejność case studies bez zmian. Proponowany ranking z poprzedniej rozmowy pozostaje niezatwierdzony i nie jest wdrażany. Wersja zasobów 20261030-case-motion.
 - Walidacja: build 72 adresy, check:seo, składnia i diff — PASS. Niezależny przegląd implementacji i 144 formatów liczbowych PL/EN — PASS. Playwright: odliczanie w kolejnych klatkach z niezmienną szerokością, dokładne końcowe liczby, animacja pasków i opóźnienia wierszy, reduced motion od początku i w trakcie, pełne dane bez JS — PASS. Wszystkie 26 wersji realizacji PL/EN przy 390/320 px: końcowe wyniki, zakres prac, brak overflow i błędów JS — PASS. Przegląd wizualny desktop/mobile, zmiana języka przez menu mobilne, następny projekt i widoczny fokus klawiatury — PASS. Zrzuty output/playwright/case-motion-*.
-- Stan publikacji: lokalny podgląd; po testach wdrożenie przez istniejący GitHub main → Netlify.
+- Publikacja GitHub main → Netlify: cf26616, wersja 20261030-case-motion. Produkcja: 72/72 adresów HTTP 200, poprawne canonical i wersja; pełne końcowe wartości w statycznym HTML, dane CMS identyczne z lokalnymi; trzy ukryte realizacje nadal HTTP 404 — PASS.
+- Playwright na produkcji: odliczanie i stała szerokość liczb, dokładne wartości końcowe, wypełnianie pasków i stagger zakresu, reduced motion od początku oraz w trakcie, dane bez JS — PASS. Telefon 320 px: zmiana EN → PL przez menu, następny projekt, jakościowe RMDC i fokus klawiatury — PASS. Bez błędów JS i ostrzeżeń konsoli. Zrzuty output/playwright/case-motion-production-*. Zmiany wdrożone i zweryfikowane; brak oczekujących prac kodowych.
 
 ---
 
