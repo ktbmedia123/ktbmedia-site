@@ -2010,8 +2010,101 @@ function CaseRelatedLinks({ lang, links = [] }) {
     React.createElement('ul', {className: 'case-notes-list'}, links.map(link =>
       React.createElement('li', {key: link.href}, React.createElement(SmartLink, {to: link.href}, link.label)))));
 }
+function editorialCountFormat(raw, lang) {
+  const match = String(raw).match(/^([+-]?)(\d(?:[\d\s\u00a0\u202f.,]*\d)?)(\s*(?:mln|[kKmM])?[%×x]?)$/);
+  if (!match) return null;
+  const decimal = lang === 'pl' ? ',' : '.';
+  const number = match[2].replace(/[\s\u00a0\u202f]/g, '');
+  const normalized = lang === 'pl' ? number.replace(',', '.') : number.replace(/,/g, '');
+  if (!/^\d+(?:\.\d+)?$/.test(normalized)) return null;
+  const target = Number(normalized);
+  if (!Number.isFinite(target)) return null;
+  const decimals = number.includes(decimal) ? number.split(decimal)[1].length : 0;
+  const grouped = lang === 'pl' ? /\s/.test(match[2]) : match[2].includes(',');
+  const formatter = new Intl.NumberFormat(lang === 'pl' ? 'pl-PL' : 'en-GB', {
+    useGrouping: grouped, minimumFractionDigits: decimals, maximumFractionDigits: decimals
+  });
+  return {target, start: /[×x]$/.test(match[3]) ? Math.min(1, target) : 0,
+    format: value => match[1] + formatter.format(value) + match[3]};
+}
+function EditorialValue({value, className = ''}) {
+  // The exact CMS value stays readable in HTML and by assistive technology.
+  return React.createElement('strong', {className: `case-value ${className}`.trim(), 'data-case-count': String(value)},
+    React.createElement('span', {className: 'case-value-final'}, value),
+    React.createElement('span', {className: 'case-value-visual', 'aria-hidden': 'true'}));
+}
+function useEditorialMotion(ref, slug, lang) {
+  React.useLayoutEffect(() => {
+    const root = ref.current;
+    const motion = window.matchMedia?.('(prefers-reduced-motion: reduce)');
+    if (!root || motion?.matches || !window.IntersectionObserver || !window.requestAnimationFrame) return;
+    const targets = [...root.querySelectorAll('[data-case-motion]')];
+    const frames = new Set();
+    const activeValues = new Set();
+    let stopped = false;
+    const count = (element, delay) => {
+      const parsed = editorialCountFormat(element.dataset.caseCount, lang);
+      if (!parsed || activeValues.has(element)) return;
+      activeValues.add(element);
+      const visual = element.querySelector('.case-value-visual');
+      element.classList.add('is-counting');
+      element.dataset.caseCountState = 'running';
+      visual.textContent = parsed.format(parsed.start);
+      const start = performance.now() + delay;
+      const duration = element.closest('.editorial-primary') ? 1500 : 1250;
+      const tick = now => {
+        if (stopped) return;
+        const progress = Math.max(0, Math.min(1, (now - start) / duration));
+        if (progress < 1) {
+          visual.textContent = parsed.format(parsed.start + (parsed.target - parsed.start) * (1 - Math.pow(1 - progress, 3)));
+          queue(tick);
+        } else {
+          visual.textContent = '';
+          element.classList.remove('is-counting');
+          element.dataset.caseCountState = 'done';
+        }
+      };
+      queue(tick);
+    };
+    const queue = callback => {
+      const frame = requestAnimationFrame(now => { frames.delete(frame); callback(now); });
+      frames.add(frame);
+    };
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting || stopped) return;
+        const element = entry.target;
+        observer.unobserve(element);
+        element.classList.add('is-visible');
+        const delay = parseFloat(element.style.getPropertyValue('--case-delay')) || 0;
+        element.querySelectorAll('[data-case-count]').forEach(value => count(value, delay));
+      });
+    }, {threshold: 0.12, rootMargin: '0px 0px -24px 0px'});
+    const finish = () => {
+      stopped = true;
+      observer.disconnect();
+      frames.forEach(frame => cancelAnimationFrame(frame));
+      frames.clear();
+      activeValues.forEach(element => {
+        element.classList.remove('is-counting');
+        element.dataset.caseCountState = 'done';
+        element.querySelector('.case-value-visual').textContent = '';
+      });
+      root.classList.remove('case-motion-ready');
+      targets.forEach(element => element.classList.add('is-visible'));
+    };
+    const onMotion = event => { if (event.matches) finish(); };
+    targets.forEach(element => element.classList.remove('is-visible'));
+    root.classList.add('case-motion-ready');
+    targets.forEach(element => observer.observe(element));
+    motion?.addEventListener?.('change', onMotion);
+    return () => { finish(); motion?.removeEventListener?.('change', onMotion); };
+  }, [slug, lang]);
+}
 function EditorialCasePage({lang, item}) {
   const h = React.createElement;
+  const motionRef = useRef(null);
+  useEditorialMotion(motionRef, item.slug, lang);
   const story = item.editorial;
   const metric = story.heroMetric;
   const comparison = story.comparison;
@@ -2022,7 +2115,7 @@ function EditorialCasePage({lang, item}) {
   const coverAlt = (item.imageAlts || [])[(item.images || []).indexOf(cover)] || `${item.title1} ${item.titleIt}`;
   const number = value => Number(value).toLocaleString(en ? 'en-GB' : 'pl-PL');
   const max = comparison ? Math.max(comparison.beforeValue, comparison.afterValue, 1) : 1;
-  return h('article', {className: 'editorial-case', style: {'--case-cover-fit': story.coverFit === 'contain' ? 'contain' : 'cover'}}, h('div', {className: 'container'},
+  return h('article', {ref: motionRef, className: 'editorial-case', style: {'--case-cover-fit': story.coverFit === 'contain' ? 'contain' : 'cover'}}, h('div', {className: 'container'},
     h(SmartLink, {to: '/realizacje', className: 'case-back mono'}, h(ArrowBackIcon, {size: 14}), en ? 'All work' : 'Wszystkie realizacje'),
     h('header', {className: `editorial-hero${cover ? '' : ' is-text-only'}`},
       h('div', {className: 'editorial-hero-copy'},
@@ -2031,39 +2124,39 @@ function EditorialCasePage({lang, item}) {
         h('p', {className: 'editorial-headline serif-italic'}, story.headline),
         h('p', {className: 'editorial-brief'}, item.brief),
         h('div', {className: 'editorial-tags', 'aria-label': en ? 'Project scope' : 'Zakres projektu'},
-          (item.scope || []).map(tag => h('span', {key: tag}, tag)))),
-      cover && h('figure', {className: 'editorial-hero-media'},
+          (item.scope || []).map((tag, index) => h('span', {key: tag, 'data-case-motion': '', style: {'--case-delay': `${Math.min(index * 55, 275)}ms`}}, tag)))),
+      cover && h('figure', {className: 'editorial-hero-media', 'data-case-motion': 'media'},
         h('img', {src: cover, alt: coverAlt, width: 1600, height: 1200, fetchPriority: 'high', decoding: 'async'}),
         story.photoCredit && h('figcaption', null, story.photoCredit,
           /^https?:\/\//.test(story.photoSourceUrl || '') && h(React.Fragment, null, ' · ', h('a', {href: story.photoSourceUrl, target: '_blank', rel: 'noopener noreferrer'}, en ? 'Photo source' : 'Źródło zdjęcia')),
           /^https?:\/\//.test(story.photoLicenseUrl || '') && h(React.Fragment, null, ' · ', h('a', {href: story.photoLicenseUrl, target: '_blank', rel: 'noopener noreferrer'}, en ? 'Licence' : 'Licencja'))))),
     h('section', {className: 'editorial-outcomes', 'aria-label': en ? 'Selected results' : 'Wybrane wyniki'},
-      h('div', {className: `editorial-primary${String(metric.value).length > 8 ? ' editorial-primary-long' : ''}`},
+      h('div', {className: `editorial-primary${String(metric.value).length > 8 ? ' editorial-primary-long' : ''}`, 'data-case-motion': ''},
         h('span', {className: 'mono'}, story.outcomeLabel || (en ? 'The project in numbers' : 'Projekt w liczbach')),
-        h('strong', null, metric.value), h('p', null, metric.label), h('small', null, metric.context)),
+        h(EditorialValue, {value: metric.value}), h('p', null, metric.label), h('small', null, metric.context)),
       h('div', {className: 'editorial-stats'}, (item.results || []).map((result, index) =>
-        h('div', {className: 'editorial-stat', key: index}, h('strong', null, result.v), h('p', null, result.k), result.context && h('small', null, result.context))))),
+        h('div', {className: 'editorial-stat', key: index, 'data-case-motion': '', style: {'--case-delay': `${index * 80}ms`}}, h(EditorialValue, {value: result.v}), h('p', null, result.k), result.context && h('small', null, result.context))))),
     h('section', {className: 'editorial-intro'},
-      h('div', null, h('h2', {className: 'mono'}, en ? '01 / The challenge' : '01 / Wyzwanie'), h('p', null, item.challenge)),
-      h('div', null, h('h2', {className: 'mono'}, en ? '02 / Our approach' : '02 / Podejście'), h('p', null, item.solution))),
+      h('div', {'data-case-motion': ''}, h('h2', {className: 'mono'}, en ? '01 / The challenge' : '01 / Wyzwanie'), h('p', null, item.challenge)),
+      h('div', {'data-case-motion': '', style: {'--case-delay': '90ms'}}, h('h2', {className: 'mono'}, en ? '02 / Our approach' : '02 / Podejście'), h('p', null, item.solution))),
     h('div', {className: 'editorial-chapters'}, (story.chapters || []).map((chapter, index) =>
       h('section', {className: `editorial-chapter${index % 2 ? ' is-reversed' : ''}${chapter.image ? '' : ' is-text-only'}`, key: index},
-        chapter.image && h('figure', null, h('a', {href: chapter.image, target: '_blank', rel: 'noopener noreferrer', 'aria-label': `${en ? 'Enlarge image' : 'Powiększ obraz'}: ${chapter.title}`},
+        chapter.image && h('figure', {'data-case-motion': 'media'}, h('a', {href: chapter.image, target: '_blank', rel: 'noopener noreferrer', 'aria-label': `${en ? 'Enlarge image' : 'Powiększ obraz'}: ${chapter.title}`},
           h('img', {src: chapter.image, alt: chapter.imageAlt || chapter.title, width: 1600, height: 1000, loading: 'lazy', decoding: 'async'}), h('span', {className: 'editorial-image-zoom mono'}, en ? 'Enlarge ↗' : 'Powiększ ↗')),
           chapter.caption && h('figcaption', null, chapter.caption)),
-        h('div', {className: 'editorial-chapter-copy'}, h('span', {className: 'mono'}, `${String(index + 3).padStart(2, '0')} / ${en ? 'In practice' : 'W praktyce'}`),
+        h('div', {className: 'editorial-chapter-copy', 'data-case-motion': '', style: {'--case-delay': '90ms'}}, h('span', {className: 'mono'}, `${String(index + 3).padStart(2, '0')} / ${en ? 'In practice' : 'W praktyce'}`),
           h('h2', {className: 'display'}, chapter.title), h('p', null, chapter.text))))),
     comparison && h('section', {className: 'editorial-comparison'},
-      h('div', {className: 'editorial-comparison-copy'}, h('span', {className: 'mono'}, en ? 'A closer look at the data' : 'Bliżej danych'),
-        h('h2', {className: 'display'}, comparison.title), h('strong', {className: 'editorial-change'}, comparison.change), h('p', null, comparison.metric)),
+      h('div', {className: 'editorial-comparison-copy', 'data-case-motion': ''}, h('span', {className: 'mono'}, en ? 'A closer look at the data' : 'Bliżej danych'),
+        h('h2', {className: 'display'}, comparison.title), h(EditorialValue, {className: 'editorial-change', value: comparison.change}), h('p', null, comparison.metric)),
       h('div', {className: 'editorial-bars'}, [{label: comparison.beforeLabel, value: comparison.beforeValue}, {label: comparison.afterLabel, value: comparison.afterValue}].map((entry, index) =>
-        h('div', {className: `editorial-bar${index ? ' is-after' : ''}`, key: index}, h('div', {className: 'editorial-bar-caption'}, h('span', null, entry.label), h('strong', null, number(entry.value))),
+        h('div', {className: `editorial-bar${index ? ' is-after' : ''}`, key: index, 'data-case-motion': '', style: {'--case-delay': `${index * 120}ms`}}, h('div', {className: 'editorial-bar-caption'}, h('span', null, entry.label), h(EditorialValue, {value: number(entry.value)})),
           h('div', {className: 'editorial-bar-track', 'aria-hidden': 'true'}, h('span', {style: {width: `${entry.value / max * 100}%`}})))))),
     (item.deliverables || []).length > 0 && h('section', {className: 'editorial-deliverables'},
-      h('h2', {className: 'mono'}, en ? 'What we made' : 'Co powstało'),
-      h('ul', null, item.deliverables.map((text, index) => h('li', {key: index}, h('span', {className: 'mono'}, String(index + 1).padStart(2, '0')), text)))),
+      h('h2', {className: 'mono', 'data-case-motion': ''}, en ? 'What we made' : 'Co powstało'),
+      h('ul', null, item.deliverables.map((text, index) => h('li', {key: index, 'data-case-motion': '', style: {'--case-delay': `${Math.min(index * 65, 325)}ms`}}, h('span', {className: 'mono'}, String(index + 1).padStart(2, '0')), text)))),
     h(CaseRelatedLinks, {lang, links: item.relatedLinks}),
-    h('section', {className: 'editorial-cta'}, h('div', null, h('span', {className: 'mono'}, en ? 'Your next chapter' : 'Kolejny rozdział?'),
+    h('section', {className: 'editorial-cta', 'data-case-motion': ''}, h('div', null, h('span', {className: 'mono'}, en ? 'Your next chapter' : 'Kolejny rozdział?'),
       h('h2', {className: 'display'}, en ? 'Your brand.' : 'Twoja marka.', h('br'), h('span', {className: 'it'}, en ? 'Our next project.' : 'Nasz następny projekt.'))),
       h(SmartLink, {to: '/kontakt', className: 'btn'}, en ? 'Let’s talk' : 'Porozmawiajmy', h(ArrowIcon, {size: 18}))),
     next && h(SmartLink, {to: `/realizacje/${next.slug}`, className: 'case-next'},

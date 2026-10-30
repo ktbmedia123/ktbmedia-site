@@ -31,8 +31,14 @@ Na kartach katalogu nie pokazujemy wyników liczbowych ani numeracji zdjęć. Ka
 
 Tomex Brakes ukryty na prośbę użytkownika, z zachowaniem treści w CMS. Także blogowe polecenia realizacji respektują jej widoczność. Ukryte podstrony nie są publikowane; Netlify zwraca wymuszone HTTP 404. Ukryte pozostają również Bigmot i MójTeam.
 
+## Animacje
+
+Od 30.10.2026 wszystkie realizacje editorial mają lokalny `useEditorialMotion`: wejścia sekcji i zakresu z opóźnieniami 55–90 ms, odliczanie wyników 1,25–1,5 s i wypełnianie pasków `scaleX`. `EditorialValue` zawiera końcowy tekst CMS i osobną animowaną warstwę `aria-hidden`. Parser `editorialCountFormat` zachowuje format PL/EN (grupowanie tysięcy, precyzja, mln/M, plus, procent i ×). Teksty jakościowe nie odliczają się.
+
+Animacje włączane po montażu i wejściu w ekran. Domyślne HTML/CSS pokazuje całość; reduced motion, brak IntersectionObserver i brak JS zachowują wartości końcowe. Dynamiczna zmiana ograniczenia ruchu zatrzymuje animacje. Zmiana języka/realizacji sprząta rAF i obserwator. Działanie obejmuje podstrony case studies, bez nowych liczb na kartach i bez zmiany ich kolejności.
+
 ## Publikacja i utrzymanie
 
-Build synchronizuje `content.js`, renderuje HTML oraz aktualizuje obrazy OG/Twitter i dane Article/CreativeWork z aktualnego CMS. Case studies mają adresy `/realizacje/{slug}/`. Bieżąca wersja zasobów: `20261029-marine-workshops`. Katalog: 13 marketingowych realizacji, 4 aplikacje i 7 stron WWW; 13 realizacji editorial. Build publikuje 72 adresy (71 React + Proces). Dalsze wdrożenia przez istniejący GitHub main → Netlify.
+Build synchronizuje `content.js`, renderuje HTML oraz aktualizuje obrazy OG/Twitter i dane Article/CreativeWork z aktualnego CMS. Case studies mają adresy `/realizacje/{slug}/`. Bieżąca wersja zasobów: `20261030-case-motion`. Katalog: 13 marketingowych realizacji, 4 aplikacje i 7 stron WWW; 13 realizacji editorial. Build publikuje 72 adresy (71 React + Proces). Dalsze wdrożenia przez istniejący GitHub main → Netlify.
 
 Po zmianie treści wykonać build i kontrole opisane w `docs/SEO.md`; rzeczywiste daty zmian zapisywać w `seo/page-history.json`. Nie wyliczać nowych wzrostów z brakujących danych ani nie sumować wskaźników różnych typów.

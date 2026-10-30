@@ -1,3 +1,14 @@
+# Aktualizacja — 2026-10-30: Animacje wyników i zakresu case studies
+
+- Wszystkie 13 realizacji editorial otrzymało animacje spójne z obecnym ruchem strony: wejścia materiałów i opisów, kolejne etykiety zakresu, wiersze Co powstało z rysowaną linią, jednorazowe odliczanie wyników oraz wypełnianie pasków porównania. Uruchomienie po wejściu danego bloku w ekran; bez ciągłych pętli i bibliotek animacji.
+- Lokalny EditorialValue zachowuje dokładny tekst CMS w HTML i dla czytników. Animowany tekst jest osobną warstwą aria-hidden, z zarezerwowaną szerokością docelowej liczby. Obsługa separatorów PL/EN, mln/M, procentów i mnożnika ×; słowa i PL/EN w RMDC pozostają jakościowe. Globalne liczniki pozostałych sekcji bez zmian.
+- Progressive enhancement: pełna treść i końcowe wartości bez JS, bez IntersectionObserver i przy reduced motion; dynamiczne włączenie ograniczenia ruchu kończy liczniki i pokazuje całość. Sprzątanie rAF, obserwatora i listenera przy zmianie realizacji/języka. Link obrazu widoczny po wejściu fokusu klawiatury.
+- Treści, wyniki, fotografie, hero, widoczność i kolejność case studies bez zmian. Proponowany ranking z poprzedniej rozmowy pozostaje niezatwierdzony i nie jest wdrażany. Wersja zasobów 20261030-case-motion.
+- Walidacja: build 72 adresy, check:seo, składnia i diff — PASS. Niezależny przegląd implementacji i 144 formatów liczbowych PL/EN — PASS. Playwright: odliczanie w kolejnych klatkach z niezmienną szerokością, dokładne końcowe liczby, animacja pasków i opóźnienia wierszy, reduced motion od początku i w trakcie, pełne dane bez JS — PASS. Wszystkie 26 wersji realizacji PL/EN przy 390/320 px: końcowe wyniki, zakres prac, brak overflow i błędów JS — PASS. Przegląd wizualny desktop/mobile, zmiana języka przez menu mobilne, następny projekt i widoczny fokus klawiatury — PASS. Zrzuty output/playwright/case-motion-*.
+- Stan publikacji: lokalny podgląd; po testach wdrożenie przez istniejący GitHub main → Netlify.
+
+---
+
 # Aktualizacja — 2026-10-29: Tomex ukryty, Remontowa Marine Design i fotografie warsztatów
 
 - Tomex Brakes ustawiony jako niewidoczny wspólnie dla PL/EN. Treści zachowane do przywrócenia, brak publicznej podstrony, katalogu, sitemap i llms. Blogowe polecenia realizacji respektują teraz przełącznik widoczności; ukryto też istniejące polecenie Tomex w artykule o projektowaniu. Bigmot i MójTeam pozostają ukryte.
