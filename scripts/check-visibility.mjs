@@ -38,6 +38,12 @@ try {
   assert(exists('realizacje/bigmot')); assert(exists('realizacje/digital/mojteam')); assert(sitemap().includes('/realizacje/bigmot/'));
   data.visibility = { ...enabled, marketing: false, apps: false, web: false }; fs.writeFileSync(source, JSON.stringify(data)); build();
   assert(!exists('realizacje/bigmot')); assert(!exists('realizacje/digital/ktbtask')); assert(!exists('realizacje/digital/grupa-janisz-www'));
+  for (const slug of ['rmdc', 'ddp-supply']) {
+    const route = `/en/work/${slug}/`;
+    assert(!exists(route) && !sitemap().includes(route));
+    assert(!fs.readFileSync(path.join(root, 'dist/en/maritime-marketing/index.html'), 'utf8').includes(`href="${route}"`));
+    assert(fs.readFileSync(path.join(root, 'dist/_redirects'), 'utf8').includes(`${route} /404.html 404!`));
+  }
   assert.equal((sitemap().match(/<url>/g) || []).length, 1); // The catalog itself remains public.
 } finally {
   fs.writeFileSync(source, original); build();

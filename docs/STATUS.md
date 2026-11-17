@@ -1,3 +1,13 @@
+# 17 listopada 2026 — SEO i widoczność w odpowiedziach AI
+
+- Zaktualizowano ofertę gdańską, opis udziału KTB w projektach morskich, linki z poradników detailingu i producentów części do ofert oraz między Elblągiem i realizacją Wiktorowicza. Warsztaty mają przykłady GT Serwis, Wiktorowicz i AutoCentrum. Blog obsługuje kontekstowe odnośniki i respektuje ukrywanie realizacji.
+- Jedenaście poradników ma odrębne podsumowania. Checklista Profilu Firmy zawiera 30 numerowanych pozycji. Właściciel potwierdził, że kampania za 3600 zł z 94 formularzami i 61 zakwalifikowanymi kontaktami była rzeczywistą kampanią KTB. Klient pozostaje anonimowy.
+- Oferta morska, RMDC, DDP Supply i kontakt mają indeksowalne dokumenty EN i wzajemne hreflang. Kontakt PL i EN podaje obie lokalizacje. Współrzędne Pruszcza potwierdzono w GUGiK i z właścicielem. Profil Firmy w Gdańsku dotyczy drugiej aktualnej lokalizacji. Uporządkowano wspólny opis firmy, podglądy udostępnień sześciu stron i zapasowy widok bez JS.
+- Walidacja lokalna obejmuje pełny build, 76 adresów, grafikę podglądów, canonical, hreflang, linki, przywracanie i ukrywanie realizacji. Playwright potwierdził działanie na komputerze i telefonie, przejścia PL/EN, zgodność z dotychczasowymi odnośnikami i treść bez JS.
+- Do oceny efektów porównać pełne 28 dni po publikacji z okresem 19.10–15.11.2026. Sprawdzić kliknięcia, CTR i pozycję oferty Gdańska dla tych samych zapytań, indeksację oferty detailingu, wyświetlenia morskich stron w raporcie generatywnej AI Google oraz stan trzech map szczegółowych. Punkt odniesienia znajduje się w audycie w czacie projektu. Wskazówki do kolejnej wspólnej publikacji z klientem znajdują się w `docs/CASE_STUDIES.md`.
+
+---
+
 # Aktualizacja — 2026-10-30: Animacje wyników i zakresu case studies
 
 - Wszystkie 13 realizacji editorial otrzymało animacje spójne z obecnym ruchem strony: wejścia materiałów i opisów, kolejne etykiety zakresu, wiersze Co powstało z rysowaną linią, jednorazowe odliczanie wyników oraz wypełnianie pasków porównania. Uruchomienie po wejściu danego bloku w ekran; bez ciągłych pętli i bibliotek animacji.

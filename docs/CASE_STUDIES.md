@@ -42,3 +42,11 @@ Animacje włączane po montażu i wejściu w ekran. Domyślne HTML/CSS pokazuje 
 Build synchronizuje `content.js`, renderuje HTML oraz aktualizuje obrazy OG/Twitter i dane Article/CreativeWork z aktualnego CMS. Case studies mają adresy `/realizacje/{slug}/`. Bieżąca wersja zasobów: `20261030-case-motion`. Katalog: 13 marketingowych realizacji, 4 aplikacje i 7 stron WWW; 13 realizacji editorial. Build publikuje 72 adresy (71 React + Proces). Dalsze wdrożenia przez istniejący GitHub main → Netlify.
 
 Po zmianie treści wykonać build i kontrole opisane w `docs/SEO.md`; rzeczywiste daty zmian zapisywać w `seo/page-history.json`. Nie wyliczać nowych wzrostów z brakujących danych ani nie sumować wskaźników różnych typów.
+
+## Link z kolejnej wspólnej publikacji
+
+Przy uzgadnianiu materiału z klientem zaproponować jeden link do opisu omawianej realizacji. Klient zatwierdza treść i decyduje o umieszczeniu linku w swoim kanale. Przykładowe podpisy do wykorzystania po akceptacji:
+
+- Remontowa Marine Design — „Jak pokazywać projekty biura konstrukcyjnego po polsku i po angielsku? [KTB Media opisuje naszą współpracę nad identyfikacją i komunikacją RMDC](https://ktbmedia.eu/realizacje/rmdc/).”
+- DDP Supply — „[Zobacz materiały przygotowane dla DDP Supply we współpracy z KTB Media](https://ktbmedia.eu/realizacje/ddp-supply/).”
+- Wiktorowicz Auto Serwis — „[Jak powstawały filmy z pracy naszego serwisu w Elblągu](https://ktbmedia.eu/realizacje/wiktorowicz/).”

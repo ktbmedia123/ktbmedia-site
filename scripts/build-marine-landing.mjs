@@ -1,11 +1,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
+import routes from '../localized-routes.js';
 
 // The same escaped renderer produces the static content and the client view.
 export function buildMarineLanding(root, dist, data, isVisible) {
   const slug = 'marketing-dla-branzy-morskiej';
-  const sandbox = { URL };
+  const sandbox = { URL, KTBRoutes: routes };
   vm.runInNewContext(fs.readFileSync(path.join(root, 'marine-landing.js'), 'utf8'), sandbox, { timeout: 1000 });
   const render = sandbox.KTBMarine.render;
   for (const lang of ['pl', 'en']) {

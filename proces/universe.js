@@ -383,8 +383,10 @@
     const item=items[i],destination=destinations[item[5]];
     $('#detail-category').textContent=`${String(i+1).padStart(2,'0')} / ${copy[lang][item[0]]}`;
     $('#detail-title').textContent=item[lang==='pl'?1:2];$('#detail-description').textContent=item[lang==='pl'?3:4];
-    const url=new URL(destination[0],location.origin);if(lang==='en')url.searchParams.set('lang','en');
-    $('#detail-link').href=url.pathname+url.search+url.hash;$('#detail-link').textContent=destination[lang==='pl'?1:2]+' ↗';
+    const detailLink=$('#detail-link'), indexedIdea=document.getElementById('process-idea-'+lang+'-'+(i+1));
+    detailLink.hidden=Boolean(indexedIdea && !indexedIdea.querySelector('a[href]'));
+    if(detailLink.hidden)detailLink.removeAttribute('href');else detailLink.href=KTBRoutes.href(destination[0],lang);
+    detailLink.textContent=destination[lang==='pl'?1:2]+' ↗';
     if(changed){const r=nodes[i].el.getBoundingClientRect();panel.dataset.side=r.x+r.width/2>innerWidth/2?'left':'right';}
     panel.hidden=false;panel.inert=false;panel.removeAttribute('aria-hidden');
     detailFlight={node:i,started:changed?performance.now():performance.now()-850,closingAt:0};
@@ -414,7 +416,7 @@
     nodes.forEach((n,i)=>n.el.textContent=items[i][lang==='pl'?1:2]);
     document.querySelectorAll('header nav a').forEach((a,i)=>{a.textContent=(lang==='pl'?['Usługi','Realizacje','Proces','O nas','Blog','Kontakt']:['Services','Work','Process','About','Journal','Contact'])[i];});
     $('h1').textContent=lang==='pl'?'Proces KTB Media — od pomysłu do efektu':'KTB Media process — from idea to impact';
-    document.querySelectorAll('header a[href]').forEach(a=>{const u=new URL(a.href);if(lang==='en')u.searchParams.set('lang','en');else u.searchParams.delete('lang');a.href=u.pathname+u.search+u.hash;});
+    document.querySelectorAll('header a[href]').forEach(a=>{a.href=KTBRoutes.href(a.href,lang);});
     const u=new URL(location.href);if(lang==='en')u.searchParams.set('lang','en');else u.searchParams.delete('lang');history.replaceState(null,'',u.pathname+u.search+u.hash);
     updateGalaxy(active);if(selected>=0)showDetail(selected);
   }

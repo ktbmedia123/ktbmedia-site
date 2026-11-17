@@ -5,8 +5,8 @@ const LANDINGS = {
     "keyword": "agencja marketingowa Gdańsk",
     "area": "Gdańsk",
     "type": "local",
-    "title": "Agencja marketingowa Gdańsk · KTB Media",
-    "description": "Agencja marketingowa Gdańsk dla firm lokalnych i automotive. Google Ads, SEO lokalne, social media, strony WWW i strategia bez pustych obietnic.",
+    "title": "Agencja marketingowa dla firm z Gdańska – automotive i B2B | KTB Media",
+    "description": "Marketing dla firm z Gdańska. Zobacz, jak KTB Media prowadzi komunikację Remontowa Marine Design oraz jak wspiera warsztaty przez lokalne SEO, Google Ads i wideo.",
     "keywords": [
       "agencja marketingowa Gdańsk",
       "marketing Gdańsk",
@@ -18,8 +18,8 @@ const LANDINGS = {
       "marketing dla firm Gdańsk"
     ],
     "hero": {
-      "h1": "Agencja marketingowa Gdańsk",
-      "lead": "Pomagamy firmom z Gdańska zdobywać klientów z Google, reklam i treści, które faktycznie tłumaczą ofertę. Pracujemy szczególnie z automotive, usługami lokalnymi i B2B technicznym."
+      "h1": "Agencja marketingowa dla firm z Gdańska",
+      "lead": "Dla Remontowa Marine Design stworzyliśmy identyfikację wizualną i przygotowaliśmy materiały po polsku i angielsku, które pokazują pracę projektantów okrętów. Warsztatom pomagamy docierać do kierowców przez Mapy Google, reklamy i filmy nagrywane na stanowiskach serwisowych."
     },
     "why": [
       "Łączymy strategię, kreację i media, więc nie rozbijasz marketingu między pięciu wykonawców.",
@@ -68,7 +68,7 @@ const LANDINGS = {
     ],
     "context": [
       "W Gdańsku konkurencja o uwagę klienta jest nierówna: innej komunikacji potrzebuje firma usługowa z Wrzeszcza, innej sklep techniczny obsługujący port, a jeszcze innej serwis motoryzacyjny z południa miasta. Dlatego nie zaczynamy od pakietu usług, tylko od sprawdzenia, skąd realnie mogą przyjść zapytania: Google Maps, wyniki lokalne, kampanie płatne, rekomendacje albo treści pokazujące proces pracy.",
-      "Dobra agencja marketingowa Gdańsk nie powinna obiecywać wszystkiego naraz. Ustalamy priorytet na pierwsze 90 dni, porządkujemy stronę i analitykę, wzmacniamy wizytówkę Google Business Profile, a dopiero potem dokładamy reklamy lub content. Dzięki temu właściciel widzi, które działania budują kontakt telefoniczny, formularz, zapytanie ofertowe i sprzedaż."
+      "Na pierwsze 90 dni wybieramy konkretny cel, na przykład więcej umówionych wizyt w serwisie albo więcej zapytań od firm z danej branży. Sprawdzamy, jak klient trafia na stronę, co widzi przed kontaktem i które zapytania kończą się rozmową handlową. Ten wynik podpowiada, gdzie skierować kolejny budżet."
     ],
     "related": [
       {
@@ -309,6 +309,8 @@ const LANDINGS = {
     ],
     "cases": [
       "autocentrum-elektronowa",
+      "gt-serwis-barniewice",
+      "wiktorowicz",
       "tomex-brakes"
     ],
     "faq": [
@@ -966,6 +968,7 @@ const LANDINGS = {
       "Produkcja foto-wideo i ujęcia przemysłowe"
     ],
     "cases": [
+      "wiktorowicz",
       "rmdc",
       "ddp-supply"
     ],

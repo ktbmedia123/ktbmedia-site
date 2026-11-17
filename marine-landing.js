@@ -4,11 +4,10 @@
   const safePath = value => /^\/(?!\/)[^\s<>]*$/.test(value || '') ? value : '/kontakt/';
   function render(config, lang, cases) {
     const m = config.marine, pl = lang !== 'en';
-    const url = 'https://ktbmedia.eu/marketing-dla-branzy-morskiej/';
-    const href = value => {
-      const path = safePath(value);
-      return esc(path + (!pl ? (path.includes('?') ? '&' : '?') + 'lang=en' : ''));
-    };
+    const origin = 'https://ktbmedia.eu';
+    const pageUrl = value => global.KTBRoutes.href(safePath(value), lang);
+    const url = origin + pageUrl('/marketing-dla-branzy-morskiej/');
+    const href = value => esc(pageUrl(value));
     const arrow = '<span aria-hidden="true">↗</span>';
     const label = text => `<div class="sec-label"><span class="dot"></span>${esc(text)}</div>`;
     const head = (eyebrow, title) => `<header class="marine-section-head">${label(eyebrow)}<h2 class="display">${esc(title)}</h2></header>`;
@@ -34,7 +33,7 @@
       {'@type':'Service','@id':url+'#service',url,name:config.hero.h1,description:config.hero.lead,serviceType:config.keyword,provider:{'@id':'https://ktbmedia.eu/#organization/'},areaServed:{'@type':'Country',name:pl?'Polska':'Poland'},audience:{'@type':'BusinessAudience',audienceType:pl?'Firmy branży morskiej i marine B2B':'Maritime and marine B2B companies'},hasOfferCatalog:{'@type':'OfferCatalog',name:m.servicesTitle,itemListElement:config.services.map(name=>({'@type':'Offer',itemOffered:{'@type':'Service',name}}))}},
       {'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:[{'@type':'ListItem',position:1,name:'KTB Media',item:'https://ktbmedia.eu/'},{'@type':'ListItem',position:2,name:config.hero.h1,item:url}]},
       {'@type':'FAQPage','@id':url+'#faq',inLanguage:pl?'pl-PL':'en',mainEntity:config.faq.map(item=>({'@type':'Question',name:item.q,acceptedAnswer:{'@type':'Answer',text:item.a}}))},
-      ...(cases.length ? [{'@type':'ItemList',name:m.proofTitle,itemListElement:cases.map((item,i)=>({'@type':'ListItem',position:i+1,name:name(item),url:'https://ktbmedia.eu/realizacje/'+item.slug+'/'}))}] : [])
+      ...(cases.length ? [{'@type':'ItemList',name:m.proofTitle,itemListElement:cases.map((item,i)=>({'@type':'ListItem',position:i+1,name:name(item),url:origin+pageUrl('/realizacje/'+item.slug+'/')}))}] : [])
     ];
     return `<main class="marine-page">
       <header class="marine-hero container">

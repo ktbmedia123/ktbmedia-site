@@ -88,7 +88,7 @@
     banner.setAttribute('aria-labelledby', 'ktb-consent-title');
     banner.innerHTML = '<h2 id="ktb-consent-title">' + (en ? 'Website analytics' : 'Analityka strony') + '</h2><p>' +
       (en ? 'With your permission, we use Google Analytics to understand visits and improve this website. You can refuse or change your choice at any time. ' : 'Za Twoją zgodą używamy Google Analytics, aby mierzyć odwiedziny i ulepszać stronę. Możesz odmówić lub zmienić decyzję w każdej chwili. ') +
-      '<a href="/polityka-prywatnosci/">' + (en ? 'Privacy policy' : 'Polityka prywatności') + '</a></p><div class="ktb-consent-actions"><button type="button">' + (en ? 'Allow analytics' : 'Zezwalam na analitykę') + '</button><button type="button">' + (en ? 'Necessary only' : 'Tylko niezbędne') + '</button></div>';
+      '<a href="/polityka-prywatnosci/' + (en ? '?lang=en' : '') + '">' + (en ? 'Privacy policy' : 'Polityka prywatności') + '</a></p><div class="ktb-consent-actions"><button type="button">' + (en ? 'Allow analytics' : 'Zezwalam na analitykę') + '</button><button type="button">' + (en ? 'Necessary only' : 'Tylko niezbędne') + '</button></div>';
     banner.querySelectorAll('button')[0].addEventListener('click', function () { saveChoice(true); });
     banner.querySelectorAll('button')[1].addEventListener('click', function () { saveChoice(false); });
     const choice = readChoice();

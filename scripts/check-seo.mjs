@@ -5,6 +5,7 @@ import os from 'node:os';
 import {execFileSync} from 'node:child_process';
 import { parse } from 'parse5';
 import { pageFingerprint } from './page-fingerprint.mjs';
+import routes from '../localized-routes.js';
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const dist = path.join(root, 'dist');
@@ -42,6 +43,13 @@ for (const url of urls) {
   assert.deepEqual([...html.matchAll(/<link[^>]+rel="canonical"[^>]+href="([^"]+)"/g)].map(m => m[1]), [url], `canonical ${route}`);
   const result = {text: [], renderedText: [], metadata: {}, images: [], links: [], ids: [], headings: 0, prerender: false, schemas: []};
   inspect(parse(html), result);
+  for (const key of ['og:image', 'twitter:image']) {
+    if (!result.metadata[key]) continue;
+    const image = new URL(result.metadata[key], url);
+    if (image.origin !== 'https://ktbmedia.eu') continue;
+    const imageFile = path.join(dist, decodeURIComponent(image.pathname));
+    assert(fs.existsSync(imageFile) && fs.statSync(imageFile).isFile(), `Brak obrazu ${key} na ${route}: ${image.pathname}`);
+  }
   result.text = result.text.join(' ').replace(/\s+/g, ' ');
   result.renderedText = result.renderedText.join(' ').replace(/\s+/g, ' ');
   for (const schema of result.schemas.flatMap(s => s['@graph'] || [s])) {
@@ -69,6 +77,23 @@ for (const url of urls) {
 for (const [route] of pages) {
   if (route === '/') continue;
   assert([...pages.entries()].some(([from, page]) => from !== route && page.links.some(href => new URL(href, 'https://ktbmedia.eu' + from).pathname === route)), `Osierocona strona ${route}`);
+}
+for (const [pl, en] of Object.entries(routes.english)) {
+  const english = pages.get(en);
+  if (!pages.has(pl)) { assert(!english, `Ukryta polska strona ma publiczny odpowiednik ${en}`); continue; }
+  assert(english, `Brak angielskiej strony ${en}`);
+  for (const [route, language] of [[pl, 'pl'], [en, 'en']]) {
+    const html = fs.readFileSync(path.join(dist, route, 'index.html'), 'utf8');
+    assert(html.includes(`<html lang="${language}">`), `Błędny język dokumentu ${route}`);
+    for (const [code, alternate] of [['pl', pl], ['en', en], ['x-default', pl]]) {
+      assert(html.includes(`hreflang="${code}" href="https://ktbmedia.eu${alternate}"`), `Brak wzajemnego hreflang ${code} na ${route}`);
+    }
+    assert(pages.get(route).links.includes(language === 'pl' ? en : pl), `Brak działającego bez JS przełącznika ${route}`);
+  }
+  const schemas = english.schemas.flatMap(schema => schema['@graph'] || [schema]);
+  assert(schemas.some(schema => schema.inLanguage === 'en' && schema.url === 'https://ktbmedia.eu' + en), `Brak angielskiej encji opisującej ${en}`);
+  const item = data.en.portfolio.items.find(item => pl === `/realizacje/${item.slug}/`);
+  if (item) assert(english.renderedText.includes(item.challenge), `Brak angielskiej treści CMS ${en}`);
 }
 for (const item of data.pl.portfolio.items.filter(item => data.visibility.marketing !== false && data.visibility.items.find(entry => entry.slug === item.slug)?.visible !== false)) {
   const page = pages.get(`/realizacje/${item.slug}/`);

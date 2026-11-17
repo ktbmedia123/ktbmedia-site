@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
 import { parse } from 'parse5';
+import routes from '../localized-routes.js';
 
 // Use the same React version and components as the browser, without running
 // effects, loading the CMS over HTTP, or depending on a headless browser in CI.
@@ -36,14 +37,14 @@ function synchronizeFaq(html, markup) {
   });
 }
 
-function synchronizeMarketingCase(html, item, route) {
+function synchronizeMarketingCase(html, item, route, lang) {
   if (!item) return html;
   const escape = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[char]));
   const title = [item.title1, item.titleIt].filter(Boolean).join(' ');
   const images = item.images || [];
   const image = item.coverImage || images[1] || images[0];
   const imageIndex = images.indexOf(image);
-  const imageAlt = (Array.isArray(item.imageAlts) ? item.imageAlts[imageIndex] : item.imageAlts?.[image]) || `${title} — realizacja KTB Media`;
+  const imageAlt = (Array.isArray(item.imageAlts) ? item.imageAlts[imageIndex] : item.imageAlts?.[image]) || `${title} — ${lang === 'en' ? 'KTB Media project' : 'realizacja KTB Media'}`;
   const url = new URL(route + '/', 'https://ktbmedia.eu').href;
   const absoluteImage = image ? new URL(image, 'https://ktbmedia.eu').href : undefined;
   const meta = (key, value) => {
@@ -76,7 +77,7 @@ function synchronizeMarketingCase(html, item, route) {
         url,
         mainEntityOfPage: url,
         ...(absoluteImage ? {image: absoluteImage} : {}),
-        inLanguage: 'pl-PL',
+        inLanguage: lang === 'en' ? 'en' : 'pl-PL',
         author: schema.author || {'@type': 'Organization', name: 'KTB Media'},
         publisher: schema.publisher || {'@type': 'Organization', name: 'KTB Media'},
         about: item.scope || []
@@ -92,9 +93,36 @@ function synchronizeMarketingCase(html, item, route) {
     open + JSON.stringify(sync(JSON.parse(json))).replace(/</g, '\\u003c') + close);
 }
 
+// English documents use the same template and components as their Polish equivalents.
+// Replace language-specific head data instead of inheriting Polish descriptions or schema.
+function englishHead(html, url, meta, item) {
+  let head = html.slice(0, html.indexOf('</head>'))
+    .replace('<html lang="pl">', '<html lang="en">')
+    .replace(/<meta name="keywords"[^>]*>/g, '')
+    .replace(/<script\b[^>]*type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>/g, '')
+    .replace(/(<link rel="canonical" href=")[^"]+/, '$1' + url)
+    .replace(/(<meta property="og:url" content=")[^"]+/, '$1' + url)
+    .replace(/(<meta property="og:locale" content=")[^"]+/, '$1en_GB');
+  // The marine renderer already supplies its own complete graph, including FAQ.
+  if (item || url.endsWith('/contact/')) {
+    const name = item ? [item.title1, item.titleIt].filter(Boolean).join(' ') : 'Contact';
+    const organization = {'@type': 'Organization', '@id': 'https://ktbmedia.eu/#organization/', name: 'KTB Media'};
+    const graph = [
+      {'@type': 'BreadcrumbList', itemListElement: [
+        {'@type': 'ListItem', position: 1, name: 'KTB Media', item: 'https://ktbmedia.eu/'},
+        {'@type': 'ListItem', position: 2, name, item: url}
+      ]},
+      item ? {'@type': 'Article', author: organization, publisher: organization} :
+        {'@type': 'ContactPage', url, name: meta.title, description: meta.desc, inLanguage: 'en', mainEntity: organization}
+    ];
+    head += '<script type="application/ld+json">' + JSON.stringify({'@context':'https://schema.org', '@graph':graph}).replace(/</g,'\\u003c') + '</script>\n';
+  }
+  return head + html.slice(html.indexOf('</head>'));
+}
+
 export function prerenderPages(root, dist, data) {
   const source = fs.readFileSync(path.join(root, 'app.js'), 'utf8');
-  const mount = source.indexOf("ReactDOM.createRoot(document.getElementById('root'))");
+  const mount = source.indexOf('function mountApp()');
   if (mount < 0) throw new Error('Nie znaleziono punktu startowego aplikacji');
   const window = {
     location: new URL('https://ktbmedia.eu/'),
@@ -103,7 +131,7 @@ export function prerenderPages(root, dist, data) {
   };
   const context = vm.createContext({
     React: { ...React, useLayoutEffect: React.useEffect },
-    window, URL, URLSearchParams, COPY: data, console
+    window, URL, URLSearchParams, COPY: data, KTBRoutes: routes, console
   });
   for (const name of ['landing-configs.js', 'marine-landing.js']) {
     vm.runInContext(fs.readFileSync(path.join(root, name), 'utf8'), context, { timeout: 1000 });
@@ -117,6 +145,12 @@ export function prerenderPages(root, dist, data) {
   vm.runInContext(`AnimatedValue = ({value, className}) => React.createElement('span', {className}, value);
     globalThis.pageElement = () => React.createElement(App);`, context);
   const rendered = [];
+  for (const [pl, en] of Object.entries(routes.english)) {
+    const template = path.join(dist, pl, 'index.html');
+    if (!fs.existsSync(template)) continue; // Hidden case studies have already been removed.
+    fs.mkdirSync(path.join(dist, en), {recursive: true});
+    fs.copyFileSync(template, path.join(dist, en, 'index.html'));
+  }
   function walk(directory) {
     for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
       const file = path.join(directory, entry.name);
@@ -132,16 +166,24 @@ export function prerenderPages(root, dist, data) {
       if (!target?.sourceCodeLocation?.endTag) throw new Error(`Brak root: ${file}`);
       const route = '/' + path.relative(dist, path.dirname(file)).split(path.sep).filter(Boolean).join('/');
       window.location = new URL(route === '/' ? '/' : route + '/', 'https://ktbmedia.eu');
-      const metadata = context.getSEOMetadata('pl', route);
+      const lang = routes.language(window.location);
+      const pl = routes.polishPath(window.location.pathname);
+      const logicalRoute = pl.replace(/\/$/, '') || '/';
+      const metadata = context.getSEOMetadata(lang, logicalRoute);
+      const marketingCase = data[lang].portfolio.items.find(item => logicalRoute === `/realizacje/${item.slug}`);
+      if (lang === 'en') html = englishHead(html, window.location.href, metadata, marketingCase);
+      if (routes.english[pl]) {
+        const alternates = [['pl', pl], ['en', routes.english[pl]], ['x-default', pl]].map(([code, path]) =>
+          `<link rel="alternate" hreflang="${code}" href="https://ktbmedia.eu${path}" />`).join('\n  ');
+        html = html.replace(/<link\b[^>]*\bhreflang="[^"]+"[^>]*>/g, '').replace('</head>', alternates + '\n</head>');
+      }
       const escape = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[char]));
       html = html.replace(/<title>[\s\S]*?<\/title>/, `<title>${escape(metadata.title)}</title>`);
       for (const [key, value] of Object.entries({description: metadata.desc, 'og:title': metadata.title, 'og:description': metadata.desc, 'twitter:title': metadata.title, 'twitter:description': metadata.desc})) {
         const attribute = key.startsWith('og:') ? 'property' : 'name';
         html = html.replace(new RegExp(`<meta ${attribute}="${key}"[^>]*>`, 'g'), `<meta ${attribute}="${key}" content="${escape(value)}" />`);
       }
-      const marketingCase = /^\/realizacje\/[^/]+$/.test(route) ?
-        data.pl.portfolio.items.find(item => route === `/realizacje/${item.slug}`) : null;
-      html = synchronizeMarketingCase(html, marketingCase, route);
+      html = synchronizeMarketingCase(html, marketingCase, route, lang);
       // Metadata changes above alter source offsets, so locate root again.
       let rootLocation;
       visit(parse(html, {sourceCodeLocationInfo: true}), node => {
@@ -159,7 +201,8 @@ export function prerenderPages(root, dist, data) {
       html = synchronizeFaq(html, markup);
       html = html.replace('</head>', `<noscript><style>
         body{cursor:auto!important}a,button{cursor:pointer!important}
-        .ktb-cursor,.nav-burger,.lang-toggle,.mobile-menu,.sticky-quote{display:none!important}
+        .ktb-cursor,.nav-burger,.lang-toggle:not(:has(a)),.mobile-menu,.sticky-quote{display:none!important}
+        .nav-right .lang-toggle:has(a){display:inline-flex}
         .work-tabs,.work-category-head{display:none!important}
         .work-grid[hidden]{display:grid!important}
         .work-panel-title{display:block!important;grid-column:1/-1}

@@ -26,3 +26,6 @@ User-agent: Google-Extended
 Allow: /
 
 Sitemap: https://ktbmedia.eu/sitemap.xml
+Sitemap: https://ktbmedia.eu/sitemap-pages.xml
+Sitemap: https://ktbmedia.eu/sitemap-blog.xml
+Sitemap: https://ktbmedia.eu/sitemap-realizacje.xml

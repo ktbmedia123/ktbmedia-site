@@ -256,11 +256,11 @@ body.dark .nav-logo img { filter: invert(1); }
   border-radius: 999px;
   overflow: hidden;
 }
-.lang-toggle button {
+.lang-toggle :is(button, a) {
   padding: 7px 12px;
   transition: background .2s, color .2s;
 }
-.lang-toggle button.on { background: var(--ink); color: var(--bg); }
+.lang-toggle :is(button, a).on { background: var(--ink); color: var(--bg); }
 
 @media (max-width: 900px) {
   .nav-links { display: none; }
@@ -1765,8 +1765,8 @@ body.dark .mobile-menu-inner { background: var(--bg-dark); }
 
 .mobile-menu-foot { margin-top: auto; display: flex; flex-direction: column; gap: 20px; padding-top: 24px; border-top: 1px solid color-mix(in srgb, var(--ink) 12%, transparent); }
 .mobile-menu-foot .btn { justify-content: center; }
-.mobile-menu-lang { display: flex; gap: 8px; }
-.mobile-menu-lang button {
+.mobile-menu-lang { display: flex; gap: 8px; text-align: center; }
+.mobile-menu-lang :is(button, a) {
   flex: 1;
   padding: 12px;
   border: 1px solid color-mix(in srgb, var(--ink) 15%, transparent);
@@ -1778,7 +1778,7 @@ body.dark .mobile-menu-inner { background: var(--bg-dark); }
   color: var(--ink);
   transition: background .2s, color .2s, border-color .2s;
 }
-.mobile-menu-lang button.on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.mobile-menu-lang :is(button, a).on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 
 body.menu-open { overflow: hidden; }
 
@@ -4090,8 +4090,11 @@ body.menu-open { overflow: hidden; }
   color: var(--ink);
 }
 .blog-article-body p { margin: 0 0 20px; }
+.blog-article-body p a { color: var(--accent-deep); text-decoration: underline; text-underline-offset: 0.16em; }
 .blog-article-body strong { color: var(--ink); font-weight: 700; }
 .blog-article-body em { font-style: italic; color: var(--accent-deep); }
+.blog-article-body ol { list-style: decimal; margin: 0 0 24px; padding-left: 2em; }
+.blog-article-body ol li { padding: 5px 0 5px 3px; }
 .blog-article-body ul {
   padding-left: 0;
   list-style: none;
@@ -4279,7 +4282,7 @@ body.menu-open { overflow: hidden; }
 }
 
 /* Nav lang toggle powiększenie */
-.lang-toggle button {
+.lang-toggle :is(button, a) {
   font-size: 12px;
 }
 

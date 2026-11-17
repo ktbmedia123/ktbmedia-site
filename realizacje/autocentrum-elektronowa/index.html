@@ -27,8 +27,8 @@
   <meta name="googlebot" content="index, follow" />
   <meta name="geo.region" content="PL-PM" />
   <meta name="geo.placename" content="Pruszcz Gdanski" />
-  <meta name="geo.position" content="54.258;18.642" />
-  <meta name="ICBM" content="54.258, 18.642" />
+  <meta name="geo.position" content="54.24536;18.6324" />
+  <meta name="ICBM" content="54.24536, 18.6324" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
@@ -94,12 +94,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": [
-        "Organization",
-        "LocalBusiness",
-        "ProfessionalService",
-        "MarketingBusiness"
-      ],
+      "@type": "LocalBusiness",
       "@id": "https://ktbmedia.eu/#organization/",
       "name": "KTB Media sp. z o.o.",
       "alternateName": [
@@ -113,7 +108,6 @@
       "email": "media@ktbmedia.eu",
       "telephone": "+48 792 614 834",
       "foundingDate": "2022",
-      "priceRange": "PLN",
       "description": "Agencja marketingowa z Pruszcza Gdańskiego obsługująca Gdańsk, Gdynię, Sopot, Tczew, Starogard Gdański, Elbląg i całe Trójmiasto. KTB Media specjalizuje się w marketingu automotive, marine i technicznym B2B oraz łączy SEO, reklamy, social media, branding, strony WWW, aplikacje i produkcję.",
       "slogan": "Strategia, marketing, strony WWW i aplikacje dopasowane do realnego procesu firmy.",
       "address": {
@@ -126,8 +120,8 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 54.258,
-        "longitude": 18.642
+        "latitude": 54.24536,
+        "longitude": 18.6324
       },
       "areaServed": [
         {
@@ -215,7 +209,6 @@
         "prowadzenie Instagrama Gdańsk",
         "marketing motoryzacyjny",
         "agencja marketingowa automotive",
-        "marketing dla auto detailingu",
         "reklama studia detailingu Gdańsk",
         "marketing dla salonu samochodowego",
         "pozycjonowanie branży motoryzacyjnej",
@@ -250,7 +243,10 @@
       "publisher": {
         "@id": "https://ktbmedia.eu/#organization/"
       },
-      "inLanguage": "pl-PL",
+      "inLanguage": [
+        "pl-PL",
+        "en"
+      ],
       "about": {
         "@id": "https://ktbmedia.eu/#organization/"
       }
@@ -282,8 +278,12 @@
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Marketing dla branży automotive",
-            "areaServed": "Polska"
+            "name": "Marketing dla branży morskiej",
+            "areaServed": "Polska",
+            "url": "https://ktbmedia.eu/marketing-dla-branzy-morskiej/",
+            "provider": {
+              "@id": "https://ktbmedia.eu/#organization/"
+            }
           }
         },
         {

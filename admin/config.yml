@@ -855,11 +855,21 @@ collections:
                             summary: '{{fields.p}}'
                             fields:
                               - { label: Tekst (obsługuje **bold** i _italic_), name: p, widget: text }
+                              - label: Odsyłacz po akapicie
+                                name: link
+                                widget: object
+                                required: false
+                                collapsed: true
+                                hint: "Podaj ścieżkę wewnętrzną. Akapit o ukrytej realizacji zostanie pominięty."
+                                fields:
+                                  - { label: Tekst odsyłacza, name: label, widget: string }
+                                  - { label: Adres na stronie, name: href, widget: string, pattern: ['^/[^/].*$', 'Podaj ścieżkę zaczynającą się od /'] }
                           - label: Lista punktowana
                             name: list
                             widget: object
                             summary: 'Lista ({{fields.list.length}} pozycji)'
                             fields:
+                              - { label: Numer pierwszej pozycji (opcjonalny), name: start, widget: number, min: 1, value_type: int, required: false }
                               - label: Punkty
                                 name: list
                                 widget: list
@@ -1422,11 +1432,21 @@ collections:
                             summary: '{{fields.p}}'
                             fields:
                               - { label: Text, name: p, widget: text }
+                              - label: Link at the end of the paragraph
+                                name: link
+                                widget: object
+                                required: false
+                                collapsed: true
+                                hint: "Use an internal path. Hiding the linked project also hides this paragraph."
+                                fields:
+                                  - { label: Link text, name: label, widget: string }
+                                  - { label: Path on this site, name: href, widget: string, pattern: ['^/[^/].*$', 'Enter a path starting with /'] }
                           - label: Bullet list
                             name: list
                             widget: object
                             summary: 'List'
                             fields:
+                              - { label: Starting number (optional), name: start, widget: number, min: 1, value_type: int, required: false }
                               - label: Items
                                 name: list
                                 widget: list

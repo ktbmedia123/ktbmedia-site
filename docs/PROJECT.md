@@ -11,6 +11,7 @@ Pełne HTML generowane podczas builda z komponentów React w app.js (bez JSX i b
 Treści PL/EN w content/site.json; content.js to fallback, cms-hydrator.js pobiera dane przed pierwszym renderem. Build dołącza wczesną osłonę startu (scripts/page-boot.mjs); App zdejmuje ją w useLayoutEffect. Podgląd pełnego zachowania przez dist po buildzie, nie surowy katalog źródeł.
 Aplikacje i strony WWW są opisane w DIGITAL_CASES w app.js.
 Landingi: landing-configs.js i treści CMS. Marine ma wspólny renderer marine-landing.js dla builda i React; obsługa w docs/MARINE.md. Style: styles.css.
+Indeksowalne odpowiedniki EN oferty morskiej, RMDC, DDP Supply i kontaktu są w localized-routes.js. Inne podstrony używają dotychczasowego przełącznika języka. Adres przy Grunwaldzkiej 107 w Pruszczu i gdańska lokalizacja przy Jaśminowym Stoku są aktualne. Wizytówka Google dotyczy Gdańska.
 Proces: osobny dokument /proces/, Canvas 2D + DOM, źródła w proces/. Menu wykonuje pełną nawigację; ?lang=en zachowuje język.
 Realizacje: marketing, aplikacje, strony WWW; katalog /realizacje/. Trzynaście rozbudowanych case studies korzysta z opcjonalnego modelu editorial w CMS; format i źródła: docs/CASE_STUDIES.md.
 Mapy: sitemap.xml oraz sitemap-pages.xml, sitemap-blog.xml, sitemap-realizacje.xml.

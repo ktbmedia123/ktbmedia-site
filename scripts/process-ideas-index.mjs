@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
+import routes from '../localized-routes.js';
 
 const origin = 'https://ktbmedia.eu';
 const pageUrl = `${origin}/proces/`;
@@ -42,7 +43,7 @@ export function buildProcessIdeasIndex(root, dist, isHiddenUrl) {
     const destination = destinations[item[5]];
     if (!destination || !/^\/(?:blog|realizacje)\/[a-z0-9/-]+\/$/.test(destination[0]) || (publicDestination(item[5]) && !fs.existsSync(path.join(dist, destination[0], 'index.html')))) throw new Error(`Nieznany lub brakujący cel pomysłu Procesu: ${item[5]}`);
   }
-  const href = (key, lang) => destinations[key][0] + (lang === 'en' ? '?lang=en' : '');
+  const href = (key, lang) => routes.href(destinations[key][0], lang);
   const languageBlock = lang => {
     const copy = labels[lang], titleIndex = lang === 'pl' ? 1 : 2, descriptionIndex = titleIndex + 2;
     const groups = ['strategy', 'creation', 'digital'].map(category => `<section aria-labelledby="process-group-${lang}-${category}"><h3 id="process-group-${lang}-${category}">${escapeHtml(copy[category])}</h3><ul class="process-ideas-list">${items.map((item, i) => item[0] !== category ? '' : `<li id="process-idea-${lang}-${i+1}"><h4>${escapeHtml(item[titleIndex])}</h4><p>${escapeHtml(item[descriptionIndex])}</p>${publicDestination(item[5]) ? `<a href="${escapeHtml(href(item[5], lang))}">${escapeHtml(destinations[item[5]][titleIndex])} <span aria-hidden="true">↗</span></a>` : ''}</li>`).join('\n')}</ul></section>`).join('\n');

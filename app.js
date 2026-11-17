@@ -197,13 +197,11 @@ function prettyPath(path) {
   if (clean === '/' || /\.[a-z0-9]+$/i.test(clean)) return clean;
   return `${clean}/`;
 }
-function canonicalUrlForPath(path) {
-  return `${window.location.origin}${prettyPath(path)}`;
-}
-function usePath() {
-  const [path, setPath] = useState(normalizePath(window.location.pathname));
+function usePageLocation() {
+  const current = () => window.location.pathname + window.location.search;
+  const [location, setLocation] = useState(current);
   useEffect(() => {
-    const onPop = () => setPath(normalizePath(window.location.pathname));
+    const onPop = () => setLocation(current());
     window.addEventListener('popstate', onPop);
     window.addEventListener('ktb-navigate', onPop);
     return () => {
@@ -211,16 +209,18 @@ function usePath() {
       window.removeEventListener('ktb-navigate', onPop);
     };
   }, []);
-  return path;
+  return location;
 }
 function navigate(path) {
-  const targetPath = prettyPath(path) + (document.documentElement.lang === 'en' ? '?lang=en' : '');
-  // Process is an independent immersive document, so enter it with a full navigation.
-  if (normalizePath(path) === '/proces') {
+  const lang = KTBRoutes.language(window.location);
+  const targetPath = KTBRoutes.href(path, lang);
+  // These pages have their own rendered document and language-specific schema.
+  if (normalizePath(path) === '/proces' || (lang === 'en' &&
+      (window.location.pathname.startsWith('/en/') || targetPath.startsWith('/en/')))) {
     window.location.assign(targetPath);
     return;
   }
-  if (normalizePath(window.location.pathname) === normalizePath(path)) {
+  if (window.location.pathname + window.location.search === targetPath) {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
@@ -239,7 +239,8 @@ function SmartLink({
   innerRef,
   ...rest
 }) {
-  const href = to.startsWith('#') ? `/${to}` : to.startsWith('/') && !to.includes('#') ? prettyPath(to) : to;
+  const internal = to.startsWith('#') || (to.startsWith('/') && !to.startsWith('//'));
+  const href = internal ? KTBRoutes.href(to.startsWith('#') ? '/' + to : to, KTBRoutes.language(window.location)) : to;
   const onClick = e => {
     if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
     const isExternal = /^(?:https?:)?\/\//i.test(to) || /^(?:mailto|tel):/i.test(to);
@@ -250,6 +251,7 @@ function SmartLink({
       if (onNav) onNav();
       return;
     }
+    if (window.location.pathname.startsWith('/en/')) return; // Follow the full home URL, including its anchor.
     const hash = to.startsWith('#') ? to : to.slice(1);
     if (window.location.pathname !== '/') {
       e.preventDefault();
@@ -374,7 +376,7 @@ function portfolioLinkVisible(href) {
   let target;
   try { target = new URL(href, origin); } catch { return true; }
   if (target.origin !== origin && target.origin !== 'https://ktbmedia.eu') return true;
-  const match = target.pathname.match(/^\/realizacje\/(?:(digital)\/)?([^/]+)\/?$/);
+  const match = KTBRoutes.polishPath(target.pathname).match(/^\/realizacje\/(?:(digital)\/)?([^/]+)\/?$/);
   if (!match) return true;
   const group = match[1] ? DIGITAL_CASES.find(item => item.slug === match[2])?.group : 'marketing';
   return portfolioItemVisible(match[2], group);
@@ -422,7 +424,7 @@ const DIGITAL_SEO = {
   }
 };
 function getSEOMetadata(lang, path) {
-    const base = lang === 'pl' ? 'Agencja marketingowa Gdańsk / Trójmiasto · KTB Media' : 'KTB Media — Marketing agency Gdańsk | Automotive marketing specialists';
+    const base = lang === 'pl' ? 'KTB Media – marketing dla motoryzacji i branży morskiej | Trójmiasto' : 'KTB Media – automotive and maritime marketing in Gdańsk';
     let meta;
     if (path.startsWith('/realizacje/digital/')) {
       const slug = path.slice('/realizacje/digital/'.length).replace(/\/$/, '');
@@ -435,7 +437,7 @@ function getSEOMetadata(lang, path) {
       const slug = path.slice('/realizacje/'.length).replace(/\/$/, '');
       const item = getMarketingCases(lang).find(x => x.slug === slug);
       if (item) meta = {
-        title: `${item.title1} ${item.titleIt} — case study · KTB Media`,
+        title: `${item.title1} ${item.titleIt} — ${lang === 'en' && item.scope?.[0] ? item.scope[0] : 'case study'} · KTB Media`,
         desc: item.brief
       };
     } else if (path.startsWith('/blog/')) {
@@ -464,12 +466,12 @@ function getSEOMetadata(lang, path) {
     } else if (path === '/o-nas') {
       meta = {
         title: (lang === 'pl' ? 'O nas — agencja marketingowa Pruszcz Gdański / Gdańsk' : 'About — marketing agency Pruszcz Gdański / Gdańsk') + ' · KTB Media',
-        desc: lang === 'pl' ? 'Poznaj założycieli KTB Media — agencji marketingowej z Pruszcza Gdańskiego obsługującej Gdańsk, Tczew i całe Trójmiasto.' : 'Meet the KTB Media founders — marketing agency from Pruszcz Gdański serving Gdańsk, Tczew and Tri-City.'
+        desc: lang === 'pl' ? 'Poznaj podejście KTB Media do strategii, kreacji i współpracy z firmami z Trójmiasta, motoryzacji i branży morskiej.' : 'See how KTB Media approaches strategy, creative work and partnerships with automotive and maritime businesses in the Gdańsk area.'
       };
     } else if (path === '/kontakt') {
       meta = {
         title: (lang === 'pl' ? 'Kontakt — darmowa wycena marketingu Gdańsk' : 'Contact — free marketing quote Gdańsk') + ' · KTB Media',
-        desc: lang === 'pl' ? 'Napisz do KTB Media — agencji marketingowej z Pruszcza Gdańskiego obsługującej Gdańsk, Tczew, Trójmiasto. Darmowa wycena w 24h.' : 'Contact KTB Media — marketing agency near Gdańsk. Free quote within 24h.'
+        desc: lang === 'pl' ? 'Skontaktuj się z KTB Media w Gdańsku lub Pruszczu Gdańskim. Opisz projekt i poproś o wycenę marketingu, strony WWW lub aplikacji.' : 'Contact KTB Media in Gdańsk or Pruszcz Gdański. Tell us about your project and request a quote for marketing, a website or an application.'
       };
     } else if (path === '/polityka-prywatnosci' || path === '/privacy-policy') {
       meta = {
@@ -484,7 +486,7 @@ function getSEOMetadata(lang, path) {
     } else {
       meta = {
         title: base,
-        desc: lang === 'pl' ? 'Agencja marketingowa Gdańsk, Pruszcz Gdański, Tczew. Specjalizacja: marketing dla motoryzacji i warsztatów samochodowych. Google Ads, Meta Ads, SEO lokalne, strony WWW. Od 2022.' : 'Marketing agency in Pruszcz Gdański (near Gdańsk). Automotive & workshop specialists. Google Ads, Meta Ads, local SEO, web dev. Est. 2022.'
+        desc: lang === 'pl' ? 'Zewnętrzny dział marketingu dla firm z branży motoryzacyjnej i morskiej. Zobacz, jak KTB Media z Trójmiasta prowadzi kampanie, tworzy strony i wspiera sprzedaż B2B.' : 'An external marketing team for automotive and maritime businesses. Explore campaigns, websites and B2B communications by KTB Media in the Gdańsk area.'
       };
     }
   return meta;
@@ -511,10 +513,13 @@ function useSEO(lang, path) {
     };
     setOG('title', meta.title);
     setOG('description', meta.desc);
-    setOG('type', 'website');
-    const canonicalUrl = canonicalUrlForPath(path);
+    setOG('type', path.startsWith('/realizacje/') || path.startsWith('/blog/') ? 'article' : 'website');
+    const polishPath = prettyPath(path);
+    const englishPath = KTBRoutes.english[polishPath];
+    const domain = 'https://ktbmedia.eu';
+    const canonicalUrl = domain + (lang === 'en' && englishPath ? englishPath : polishPath);
     setOG('url', canonicalUrl);
-    setOG('locale', lang === 'pl' ? 'pl_PL' : 'en_US');
+    setOG('locale', lang === 'pl' ? 'pl_PL' : 'en_GB');
     let can = document.querySelector('link[rel="canonical"]');
     if (!can) {
       can = document.createElement('link');
@@ -523,10 +528,18 @@ function useSEO(lang, path) {
     }
     can.setAttribute('href', canonicalUrl);
     document.documentElement.setAttribute('lang', lang);
-    const languageUrl = new URL(window.location.href);
-    if (lang === 'en') languageUrl.searchParams.set('lang', 'en');
-    else languageUrl.searchParams.delete('lang');
-    if (languageUrl.href !== window.location.href) window.history.replaceState(window.history.state, '', languageUrl.href);
+    document.head.querySelectorAll('link[hreflang]').forEach(node => node.remove());
+    if (portfolioLinkVisible(polishPath)) {
+      const alternates = [['pl', polishPath], ['x-default', polishPath]];
+      if (englishPath) alternates.push(['en', englishPath]);
+      for (const [code, href] of alternates) {
+        const link = document.createElement('link');
+        link.rel = 'alternate';
+        link.hreflang = code;
+        link.href = domain + href;
+        document.head.appendChild(link);
+      }
+    }
   }, [lang, path]);
 }
 function prefersReducedMotion() {
@@ -754,7 +767,7 @@ function StickyQuoteChip({
     className: `sticky-quote ${visible ? 'is-visible' : ''}`,
     "aria-hidden": visible ? "false" : "true"
   }, /*#__PURE__*/React.createElement("a", {
-    href: "/kontakt/",
+    href: KTBRoutes.href('/kontakt/', lang),
     onClick: go,
     className: "sticky-quote-link"
   }, /*#__PURE__*/React.createElement(ArrowIcon, {
@@ -964,11 +977,26 @@ function PageHeader({
 }
 function Nav({
   lang,
-  setLang
+  path
 }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const path = usePath();
+  const languageLink = (next, label) => {
+    const active = lang === next;
+    const destination = KTBRoutes.href(window.location.pathname + window.location.search + window.location.hash, next);
+    const paired = KTBRoutes.english[prettyPath(path)] && portfolioLinkVisible(path);
+    if (paired) return React.createElement('a', {
+      href: destination, hrefLang: next, lang: next, className: active ? 'on' : '', 'aria-current': active ? 'page' : undefined
+    }, label);
+    return React.createElement('button', {
+      type: 'button', className: active ? 'on' : '', onClick: () => {
+        if (!active) {
+          window.history.replaceState(window.history.state, '', destination);
+          window.dispatchEvent(new Event('ktb-navigate'));
+        }
+      }
+    }, label);
+  };
   useEffect(() => {
     const onS = () => setScrolled(window.scrollY > 40);
     window.addEventListener('scroll', onS);
@@ -1006,13 +1034,7 @@ function Nav({
     className: "nav-right"
   }, /*#__PURE__*/React.createElement("div", {
     className: "lang-toggle"
-  }, /*#__PURE__*/React.createElement("button", {
-    className: lang === 'pl' ? 'on' : '',
-    onClick: () => setLang('pl')
-  }, "PL"), /*#__PURE__*/React.createElement("button", {
-    className: lang === 'en' ? 'on' : '',
-    onClick: () => setLang('en')
-  }, "EN")), /*#__PURE__*/React.createElement(SmartLink, {
+  }, languageLink('pl', 'PL'), languageLink('en', 'EN')), /*#__PURE__*/React.createElement(SmartLink, {
     to: "/kontakt",
     className: "nav-cta",
     onNav: closeMenu
@@ -1051,13 +1073,7 @@ function Nav({
     size: 12
   })), /*#__PURE__*/React.createElement("div", {
     className: "mobile-menu-lang"
-  }, /*#__PURE__*/React.createElement("button", {
-    className: lang === 'pl' ? 'on' : '',
-    onClick: () => setLang('pl')
-  }, "Polski"), /*#__PURE__*/React.createElement("button", {
-    className: lang === 'en' ? 'on' : '',
-    onClick: () => setLang('en')
-  }, "English"))))));
+  }, languageLink('pl', 'Polski'), languageLink('en', 'English'))))));
 }
 function Hero({
   lang
@@ -1864,7 +1880,7 @@ function LandingPage({ lang, config }) {
     className: "sec-label reveal"
   }, /*#__PURE__*/React.createElement("span", {
     className: "dot"
-  }), " SEO landing"), /*#__PURE__*/React.createElement("h1", {
+  }), lang === 'pl' ? ' Usługi marketingowe' : ' Marketing services'), /*#__PURE__*/React.createElement("h1", {
     className: `display landing-title reveal ${config.hero.h1.length > 36 ? 'is-long' : ''}`
   }, config.hero.h1), /*#__PURE__*/React.createElement("p", {
     className: "landing-lede reveal"
@@ -1923,9 +1939,9 @@ function LandingPage({ lang, config }) {
     className: "dot"
   }), " ", lang === 'pl' ? 'Zakres' : 'Scope'), /*#__PURE__*/React.createElement("h2", {
     className: "display section-title"
-  }, config.servicesHeading || /*#__PURE__*/React.createElement(React.Fragment, null, lang === 'pl' ? 'Co robimy dla ' : 'What we do for ', /*#__PURE__*/React.createElement("span", {
+  }, config.servicesHeading || /*#__PURE__*/React.createElement(React.Fragment, null, lang === 'pl' ? 'Jak możemy wesprzeć ' : 'How we can support ', /*#__PURE__*/React.createElement("span", {
     className: "it"
-  }, config.area)))), /*#__PURE__*/React.createElement("ul", {
+  }, lang === 'pl' ? 'Twoją firmę?' : 'your business')))), /*#__PURE__*/React.createElement("ul", {
     className: "landing-service-list reveal"
   }, (config.services || []).map((item, i) => /*#__PURE__*/React.createElement("li", {
     key: i
@@ -2004,10 +2020,11 @@ function LandingPage({ lang, config }) {
   })))));
 }
 function CaseRelatedLinks({ lang, links = [] }) {
-  if (!links.length) return null;
+  const visible = links.filter(link => portfolioLinkVisible(link.href));
+  if (!visible.length) return null;
   return React.createElement('section', {className: 'case-notes reveal'},
     React.createElement('h2', {className: 'case-block-label mono'}, lang === 'pl' ? 'Powiązane usługi i poradniki' : 'Related services and guides'),
-    React.createElement('ul', {className: 'case-notes-list'}, links.map(link =>
+    React.createElement('ul', {className: 'case-notes-list'}, visible.map(link =>
       React.createElement('li', {key: link.href}, React.createElement(SmartLink, {to: link.href}, link.label)))));
 }
 function editorialCountFormat(raw, lang) {
@@ -2748,13 +2765,18 @@ function BlogArticle({
     const out = [];
     if (block.h) out.push(/*#__PURE__*/React.createElement("h2", {
       key: `h-${j}`
-    }, block.h));else if (block.p) out.push(/*#__PURE__*/React.createElement("p", {
-      key: `p-${j}`,
-      dangerouslySetInnerHTML: {
-        __html: block.p.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/_(.+?)_/g, '<em>$1</em>')
+    }, block.h));else if (block.p) {
+      const textHtml = {__html: block.p.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/_(.+?)_/g, '<em>$1</em>')};
+      const link = block.link;
+      if (!link?.href || !link.label) {
+        out.push(React.createElement('p', {key: `p-${j}`, dangerouslySetInnerHTML: textHtml}));
+      } else if (portfolioLinkVisible(link.href)) {
+        out.push(React.createElement('p', {key: `p-${j}`},
+          React.createElement('span', {dangerouslySetInnerHTML: textHtml}), ' ',
+          React.createElement(SmartLink, {to: link.href}, link.label)));
       }
-    }));else if (block.list) out.push(/*#__PURE__*/React.createElement("ul", {
-      key: `ul-${j}`
+    } else if (block.list) out.push(/*#__PURE__*/React.createElement(block.start ? "ol" : "ul", {
+      key: `list-${j}`, start: block.start || undefined
     }, block.list.map((li, k) => /*#__PURE__*/React.createElement("li", {
       key: k,
       dangerouslySetInnerHTML: {
@@ -3453,8 +3475,9 @@ function Footer({
 function App() {
   // The DOM is committed before the first paint: never uncover the SEO fallback.
   React.useLayoutEffect(() => { window.KTB_PAGE_BOOT?.ready(); }, []);
-  const [lang, setLang] = useState(() => new URLSearchParams(window.location.search).get('lang') === 'en' ? 'en' : 'pl');
-  const path = usePath();
+  const location = new URL(usePageLocation(), window.location.origin);
+  const lang = KTBRoutes.language(location);
+  const path = normalizePath(KTBRoutes.polishPath(location.pathname));
   const visitedCount = useVisitedPages(path);
   useReveal([lang, path]);
   useCursor();
@@ -3533,7 +3556,7 @@ function App() {
     className: "ktb-cursor"
   }), /*#__PURE__*/React.createElement(Nav, {
     lang: lang,
-    setLang: setLang
+    path: path
   }), content, showMiniCta && /*#__PURE__*/React.createElement(MiniCtaBar, {
     lang: lang
   }), /*#__PURE__*/React.createElement(StickyQuoteChip, {
@@ -3544,4 +3567,21 @@ function App() {
     visitedCount: visitedCount
   }));
 }
-ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.createElement(App, null));
+function mountApp() {
+  const current = window.location;
+  const lang = KTBRoutes.language(current);
+  const paired = KTBRoutes.english[KTBRoutes.polishPath(current.pathname)];
+  if (paired && lang === 'en') {
+    const target = KTBRoutes.href(current.href, lang);
+    if (current.pathname !== paired) {
+      current.replace(target); // Also handles legacy URLs with UTM parameters.
+      return;
+    }
+    if (new URLSearchParams(current.search).has('lang')) {
+      window.history.replaceState(window.history.state, '', target);
+    }
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App, null));
+}
+if (globalThis.KTBRoutes) mountApp();
+else import('/localized-routes.js').then(mountApp);

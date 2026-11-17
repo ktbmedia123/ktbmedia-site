@@ -32,7 +32,7 @@ function bootPage() {
   window.addEventListener('error', onError, true);
   window.addEventListener('pageshow', onPageShow);
   timer = setTimeout(() => finish(false), 6000);
-  html.dataset.ktbBootLang = new URLSearchParams(location.search).get('lang') === 'en' ? 'en' : 'pl';
+  html.dataset.ktbBootLang = html.lang === 'en' || new URLSearchParams(location.search).get('lang') === 'en' ? 'en' : 'pl';
   html.dataset.ktbBoot = 'loading';
   html.classList.add('ktb-booting');
 }
@@ -53,7 +53,11 @@ const loader = '<div id="ktb-page-loader" role="status"><span class="ktb-boot-do
 
 export function installPageBoot(html) {
   if (!html.includes('src="/app.js')) return html;
-  html = html.replace(/(href="\/styles\.css)(?:\?[^"']*)?"/g, '$1?v=20261030-case-motion"');
+  // A prerender already provides the full page when JavaScript is disabled.
+  if (html.includes('data-ktb-prerender="true"')) {
+    html = html.replace(/<noscript>\s*<main class="seo-static"[^>]*>[\s\S]*?<\/main>\s*<\/noscript>/g, '');
+  }
+  html = html.replace(/(href="\/styles\.css)(?:\?[^"']*)?"/g, '$1?v=20261117-seo-geo"');
   const head = `<style id="ktb-page-boot-style">${style}</style><script id="ktb-page-boot">(${bootPage.toString()})();</script>`;
   html = html.replace(/(<meta name="viewport"[^>]*>)/, '$1\n' + head);
   html = html.replace(/(<body\b[^>]*>)/, '$1\n' + loader);
@@ -61,8 +65,7 @@ export function installPageBoot(html) {
   // Fetch the independent files in parallel; defer preserves their execution order.
   return html.replace(/<script\b[^>]*\bsrc="([^"]+)"[^>]*>/g, (tag, src) => {
     if (!/^https:\/\/unpkg\.com\/react(?:-dom)?@|^\/(?:content|landing-configs|cms-hydrator|marine-landing|app)\.js/.test(src)) return tag;
-    tag = tag.replace(/(\/(?:app|cms-hydrator|content)\.js)(?:\?[^"']*)?/, '$1?v=20261030-case-motion');
-    tag = tag.replace(/(\/landing-configs\.js)(?:\?[^"']*)?/, '$1?v=20261030-case-motion');
+    tag = tag.replace(/(\/(?:app|cms-hydrator|content|marine-landing|landing-configs)\.js)(?:\?[^"']*)?/, '$1?v=20261117-seo-geo');
     return /\bdefer\b/.test(tag) ? tag : tag.replace('<script', '<script defer');
   });
 }

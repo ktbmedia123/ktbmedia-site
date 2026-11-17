@@ -72,7 +72,7 @@
       ctx.beginPath();ctx.ellipse(w/2,h/2,Math.max(1,radius),Math.max(1,radius*.6),-.2,0,Math.PI*2);ctx.stroke();
     }
   }
-  function contactUrl(){const url=new URL('/kontakt/',location.origin);if(lang()==='en')url.searchParams.set('lang','en');return url.href;}
+  function contactUrl(){return new URL(KTBRoutes.href('/kontakt/', lang()), location.origin).href;}
   function prefetchContact(){
     let link=document.querySelector('link[data-contact-prefetch]');
     if(!link){link=document.createElement('link');link.rel='prefetch';link.as='document';link.dataset.contactPrefetch='';document.head.appendChild(link);}

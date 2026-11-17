@@ -3,8 +3,14 @@ const COPY = {
     "contact": {
       "details": [
         {
-          "k": "Adres",
-          "v": "Grunwaldzka 107<br/>83-000 Pruszcz Gdański"
+          "k": "Pruszcz Gdański",
+          "v": "Grunwaldzka 107<br/>83-000 Pruszcz Gdański",
+          "href": "https://www.google.com/maps/search/?api=1&query=54.24536%2C18.63240"
+        },
+        {
+          "k": "Gdańsk",
+          "v": "Jaśminowy Stok 67/52<br/>80-177 Gdańsk",
+          "href": "https://www.google.com/maps/place/KTB+media/data=!4m6!3m5!1s0x46fd754615201873:0xdffdbd7e1c4d5a54!8m2!3d54.3566657!4d18.5093462!16s%2Fg%2F11s49__w4w"
         },
         {
           "k": "Email",
@@ -325,6 +331,14 @@ const COPY = {
               ]
             },
             {
+              "type": "paragraph",
+              "p": "Jeśli chcesz zlecić promocję studia, wybierz pakiet, na który masz wolne terminy. W naszej ofercie zobaczysz, jak łączymy stronę tej usługi z reklamą i pomiarem rezerwacji.",
+              "link": {
+                "href": "/marketing-dla-auto-detailingu/",
+                "label": "Marketing dla studia detailingu"
+              }
+            },
+            {
               "h": "Plan na pierwsze 90 dni"
             },
             {
@@ -557,6 +571,14 @@ const COPY = {
               "p": "Na początku audytujemy indeks, kategorie i szablon produktu. Następnie wybieramy jedną grupę o wysokim potencjale, rozbudowujemy jej strony, tworzymy kilka treści problemowych i ustawiamy pomiar. Dopiero po potwierdzeniu efektu skalujemy schemat na pozostałe linie. To wolniejsze niż masowa publikacja, ale znacznie bezpieczniejsze dla dużego katalogu."
             },
             {
+              "type": "paragraph",
+              "p": "Jeśli po audycie chcesz uporządkować karty produktów i sposób, w jaki dystrybutorzy trafiają do działu handlowego, zobacz zakres współpracy z producentami.",
+              "link": {
+                "href": "/marketing-dla-producenta-czesci-samochodowych/",
+                "label": "Marketing dla producenta części samochodowych"
+              }
+            },
+            {
               "h": "Jak współpracować z działem technicznym"
             },
             {
@@ -625,6 +647,22 @@ const COPY = {
               "caption": "Targi branżowe działają najlepiej jako część kampanii przed wydarzeniem i po nim."
             },
             {
+              "type": "paragraph",
+              "p": "Remontowa Marine Design projektuje jednostki, w tym ORP Kormoran. Naszym zadaniem było pokazać pracę biura projektowego partnerom i kandydatom. Opracowaliśmy identyfikację wizualną i przygotowaliśmy dwujęzyczne materiały o projektach, zespole i wydarzeniach.",
+              "link": {
+                "href": "/realizacje/rmdc/",
+                "label": "Zobacz identyfikację i komunikację Remontowa Marine Design"
+              }
+            },
+            {
+              "type": "paragraph",
+              "p": "DDP Supply chciało pokazać partnerom, na czym polega przygotowanie rur, prefabrykacja i kontrola jakości. KTB Media przełożyło te procesy na fotografie, katalog, prezentacje handlowe i publikacje na LinkedIn.",
+              "link": {
+                "href": "/realizacje/ddp-supply/",
+                "label": "Zobacz materiały B2B dla DDP Supply"
+              }
+            },
+            {
               "h": "LinkedIn: eksperci przed logotypem"
             },
             {
@@ -674,6 +712,14 @@ const COPY = {
             },
             {
               "p": "Wybierz jeden segment i dziesięć najważniejszych pytań klientów. Uzupełnij stronę o odpowiedzi, przygotuj dwa mocne case studies i zaplanuj kwartalny rytm treści ekspertów. Następnie połącz działania z listą kont handlowych. Taki fundament jest mniej widowiskowy niż kampania z wielkim hasłem, ale znacznie lepiej wspiera sprzedaż."
+            },
+            {
+              "type": "paragraph",
+              "p": "Planujesz przygotować portfolio jednostek, komunikację na targi lub dwujęzyczne materiały dla handlowców? Tutaj znajdziesz zakres prac i przykłady.",
+              "link": {
+                "href": "/marketing-dla-branzy-morskiej/",
+                "label": "Oferta marketingu dla branży morskiej"
+              }
             },
             {
               "h": "Rola strony internetowej w procesie B2B"
@@ -2266,119 +2312,76 @@ const COPY = {
               "p": "Dobrze prowadzony Google Business Profile pomaga też stronie. Kategorie, usługi, opinie i lokalna aktywność wysyłają Google sygnał, że firma naprawdę działa w danym miejscu i rozwiązuje konkretne problemy. Dlatego wizytówka nie powinna być aktualizowana raz przy zakładaniu firmy, tylko traktowana jak stały element marketingu."
             },
             {
-              "type": "heading",
-              "h": "Podstawowe ustawienia, które muszą się zgadzać"
-            },
-            {
-              "type": "list",
-              "list": [
-                "Nazwa firmy bez upychania fraz, chyba że fraza naprawdę jest częścią nazwy.",
-                "Główna kategoria dobrana pod najważniejszą usługę, np. warsztat samochodowy, mechanik samochodowy albo serwis klimatyzacji.",
-                "Kategorie dodatkowe dopasowane do realnej oferty, bez dodawania wszystkiego, co brzmi podobnie.",
-                "Adres zgodny ze stroną, katalogami i dokumentami firmy.",
-                "Godziny otwarcia, godziny świąteczne i informacja o wyjątkowych zamknięciach.",
-                "Numer telefonu, który ktoś faktycznie odbiera w godzinach pracy."
-              ]
-            },
-            {
               "type": "paragraph",
-              "p": "Brzmi banalnie, ale właśnie na tych punktach warsztaty tracą klientów. Jeżeli w Google widnieje sobota otwarta, a na miejscu brama jest zamknięta, opinia negatywna jest kwestią czasu. Jeżeli numer prowadzi do właściciela, który pracuje pod autem i nie odbiera, kampania reklamowa tylko powiększy frustrację."
-            },
-            {
-              "type": "figure",
-              "image": "/assets/case-autocentrum-elektronowa-1.jpg",
-              "caption": "Kontekst pracy strategicznej KTB Media"
+              "p": "Przejdź przez punkty na telefonie. Przy każdej niezgodności zapisz poprawkę i osobę odpowiedzialną."
             },
             {
               "type": "heading",
-              "h": "Treści i zdjęcia: 30 punktów kontroli"
+              "h": "Dane i dojazd"
             },
             {
               "type": "list",
+              "start": 1,
               "list": [
-                "Opis firmy zawiera specjalizacje, lokalizację i typ klientów, ale nie brzmi jak katalog SEO.",
-                "Każda ważna usługa ma osobny wpis w sekcji usług.",
-                "Usługi mają krótkie opisy: co obejmują, dla kogo są i kiedy warto zadzwonić.",
-                "Zdjęcie z zewnątrz pokazuje wjazd i oznakowanie, nie tylko logo.",
-                "Zdjęcia wnętrza pokazują stanowiska, sprzęt i porządek.",
-                "Są zdjęcia ludzi, bo klient chce wiedzieć, komu zostawia auto.",
-                "Raz w miesiącu dochodzą nowe zdjęcia, najlepiej z realnej pracy.",
-                "Posty w wizytówce informują o sezonie, dostępnych terminach i poradach, nie tylko o promocjach.",
-                "Link do strony ma parametry UTM, żeby w analityce było widać wejścia z wizytówki.",
-                "Link do umawiania wizyty prowadzi do konkretnego kontaktu, nie do ogólnej strony głównej."
+                "Porównaj nazwę w profilu z nazwą na szyldzie.",
+                "Sprawdź, czy kategoria główna opisuje najważniejszą działalność warsztatu.",
+                "Zostaw kategorie dodatkowe odpowiadające usługom wykonywanym na miejscu.",
+                "Porównaj ulicę, numer i kod pocztowy z adresem na stronie kontaktowej.",
+                "Uruchom nawigację do profilu i sprawdź, czy prowadzi pod właściwy wjazd.",
+                "Sprawdź godziny pracy w każdym dniu tygodnia.",
+                "Ustaw najbliższe święta i zaplanowane dni zamknięcia.",
+                "Zadzwoń z przycisku w profilu i sprawdź, czy odbiera właściwa recepcja.",
+                "Otwórz link do strony na telefonie i sprawdź, czy trafia do właściwego warsztatu.",
+                "Wyszukaj poprzednią nazwę i adres warsztatu, aby znaleźć ewentualny drugi profil tej samej placówki."
               ]
             },
             {
               "type": "heading",
-              "h": "Opinie: nie zbieraj ich przypadkiem"
-            },
-            {
-              "type": "paragraph",
-              "p": "Warsztat powinien mieć prosty proces proszenia o opinię. Najlepiej po udanej usłudze, kiedy klient odbiera auto i wie, co zostało zrobione. Prośba powinna być konkretna: „Jeśli jest Pan zadowolony, proszę opisać w Google, że robiliśmy diagnostykę i naprawę klimatyzacji”. Takie opinie są bardziej wartościowe niż pięć gwiazdek bez treści, bo zawierają naturalne frazy usługowe."
+              "h": "Usługi, zdjęcia i terminy"
             },
             {
               "type": "list",
+              "start": 11,
               "list": [
-                "Nie kupuj opinii. Ryzyko utraty wiarygodności jest większe niż zysk.",
-                "Odpowiadaj na każdą opinię, także krótką.",
-                "W odpowiedziach używaj konkretów, ale bez ujawniania danych klienta.",
-                "Negatywne opinie traktuj spokojnie: przeproś za sytuację, zaproś do kontaktu i pokaż, że firma reaguje.",
-                "Mierz, z których usług pojawiają się opinie i gdzie brakuje potwierdzenia jakości."
+                "Wymień w opisie specjalizacje, o które klienci najczęściej pytają przy rezerwacji.",
+                "Porównaj listę usług w profilu z aktualną ofertą recepcji.",
+                "W opisie każdej głównej usługi podaj, co obejmuje diagnostyka lub naprawa.",
+                "Usuń lub zaktualizuj usługi wycofane z oferty.",
+                "Sprawdź, czy aktualne zdjęcie z ulicy pozwala rozpoznać szyld i wjazd.",
+                "Dodaj własne zdjęcie stanowiska, na którym wykonujecie kluczową usługę.",
+                "Sprawdź zdjęcia przed publikacją pod kątem widocznych danych klientów.",
+                "Pokaż zespół lub proces pracy na zdjęciu, do którego masz prawa i zgodę na publikację.",
+                "Otwórz link do rezerwacji i przejdź ścieżkę do wyboru terminu lub połączenia z recepcją.",
+                "Sprawdź daty promocji i sezonowych komunikatów widocznych w profilu."
               ]
             },
             {
               "type": "heading",
-              "h": "Jak sprawdzać, czy wizytówka działa"
-            },
-            {
-              "type": "paragraph",
-              "p": "Co miesiąc warto sprawdzić liczbę połączeń, kliknięć w trasę, wejść na stronę, zapytań o firmę i zmianę pozycji na najważniejsze frazy. Same wyświetlenia nie wystarczą. Warsztat może mieć dużo wyświetleń na frazy informacyjne, które nie przynoszą pracy. Lepszy jest mniejszy ruch, ale z telefonami o opłacalne usługi."
-            },
-            {
-              "type": "paragraph",
-              "p": "Najprostszy rytm pracy to 30 minut tygodniowo: dodanie zdjęć, odpowiedź na opinie, jeden post i kontrola pytań. Raz w miesiącu dochodzi większy przegląd kategorii, usług i statystyk. To niewielki wysiłek, a w branży lokalnej potrafi robić większą różnicę niż kolejna kampania z banerem."
-            },
-            {
-              "type": "heading",
-              "h": "Jak wdrożyć checklistę bez odkładania na później"
-            },
-            {
-              "type": "paragraph",
-              "p": "Najlepiej podzielić pracę na cztery krótkie sesje. Pierwsza to dane podstawowe: kategorie, godziny, telefon, adres, opis i linki. Druga to usługi oraz zdjęcia. Trzecia to opinie i odpowiedzi. Czwarta to pomiar, czyli UTM-y, połączenia i porównanie statystyk z poprzednim miesiącem. Wtedy wizytówka przestaje być wielkim projektem, a staje się prostą rutyną."
-            },
-            {
-              "type": "paragraph",
-              "p": "W warsztacie warto przypisać właściciela procesu. Nie musi to być właściciel firmy. Może to być doradca serwisowy, który raz w tygodniu dodaje zdjęcia i zbiera pytania klientów. Ważne, żeby ktoś pilnował aktualności. Stare godziny, nieaktualne usługi i brak odpowiedzi na opinie są sygnałem, że firma nie dba o pierwszy kontakt."
+              "h": "Opinie, odpowiedzialność i pomiar"
             },
             {
               "type": "list",
+              "start": 21,
               "list": [
-                "Poniedziałek: odpowiedzi na opinie i pytania.",
-                "Środa: jedno zdjęcie lub krótki post z warsztatu.",
-                "Piątek: sprawdzenie statystyk połączeń i tras.",
-                "Raz w miesiącu: przegląd usług, kategorii i zdjęć głównych."
+                "Z telefonu klienta sprawdź, czy kod QR lub link do opinii otwiera właściwy profil.",
+                "Uzgodnij neutralną prośbę o szczerą opinię po wizycie, niezależnie od oceny klienta.",
+                "Usuń z próśb o opinię zachęty finansowe, sugerowaną ocenę i gotową treść recenzji.",
+                "Przejrzyj odpowiedzi na opinie pod kątem danych kierowcy i szczegółów jego zlecenia.",
+                "Wskaż osobę, która odpowie na pytania o godziny, dojazd i zakres usług.",
+                "Potwierdź, kto ma dostęp właścicielski do profilu i kto może wprowadzić pilną zmianę.",
+                "Oznacz link do strony parametrem UTM i sprawdź, czy zachowuje się po przekierowaniu.",
+                "Zapisz liczbę kliknięć telefonu, wskazówek dojazdu i strony w wybranym okresie.",
+                "Zapytaj recepcję, które zgłoszenia z Map zakończyły się umówioną wizytą.",
+                "Wyznacz datę kolejnego przeglądu i osobę do poprawy każdej znalezionej niezgodności."
               ]
             },
             {
               "type": "heading",
-              "h": "Najważniejsza zasada na koniec"
+              "h": "Próba od wyszukania do bramy warsztatu"
             },
             {
               "type": "paragraph",
-              "p": "W praktyce temat „Google Business Profile dla warsztatu checklista 30 punktów.” warto traktować jak część systemu sprzedaży, nie osobną akcję marketingową. Jeżeli po publikacji, kampanii albo zmianie na stronie nikt nie odbiera kontaktów, nie zapisuje źródła zapytania i nie sprawdza jakości rozmów, nawet dobra taktyka będzie wyglądała przypadkowo. Dlatego najpierw ustalamy, kto odpowiada za kontakt z klientem, co zapisujemy po rozmowie i po jakim czasie oceniamy wynik."
-            },
-            {
-              "type": "paragraph",
-              "p": "Druga zasada to cierpliwość połączona z kontrolą. Nie czekamy pół roku bez danych, ale też nie wyrzucamy działania po kilku dniach. Ustalamy prosty rytm: cotygodniowy przegląd kontaktów, comiesięczne decyzje budżetowe i kwartalna ocena wpływu na sprzedaż. Wtedy marketing przestaje być kosztem „na oko”, a zaczyna być narzędziem zarządzania popytem."
-            },
-            {
-              "type": "list",
-              "list": [
-                "Zapisuj źródło każdego kontaktu.",
-                "Oddziel zapytania wartościowe od przypadkowych.",
-                "Porównuj wyniki z grafikiem pracy i realną marżą.",
-                "Poprawiaj jeden element naraz, żeby wiedzieć, co zadziałało."
-              ]
+              "p": "Poproś osobę, która nigdy u Was nie była, żeby znalazła warsztat w Mapach, wybrała usługę i wskazała wjazd. Zapisz pierwsze miejsce, w którym potrzebuje pomocy. Od tej poprawki zacznij pracę nad profilem."
             }
           ],
           "titleIt": "checklista 30 punktów.",
@@ -2501,24 +2504,15 @@ const COPY = {
             },
             {
               "type": "heading",
-              "h": "Najważniejsza zasada na koniec"
+              "h": "Porównaj koszt umówionej wizyty"
             },
             {
               "type": "paragraph",
-              "p": "W praktyce temat „Meta Ads vs Google Ads dla serwisu lokalnego.” warto traktować jak część systemu sprzedaży, nie osobną akcję marketingową. Jeżeli po publikacji, kampanii albo zmianie na stronie nikt nie odbiera kontaktów, nie zapisuje źródła zapytania i nie sprawdza jakości rozmów, nawet dobra taktyka będzie wyglądała przypadkowo. Dlatego najpierw ustalamy, kto odpowiada za kontakt z klientem, co zapisujemy po rozmowie i po jakim czasie oceniamy wynik."
-            },
-            {
-              "type": "paragraph",
-              "p": "Druga zasada to cierpliwość połączona z kontrolą. Nie czekamy pół roku bez danych, ale też nie wyrzucamy działania po kilku dniach. Ustalamy prosty rytm: cotygodniowy przegląd kontaktów, comiesięczne decyzje budżetowe i kwartalna ocena wpływu na sprzedaż. Wtedy marketing przestaje być kosztem „na oko”, a zaczyna być narzędziem zarządzania popytem."
-            },
-            {
-              "type": "list",
-              "list": [
-                "Zapisuj źródło każdego kontaktu.",
-                "Oddziel zapytania wartościowe od przypadkowych.",
-                "Porównuj wyniki z grafikiem pracy i realną marżą.",
-                "Poprawiaj jeden element naraz, żeby wiedzieć, co zadziałało."
-              ]
+              "p": "Wybierz jedną usługę i ustal wspólną miarę dla obu kanałów. Przy telefonie albo formularzu zapisz źródło, a po rozmowie zaznacz, czy kierowca zarezerwował termin. Po zakończeniu testu podziel wydatki każdego kanału przez liczbę jego rezerwacji. Dopiero tak porównasz reklamę wyświetloną po wyszukaniu usterki z filmem obejrzanym przed wystąpieniem problemu.",
+              "link": {
+                "href": "/marketing-dla-serwisu-samochodowego/",
+                "label": "Marketing dla serwisu samochodowego"
+              }
             }
           ],
           "titleIt": "dla serwisu lokalnego.",
@@ -2647,24 +2641,15 @@ const COPY = {
             },
             {
               "type": "heading",
-              "h": "Najważniejsza zasada na koniec"
+              "h": "Sprawdź, gdzie kończy się zasięg warsztatu"
             },
             {
               "type": "paragraph",
-              "p": "W praktyce temat „SEO lokalne dla warsztatu jak wejść w top 3 Google Maps.” warto traktować jak część systemu sprzedaży, nie osobną akcję marketingową. Jeżeli po publikacji, kampanii albo zmianie na stronie nikt nie odbiera kontaktów, nie zapisuje źródła zapytania i nie sprawdza jakości rozmów, nawet dobra taktyka będzie wyglądała przypadkowo. Dlatego najpierw ustalamy, kto odpowiada za kontakt z klientem, co zapisujemy po rozmowie i po jakim czasie oceniamy wynik."
-            },
-            {
-              "type": "paragraph",
-              "p": "Druga zasada to cierpliwość połączona z kontrolą. Nie czekamy pół roku bez danych, ale też nie wyrzucamy działania po kilku dniach. Ustalamy prosty rytm: cotygodniowy przegląd kontaktów, comiesięczne decyzje budżetowe i kwartalna ocena wpływu na sprzedaż. Wtedy marketing przestaje być kosztem „na oko”, a zaczyna być narzędziem zarządzania popytem."
-            },
-            {
-              "type": "list",
-              "list": [
-                "Zapisuj źródło każdego kontaktu.",
-                "Oddziel zapytania wartościowe od przypadkowych.",
-                "Porównuj wyniki z grafikiem pracy i realną marżą.",
-                "Poprawiaj jeden element naraz, żeby wiedzieć, co zadziałało."
-              ]
+              "p": "Wybierz jedną usługę, np. wymianę rozrządu, i kilka miejsc, z których dojeżdżają klienci. Zapisz widoczność warsztatu dla tego samego zapytania w każdym z tych miejsc. Za miesiąc powtórz pomiar w tych samych punktach i zestaw go z telefonami o tę usługę. Jeden zrzut Map wykonany przy bramie warsztatu pokaże tylko fragment tego obrazu.",
+              "link": {
+                "href": "/blog/google-business-profile-dla-warsztatu-checklista/",
+                "label": "Sprawdź 30 elementów wizytówki warsztatu"
+              }
             }
           ],
           "titleIt": "jak wejść w top 3 Google Maps.",
@@ -2797,24 +2782,19 @@ const COPY = {
             },
             {
               "type": "heading",
-              "h": "Najważniejsza zasada na koniec"
+              "h": "Pierwszy film nagraj przy jednej czynności"
             },
             {
               "type": "paragraph",
-              "p": "W praktyce temat „Jak nagrać wideo z klientem-mechanikiem 5 lekcji z produkcji.” warto traktować jak część systemu sprzedaży, nie osobną akcję marketingową. Jeżeli po publikacji, kampanii albo zmianie na stronie nikt nie odbiera kontaktów, nie zapisuje źródła zapytania i nie sprawdza jakości rozmów, nawet dobra taktyka będzie wyglądała przypadkowo. Dlatego najpierw ustalamy, kto odpowiada za kontakt z klientem, co zapisujemy po rozmowie i po jakim czasie oceniamy wynik."
+              "p": "Poproś mechanika, żeby podczas wymiany części odpowiedział na jedno pytanie, które często słyszy przy odbiorze auta. Nagraj osobno objaw, ręce przy pracy i krótkie wyjaśnienie. Puść zmontowaną minutę doradcy serwisowemu. Jeśli potrafi powtórzyć kierowcy, co się stało i co zrobić dalej, materiał ma już temat i zakończenie."
             },
             {
               "type": "paragraph",
-              "p": "Druga zasada to cierpliwość połączona z kontrolą. Nie czekamy pół roku bez danych, ale też nie wyrzucamy działania po kilku dniach. Ustalamy prosty rytm: cotygodniowy przegląd kontaktów, comiesięczne decyzje budżetowe i kwartalna ocena wpływu na sprzedaż. Wtedy marketing przestaje być kosztem „na oko”, a zaczyna być narzędziem zarządzania popytem."
-            },
-            {
-              "type": "list",
-              "list": [
-                "Zapisuj źródło każdego kontaktu.",
-                "Oddziel zapytania wartościowe od przypadkowych.",
-                "Porównuj wyniki z grafikiem pracy i realną marżą.",
-                "Poprawiaj jeden element naraz, żeby wiedzieć, co zadziałało."
-              ]
+              "p": "W Elblągu nagrywaliśmy codzienną pracę Wiktorowicz Auto Serwis i przygotowywaliśmy filmy do regularnych publikacji.",
+              "link": {
+                "href": "/realizacje/wiktorowicz/",
+                "label": "Zobacz filmy i treści dla Wiktorowicz Auto Serwis"
+              }
             }
           ],
           "titleIt": "5 lekcji z produkcji.",
@@ -2942,28 +2922,15 @@ const COPY = {
             },
             {
               "type": "heading",
-              "h": "Najważniejsza zasada na koniec"
+              "h": "Przed zmianą szyldu przejdź drogę stałego klienta"
             },
             {
               "type": "paragraph",
-              "p": "W praktyce temat „Kiedy rebrandować warsztat a kiedy zostawić w spokoju.” warto traktować jak część systemu sprzedaży, nie osobną akcję marketingową. Jeżeli po publikacji, kampanii albo zmianie na stronie nikt nie odbiera kontaktów, nie zapisuje źródła zapytania i nie sprawdza jakości rozmów, nawet dobra taktyka będzie wyglądała przypadkowo. Dlatego najpierw ustalamy, kto odpowiada za kontakt z klientem, co zapisujemy po rozmowie i po jakim czasie oceniamy wynik."
-            },
-            {
-              "type": "paragraph",
-              "p": "Druga zasada to cierpliwość połączona z kontrolą. Nie czekamy pół roku bez danych, ale też nie wyrzucamy działania po kilku dniach. Ustalamy prosty rytm: cotygodniowy przegląd kontaktów, comiesięczne decyzje budżetowe i kwartalna ocena wpływu na sprzedaż. Wtedy marketing przestaje być kosztem „na oko”, a zaczyna być narzędziem zarządzania popytem."
-            },
-            {
-              "type": "list",
-              "list": [
-                "Zapisuj źródło każdego kontaktu.",
-                "Oddziel zapytania wartościowe od przypadkowych.",
-                "Porównuj wyniki z grafikiem pracy i realną marżą.",
-                "Poprawiaj jeden element naraz, żeby wiedzieć, co zadziałało."
-              ]
-            },
-            {
-              "type": "paragraph",
-              "p": "To jest też dobry moment, żeby porównać marketing z kalendarzem pracy firmy. Jeżeli działania przyciągają zapytania wtedy, gdy zespół nie ma mocy przerobowych, trzeba zmienić tempo lub ofertę. Jeżeli zapytania pojawiają się poza sezonem, warto zbudować listę oczekujących albo prosty follow-up. Marketing ma wspierać operacje, a nie dokładać chaos."
+              "p": "Wyszukaj starą nazwę warsztatu, otwórz zapisany w telefonie numer i przejedź od głównej drogi pod bramę. Zapisz, w których miejscach klient powinien zobaczyć informację o nowej nazwie. To gotowa lista do sprawdzenia w dniu zmiany szyldu.",
+              "link": {
+                "href": "/blog/rebrand-bez-kryzysu/",
+                "label": "Jak zaplanować zmianę marki"
+              }
             }
           ],
           "titleIt": "a kiedy zostawić w spokoju.",
@@ -3092,28 +3059,15 @@ const COPY = {
             },
             {
               "type": "heading",
-              "h": "Najważniejsza zasada na koniec"
+              "h": "Pozwól kierowcy zrobić następny krok"
             },
             {
               "type": "paragraph",
-              "p": "W praktyce temat „Instagram dla warsztatu samochodowego co publikować, żeby ludzie dzwonili.” warto traktować jak część systemu sprzedaży, nie osobną akcję marketingową. Jeżeli po publikacji, kampanii albo zmianie na stronie nikt nie odbiera kontaktów, nie zapisuje źródła zapytania i nie sprawdza jakości rozmów, nawet dobra taktyka będzie wyglądała przypadkowo. Dlatego najpierw ustalamy, kto odpowiada za kontakt z klientem, co zapisujemy po rozmowie i po jakim czasie oceniamy wynik."
-            },
-            {
-              "type": "paragraph",
-              "p": "Druga zasada to cierpliwość połączona z kontrolą. Nie czekamy pół roku bez danych, ale też nie wyrzucamy działania po kilku dniach. Ustalamy prosty rytm: cotygodniowy przegląd kontaktów, comiesięczne decyzje budżetowe i kwartalna ocena wpływu na sprzedaż. Wtedy marketing przestaje być kosztem „na oko”, a zaczyna być narzędziem zarządzania popytem."
-            },
-            {
-              "type": "list",
-              "list": [
-                "Zapisuj źródło każdego kontaktu.",
-                "Oddziel zapytania wartościowe od przypadkowych.",
-                "Porównuj wyniki z grafikiem pracy i realną marżą.",
-                "Poprawiaj jeden element naraz, żeby wiedzieć, co zadziałało."
-              ]
-            },
-            {
-              "type": "paragraph",
-              "p": "To jest też dobry moment, żeby porównać marketing z kalendarzem pracy firmy. Jeżeli działania przyciągają zapytania wtedy, gdy zespół nie ma mocy przerobowych, trzeba zmienić tempo lub ofertę. Jeżeli zapytania pojawiają się poza sezonem, warto zbudować listę oczekujących albo prosty follow-up. Marketing ma wspierać operacje, a nie dokładać chaos."
+              "p": "Po rolce o drganiu kierownicy wejdź na profil tak, jak zrobiłby to kierowca. Czy znajdziesz miasto, zakres diagnostyki i sposób umówienia wizyty? Przez tydzień zapisuj pytania, które wracają w wiadomościach. Najczęściej powtarzające się wyjaśnij w przypiętym materiale.",
+              "link": {
+                "href": "/marketing-dla-warsztatu-samochodowego/",
+                "label": "Prowadzenie marketingu warsztatu"
+              }
             }
           ],
           "titleIt": "co publikować, żeby ludzie dzwonili.",
@@ -3244,28 +3198,19 @@ const COPY = {
             },
             {
               "type": "heading",
-              "h": "Najważniejsza zasada na koniec"
+              "h": "Odbierz stronę jak klient z usterką"
             },
             {
               "type": "paragraph",
-              "p": "W praktyce temat „Strona internetowa dla serwisu samochodowego co musi mieć w 2026.” warto traktować jak część systemu sprzedaży, nie osobną akcję marketingową. Jeżeli po publikacji, kampanii albo zmianie na stronie nikt nie odbiera kontaktów, nie zapisuje źródła zapytania i nie sprawdza jakości rozmów, nawet dobra taktyka będzie wyglądała przypadkowo. Dlatego najpierw ustalamy, kto odpowiada za kontakt z klientem, co zapisujemy po rozmowie i po jakim czasie oceniamy wynik."
+              "p": "Daj telefon osobie, która nie zna warsztatu. Poproś ją o znalezienie usługi wymiany hamulców, połączenie z recepcją i wskazanie wjazdu. Obserwuj, przy którym zadaniu się zatrzyma. Taka próba szybko pokazuje, czy projekt działa również poza ekranem projektanta."
             },
             {
               "type": "paragraph",
-              "p": "Druga zasada to cierpliwość połączona z kontrolą. Nie czekamy pół roku bez danych, ale też nie wyrzucamy działania po kilku dniach. Ustalamy prosty rytm: cotygodniowy przegląd kontaktów, comiesięczne decyzje budżetowe i kwartalna ocena wpływu na sprzedaż. Wtedy marketing przestaje być kosztem „na oko”, a zaczyna być narzędziem zarządzania popytem."
-            },
-            {
-              "type": "list",
-              "list": [
-                "Zapisuj źródło każdego kontaktu.",
-                "Oddziel zapytania wartościowe od przypadkowych.",
-                "Porównuj wyniki z grafikiem pracy i realną marżą.",
-                "Poprawiaj jeden element naraz, żeby wiedzieć, co zadziałało."
-              ]
-            },
-            {
-              "type": "paragraph",
-              "p": "To jest też dobry moment, żeby porównać marketing z kalendarzem pracy firmy. Jeżeli działania przyciągają zapytania wtedy, gdy zespół nie ma mocy przerobowych, trzeba zmienić tempo lub ofertę. Jeżeli zapytania pojawiają się poza sezonem, warto zbudować listę oczekujących albo prosty follow-up. Marketing ma wspierać operacje, a nie dokładać chaos."
+              "p": "Dla GT Serwis opracowaliśmy stronę warsztatu i materiały, które pokazują jego usługi.",
+              "link": {
+                "href": "/realizacje/gt-serwis-barniewice/",
+                "label": "Zobacz stronę i materiały dla GT Serwis"
+              }
             }
           ],
           "titleIt": "co musi mieć w 2026.",
@@ -3395,28 +3340,15 @@ const COPY = {
             },
             {
               "type": "heading",
-              "h": "Najważniejsza zasada na koniec"
+              "h": "Przetestuj prośbę o opinię przy odbiorze auta"
             },
             {
               "type": "paragraph",
-              "p": "W praktyce temat „Jak pozyskać więcej recenzji Google 7 technik dla automotive.” warto traktować jak część systemu sprzedaży, nie osobną akcję marketingową. Jeżeli po publikacji, kampanii albo zmianie na stronie nikt nie odbiera kontaktów, nie zapisuje źródła zapytania i nie sprawdza jakości rozmów, nawet dobra taktyka będzie wyglądała przypadkowo. Dlatego najpierw ustalamy, kto odpowiada za kontakt z klientem, co zapisujemy po rozmowie i po jakim czasie oceniamy wynik."
-            },
-            {
-              "type": "paragraph",
-              "p": "Druga zasada to cierpliwość połączona z kontrolą. Nie czekamy pół roku bez danych, ale też nie wyrzucamy działania po kilku dniach. Ustalamy prosty rytm: cotygodniowy przegląd kontaktów, comiesięczne decyzje budżetowe i kwartalna ocena wpływu na sprzedaż. Wtedy marketing przestaje być kosztem „na oko”, a zaczyna być narzędziem zarządzania popytem."
-            },
-            {
-              "type": "list",
-              "list": [
-                "Zapisuj źródło każdego kontaktu.",
-                "Oddziel zapytania wartościowe od przypadkowych.",
-                "Porównuj wyniki z grafikiem pracy i realną marżą.",
-                "Poprawiaj jeden element naraz, żeby wiedzieć, co zadziałało."
-              ]
-            },
-            {
-              "type": "paragraph",
-              "p": "To jest też dobry moment, żeby porównać marketing z kalendarzem pracy firmy. Jeżeli działania przyciągają zapytania wtedy, gdy zespół nie ma mocy przerobowych, trzeba zmienić tempo lub ofertę. Jeżeli zapytania pojawiają się poza sezonem, warto zbudować listę oczekujących albo prosty follow-up. Marketing ma wspierać operacje, a nie dokładać chaos."
+              "p": "Zeskanuj kod z recepcji na własnym telefonie i sprawdź nazwę firmy nad formularzem. Każdemu klientowi po wykonanej usłudze możesz powiedzieć: „Jeśli masz chwilę, opisz w Google swoje doświadczenie z naszą obsługą”. Klient sam wybiera treść i ocenę. Z zespołem omawiaj uwagi, które wracają w recenzjach, na przykład trudny do znalezienia wjazd.",
+              "link": {
+                "href": "/blog/google-business-profile-dla-warsztatu-checklista/",
+                "label": "Przejrzyj profil warsztatu w Google"
+              }
             }
           ],
           "titleIt": "7 technik dla automotive.",
@@ -3545,28 +3477,15 @@ const COPY = {
             },
             {
               "type": "heading",
-              "h": "Najważniejsza zasada na koniec"
+              "h": "Porównaj zapytania o ten sam samochód"
             },
             {
               "type": "paragraph",
-              "p": "W praktyce temat „Marketing dla dealera samochodowego nowe auta vs używane.” warto traktować jak część systemu sprzedaży, nie osobną akcję marketingową. Jeżeli po publikacji, kampanii albo zmianie na stronie nikt nie odbiera kontaktów, nie zapisuje źródła zapytania i nie sprawdza jakości rozmów, nawet dobra taktyka będzie wyglądała przypadkowo. Dlatego najpierw ustalamy, kto odpowiada za kontakt z klientem, co zapisujemy po rozmowie i po jakim czasie oceniamy wynik."
-            },
-            {
-              "type": "paragraph",
-              "p": "Druga zasada to cierpliwość połączona z kontrolą. Nie czekamy pół roku bez danych, ale też nie wyrzucamy działania po kilku dniach. Ustalamy prosty rytm: cotygodniowy przegląd kontaktów, comiesięczne decyzje budżetowe i kwartalna ocena wpływu na sprzedaż. Wtedy marketing przestaje być kosztem „na oko”, a zaczyna być narzędziem zarządzania popytem."
-            },
-            {
-              "type": "list",
-              "list": [
-                "Zapisuj źródło każdego kontaktu.",
-                "Oddziel zapytania wartościowe od przypadkowych.",
-                "Porównuj wyniki z grafikiem pracy i realną marżą.",
-                "Poprawiaj jeden element naraz, żeby wiedzieć, co zadziałało."
-              ]
-            },
-            {
-              "type": "paragraph",
-              "p": "To jest też dobry moment, żeby porównać marketing z kalendarzem pracy firmy. Jeżeli działania przyciągają zapytania wtedy, gdy zespół nie ma mocy przerobowych, trzeba zmienić tempo lub ofertę. Jeżeli zapytania pojawiają się poza sezonem, warto zbudować listę oczekujących albo prosty follow-up. Marketing ma wspierać operacje, a nie dokładać chaos."
+              "p": "Przy aucie używanym zapisz w CRM numer ogłoszenia, pytania o historię i umówione oględziny. Przy nowym modelu śledź osobno prośby o konfigurację, ofertę finansowania i jazdę próbną. Po miesiącu sprawdź, na którym z tych etapów kontakt się urywa. Wtedy wiadomo, który opis lub formularz wymaga poprawy.",
+              "link": {
+                "href": "/marketing-dla-dealera-samochodowego/",
+                "label": "Marketing dla dealera samochodowego"
+              }
             }
           ],
           "titleIt": "nowe auta vs używane.",
@@ -3594,7 +3513,7 @@ const COPY = {
             },
             {
               "type": "paragraph",
-              "p": "Przykładowy warsztat chciał promować serwis klimatyzacji i diagnostykę przed sezonem letnim. Nie reklamowaliśmy całej firmy, bo ogólna komunikacja rozmywa budżet. Wybraliśmy promień dojazdu, trzy główne komunikaty i prosty formularz kontaktowy. Celem nie były lajki, tylko telefony i leady od osób, które miały realną potrzebę w ciągu najbliższych tygodni."
+              "p": "Warsztat chciał promować serwis klimatyzacji i diagnostykę przed sezonem letnim. W kampanii KTB Media wybraliśmy obszar, z którego klienci mogli dojechać do serwisu, trzy główne komunikaty i prosty formularz kontaktowy. Zależało nam na rozmowach z kierowcami, którzy potrzebowali usługi w ciągu najbliższych tygodni."
             },
             {
               "type": "paragraph",
@@ -3620,8 +3539,8 @@ const COPY = {
             },
             {
               "type": "figure",
-              "image": "/assets/case-rmdc-1.jpg",
-              "caption": "Kontekst pracy strategicznej KTB Media"
+              "image": "/assets/blog-wideo-klient-mechanik.jpg",
+              "caption": "Zdjęcie ilustracyjne do materiału o reklamie warsztatu."
             },
             {
               "type": "heading",
@@ -3695,31 +3614,18 @@ const COPY = {
             },
             {
               "type": "heading",
-              "h": "Najważniejsza zasada na koniec"
+              "h": "Policz, ile kosztuje rozmowa o usłudze"
             },
             {
               "type": "paragraph",
-              "p": "W praktyce temat „Kampania Meta Ads dla warsztatu case study z budżetem.” warto traktować jak część systemu sprzedaży, nie osobną akcję marketingową. Jeżeli po publikacji, kampanii albo zmianie na stronie nikt nie odbiera kontaktów, nie zapisuje źródła zapytania i nie sprawdza jakości rozmów, nawet dobra taktyka będzie wyglądała przypadkowo. Dlatego najpierw ustalamy, kto odpowiada za kontakt z klientem, co zapisujemy po rozmowie i po jakim czasie oceniamy wynik."
-            },
-            {
-              "type": "paragraph",
-              "p": "Druga zasada to cierpliwość połączona z kontrolą. Nie czekamy pół roku bez danych, ale też nie wyrzucamy działania po kilku dniach. Ustalamy prosty rytm: cotygodniowy przegląd kontaktów, comiesięczne decyzje budżetowe i kwartalna ocena wpływu na sprzedaż. Wtedy marketing przestaje być kosztem „na oko”, a zaczyna być narzędziem zarządzania popytem."
-            },
-            {
-              "type": "list",
-              "list": [
-                "Zapisuj źródło każdego kontaktu.",
-                "Oddziel zapytania wartościowe od przypadkowych.",
-                "Porównuj wyniki z grafikiem pracy i realną marżą.",
-                "Poprawiaj jeden element naraz, żeby wiedzieć, co zadziałało."
-              ]
-            },
-            {
-              "type": "paragraph",
-              "p": "To jest też dobry moment, żeby porównać marketing z kalendarzem pracy firmy. Jeżeli działania przyciągają zapytania wtedy, gdy zespół nie ma mocy przerobowych, trzeba zmienić tempo lub ofertę. Jeżeli zapytania pojawiają się poza sezonem, warto zbudować listę oczekujących albo prosty follow-up. Marketing ma wspierać operacje, a nie dokładać chaos."
+              "p": "W tej kampanii 3600 zł wydatków na emisję podzielone przez 94 formularze daje około 38 zł za zgłoszenie. Ten sam budżet podzielony przez 61 kontaktów zakwalifikowanych po rozmowie daje około 59 zł. Aby ocenić opłacalność kolejnej kampanii, recepcja potrzebuje jeszcze liczby wykonanych usług i ich marży.",
+              "link": {
+                "href": "/marketing-dla-warsztatu-samochodowego/",
+                "label": "Kampanie dla warsztatów samochodowych"
+              }
             }
           ],
-          "titleIt": "case study z budżetem.",
+          "titleIt": "94 zgłoszenia w osiem tygodni",
           "keywords": [
             "Meta Ads warsztat case study",
             "Facebook Ads warsztat",
@@ -3731,10 +3637,12 @@ const COPY = {
           "date": "Wrz 2025",
           "isoDate": "2025-09-17",
           "cat": "Meta Ads",
-          "title1": "Kampania Meta Ads dla warsztatu",
-          "lede": "Meta Ads dla warsztatu może działać, jeśli nie udaje wyszukiwarki. W tym case study pokazujemy układ kampanii, który sprzedawał sezonową usługę i budował bazę remarketingową.",
+          "title1": "Meta Ads dla warsztatu",
+          "lede": "KTB Media prowadziło ośmiotygodniową kampanię dla warsztatu, którego nazwy nie publikujemy. Budżet mediowy wyniósł 3600 zł. Z 94 formularzy warsztat zakwalifikował 61 kontaktów po rozmowie.",
           "image": "/assets/blog-meta-ads-warsztat-case.jpg",
-          "description": "Case study kampanii Meta Ads dla warsztatu: założenia, budżet, kreacje, formularze, koszt leada i wnioski po 8 tygodniach."
+          "description": "KTB Media prowadziło ośmiotygodniową kampanię dla warsztatu, którego nazwy nie publikujemy. Budżet mediowy wyniósł 3600 zł. Z 94 formularzy warsztat zakwalifikował 61 kontaktów po rozmowie.",
+          "seoTitle": "Meta Ads dla warsztatu. 94 zgłoszenia za 3600 zł",
+          "seoDescription": "KTB Media prowadziło ośmiotygodniową kampanię dla warsztatu, którego nazwy nie publikujemy. Budżet mediowy wyniósł 3600 zł. Z 94 formularzy warsztat zakwalifikował 61 kontaktów po rozmowie."
         },
         {
           "body": [
@@ -3846,24 +3754,15 @@ const COPY = {
             },
             {
               "type": "heading",
-              "h": "Najważniejsza zasada na koniec"
+              "h": "Wybierz podstronę dla konkretnego miasta"
             },
             {
               "type": "paragraph",
-              "p": "W praktyce temat „Pozycjonowanie firmy motoryzacyjnej w Trójmieście co robi różnicę.” warto traktować jak część systemu sprzedaży, nie osobną akcję marketingową. Jeżeli po publikacji, kampanii albo zmianie na stronie nikt nie odbiera kontaktów, nie zapisuje źródła zapytania i nie sprawdza jakości rozmów, nawet dobra taktyka będzie wyglądała przypadkowo. Dlatego najpierw ustalamy, kto odpowiada za kontakt z klientem, co zapisujemy po rozmowie i po jakim czasie oceniamy wynik."
-            },
-            {
-              "type": "paragraph",
-              "p": "Druga zasada to cierpliwość połączona z kontrolą. Nie czekamy pół roku bez danych, ale też nie wyrzucamy działania po kilku dniach. Ustalamy prosty rytm: cotygodniowy przegląd kontaktów, comiesięczne decyzje budżetowe i kwartalna ocena wpływu na sprzedaż. Wtedy marketing przestaje być kosztem „na oko”, a zaczyna być narzędziem zarządzania popytem."
-            },
-            {
-              "type": "list",
-              "list": [
-                "Zapisuj źródło każdego kontaktu.",
-                "Oddziel zapytania wartościowe od przypadkowych.",
-                "Porównuj wyniki z grafikiem pracy i realną marżą.",
-                "Poprawiaj jeden element naraz, żeby wiedzieć, co zadziałało."
-              ]
+              "p": "W Search Console sprawdź, który adres pojawia się na zapytania o Twoją usługę w danym mieście. Na tej stronie pokaż obszar dojazdu, zakres usług i jeden projekt, który możesz udokumentować w okolicy. Jeśli dwie podstrony odpowiadają na to samo pytanie, najpierw ustal, dokąd powinien trafić kierowca.",
+              "link": {
+                "href": "/agencja-marketingowa-gdansk/",
+                "label": "Marketing dla firm z Gdańska"
+              }
             }
           ],
           "titleIt": "co robi różnicę.",
@@ -4631,6 +4530,12 @@ const COPY = {
             "GT Serwis Barniewice — zaplecze warsztatu samochodowego",
             "Archiwalne kreacje GT Serwis pokazujące usługi i wiedzę techniczną",
             "Publiczny widok strony GT Serwis Barniewice wykonanej przez KTB Media"
+          ],
+          "relatedLinks": [
+            {
+              "label": "Marketing dla warsztatu samochodowego",
+              "href": "/marketing-dla-warsztatu-samochodowego/"
+            }
           ]
         },
         {
@@ -4725,6 +4630,16 @@ const COPY = {
             "Praca przy samochodzie w Auto Serwis Wiktorowicz",
             "Wybrane materiały Wiktorowicz Auto Serwis o naprawach i eksploatacji samochodu",
             "Konserwacja podwozia i detal silnika w Auto Serwis Wiktorowicz"
+          ],
+          "relatedLinks": [
+            {
+              "label": "Marketing dla firm z Elbląga",
+              "href": "/agencja-marketingowa-elblag/"
+            },
+            {
+              "label": "Marketing dla warsztatu samochodowego",
+              "href": "/marketing-dla-warsztatu-samochodowego/"
+            }
           ]
         },
         {
@@ -6428,6 +6343,7 @@ const COPY = {
       },
       "agencja-marketingowa-elblag": {
         "cases": [
+          "wiktorowicz",
           "rmdc",
           "ddp-supply"
         ],
@@ -6518,6 +6434,8 @@ const COPY = {
       "marketing-dla-warsztatu-samochodowego": {
         "cases": [
           "autocentrum-elektronowa",
+          "gt-serwis-barniewice",
+          "wiktorowicz",
           "tomex-brakes"
         ],
         "why": [
@@ -6733,7 +6651,7 @@ const COPY = {
         "area": "Gdańsk",
         "context": [
           "W Gdańsku konkurencja o uwagę klienta jest nierówna: innej komunikacji potrzebuje firma usługowa z Wrzeszcza, innej sklep techniczny obsługujący port, a jeszcze innej serwis motoryzacyjny z południa miasta. Dlatego nie zaczynamy od pakietu usług, tylko od sprawdzenia, skąd realnie mogą przyjść zapytania: Google Maps, wyniki lokalne, kampanie płatne, rekomendacje albo treści pokazujące proces pracy.",
-          "Dobra agencja marketingowa Gdańsk nie powinna obiecywać wszystkiego naraz. Ustalamy priorytet na pierwsze 90 dni, porządkujemy stronę i analitykę, wzmacniamy wizytówkę Google Business Profile, a dopiero potem dokładamy reklamy lub content. Dzięki temu właściciel widzi, które działania budują kontakt telefoniczny, formularz, zapytanie ofertowe i sprzedaż."
+          "Na pierwsze 90 dni wybieramy konkretny cel, na przykład więcej umówionych wizyt w serwisie albo więcej zapytań od firm z danej branży. Sprawdzamy, jak klient trafia na stronę, co widzi przed kontaktem i które zapytania kończą się rozmową handlową. Ten wynik podpowiada, gdzie skierować kolejny budżet."
         ],
         "faq": [
           {
@@ -6761,13 +6679,13 @@ const COPY = {
             "a": "Tak. Audyt jest dobrym początkiem, jeśli nie wiesz, czy problemem jest strona, reklamy, oferta, analityka czy widoczność w Google Maps."
           }
         ],
-        "title": "Agencja marketingowa Gdańsk · KTB Media",
+        "title": "Agencja marketingowa dla firm z Gdańska – automotive i B2B | KTB Media",
         "type": "local",
         "hero": {
-          "h1": "Agencja marketingowa Gdańsk",
-          "lead": "Pomagamy firmom z Gdańska zdobywać klientów z Google, reklam i treści, które faktycznie tłumaczą ofertę. Pracujemy szczególnie z automotive, usługami lokalnymi i B2B technicznym."
+          "h1": "Agencja marketingowa dla firm z Gdańska",
+          "lead": "Dla Remontowa Marine Design stworzyliśmy identyfikację wizualną i przygotowaliśmy materiały po polsku i angielsku, które pokazują pracę projektantów okrętów. Warsztatom pomagamy docierać do kierowców przez Mapy Google, reklamy i filmy nagrywane na stanowiskach serwisowych."
         },
-        "description": "Agencja marketingowa Gdańsk dla firm lokalnych i automotive. Google Ads, SEO lokalne, social media, strony WWW i strategia bez pustych obietnic.",
+        "description": "Marketing dla firm z Gdańska. Zobacz, jak KTB Media prowadzi komunikację Remontowa Marine Design oraz jak wspiera warsztaty przez lokalne SEO, Google Ads i wideo.",
         "services": [
           "SEO lokalne i optymalizacja Google Business Profile",
           "Kampanie Google Ads na Gdańsk i okolice",
@@ -7263,8 +7181,14 @@ const COPY = {
     "contact": {
       "details": [
         {
-          "k": "Studio",
-          "v": "Grunwaldzka 107<br/>83-000 Pruszcz Gdański, PL"
+          "k": "Pruszcz Gdański",
+          "v": "Grunwaldzka 107<br/>83-000 Pruszcz Gdański",
+          "href": "https://www.google.com/maps/search/?api=1&query=54.24536%2C18.63240"
+        },
+        {
+          "k": "Gdańsk",
+          "v": "Jaśminowy Stok 67/52<br/>80-177 Gdańsk",
+          "href": "https://www.google.com/maps/place/KTB+media/data=!4m6!3m5!1s0x46fd754615201873:0xdffdbd7e1c4d5a54!8m2!3d54.3566657!4d18.5093462!16s%2Fg%2F11s49__w4w"
         },
         {
           "k": "Email",
@@ -7488,6 +7412,75 @@ const COPY = {
             },
             {
               "p": "Real growth at most companies we've worked with didn't come from adding another channel. It came from **cutting three things** that didn't work and reinvesting those budgets into one thing that started to. Discipline is invisible — it's about what you don't do."
+            }
+          ]
+        },
+        {
+          "slug": "marketing-b2b-w-branzy-morskiej",
+          "cat": "Maritime B2B",
+          "date": "Aug 2026",
+          "dateISO": "2026-08-15",
+          "image": "/assets/case-ddp-supply-stocznia-z-gory.webp",
+          "title1": "B2B marketing",
+          "titleIt": "in the maritime industry.",
+          "seoTitle": "B2B marketing in the maritime industry",
+          "lede": "A technical buyer needs to see what a supplier can deliver, who takes responsibility and how the work is documented. That shapes the website, the sales material and the conversations at a trade fair.",
+          "body": [
+            {
+              "type": "heading",
+              "h": "Map the buying decision"
+            },
+            {
+              "type": "paragraph",
+              "p": "Ask who starts an enquiry, who reviews technical details and who approves the order. A naval architect may want to check the scope of a previous assignment. A buyer may need to confirm capacity, delivery arrangements and the right person to contact. Build a short route to each answer."
+            },
+            {
+              "type": "heading",
+              "h": "Two ways to document maritime work"
+            },
+            {
+              "type": "paragraph",
+              "p": "Remontowa Marine Design designed vessels including ORP Kormoran. KTB Media developed the design office’s visual identity and produced Polish and English communications about its projects, team and industry events.",
+              "link": {
+                "href": "/realizacje/rmdc/",
+                "label": "See our work for Remontowa Marine Design"
+              }
+            },
+            {
+              "type": "paragraph",
+              "p": "DDP Supply needed to explain pipe preparation, prefabrication and quality control to business partners. We turned those processes into photography, a catalogue, sales presentations and LinkedIn content.",
+              "link": {
+                "href": "/realizacje/ddp-supply/",
+                "label": "Explore the DDP Supply case study"
+              }
+            },
+            {
+              "type": "heading",
+              "h": "Plan a trade fair around conversations"
+            },
+            {
+              "type": "paragraph",
+              "p": "Before the event, select the companies you want to meet and prepare one relevant project example per group. During each conversation, note the question asked and the next step agreed. After the fair, send the right drawing, project summary or technical contact with a reference to that discussion."
+            },
+            {
+              "type": "heading",
+              "h": "Publish material that a buyer can verify"
+            },
+            {
+              "type": "paragraph",
+              "p": "Use photos from the facility, identify the process shown and say which part the supplier delivered. Agree with the client which names and technical details can be published. Where a project is confidential, describe the application and scope within the agreed limits."
+            },
+            {
+              "type": "heading",
+              "h": "Follow the enquiry into sales"
+            },
+            {
+              "type": "paragraph",
+              "p": "Review which companies asked for technical information, booked a discussion or requested a quote. Use those questions to choose the next project to document. Our maritime offer covers bilingual materials, portfolio development and trade fair communications.",
+              "link": {
+                "href": "/marketing-dla-branzy-morskiej/",
+                "label": "Explore KTB Media’s maritime marketing services"
+              }
             }
           ]
         },
@@ -7744,61 +7737,158 @@ const COPY = {
         },
         {
           "slug": "google-business-profile-dla-warsztatu-checklista",
-          "cat": "SEO lokalne",
+          "cat": "Local SEO",
           "date": "Mar 2026",
-          "title1": "Google Business Profile dla warsztatu",
-          "titleIt": "checklista 30 punktów.",
+          "title1": "Google Business Profile for workshops",
+          "titleIt": "a 30-point checklist",
           "image": "/assets/blog-gbp-checklista-warsztat.jpg",
-          "lede": "Full English version coming soon. The Polish article is available on this page.",
+          "lede": "Check the details that help drivers find your entrance, choose a service and book a visit. The 30 checks below cover the listing, reviews and how to measure enquiries.",
           "body": [
             {
               "type": "paragraph",
-              "p": "Full English version coming soon."
+              "p": "Work through the checks on a phone. For each issue, note the correction and who will make it."
+            },
+            {
+              "type": "heading",
+              "h": "Business details and directions"
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "list": [
+                "Match the business name to the sign at the workshop.",
+                "Check that the primary category describes the workshop’s main activity.",
+                "Keep additional categories that describe work you actually carry out.",
+                "Compare the street, building number and postcode with the contact page.",
+                "Start navigation from the listing and check where it directs the driver.",
+                "Check opening hours for each day of the week.",
+                "Set special hours for upcoming holidays and planned closures.",
+                "Call from the listing and verify that the right reception desk answers.",
+                "Open the website link on a phone and check it leads to the correct workshop.",
+                "Search for the workshop’s previous name and address to identify any duplicate listing."
+              ]
+            },
+            {
+              "type": "heading",
+              "h": "Services, images and bookings"
+            },
+            {
+              "type": "list",
+              "start": 11,
+              "list": [
+                "Describe the specialisms customers ask about when booking.",
+                "Compare the services shown with the work the desk can currently book.",
+                "Explain what each main diagnostic or repair service includes.",
+                "Remove or update services that are no longer available.",
+                "Check that the current street photo shows the sign and the entrance.",
+                "Add a photo of the bay where the main service is carried out.",
+                "Check new pictures for visible customer details before publishing.",
+                "Show the team or its work using an image you have permission to publish.",
+                "Follow the booking link through to an available appointment or a call to reception.",
+                "Review dates on seasonal offers and updates shown in the listing."
+              ]
+            },
+            {
+              "type": "heading",
+              "h": "Reviews, ownership and measurement"
+            },
+            {
+              "type": "list",
+              "start": 21,
+              "list": [
+                "Test the review QR code or link on a phone and verify the business name.",
+                "Agree on a neutral invitation to share an honest review after any visit.",
+                "Remove incentives, suggested star ratings and prewritten reviews from invitations.",
+                "Check public replies for driver details and private job information.",
+                "Assign someone to answer questions about hours, directions and services.",
+                "Confirm who owns the listing and who can make an urgent update.",
+                "Tag the website link with a UTM parameter and check that redirects preserve it.",
+                "Record call clicks, direction requests and website clicks for a defined period.",
+                "Ask reception which enquiries from Maps resulted in a booking.",
+                "Set a review date and assign each correction to one person."
+              ]
+            },
+            {
+              "type": "heading",
+              "h": "Test the route from search to the workshop door"
+            },
+            {
+              "type": "paragraph",
+              "p": "Ask someone who has never visited to find the workshop on Maps, pick a service and identify the entrance. Start by fixing the first step where they need help."
             }
-          ]
+          ],
+          "dateISO": "2026-03-25"
         },
         {
           "slug": "meta-ads-vs-google-ads-dla-serwisu-lokalnego",
           "cat": "Performance",
           "date": "Mar 2026",
-          "title1": "Meta Ads vs Google Ads",
-          "titleIt": "dla serwisu lokalnego.",
+          "title1": "Meta Ads or Google Ads",
+          "titleIt": "for a local repair shop?",
           "image": "/assets/blog-meta-vs-google-serwis.jpg",
-          "lede": "Full English version coming soon. The Polish article is available on this page.",
+          "lede": "Google Search reaches drivers already looking for a repair. A short Meta video can help someone recognise a symptom or remember a seasonal service before they search for it.",
           "body": [
             {
+              "type": "heading",
+              "h": "Compare booked visits"
+            },
+            {
               "type": "paragraph",
-              "p": "Full English version coming soon."
+              "p": "Choose one service and use the same outcome for both channels. Record where each enquiry came from and whether the caller booked a visit. Divide the spend on each channel by its bookings.",
+              "link": {
+                "href": "/marketing-dla-serwisu-samochodowego/",
+                "label": "Marketing for service centres"
+              }
             }
           ]
         },
         {
           "slug": "seo-lokalne-dla-warsztatu-top-3-google-maps",
-          "cat": "SEO lokalne",
+          "cat": "Local SEO",
           "date": "Lut 2026",
-          "title1": "SEO lokalne dla warsztatu",
-          "titleIt": "jak wejść w top 3 Google Maps.",
+          "title1": "Local SEO for repair shops",
+          "titleIt": "and visibility in Google Maps",
           "image": "/assets/blog-seo-lokalne-warsztat.jpg",
-          "lede": "Full English version coming soon. The Polish article is available on this page.",
+          "lede": "Map results vary with the service searched for and the driver’s location. An accurate business profile, a clear service page and genuine reviews help people decide whom to call.",
           "body": [
             {
+              "type": "heading",
+              "h": "Check more than one location"
+            },
+            {
               "type": "paragraph",
-              "p": "Full English version coming soon."
+              "p": "Pick one service and several points within your driving catchment. Record how the workshop appears for the same search at each point, repeat the check a month later and compare it with calls about that service.",
+              "link": {
+                "href": "/blog/google-business-profile-dla-warsztatu-checklista/",
+                "label": "Check 30 elements of a workshop profile"
+              }
             }
           ]
         },
         {
           "slug": "jak-nagrac-wideo-z-klientem-mechanikiem",
-          "cat": "Wideo",
+          "cat": "Video",
           "date": "Sty 2026",
-          "title1": "Jak nagrać wideo z klientem-mechanikiem",
-          "titleIt": "5 lekcji z produkcji.",
+          "title1": "Filming a mechanic",
+          "titleIt": "on the workshop floor",
           "image": "/assets/blog-wideo-klient-mechanik.jpg",
-          "lede": "Full English version coming soon. The Polish article is available on this page.",
+          "lede": "Choose a customer question the mechanic regularly hears. Plan footage of the symptom, the hands doing the work and a short explanation in the mechanic’s own words.",
           "body": [
             {
+              "type": "heading",
+              "h": "Edit for the driver"
+            },
+            {
               "type": "paragraph",
-              "p": "Full English version coming soon."
+              "p": "Play the first edit to a service adviser."
+            },
+            {
+              "type": "paragraph",
+              "p": "Can they explain to a driver what happened and what to do next? At Wiktorowicz Auto Serwis we filmed real workshop activity and prepared videos for regular publication.",
+              "link": {
+                "href": "/realizacje/wiktorowicz/",
+                "label": "See the Wiktorowicz workshop project"
+              }
             }
           ]
         },
@@ -7806,14 +7896,22 @@ const COPY = {
           "slug": "kiedy-rebrandowac-warsztat",
           "cat": "Branding",
           "date": "Gru 2025",
-          "title1": "Kiedy rebrandować warsztat",
-          "titleIt": "a kiedy zostawić w spokoju.",
+          "title1": "When to rebrand",
+          "titleIt": "a repair workshop",
           "image": "/assets/blog-rebrand-warsztat.jpg",
-          "lede": "Full English version coming soon. The Polish article is available on this page.",
+          "lede": "A new brand can help customers recognise a changed service offer or a new stage in the business. Start by checking what regular customers already recognise and where the current identity causes confusion.",
           "body": [
             {
+              "type": "heading",
+              "h": "Follow a regular customer’s route"
+            },
+            {
               "type": "paragraph",
-              "p": "Full English version coming soon."
+              "p": "Search the old name, check a saved phone number and drive from the main road to the workshop gate. List the places where someone needs to see that the business has changed its name.",
+              "link": {
+                "href": "/marketing-dla-warsztatu-samochodowego/",
+                "label": "Marketing for repair workshops"
+              }
             }
           ]
         },
@@ -7821,14 +7919,22 @@ const COPY = {
           "slug": "instagram-dla-warsztatu-samochodowego",
           "cat": "Social media",
           "date": "Gru 2025",
-          "title1": "Instagram dla warsztatu samochodowego",
-          "titleIt": "co publikować, żeby ludzie dzwonili.",
+          "title1": "Instagram for repair workshops",
+          "titleIt": "from a video to a booking",
           "image": "/assets/blog-instagram-warsztat.jpg",
-          "lede": "Full English version coming soon. The Polish article is available on this page.",
+          "lede": "Show a real symptom, explain how you diagnose it and let the mechanic speak in everyday language. A driver who recognises the problem needs to know where to go next.",
           "body": [
             {
+              "type": "heading",
+              "h": "Test the journey from a reel"
+            },
+            {
               "type": "paragraph",
-              "p": "Full English version coming soon."
+              "p": "After watching a clip about a vibrating steering wheel, open the profile as a new customer would. Check whether the location, diagnostics offered and booking method are easy to find. Use recurring direct messages to choose the next pinned post.",
+              "link": {
+                "href": "/marketing-dla-warsztatu-samochodowego/",
+                "label": "Marketing for repair workshops"
+              }
             }
           ]
         },
@@ -7836,29 +7942,49 @@ const COPY = {
           "slug": "strona-internetowa-dla-serwisu-samochodowego-2026",
           "cat": "WWW",
           "date": "Lis 2025",
-          "title1": "Strona internetowa dla serwisu samochodowego",
-          "titleIt": "co musi mieć w 2026.",
+          "title1": "What a repair workshop website",
+          "titleIt": "should help a driver do",
           "image": "/assets/blog-strona-serwis-2026.jpg",
-          "lede": "Full English version coming soon. The Polish article is available on this page.",
+          "lede": "List the actual repairs you carry out, show the team or the premises, and make the telephone number and directions easy to use from a phone.",
           "body": [
             {
+              "type": "heading",
+              "h": "Try the site with someone new"
+            },
+            {
               "type": "paragraph",
-              "p": "Full English version coming soon."
+              "p": "Ask someone unfamiliar with the workshop to find brake repairs, call reception and identify the entrance. Watch where they pause."
+            },
+            {
+              "type": "paragraph",
+              "p": "We developed GT Serwis’s website and materials to show its services.",
+              "link": {
+                "href": "/realizacje/gt-serwis-barniewice/",
+                "label": "See the GT Serwis project"
+              }
             }
           ]
         },
         {
           "slug": "jak-pozyskac-wiecej-recenzji-google-automotive",
-          "cat": "Opinie",
+          "cat": "Reviews",
           "date": "Paź 2025",
-          "title1": "Jak pozyskać więcej recenzji Google",
-          "titleIt": "7 technik dla automotive.",
+          "title1": "Google reviews",
+          "titleIt": "for automotive businesses",
           "image": "/assets/blog-recenzje-google-automotive.jpg",
-          "lede": "Full English version coming soon. The Polish article is available on this page.",
+          "lede": "A neutral invitation after a real visit makes it easier for drivers to describe their experience. Use the same invitation regardless of how they might rate the work.",
           "body": [
             {
+              "type": "heading",
+              "h": "Check the invitation at the counter"
+            },
+            {
               "type": "paragraph",
-              "p": "Full English version coming soon."
+              "p": "Scan the QR code and verify the business name. Let customers use their own words and select their own rating. Discuss repeated observations with the team, such as directions that lead to the wrong gate.",
+              "link": {
+                "href": "/blog/google-business-profile-dla-warsztatu-checklista/",
+                "label": "Check your workshop’s Google profile"
+              }
             }
           ]
         },
@@ -7866,44 +7992,100 @@ const COPY = {
           "slug": "marketing-dla-dealera-samochodowego-nowe-uzywane",
           "cat": "Automotive",
           "date": "Paź 2025",
-          "title1": "Marketing dla dealera samochodowego",
-          "titleIt": "nowe auta vs używane.",
+          "title1": "Marketing new and used cars",
+          "titleIt": "at a dealership",
           "image": "/assets/blog-marketing-dealer-nowe-uzywane.jpg",
-          "lede": "Full English version coming soon. The Polish article is available on this page.",
+          "lede": "A new-car buyer may be comparing finance options or specifications. A used-car buyer often asks about one particular vehicle, its history and the opportunity to inspect it.",
           "body": [
             {
+              "type": "heading",
+              "h": "Separate the two sales journeys"
+            },
+            {
               "type": "paragraph",
-              "p": "Full English version coming soon."
+              "p": "For a used car, record the listing, questions about its condition and the viewing arranged. For new models, track configuration requests, finance quotes and test drives. Use the stage where people drop out to decide what to improve.",
+              "link": {
+                "href": "/marketing-dla-dealera-samochodowego/",
+                "label": "Marketing for automotive dealerships"
+              }
             }
           ]
         },
         {
           "slug": "kampania-meta-ads-dla-warsztatu-case-study-budzet",
           "cat": "Meta Ads",
-          "date": "Wrz 2025",
-          "title1": "Kampania Meta Ads dla warsztatu",
-          "titleIt": "case study z budżetem.",
+          "date": "Sep 2025",
+          "title1": "Meta Ads for a repair workshop",
+          "titleIt": "94 enquiries in eight weeks",
           "image": "/assets/blog-meta-ads-warsztat-case.jpg",
-          "lede": "Full English version coming soon. The Polish article is available on this page.",
+          "lede": "KTB Media ran this eight-week campaign for a workshop whose name we keep private. PLN 3,600 in ad spend generated 94 forms. The workshop qualified 61 enquiries after a phone call.",
           "body": [
             {
+              "type": "heading",
+              "h": "One seasonal service and a local audience"
+            },
+            {
               "type": "paragraph",
-              "p": "Full English version coming soon."
+              "p": "The workshop wanted to promote air-conditioning servicing and diagnostics before summer. We focused the ads on its driving catchment and asked for contact details in a short form. The PLN 3,600 covered media spend. Video production and campaign management were separate."
+            },
+            {
+              "type": "heading",
+              "h": "What the ads showed"
+            },
+            {
+              "type": "paragraph",
+              "p": "We filmed a mechanic explaining symptoms such as weak cooling and an unpleasant smell from the vents. People who watched at least half of a video could see the follow-up form ad. Static price graphics attracted cheaper clicks, but the workshop reached more relevant prospects through the explanatory videos."
+            },
+            {
+              "type": "figure",
+              "image": "/assets/blog-wideo-klient-mechanik.jpg",
+              "caption": "Illustrative image for this workshop advertising article."
+            },
+            {
+              "type": "heading",
+              "h": "What counted as a qualified enquiry"
+            },
+            {
+              "type": "paragraph",
+              "p": "The workshop followed up the 94 form submissions by phone and qualified 61 of them. Drivers outside the service area and enquiries without a usable phone number could not progress. The qualified total counts contacts; completed bookings were a separate stage."
+            },
+            {
+              "type": "heading",
+              "h": "Read the two costs together"
+            },
+            {
+              "type": "paragraph",
+              "p": "Dividing PLN 3,600 by 94 gives about PLN 38 per form. Dividing the same spend by 61 gives about PLN 59 per qualified contact. To judge the return on a future campaign, the reception team also needs to record which enquiries result in paid work and the margin on those jobs.",
+              "link": {
+                "href": "/marketing-dla-warsztatu-samochodowego/",
+                "label": "Marketing for repair workshops"
+              }
             }
-          ]
+          ],
+          "seoTitle": "Workshop Meta Ads campaign: 94 forms on a PLN 3,600 media budget",
+          "dateISO": "2025-09-17",
+          "seoDescription": "KTB Media ran this eight-week campaign for a workshop whose name we keep private. PLN 3,600 in ad spend generated 94 forms. The workshop qualified 61 enquiries after a phone call."
         },
         {
           "slug": "pozycjonowanie-firmy-motoryzacyjnej-w-trojmiescie",
-          "cat": "SEO lokalne",
+          "cat": "Local SEO",
           "date": "Sie 2025",
-          "title1": "Pozycjonowanie firmy motoryzacyjnej w Trójmieście",
-          "titleIt": "co robi różnicę.",
+          "title1": "Local search for automotive businesses",
+          "titleIt": "in the Tri-City area",
           "image": "/assets/blog-pozycjonowanie-automotive-trojmiasto.jpg",
-          "lede": "Full English version coming soon. The Polish article is available on this page.",
+          "lede": "A repair workshop needs to show local drivers where it operates. A manufacturer supplying distributors across Poland needs pages that explain products, applications and distribution. Start with the customer and the area you serve.",
           "body": [
             {
+              "type": "heading",
+              "h": "Choose a destination for each local enquiry"
+            },
+            {
               "type": "paragraph",
-              "p": "Full English version coming soon."
+              "p": "Use Search Console to identify the page appearing for a service in a given city. Describe the service area there and link to a project you can document locally. Where two pages overlap, decide which one offers a driver the clearest route to an appointment.",
+              "link": {
+                "href": "/agencja-marketingowa-gdansk/",
+                "label": "Marketing for Gdańsk businesses"
+              }
             }
           ]
         },
@@ -8646,6 +8828,12 @@ const COPY = {
             "GT Serwis Barniewice — car workshop facilities",
             "Archived GT Serwis creative showing services and technical knowledge",
             "Public view of the GT Serwis Barniewice website built by KTB Media"
+          ],
+          "relatedLinks": [
+            {
+              "label": "Marketing for car repair workshops",
+              "href": "/marketing-dla-warsztatu-samochodowego/"
+            }
           ]
         },
         {
@@ -8740,6 +8928,16 @@ const COPY = {
             "Work on a car at Auto Serwis Wiktorowicz",
             "Selected Wiktorowicz Auto Serwis materials about repairs and vehicle maintenance",
             "Underbody treatment and an engine detail at Auto Serwis Wiktorowicz"
+          ],
+          "relatedLinks": [
+            {
+              "label": "Marketing for businesses in Elbląg",
+              "href": "/agencja-marketingowa-elblag/"
+            },
+            {
+              "label": "Marketing for car repair workshops",
+              "href": "/marketing-dla-warsztatu-samochodowego/"
+            }
           ]
         },
         {
@@ -9814,83 +10012,79 @@ const COPY = {
           "rmdc"
         ],
         "why": [
-          "Łączymy strategię, kreację i media, więc nie rozbijasz marketingu między pięciu wykonawców.",
-          "Znamy lokalne intencje w Trójmieście: inne zapytania ma klient z Oliwy, inne z Ujeściska, inne firma obsługująca cały port.",
-          "Nie mierzymy sukcesu samymi zasięgami. Patrzymy na telefony, formularze, koszt leada i jakość zapytań.",
-          "Budujemy marketing tak, żeby właściciel rozumiał, na co idzie budżet i co z tego wynika."
+          "Our team handles strategy, creative work and media buying.",
+          "We tailor campaigns to the area a business serves, from one neighbourhood to the entire port.",
+          "We track phone calls, forms, cost per lead and the quality of enquiries.",
+          "The owner can see where the budget goes and which activity leads to sales conversations."
         ],
-        "keyword": "agencja marketingowa Gdańsk",
+        "keyword": "Marketing agency in Gdańsk",
         "keywords": [
-          "agencja marketingowa Gdańsk",
-          "marketing Gdańsk",
-          "SEO lokalne Gdańsk",
-          "Google Ads Gdańsk",
-          "Meta Ads Gdańsk",
-          "social media Gdańsk",
-          "strony internetowe Gdańsk",
-          "marketing dla firm Gdańsk"
+          "marketing agency in Gdańsk",
+          "local SEO in Gdańsk",
+          "automotive marketing",
+          "maritime B2B marketing"
         ],
         "related": [
           {
-            "label": "Marketing dla branży automotive",
+            "label": "Automotive marketing",
             "href": "/marketing-dla-motoryzacji"
           },
           {
-            "label": "Marketing dla warsztatu samochodowego",
+            "label": "Marketing for car repair workshops",
             "href": "/marketing-dla-warsztatu-samochodowego"
           },
           {
-            "label": "Marketing dla serwisu samochodowego",
+            "label": "Marketing for service centres",
             "href": "/marketing-dla-serwisu-samochodowego"
           }
         ],
         "slug": "agencja-marketingowa-gdansk",
         "area": "Gdańsk",
         "context": [
-          "W Gdańsku konkurencja o uwagę klienta jest nierówna: innej komunikacji potrzebuje firma usługowa z Wrzeszcza, innej sklep techniczny obsługujący port, a jeszcze innej serwis motoryzacyjny z południa miasta. Dlatego nie zaczynamy od pakietu usług, tylko od sprawdzenia, skąd realnie mogą przyjść zapytania: Google Maps, wyniki lokalne, kampanie płatne, rekomendacje albo treści pokazujące proces pracy.",
-          "Dobra agencja marketingowa Gdańsk nie powinna obiecywać wszystkiego naraz. Ustalamy priorytet na pierwsze 90 dni, porządkujemy stronę i analitykę, wzmacniamy wizytówkę Google Business Profile, a dopiero potem dokładamy reklamy lub content. Dzięki temu właściciel widzi, które działania budują kontakt telefoniczny, formularz, zapytanie ofertowe i sprzedaż."
+          "A driver looking for a repair in Wrzeszcz and a buyer looking for a supplier near the port need different information. We follow the path each takes to the first enquiry and check which sources bring customers to the business.",
+          "For the first 90 days, we agree on a goal such as more workshop bookings or more enquiries from a specific industry. We review the website and analytics, then choose the content and advertising that support that goal."
         ],
         "faq": [
           {
-            "q": "Ile kosztuje agencja marketingowa w Gdańsku?",
-            "a": "Sensowny start dla firmy lokalnej to zwykle od 3000 zł miesięcznie za obsługę plus budżet mediowy. Mniejszy budżet można wykorzystać punktowo, ale trudno wtedy równolegle prowadzić SEO, reklamy, content i analitykę."
+            "q": "What does agency support in Gdańsk cost?",
+            "a": "For a local company, ongoing work typically starts at PLN 3,000 per month plus media spend. A smaller budget can cover a single priority."
           },
           {
-            "q": "Czy pracujecie tylko z firmami z Gdańska?",
-            "a": "Nie. Obsługujemy firmy z całej Polski, ale dla Gdańska dobrze rozumiemy kontekst lokalny: dzielnice, konkurencję, sezonowość i zachowanie klientów w Trójmieście."
+            "q": "Do you work outside Gdańsk?",
+            "a": "Yes. We work with clients across Poland. For local campaigns we check the areas the business can actually serve."
           },
           {
-            "q": "Co jest najważniejsze w marketingu lokalnym w Gdańsku?",
-            "a": "Najczęściej: wizytówka Google, opinie, SEO lokalne, dobrze ustawione kampanie search oraz strona, która od razu mówi, co firma robi, gdzie działa i dlaczego warto zadzwonić."
+            "q": "Where should a local business start?",
+            "a": "Check the information and reviews on its Google Business Profile, then test how easily a visitor can find the right service and contact the business."
           },
           {
-            "q": "Czy Google Ads działa dla usług lokalnych?",
-            "a": "Tak, jeśli kampania jest ustawiona na realny obszar działania, ma dobrane frazy z intencją zakupu i mierzy połączenia oraz formularze, a nie tylko kliknięcia."
+            "q": "Can Google Ads work for a local service?",
+            "a": "Yes. We set the area to match the actual service area, target searches that indicate an intent to book and track calls and forms."
           },
           {
-            "q": "Jak szybko widać efekty?",
-            "a": "Pierwsze dane z kampanii płatnych widać po kilku tygodniach. SEO lokalne i treści potrzebują zwykle 3-6 miesięcy, żeby pokazać stabilny trend."
+            "q": "When can we assess results?",
+            "a": "Paid campaigns usually produce early data within a few weeks. For local SEO and content, allow three to six months to assess a trend."
           },
           {
-            "q": "Czy można zacząć od audytu?",
-            "a": "Tak. Audyt jest dobrym początkiem, jeśli nie wiesz, czy problemem jest strona, reklamy, oferta, analityka czy widoczność w Google Maps."
+            "q": "Can we start with an audit?",
+            "a": "Yes. An audit helps identify whether the first priority is the website, advertising, analytics, the offer or visibility on Maps."
           }
         ],
-        "title": "Agencja marketingowa Gdańsk · KTB Media",
+        "title": "Marketing agency for Gdańsk businesses – automotive and B2B | KTB Media",
         "type": "local",
         "hero": {
-          "h1": "Agencja marketingowa Gdańsk",
-          "lead": "Pomagamy firmom z Gdańska zdobywać klientów z Google, reklam i treści, które faktycznie tłumaczą ofertę. Pracujemy szczególnie z automotive, usługami lokalnymi i B2B technicznym."
+          "h1": "Marketing agency for Gdańsk businesses",
+          "lead": "For Remontowa Marine Design, we developed a visual identity and produced Polish and English materials showing the work of its naval architects. For automotive workshops, we help drivers find the right repairs through Google Maps, advertising and videos filmed on the workshop floor."
         },
-        "description": "Agencja marketingowa Gdańsk dla firm lokalnych i automotive. Google Ads, SEO lokalne, social media, strony WWW i strategia bez pustych obietnic.",
+        "description": "See how KTB Media developed bilingual communications for Remontowa Marine Design and helps automotive workshops reach drivers through local SEO, ads and video.",
         "services": [
-          "SEO lokalne i optymalizacja Google Business Profile",
-          "Kampanie Google Ads na Gdańsk i okolice",
-          "Meta Ads dla usług lokalnych i marek technicznych",
-          "Strony WWW i landing page zoptymalizowane pod konwersję",
-          "Content ekspercki dla firm B2B i automotive",
-          "Produkcja zdjęć i wideo w siedzibie firmy",
-          "Analityka, raportowanie i rekomendacje budżetowe"
+          "Local SEO and Google Business Profile optimisation",
+          "Google Ads for Gdańsk and nearby towns",
+          "Meta Ads for local services and technical brands",
+          "Websites and landing pages for enquiries",
+          "Technical content for automotive and B2B companies",
+          "On-site photography and video",
+          "Analytics and budget reviews"
         ],
         "key": "gdansk"
       },
@@ -10067,6 +10261,8 @@ const COPY = {
       "marketing-dla-warsztatu-samochodowego": {
         "cases": [
           "autocentrum-elektronowa",
+          "gt-serwis-barniewice",
+          "wiktorowicz",
           "tomex-brakes"
         ],
         "why": [
@@ -10705,6 +10901,70 @@ const COPY = {
             }
           ]
         }
+      },
+      "agencja-marketingowa-elblag": {
+        "cases": [
+          "wiktorowicz",
+          "rmdc",
+          "ddp-supply"
+        ],
+        "why": [
+          "We plan around the area you actually serve.",
+          "We turn specialist knowledge into clear explanations for potential customers.",
+          "We review the quality of enquiries with the sales team."
+        ],
+        "keyword": "Marketing for businesses in Elbląg",
+        "keywords": [
+          "marketing agency for Elbląg businesses",
+          "Elbląg automotive marketing",
+          "local SEO Elbląg"
+        ],
+        "related": [
+          {
+            "label": "Marketing for Gdańsk businesses",
+            "href": "/agencja-marketingowa-gdansk"
+          },
+          {
+            "label": "Marketing for Gdynia businesses",
+            "href": "/agencja-marketingowa-gdynia"
+          },
+          {
+            "label": "Automotive marketing",
+            "href": "/marketing-dla-motoryzacji"
+          }
+        ],
+        "slug": "agencja-marketingowa-elblag",
+        "area": "Elbląg",
+        "context": [
+          "For a workshop, a useful enquiry often starts with a driver who needs the service nearby. For an industrial supplier it can begin with a buyer looking for a particular process or capability. We shape the website and campaigns around those different decisions.",
+          "A shoot on the workshop floor or in the plant can produce images for service pages, posts and sales presentations. We plan where the material will be used before filming."
+        ],
+        "faq": [
+          {
+            "q": "Can you work on site in Elbląg?",
+            "a": "Yes. We can plan strategy, analytics and campaigns remotely and carry out shoots and workshops on site."
+          },
+          {
+            "q": "What do you measure?",
+            "a": "For local services, we track calls and enquiries about bookable work. For B2B, we review which enquiries progress to a sales conversation."
+          }
+        ],
+        "title": "Marketing for businesses in Elbląg | KTB Media",
+        "type": "local",
+        "hero": {
+          "h1": "Marketing for businesses in Elbląg",
+          "lead": "We work with workshops, manufacturers and technical service companies. We can film the team at work, explain a specialist offer and help customers find a business through search and advertising."
+        },
+        "description": "Local SEO, campaigns, websites and on-site content for businesses in Elbląg. See our work with Wiktorowicz Auto Serwis.",
+        "services": [
+          "Local SEO and Google Business Profiles",
+          "Google Ads and Meta Ads",
+          "B2B websites and landing pages",
+          "Technical and sales content",
+          "Brand identity",
+          "On-site photography and video"
+        ],
+        "key": "elblag"
       }
     },
     "team": {

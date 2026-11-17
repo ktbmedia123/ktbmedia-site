@@ -7,6 +7,7 @@ import { buildProcessIdeasIndex } from './process-ideas-index.mjs';
 import { buildMarineLanding } from './build-marine-landing.mjs';
 import { installPageBoot } from './page-boot.mjs';
 import { prerenderPages } from './prerender-pages.mjs';
+import routes from '../localized-routes.js';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
@@ -21,7 +22,10 @@ const isVisible = (slug, group) => config[group] !== false && entries.find(item 
 const cases = [...new Map(['pl', 'en'].flatMap(lang => (data[lang]?.portfolio?.items || []).map(item => [item.slug, { ...item, group: 'marketing' }]))).values(), ...digital];
 if (cases.some(item => !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.slug))) throw new Error('Nieprawidłowy slug realizacji');
 const hidden = cases.filter(item => !isVisible(item.slug, item.group));
-const hiddenPaths = hidden.map(item => `/realizacje/${item.group === 'marketing' ? '' : 'digital/'}${item.slug}/`);
+const hiddenPaths = hidden.flatMap(item => {
+  const pl = `/realizacje/${item.group === 'marketing' ? '' : 'digital/'}${item.slug}/`;
+  return routes.english[pl] ? [pl, routes.english[pl]] : [pl];
+});
 const hiddenLinks = [...hiddenPaths, ...hidden.map(item => item.externalUrl).filter(Boolean)];
 const isHiddenUrl = value => typeof value === 'string' && hiddenLinks.some(url => value.replace(/\/$/, '') === url.replace(/\/$/, '') || value.replace('https://ktbmedia.eu', '').replace(/\/$/, '') === url.replace(/\/$/, ''));
 const cleanSchema = value => {
@@ -53,13 +57,16 @@ function walk(dir) {
     if (html.includes('src="/app.js') && !html.includes('src="/marine-landing.js')) {
       html = html.replace(/(<script src="\/app\.js)/, '<script src="/marine-landing.js?v=20261026-marine"></script>\n  $1');
     }
+    if (html.includes('src="/app.js')) {
+      html = html.replace(/(<script src="\/(?:marine-landing|app)\.js)/, '<script defer src="/localized-routes.js?v=20261117-seo-geo"></script>\n  $1');
+    }
     html = installPageBoot(html);
     if (path.relative(dist, file) === path.join('proces', 'index.html')) {
       if (!html.includes('<!-- PROCESS_IDEAS_INDEX -->')) throw new Error('Brak miejsca na indeks pomysłów Procesu');
       html = html.replace('<!-- PROCESS_IDEAS_INDEX -->', processIndex.html);
     }
     if (!path.relative(dist, file).startsWith('admin' + path.sep) && !html.includes('/analytics.js')) {
-      html = html.replace('</head>', '  <script src="/analytics.js?v=20261025-cookies" defer></script>\n</head>');
+      html = html.replace('</head>', '  <script src="/analytics.js?v=20261117-seo-geo" defer></script>\n</head>');
     }
     html = html.replace(/<li\b[^>]*>[\s\S]*?<\/li>/gi, block => hiddenLinks.some(url => block.includes(`href="${url}"`) || block.includes(`href="${url.replace(/\/$/, '')}"`)) ? '' : block);
     html = html.replace(/<section>\s*<h2>[^<]*<\/h2>\s*<ul>\s*<\/ul>\s*<\/section>/gi, '');
@@ -72,7 +79,9 @@ const llms = path.join(dist, 'llms.txt');
 fs.writeFileSync(llms, fs.readFileSync(llms, 'utf8').split('\n').filter(line => !hiddenLinks.some(url => line.includes(url))).map(line => line.startsWith('- Proces kreatywny KTB Media:') ? `- Proces kreatywny KTB Media: https://ktbmedia.eu/proces/ — interaktywna mapa strategii, kreacji i digital. Indeks ${processIndex.count} pomysłów PL/EN, z opisami i powiązanymi realizacjami oraz artykułami, jest dostępny w statycznym HTML pod https://ktbmedia.eu/proces/#process-ideas-index.` : line).join('\n'));
 // Force a real HTTP 404 even when a legacy redirect or SPA fallback matches.
 const redirects = path.join(dist, '_redirects');
-fs.writeFileSync(redirects, hiddenPaths.flatMap(url => [`${url} /404.html 404!`, `${url.slice(0, -1)} /404.html 404!`, `${url}* /404.html 404!`]).join('\n') + '\n' + fs.readFileSync(redirects, 'utf8'));
+const languageRedirects = Object.entries(routes.english).filter(([pl]) => !hiddenPaths.includes(pl))
+  .map(([pl, en]) => `${pl} lang=en ${en} 301!`);
+fs.writeFileSync(redirects, [...hiddenPaths.flatMap(url => [`${url} /404.html 404!`, `${url.slice(0, -1)} /404.html 404!`, `${url}* /404.html 404!`]), ...languageRedirects].join('\n') + '\n' + fs.readFileSync(redirects, 'utf8'));
 execFileSync(process.execPath, [path.join(root, 'scripts/generate-sitemaps.mjs'), dist], { stdio: 'inherit' });
 console.log(`Build OK: ${cases.length - hidden.length} widocznych realizacji, ${hidden.length} ukrytych. Wynik: dist/`);
 console.log(`Proces: ${processIndex.count} pomysłów PL/EN w statycznym HTML i danych strukturalnych.`);

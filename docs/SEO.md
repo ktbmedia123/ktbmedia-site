@@ -10,6 +10,12 @@
 - Powiązane linki RMDC i DDP Supply prowadzą do marine i poradnika B2B. Pole relatedLinks jest edytowalne w CMS w PL/EN. Nie dodano nowych wyników liczbowych ani deklaracji współpracy.
 - Strona Proces pozostaje osobnym dokumentem ze statycznym indeksem 57 pomysłów PL/EN.
 
+## Angielskie adresy
+
+W `localized-routes.js` są cztery pary PL/EN. Angielskie strony to `/en/maritime-marketing/`, `/en/work/rmdc/`, `/en/work/ddp-supply/` i `/en/contact/`. Build tworzy je z angielskich treści CMS i komponentów strony. Każda ma własny canonical, angielski HTML, metadane i dane strukturalne. Obie wersje zawierają wzajemne linki `hreflang` oraz zwykły odnośnik do zmiany języka. Wariant PL jest `x-default`. Ukrycie realizacji usuwa obie wersje.
+
+Netlify przekierowuje stare adresy tych czterech stron z samym `?lang=en` na angielski dokument. Przy dodatkowych parametrach aplikacja przenosi odwiedzającego na ten sam dokument z zachowaniem parametrów kampanii i fragmentu. Pozostałe tłumaczenia korzystają z dotychczasowego parametru języka. Angielskie opisy realizacji należą do `sitemap-realizacje.xml`, a oferta i kontakt do `sitemap-pages.xml`.
+
 ## Daty w sitemapach
 
 - seo/page-history.json zapisuje fingerprint znaczącej treści i jej datę; katalog seo/ nie trafia na hosting.

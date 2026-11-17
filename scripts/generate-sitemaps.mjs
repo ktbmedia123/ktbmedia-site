@@ -39,10 +39,11 @@ if (recordChanges) {
   fs.mkdirSync(path.dirname(historyFile), {recursive: true});
   fs.writeFileSync(historyFile, JSON.stringify(Object.fromEntries(Object.entries(history).sort(([a], [b]) => a.localeCompare(b))), null, 2) + '\n');
 }
+const isCase = url => url.includes('/realizacje/') || url.includes('/en/work/');
 const groups = {
-  pages: urls.filter((url) => !url.includes('/blog/') && !url.includes('/realizacje/')),
+  pages: urls.filter((url) => !url.includes('/blog/') && !isCase(url)),
   blog: urls.filter((url) => url.includes('/blog/')),
-  realizacje: urls.filter((url) => url.includes('/realizacje/'))
+  realizacje: urls.filter(isCase)
 };
 
 const urlset = (items) => `<?xml version="1.0" encoding="UTF-8"?>
