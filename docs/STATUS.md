@@ -4,7 +4,9 @@
 - Jedenaście poradników ma odrębne podsumowania. Checklista Profilu Firmy zawiera 30 numerowanych pozycji. Właściciel potwierdził, że kampania za 3600 zł z 94 formularzami i 61 zakwalifikowanymi kontaktami była rzeczywistą kampanią KTB. Klient pozostaje anonimowy.
 - Oferta morska, RMDC, DDP Supply i kontakt mają indeksowalne dokumenty EN i wzajemne hreflang. Kontakt PL i EN podaje obie lokalizacje. Współrzędne Pruszcza potwierdzono w GUGiK i z właścicielem. Profil Firmy w Gdańsku dotyczy drugiej aktualnej lokalizacji. Uporządkowano wspólny opis firmy, podglądy udostępnień sześciu stron i zapasowy widok bez JS.
 - Walidacja lokalna obejmuje pełny build, 76 adresów, grafikę podglądów, canonical, hreflang, linki, przywracanie i ukrywanie realizacji. Playwright potwierdził działanie na komputerze i telefonie, przejścia PL/EN, zgodność z dotychczasowymi odnośnikami i treść bez JS.
+- Wdrożono przez GitHub main → Netlify, commit `2c87fea`. Na produkcji 76/76 URL zwraca HTTP 200, trzy ukryte realizacje zwracają 404, a cztery nowe pary mają wzajemne odsyłacze językowe. Testy przeglądarkowe PL/EN, mobilnego menu, historii, formularza bez wysyłki i widoku bez JS przeszły również na ktbmedia.eu. Google Search Console 17.11 o 22:17 potwierdziło w teście wersji opublikowanej, że Google ma dostęp do angielskiej oferty morskiej i może ją zindeksować. Bezpośrednio po publikacji nowy URL oczekiwał na indeksację.
 - Do oceny efektów porównać pełne 28 dni po publikacji z okresem 19.10–15.11.2026. Sprawdzić kliknięcia, CTR i pozycję oferty Gdańska dla tych samych zapytań, indeksację oferty detailingu, wyświetlenia morskich stron w raporcie generatywnej AI Google oraz stan trzech map szczegółowych. Punkt odniesienia znajduje się w audycie w czacie projektu. Wskazówki do kolejnej wspólnej publikacji z klientem znajdują się w `docs/CASE_STUDIES.md`.
+- Na 18 grudnia zaplanowano jednorazowy raport w czacie dla okresu 18 listopada – 15 grudnia 2026 r.
 
 ---
 
