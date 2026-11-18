@@ -57,7 +57,7 @@ export function installPageBoot(html) {
   if (html.includes('data-ktb-prerender="true"')) {
     html = html.replace(/<noscript>\s*<main class="seo-static"[^>]*>[\s\S]*?<\/main>\s*<\/noscript>/g, '');
   }
-  html = html.replace(/(href="\/styles\.css)(?:\?[^"']*)?"/g, '$1?v=20261117-seo-geo"');
+  html = html.replace(/(href="\/styles\.css)(?:\?[^"']*)?"/g, '$1?v=20261118-blog"');
   const head = `<style id="ktb-page-boot-style">${style}</style><script id="ktb-page-boot">(${bootPage.toString()})();</script>`;
   html = html.replace(/(<meta name="viewport"[^>]*>)/, '$1\n' + head);
   html = html.replace(/(<body\b[^>]*>)/, '$1\n' + loader);
@@ -65,7 +65,7 @@ export function installPageBoot(html) {
   // Fetch the independent files in parallel; defer preserves their execution order.
   return html.replace(/<script\b[^>]*\bsrc="([^"]+)"[^>]*>/g, (tag, src) => {
     if (!/^https:\/\/unpkg\.com\/react(?:-dom)?@|^\/(?:content|landing-configs|cms-hydrator|marine-landing|app)\.js/.test(src)) return tag;
-    tag = tag.replace(/(\/(?:app|cms-hydrator|content|marine-landing|landing-configs)\.js)(?:\?[^"']*)?/, '$1?v=20261117-seo-geo');
+    tag = tag.replace(/(\/(?:app|cms-hydrator|content|marine-landing|landing-configs)\.js)(?:\?[^"']*)?/, '$1?v=20261118-blog');
     return /\bdefer\b/.test(tag) ? tag : tag.replace('<script', '<script defer');
   });
 }

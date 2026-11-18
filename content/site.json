@@ -122,6 +122,623 @@
       "titleIt": "redakcji.",
       "items": [
         {
+          "slug": "jak-zwiekszyc-widocznosc-firmy-w-odpowiedziach-ai",
+          "cat": "SEO i GEO",
+          "date": "18 listopada 2026",
+          "dateISO": "2026-11-18",
+          "title1": "Jak trafić do odpowiedzi AI,",
+          "titleIt": "gdy klient szuka firmy takiej jak Twoja?",
+          "seoTitle": "Jak zwiększyć widoczność firmy w ChatGPT i Google AI",
+          "seoDescription": "Czy firma może być numerem 1 w ChatGPT? Zobacz, jak wybrać pytanie klienta, przygotować dowód i sprawdzić stronę w Google oraz wyszukiwarce ChatGPT.",
+          "lede": "„Chcemy być numerem 1 w ChatGPT”. Zacznij od pytania, na które warto być odpowiedzią. Dla agencji pracującej ze stoczniami może to być „Kto przygotuje angielski katalog techniczny na targi morskie?”. Takie pytanie wskazuje kupującego, potrzebę i dowód, którego będzie szukał.",
+          "image": "/assets/blog-geo-citations.webp",
+          "imageAlt": "Schemat przejścia od pytania kupującego przez udokumentowaną odpowiedź do odsyłacza źródłowego.",
+          "body": [
+            {
+              "type": "heading",
+              "h": "Czy da się zająć pierwsze miejsce w LLM?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Nie istnieje wspólna lista firm dla wszystkich modeli, krajów i pytań. Nawet ta sama osoba uzyska inną odpowiedź, gdy dopisze miasto, ograniczenie budżetu lub poprosi o źródła. GEO, czyli praca nad widocznością w odpowiedziach generatywnych, ma sens wtedy, gdy nazwiesz konkretne pytania i potrafisz sprawdzić, skąd odpowiedź wzięła informację o Twojej firmie."
+            },
+            {
+              "type": "paragraph",
+              "p": "Wzmianka, polecenie i cytowanie to trzy różne wyniki. Model może wymienić Twoją markę i podlinkować katalog branżowy. Może też zacytować Twój poradnik przy objaśnianiu kosztów, choć do realizacji usługi poleci kogoś innego. Dla wydawcy poradnika ten drugi przypadek wciąż ma wartość. Dla działu sprzedaży kluczowe będzie to, kto odezwie się z konkretnym zapytaniem."
+            },
+            {
+              "type": "heading",
+              "h": "Co klient wpisuje przed wysłaniem zapytania?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Poproś handlowca o ostatnie pytania, na które musiał odpowiedzieć przed przygotowaniem oferty. Wybierz takie, przy którym klient podejmuje decyzję o pieniądzach, terminie albo dostawcy. Zapisz je tak, jak padło. „Czy można przygotować katalog po angielsku, skoro część zdjęć jest objęta zgodą stoczni?” daje redaktorowi więcej materiału niż hasło „marketing B2B”."
+            },
+            {
+              "type": "list",
+              "list": [
+                "**Pytanie o wykonawcę** prowadzi do strony usługi z zakresem, rynkiem i przykładem podobnego zlecenia.",
+                "**Pytanie o koszty** wymaga jednostki, okresu, zakresu i informacji, co zwiększa cenę.",
+                "**Pytanie o ryzyko** najlepiej kieruje do opisu decyzji z prawdziwego projektu. Pokaż ograniczenie, osobę zatwierdzającą i przyjęte rozwiązanie."
+              ]
+            },
+            {
+              "type": "heading",
+              "h": "Co umieścić na stronie, żeby ktoś chciał się na nią powołać?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Zacznij od jednego krótkiego akapitu odpowiadającego na pytanie. Pod nim pokaż materiał, do którego masz dostęp z pierwszej ręki. Może to być fragment specyfikacji za zgodą klienta, zdjęcie z realizacji z opisem pracy albo wynik pomiaru z okresem i mianownikiem. Przy liczbach dopisz, kto je policzył i co uznał za wynik."
+            },
+            {
+              "type": "paragraph",
+              "p": "W rzeczywistej kampanii KTB Media anonimowy warsztat otrzymał 94 formularze przy budżecie mediowym 3600 zł w osiem tygodni. Po rozmowie zakwalifikował 61 kontaktów. To odpowiednio około 38 zł za formularz i 59 zł za zakwalifikowany kontakt. Taki opis pozwala czytelnikowi odtworzyć rachunek i ocenić, czy porównuje podobne kampanie. Nie mamy tu liczby wykonanych napraw.",
+              "link": {
+                "label": "Przeczytaj opis kampanii warsztatu",
+                "href": "/blog/kampania-meta-ads-dla-warsztatu-case-study-budzet/"
+              }
+            },
+            {
+              "type": "paragraph",
+              "p": "Dla biura projektowego bardziej przekonujący od statystyki reklamowej jest materiał pokazujący jego specjalizację. W naszej realizacji dla Remontowa Marine Design czytelnik może rozdzielić projektowanie jednostek przez biuro od identyfikacji wizualnej i komunikacji przygotowanych przez KTB Media. Tę samą precyzję warto zachować w podpisie zdjęcia, opisie projektu i ofercie.",
+              "link": {
+                "label": "Zobacz zakres prac dla Remontowa Marine Design",
+                "href": "/realizacje/rmdc/"
+              }
+            },
+            {
+              "type": "heading",
+              "h": "Jak sprawdzić, czy wyszukiwarka może użyć tej odpowiedzi?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Otwórz adres z oferty i sprawdź, czy odpowiedź jest czytelna jako tekst, także na telefonie. W inspekcji URL w Search Console zweryfikuj indeksację i adres kanoniczny. Google wymaga, aby strona mogła pojawić się w wyszukiwarce z fragmentem tekstu. Zwykły link z oferty do przykładu pomaga dotrzeć do materiału również klientom.",
+              "link": {
+                "label": "Wymagania Google dla AI Overviews i AI Mode",
+                "href": "https://developers.google.com/search/docs/appearance/ai-features"
+              }
+            },
+            {
+              "type": "paragraph",
+              "p": "Jeśli zależy Ci na wyszukiwarce ChatGPT, poproś opiekuna strony o sprawdzenie dostępu dla OAI-SearchBot w pliku robots.txt i w konfiguracji hostingu. OpenAI odrębnie opisuje GPTBot używany do zbierania materiałów na potrzeby trenowania modeli. Samo dopuszczenie robota umożliwia pobranie strony. O wyborze źródeł decyduje wyszukiwarka przy konkretnym pytaniu.",
+              "link": {
+                "label": "Dokumentacja robotów OpenAI",
+                "href": "https://developers.openai.com/api/docs/bots"
+              }
+            },
+            {
+              "type": "heading",
+              "h": "Którą stronę poprawić jako pierwszą?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Wybierz ofertę, którą handlowiec już dziś wysyła przed rozmową. Dopisz brakującą odpowiedź, podlinkuj dowód i poproś kogoś spoza zespołu, żeby po lekturze nazwał wykonawcę, zakres i ograniczenie. Zapisz datę zmiany. Potem sprawdzaj te same pytania i właściwe adresy źródeł. Tak można odróżnić przydatną poprawkę od pojedynczego korzystnego zrzutu ekranu.",
+              "link": {
+                "label": "Jak mierzyć wzmianki i cytowania marki w AI",
+                "href": "/blog/jak-mierzyc-cytowania-marki-w-ai/"
+              }
+            }
+          ],
+          "inlineImage": null,
+          "coverFit": "contain"
+        },
+        {
+          "slug": "ile-firm-korzysta-z-ai-usa-europa-polska",
+          "dateISO": "2026-11-18",
+          "image": "/assets/blog-ai-adoption.webp",
+          "inlineImage": "/assets/digital-ktbmatic-raport.webp",
+          "cat": "AI w biznesie",
+          "date": "18 listopada 2026",
+          "title1": "Ile firm korzysta z AI?",
+          "titleIt": "Polska, Unia Europejska i USA.",
+          "seoTitle": "Ile firm korzysta z AI w Polsce, UE i USA? Dane 2026",
+          "seoDescription": "GUS podaje 17,8% dla Polski, a Census Bureau 24,2% dla USA. Zobacz, co zmienia pytanie ankiety i jak wypadają Polska, UE i USA w jednym badaniu EBI.",
+          "seoKeywords": [
+            "ile firm korzysta z AI",
+            "sztuczna inteligencja w polskich firmach",
+            "wykorzystanie AI w USA i UE",
+            "generatywna AI w przedsiębiorstwach"
+          ],
+          "imageAlt": "Systematyczne stosowanie generatywnej AI w badaniu EBI 2026. Polska 63%, UE 67%, USA 71%. Wyniki ważone wartością dodaną.",
+          "inlineImageAlt": "Przykład zastosowania w firmie. Raport miesięczny dla klienta w aplikacji KTBmatic.",
+          "lede": "W 2026 r. GUS odnotował wykorzystanie AI w 17,8% polskich przedsiębiorstw objętych badaniem. A jak Polska wypada na tle USA i Unii? W badaniu, w którym wszystkim zadano to samo pytanie o generatywną AI, wyniki wyniosły 63% w Polsce, 67% w UE i około 70% w USA. Różnicę między tymi liczbami wyjaśnia sposób liczenia firm.",
+          "body": [
+            {
+              "type": "heading",
+              "h": "Jak wypadają Polska, UE i USA przy tym samym pytaniu?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Europejski Bank Inwestycyjny zapytał firmy, czy systematycznie używają narzędzi generatywnej AI do usprawniania pracy. Wykres na stronie 31 raportu EIBIS 2026 podaje **63% dla Polski, 67% dla UE i 71% dla USA**. Próba do porównania obejmowała 12 083 firmy w UE i 807 w USA. Raport ukazał się 9 listopada 2026 r.",
+              "link": {
+                "href": "https://www.eib.org/files/publications/20260192-091126-eib-group-investment-survey-2026-eu-overview-en.pdf#page=37",
+                "label": "Raport EBI z wykresem dla poszczególnych krajów (PDF)"
+              }
+            },
+            {
+              "type": "paragraph",
+              "p": "EBI waży wyniki według wartości dodanej. Duży producent może więc wpływać na wskaźnik silniej niż mały zakład. Dzięki wspólnemu pytaniu i metodzie można porównywać rynki. Wniosku, że 63 ze 100 losowo wybranych polskich firm używa generatywnej AI, nie da się jednak wyprowadzić z tego wykresu."
+            },
+            {
+              "type": "heading",
+              "h": "Polska. Ile przedsiębiorstw używa AI według GUS?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Według GUS **17,8%** polskich przedsiębiorstw objętych badaniem wykorzystywało technologie AI w 2026 r. Rok wcześniej było to **8,7%**, więc odsetek wzrósł o 9,1 punktu procentowego. Badanie przedsiębiorstw obejmuje podmioty o co najmniej 10 pracujących. Samozatrudniony grafik czy pięcioosobowy warsztat mogą używać AI codziennie, a pozostają poza tą statystyką.",
+              "link": {
+                "href": "https://publikacje.new.stat.gov.pl/portal-publikacje/spoleczenstwo-informacyjne-w-polsce-w-2026-r",
+                "label": "GUS — Społeczeństwo informacyjne w Polsce w 2026 r."
+              }
+            },
+            {
+              "type": "paragraph",
+              "p": "GUS podaje także, do czego służą te narzędzia. AI w marketingu i sprzedaży wykorzystywało 11,1% ogółu badanych przedsiębiorstw, a w pracach biurowych i zarządzaniu 9,6%. Jedna firma mogła wskazać oba zastosowania, więc sumowanie tych odsetków zawyżyłoby wynik."
+            },
+            {
+              "type": "heading",
+              "h": "USA. Co oznacza wynik 24,2% w badaniu Census Bureau?"
+            },
+            {
+              "type": "paragraph",
+              "p": "W amerykańskim badaniu BTOS **24,2%** to krajowy szacunek udziału pracodawców, którzy zadeklarowali używanie AI w dowolnej części działalności w ciągu dwóch tygodni. Okres odniesienia to **5–18 października 2026 r.** Ankiety zbierano od 19 października do 1 listopada, a wynik opublikowano 5 listopada. W arkuszu można go odtworzyć, wybierając kartę „Response Estimates”, okres 202622, pytanie 7 i odpowiedź „Yes”.",
+              "link": {
+                "href": "https://www.census.gov/hfp/btos/downloads/National.xlsx",
+                "label": "U.S. Census Bureau — dane krajowe BTOS (XLSX)"
+              }
+            },
+            {
+              "type": "paragraph",
+              "p": "BTOS obejmuje również pracodawców zatrudniających poniżej 10 osób i pomija gospodarstwa rolne. W tej fali urząd użył w kwestionariuszu określenia „Super Intelligence” (SI), wskazując wprost, że wcześniej używał terminu AI. Pytanie dotyczy między innymi analizy danych, przygotowania materiałów marketingowych i obsługi klientów.",
+              "link": {
+                "href": "https://www.census.gov/newsroom/press-releases/2026/btos-nov-5.html",
+                "label": "Informacja o listopadowej publikacji i zakresie badania BTOS"
+              }
+            },
+            {
+              "type": "heading",
+              "h": "Unia Europejska. Które liczby są porównywalne z Polską?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Do porównania użycia AI w Polsce i całej UE według wspólnej definicji Eurostatu służy badanie ICT za **2025 r.** Wśród przedsiębiorstw z co najmniej 10 pracującymi w objętych nim branżach co najmniej jedną z wymienionych technologii stosowało **8,4% w Polsce i 20,0% w UE**. Lista obejmuje m.in. rozpoznawanie mowy i obrazów, uczenie maszynowe, generowanie treści i automatyzację z użyciem AI. Kolejną aktualizację artykułu Eurostat zaplanował na grudzień 2026 r.",
+              "link": {
+                "href": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Use_of_artificial_intelligence_in_enterprises",
+                "label": "Eurostat — wykorzystanie AI w przedsiębiorstwach i zakres badania"
+              }
+            },
+            {
+              "type": "paragraph",
+              "p": "Dla przykładu, w danych Eurostatu za 2025 r. AI wykorzystywało 17,0% małych przedsiębiorstw w UE (10–49 pracujących) i 55,0% dużych (od 250). Właściciel firmy zatrudniającej 20 osób ma więc lepszy punkt odniesienia w pierwszej grupie. Do śledzenia zmiany rok do roku warto wybrać jedną serię, np. GUS dla Polski, i zachować ten sam zakres firm."
+            },
+            {
+              "type": "heading",
+              "h": "Jak wykorzystać te dane przy decyzji o własnym wdrożeniu?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Jeśli rozważasz pomoc AI przy ofertach, sprawdź ostatnie 20 porównywalnych zapytań. Zapisz czas potrzebny na przygotowanie odpowiedzi i policz, ile ofert wróciło do poprawy. Następnie na takiej samej próbie sprawdź wersje przygotowane ze wsparciem AI. Do czasu dolicz sprawdzenie zakresu, cen i warunków przez handlowca. Dopiero wtedy zobaczysz, ile minut na zatwierdzoną ofertę rzeczywiście odzyskujesz.",
+              "link": {
+                "href": "/blog/automatyzacja-wycen-i-ofert-w-firmie-uslugowej/",
+                "label": "Jak zorganizować wyceny i zatwierdzanie ofert w firmie usługowej"
+              }
+            }
+          ],
+          "coverFit": "contain"
+        },
+        {
+          "slug": "ranking-modeli-ai-dla-firm",
+          "image": "/assets/blog-ai-model-ranking.webp",
+          "inlineImage": "/assets/digital-ktbmatic-audyt.webp",
+          "date": "18 listopada 2026",
+          "cat": "AI w firmie",
+          "title1": "Ranking modeli AI dla firm.",
+          "titleIt": "Kiedy wybrać Astrę, Fable, Opus, Sol, Terrę lub Gemini?",
+          "seoTitle": "Ranking modeli AI dla firm w listopadzie 2026",
+          "inlineImageAlt": "Widok audytu w KTBmatic, aplikacji do pracy nad lokalną widocznością firmy",
+          "lede": "18 listopada 2026 roku Claude Fable 5.2 prowadził w Intelligence Index z wynikiem 65 punktów. Czy wybrać go do obsługi zapytań klientów? To zależy od tego, czy model ma odczytać numer katalogowy, przygotować ofertę, czy wychwycić sprzeczność w specyfikacji. Każde z tych zadań można sprawdzić przed zakupem.",
+          "body": [
+            {
+              "type": "heading",
+              "h": "Top 5 modeli AI według Artificial Analysis"
+            },
+            {
+              "type": "paragraph",
+              "p": "Porównujemy pięć najwyżej ocenionych odrębnych modeli w domyślnej tabeli Artificial Analysis, po jednej konfiguracji na model. Podajemy zaokrąglone punkty i poziom wysiłku obliczeniowego widoczne 18 listopada 2026 r. W pełnym zestawieniu kilka ustawień tego samego modelu może zajmować kolejne miejsca.",
+              "link": {
+                "label": "Tabela wyników Artificial Analysis",
+                "href": "https://artificialanalysis.ai/leaderboards/models/"
+              }
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "list": [
+                "**Claude Fable 5.2** — 65 pkt, Max z domyślnym przełączaniem na model zastępczy.",
+                "**GPT-6.2 Astra** — 62 pkt, Max.",
+                "**Gemini 4 Carbon** — 60 pkt, High.",
+                "**Claude Opus 5.5** — 59 pkt, Max z domyślnym przełączaniem na model zastępczy.",
+                "**GPT-6.2 Sol** — 57 pkt, Max."
+              ]
+            },
+            {
+              "type": "paragraph",
+              "p": "Dalej w tej samej tabeli Gemini 4 Hydrogen uzyskał 54 pkt przy ustawieniu Xhigh, a GPT-6.1 Terra 51 pkt przy ustawieniu Max. Indeks w wersji 5.0.1 łączy dziewięć testów. Po 25% wyniku przypada na pracę z informacjami i dokumentami, programowanie, naukę oraz wiedzę ogólną. Zadania są głównie tekstowe i anglojęzyczne. Jakość odpowiedzi na polską reklamację wymaga osobnej próby.",
+              "link": {
+                "label": "Jak Artificial Analysis liczy indeks",
+                "href": "https://artificialanalysis.ai/methodology/intelligence-benchmarking"
+              }
+            },
+            {
+              "type": "heading",
+              "h": "OpenAI. Czym różnią się Astra, Sol i Terra?"
+            },
+            {
+              "type": "paragraph",
+              "p": "**GPT-6.2 Astra** jest według OpenAI modelem do złożonych analiz i prac inżynierskich. Dobry test dla Astry to znalezienie rozbieżności między zapytaniem ofertowym, trzema załącznikami i arkuszem wyceny. **GPT-6.2 Sol** producent poleca do codziennej pracy, kodowania i powtarzalnych zadań wieloetapowych. Daj mu ten sam komplet danych, jeśli celem jest przygotowanie pierwszej wersji odpowiedzi według ustalonego wzoru.",
+              "link": {
+                "label": "Przewodnik doboru modeli OpenAI",
+                "href": "https://developers.openai.com/api/docs/guides/model-selection"
+              }
+            },
+            {
+              "type": "paragraph",
+              "p": "**GPT-6.1 Terra** warto sprawdzić tam, gdzie ważny szczegół widać na ekranie. Przykład z firmy handlowej to odczyt oznaczenia wariantu z karty produktu i przypisanie go do właściwego pola formularza. Wszystkie trzy modele są dostępne przez API OpenAI. Astra 6.2 i Sol 6.2 pojawiły się w nim 17 listopada 2026 r.",
+              "link": {
+                "label": "Historia wydań API OpenAI",
+                "href": "https://developers.openai.com/api/docs/changelog"
+              }
+            },
+            {
+              "type": "heading",
+              "h": "Claude Fable czy Claude Opus?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Anthropic zaleca **Claude Opus 5.5** jako punkt wyjścia do codziennego programowania i pracy z dokumentami. **Claude Fable 5.2** przeznacza do trudnych, otwartych problemów technicznych. Przy przenoszeniu starego kalkulatora wycen do aplikacji można zlecić Opusowi przygotowanie testów znanych rabatów. Fable warto dać przypadki, dla których dawny i nowy kalkulator zwracają różne kwoty, a reguły nie zostały spisane. Poproś o wskazanie reguły i przykład, na którym da się ją potwierdzić.",
+              "link": {
+                "label": "Zalecenia Anthropic dla Opus i Fable",
+                "href": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+              }
+            },
+            {
+              "type": "paragraph",
+              "p": "Fable 5.2 jest dostępny między innymi przez Claude Platform oraz w płatnych planach Claude, w tym Pro i Team. W teście integracji zapisuj nazwę użytego modelu, ustawienia i koszt wywołań. Dzięki temu po zmianie wersji będzie można odtworzyć porównanie.",
+              "link": {
+                "label": "Dostępność Claude Fable",
+                "href": "https://www.anthropic.com/claude/fable"
+              }
+            },
+            {
+              "type": "heading",
+              "h": "Do czego nadaje się Gemini 4 Hydrogen?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Google zaprojektował **Gemini 4 Hydrogen** z myślą o szybkim wykonywaniu zadań z użyciem narzędzi. W ofercie Google to Carbon i Argon są przeznaczone do dłuższych analiz. Hydrogen można wypróbować przez Gemini API lub Google AI Studio. Przykładowe zadanie dla działu sprzedaży to rozpoznanie języka zapytania, wybranie kategorii usługi i przygotowanie danych dla CRM. W bezpłatnej aplikacji Gemini system może dobrać Hydrogen automatycznie.",
+              "link": {
+                "label": "Opis i dostępność Gemini 4 Hydrogen według Google",
+                "href": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+              }
+            },
+            {
+              "type": "heading",
+              "h": "Jak wybrać model do obsługi zapytań klientów?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Weź 30 archiwalnych wiadomości po usunięciu danych osobowych. Wybierz 20 typowych zapytań i 10 wymagających dopytania albo przekazania człowiekowi. W tej drugiej grupie przydaje się e-mail z dwiema różnymi datami odbioru i taki, w którym numer detalu podano wyłącznie na niewyraźnym zdjęciu."
+            },
+            {
+              "type": "list",
+              "list": [
+                "Przed uruchomieniem testu handlowiec zapisuje poprawny numer detalu, termin i oczekiwany następny krok dla każdej wiadomości.",
+                "Każdy model dostaje tę samą instrukcję, zestaw załączników i dostęp do tych samych narzędzi. Handlowiec ocenia odpowiedzi z ukrytymi nazwami modeli.",
+                "Zapisz błędne obietnice terminu, liczbę odpowiedzi gotowych do wysłania, minuty poprawek i czas oczekiwania. Sprawdź osobno trudne przypadki.",
+                "Policz koszt jednej zaakceptowanej odpowiedzi. Dodaj koszt wywołań modelu i czas sprawdzania przeliczony na złote, a sumę podziel przez liczbę zaakceptowanych odpowiedzi."
+              ]
+            },
+            {
+              "type": "paragraph",
+              "p": "Jeśli szybszy model poprawnie obsługuje standardowe pytania, a trudne rozpoznaje i odsyła do handlowca, można zacząć od takiego podziału pracy. Drugi model warto włączyć tam, gdzie w próbie rzeczywiście rozwiązał problem. W KTBmatic raport lokalnej widoczności pokazuje przykład pracy, którą można rozłożyć na mniejsze, sprawdzalne etapy.",
+              "link": {
+                "label": "Zobacz aplikację KTBmatic",
+                "href": "/realizacje/digital/ktbmatic/"
+              }
+            }
+          ],
+          "dateISO": "2026-11-18",
+          "seoDescription": "Top 5 modeli AI według Artificial Analysis z 18 listopada 2026. Porównaj GPT Astra, Sol i Terra, Claude Fable i Opus oraz Gemini Hydrogen na przykładach z firmy.",
+          "seoKeywords": [
+            "ranking modeli AI dla firm",
+            "najlepsze modele AI listopad 2026",
+            "GPT Astra Sol Terra",
+            "Claude Fable czy Opus",
+            "Gemini 4 Hydrogen",
+            "benchmark modeli językowych"
+          ],
+          "imageAlt": "Wyniki pięciu modeli AI w Intelligence Index. Najwyższy wynik uzyskał Claude Fable 5.2 z 65 punktami.",
+          "coverFit": "contain"
+        },
+        {
+          "slug": "jak-zastapic-abonamenty-wlasnym-oprogramowaniem",
+          "cat": "Oprogramowanie dla firm",
+          "date": "18 listopada 2026",
+          "title1": "Które abonamenty warto zastąpić",
+          "titleIt": "własnym oprogramowaniem?",
+          "seoTitle": "Własne oprogramowanie zamiast abonamentów. Jak policzyć zwrot",
+          "lede": "Jeśli po wdrożeniu aplikacji nadal zapłacisz za stare licencje, projekt nie obniży tej faktury. Zobacz, jak od ostatniego odnowienia umowy dojść do konkretnej kwoty, daty zwrotu i planu wyłączenia narzędzia.",
+          "image": "/assets/digital-ktbtask-dashboard.webp",
+          "relatedCase": {
+            "href": "/realizacje/digital/ktbtask/",
+            "label": "Jak działa KTBtask",
+            "description": "Zobacz, jak w jednym systemie połączyliśmy zadania, kalendarz publikacji, CRM i raporty pracy."
+          },
+          "body": [
+            {
+              "h": "Która faktura naprawdę przestanie przychodzić?",
+              "type": "heading"
+            },
+            {
+              "p": "Weź trzy ostatnie faktury za narzędzia i daty ich odnowienia. Obok każdej pozycji zapisz właściciela procesu, liczbę aktywnych osób i funkcję, dla której wciąż trzeba utrzymać konto. W firmie usługowej raport może powstawać w osobnym narzędziu, choć wszystkie potrzebne dane są już w systemie zleceń. W takim przypadku kandydatem do zastąpienia jest raportowanie. Poczta i księgowość mogą działać po staremu.",
+              "type": "paragraph"
+            },
+            {
+              "p": "Sprawdź warunki umowy. Jeśli osiem osób przestanie korzystać z produktu, lecz do końca roku obowiązuje minimalny pakiet dwudziestu stanowisk, pierwsza oszczędność pojawi się dopiero po zmianie pakietu. Porównaj budowę także z tańszym wariantem dostępnym dziś, na przykład wyłączeniem pustych kont lub obniżeniem planu. Ta różnica trafi do kalkulacji.",
+              "type": "paragraph"
+            },
+            {
+              "h": "Przykład na 36 miesięcy. Kiedy zwraca się 52 000 zł?",
+              "type": "heading"
+            },
+            {
+              "p": "Poniżej liczymy przykładowe kwoty netto dla jednej firmy usługowej. Zespół może po okresie przejściowym wyłączyć trzy opłaty miesięczne za prowadzenie zleceń, raporty i ich synchronizację. Wynoszą odpowiednio 1800 zł, 1200 zł i 600 zł. Pozostałe narzędzia firmy kosztują tyle samo w obu wariantach. To symulacja przy stałych cenach, bez dyskontowania.",
+              "type": "paragraph"
+            },
+            {
+              "list": [
+                "**Dotychczasowe narzędzia** kosztują 3600 zł miesięcznie. Przez 36 miesięcy daje to 129 600 zł.",
+                "**Uruchomienie własnego modułu** kosztuje 52 000 zł. W przykładzie składają się na to 40 000 zł za budowę, 8000 zł za migrację i 4000 zł na szkolenie oraz okres równoległej pracy.",
+                "**Utrzymanie** pochłania 1000 zł miesięcznie na hosting, kopie, aktualizacje i wsparcie. Łączne wydatki na nowy wariant wyniosą 52 000 + 36 × 1000 = 88 000 zł.",
+                "**Różnica po 36 miesiącach** to 41 600 zł. Po wyłączeniu starych opłat co miesiąc zostaje 2600 zł. Przy tych założeniach 52 000 ÷ 2600 daje **20 miesięcy** do zwrotu od chwili wyłączenia abonamentów."
+              ],
+              "type": "list"
+            },
+            {
+              "p": "Jedna rozmowa z administratorem może zmienić decyzję. Załóżmy, że część licencji musi zostać i realnie można wyłączyć tylko 2200 zł miesięcznie. Po odjęciu utrzymania zostaje 1200 zł. Inwestycja pokryje się w 44. miesiącu, a po trzech latach firmie wciąż zabraknie 8800 zł do zwrotu. Przy takim wyniku warto najpierw sprawdzić prostą integrację.",
+              "type": "paragraph"
+            },
+            {
+              "h": "Gdzie wpisać odzyskane godziny?",
+              "type": "heading"
+            },
+            {
+              "p": "W osobnej kolumnie. Gdy zespół odzyska 16 godzin miesięcznie przy koszcie godziny 85 zł, powstaje potencjał pracy o wartości 1360 zł. Oszczędność na rachunku pojawi się dopiero wtedy, gdy zniknie rzeczywisty wydatek, np. płatne nadgodziny. Jeśli zespół przeznaczy ten czas na obsługę kolejnych zamówień, mierz dodatkową marżę na wykonanych zleceniach. W obu przypadkach unikniesz podwójnego liczenia tej samej godziny.",
+              "type": "paragraph"
+            },
+            {
+              "type": "figure",
+              "image": "/assets/digital-ktbtask-raporty.webp",
+              "caption": "Raporty w KTBtask korzystają z danych o pracy zespołu. To przykład funkcji, którą można połączyć ze zleceniami we własnej aplikacji."
+            },
+            {
+              "h": "Jak KTB prowadzi firmę od kalkulacji do wyłączenia licencji?",
+              "type": "heading"
+            },
+            {
+              "p": "Zaczynamy od prześledzenia jednego procesu na prawdziwym, zanonimizowanym zleceniu. Ustalamy, kto wpisuje dane, komu wolno je poprawiać i jaki plik lub raport musi powstać na końcu. Na tej podstawie możemy porównać koszt konfiguracji istniejącego narzędzia, integracji i budowy brakującego modułu. Pierwsza wersja ma przejąć całą wybraną czynność, łącznie z wyjątkami blokującymi codzienną pracę.",
+              "type": "paragraph"
+            },
+            {
+              "p": "Przed zakończeniem umowy eksportujemy ustalony zakres danych i testujemy odtworzenie kopii. W okresie próbnym pracownik porównuje na obu systemach gotowy dokument, jego kwotę i historię zmian. Dopiero po odbiorze warto zlecić rezygnację w terminie wynikającym z umowy. Właściciel procesu powinien znać osobę odpowiedzialną za utrzymanie oraz wiedzieć, jak pobrać dane, gdy kiedyś zmieni się dostawca.",
+              "type": "paragraph"
+            },
+            {
+              "p": "Do pierwszej rozmowy wystarczą zanonimizowany przykład raportu, faktury z kwotami i terminy wypowiedzenia umów. Na tej podstawie wspólnie wskażemy pozycję, którą projekt miałby usunąć z budżetu.",
+              "link": {
+                "href": "/kontakt/",
+                "label": "Porozmawiaj z KTB o własnej aplikacji"
+              },
+              "type": "paragraph"
+            }
+          ],
+          "dateISO": "2026-11-18",
+          "seoDescription": "Jak sprawdzić, które abonamenty SaaS można wyłączyć? Rachunek kosztów na 36 miesięcy, próg zwrotu i plan migracji na przykładzie firmy usługowej.",
+          "seoKeywords": [
+            "własne oprogramowanie dla firmy",
+            "koszt abonamentów SaaS",
+            "zwrot z inwestycji w aplikację"
+          ],
+          "imageAlt": "Widok zadań i projektów zespołu w aplikacji KTBtask.",
+          "coverFit": "contain"
+        },
+        {
+          "slug": "automatyzacja-wycen-i-ofert-w-firmie-uslugowej",
+          "cat": "Automatyzacja",
+          "date": "18 listopada 2026",
+          "title1": "Jak zautomatyzować wyceny",
+          "titleIt": "w firmie usługowej?",
+          "seoTitle": "Automatyzacja wycen i ofert w firmie usługowej",
+          "lede": "Automatyzację wycen zacznij od usługi, dla której zespół potrafi odtworzyć cenę z kilku danych. System może policzyć pozycje i zapisać akceptację. Doradca nadal odpowiada za zakres prac, rabaty i wyjątki.",
+          "image": "/assets/digital-serwisplus-wycena.webp",
+          "relatedCase": {
+            "href": "/realizacje/digital/serwisplus/",
+            "label": "Serwis+ od strony warsztatu i klienta",
+            "description": "Zobacz proces od zlecenia i powiadomienia po akceptację wyceny oraz podgląd statusu naprawy."
+          },
+          "body": [
+            {
+              "h": "Zanim powstanie formularz, odtwórz jedną sporną ofertę",
+              "type": "heading"
+            },
+            {
+              "p": "Wybierz zakończone zlecenie, przy którym klient pytał o cenę inną niż na fakturze. Spróbuj odnaleźć treść jego zapytania, wersję cennika, dopisane prace i zgodę na podwyżkę. Brakujący element podpowie, co warto zapisywać w aplikacji. Firma, która gubi zgodę w wątku mailowym, zyska więcej na numerowaniu wersji niż na kolejnym eleganckim szablonie PDF.",
+              "type": "paragraph"
+            },
+            {
+              "p": "Dobrym kandydatem na pilotaż jest jeden powtarzalny rodzaj usługi. Przykładowo firma serwisująca urządzenia może zacząć od przeglądów jednego typu maszyny w pracowni. Wyjazdy z trudnym dojazdem albo naprawy wymagające rozebrania urządzenia zostawia do indywidualnej wyceny. Zespół będzie wtedy wiedział, które zapytania aplikacja ma doprowadzić do końca.",
+              "type": "paragraph"
+            },
+            {
+              "h": "Jak wygląda ścieżka od zapytania do decyzji klienta?",
+              "type": "heading"
+            },
+            {
+              "list": [
+                "**Przyjęcie zapytania.** Doradca zapisuje model urządzenia, zakres, liczbę sztuk i miejsce wykonania. Brak modelu kieruje sprawę do uzupełnienia. System pokazuje dokładnie, czego brakuje.",
+                "**Kalkulacja.** Aplikacja pobiera obowiązującą stawkę, szacowaną liczbę godzin i cenę części. Zapisuje ich wartości razem z ofertą, żeby kolejna zmiana cennika nie przeliczyła już wysłanego dokumentu.",
+                "**Kontrola wyjątków.** Doradca sprawdza zakres i wyłączenia. Cenę części bez aktualnego potwierdzenia, niestandardowy dojazd lub rabat poza jego uprawnieniem przekazuje do decyzji osoby odpowiedzialnej.",
+                "**Wysyłka.** Klient otrzymuje zakres, cenę, informację o podatku, wyłączenia, termin ważności i link do decyzji. Może też poprosić o korektę. Zespół widzi wtedy otwarte pytanie przy tej samej sprawie.",
+                "**Akceptacja i zlecenie.** Aplikacja zapisuje osobę, datę i numer zaakceptowanej wersji oraz przenosi jej pozycje do zlecenia. Ponowne kliknięcie w ten sam link ma prowadzić do potwierdzenia tej decyzji bez tworzenia drugiego zlecenia."
+              ],
+              "type": "list"
+            },
+            {
+              "h": "Co się dzieje, gdy cena zmieni się po wysłaniu?",
+              "type": "heading"
+            },
+            {
+              "p": "Przykład B2B w kwotach netto. Dwie i pół godziny pracy po 190 zł oraz zestaw części za 420 zł dają 895 zł. Po oględzinach okazuje się, że praca potrwa trzy godziny. Nowa wycena wynosi 990 zł. Doradca opisuje przyczynę różnicy 95 zł i wysyła drugą wersję do akceptacji. Klient widzi obie kwoty oraz zmienioną pozycję.",
+              "type": "paragraph"
+            },
+            {
+              "p": "Jeśli klient wróci do starego linku, zobaczy poprzednią wersję z informacją, że zastąpiła ją nowsza. Gdy dodatkowa praca wychodzi już po akceptacji, zespół zachowuje pierwotną zgodę i prosi o osobną decyzję w sprawie dopłaty. Ten przypadek warto sprawdzić w pilotażu razem z ofertą, która straciła ważność.",
+              "type": "paragraph"
+            },
+            {
+              "type": "figure",
+              "image": "/assets/digital-serwisplus-panel.webp",
+              "caption": "Panel Serwis+ łączy zlecenia warsztatowe z komunikacją z klientem. Akceptacja wyceny jest częścią ścieżki naprawy."
+            },
+            {
+              "h": "Jak sprawdzić, czy zespół odzyskał czas?",
+              "type": "heading"
+            },
+            {
+              "p": "Przed pilotażem wybierz jedną kategorię, osobę odpowiedzialną i okres obserwacji. Przykładowy test obejmuje ostatnie 30 zapytań tej kategorii obsłużonych ręcznie i kolejne 30 po uruchomieniu modułu. Zapisz też sprawy z brakami i porównaj ich udział. Inaczej szybszy wynik może wynikać po prostu z łatwiejszych zleceń.",
+              "type": "paragraph"
+            },
+            {
+              "list": [
+                "**Minuty pracy na wysłaną ofertę.** Mierz czas aktywnej pracy i podaj medianę oraz liczbę ofert. Osobno zapisz czas kalendarzowy, który obejmuje czekanie na odpowiedź lub cenę części.",
+                "**Korekty z winy procesu.** Policz oferty wymagające ponownej wysyłki po błędzie stawki, ilości lub zakresu i podziel przez liczbę wysłanych ofert. Zmianę zakresu na prośbę klienta oznacz osobno.",
+                "**Kompletność zgód.** Wśród zleceń rozpoczętych po akceptacji sprawdź, dla ilu można wskazać zgodę klienta na dokładnie tę wersję i kwotę, które przekazano wykonawcy."
+              ],
+              "type": "list"
+            },
+            {
+              "p": "Do rozmowy z KTB przydadzą się zanonimizowane przykłady zwykłej wyceny, korekty i odmowy oraz aktualny cennik. Taki zestaw pozwala przejść jedną usługę od zapytania po decyzję i wyznaczyć zakres pierwszego wdrożenia.",
+              "link": {
+                "href": "/kontakt/",
+                "label": "Omów swój proces ofertowania z KTB"
+              },
+              "type": "paragraph"
+            }
+          ],
+          "dateISO": "2026-11-18",
+          "seoDescription": "Od zapytania i cennika przez wyjątki po akceptację konkretnej wersji. Przykład oferty serwisowej i trzy miary do oceny pilotażu.",
+          "seoKeywords": [
+            "automatyzacja wycen i ofert",
+            "system ofertowania dla firmy usługowej",
+            "akceptacja wyceny online"
+          ],
+          "imageAlt": "Wycena naprawy w aplikacji Serwis+.",
+          "coverFit": "contain"
+        },
+        {
+          "slug": "jak-mierzyc-cytowania-marki-w-ai",
+          "cat": "SEO i GEO",
+          "date": "18 listopada 2026",
+          "dateISO": "2026-11-18",
+          "title1": "Jak mierzyć cytowania marki w AI",
+          "titleIt": "i sprawdzić, czy prowadzą do zapytań?",
+          "seoTitle": "Jak mierzyć wzmianki i cytowania marki w AI",
+          "seoDescription": "Prosty arkusz do pomiaru GEO. Rozróżnij wzmianki, cytowania, wejścia i zapytania. Zobacz, co pokazują Search Console i Bing Webmaster Tools.",
+          "lede": "Firma może pojawić się w odpowiedzi AI bez linku. Jej poradnik może też dostać link, którego nikt nie kliknie. Żeby zdecydować, czy inwestować w kolejny artykuł, zapisz osobno wzmianki, cytowania oraz zapytania od klientów. Poniżej pokazujemy, jak policzyć każdy z tych wyników.",
+          "image": "/assets/blog-geo-measurement.webp",
+          "imageAlt": "Przykładowy pomiar widoczności. Osiem złotych punktów oznacza cytowania wśród trzydziestu prób.",
+          "body": [
+            {
+              "type": "heading",
+              "h": "Co dokładnie liczyć?"
+            },
+            {
+              "type": "paragraph",
+              "p": "**Wzmianka** oznacza, że odpowiedź wymienia markę. **Cytowanie własnej strony** wymaga klikalnego odnośnika do Twojej domeny. Otwórz go i sprawdź, czy wskazana strona potwierdza zdanie, przy którym widnieje. Odnośnik do katalogu z opisem Twojej firmy zapisz jako źródło zewnętrzne. Dzięki temu zauważysz, gdy katalog podaje stary adres albo przypisuje Ci cudzą usługę."
+            },
+            {
+              "type": "paragraph",
+              "p": "Sesja zaczyna się dopiero wtedy, gdy ktoś przejdzie na stronę, a analityka zarejestruje wizytę. Zakwalifikowane zapytanie pojawia się później, po ocenie przez handlowca. Jeśli ktoś zobaczył markę w odpowiedzi, po tygodniu wpisał jej nazwę w Google i zadzwonił, rejestr wejść nie odtworzy całej tej drogi. Warto zostawić w CRM miejsce na słowa klienta o tym, skąd zna firmę."
+            },
+            {
+              "type": "heading",
+              "h": "Jak zbudować próbę, którą można powtórzyć?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Wybierz dziesięć rzeczywistych pytań od klientów. Uwzględnij wybór dostawcy, porównanie rozwiązań i koszt zakupu. Dla pomiaru odkrywania marki pomiń jej nazwę w pytaniu. Osobno możesz zadać pytania o samą firmę, żeby sprawdzić poprawność odpowiedzi. Każde pytanie zadaj trzykrotnie w nowych rozmowach w tym samym produkcie, języku, kraju i trybie wyszukiwania. To daje 30 obserwacji dla jednego zestawu warunków."
+            },
+            {
+              "type": "paragraph",
+              "p": "Każda odpowiedź dostaje jeden wiersz. Zapisz dokładne pytanie, datę, produkt lub wersję modelu, ustawienie wyszukiwania i tekst odpowiedzi. Dodaj kolumny „marka wymieniona”, „link do naszej domeny”, „dokładny URL”, „twierdzenie zgodne ze źródłem”. Oznacz również poprawnie zwrócone odpowiedzi bez źródeł. Błąd techniczny lub niedostępność narzędzia wpisz oddzielnie i powtórz próbę."
+            },
+            {
+              "type": "heading",
+              "h": "Jak czytać wynik 8 z 30?"
+            },
+            {
+              "type": "paragraph",
+              "p": "W **przykładzie obliczeniowym** 12 z 30 odpowiedzi wymieniło markę, a 8 zawierało link do jej domeny. Udział wzmianek wynosi więc 40%, a udział odpowiedzi z własnym źródłem 26,7%. Jeśli jedna odpowiedź linkuje do trzech Twoich stron, w tym drugim wskaźniku nadal liczy się raz. Adresy możesz analizować osobno, żeby sprawdzić, który materiał odpowiada na które pytanie."
+            },
+            {
+              "type": "paragraph",
+              "p": "Tych 26,7% dotyczy wyłącznie wybranych pytań, produktu i terminu testu. Trzy powtórzenia jednego pytania są ze sobą powiązane. Wynik nie opisuje odsetka wszystkich klientów widzących firmę. Jeśli kolejna seria przyniesie 10 cytowań, zapisz najpierw „dwie dodatkowe odpowiedzi z linkiem” i sprawdź, które pytania się zmieniły."
+            },
+            {
+              "type": "heading",
+              "h": "Gdzie sprawdzić rzeczywiste wyświetlenia i cytowania?"
+            },
+            {
+              "type": "paragraph",
+              "p": "W raporcie generatywnej AI w Google Search Console sprawdzisz wyświetlenia linków w AI Overviews i AI Mode. Możesz wybrać m.in. stronę, kraj i urządzenie. Jeżeli witryna ma za mało wyświetleń, raport może się nie pojawić. Jego brak nie jest wynikiem „zero cytowań w ChatGPT”.",
+              "link": {
+                "label": "Jak Google liczy wyświetlenia w raporcie generatywnej AI",
+                "href": "https://support.google.com/webmasters/answer/16984139?hl=pl"
+              }
+            },
+            {
+              "type": "paragraph",
+              "p": "Raport AI Performance w Bing Webmaster Tools pokazuje cytowania m.in. w Microsoft Copilot i generowanych odpowiedziach Bing oraz adresy stron, do których prowadzą. Zapisz okres i adres artykułu. Zachowaj osobne kolumny dla wyświetleń Google, cytowań Bing i odpowiedzi z własnej próby. Suma tych liczb nie opisuje liczby osób.",
+              "link": {
+                "label": "Opis wskaźników AI Performance od Microsoftu",
+                "href": "https://blogs.bing.com/webmaster/2026/2/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview/"
+              }
+            },
+            {
+              "type": "heading",
+              "h": "Co zmienić po miesiącu obserwacji?"
+            },
+            {
+              "type": "list",
+              "list": [
+                "**Marka pojawia się, ale źródłem jest katalog.** Sprawdź treść katalogu i uzupełnij stronę oferty o materiał z pierwszej ręki, na który ktoś może się powołać.",
+                "**Asystent cytuje artykuł, ale opisuje usługę błędnie.** Odczytaj wskazany fragment bez reszty artykułu. Dopisz, kto wykonał pracę, dla kogo i w jakim okresie.",
+                "**Czytelnicy wchodzą i nie wysyłają sensownych zapytań.** Sprawdź, czy poradnik prowadzi do właściwej usługi, a klient widzi zakres i przykłady przed kontaktem."
+              ]
+            },
+            {
+              "type": "paragraph",
+              "p": "Porównaj dwa okresy tej samej długości. Przy zmianie wersji modelu, trybu wyszukiwania lub listy pytań zacznij nową serię. Do miesięcznej rozmowy z handlowcem wystarczy zestawienie najczęściej cytowanych stron, błędnych odpowiedzi i tematów, z którymi faktycznie zgłosili się klienci.",
+              "link": {
+                "label": "Jak przygotować stronę, na którą warto się powołać",
+                "href": "/blog/jak-zwiekszyc-widocznosc-firmy-w-odpowiedziach-ai/"
+              }
+            }
+          ],
+          "inlineImage": null,
+          "coverFit": "contain"
+        },
+        {
           "slug": "codzienny-tetris",
           "cat": "Produktywność",
           "date": "Sty 2026",
@@ -1092,6 +1709,14 @@
             },
             {
               "p": "W KTB Media zaczynamy od krótkiego warsztatu i mapy procesu. Zamiast obiecywać „system do wszystkiego”, wybieramy pierwszy fragment, który da się uruchomić i zmierzyć. Dzięki temu budżet pracuje na konkretny wynik, a aplikacja rośnie razem z firmą, nie obok niej."
+            },
+            {
+              "type": "paragraph",
+              "p": "Jednym ze sposobów na ograniczenie pierwszego wdrożenia jest wybór jednej powtarzalnej czynności. Prześledź przykład od zapytania do zaakceptowanej wyceny.",
+              "link": {
+                "label": "Automatyzacja wycen w firmie usługowej",
+                "href": "/blog/automatyzacja-wycen-i-ofert-w-firmie-uslugowej/"
+              }
             }
           ]
         },
@@ -1203,6 +1828,14 @@
             },
             {
               "p": "Dobra technologia nie powinna być manifestem. Ma działać, ograniczać pracę ręczną i dawać firmie swobodę rozwoju. Czasem oznacza abonament uruchomiony w tydzień. Czasem własny produkt rozwijany etapami. Najważniejsze, aby decyzję dało się obronić liczbami, nie samym wrażeniem nowoczesności."
+            },
+            {
+              "type": "paragraph",
+              "p": "Jeżeli masz już kilka płatnych narzędzi, decyzję zacznij od faktur i terminów ich odnowienia. Poniżej liczymy próg zwrotu na konkretnym przykładzie.",
+              "link": {
+                "label": "Jak policzyć koszt zastąpienia abonamentów",
+                "href": "/blog/jak-zastapic-abonamenty-wlasnym-oprogramowaniem/"
+              }
             }
           ]
         },
@@ -1765,6 +2398,14 @@
             },
             {
               "p": "AI nie zastąpi wszystkich ludzi. Ludzie i firmy używające AI rozsądnie zastąpią część tych, którzy sprzedają wyłącznie czas wykonania. To mniej efektowne zdanie niż wizja końca pracy, ale znacznie bardziej użyteczne przy planowaniu kolejnego roku."
+            },
+            {
+              "type": "paragraph",
+              "p": "Jak często firmy faktycznie używają tych narzędzi? Porównaliśmy dane z Polski, całej Unii i Stanów Zjednoczonych.",
+              "link": {
+                "label": "Ile firm korzysta z AI",
+                "href": "/blog/ile-firm-korzysta-z-ai-usa-europa-polska/"
+              }
             }
           ],
           "inlineImage": "/assets/digital-ktbmatic-audyt.webp",
@@ -7300,7 +7941,624 @@
       "titleIt": "journal.",
       "items": [
         {
-          "slug": "daily-tetris",
+          "slug": "jak-zwiekszyc-widocznosc-firmy-w-odpowiedziach-ai",
+          "cat": "SEO and GEO",
+          "date": "18 November 2026",
+          "dateISO": "2026-11-18",
+          "title1": "How do you get cited by AI",
+          "titleIt": "when a buyer needs a business like yours?",
+          "seoTitle": "How to get your business cited in ChatGPT and Google AI",
+          "seoDescription": "Pick a buying question, publish first-hand evidence and check whether Google and ChatGPT search can access it. A practical guide to visibility in AI answers.",
+          "lede": "“We want to rank first in ChatGPT.” Which buyer are you trying to reach? An agency serving shipyards might start with “Who can produce an English technical catalogue for a maritime trade show?” That gives the editor a buyer, a job to be done and a reason to seek out evidence.",
+          "image": "/assets/blog-geo-citations.webp",
+          "imageAlt": "A buyer’s question leads to supporting evidence and a source link.",
+          "body": [
+            {
+              "type": "heading",
+              "h": "Can a business rank first in a language model?"
+            },
+            {
+              "type": "paragraph",
+              "p": "There is no common league table across models, markets and questions. Add a location, a budget ceiling or a request for sources and the same buyer can get a different answer. Generative engine optimisation (GEO) becomes actionable once you can name the questions that matter and check which source supports a claim about your business."
+            },
+            {
+              "type": "paragraph",
+              "p": "A mention, a recommendation and a citation are different outcomes. An assistant might name your agency while linking to a trade directory. Or it might cite your cost breakdown and recommend another supplier. The second result can be valuable to a publisher. A sales team will also want to know whether the right buyers get in touch."
+            },
+            {
+              "type": "heading",
+              "h": "Which question comes before a request for a quote?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Ask a salesperson for recent questions they had to answer before quoting. Choose one that affected budget, timing or supplier selection and keep the buyer’s wording. “Can you deliver an English catalogue if the shipyard has to approve some of the photography?” gives an editor something more concrete to work with than “B2B marketing”."
+            },
+            {
+              "type": "list",
+              "list": [
+                "**A supplier question** needs a service page with the scope, the market served and a comparable assignment.",
+                "**A cost question** needs a unit, a time period, the work included and an explanation of what moves the price.",
+                "**A risk question** benefits from a real project decision. Describe the constraint, who approved the work and how it was resolved."
+              ]
+            },
+            {
+              "type": "heading",
+              "h": "What makes a source worth citing?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Answer the question in the opening paragraph. Follow it with evidence you can obtain first-hand. That could be an approved extract from a specification, a photograph captioned with the work performed or a measured result with a time window and denominator. For each figure, say who recorded it and what counted."
+            },
+            {
+              "type": "paragraph",
+              "p": "In an actual KTB Media campaign, an unnamed workshop received 94 forms over eight weeks on PLN 3,600 of media spend. The workshop qualified 61 enquiries after a phone call. That works out at about PLN 38 per form and PLN 59 per qualified enquiry. A reader can reproduce either number and choose a fair comparison. The figures tell us nothing about the number of completed repairs.",
+              "link": {
+                "label": "Read the workshop campaign breakdown",
+                "href": "/blog/kampania-meta-ads-dla-warsztatu-case-study-budzet/"
+              }
+            },
+            {
+              "type": "paragraph",
+              "p": "For a design office, a well-described project may carry more weight than an advertising statistic. Our Remontowa Marine Design case makes clear who designed the vessels and who delivered visual identity and communications. Name the roles with that same precision in the image caption, project description and commercial offer.",
+              "link": {
+                "label": "Explore the Remontowa Marine Design project",
+                "href": "/realizacje/rmdc/"
+              }
+            },
+            {
+              "type": "heading",
+              "h": "Can a search system reach the answer?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Follow the link from the service page and read the answer on a phone. Use URL Inspection in Search Console to check indexing and the selected canonical URL. To be eligible for a supporting link in Google’s AI search features, a page must be indexed and eligible for a search snippet. A direct link from your offer to your evidence also helps a prospective client find it.",
+              "link": {
+                "label": "Google’s guidance on AI Overviews and AI Mode",
+                "href": "https://developers.google.com/search/docs/appearance/ai-features"
+              }
+            },
+            {
+              "type": "paragraph",
+              "p": "For ChatGPT search, have the site owner check that robots.txt and the hosting configuration allow OAI-SearchBot to access the page. OpenAI documents GPTBot separately for crawling related to model training. Allowing search access makes retrieval possible. Which sources appear still depends on the search and the question.",
+              "link": {
+                "label": "OpenAI’s crawler documentation",
+                "href": "https://developers.openai.com/api/docs/bots"
+              }
+            },
+            {
+              "type": "heading",
+              "h": "Which page should you improve first?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Take the service page your sales team already sends before a call. Add the missing answer and link to the evidence. Ask someone outside the team to identify the supplier, the scope and one limitation after reading it. Record the publication date, then return to the same questions and check the source URLs. A repeatable observation tells you more than a single flattering screenshot.",
+              "link": {
+                "label": "How to measure mentions and citations in AI answers",
+                "href": "/blog/jak-mierzyc-cytowania-marki-w-ai/"
+              }
+            }
+          ],
+          "inlineImage": null,
+          "coverFit": "contain"
+        },
+        {
+          "slug": "ile-firm-korzysta-z-ai-usa-europa-polska",
+          "dateISO": "2026-11-18",
+          "image": "/assets/blog-ai-adoption.webp",
+          "inlineImage": "/assets/digital-ktbmatic-raport.webp",
+          "cat": "AI in business",
+          "date": "18 November 2026",
+          "title1": "How many businesses use AI?",
+          "titleIt": "Poland, the EU and the US.",
+          "seoTitle": "How many companies use AI in Poland, the EU and the US in 2026?",
+          "seoDescription": "Statistics Poland reports 17.8% and the US Census Bureau reports 24.2%. See how the figures compare when the EIB asks the same question in each market.",
+          "seoKeywords": [
+            "business AI adoption statistics",
+            "AI adoption in Poland",
+            "EU and US business AI use",
+            "generative AI adoption 2026"
+          ],
+          "imageAlt": "Systematic use of generative AI in EIBIS 2026. Poland 63%, EU 67%, US 71%. Results weighted by value added.",
+          "inlineImageAlt": "An example of a business workflow. A monthly client report in the KTBmatic app.",
+          "lede": "Statistics Poland found that 17.8% of the enterprises covered by its survey used AI in 2026. How does that compare with Europe and the US? A survey asking the same question about generative AI in each market put Poland at 63%, the EU at 67% and the US at about 70%. The figures make sense once you know how the businesses were counted.",
+          "body": [
+            {
+              "type": "heading",
+              "h": "How do Poland, the EU and the US compare on the same question?"
+            },
+            {
+              "type": "paragraph",
+              "p": "The European Investment Bank asked businesses whether they systematically used generative AI tools to improve their processes. The chart on page 31 of its 2026 Investment Survey reports **63% for Poland, 67% for the EU and 71% for the US**. The comparison draws on 12,083 EU businesses and 807 US businesses. The report was published on 9 November 2026.",
+              "link": {
+                "href": "https://www.eib.org/files/publications/20260192-091126-eib-group-investment-survey-2026-eu-overview-en.pdf#page=37",
+                "label": "EIB report and country comparison chart (PDF)"
+              }
+            },
+            {
+              "type": "paragraph",
+              "p": "The EIB weights the figures by value added. A large manufacturer can therefore contribute more to the result than a small workshop. A common question and weighting method make comparisons between markets possible. The Polish figure cannot be read as a prediction that 63 out of 100 companies picked at random will be using generative AI."
+            },
+            {
+              "type": "heading",
+              "h": "Poland. How many businesses reported using AI in 2026?"
+            },
+            {
+              "type": "paragraph",
+              "p": "According to Statistics Poland, **17.8%** of businesses covered by the survey used AI technologies in 2026, up from **8.7%** in 2025, a rise of 9.1 percentage points. The enterprise survey covers businesses with at least 10 people working in them. A self-employed designer and a five-person repair shop could use AI every day and still fall outside this measure.",
+              "link": {
+                "href": "https://publikacje.new.stat.gov.pl/en/publications-portal/information-society-poland-2026",
+                "label": "Statistics Poland — Information society in Poland in 2026"
+              }
+            },
+            {
+              "type": "paragraph",
+              "p": "The figures also show what companies do with the tools. Of all businesses covered, 11.1% used AI in marketing and sales and 9.6% used it for administration and management. A business can be in both categories, so adding the percentages would double-count some users."
+            },
+            {
+              "type": "heading",
+              "h": "United States. What does the Census Bureau’s 24.2% measure?"
+            },
+            {
+              "type": "paragraph",
+              "p": "In the Business Trends and Outlook Survey, **24.2%** was the national estimate for employer businesses using AI in any business function in the previous two weeks. The reference period was **5–18 October 2026**. Collection ran from 19 October to 1 November, and the release date was 5 November. To reproduce the figure, select the “Response Estimates” sheet, period 202622, question 7 and answer “Yes”.",
+              "link": {
+                "href": "https://www.census.gov/hfp/btos/downloads/National.xlsx",
+                "label": "U.S. Census Bureau — BTOS national estimates (XLSX)"
+              }
+            },
+            {
+              "type": "paragraph",
+              "p": "BTOS includes employers with fewer than 10 employees and excludes farms. In this wave the agency used the term “Super Intelligence” (SI) in the question and explicitly identified AI as the earlier term. Its examples include analysing data, preparing marketing materials and serving customers.",
+              "link": {
+                "href": "https://www.census.gov/newsroom/press-releases/2026/btos-nov-5.html",
+                "label": "November BTOS release and population covered"
+              }
+            },
+            {
+              "type": "heading",
+              "h": "European Union. Which figures are directly comparable with Poland?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Eurostat’s **2025** ICT survey offers a common definition for Poland and the EU. Across the sectors covered, among enterprises with at least 10 people employed, **8.4% in Poland and 20.0% in the EU** used at least one listed AI technology. The list includes speech and image recognition, machine learning, content generation and AI-assisted workflow automation. Eurostat scheduled its next article update for December 2026.",
+              "link": {
+                "href": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Use_of_artificial_intelligence_in_enterprises",
+                "label": "Eurostat — use of artificial intelligence in enterprises and survey coverage"
+              }
+            },
+            {
+              "type": "paragraph",
+              "p": "Size makes a difference. In the same Eurostat survey, 17.0% of small EU enterprises (10–49 people employed) used AI, compared with 55.0% of large enterprises (250 or more). The first group is the more useful reference point for a 20-person company. To track adoption over time, pick one series, such as Statistics Poland for the Polish market, and keep its population consistent."
+            },
+            {
+              "type": "heading",
+              "h": "How can you use this evidence to decide whether to run a pilot?"
+            },
+            {
+              "type": "paragraph",
+              "p": "If your team wants help drafting quotes, take the last 20 comparable enquiries. Record the staff time to prepare each response and how many quotes needed corrections. Then try drafting with AI on a similar batch. Include the time a salesperson spends checking scope, prices and terms. You can now compare minutes per approved quote and see whether the trial earns its place in the workflow.",
+              "link": {
+                "href": "/blog/automatyzacja-wycen-i-ofert-w-firmie-uslugowej/",
+                "label": "How to design a quoting and approval workflow for a service business"
+              }
+            }
+          ],
+          "coverFit": "contain"
+        },
+        {
+          "slug": "ranking-modeli-ai-dla-firm",
+          "image": "/assets/blog-ai-model-ranking.webp",
+          "inlineImage": "/assets/digital-ktbmatic-audyt.webp",
+          "date": "18 November 2026",
+          "cat": "AI for business",
+          "title1": "AI model rankings for business.",
+          "titleIt": "When should you pick Astra, Fable, Opus, Sol, Terra or Gemini?",
+          "seoTitle": "AI model rankings for business in November 2026",
+          "inlineImageAlt": "An audit in KTBmatic, an application for managing a business’s local visibility",
+          "lede": "Claude Fable 5.2 led the Intelligence Index with 65 points on 18 November 2026. Should you use it to answer customer enquiries? Reading a part number, drafting a quote and spotting a contradiction in a specification are three different jobs. You can test each one before buying.",
+          "body": [
+            {
+              "type": "heading",
+              "h": "The top five AI models in the Artificial Analysis ranking"
+            },
+            {
+              "type": "paragraph",
+              "p": "We took the five highest-scoring distinct models in the default Artificial Analysis table, using one configuration per model. These are the rounded scores and reasoning settings shown on 18 November 2026. The full ranking counts different settings for the same model as separate entries.",
+              "link": {
+                "label": "Artificial Analysis model leaderboard",
+                "href": "https://artificialanalysis.ai/leaderboards/models/"
+              }
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "list": [
+                "**Claude Fable 5.2** — 65 points, Max with the default fallback enabled.",
+                "**GPT-6.2 Astra** — 62 points, Max.",
+                "**Gemini 4 Carbon** — 60 points, High.",
+                "**Claude Opus 5.5** — 59 points, Max with the default fallback enabled.",
+                "**GPT-6.2 Sol** — 57 points, Max."
+              ]
+            },
+            {
+              "type": "paragraph",
+              "p": "Further down the same table, Gemini 4 Hydrogen scored 54 at Xhigh and GPT-6.1 Terra scored 51 at Max. Version 5.0.1 of the index combines nine tests. Knowledge work, coding, science and general knowledge each carry a 25% weight. Most tasks use English text. If you answer complaints in Polish, run a separate test in Polish.",
+              "link": {
+                "label": "How Artificial Analysis calculates the index",
+                "href": "https://artificialanalysis.ai/methodology/intelligence-benchmarking"
+              }
+            },
+            {
+              "type": "heading",
+              "h": "How do OpenAI’s Astra, Sol and Terra differ?"
+            },
+            {
+              "type": "paragraph",
+              "p": "OpenAI positions **GPT-6.2 Astra** for demanding analysis and engineering. A good test would be to find discrepancies between a request for quotation, three attachments and a pricing workbook. OpenAI recommends **GPT-6.2 Sol** for everyday work, coding and repeatable multi-step tasks. Give Sol the same documents when the job is to draft a response using an agreed template.",
+              "link": {
+                "label": "OpenAI model selection guide",
+                "href": "https://developers.openai.com/api/docs/guides/model-selection"
+              }
+            },
+            {
+              "type": "paragraph",
+              "p": "**GPT-6.1 Terra** is worth testing when the decisive piece of information is on screen. A distributor might ask it to read a variant code from a product card and enter it in the right field on a form. All three models are available through OpenAI’s API. The 6.2 versions of Astra and Sol were added on 17 November 2026.",
+              "link": {
+                "label": "OpenAI API release history",
+                "href": "https://developers.openai.com/api/docs/changelog"
+              }
+            },
+            {
+              "type": "heading",
+              "h": "When should you choose Claude Fable or Claude Opus?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Anthropic recommends **Claude Opus 5.5** as a starting point for everyday coding and document work. It positions **Claude Fable 5.2** for difficult, open-ended technical problems. Suppose you are rebuilding an old quotation calculator. Ask Opus to write tests for the documented discount rules. Give Fable the cases where the two calculators return different amounts and nobody wrote down the rule. Ask it to propose a rule and show a case that would confirm it.",
+              "link": {
+                "label": "Anthropic’s guidance on Opus and Fable",
+                "href": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+              }
+            },
+            {
+              "type": "paragraph",
+              "p": "Fable 5.2 is available through the Claude Platform and on paid Claude plans including Pro and Team. When testing an integration, record the model version, settings and cost of calls. That gives you a comparison you can reproduce after an upgrade.",
+              "link": {
+                "label": "Claude Fable availability",
+                "href": "https://www.anthropic.com/claude/fable"
+              }
+            },
+            {
+              "type": "heading",
+              "h": "Where does Gemini 4 Hydrogen fit?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Google designed **Gemini 4 Hydrogen** for fast execution on tasks involving tools. It positions Carbon and Argon for longer reasoning tasks. You can try Hydrogen through the Gemini API or Google AI Studio. A sales team could ask it to detect an enquiry’s language, select a service category and prepare a CRM record. The free Gemini app can select Hydrogen automatically.",
+              "link": {
+                "label": "Google’s introduction to Gemini 4 Hydrogen",
+                "href": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+              }
+            },
+            {
+              "type": "heading",
+              "h": "How do you choose a model for customer enquiries?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Take 30 past enquiries after removing personal information. Pick 20 routine cases and 10 that need clarification or a handover. Include one email with two conflicting collection dates and another where the part number appears only in a blurry photograph."
+            },
+            {
+              "type": "list",
+              "list": [
+                "Before the test, ask a salesperson to record the correct part number, date and next action for each enquiry.",
+                "Give each model the same instructions, attachments and tools. Have the reviewer score the replies with the model names hidden.",
+                "Record incorrect delivery promises, replies ready to send, minutes spent editing and time spent waiting. Score the difficult cases separately.",
+                "Calculate cost per accepted reply. Add the cost of model calls to the cost of review time, then divide that sum by the number of accepted replies."
+              ]
+            },
+            {
+              "type": "paragraph",
+              "p": "If a fast model answers routine questions accurately and flags doubtful cases for a salesperson, that can be your first deployment. Add a second model for cases where the trial shows it can resolve the issue. The local visibility report in KTBmatic is an example of a workflow you can break into smaller, verifiable steps.",
+              "link": {
+                "label": "Explore the KTBmatic application",
+                "href": "/realizacje/digital/ktbmatic/"
+              }
+            }
+          ],
+          "dateISO": "2026-11-18",
+          "seoDescription": "The top five AI models in the Artificial Analysis index on 18 November 2026. Compare GPT Astra, Sol and Terra, Claude Fable and Opus, and Gemini Hydrogen.",
+          "seoKeywords": [
+            "AI model rankings for business",
+            "best AI models November 2026",
+            "GPT Astra Sol Terra",
+            "Claude Fable vs Opus",
+            "Gemini 4 Hydrogen",
+            "language model benchmarks"
+          ],
+          "imageAlt": "Intelligence Index scores for five AI models. Claude Fable 5.2 leads with 65 points.",
+          "coverFit": "contain"
+        },
+        {
+          "slug": "jak-zastapic-abonamenty-wlasnym-oprogramowaniem",
+          "cat": "Business software",
+          "date": "18 November 2026",
+          "title1": "Which software subscriptions",
+          "titleIt": "are worth replacing?",
+          "seoTitle": "Replacing SaaS subscriptions with custom software: the payback",
+          "lede": "A new application only reduces your software bill once you can cancel an old contract or buy fewer seats. Here is how to connect a renewal date to a cash saving and decide whether building a replacement pays off.",
+          "image": "/assets/digital-ktbtask-dashboard.webp",
+          "relatedCase": {
+            "href": "/realizacje/digital/ktbtask/",
+            "label": "Inside KTBtask",
+            "description": "See how one system brings together tasks, a publishing calendar, client records and work reports."
+          },
+          "body": [
+            {
+              "h": "Which invoice would actually go away?",
+              "type": "heading"
+            },
+            {
+              "p": "Pull the last three invoices for your tools and check their renewal dates. For each line, record who owns the process, how many people use it and which feature still requires a paid account. A service business might use a separate reporting tool even though every field in the report already lives in its job system. Reporting is a plausible replacement project. Email and accounting can stay where they are.",
+              "type": "paragraph"
+            },
+            {
+              "p": "Read the minimum seat commitment. If eight people stop using a product today but the contract requires twenty seats through December, the first saving comes when the company can change plans. Compare the build with the best option already available, including cancelling dormant seats or downgrading a tier.",
+              "type": "paragraph"
+            },
+            {
+              "h": "What does it take to recover PLN 52,000 over 36 months?",
+              "type": "heading"
+            },
+            {
+              "p": "Consider an illustrative Polish service business. After migration it can retire three monthly fees for job tracking, reporting and keeping the two in sync. The charges are PLN 1,800, PLN 1,200 and PLN 600. Unaffected tools cost the same in both scenarios. The figures exclude VAT and assume flat prices with no discounting.",
+              "type": "paragraph"
+            },
+            {
+              "list": [
+                "**Current subscriptions** total PLN 3,600 a month, or PLN 129,600 over 36 months.",
+                "**One-off investment** totals PLN 52,000. The example allocates PLN 40,000 to development, PLN 8,000 to migration and PLN 4,000 to training and the overlap period.",
+                "**Running costs** are PLN 1,000 a month for hosting, backups, updates and support. Spending on the new option comes to PLN 52,000 + 36 × PLN 1,000 = PLN 88,000.",
+                "**The three-year cash difference** is PLN 41,600. Once the legacy fees stop, the company retains PLN 2,600 each month. Dividing PLN 52,000 by PLN 2,600 gives **20 months** to payback from cancellation."
+              ],
+              "type": "list"
+            },
+            {
+              "p": "One overlooked licence can change the decision. Suppose the company can actually cancel only PLN 2,200 a month. After running costs it retains PLN 1,200. It recovers the investment in month 44, leaving a shortfall of PLN 8,800 at the three-year mark. Under those conditions a smaller integration deserves a closer look.",
+              "type": "paragraph"
+            },
+            {
+              "h": "Where do recovered hours belong?",
+              "type": "heading"
+            },
+            {
+              "p": "Give them their own column. Recovering 16 hours a month at a labour cost of PLN 85 per hour frees capacity worth PLN 1,360. It becomes a cash saving when a real expense disappears, such as paid overtime. If the team uses the time to take extra orders, measure the additional margin on completed work. Each recovered hour should enter the business case once.",
+              "type": "paragraph"
+            },
+            {
+              "type": "figure",
+              "image": "/assets/digital-ktbtask-raporty.webp",
+              "caption": "KTBtask reports use the team’s work records. Reporting is one feature a company can combine with job tracking in its own application."
+            },
+            {
+              "h": "How can KTB take a company from the numbers to cancellation?",
+              "type": "heading"
+            },
+            {
+              "p": "We start by following one real, anonymised job. Who enters the information? Who can correct it? What file or report must come out at the end? With that in hand we can compare reconfiguring the current tool, connecting two systems or building the missing module. A first release needs to cover the entire chosen task, including exceptions that would otherwise stop the team doing its work.",
+              "type": "paragraph"
+            },
+            {
+              "p": "Before giving notice, export the agreed data and restore a backup in a test environment. During a parallel run, have a team member check the final document, its total and the revision history against the old system. After acceptance, schedule cancellation against the contractual notice period. Give the process owner a support contact and a working data export for any future handover.",
+              "type": "paragraph"
+            },
+            {
+              "p": "For an initial conversation, bring one anonymised report, the relevant invoice amounts and the notice deadlines. That gives us a specific budget line to test the project against.",
+              "link": {
+                "href": "/kontakt/",
+                "label": "Discuss a custom application with KTB"
+              },
+              "type": "paragraph"
+            }
+          ],
+          "dateISO": "2026-11-18",
+          "seoDescription": "Work out which SaaS fees would actually disappear. A 36-month cost comparison, break-even example and migration plan for a service business.",
+          "seoKeywords": [
+            "custom business software",
+            "SaaS subscription savings",
+            "custom application payback"
+          ],
+          "imageAlt": "Team tasks and projects in the KTBtask dashboard.",
+          "coverFit": "contain"
+        },
+        {
+          "slug": "automatyzacja-wycen-i-ofert-w-firmie-uslugowej",
+          "cat": "Automation",
+          "date": "18 November 2026",
+          "title1": "How to automate quotes",
+          "titleIt": "for a service business",
+          "seoTitle": "How to automate quotes and approvals for a service business",
+          "lede": "Start with a service whose price your team can reproduce from a few inputs. The system can calculate each line and record approval. An adviser remains responsible for scope, discounts and exceptions.",
+          "image": "/assets/digital-serwisplus-wycena.webp",
+          "relatedCase": {
+            "href": "/realizacje/digital/serwisplus/",
+            "label": "Inside the Service+ workshop and customer app",
+            "description": "Follow a job from its workshop record and notification to quote approval and repair status."
+          },
+          "body": [
+            {
+              "h": "Reconstruct one disputed quote before designing the form",
+              "type": "heading"
+            },
+            {
+              "p": "Find a completed job where the customer queried a difference between the quote and the invoice. Locate the original enquiry, the applicable price list, any extra work and the approval for the increase. The missing item tells you what the application needs to capture. A business that regularly loses approvals in email threads will probably get more out of version history than an attractive new PDF.",
+              "type": "paragraph"
+            },
+            {
+              "p": "Choose one repeatable service for the pilot. For example, an equipment maintenance company might start with in-house inspections of a single machine type. Site visits with difficult access and repairs that require dismantling the machine can stay with a specialist. The team then knows which enquiries the application should handle end to end.",
+              "type": "paragraph"
+            },
+            {
+              "h": "How does an enquiry become an approved job?",
+              "type": "heading"
+            },
+            {
+              "list": [
+                "**Intake.** The adviser records the equipment model, scope, quantity and place of service. A missing model puts the enquiry on hold and prompts a request for that specific detail.",
+                "**Calculation.** The application retrieves the relevant rate, expected hours and price of parts. It saves these values with the quote so a later price-list change cannot recalculate a document already sent.",
+                "**Exception review.** The adviser checks what is included and excluded. A part without a current price, unusual travel requirements or a discount above the adviser’s authority goes to the person responsible.",
+                "**Delivery.** The customer receives the scope, price, tax treatment, exclusions, expiry date and a decision link. There is also a way to request a correction that the team can see against the same enquiry.",
+                "**Approval and handover.** The application records who accepted which version and when, then transfers the approved items into the job. Clicking the link twice should display the recorded decision without creating a second job."
+              ],
+              "type": "list"
+            },
+            {
+              "h": "What happens when the price changes?",
+              "type": "heading"
+            },
+            {
+              "p": "Take a B2B estimate in Polish złoty, excluding VAT. Two and a half hours at PLN 190 plus PLN 420 in parts gives PLN 895. Inspection shows the work will take three hours. The new total is PLN 990. The adviser records why the price increased by PLN 95 and sends a second version for approval. The customer sees both amounts and which line changed.",
+              "type": "paragraph"
+            },
+            {
+              "p": "Opening the original link shows the earlier estimate and identifies the version that superseded it. If extra work comes to light after approval, preserve the original decision and request a separate one for the additional charge. Test both this case and an expired offer before ending the pilot.",
+              "type": "paragraph"
+            },
+            {
+              "type": "figure",
+              "image": "/assets/digital-serwisplus-panel.webp",
+              "caption": "The Service+ panel connects workshop jobs and customer communication. Quote approval sits within the repair workflow."
+            },
+            {
+              "h": "How do you test whether the team has recovered time?",
+              "type": "heading"
+            },
+            {
+              "p": "Set the service category, owner and observation window before the pilot. For example, compare the last 30 manually handled enquiries in that category with the next 30 after release. Include incomplete enquiries and compare their share in each group. A run of easier jobs could otherwise account for a faster result.",
+              "type": "paragraph"
+            },
+            {
+              "list": [
+                "**Hands-on minutes per quote issued.** Track active work and report the median and number of quotes. Record elapsed time separately because it includes waiting for information or a parts price.",
+                "**Process-related corrections.** Count quotes reissued because of a rate, quantity or scope error and divide by the number of quotes sent. Record customer-requested changes separately.",
+                "**Traceable approvals.** Of the jobs started after acceptance, count how many have a recorded customer approval for the exact version and amount that the technician received."
+              ],
+              "type": "list"
+            },
+            {
+              "p": "Bring KTB an anonymised standard estimate, a revised one, a declined one and your current price list. We can use those examples to trace one service from enquiry to decision and define the first release.",
+              "link": {
+                "href": "/kontakt/",
+                "label": "Discuss your quotation workflow with KTB"
+              },
+              "type": "paragraph"
+            }
+          ],
+          "dateISO": "2026-11-18",
+          "seoDescription": "Follow a quote from enquiry to approval with version history, human review and three pilot measures. Includes a worked service estimate.",
+          "seoKeywords": [
+            "service quotation automation",
+            "quote approval workflow",
+            "service estimating software"
+          ],
+          "imageAlt": "A repair estimate in the Serwis+ application.",
+          "coverFit": "contain"
+        },
+        {
+          "slug": "jak-mierzyc-cytowania-marki-w-ai",
+          "cat": "SEO and GEO",
+          "date": "18 November 2026",
+          "dateISO": "2026-11-18",
+          "title1": "How to measure AI citations",
+          "titleIt": "and connect them to customer enquiries",
+          "seoTitle": "How to measure brand mentions and citations in AI answers",
+          "seoDescription": "Build a repeatable GEO spreadsheet. Track mentions, citations, visits and enquiries separately, then compare the evidence in Search Console and Bing Webmaster Tools.",
+          "lede": "An AI answer can name your firm without linking to it. It can also link to your guide without sending a single visitor. Before commissioning another article, track mentions, links and customer enquiries separately. Each answers a different business question.",
+          "image": "/assets/blog-geo-measurement.webp",
+          "imageAlt": "Eight highlighted dots in a sample of thirty trials illustrate the citation-rate calculation.",
+          "body": [
+            {
+              "type": "heading",
+              "h": "Which events count?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Count a **mention** when an answer names the business. Count an **owned-site citation** when it includes a clickable source on your domain. Open the link and check whether the page supports the claim attached to it. If it leads to a directory that describes your company, record that as an external source. That distinction helps you spot an outdated address or a service attributed to the wrong provider."
+            },
+            {
+              "type": "paragraph",
+              "p": "A session only appears when someone visits and your analytics records the visit. A qualified enquiry comes later, after a salesperson has assessed it. Someone may discover you in an AI answer, search for your name a week later and call. A referral report will miss part of that journey. Give the sales team a CRM field for the customer's own account of how they found you."
+            },
+            {
+              "type": "heading",
+              "h": "How do you build a repeatable sample?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Choose ten questions clients actually ask. Include supplier selection, comparisons and price. To test discovery, leave your brand out of the question. Keep branded fact-checking questions in a separate set. Run each question three times in fresh conversations using the same product, language, country and search setting. This gives you 30 observations under one set of conditions."
+            },
+            {
+              "type": "paragraph",
+              "p": "Use one row per answer. Save the exact question, date, product or model version, search setting and answer text. Add columns for brand mentioned, owned-site link, exact URL and claim supported by the source. Include successful answers that return no sources. Log service errors separately and repeat those attempts."
+            },
+            {
+              "type": "heading",
+              "h": "What does 8 out of 30 tell you?"
+            },
+            {
+              "type": "paragraph",
+              "p": "In this **illustrative calculation**, 12 of 30 answers mention the business and eight link to its domain. The mention rate is 40% and the share of answers with an owned-site citation is 26.7%. If one answer links to three of your pages, it still counts once for that second metric. Keeping each URL separately lets you see which resource served which question."
+            },
+            {
+              "type": "paragraph",
+              "p": "That 26.7% describes the chosen questions, product and test window. Repeated runs of the same question are related observations. You cannot read the result as the share of all buyers who saw the business. If the next batch contains ten answers with a citation, start with “two further answers contained a link” and inspect the questions that changed."
+            },
+            {
+              "type": "heading",
+              "h": "Where can you see actual impressions and citations?"
+            },
+            {
+              "type": "paragraph",
+              "p": "Google Search Console’s generative AI performance report shows link impressions in AI Overviews and AI Mode. It lets you examine dimensions including page, country and device. The report may be absent when a site has too few impressions. A missing report tells you nothing about how often ChatGPT cited your site.",
+              "link": {
+                "label": "How Google counts impressions in its generative AI report",
+                "href": "https://support.google.com/webmasters/answer/16984139?hl=en"
+              }
+            },
+            {
+              "type": "paragraph",
+              "p": "AI Performance in Bing Webmaster Tools reports citations across supported surfaces including Microsoft Copilot and AI-generated Bing summaries. It also identifies the URLs referenced. Keep the period and page for every figure. Store Google impressions, Bing citations and the results from your question panel in separate columns. Their sum does not give you a count of people.",
+              "link": {
+                "label": "Microsoft’s guide to the AI Performance metrics",
+                "href": "https://blogs.bing.com/webmaster/2026/2/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview/"
+              }
+            },
+            {
+              "type": "heading",
+              "h": "What should you change after a month?"
+            },
+            {
+              "type": "list",
+              "list": [
+                "**Answers name the company but cite a directory.** Check the directory for accuracy and give your own service page a first-hand example worth referencing.",
+                "**The assistant links to your article but describes the work incorrectly.** Read the cited passage on its own. Clarify who delivered the work, for whom and over what period.",
+                "**Readers visit but rarely send a relevant enquiry.** Check that the guide links to the right service and that buyers can see the scope and examples before contacting you."
+              ]
+            },
+            {
+              "type": "paragraph",
+              "p": "Compare periods of equal length. When the model version, search setting or question list changes, start a new series. For a monthly review with sales, bring the most cited URLs, the inaccurate answers and the topics customers actually asked about.",
+              "link": {
+                "label": "How to publish evidence that AI search can cite",
+                "href": "/blog/jak-zwiekszyc-widocznosc-firmy-w-odpowiedziach-ai/"
+              }
+            }
+          ],
+          "inlineImage": null,
+          "coverFit": "contain"
+        },
+        {
+          "slug": "codzienny-tetris",
           "cat": "Productivity",
           "date": "Jan 2026",
           "title1": "Daily Tetris:",
@@ -7349,7 +8607,7 @@
           ]
         },
         {
-          "slug": "marketing-for-its-own-sake",
+          "slug": "marketing-dla-samego-marketingu",
           "cat": "Strategy",
           "date": "Apr 2026",
           "title1": "How to stop doing marketing",
@@ -7495,6 +8753,14 @@
           "body": [
             {
               "p": "The full English article is coming soon. Read the Polish version in the meantime or contact KTB Media to discuss your project."
+            },
+            {
+              "type": "paragraph",
+              "p": "One way to keep the first release manageable is to start with a repeatable task. Follow a service quote from enquiry through approval.",
+              "link": {
+                "label": "Automating service quotes",
+                "href": "/blog/automatyzacja-wycen-i-ofert-w-firmie-uslugowej/"
+              }
             }
           ]
         },
@@ -7509,6 +8775,14 @@
           "body": [
             {
               "p": "The full English article is coming soon. Read the Polish version in the meantime or contact KTB Media to discuss your project."
+            },
+            {
+              "type": "paragraph",
+              "p": "If you already pay for several tools, start with their invoices and renewal dates. Our worked example calculates the break-even point.",
+              "link": {
+                "label": "Calculate the cost of replacing subscriptions",
+                "href": "/blog/jak-zastapic-abonamenty-wlasnym-oprogramowaniem/"
+              }
             }
           ]
         },
@@ -7604,6 +8878,14 @@
           "body": [
             {
               "p": "The full English version of this article is coming soon. Read the Polish edition or contact KTB Media to discuss the topic."
+            },
+            {
+              "type": "paragraph",
+              "p": "How often do businesses actually use these tools? We compared surveys from Poland, the EU and the United States.",
+              "link": {
+                "label": "Business AI adoption in the US and Europe",
+                "href": "/blog/ile-firm-korzysta-z-ai-usa-europa-polska/"
+              }
             }
           ],
           "titleIt": "Nie. Ale zmieni, za co płaci klient.",
@@ -8146,7 +9428,7 @@
           ]
         },
         {
-          "slug": "rebrand-without-crisis",
+          "slug": "rebrand-bez-kryzysu",
           "cat": "Branding",
           "date": "Feb 2026",
           "title1": "Rebrand without crisis —",

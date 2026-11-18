@@ -215,7 +215,8 @@ function navigate(path) {
   const lang = KTBRoutes.language(window.location);
   const targetPath = KTBRoutes.href(path, lang);
   // These pages have their own rendered document and language-specific schema.
-  if (normalizePath(path) === '/proces' || (lang === 'en' &&
+  const hasArticleDocument = pathname => KTBRoutes.english[KTBRoutes.polishPath(pathname)]?.startsWith('/en/blog/');
+  if (normalizePath(path) === '/proces' || hasArticleDocument(window.location.pathname) || hasArticleDocument(new URL(targetPath, window.location.origin).pathname) || (lang === 'en' &&
       (window.location.pathname.startsWith('/en/') || targetPath.startsWith('/en/')))) {
     window.location.assign(targetPath);
     return;
@@ -445,7 +446,7 @@ function getSEOMetadata(lang, path) {
       const item = (COPY[lang].blog.items || []).find(x => x.slug === slug);
       if (item) meta = {
         title: `${item.seoTitle || `${item.title1} ${item.titleIt}`} · KTB Media`,
-        desc: item.lede || ''
+        desc: item.seoDescription || item.lede || ''
       };
     } else if (getLandingConfig(lang, path)) {
       const item = getLandingConfig(lang, path);
@@ -460,8 +461,8 @@ function getSEOMetadata(lang, path) {
       };
     } else if (path === '/blog') {
       meta = {
-        title: (lang === 'pl' ? 'Blog — marketing dla motoryzacji, SEO lokalne Gdańsk' : 'Journal — automotive marketing, local SEO Gdańsk') + ' · KTB Media',
-        desc: lang === 'pl' ? 'Artykuły KTB Media o marketingu dla warsztatów, SEO lokalnym Gdańsk/Pruszcz Gdański/Tczew i strategii marki.' : 'KTB Media marketing journal — automotive, local SEO, brand strategy.'
+        title: (lang === 'pl' ? 'Blog o marketingu, SEO, AI i aplikacjach dla firm' : 'Journal on marketing, SEO, AI and business software') + ' · KTB Media',
+        desc: lang === 'pl' ? 'Poradniki KTB Media o widoczności w Google i odpowiedziach AI, marketingu dla motoryzacji i branży morskiej oraz aplikacjach, które usprawniają pracę firmy.' : 'Practical guides from KTB Media on Google and AI search, automotive and maritime marketing, and software that improves everyday business operations.'
       };
     } else if (path === '/o-nas') {
       meta = {
@@ -2672,10 +2673,10 @@ function Blog({
     className: "blog-card reveal",
     key: i
   }, /*#__PURE__*/React.createElement("div", {
-    className: "blog-thumb"
+    className: it.coverFit === 'contain' ? "blog-thumb blog-cover-full" : "blog-thumb"
   }, it.image ? /*#__PURE__*/React.createElement("img", {
     src: it.image,
-    alt: it.title1,
+    alt: it.imageAlt || it.title1,
     loading: "lazy",
     decoding: "async"
   }) : /*#__PURE__*/React.createElement("div", {
@@ -2728,7 +2729,7 @@ function BlogArticle({
   const next = b.items[(idx + 1) % b.items.length];
   const midIdx = Math.floor((item.body || []).length * 0.6);
   const hasInlineFigure = (item.body || []).some(block => block.image);
-  const inlineImage = item.inlineImage || "/assets/showcase-1.jpg";
+  const {inlineImage = "/assets/showcase-1.jpg"} = item;
   const inlineImageAlt = item.inlineImageAlt || (lang === 'pl' ? 'Kulisy pracy nad marketingiem KTB Media' : 'Behind the scenes of KTB Media marketing work');
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ScrollProgressBar, null), /*#__PURE__*/React.createElement("article", {
     className: "blog-article"
@@ -2745,17 +2746,17 @@ function BlogArticle({
     className: "blog-article-meta mono"
   }, /*#__PURE__*/React.createElement("span", null, item.cat), /*#__PURE__*/React.createElement("span", {
     className: "dot-sep"
-  }, "\xB7"), /*#__PURE__*/React.createElement("span", null, item.date)), /*#__PURE__*/React.createElement("h1", {
+  }, "\xB7"), /*#__PURE__*/React.createElement(item.dateISO ? "time" : "span", {dateTime: item.dateISO}, item.date)), /*#__PURE__*/React.createElement("h1", {
     className: "display blog-article-title"
   }, item.title1, " ", /*#__PURE__*/React.createElement("span", {
     className: "it"
   }, item.titleIt)), item.lede && /*#__PURE__*/React.createElement("p", {
     className: "blog-article-lede"
   }, item.lede)), item.image && /*#__PURE__*/React.createElement("div", {
-    className: "blog-article-cover"
+    className: item.coverFit === 'contain' ? "blog-article-cover blog-cover-full" : "blog-article-cover"
   }, /*#__PURE__*/React.createElement("img", {
     src: item.image,
-    alt: item.title1,
+    alt: item.imageAlt || item.title1,
     loading: "eager",
     decoding: "async",
     fetchPriority: "high"

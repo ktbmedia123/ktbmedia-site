@@ -3,6 +3,7 @@ import path from 'node:path';
 import vm from 'node:vm';
 import { parse } from 'parse5';
 import routes from '../localized-routes.js';
+import { writeBlogDocuments } from './blog-document.mjs';
 
 // Use the same React version and components as the browser, without running
 // effects, loading the CMS over HTTP, or depending on a headless browser in CI.
@@ -145,7 +146,9 @@ export function prerenderPages(root, dist, data) {
   vm.runInContext(`AnimatedValue = ({value, className}) => React.createElement('span', {className}, value);
     globalThis.pageElement = () => React.createElement(App);`, context);
   const rendered = [];
+  writeBlogDocuments(dist, data);
   for (const [pl, en] of Object.entries(routes.english)) {
+    if (pl.startsWith('/blog/')) continue; // Each language gets a head from its own CMS post.
     const template = path.join(dist, pl, 'index.html');
     if (!fs.existsSync(template)) continue; // Hidden case studies have already been removed.
     fs.mkdirSync(path.join(dist, en), {recursive: true});
@@ -171,7 +174,7 @@ export function prerenderPages(root, dist, data) {
       const logicalRoute = pl.replace(/\/$/, '') || '/';
       const metadata = context.getSEOMetadata(lang, logicalRoute);
       const marketingCase = data[lang].portfolio.items.find(item => logicalRoute === `/realizacje/${item.slug}`);
-      if (lang === 'en') html = englishHead(html, window.location.href, metadata, marketingCase);
+      if (lang === 'en' && !pl.startsWith('/blog/')) html = englishHead(html, window.location.href, metadata, marketingCase);
       if (routes.english[pl]) {
         const alternates = [['pl', pl], ['en', routes.english[pl]], ['x-default', pl]].map(([code, path]) =>
           `<link rel="alternate" hreflang="${code}" href="https://ktbmedia.eu${path}" />`).join('\n  ');

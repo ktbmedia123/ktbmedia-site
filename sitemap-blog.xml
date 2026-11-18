@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ktbmedia.eu/blog/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://ktbmedia.eu/blog/ai-slop-co-to-jest-i-jak-go-unikac/</loc>
@@ -13,20 +13,28 @@
     <lastmod>2026-10-26</lastmod>
   </url>
   <url>
+    <loc>https://ktbmedia.eu/blog/automatyzacja-wycen-i-ofert-w-firmie-uslugowej/</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
     <loc>https://ktbmedia.eu/blog/codzienny-tetris/</loc>
     <lastmod>2026-11-17</lastmod>
   </url>
   <url>
     <loc>https://ktbmedia.eu/blog/czy-ai-nas-zastapi-w-marketingu-i-pracy/</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://ktbmedia.eu/blog/google-ads-dla-dealera-samochodowego/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://ktbmedia.eu/blog/google-business-profile-dla-warsztatu-checklista/</loc>
     <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://ktbmedia.eu/blog/ile-firm-korzysta-z-ai-usa-europa-polska/</loc>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://ktbmedia.eu/blog/ile-kosztuje-google-ads-dla-warsztatu-samochodowego-2026/</loc>
@@ -34,15 +42,19 @@
   </url>
   <url>
     <loc>https://ktbmedia.eu/blog/ile-kosztuje-prowadzenie-social-media-gdansk/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://ktbmedia.eu/blog/ile-kosztuje-stworzenie-aplikacji-webowej-dla-firmy/</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://ktbmedia.eu/blog/instagram-dla-warsztatu-samochodowego/</loc>
     <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://ktbmedia.eu/blog/jak-mierzyc-cytowania-marki-w-ai/</loc>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://ktbmedia.eu/blog/jak-nagrac-wideo-z-klientem-mechanikiem/</loc>
@@ -58,7 +70,15 @@
   </url>
   <url>
     <loc>https://ktbmedia.eu/blog/jak-reklamowac-auto-detailing-w-2026/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://ktbmedia.eu/blog/jak-zastapic-abonamenty-wlasnym-oprogramowaniem/</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://ktbmedia.eu/blog/jak-zwiekszyc-widocznosc-firmy-w-odpowiedziach-ai/</loc>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://ktbmedia.eu/blog/kampania-meta-ads-dla-warsztatu-case-study-budzet/</loc>
@@ -70,11 +90,11 @@
   </url>
   <url>
     <loc>https://ktbmedia.eu/blog/landing-page-dla-firmy-lokalnej/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://ktbmedia.eu/blog/marketing-b2b-w-branzy-morskiej/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://ktbmedia.eu/blog/marketing-dla-dealera-samochodowego-nowe-uzywane/</loc>
@@ -105,12 +125,16 @@
     <lastmod>2026-10-29</lastmod>
   </url>
   <url>
+    <loc>https://ktbmedia.eu/blog/ranking-modeli-ai-dla-firm/</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
     <loc>https://ktbmedia.eu/blog/rebrand-bez-kryzysu/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://ktbmedia.eu/blog/seo-dla-producenta-czesci-samochodowych/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://ktbmedia.eu/blog/seo-lokalne-dla-warsztatu-top-3-google-maps/</loc>
@@ -130,6 +154,30 @@
   </url>
   <url>
     <loc>https://ktbmedia.eu/blog/wlasna-aplikacja-czy-gotowy-saas/</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://ktbmedia.eu/en/blog/ai-model-rankings-for-business/</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://ktbmedia.eu/en/blog/automating-quotes-for-service-businesses/</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://ktbmedia.eu/en/blog/business-ai-adoption-us-eu-poland/</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://ktbmedia.eu/en/blog/how-to-get-cited-in-ai-search/</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://ktbmedia.eu/en/blog/how-to-measure-ai-citations/</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://ktbmedia.eu/en/blog/replacing-software-subscriptions/</loc>
+    <lastmod>2026-11-18</lastmod>
   </url>
 </urlset>

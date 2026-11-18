@@ -89,6 +89,18 @@ for (const [pl, en] of Object.entries(routes.english)) {
       assert(html.includes(`hreflang="${code}" href="https://ktbmedia.eu${alternate}"`), `Brak wzajemnego hreflang ${code} na ${route}`);
     }
     assert(pages.get(route).links.includes(language === 'pl' ? en : pl), `Brak działającego bez JS przełącznika ${route}`);
+    if (pl.startsWith('/blog/')) {
+      const post = data[language].blog.items.find(post => pl === `/blog/${post.slug}/`);
+      const page = pages.get(route);
+      const article = page.schemas.flatMap(s => s['@graph'] || [s]).find(s => s['@type'] === 'BlogPosting');
+      assert(post && article, `Brak wpisu lub BlogPosting ${route}`);
+      assert.equal(article.url, 'https://ktbmedia.eu' + route);
+      assert.equal(article.inLanguage, language);
+      assert.equal(article.datePublished, post.dateISO);
+      assert.equal(article.headline, post.title1 + ' ' + post.titleIt);
+      assert.equal(page.metadata.description, post.seoDescription || post.lede);
+      assert(page.renderedText.includes(post.lede) && post.body.filter(b => b.h).every(b => page.renderedText.includes(b.h)), `Brak treści wpisu ${route}`);
+    }
   }
   const schemas = english.schemas.flatMap(schema => schema['@graph'] || [schema]);
   assert(schemas.some(schema => schema.inLanguage === 'en' && schema.url === 'https://ktbmedia.eu' + en), `Brak angielskiej encji opisującej ${en}`);

@@ -58,7 +58,7 @@ function walk(dir) {
       html = html.replace(/(<script src="\/app\.js)/, '<script src="/marine-landing.js?v=20261026-marine"></script>\n  $1');
     }
     if (html.includes('src="/app.js')) {
-      html = html.replace(/(<script src="\/(?:marine-landing|app)\.js)/, '<script defer src="/localized-routes.js?v=20261117-seo-geo"></script>\n  $1');
+      html = html.replace(/(<script src="\/(?:marine-landing|app)\.js)/, '<script defer src="/localized-routes.js?v=20261118-blog"></script>\n  $1');
     }
     html = installPageBoot(html);
     if (path.relative(dist, file) === path.join('proces', 'index.html')) {

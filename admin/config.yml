@@ -838,6 +838,8 @@ collections:
                       - { label: Tytuł 1 (bold), name: title1, widget: string }
                       - { label: Tytuł 2 (italic), name: titleIt, widget: string }
                       - { label: Obraz nagłówkowy, name: image, widget: image }
+                      - { label: Opis obrazu, name: imageAlt, widget: string, required: false }
+                      - { label: Pokaż cały obraz, name: coverFit, widget: select, options: [cover, contain], required: false }
                       - { label: Lead (zajawka), name: lede, widget: text }
                       - label: Treść (dodawaj bloki po kolei)
                         name: body
@@ -860,10 +862,10 @@ collections:
                                 widget: object
                                 required: false
                                 collapsed: true
-                                hint: "Podaj ścieżkę wewnętrzną. Akapit o ukrytej realizacji zostanie pominięty."
+                                hint: "Podaj ścieżkę na stronie lub link HTTPS do źródła. Akapit o ukrytej realizacji zostanie pominięty."
                                 fields:
                                   - { label: Tekst odsyłacza, name: label, widget: string }
-                                  - { label: Adres na stronie, name: href, widget: string, pattern: ['^/[^/].*$', 'Podaj ścieżkę zaczynającą się od /'] }
+                                  - { label: Adres odsyłacza, name: href, widget: string, pattern: ['^(/[^/]|https://).+$', 'Podaj ścieżkę na stronie lub adres HTTPS'] }
                           - label: Lista punktowana
                             name: list
                             widget: object
@@ -1415,6 +1417,8 @@ collections:
                       - { label: Title 1 (bold), name: title1, widget: string }
                       - { label: Title 2 (italic), name: titleIt, widget: string }
                       - { label: Header image, name: image, widget: image }
+                      - { label: Image description, name: imageAlt, widget: string, required: false }
+                      - { label: Show the full image, name: coverFit, widget: select, options: [cover, contain], required: false }
                       - { label: Lede, name: lede, widget: text }
                       - label: Body (add blocks)
                         name: body
@@ -1437,10 +1441,10 @@ collections:
                                 widget: object
                                 required: false
                                 collapsed: true
-                                hint: "Use an internal path. Hiding the linked project also hides this paragraph."
+                                hint: "Use an internal path or an HTTPS source URL. Hiding the linked project also hides this paragraph."
                                 fields:
                                   - { label: Link text, name: label, widget: string }
-                                  - { label: Path on this site, name: href, widget: string, pattern: ['^/[^/].*$', 'Enter a path starting with /'] }
+                                  - { label: Link URL, name: href, widget: string, pattern: ['^(/[^/]|https://).+$', 'Enter an internal path or an HTTPS URL'] }
                           - label: Bullet list
                             name: list
                             widget: object

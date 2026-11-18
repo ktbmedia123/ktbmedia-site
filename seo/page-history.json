@@ -32,8 +32,8 @@
     "lastmod": "2026-11-17"
   },
   "/blog/": {
-    "fingerprint": "1af212ec1670dd9116541fd6020b49fbf751af9faadda05b1255b0af52001a00",
-    "lastmod": "2026-11-17"
+    "fingerprint": "86c40f1984dfc6269e46e7f66fc1802fe9bf2af66da73fd16ededf6f41a81862",
+    "lastmod": "2026-11-18"
   },
   "/blog/ai-slop-co-to-jest-i-jak-go-unikac/": {
     "fingerprint": "6ffca17946eed3583172bf7440cac746125b9cdac39f100aa5360b6e4481b0a0",
@@ -43,37 +43,49 @@
     "fingerprint": "38d5969b30969e361253412e631888fa6e2ecbb2e0f1b3e2c3739d5e8eeb9d7a",
     "lastmod": "2026-10-26"
   },
+  "/blog/automatyzacja-wycen-i-ofert-w-firmie-uslugowej/": {
+    "fingerprint": "5d5e10174dd6768d6bd7e6cf69dfdb30a1842539f6b467dde9c6239dbe42396b",
+    "lastmod": "2026-11-18"
+  },
   "/blog/codzienny-tetris/": {
     "fingerprint": "44315f54e6658a4e3113235d91ce3149cbde18276927a4fbdd7495ef198d8fdf",
     "lastmod": "2026-11-17"
   },
   "/blog/czy-ai-nas-zastapi-w-marketingu-i-pracy/": {
-    "fingerprint": "3fdd88e1044dee85410851c2257bcb38cc6f7ff0e5d2e77c8122afcb94bb3833",
-    "lastmod": "2026-10-26"
+    "fingerprint": "bd776a613a203694d97b4901f26d77f9d64129683aea0a1f94ed6529388f032c",
+    "lastmod": "2026-11-18"
   },
   "/blog/google-ads-dla-dealera-samochodowego/": {
-    "fingerprint": "2b5a6d55e6a8d4e036b941b6bc03cff031edaab1e75103635ddc119455186715",
-    "lastmod": "2026-11-17"
+    "fingerprint": "7c26eaa6f9324029a9a2fc2fe489027da8cf6145a839cb1f49c1e77b220a575c",
+    "lastmod": "2026-11-18"
   },
   "/blog/google-business-profile-dla-warsztatu-checklista/": {
     "fingerprint": "e77dac38c88244adddcc772ebecb7aae5a0706fb51d7e6d99c147593dff04384",
     "lastmod": "2026-11-17"
+  },
+  "/blog/ile-firm-korzysta-z-ai-usa-europa-polska/": {
+    "fingerprint": "ac67e6276ad6245f5cdc1310af83939aabf10a493aa2bf559bfdd36001e34a47",
+    "lastmod": "2026-11-18"
   },
   "/blog/ile-kosztuje-google-ads-dla-warsztatu-samochodowego-2026/": {
     "fingerprint": "671f5c973fccc26ad1039cc65da98f67133066bd01e6665df102a9fcaf54bc35",
     "lastmod": "2026-11-17"
   },
   "/blog/ile-kosztuje-prowadzenie-social-media-gdansk/": {
-    "fingerprint": "dddbed544c30e944df81fc93a53808d68ee5d550e45473b8bea5ea74ff0108fa",
-    "lastmod": "2026-11-17"
+    "fingerprint": "62f6d75b0604407a8c1baddce3937909ff13abda6823b7921d63bd3d5ebc5496",
+    "lastmod": "2026-11-18"
   },
   "/blog/ile-kosztuje-stworzenie-aplikacji-webowej-dla-firmy/": {
-    "fingerprint": "77adf5ab82f9e2b55e0b4cad7f9a526998239ccc84b1bec4eb3e75389a74e904",
-    "lastmod": "2026-10-26"
+    "fingerprint": "f7ac6aa25b09234d2de7dc276a5a53d9089806703ac686fcd10907a105c42083",
+    "lastmod": "2026-11-18"
   },
   "/blog/instagram-dla-warsztatu-samochodowego/": {
     "fingerprint": "38234d29adbdc354e3ae2bddf6c11bdcdb006481f1874461e9942ee73529372f",
     "lastmod": "2026-11-17"
+  },
+  "/blog/jak-mierzyc-cytowania-marki-w-ai/": {
+    "fingerprint": "0e33172ab97162cdf36ea39348584bf41025e1db3eb881497e525afe934e3dd2",
+    "lastmod": "2026-11-18"
   },
   "/blog/jak-nagrac-wideo-z-klientem-mechanikiem/": {
     "fingerprint": "857b5a05244e0fcb010493ebbcbb655d2b32ae36a3ef7518052ebfb36c4cc1c8",
@@ -88,8 +100,16 @@
     "lastmod": "2026-10-26"
   },
   "/blog/jak-reklamowac-auto-detailing-w-2026/": {
-    "fingerprint": "ba0c45c5d1aa54946882dde4f12948f9ddab543956ab584808452dd647cc75ef",
-    "lastmod": "2026-11-17"
+    "fingerprint": "4de98cf1977cd484e0c5ed367b3ebc043ceb9f635cc2e3552a3cd537d90803c9",
+    "lastmod": "2026-11-18"
+  },
+  "/blog/jak-zastapic-abonamenty-wlasnym-oprogramowaniem/": {
+    "fingerprint": "c449b99d3bd8b8aa66616081a14c472a529e17489824d7f6eed9874dec111047",
+    "lastmod": "2026-11-18"
+  },
+  "/blog/jak-zwiekszyc-widocznosc-firmy-w-odpowiedziach-ai/": {
+    "fingerprint": "eb9cedf07a40ea45627142932e9eb30268522bb60905c7d8c53dc2c8f9633306",
+    "lastmod": "2026-11-18"
   },
   "/blog/kampania-meta-ads-dla-warsztatu-case-study-budzet/": {
     "fingerprint": "c4ca57f4b0c5cb20ea5a80ece7bc662d521298c26b97293dc133bb2ea6bd462f",
@@ -100,12 +120,12 @@
     "lastmod": "2026-11-17"
   },
   "/blog/landing-page-dla-firmy-lokalnej/": {
-    "fingerprint": "9a66cfb0e75a565f46452565e73a10c2c058d463cfe080f7da85c07560c0c7d3",
-    "lastmod": "2026-11-17"
+    "fingerprint": "17c84b361e1db4ce13c6870d395b666458d35a1ac0ad399bec3e59be67d6c3f1",
+    "lastmod": "2026-11-18"
   },
   "/blog/marketing-b2b-w-branzy-morskiej/": {
-    "fingerprint": "4091fda1636c4700a0e1466e155cc1ea0d14c2ad544838b466f3bff1abb59e0c",
-    "lastmod": "2026-11-17"
+    "fingerprint": "ae61775739c564d1243939c8400e2259c194c61933e4a7dcd36c2159a6ee1df6",
+    "lastmod": "2026-11-18"
   },
   "/blog/marketing-dla-dealera-samochodowego-nowe-uzywane/": {
     "fingerprint": "287f9bcad2e460da0dc0d2f273384c1b72674b3394ef98ab2b101096f82967aa",
@@ -135,13 +155,17 @@
     "fingerprint": "769e089febd8e48305917bdb7c751071f2865c3217aa62edd877bd86cea87b43",
     "lastmod": "2026-10-29"
   },
+  "/blog/ranking-modeli-ai-dla-firm/": {
+    "fingerprint": "030f5a1b843935bc84e5f9d65d6fe73c0fdffe787f3e1c3c142b79d4c0018468",
+    "lastmod": "2026-11-18"
+  },
   "/blog/rebrand-bez-kryzysu/": {
-    "fingerprint": "dff7164c3a408c0902f5a500f0ff7c0245674462e08130c71c9c8bf31e77651a",
-    "lastmod": "2026-11-17"
+    "fingerprint": "55c3a4c093329512722f3eb4ccf2be7d1477461446cdfb29df7fcb7bd24f2df1",
+    "lastmod": "2026-11-18"
   },
   "/blog/seo-dla-producenta-czesci-samochodowych/": {
-    "fingerprint": "cbed2d823a5524af007786dca8cb51aad2c745192fbd0ea3c57a9a9ee25a10f4",
-    "lastmod": "2026-11-17"
+    "fingerprint": "20168384877057ac959f18c349f4db23841e80689f1243624b11505ced14d63a",
+    "lastmod": "2026-11-18"
   },
   "/blog/seo-lokalne-dla-warsztatu-top-3-google-maps/": {
     "fingerprint": "3ef76f2d37555005ea4e2e1de009860d8c080d5ba2be0e241fae973caf3256f1",
@@ -160,8 +184,32 @@
     "lastmod": "2026-10-26"
   },
   "/blog/wlasna-aplikacja-czy-gotowy-saas/": {
-    "fingerprint": "bf0ed3aed974687e157366825fcc35db35356582360088372f33b8effa188dd9",
-    "lastmod": "2026-10-26"
+    "fingerprint": "7108740be0367e030106cec4a5e3151ca7ccf493f6c724a4b26b8b70f22a017b",
+    "lastmod": "2026-11-18"
+  },
+  "/en/blog/ai-model-rankings-for-business/": {
+    "fingerprint": "72977f81b688ba123c4c71eab9eb3586c4cd4d2b0718cf8d975dc32cbe39a49f",
+    "lastmod": "2026-11-18"
+  },
+  "/en/blog/automating-quotes-for-service-businesses/": {
+    "fingerprint": "4184002cdb92a03ede6dbca0f6f75956eb2588bdfb189d2ed2b433bd4295f9ad",
+    "lastmod": "2026-11-18"
+  },
+  "/en/blog/business-ai-adoption-us-eu-poland/": {
+    "fingerprint": "df0025f68a69c339528fd92544b4849a1ca52ab6ea96d26d3f7903f7cb8786e7",
+    "lastmod": "2026-11-18"
+  },
+  "/en/blog/how-to-get-cited-in-ai-search/": {
+    "fingerprint": "7cc19b5bc7b5d487f3f1f5752072d12f85f29f2ed9ddba151f0085e47288cf8c",
+    "lastmod": "2026-11-18"
+  },
+  "/en/blog/how-to-measure-ai-citations/": {
+    "fingerprint": "2b370888fe11e76a6a7a56ded8fa98b0eb41f1db54efdab5154f5e1895a8d722",
+    "lastmod": "2026-11-18"
+  },
+  "/en/blog/replacing-software-subscriptions/": {
+    "fingerprint": "9418c06a8d972fdd90ffeda26c8479c24d17cee9cddfa7be9a06e9b5e4156392",
+    "lastmod": "2026-11-18"
   },
   "/en/contact/": {
     "fingerprint": "8441134c800552b84e3d222cf1301e42409e27705b4839233642e0f1f67c214c",

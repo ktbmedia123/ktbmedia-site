@@ -4074,6 +4074,9 @@ body.menu-open { overflow: hidden; }
   height: 100%;
   object-fit: cover;
 }
+.blog-cover-full { background: var(--bg); }
+.blog-article-cover.blog-cover-full { aspect-ratio: 16 / 9; }
+.blog-cover-full img, .blog-card:hover .blog-cover-full img { object-fit: contain; transform: none; }
 .blog-article-body {
   font-family: var(--font-serif);
   font-size: 18px;

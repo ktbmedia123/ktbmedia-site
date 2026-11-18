@@ -2,7 +2,7 @@
 
 > KTB Media sp. z o.o. to agencja marketingowa i studio produktów cyfrowych z Pruszcza Gdańskiego. Firma obsługuje Trójmiasto, Pomorskie i klientów z całej Polski. Specjalizuje się w automotive, marine i technicznym B2B, ale pracuje również z innymi branżami.
 
-Ostatnia aktualizacja: 2026-10-29
+Ostatnia aktualizacja: 2026-11-18
 
 ## Dane firmy
 
@@ -89,6 +89,13 @@ Udokumentowane realizacje obejmują między innymi AutoCentrum Elektronowa, Grup
 - Strona GT Serwis Barniewice: https://ktbmedia.eu/realizacje/digital/gt-serwis-www/
 
 ## Artykuły eksperckie
+
+- Jak zwiększyć widoczność firmy w ChatGPT i Google AI: https://ktbmedia.eu/blog/jak-zwiekszyc-widocznosc-firmy-w-odpowiedziach-ai/
+- Ile firm korzysta z AI w Polsce, UE i USA? Dane 2026: https://ktbmedia.eu/blog/ile-firm-korzysta-z-ai-usa-europa-polska/
+- Ranking modeli AI dla firm w listopadzie 2026: https://ktbmedia.eu/blog/ranking-modeli-ai-dla-firm/
+- Własne oprogramowanie zamiast abonamentów. Jak policzyć zwrot: https://ktbmedia.eu/blog/jak-zastapic-abonamenty-wlasnym-oprogramowaniem/
+- Automatyzacja wycen i ofert w firmie usługowej: https://ktbmedia.eu/blog/automatyzacja-wycen-i-ofert-w-firmie-uslugowej/
+- Jak mierzyć wzmianki i cytowania marki w AI: https://ktbmedia.eu/blog/jak-mierzyc-cytowania-marki-w-ai/
 
 - Marketing auto detailingu: https://ktbmedia.eu/blog/jak-reklamowac-auto-detailing-w-2026/
 - Google Ads dla dealera: https://ktbmedia.eu/blog/google-ads-dla-dealera-samochodowego/

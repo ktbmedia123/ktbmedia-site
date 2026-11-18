@@ -1,3 +1,13 @@
+# 18 listopada 2026 — sześć poradników o GEO, AI i aplikacjach dla firm
+
+- Opublikowanie serii przygotowano w CMS po polsku i angielsku. Dwa artykuły dotyczą cytowania firmy i pomiaru widoczności, kolejne omawiają adopcję AI, ranking siedmiu porównywanych modeli, zastąpienie abonamentów i automatyzację wycen.
+- W artykule o adopcji osobno opisano definicje GUS, Eurostatu, Census BTOS i EIBIS, a w rankingu datę, konfiguracje oraz metodę Artificial Analysis. Rachunek kosztów i przykład pilotażu opisano jako symulacje. Cztery ilustracje redakcyjne uzupełniają dwa zrzuty z aplikacji KTB.
+- Sześć angielskich adresów /en/blog/ ma własny canonical, wzajemne hreflang i BlogPosting. Dokumenty nowych wpisów powstają z tego samego źródła co karty bloga. Starsze poradniki o AI i aplikacjach prowadzą do nowej serii. Trzy historyczne odsyłacze ze slugami angielskimi kierują do tłumaczeń działających na istniejących stronach.
+- Lokalny build i kontrola SEO obejmują 88 adresów, w tym 45 w mapie bloga. Sprawdzono typy bloków CMS, zdjęcia i zgodność pozostałych treści ze stanem sprzed zmiany.
+- Następna kontrola redakcyjna: przy nowej porównywalnej publikacji urzędowej lub kolejnej aktualizacji benchmarku podać datę i zakres nowego pomiaru.
+
+---
+
 # 17 listopada 2026 — SEO i widoczność w odpowiedziach AI
 
 - Zaktualizowano ofertę gdańską, opis udziału KTB w projektach morskich, linki z poradników detailingu i producentów części do ofert oraz między Elblągiem i realizacją Wiktorowicza. Warsztaty mają przykłady GT Serwis, Wiktorowicz i AutoCentrum. Blog obsługuje kontekstowe odnośniki i respektuje ukrywanie realizacji.

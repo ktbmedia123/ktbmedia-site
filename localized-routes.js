@@ -4,7 +4,13 @@
     '/marketing-dla-branzy-morskiej/': '/en/maritime-marketing/',
     '/realizacje/rmdc/': '/en/work/rmdc/',
     '/realizacje/ddp-supply/': '/en/work/ddp-supply/',
-    '/kontakt/': '/en/contact/'
+    '/kontakt/': '/en/contact/',
+    '/blog/jak-zwiekszyc-widocznosc-firmy-w-odpowiedziach-ai/': '/en/blog/how-to-get-cited-in-ai-search/',
+    '/blog/jak-mierzyc-cytowania-marki-w-ai/': '/en/blog/how-to-measure-ai-citations/',
+    '/blog/ile-firm-korzysta-z-ai-usa-europa-polska/': '/en/blog/business-ai-adoption-us-eu-poland/',
+    '/blog/ranking-modeli-ai-dla-firm/': '/en/blog/ai-model-rankings-for-business/',
+    '/blog/jak-zastapic-abonamenty-wlasnym-oprogramowaniem/': '/en/blog/replacing-software-subscriptions/',
+    '/blog/automatyzacja-wycen-i-ofert-w-firmie-uslugowej/': '/en/blog/automating-quotes-for-service-businesses/'
   });
   const polish = Object.fromEntries(Object.entries(english).map(([pl, en]) => [en, pl]));
   function pagePath(pathname) {

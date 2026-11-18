@@ -1,4 +1,8 @@
 /proces /proces/ 301
+# Legacy English journal links
+/blog/daily-tetris/ /blog/codzienny-tetris/?lang=en 301
+/blog/marketing-for-its-own-sake/ /blog/marketing-dla-samego-marketingu/?lang=en 301
+/blog/rebrand-without-crisis/ /blog/rebrand-bez-kryzysu/?lang=en 301
 # Canonical trailing-slash URLs for static folder routes
 /o-nas  /o-nas/  301
 /kontakt  /kontakt/  301
